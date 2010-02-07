@@ -28,7 +28,7 @@ namespace PSOFAP.FAPPSO
 
         public void Initialize()
         {
-            FAPModel.FAPModel model = new PSOFAP.FAPModel.FAPModel("/home/william/Desktop/PSOFAP/PSOFAP/FAPModel/Problems/siemens2");
+            FAPModel.FAPModel model = new PSOFAP.FAPModel.FAPModel("../../FAPModel/Problems/SIEMENS3/siemens3");
             model.createModel();
             Generator = new FAPPositionGenerator(model);
             for (int i = 0; i < Population; i++)
@@ -43,10 +43,10 @@ namespace PSOFAP.FAPPSO
 		
 		public void PerfromCostAssignmentTest()
 		{
-			FAPModel.FAPModel model = new PSOFAP.FAPModel.FAPModel("/home/william/Desktop/PSOFAP/PSOFAP/FAPModel/Problems/siemens2");
+			FAPModel.FAPModel model = new PSOFAP.FAPModel.FAPModel("../../FAPModel/Problems/SIEMENS3/siemens3");
             model.createModel();
             
-			model.LoadTestData("/home/william/Desktop/PSOFAP/PSOFAP/FAPModel/Problems/Glamorgan.ass");
+			model.LoadTestData("../../FAPModel/Problems/SIEMENS3/ASSIGNMENTS/MaOrRi02.ass");
 			EvaluationFunction = new FAPCostFunction(model);
 			Console.WriteLine("Cost: {0}",EvaluationFunction.Evaluate(model.Cells));
 		}

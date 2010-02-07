@@ -3,27 +3,27 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="PSOFAP/Main.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PSOFAP/FAPPSO/FAPPSOAlgorithm.cs" ctype="Workbench">
     <Files>
       <File FileName="PSOFAP/FAPPSO/FAPCostFunction.cs" Line="33" Column="31" />
-      <File FileName="PSOFAP/FAPPSO/FAPPSOAlgorithm.cs" Line="46" Column="122" />
-      <File FileName="PSOFAP/Main.cs" Line="67" Column="3" />
+      <File FileName="PSOFAP/FAPPSO/FAPPSOAlgorithm.cs" Line="31" Column="110" />
+      <File FileName="PSOFAP/Main.cs" Line="69" Column="25" />
+      <File FileName="PSOFAP/PSO/PSOAlgorithm.cs" Line="1" Column="1" />
+      <File FileName="PSOFAP/PSO/ParticleBest.cs" Line="1" Column="1" />
+      <File FileName="PSOFAP/PSO/Particle.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="PSOFAP" expanded="True" selected="True">
             <Node name="FAPModel" expanded="True">
+              <Node name="Problems" expanded="True" />
+            </Node>
+            <Node name="FAPPSO" expanded="True" />
+            <Node name="Parser" expanded="True" />
+            <Node name="PSO" expanded="True">
               <Node name="Interfaces" expanded="True" />
             </Node>
-            <Node name="FAPPSO" expanded="True">
-              <Node name="Functions" expanded="True" />
-            </Node>
-            <Node name="Parser" expanded="True">
-              <Node name="Lexer" expanded="True" />
-            </Node>
-            <Node name="Properties" expanded="True" />
-            <Node name="PSO" expanded="True" />
           </Node>
         </State>
       </Pad>
