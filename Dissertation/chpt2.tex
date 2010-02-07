@@ -57,7 +57,7 @@ UMTS is a large improvement of the GSM in two areas namely Data Transmission ban
 
 In this section we gave a brief overview of the history of the GSM Network specification. In the next section we will present an explanation of the topology of GSM network as well as look at the 
 underlying problems present in a GSM networks.
-\subsection{Topology of a GSM Network}
+\section{Topology of a GSM Network}
 GSM networks consists of a variety of different subsystems to realise the goal of establishing a radio communication link between two parties. The hierarchy of systems and their respective connections to
 each other is illustrated in figure 1. We will now briefly explain each subsystem.
 \subsubsection{Mobile Station (MS)}
@@ -70,7 +70,7 @@ for Authentication as well as being a key part in providing encrypted transmissi
 \end{description}
 The MS has the capability to change the transmission power is uses from its base value to a maximum value of 20 mW. The change in transmission power is automatically set to the lowest level by the Base Transceiver Station to ensure reliable communication after evaluating the signal strength as measured by the MS \cite{GSMSysEngin}. % The power adjustment also minimizes cochannel interference, which we can talk about later when we introduce interference
 
-\subsubsection{Base Station Subsystem (BSS)}
+\subsection{Base Station Subsystem (BSS)}
 
 According to the GSM Phase 2+ specification this system is viewed by the \emph{Mobile Switching Centre} (MSC) through an Abis radio interface as the system responsible for communicating with Mobile Stations in a particular location area. The BSS usually consists of one \emph{Base Station Controller} (BSC) with one or more \emph{Base Transceiver Stations} (BTS) which it controls. The communication link between the MSC and BSC is the called the A-interface and the communication link between the BSC and BTS is called the Abis interface. The definition of these communication interfaces is beyond the scope of this disseration, the interested reader is directed to the book \emph{GSM System Engineering} by Asha Mehrotra. A BTS has similar equipment to that of a Mobile Station. Both have transceivers, antennas and the necessary functions to perform radio communication. 
 
@@ -79,7 +79,7 @@ In a GSM network the Service Area (SA) is subdivided into Location Areas(LA's) w
 Each sector operates one or more elementary transceivers called TRX’s. The amount of TRX’s per sector is determined by the expected peak traffic demand that the cell must be able to handle. Each TRX can handle 7 to 8 communication links or calls in parallel except the first TRX, which handles fewer calls than normal due to it being responsible for transmitting cell organisation and protocol information \cite{Eisenblatter}. TRX’s are able to handle 7-8 calls in parallel due to the use of \emph{Frequency Division Multiplexing} (FDM) and \emph{Time Division Multiplexing} (TDM) schemes. TRX’s are assigned channels which enable them to provide conversion between digital traffic data on the network side and the radio communication between Mobile Stations and 
 the GSM network. \cite{ACOvsEA,FAPOrientationModel}
 
-\subsubsection{Mobile Switching Centre (MSC)}
+\subsection{Mobile Switching Centre (MSC)}
 
 The MSC is at the heart of cellular switching system and forms part of the \emph{Network Switching Subsystem} (NSS). The MSC is responsible for the setting up, routing and supervision of calls between GSM subscribers. The MSC has interfaces on the one side to communicate with GSM subscribers (through the BSS) and on the other it has interfaces to communicate with external networks. The MSC interfaces with external networks to utilise their superior capability in data transmission as well as for the signalling and communication with other GSM entities \cite{GSM92}. 
 
@@ -103,7 +103,7 @@ A requirement for being able to communicate with other network elements such as 
 
 A typical scenario where this operation proves vital is when a mobile subcriber makes a call to a subcriber on a PSTN. The connection bit rate needs to be changed at the MSC from a wireless connection bitrate to a bitrate suitable for transmission over a PSTN.
 
-\subsubsection{Network Databases}
+\subsection{Network Databases}
 The HLR, AUC (Authentication Center) and EIR (Equipment Identity Register) are the 3 'back-end' databases which stores and provides information for the rest of the GSM Network. We will now briefly discuss what the purpose of each database is and its core functions.
 
 \paragraph{Home Location Register (HLR)}
@@ -123,7 +123,7 @@ The EIR is a database that stores the IMEI numbers of all registered mobile equi
 
 Typically there is only one EIR database per network and interfaces to the various HLR database contained in the network. The IMEI's are grouped into 3 categories: \emph{White List}, \emph{Black List} and the \emph{Gray List}. The White list contains only the IMEI numbers of valid MS's; the Black List stores the IMEI numbers of equipment that has been reported stolen and the Gray List stores the IMEI numbers of equipment that has some fault (faulty software, wrong make of equipment).
 
-\subsubsection{GSM Network Management entities}
+\subsection{GSM Network Management entities}
 In a GSM network most of the elements that form part of and make the network function are often distributed in a wide geographical area to provide the best network converage for the customer. 
 
 For a network to function properly and efficiently network engineers need to be kept up to date on the state of the network and be alerted if \emph{any} problems occur. For this purpose there exists two systems in the GSM network architecture that allows for this functionality required by network engineers. 
@@ -146,5 +146,5 @@ The OMC is also capable of fault management in the GSM network. The OMC is able 
 \paragraph{Network Management Center}
 The NMC is similar to the OMC but it is not restricted to only regional GSM entities as it is in charge of the all GSM entities in the network. The NMC provides traffic management for the global network and also monitors high priority alarms such as overloaded or failed network nodes. It is usually used in long term planning of a network, but it has the capability to perform certain OMC functions when an OMC is not staffed. 
 
-\subsection{GSM Network problems}
+\section{GSM Network problems}
 \section{Summary}
