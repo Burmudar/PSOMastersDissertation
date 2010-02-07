@@ -1,0 +1,16 @@
+
+size 7 7
+write "Schwefel Function"
+begin letz
+	data "schwefel.z"
+	z = (x*x+y*y)/4000-cos(x)*cos(y/sqrt(2))+1
+	x from -600 to 600 step 50
+	y from -600 to 600 step 50
+end letz
+begin surface
+	size 7 7
+	data "schwefel.z"
+	top color orange
+	underneath color red
+	cube zlen 13
+end surface

@@ -1,0 +1,13 @@
+Security for Telecommunications Networks 
+Book Series	Advances in Information Security
+ISSN	1568-2633
+Subject	Computer Science, Systems and Data Security, Computer Communication Networks, Data Encryption, Data Structures, Cryptology and Information Theory and Computer Systems Organization and Communication Networks
+Volume	Volume 40
+Subject	Computer Science, Systems and Data Security, Computer Communication Networks, Data Encryption, Data Structures, Cryptology and Information Theory and Computer Systems Organization and Communication Networks
+Publisher	Springer US
+DOI	10.1007/978-0-387-72442-3
+Copyright	2008
+ISBN	978-0-387-72441-6 (Print) 978-0-387-72442-3 (Online)
+Subject Collection	Computer Science
+Subject	Computer Science, Systems and Data Security, Computer Communication Networks, Data Encryption, Data Structures, Cryptology and Information Theory and Computer Systems Organization and Communication Networks
+SpringerLink Date	Saturday, July 12, 2008

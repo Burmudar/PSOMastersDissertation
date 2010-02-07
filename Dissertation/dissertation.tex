@@ -1,0 +1,28 @@
+\documentclass[pdftex,12pt,a4paper]{book}
+\usepackage{ujthesis,enumerate}
+\usepackage[nottoc]{tocbibind}
+\linespread{1.5}
+\dissertation
+\coverFont{\large}
+\setlength{\spaceLength}{7mm}
+\approvedtitle{Particle Swarms and the Frequency Assignment Problem}
+\student{William Bezuidenhout}
+\degree{Magister Scientiae}
+\field{Information Technology}
+\faculty{Faculty of Science}
+\supervisorName{Dr. G.B. O'Reilly}
+\submissionDate{October 2009}
+\begin{document}
+\makecover
+\tableofcontents
+\part{Background}
+\include{chpt1}%Introduction
+\include{chpt2}%The Frequency Assignment Problem
+\include{chpt3}%Metaheuristics
+\include{chpt4}%Metaheuristics and the Frequency Assignment Problem
+\include{chpt5}%Swarm Intelligence
+\include{chpt6}%Swarm Intelligence and the Frequency Assignment Problem
+\part{Implementation}
+\bibliography{ReferenceDB}
+\bibliographystyle{plain}
+\end{document}

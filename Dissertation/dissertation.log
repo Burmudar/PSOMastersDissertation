@@ -1,0 +1,222 @@
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2009.11.1)  8 NOV 2009 17:29
+entering extended mode
+ %&-line parsing enabled.
+**dissertation.tex
+(./dissertation.tex
+LaTeX2e <2005/12/01>
+Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Document Class: book 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/bk12.clo
+File: bk12.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./ujthesis.sty
+Package: ujthesis 
+
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\spaceLength=\skip43
+)
+(/usr/share/texmf-texlive/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks14
+) (./tocbibind.sty
+Package: tocbibind 2003/03/13 v1.5g extra ToC listings
+
+
+Package tocbibind Note: The document has chapter divisions.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+)
+
+LaTeX Warning: Unused global option(s):
+    [pdftex].
+
+(./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
+(./chpt5.aux) (./chpt6.aux))
+\openout1 = `dissertation.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./dissertation.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+ [3
+
+])
+\tf@toc=\write3
+\openout3 = `dissertation.toc'.
+
+ [4] [5
+
+] [6]
+\openout2 = `chpt1.aux'.
+
+ (./chpt1.tex
+Chapter 1.
+) [7
+
+
+]
+\openout2 = `chpt2.aux'.
+
+ (./chpt2.tex [8
+
+
+
+]
+Chapter 2.
+[9]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 18.
+ [10]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+
+Underfull \vbox (badness 1642) has occurred while \output is active []
+
+ [11]
+[12] [13] [14] [15]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+ [16] [17] [18] [19] [20] [21] [22] [23])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+[25]
+\openout2 = `chpt3.aux'.
+
+ (./chpt3.tex [26
+
+
+
+]
+Chapter 3.
+) [27]
+\openout2 = `chpt4.aux'.
+
+ (./chpt4.tex [28
+
+
+
+]
+Chapter 4.
+) [29]
+\openout2 = `chpt5.aux'.
+
+ (./chpt5.tex
+Overfull \hbox (89.30492pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 30 \OT1/cmr/m/sl/12 CHAPTER 4.  METAHEURISTICS AND THE FREQUENC
+Y ASSIGNMENT PROBLEM
+ []
+
+[30
+
+
+
+]
+Chapter 5.
+) [31]
+\openout2 = `chpt6.aux'.
+
+ (./chpt6.tex [32
+
+
+
+]
+Chapter 6.
+) [33]
+Overfull \hbox (120.54361pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/12 34 \OT1/cmr/m/sl/12 CHAPTER 6.  SWARM INTELLIGENCE AND THE FREQ
+UENCY ASSIGNMENT PROBLEM
+ []
+
+[34
+
+
+] [35] [36] (./dissertation.bbl
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+ [37
+
+]) [38] (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.
+aux) (./chpt5.aux) (./chpt6.aux)) ) 
+Here is how much of TeX's memory you used:
+ 536 strings out of 95086
+ 6055 string characters out of 1183255
+ 52877 words of memory out of 1500000
+ 3717 multiletter control sequences out of 10000+50000
+ 9545 words of font info for 33 fonts, out of 1200000 for 2000
+ 28 hyphenation exceptions out of 8191
+ 27i,8n,20p,966b,227s stack positions out of 5000i,500n,6000p,200000b,5000s
+</usr/share/texmf-texlive/fonts/type1/bluesk
+y/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmmi12.pfb></u
+sr/share/texmf-texlive/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf-texli
+ve/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/blues
+ky/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr7.pfb></usr
+/share/texmf-texlive/fonts/type1/bluesky/cm/cmr8.pfb></usr/share/texmf-texlive/
+fonts/type1/bluesky/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/bluesky
+/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy6.pfb></usr
+/share/texmf-texlive/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf-texliv
+e/fonts/type1/bluesky/cm/cmti12.pfb>
+Output written on dissertation.pdf (38 pages, 128301 bytes).
+PDF statistics:
+ 174 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

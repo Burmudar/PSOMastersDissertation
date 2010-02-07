@@ -1,0 +1,56 @@
+\begin{thebibliography}{1}
+
+\bibitem{FAPOrientationModel}
+Ralf Borndörfer, Andreas Eisenblätter, Martin Grötschel, and Alexander
+  Martin.
+\newblock The orientation model for frequency assignment problems, 1998.
+
+\bibitem{Eisenblatter}
+Andreas Eisenbl{\"a}tter.
+\newblock {\em Frequency Assignment in {GSM} Networks: {M}odels, Heuristics,
+  and Lower Bounds}.
+\newblock PhD thesis, Technische Universit{\"a}t Berlin, Berlin, Germany, 2001.
+
+\bibitem{Karen2004}
+{Karen I. Aardal, Stan P. M. van Hoesel, Arie M. C. A. Koster Contact
+  Information, Carlo Mannino and Antonio Sassano}.
+\newblock Models and solution techniques for frequency assignment problems.
+\newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
+  December 2004.
+
+\bibitem{ACOvsEA}
+Francisco Luna, Christian Blum, Enrique Alba, and Antonio~J. Nebro.
+\newblock Aco vs eas for solving a real-world frequency assignment problem in
+  gsm networks.
+\newblock In {\em GECCO '07: Proceedings of the 9th annual conference on
+  Genetic and evolutionary computation}, pages 94--101, New York, NY, USA,
+  2007. ACM.
+
+\bibitem{GSMSysEngin}
+Asha Mehrotra.
+\newblock {\em GSM System Engineering}.
+\newblock Arteh House, Inc, 1997.
+
+\bibitem{GSM92}
+Marie-Bernadette~Pautet Michel~Mouly.
+\newblock {\em The GSM System for Mobile Communications}.
+\newblock Cell \& Sys, 1992.
+
+\bibitem{wirelesstelcoMullet}
+Garry Mullet.
+\newblock {\em Wireless telecommunications systems and networks}.
+\newblock Thomsan Delmar Learning, 2006.
+
+\bibitem{GSMSecurInTeleNetwork}
+Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
+\newblock {\em Security for Telecommunications Networks}, volume~40 of {\em
+  Advances in Information Security}.
+\newblock Springer US, 2008.
+
+\bibitem{tabuglobalplanning3g}
+Marc St-Hilaire, Steven Chamberland, and Samuel Pierre.
+\newblock A tabu search algorithm for the global planning problem of third
+  generation mobile networks.
+\newblock {\em Comput. Electr. Eng.}, 34(6):470--487, 2008.
+
+\end{thebibliography}

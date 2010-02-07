@@ -1,0 +1,41 @@
+\contentsline {part}{I\hspace {1em}Background}{5}
+\contentsline {chapter}{\numberline {1}Introduction}{7}
+\contentsline {section}{\numberline {1.1}Test}{7}
+\contentsline {chapter}{\numberline {2}Cellular Technology}{9}
+\contentsline {section}{\numberline {2.1}Introduction}{9}
+\contentsline {section}{\numberline {2.2}GSM Networks}{10}
+\contentsline {subsection}{\numberline {2.2.1}A Brief History of GSM Networks}{10}
+\contentsline {subsection}{\numberline {2.2.2}Topology of a GSM Network}{14}
+\contentsline {subsubsection}{Mobile Station (MS)}{14}
+\contentsline {subsubsection}{Base Station Subsystem (BSS)}{15}
+\contentsline {subsubsection}{Mobile Switching Centre (MSC)}{16}
+\contentsline {subsubsection}{Network Databases}{18}
+\contentsline {paragraph}{Home Location Register (HLR)}{18}
+\contentsline {paragraph}{Authentication Center (AUC)}{18}
+\contentsline {paragraph}{Equipment Identity Register (EIR)}{19}
+\contentsline {subsubsection}{GSM Network Management entities}{19}
+\contentsline {paragraph}{Operational and Managemenet Center}{20}
+\contentsline {paragraph}{Network Management Center}{21}
+\contentsline {subsection}{\numberline {2.2.3}GSM Network problems}{21}
+\contentsline {section}{\numberline {2.3}The Frequency Assignment Problem}{21}
+\contentsline {subsection}{\numberline {2.3.1}Interference}{22}
+\contentsline {subsection}{\numberline {2.3.2}Frequency Assignment Types}{23}
+\contentsline {subsection}{\numberline {2.3.3}Mathematical Formulation}{25}
+\contentsline {subsection}{\numberline {2.3.4}Types of Frequency Assignment Problems}{25}
+\contentsline {subsubsection}{Minimum Order Frequency Assignment Problem}{25}
+\contentsline {subsubsection}{Minimum Span (MS) Frequency Assignment Problem}{25}
+\contentsline {subsubsection}{Fixed Spectrum (FS) Frequency Assignment Problem}{25}
+\contentsline {subsection}{\numberline {2.3.5}Frequency Assignment Models}{25}
+\contentsline {subsubsection}{Binary Constraints}{25}
+\contentsline {subsubsection}{Cost Function Minimisation}{25}
+\contentsline {section}{\numberline {2.4}Summary}{25}
+\contentsline {chapter}{\numberline {3}Metaheuristics}{27}
+\contentsline {section}{\numberline {3.1}Introduction}{27}
+\contentsline {chapter}{\numberline {4}Metaheuristics and the Frequency Assignment Problem}{29}
+\contentsline {section}{\numberline {4.1}Introduction}{29}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{31}
+\contentsline {section}{\numberline {5.1}Introduction}{31}
+\contentsline {chapter}{\numberline {6}Swarm Intelligence and the Frequency Assignment Problem}{33}
+\contentsline {section}{\numberline {6.1}Introduction}{33}
+\contentsline {part}{II\hspace {1em}Implementation}{35}
+\contentsline {chapter}{Bibliography}{37}

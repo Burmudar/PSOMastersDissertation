@@ -1,0 +1,60 @@
+% This file was created with JabRef 2.3.1.
+% Encoding: UTF-8
+
+@ARTICLE{1,
+  author = {Karen I. Aardal, Stan P. M. van Hoesel, Arie M. C. A. Koster Contact
+	Information, Carlo Mannino and Antonio Sassano},
+  title = {Models and solution techniques for frequency assignment problems},
+  journal = {4OR: A Quarterly Journal of Operations Research},
+  year = {2004},
+  volume = {1},
+  pages = {261-317},
+  number = {4},
+  month = {December},
+  doi = {10.1007/s10288-003-0022-6},
+  file = {:/media/BAGGY_PANTS/Masters/Research/Read/FAP/Models and solution
+	techniques for frequency assignment problems.PDF:PDF},
+  owner = {william},
+  timestamp = {2009.05.23}
+}
+
+@INPROCEEDINGS{12345678,
+  author = {Monson,, Christopher K. and Seppi,, Kevin D.},
+  title = {Adaptive diversity in PSO},
+  booktitle = {GECCO '06: Proceedings of the 8th annual conference on Genetic and
+	evolutionary computation},
+  year = {2006},
+  pages = {59--66},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  doi = {http://0-doi.acm.org.ujlink.uj.ac.za:80/10.1145/1143997.1144006},
+  file = {:/media/BAGGY_PANTS/Masters/Research/Read/Adaptive Diversity in PSO.pdf:PDF},
+  isbn = {1-59593-186-4},
+  location = {Seattle, Washington, USA}
+}
+
+@INPROCEEDINGS{1276980,
+  author = {Tasgetiren,, Mehmet Fatih and Suganthan,, P. N. and Pan,, Quan-Qe},
+  title = {A discrete particle swarm optimization algorithm for the generalized
+	traveling salesman problem},
+  booktitle = {GECCO '07: Proceedings of the 9th annual conference on Genetic and
+	evolutionary computation},
+  year = {2007},
+  pages = {158--167},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  doi = {http://0-doi.acm.org.ujlink.uj.ac.za:80/10.1145/1276958.1276980},
+  file = {:/media/BAGGY_PANTS/Masters/Research/Read/A Discrete Particle Swarm
+	Optimization Algorithm for the Generalized Traveling Salesman Problem.PDF:PDF},
+  isbn = {978-1-59593-697-4},
+  location = {London, England}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+

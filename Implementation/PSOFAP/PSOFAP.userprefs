@@ -1,0 +1,35 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ActiveDocument="PSOFAP/Main.cs" ctype="Workbench">
+    <Files>
+      <File FileName="PSOFAP/FAPPSO/FAPCostFunction.cs" Line="33" Column="31" />
+      <File FileName="PSOFAP/FAPPSO/FAPPSOAlgorithm.cs" Line="46" Column="122" />
+      <File FileName="PSOFAP/Main.cs" Line="67" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="PSOFAP" expanded="True" selected="True">
+            <Node name="FAPModel" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+            </Node>
+            <Node name="FAPPSO" expanded="True">
+              <Node name="Functions" expanded="True" />
+            </Node>
+            <Node name="Parser" expanded="True">
+              <Node name="Lexer" expanded="True" />
+            </Node>
+            <Node name="Properties" expanded="True" />
+            <Node name="PSO" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
