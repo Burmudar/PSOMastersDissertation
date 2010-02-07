@@ -5,19 +5,19 @@
 \contentsline {section}{\numberline {2.1}Introduction}{9}
 \contentsline {section}{\numberline {2.2}GSM Networks}{10}
 \contentsline {subsection}{\numberline {2.2.1}A Brief History of GSM Networks}{10}
-\contentsline {subsection}{\numberline {2.2.2}Topology of a GSM Network}{14}
+\contentsline {section}{\numberline {2.3}Topology of a GSM Network}{14}
 \contentsline {subsubsection}{Mobile Station (MS)}{14}
-\contentsline {subsubsection}{Base Station Subsystem (BSS)}{15}
-\contentsline {subsubsection}{Mobile Switching Centre (MSC)}{16}
-\contentsline {subsubsection}{Network Databases}{18}
+\contentsline {subsection}{\numberline {2.3.1}Base Station Subsystem (BSS)}{15}
+\contentsline {subsection}{\numberline {2.3.2}Mobile Switching Centre (MSC)}{16}
+\contentsline {subsection}{\numberline {2.3.3}Network Databases}{18}
 \contentsline {paragraph}{Home Location Register (HLR)}{18}
 \contentsline {paragraph}{Authentication Center (AUC)}{18}
 \contentsline {paragraph}{Equipment Identity Register (EIR)}{19}
-\contentsline {subsubsection}{GSM Network Management entities}{19}
+\contentsline {subsection}{\numberline {2.3.4}GSM Network Management entities}{19}
 \contentsline {paragraph}{Operational and Managemenet Center}{20}
 \contentsline {paragraph}{Network Management Center}{21}
-\contentsline {subsection}{\numberline {2.2.3}GSM Network problems}{21}
-\contentsline {section}{\numberline {2.3}Summary}{21}
+\contentsline {section}{\numberline {2.4}GSM Network problems}{21}
+\contentsline {section}{\numberline {2.5}Summary}{21}
 \contentsline {chapter}{\numberline {3}Metaheuristics}{23}
 \contentsline {section}{\numberline {3.1}Introduction}{23}
 \contentsline {subsection}{\numberline {3.1.1}Interference}{24}
