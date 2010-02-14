@@ -1,29 +1,22 @@
-\chapter{Metaheuristics}
+\chapter{The Frequency Assignment Problem}
 \section{Introduction}
-The Frequency Assignment Problem (FAP) is a generalisation of the graph-colouring problem and is subsequently an NP-hard problem. This is because one has a finite amount of frequencies which needs to be 
-assigned to antennae/transceivers (TRX's)  where the amount of transceivers to be assigned frequencies greatly out weigh the amount of available frequencies. Thus it is inevitable that a network will 
-have interference and we can only minimise the amount of interference that might occur on the network - an optimisation problem. 
+The Frequency Assignment Problem (FAP)\footnote{Also known as Automatic Frequency Planning (AFP) or Channel Assignment Problem (CAP)\cite{ACOvsEA}} is a generalisation of the graph-colouring problem and is subsequently an NP-hard problem. This is because one has a finite amount of frequencies which needs to be assigned to antennae/transceivers (TRX's)  where the amount of transceivers to be assigned frequencies greatly out weigh the amount of available frequencies.
+
+It is inevitable that a network will have interference and we can thus only minimise the amount of interference that might occur on the network - an optimisation problem. Using exact algorithms to find a solution is not practical since the time to find a solution will be polynomial. Generally Metaheuristic algorithms are used to find optimal solutions to NP-hard problems\cite{ACOvsEA}. We will discuss Metaheuristic algorithms which are generally used to find solutions for NP-hard problems in Chapter 4. 
 
 A contributing factor to the difficulty of the FAP is due to the scarcity of usable frequencies in the radio spectrum, which forces network operators to reuse their allocated/licensed frequencies in their respective networks. The scarcity of the usable frequencies in the spectrum can be attributed to the overuse of certain bands as well as large scale reuse of frequencies in networks. This has put strain on the spectrum and has complicated the management of networks significantly because interference is more likely to occur.
-\section{Mathematical Formulation}
-\section{Interference}
-Interference occurs when frequencies assigned to connections differ by a small margin. The amount of inference on a connection defines the quality of service. One can naturally make the deduction that 
-the more frequencies differ used on connections in a area, the better quality of service one will experience in that area. Cellular networks use the amount of interference on their networks as 
-qualitative measure for their \emph{Quality of Service} (QoS). A network with high interference would experience a lot of dropped connections, which occurs when the interference is too high to sustain a connection for communication.
 
-Primarily Interference occurs if the Electromagnetic constraints are violated, which are defined as:
-\begin{description}
-\item[Co-Cell] ---
-\item[Adj Channel] ---
-\item[Co-Site] ---
-\end{description}
-A fourth constraint, namely the Handover constraint is also applicable in Cellular networks which we will discuss in section 4.
+Frequency assignment is the last step in a long process of network setup. Before frequencies are assigned base stations need to be placed and need to be configured, which include azimuth and tilt of the antenna for optimal network coverage. After the base stations are configured they need to be allocated a certain amount of transmitters to achieve a target network capacity \cite{AndreasPaper}.
 
+Frequency assignment is only a means to achieve the targeted network coverage as well as network capacity.
+
+In this section we gave a brief introduction as to what the Frequency Assignment Problem is and why it occurs as well as why it is a problem. In the next section we will describe the types of Frequency Assignment in use today and we will also define which one we will concentrate on.
 \section{Frequency Assignment Types}
+In this section we will discuss the different methods that exist to allocate frequencies to cells in a cellular network. We will also state which method we will use through out this paper.
+
 Within the FAP domain there are  a variety of sub problems which originated over the decades of which wireless communication has survived through. We will discuss the most popular problems found in the literature over the last few years in Section 2. The FAP can be classified into two categories:
 \begin{enumerate}[\bf{(}a\bf{)}]
-\item \emph{Fixed Frequency/Channel Assignment} (FFA/FCA) is the process of permanently assigning frequencies to cells (cellular towers). The frequencies assigned are fixed and cannot be changed on the fly while 
-the network is active , since the frequencies assigned to the cell form part of a delicate frequency plan designed to keep interference to minimum.
+\item \emph{Fixed Frequency/Channel Assignment} (FFA/FCA) is the process of permanently assigning frequencies to cells (cellular towers). The frequencies assigned are fixed and cannot be changed on the fly while the network is active , since the frequencies assigned to the cell form part of a delicate frequency plan designed to keep interference to minimum.
 \item \emph{Dynamic Frequency/Channel Assignment} (DFA/DCA) is the process of allocating channels to cells as they require it to meet the current traffic demand imposed on them by clients. 
 \end{enumerate}
 Each cell can be assigned multiple frequencies based on the amount of transmitters or TRX's it has. The amount of TRX's in a cell depends on the expected amount of traffic the particular cell must 
@@ -36,6 +29,43 @@ increase in processing time is because the algorithm has to take into account mo
 
 In this section we have given a description of the Frequency Assignment Problem and introduced some concepts which we will use throughout the dissertation. In the next section we will present the 
 Mathematics that govern the Frequency Assignment Problem.
+\section{Interference}
+In this section our disuccsion will focus on Interference. We will describe what interference is and why it is important for cellular networks as well as give an overview of when interference occurs.
+
+Interference occurs when frequencies assigned to connections differ by a small margin. The amount of inference on a connection defines the \emph{Quality of Service} (QoS). One can naturally make the deduction that the more frequencies differ used on connections in a area, the better quality of service one will experience in that area. 
+
+Cellular networks use the amount of interference on their networks as qualitative measure for their QoS. A network with high interference would experience a lot of dropped connections/calls, which occurs when the interference is too high to sustain a connection or call for communication, consequently their QoS degrades as interfernece increases.
+
+In the literature a variety of methods are given to calculate the amount of interference in a network. These methods range from theoretical approaches to precise measurements. Regardless of what method is used the end result which they all produce is called an \emph{Interference Matrix} denoted as \emph{M}\cite{ACOvsEA}.
+
+An Interference Matrix concists of a number of cell pairs (\emph{i,j}), where \emph{i} is the cell receiving interference and \emph{j} the cell whose allocated channel is providing the interence. Each cell pair in the matrix has two corresponding values that indicate the level of interference if the \emph{Electromagnetic constraints} are violated \cite{Eisenblatter,Karen2004,ACOvsEA}. These values are usually normalized to be between 0.0 and 1.0 \cite{AndreasPaper}.
+
+Primarily Interference occurs when the Electromagnetic constraints are violated, which are defined as:
+\begin{description}
+\item[Co-Channel] --- When a cell \emph{i} and a cell \emph{j} operate on the same frequency or channel interference will occur \cite{Eisenblatter,EfficientEvoChannelManagement,Karen2004,ACOvsEA,InterferenceOrientatedFAP}. This is called co-channel interference. This constraint is the most important constraint that must not be violated to ensure proper performance and reliability of a modren cellular network\cite{EfficientEvoChannelManagement}.
+\item[Adjacent Channel] --- When a cell \emph{i} and a cell \emph{j} operate on adjacent channels, their allocated frequencies differ by one i.e. cell \emph{i} operates on channel \emph{f} then if cell \emph{j} operates on either channel \emph{f - 1} or \emph{f + 1} then adjacent channel interference will occur \cite{Eisenblatter,EfficientEvoChannelManagement,Karen2004,ACOvsEA,InterferenceOrientatedFAP}
+\item[Co-Site] --- If cell \emph{i} and cell {j} are located at the same site, then their allocated frequency ranges must differ by a certain distance in the frequency domain. This distance is known as the reuse distance \cite{FixedFAPPSO,EgyptFAPPSO}.
+\end{description}
+A fourth constraint, kown as the Handover constraint, is also applicable in Cellular networks. This constraint imposes a separation in frequencies when one cell hands over a call to another cell. If this constrain is violated a mobile subscriber will experience a dropped call since the handover between cells fials.The above constraints only account for factors that are in our control.
+
+Interference also occurs due to techincal limitations, natural phenonema and other external factors like other systems. Thus another constraint is imposed on the frequency that is allocated to cell. This constraint is known as the \emph{separation} constraint which imposes a minimum separation between frequencies assigned to a cell \cite{Eisenblatter,InterferenceOrientatedFAP}. To avoid clashes with other operator frequencies each cell may also have a set of locally forbidden frequencies which are not allowed to be used under any circamstance.
+
+In this section we described what interfenece is and what the consiquences are of too much interfence in a network. We also laid out under which circumstances interference can occur in a cellular network. In the next section we will give a Mathematical Formulation of the Frequency Assignment Problem.
+\section{Mathematical Formulation}
+In this section we will give a Mathematical definition of the Frequency Assignment Problem which will form the core of what our algorithm discussed in this paper will optimize. We'll start of by denoting the symbols we will use and then we will give the Mathematical definition using our denoted symbols.
+
+Let \((V,E)\) be an undirected graph called \(G\) with vertex and edge labelings. A vertex is introduced for each transmitter or carrier representing the TRX. An edge for every interdependency between corresponding transmitters. The spectrum \(C\) is an interval in the frequency domain.The traffic demand requirement is denoted by a \(n\)-element vector represented by \(d\). Each element \(d_i\) represents the amount of channels to be assigned to cell \(i\).
+
+There are three types of interdependencies recorded between transmitters with edge labels.
+\begin{enumerate}
+\item \emph{Seperation} --- \(d(vw) \subseteq \{0,1,2,3\}\) is the minimum required difference of the channels assigned to \(v\) and \(w\).
+\item \emph{co-channel interference} --- \(c^co (vw) : E \rightarrow [0,1]\) where E denotes the amount of interference incurred if the same channel is allocated to \(v\) and \(w\).
+\item \emph{adj-channel interference} --- \(c^adj (vw) : E \rightarrow [0,1]\) where E denotes the amount of interference incurred if the channel allocted to \(v\) and \(w\) violated the adjacent channel constraint.
+\end{enumerate}
+
+Let \(M = \lbrace (co^co (vw),co^adj (vw))\rbrace\) be a given matrix called the interference matrix.
+
+In this section we Mathematically defined the Frequency Assignment Problem using the symbols we defined. In the next section we will give a brief discussion on the different Frequency Assignment Problems that exist and also define the the problem we will concentrate on through the rest of this disseration.
 \section{Types of Frequency Assignment Problems}
 \subsection{Minimum Order Frequency Assignment Problem}
 \subsection{Minimum Span (MS) Frequency Assignment Problem}

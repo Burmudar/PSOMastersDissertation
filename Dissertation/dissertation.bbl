@@ -1,15 +1,35 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{FAPOrientationModel}
 Ralf Borndörfer, Andreas Eisenblätter, Martin Grötschel, and Alexander
   Martin.
 \newblock The orientation model for frequency assignment problems, 1998.
 
+\bibitem{AndreasPaper}
+Andreas Eisenbl{\"a}tter.
+\newblock Assigning frequencies in gsm networks.
+\newblock Technical report, Konrad-Zuse-Zentrum f{\"u}r Informationstechnik
+  Berlin (ZIB), 2001.
+
 \bibitem{Eisenblatter}
 Andreas Eisenbl{\"a}tter.
 \newblock {\em Frequency Assignment in {GSM} Networks: {M}odels, Heuristics,
   and Lower Bounds}.
 \newblock PhD thesis, Technische Universit{\"a}t Berlin, Berlin, Germany, 2001.
+
+\bibitem{EfficientEvoChannelManagement}
+Joe Rodriguez-Tellez Harilaos G.~Standalidis, Peter P.~Stavroulakis.
+\newblock An efficient evolutionary algorithm for channel resource management
+  in cellular mobile systems.
+\newblock {\em IEEE Transactions of Evolutionary Computation}, 2(4):125--137,
+  November 1998.
+
+\bibitem{EgyptFAPPSO}
+Hassan M.~Elragal Hassan M.~Elkamchouchi.
+\newblock Channel assignment for cellular radio using particle swarm
+  optimization.
+\newblock In {\em The 23rd National radio Science Conference (NRSC 2006)},
+  March 2006.
 
 \bibitem{Karen2004}
 {Karen I. Aardal, Stan P. M. van Hoesel, Arie M. C. A. Koster Contact
@@ -47,10 +67,23 @@ Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
   Advances in Information Security}.
 \newblock Springer US, 2008.
 
+\bibitem{InterferenceOrientatedFAP}
+P.~Demestichas E.~Tzifa S.~Kotrotsos, G.~Kotsakis and V.~Demesticha.
+\newblock Forumlation and computationally efficient algirithms for an
+  interference-orientated version of the frequency assignment problem.
+\newblock {\em Wireless Personal Communications}, 18:289--317, 2001.
+
 \bibitem{tabuglobalplanning3g}
 Marc St-Hilaire, Steven Chamberland, and Samuel Pierre.
 \newblock A tabu search algorithm for the global planning problem of third
   generation mobile networks.
 \newblock {\em Comput. Electr. Eng.}, 34(6):470--487, 2008.
+
+\bibitem{FixedFAPPSO}
+Dominic C~O'Brien Yangyang~Zhang.
+\newblock Fixed channel assignment in cellular radio networks using particle
+  swarm optimization.
+\newblock In {\em Proceedings of the Internation Symposium of Industrial
+  Electronics}, June 2005.
 
 \end{thebibliography}
