@@ -3,10 +3,10 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="PSOFAP/Main.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PSOFAP/FAPPSO/FAPPSOAlgorithm.cs" ctype="Workbench">
     <Files>
       <File FileName="PSOFAP/FAPPSO/FAPCostFunction.cs" Line="33" Column="31" />
-      <File FileName="PSOFAP/FAPPSO/FAPPSOAlgorithm.cs" Line="46" Column="122" />
+      <File FileName="PSOFAP/FAPPSO/FAPPSOAlgorithm.cs" Line="49" Column="27" />
       <File FileName="PSOFAP/Main.cs" Line="67" Column="3" />
     </Files>
     <Pads>
