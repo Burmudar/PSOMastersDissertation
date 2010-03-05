@@ -59,11 +59,11 @@ Let \((V,E)\) be an undirected graph called \(G\) with vertex and edge labelings
 There are three types of interdependencies recorded between transmitters with edge labels.
 \begin{enumerate}
 \item \emph{Seperation} --- \(d(vw) \subseteq \{0,1,2,3\}\) is the minimum required difference of the channels assigned to \(v\) and \(w\).
-\item \emph{co-channel interference} --- \(c^co (vw) : E \rightarrow [0,1]\) where E denotes the amount of interference incurred if the same channel is allocated to \(v\) and \(w\).
-\item \emph{adj-channel interference} --- \(c^adj (vw) : E \rightarrow [0,1]\) where E denotes the amount of interference incurred if the channel allocted to \(v\) and \(w\) violated the adjacent channel constraint.
+\item \emph{co-channel interference} --- \(c^{co} (vw) : E \rightarrow [0,1]\) where E denotes the amount of interference incurred if the same channel is allocated to \(v\) and \(w\).
+\item \emph{adj-channel interference} --- \(c^{adj} (vw) : E \rightarrow [0,1]\) where E denotes the amount of interference incurred if the channel allocted to \(v\) and \(w\) violated the adjacent channel constraint.
 \end{enumerate}
 
-Let \(M = \lbrace (co^co (vw),co^adj (vw))\rbrace\) be a given matrix called the interference matrix.
+Let \(M = \lbrace (c^{co} (vw),co^{adj} (vw))\rbrace\) be a given matrix called the interference matrix.
 
 In this section we Mathematically defined the Frequency Assignment Problem using the symbols we defined. In the next section we will give a brief discussion on the different Frequency Assignment Problems that exist and also define the the problem we will concentrate on through the rest of this disseration.
 \section{Types of Frequency Assignment Problems}
