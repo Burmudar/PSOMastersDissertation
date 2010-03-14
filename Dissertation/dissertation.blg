@@ -10,43 +10,43 @@ Database file #1: ReferenceDB.bib
 Warning--can't use both author and editor fields in GSMSecurInTeleNetwork
 You've used 15 entries,
             2118 wiz_defined-function locations,
-            599 strings with 6940 characters,
-and the built_in function-call counts, 4042 in all, are:
-= -- 384
-> -- 154
+            603 strings with 6976 characters,
+and the built_in function-call counts, 4171 in all, are:
+= -- 399
+> -- 160
 < -- 2
-+ -- 67
-- -- 48
-* -- 243
-:= -- 698
++ -- 69
+- -- 50
+* -- 261
+:= -- 714
 add.period$ -- 45
 call.type$ -- 15
-change.case$ -- 65
+change.case$ -- 66
 chr.to.int$ -- 0
 cite$ -- 16
-duplicate$ -- 176
-empty$ -- 358
-format.name$ -- 48
-if$ -- 845
+duplicate$ -- 177
+empty$ -- 368
+format.name$ -- 50
+if$ -- 872
 int.to.chr$ -- 0
 int.to.str$ -- 15
 missing$ -- 16
 newline$ -- 77
 num.names$ -- 30
-pop$ -- 87
+pop$ -- 86
 preamble$ -- 1
-purify$ -- 54
+purify$ -- 55
 quote$ -- 0
-skip$ -- 107
+skip$ -- 108
 stack$ -- 0
-substring$ -- 194
+substring$ -- 219
 swap$ -- 26
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 52
 warning$ -- 1
-while$ -- 38
+while$ -- 40
 width$ -- 17
-write$ -- 161
+write$ -- 162
 (There was 1 warning)

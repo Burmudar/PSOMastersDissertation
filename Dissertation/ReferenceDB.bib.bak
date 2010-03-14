@@ -123,6 +123,20 @@
   location = {Seattle, Washington, USA}
 }
 
+@ARTICLE{TabuMontemanniSmith,
+  author = {Montemanni, Roberto and Smith, Derek H.},
+  title = {Heuristic manipulation, tabu search and frequency assignment},
+  journal = {Comput. Oper. Res.},
+  year = {2008},
+  volume = {37},
+  pages = {543--551},
+  number = {3},
+  address = {Oxford, UK, UK},
+  doi = {http://dx.doi.org/10.1016/j.cor.2008.08.006},
+  issn = {0305-0548},
+  publisher = {Elsevier Science Ltd.}
+}
+
 @BOOK{wirelesstelcoMullet,
   title = {Wireless telecommunications systems and networks},
   publisher = {Thomsan Delmar Learning},

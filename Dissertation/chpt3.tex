@@ -56,25 +56,21 @@ In this section we described what interfenece is and what the consiquences are o
 \subsection{Minimum Span Frequency Assignment Problem (MS-FAP)}
 \subsection{Minimum Interference Frequency Assignment Problem (MI-FAP)}
 \section{Fixed Spectrum MI-FAP Mathematical Formulation}
-In this section we will give a Mathematical definition of the Frequency Assignment Problem which will form the core of what our algorithm discussed in this paper will optimize. We'll start of by denoting the symbols we will use and then we will give the Mathematical definition of the cost function we will try to minimize using our denoted symbols.
+In this section we will give a Mathematical definition of the Frequency Assignment Problem which will form the core of what our algorithm discussed in this dissertation will optimize. We'll start of by denoting the symbols we will use and then we will give the Mathematical definition of the cost function we will try to minimize.
 
 The Frequency Assignment Problem can be represented as a graph colouring problem hence it is known to be NP-Complete. Before we can formally define the Frequency Assignment Problem we first need to introduce some symbol definitions.
 
-Let \(G = (V,E)\) be a weighted undirected graph, where \(V = \{v_0,v_1,...,v_n\}\), \(i \in \mathbb{N}\) is a set of vertices. Each \(v \in V(G)\) represents a transmitter in the frequency assignment problem. \(E = \{v_{01},v_{02},...,v_{ij}\}, ij \in \mathbb{N}\) is a set of edges. An edge consists of two vertices that are joined because there exists a constraint on the frequencies that can be assigned to the between the two vertices or transmitters. 
+Let $G = (V,E)$ be a weighted undirected graph, where $V = \{v_0,v_1,...,v_n\}$, $i \in \mathbb{N}$ is a set of vertices. Each $v \in V(G)$ represents a transmitter in the frequency assignment problem. $E = \{v_0v_1,v_0v_2,...,v_iv_j\}$ is a set of edges where $v \in V,\forall ij \in \mathbb{N},i \neq j$ . An edge consists of two vertices $v_i$ and $v_j$ that are joined because there exists a constraint on the frequencies that can be assigned between the two vertices or transmitters. Each edge has two associated labels $d_{ij}$ and $p_ij$ \cite{FAPOrientationModel,TabuMontemanniSmith}. 
 
-The Fixed Spectrum Frequency Assignment Problem (FS-FAP) can be described with a 5-tuple \(FS-FAP = \{V,E,D,P,F\}\) and a required mapping of \(f: V \rightarrow F\). We will now discuss what each symbol in the tuple represents \cite{TabuMontemanniSmith}.
-%Let \((V,E)\) be an undirected graph called \(G\) with vertex and edge labelings. A vertex is introduced for each transmitter or carrier representing the TRX. An edge for every interdependency between corresponding transmitters. The spectrum \(C\) is an interval in the frequency domain.The traffic demand requirement is denoted by a \(n\)-element vector represented by \(d\). Each element \(d_i\) represents the amount of channels to be assigned to cell \(i\).
+The label $d_{ij}$ that is part of the set $D = \{d_{01},d_{02},...,d_{ij}\}, \forall\{i,j\} \in E, \exists d_{ij} \in \mathbb{N}^+$ denotes the minimum separation that is requried to exists between frequencies assigned to two transmitters $v_i$ and $v_j$\cite{FAPOrientationModel,TabuMontemanniSmith}. 
 
-%There are three types of interdependencies recorded between transmitters with edge labels.
-%\begin{enumerate}
-%\item \emph{Seperation} --- \(d(vw) \subseteq \{0,1,2,3\}\) is the minimum required difference of the channels assigned to \(v\) and \(w\).
-%\item \emph{co-channel interference} --- \(c^{co} (vw) : E \rightarrow [0,1]\) where E denotes the amount of interference incurred if the same channel is allocated to \(v\) and \(w\).
-%\item \emph{adj-channel interference} --- \(c^{adj} (vw) : E \rightarrow [0,1]\) where E denotes the amount of interference incurred if the channel allocted to \(v\) and \(w\) violated the adjacent channel constraint.
-%\end{enumerate}
+The other label, $p_{ij}$, forms part of the set $P = \{\{\bar{p_{01}},\overset{=}{p_{01}}\},\{\bar{p_{02}},\overset{=}{p_{02}}\},...,$ $\{\bar{p_{ij}},\overset{=}{p_{ij}}\}\}$ where $\forall ij \in \mathbb{N}$, $\bar{p_{ij}}$ represents the value of co-channel interference and $\overset{=}{p_{ij}}$ represents the value of adjacent channel interference\cite{FAPOrientationModel,TabuMontemanniSmith}.
 
-%Let \(M = \lbrace (c^{co} (vw),co^{adj} (vw))\rbrace\) be a given matrix called the interference matrix.
+Lastly we have the set $F = {0,1,2,3,...,k}, \forall k \in \mathbb{N}$ where $\forall v \in V \exists f \in F$ denotes a set of consecutive frequencies for every transmitter in $V$\cite{FAPOrientationModel,TabuMontemanniSmith}.
 
-In this section we Mathematically defined the Frequency Assignment Problem using the symbols we defined. In the next section we will give a brief discussion on the different Frequency Assignment Problems that exist and also define the the problem we will concentrate on through the rest of this disseration.
+Formally the Fixed Spectrum Frequency Assignment Problem (FS-FAP) can now be defined as a 5-tuple \(FS-FAP = \{V,E,D,P,F\}\) with a required mapping of \(f: V \rightarrow F\)\cite{TabuMontemanniSmith}. The objective of the FS-FAP is to find an assignment of frequencies to transmitters than minimizes
+
+In this section we Mathematically defined the Frequency Assignment Problem using the symbols we defined. In the next section we will give a brief discussion on the different Frequency Assignment Benchmark Problems that exist and also define the benchmark we will be using in our implemention.
 \section{FAP Benchmarks}
 \paragraph{Philledelphia Benchmark}
 \paragraph{Calma Project}

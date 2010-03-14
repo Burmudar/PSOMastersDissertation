@@ -56,6 +56,11 @@ Marie-Bernadette~Pautet Michel~Mouly.
 \newblock {\em The GSM System for Mobile Communications}.
 \newblock Cell \& Sys, 1992.
 
+\bibitem{TabuMontemanniSmith}
+Roberto Montemanni and Derek~H. Smith.
+\newblock Heuristic manipulation, tabu search and frequency assignment.
+\newblock {\em Comput. Oper. Res.}, 37(3):543--551, 2008.
+
 \bibitem{wirelesstelcoMullet}
 Garry Mullet.
 \newblock {\em Wireless telecommunications systems and networks}.
@@ -66,11 +71,6 @@ Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
 \newblock {\em Security for Telecommunications Networks}, volume~40 of {\em
   Advances in Information Security}.
 \newblock Springer US, 2008.
-
-\bibitem{TabuMontemanniSmith}
-Derek H.~Smith Roberto~Montemanni.
-\newblock Heuristic manipulation, tabu search and frequency assignment.
-\newblock {\em Computers \& Operations Research}, 2008.
 
 \bibitem{InterferenceOrientatedFAP}
 P.~Demestichas E.~Tzifa S.~Kotrotsos, G.~Kotsakis and V.~Demesticha.
