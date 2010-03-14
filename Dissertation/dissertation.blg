@@ -5,13 +5,12 @@ A level-1 auxiliary file: chpt2.aux
 A level-1 auxiliary file: chpt3.aux
 A level-1 auxiliary file: chpt4.aux
 A level-1 auxiliary file: chpt5.aux
-A level-1 auxiliary file: chpt6.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
 Warning--can't use both author and editor fields in GSMSecurInTeleNetwork
 You've used 14 entries,
             2118 wiz_defined-function locations,
-            595 strings with 6785 characters,
+            594 strings with 6776 characters,
 and the built_in function-call counts, 3838 in all, are:
 = -- 364
 > -- 147

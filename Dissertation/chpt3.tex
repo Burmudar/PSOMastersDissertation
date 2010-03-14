@@ -10,7 +10,7 @@ Frequency assignment is the last step in a long process of network setup. Before
 
 Frequency assignment is only a means to achieve the targeted network coverage as well as network capacity.
 
-In this section we gave a brief introduction as to what the Frequency Assignment Problem is and why it occurs as well as why it is a problem. In the next section we will describe the types of Frequency Assignment in use today and we will also define which one we will concentrate on.
+In this section we gave a brief introduction as to what the Frequency Assignment Problem is and why it occurs as well as why it is a problem. In the next section we will describe the types of Frequency Assignment in use today and we will also discuss some of the varaints of FAP and also formally define which of the variants we will concentrate on.
 \section{Frequency Assignment Types}
 In this section we will discuss the different methods that exist to allocate frequencies to cells in a cellular network. We will also state which method we will use through out this paper.
 
@@ -51,8 +51,12 @@ A fourth constraint, kown as the Handover constraint, is also applicable in Cell
 Interference also occurs due to techincal limitations, natural phenonema and other external factors like other systems. Thus another constraint is imposed on the frequency that is allocated to cell. This constraint is known as the \emph{separation} constraint which imposes a minimum separation between frequencies assigned to a cell \cite{Eisenblatter,InterferenceOrientatedFAP}. To avoid clashes with other operator frequencies each cell may also have a set of locally forbidden frequencies which are not allowed to be used under any circamstance.
 
 In this section we described what interfenece is and what the consiquences are of too much interfence in a network. We also laid out under which circumstances interference can occur in a cellular network. In the next section we will give a Mathematical Formulation of the Frequency Assignment Problem.
-\section{Mathematical Formulation}
-In this section we will give a Mathematical definition of the Frequency Assignment Problem which will form the core of what our algorithm discussed in this paper will optimize. We'll start of by denoting the symbols we will use and then we will give the Mathematical definition using our denoted symbols.
+\section{Types of Frequency Assignment Problems}
+\subsection{Minimum Order Frequency Assignment Problem (MO-FAP)}
+\subsection{Minimum Span Frequency Assignment Problem (MS-FAP)}
+\subsection{Minimum Interference Frequency Assignment Problem (MI-FAP)}
+\section{Fixed Spectrum MI-FAP Mathematical Formulation}
+In this section we will give a Mathematical definition of the Frequency Assignment Problem which will form the core of what our algorithm discussed in this paper will optimize. We'll start of by denoting the symbols we will use and then we will give the Mathematical definition of the cost function we will try to minimize using our denoted symbols.
 
 Let \((V,E)\) be an undirected graph called \(G\) with vertex and edge labelings. A vertex is introduced for each transmitter or carrier representing the TRX. An edge for every interdependency between corresponding transmitters. The spectrum \(C\) is an interval in the frequency domain.The traffic demand requirement is denoted by a \(n\)-element vector represented by \(d\). Each element \(d_i\) represents the amount of channels to be assigned to cell \(i\).
 
@@ -66,8 +70,14 @@ There are three types of interdependencies recorded between transmitters with ed
 Let \(M = \lbrace (c^{co} (vw),co^{adj} (vw))\rbrace\) be a given matrix called the interference matrix.
 
 In this section we Mathematically defined the Frequency Assignment Problem using the symbols we defined. In the next section we will give a brief discussion on the different Frequency Assignment Problems that exist and also define the the problem we will concentrate on through the rest of this disseration.
-\section{Types of Frequency Assignment Problems}
-\subsection{Minimum Order Frequency Assignment Problem}
-\subsection{Minimum Span (MS) Frequency Assignment Problem}
-\subsection{Fixed Spectrum (FS) Frequency Assignment Problem}
+\section{FAP Benchmarks}
+\paragraph{Philledelphia Benchmark}
+\paragraph{Calma Project}
+\paragraph{COST 256}
+\section{FAP in the industry}
+\paragraph{Satelite communication}
+\paragraph{Wireless mesh networks}
+\paragraph{Military field communication}
+\paragraph{Media Broadcasting}
+\paragraph{Cellular Communication}
 \section{Summary}
