@@ -45,7 +45,7 @@
   timestamp = {2010.02.14}
 }
 
-@CONFERENCE{,
+@CONFERENCE{EgyptFAPPSO,
   author = {Hassan M. Elkamchouchi, Hassan M. Elragal},
   title = {Channel Assignment for Cellular Radio using Particle Swarm Optimization},
   booktitle = {The 23rd National radio Science Conference (NRSC 2006)},
@@ -170,6 +170,17 @@
   doi = {http://dx.doi.org/10.1016/j.compeleceng.2008.02.001},
   issn = {0045-7906},
   publisher = {Pergamon Press, Inc.}
+}
+
+@INPROCEEDINGS{FixedFAPPSO,
+  author = {Yangyang Zhang, Dominic C O'Brien},
+  title = {Fixed Channel Assignment in Cellular Radio Networks Using Particle
+	Swarm Optimization},
+  booktitle = {Proceedings of the Internation Symposium of Industrial Electronics},
+  year = {2005},
+  month = {June},
+  owner = {william},
+  timestamp = {2010.02.14}
 }
 
 @comment{jabref-meta: selector_publisher:}

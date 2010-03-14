@@ -67,6 +67,11 @@ Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
   Advances in Information Security}.
 \newblock Springer US, 2008.
 
+\bibitem{TabuMontemanniSmith}
+Derek H.~Smith Roberto~Montemanni.
+\newblock Heuristic manipulation, tabu search and frequency assignment.
+\newblock {\em Computers \& Operations Research}, 2008.
+
 \bibitem{InterferenceOrientatedFAP}
 P.~Demestichas E.~Tzifa S.~Kotrotsos, G.~Kotsakis and V.~Demesticha.
 \newblock Forumlation and computationally efficient algirithms for an
