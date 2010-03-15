@@ -30,13 +30,14 @@ increase in processing time is because the algorithm has to take into account mo
 In this section we have given a description of the Frequency Assignment Problem and introduced some concepts which we will use throughout the dissertation. In the next section we will present the 
 Mathematics that govern the Frequency Assignment Problem.
 \section{Interference}
+\label{sec:Interference}
 In this section our disuccsion will focus on Interference. We will describe what interference is and why it is important for cellular networks as well as give an overview of when interference occurs.
 
 Interference occurs when frequencies assigned to connections differ by a small margin. The amount of inference on a connection defines the \emph{Quality of Service} (QoS). One can naturally make the deduction that the more frequencies differ used on connections in a area, the better quality of service one will experience in that area. 
 
 Cellular networks use the amount of interference on their networks as qualitative measure for their QoS. A network with high interference would experience a lot of dropped connections/calls, which occurs when the interference is too high to sustain a connection or call for communication, consequently their QoS degrades as interfernece increases.
 
-In the literature a variety of methods are given to calculate the amount of interference in a network. These methods range from theoretical approaches to precise measurements. Regardless of what method is used the end result which they all produce is called an \emph{Interference Matrix} denoted as \emph{M}\cite{ACOvsEA}.
+In the literature a variety of methods are given to calculate the amount of interference in a network. These methods range from theoretical approaches to precise measurements. Regardless of what method is used the end result which they all produce is called an \emph{Interference Matrix}\cite{ACOvsEA}.
 
 An Interference Matrix concists of a number of cell pairs (\emph{i,j}), where \emph{i} is the cell receiving interference and \emph{j} the cell whose allocated channel is providing the interence. Each cell pair in the matrix has two corresponding values that indicate the level of interference if the \emph{Electromagnetic constraints} are violated \cite{Eisenblatter,Karen2004,ACOvsEA}. These values are usually normalized to be between 0.0 and 1.0 \cite{AndreasPaper}.
 
@@ -48,7 +49,7 @@ Primarily Interference occurs when the Electromagnetic constraints are violated,
 \end{description}
 A fourth constraint, kown as the Handover constraint, is also applicable in Cellular networks. This constraint imposes a separation in frequencies when one cell hands over a call to another cell. If this constrain is violated a mobile subscriber will experience a dropped call since the handover between cells fials.The above constraints only account for factors that are in our control.
 
-Interference also occurs due to techincal limitations, natural phenonema and other external factors like other systems. Thus another constraint is imposed on the frequency that is allocated to cell. This constraint is known as the \emph{separation} constraint which imposes a minimum separation between frequencies assigned to a cell \cite{Eisenblatter,InterferenceOrientatedFAP}. To avoid clashes with other operator frequencies each cell may also have a set of locally forbidden frequencies which are not allowed to be used under any circamstance.
+Interference also occurs due to techincal limitations, natural phenonema and other external factors like other systems. Thus another constraint is imposed on the frequency that is allocated to cell. This constraint is known as the \emph{separation} constraint which imposes a minimum separation between frequencies assigned to a cell \cite{Eisenblatter,InterferenceOrientatedFAP}. To avoid clashes with other operator frequencies each cell may also have a set of locally forbidden frequencies which are not allowed to be used under any circumstance.
 
 In this section we described what interfenece is and what the consiquences are of too much interfence in a network. We also laid out under which circumstances interference can occur in a cellular network. In the next section we will give a Mathematical Formulation of the Frequency Assignment Problem.
 \section{Types of Frequency Assignment Problems}
@@ -56,19 +57,45 @@ In this section we described what interfenece is and what the consiquences are o
 \subsection{Minimum Span Frequency Assignment Problem (MS-FAP)}
 \subsection{Minimum Interference Frequency Assignment Problem (MI-FAP)}
 \section{Fixed Spectrum MI-FAP Mathematical Formulation}
-In this section we will give a Mathematical definition of the Frequency Assignment Problem which will form the core of what our algorithm discussed in this dissertation will optimize. We'll start of by denoting the symbols we will use and then we will give the Mathematical definition of the cost function we will try to minimize.
+In this section we will give a Mathematical definition of the Frequency Assignment Problem which will form the core of what our algorithm discussed in this dissertation will optimize. We'll start of by denoting the symbols we will use and then we will give the Mathematical definition of the cost function we will minimize.
 
 The Frequency Assignment Problem can be represented as a graph colouring problem hence it is known to be NP-Complete. Before we can formally define the Frequency Assignment Problem we first need to introduce some symbol definitions.
 
-Let $G = (V,E)$ be a weighted undirected graph, where $V = \{v_0,v_1,...,v_n\}$, $i \in \mathbb{N}$ is a set of vertices. Each $v \in V(G)$ represents a transmitter in the frequency assignment problem. $E = \{v_0v_1,v_0v_2,...,v_iv_j\}$ is a set of edges where $v \in V,\forall ij \in \mathbb{N},i \neq j$ . An edge consists of two vertices $v_i$ and $v_j$ that are joined because there exists a constraint on the frequencies that can be assigned between the two vertices or transmitters. Each edge has two associated labels $d_{ij}$ and $p_ij$ \cite{FAPOrientationModel,TabuMontemanniSmith}. 
+\begin{align}
+	G &= (V,E) \label{E:setG}\\
+	V &= \{v_{0},v_{1},...,v_{i}\} | i \in \mathbb{N} \label{E:setV}\\
+	E &= \{v_0v_1,v_0v_2,...,v_iv_j\}|v \in V,\forall ij \in \mathbb{N},i \neq j \label{E:setE}\\
+	D &= \{d_{01},d_{02},...,d_{ij}\}| \forall\{i,j\} \in E, \exists d_{ij} \in \mathbb{N}^+ \label{E:setD}\\
+	P &= \{\{\bar{p_{00}},\overset{=}{p_{01}}\},\{\bar{p_{10}},\overset{=}{p_{11}}\},\ldots,\bar{p_{i0}},\overset{=}{p_{i1}}\}\}| \forall \{i,j\} \in E,\exists p_{ij} \in \mathbb{N}^+ \label{E:setP}\\
+	F &= \{0,1,2,3,...,k\}| \forall k \in \mathbb{N},\forall v \in V \exists f \in F\label{E:setF}\\
+	d_{ij} &< |f(i) - f(j)|, \forall ij \in \mathbb{N},i \neq j \label{E:interference}
+\end{align}
 
-The label $d_{ij}$ that is part of the set $D = \{d_{01},d_{02},...,d_{ij}\}, \forall\{i,j\} \in E, \exists d_{ij} \in \mathbb{N}^+$ denotes the minimum separation that is requried to exists between frequencies assigned to two transmitters $v_i$ and $v_j$\cite{FAPOrientationModel,TabuMontemanniSmith}. 
+Let $G$ (see~\ref{E:setG}) be a weighted undirected graph, where $V$ (see~\ref{E:setV}) is a set of vertices. Each $v \in V(G)$ represents a transmitter in the frequency assignment problem. 
 
-The other label, $p_{ij}$, forms part of the set $P = \{\{\bar{p_{01}},\overset{=}{p_{01}}\},\{\bar{p_{02}},\overset{=}{p_{02}}\},...,$ $\{\bar{p_{ij}},\overset{=}{p_{ij}}\}\}$ where $\forall ij \in \mathbb{N}$, $\bar{p_{ij}}$ represents the value of co-channel interference and $\overset{=}{p_{ij}}$ represents the value of adjacent channel interference\cite{FAPOrientationModel,TabuMontemanniSmith}.
+$E$ (see~\ref{E:setE}) is a set of edges. An edge consists of two vertices $v_i$ and $v_j$ that are joined because there exists a constraint on the frequencies that can be assigned between the two vertices or transmitters. Each edge has two associated labels $d_{ij}$ and $p_{ij}$ \cite{FAPOrientationModel,TabuMontemanniSmith}. 
 
-Lastly we have the set $F = {0,1,2,3,...,k}, \forall k \in \mathbb{N}$ where $\forall v \in V \exists f \in F$ denotes a set of consecutive frequencies for every transmitter in $V$\cite{FAPOrientationModel,TabuMontemanniSmith}.
+The label $d_{ij}$ that is part of the set $D$ (see~\ref{E:setD}) denotes the maximum separation that is requried to exists between frequencies assigned to two transmitters $v_i$ and $v_j$. Using $f(i)$ to denote the frequency assigned to $i$, we can determine using equation \ref{E:interference} if the interference involving the transmitters $v_i$ and $v_j$ is acceptable\cite{FAPOrientationModel,TabuMontemanniSmith}
 
-Formally the Fixed Spectrum Frequency Assignment Problem (FS-FAP) can now be defined as a 5-tuple \(FS-FAP = \{V,E,D,P,F\}\) with a required mapping of \(f: V \rightarrow F\)\cite{TabuMontemanniSmith}. The objective of the FS-FAP is to find an assignment of frequencies to transmitters than minimizes
+The other label, $p_{ij}$, forms part of the set $P$ (see~\ref{E:setP}) which is refered to as the Interference Matrix\footnote{Discussed in section \ref{sec:Interference} page \pageref{sec:Interference}}. Each label $p_{ij}$ contains two values which represents interference\footnote{Interference values can be zero in some cases}:
+\begin{itemize}
+\item $\bar{p_{i0}}$ represents the value for co-channel interference \cite{FAPOrientationModel,TabuMontemanniSmith}. 
+\item $\overset{=}{p_{i1}}$ represents the value for adjacent channel interference\cite{FAPOrientationModel,TabuMontemanniSmith}.
+\end{itemize}
+
+Lastly we have the set $F$ (see~\ref{E:setF}) that denotes a set of consecutive frequencies for every transmitter in $V$\cite{FAPOrientationModel,TabuMontemanniSmith}.
+
+Formally the Fixed Spectrum Frequency Assignment Problem (FS-FAP) can now be defined as a 5-tuple \(FS-FAP = \{V,E,D,P,F\}\) with a required mapping of \(f: V \rightarrow F\)\cite{TabuMontemanniSmith}. The objective of the FS-FAP is to find an assignment of frequencies to transmitters that minimizes the sum of total interference (see ~\ref{E:costFunction}).
+
+\begin{align} 
+ c(p_i) &= 
+ \begin{cases}
+	\bar{p_{i0}} &,\text{if $|f(i) - f(j)| = 0$}\\
+	\overset{=}{p_{i1}} &, \text{if $|f(i) - f(j)| \leqslant d_{ij}$}\\
+	0 &,\text{if $|f(i) - f(j)| > d_{ij}$}
+ \end{cases}\\
+ Total Interference &= \sum^\mathbb{P}_{i = 0}c(p_i),p \in P \label{E:costFunction}
+\end{align}
 
 In this section we Mathematically defined the Frequency Assignment Problem using the symbols we defined. In the next section we will give a brief discussion on the different Frequency Assignment Benchmark Problems that exist and also define the benchmark we will be using in our implemention.
 \section{FAP Benchmarks}

@@ -27,17 +27,17 @@
 \contentsline {subsection}{\numberline {3.4.2}Minimum Span Frequency Assignment Problem (MS-FAP)}{29}
 \contentsline {subsection}{\numberline {3.4.3}Minimum Interference Frequency Assignment Problem (MI-FAP)}{29}
 \contentsline {section}{\numberline {3.5}Fixed Spectrum MI-FAP Mathematical Formulation}{29}
-\contentsline {section}{\numberline {3.6}FAP Benchmarks}{30}
-\contentsline {paragraph}{Philledelphia Benchmark}{30}
-\contentsline {paragraph}{Calma Project}{30}
-\contentsline {paragraph}{COST 256}{30}
-\contentsline {section}{\numberline {3.7}FAP in the industry}{31}
-\contentsline {paragraph}{Satelite communication}{31}
-\contentsline {paragraph}{Wireless mesh networks}{31}
-\contentsline {paragraph}{Military field communication}{31}
-\contentsline {paragraph}{Media Broadcasting}{31}
-\contentsline {paragraph}{Cellular Communication}{31}
-\contentsline {section}{\numberline {3.8}Summary}{31}
+\contentsline {section}{\numberline {3.6}FAP Benchmarks}{31}
+\contentsline {paragraph}{Philledelphia Benchmark}{31}
+\contentsline {paragraph}{Calma Project}{31}
+\contentsline {paragraph}{COST 256}{31}
+\contentsline {section}{\numberline {3.7}FAP in the industry}{32}
+\contentsline {paragraph}{Satelite communication}{32}
+\contentsline {paragraph}{Wireless mesh networks}{32}
+\contentsline {paragraph}{Military field communication}{32}
+\contentsline {paragraph}{Media Broadcasting}{32}
+\contentsline {paragraph}{Cellular Communication}{32}
+\contentsline {section}{\numberline {3.8}Summary}{32}
 \contentsline {chapter}{\numberline {4}Metaheuristics Algorithms}{33}
 \contentsline {section}{\numberline {4.1}Introduction}{33}
 \contentsline {chapter}{\numberline {5}Swarm Intelligence}{35}
