@@ -1,9 +1,33 @@
 \begin{thebibliography}{10}
 
+\bibitem{CALMA}
+Karen Aardal, Cor Hurkens, Jan~Karel Lenstra, and Sergey Tiourine.
+\newblock Algorithm for radio link frequency assignment: The calma project.
+\newblock {\em Operations Research}, 50(6):968--980, 2002.
+
+\bibitem{Karen2004}
+Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
+  and Antonio Sassano.
+\newblock Models and solution techniques for frequency assignment problems.
+\newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
+  December 2004.
+
 \bibitem{FAPOrientationModel}
 Ralf Borndörfer, Andreas Eisenblätter, Martin Grötschel, and Alexander
   Martin.
 \newblock The orientation model for frequency assignment problems, 1998.
+
+\bibitem{SiteFAPWLAN}
+Jeremy~K. Chen, Gustavo de~Veciana, and Theodore~S. Rappaport.
+\newblock Site-specific knowledge and interference measurement for improving
+  frequency allocatoins in wireless networks.
+\newblock {\em IEEE Transactions on Vehicular Technology}, 58:2366--2376, 2009.
+
+\bibitem{DynamicFAP}
+Audrey Dupont, Andrea~Carneiro Linhares, Christian Artigues, Dominique Feillet,
+  Philippe, and Michel Vasquez.
+\newblock The dynamic frequency assignment problem.
+\newblock {\em European Journal of Operational Research}, 195:75--88, 2009.
 
 \bibitem{AndreasPaper}
 Andreas Eisenbl{\"a}tter.
@@ -31,12 +55,24 @@ Hassan M.~Elragal Hassan M.~Elkamchouchi.
 \newblock In {\em The 23rd National radio Science Conference (NRSC 2006)},
   March 2006.
 
-\bibitem{Karen2004}
-{Karen I. Aardal, Stan P. M. van Hoesel, Arie M. C. A. Koster Contact
-  Information, Carlo Mannino and Antonio Sassano}.
-\newblock Models and solution techniques for frequency assignment problems.
-\newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
-  December 2004.
+\bibitem{SDMASatelite}
+L.~Houssin, C.~Artigues, and E.~Corbel.
+\newblock Frequency allocation problem in a sdma satellite communication
+  system.
+\newblock pages 1599 --1604, july 2009.
+
+\bibitem{RadioFAP}
+Lhassane Idoumghar and Ren{é} Schott.
+\newblock Two distributed algorithms for the frequency assignment problem in
+  the field of radio broadcasting.
+\newblock {\em IEEE Transactions on Broadcasting}, 55:223--229, 2009.
+
+\bibitem{MISatelite}
+Wen Liu, Haixiang Shi, and Lipo Wang.
+\newblock Minimizing interference in satellite communications using chaotic
+  neural networks.
+\newblock {\em Natural Computation, 2007. ICNC 2007. Third International
+  Conference on}, 2:441 --444, aug. 2007.
 
 \bibitem{ACOvsEA}
 Francisco Luna, Christian Blum, Enrique Alba, and Antonio~J. Nebro.
@@ -56,6 +92,12 @@ Marie-Bernadette~Pautet Michel~Mouly.
 \newblock {\em The GSM System for Mobile Communications}.
 \newblock Cell \& Sys, 1992.
 
+\bibitem{MontemanniThesis}
+Roberto Montemanni.
+\newblock {\em Upper and Lower bounds for the fixed spectrum frequency
+  assignment problem}.
+\newblock PhD thesis, School of Tecnology, University of Glamorgan, 2001.
+
 \bibitem{TabuMontemanniSmith}
 Roberto Montemanni and Derek~H. Smith.
 \newblock Heuristic manipulation, tabu search and frequency assignment.
@@ -72,6 +114,11 @@ Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
   Advances in Information Security}.
 \newblock Springer US, 2008.
 
+\bibitem{MSFAP}
+Angelos~N. Rouskas, Michael~G. Kazantzakis, and Miltiades~E. Anagnostou.
+\newblock Minimizing of frequency assignment span in cellular networks.
+\newblock {\em IEEE Transactions on Vehicular Technology}, 48:873--882, 1999.
+
 \bibitem{InterferenceOrientatedFAP}
 P.~Demestichas E.~Tzifa S.~Kotrotsos, G.~Kotsakis and V.~Demesticha.
 \newblock Forumlation and computationally efficient algirithms for an
@@ -83,6 +130,13 @@ Marc St-Hilaire, Steven Chamberland, and Samuel Pierre.
 \newblock A tabu search algorithm for the global planning problem of third
   generation mobile networks.
 \newblock {\em Comput. Electr. Eng.}, 34(6):470--487, 2008.
+
+\bibitem{MultiradioMeshNetworks}
+Anand~Prabhu Subramanian, Himanshu Gupta, Samir~R. Das, and Jing Cao.
+\newblock Minimum interference channel assignment multiradio wireless mesh
+  networks.
+\newblock {\em IEEE Transactions on Mobile Computing}, 7(7):1459--1473,
+  December 2008.
 
 \bibitem{FixedFAPPSO}
 Dominic C~O'Brien Yangyang~Zhang.

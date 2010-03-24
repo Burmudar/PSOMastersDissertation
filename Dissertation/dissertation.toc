@@ -22,25 +22,25 @@
 \contentsline {section}{\numberline {3.1}Introduction}{23}
 \contentsline {section}{\numberline {3.2}Frequency Assignment Types}{24}
 \contentsline {section}{\numberline {3.3}Interference}{26}
-\contentsline {section}{\numberline {3.4}Types of Frequency Assignment Problems}{29}
-\contentsline {subsection}{\numberline {3.4.1}Minimum Order Frequency Assignment Problem (MO-FAP)}{29}
-\contentsline {subsection}{\numberline {3.4.2}Minimum Span Frequency Assignment Problem (MS-FAP)}{29}
-\contentsline {subsection}{\numberline {3.4.3}Minimum Interference Frequency Assignment Problem (MI-FAP)}{29}
-\contentsline {section}{\numberline {3.5}Fixed Spectrum MI-FAP Mathematical Formulation}{29}
-\contentsline {section}{\numberline {3.6}FAP Benchmarks}{31}
-\contentsline {paragraph}{Philledelphia Benchmark}{31}
-\contentsline {paragraph}{Calma Project}{31}
-\contentsline {paragraph}{COST 256}{31}
-\contentsline {section}{\numberline {3.7}FAP in the industry}{32}
-\contentsline {paragraph}{Satelite communication}{32}
-\contentsline {paragraph}{Wireless mesh networks}{32}
-\contentsline {paragraph}{Military field communication}{32}
-\contentsline {paragraph}{Media Broadcasting}{32}
-\contentsline {paragraph}{Cellular Communication}{32}
-\contentsline {section}{\numberline {3.8}Summary}{32}
-\contentsline {chapter}{\numberline {4}Metaheuristics Algorithms}{33}
-\contentsline {section}{\numberline {4.1}Introduction}{33}
-\contentsline {chapter}{\numberline {5}Swarm Intelligence}{35}
-\contentsline {section}{\numberline {5.1}Introduction}{35}
-\contentsline {part}{II\hspace {1em}Implementation}{37}
-\contentsline {chapter}{Bibliography}{39}
+\contentsline {section}{\numberline {3.4}FAP in the industry}{28}
+\contentsline {subsection}{\numberline {3.4.1}Satelite communication}{28}
+\contentsline {subsection}{\numberline {3.4.2}Wireless mesh networks and WLANs}{30}
+\contentsline {subsection}{\numberline {3.4.3}Military field communication}{31}
+\contentsline {subsection}{\numberline {3.4.4}Television and Radio Broadcasting}{33}
+\contentsline {subsection}{\numberline {3.4.5}Cellular Communication}{33}
+\contentsline {section}{\numberline {3.5}Frequency Assignment Problem types}{35}
+\contentsline {subsection}{\numberline {3.5.1}Minimum Order FAP}{35}
+\contentsline {subsection}{\numberline {3.5.2}Minimum Span FAP}{36}
+\contentsline {subsection}{\numberline {3.5.3}Minimum Interference FAP}{36}
+\contentsline {section}{\numberline {3.6}Fixed Spectrum MI-FAP Mathematical Formulation}{37}
+\contentsline {section}{\numberline {3.7}FAP Benchmarks}{40}
+\contentsline {paragraph}{Philledelphia Benchmark}{40}
+\contentsline {paragraph}{Calma Project}{40}
+\contentsline {paragraph}{COST 256}{40}
+\contentsline {section}{\numberline {3.8}Summary}{40}
+\contentsline {chapter}{\numberline {4}Metaheuristics Algorithms}{41}
+\contentsline {section}{\numberline {4.1}Introduction}{41}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{43}
+\contentsline {section}{\numberline {5.1}Introduction}{43}
+\contentsline {part}{II\hspace {1em}Implementation}{45}
+\contentsline {chapter}{Bibliography}{47}

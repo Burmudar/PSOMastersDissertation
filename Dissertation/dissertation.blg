@@ -7,46 +7,47 @@ A level-1 auxiliary file: chpt4.aux
 A level-1 auxiliary file: chpt5.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
+Warning--empty booktitle in SDMASatelite
 Warning--can't use both author and editor fields in GSMSecurInTeleNetwork
-You've used 15 entries,
+You've used 24 entries,
             2118 wiz_defined-function locations,
-            603 strings with 6976 characters,
-and the built_in function-call counts, 4171 in all, are:
-= -- 399
-> -- 160
-< -- 2
-+ -- 69
-- -- 50
-* -- 261
-:= -- 714
-add.period$ -- 45
-call.type$ -- 15
-change.case$ -- 66
+            666 strings with 8820 characters,
+and the built_in function-call counts, 7640 in all, are:
+= -- 732
+> -- 352
+< -- 3
++ -- 145
+- -- 116
+* -- 536
+:= -- 1295
+add.period$ -- 72
+call.type$ -- 24
+change.case$ -- 125
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 177
-empty$ -- 368
-format.name$ -- 50
-if$ -- 872
+cite$ -- 26
+duplicate$ -- 289
+empty$ -- 613
+format.name$ -- 116
+if$ -- 1590
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 16
-newline$ -- 77
-num.names$ -- 30
-pop$ -- 86
+int.to.str$ -- 24
+missing$ -- 24
+newline$ -- 122
+num.names$ -- 48
+pop$ -- 135
 preamble$ -- 1
-purify$ -- 55
+purify$ -- 106
 quote$ -- 0
-skip$ -- 108
+skip$ -- 190
 stack$ -- 0
-substring$ -- 219
-swap$ -- 26
-text.length$ -- 2
+substring$ -- 462
+swap$ -- 48
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 52
-warning$ -- 1
-while$ -- 40
-width$ -- 17
-write$ -- 162
-(There was 1 warning)
+type$ -- 88
+warning$ -- 2
+while$ -- 67
+width$ -- 26
+write$ -- 260
+(There were 2 warnings)

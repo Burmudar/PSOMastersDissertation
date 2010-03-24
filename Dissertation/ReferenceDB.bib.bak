@@ -1,11 +1,64 @@
 % This file was created with JabRef 2.3.1.
 % Encoding: UTF-8
 
+@ARTICLE{CALMA,
+  author = {Karen Aardal and Cor Hurkens and Jan Karel Lenstra and Sergey Tiourine},
+  title = {Algorithm for Radio Link Frequency Assignment: The Calma Project},
+  journal = {Operations Research},
+  year = {2002},
+  volume = {50},
+  pages = {968-980},
+  number = {6},
+  owner = {william},
+  timestamp = {2010.03.24}
+}
+
+@ARTICLE{Karen2004,
+  author = {Karen I. Aardal and Stan P. M. van Hoesel and Arie M. C. A. Koster
+	and Carlo Mannino and Antonio Sassano},
+  title = {Models and solution techniques for frequency assignment problems},
+  journal = {4OR: A Quarterly Journal of Operations Research},
+  year = {2004},
+  volume = {1},
+  pages = {261-317},
+  number = {4},
+  month = {December},
+  doi = {10.1007/s10288-003-0022-6},
+  file = {:/media/BAGGY_PANTS/Masters/Research/Read/FAP/Models and solution
+	techniques for frequency assignment problems.PDF:PDF},
+  owner = {william},
+  timestamp = {2009.05.23}
+}
+
 @MISC{FAPOrientationModel,
   author = {Ralf Borndörfer and Andreas Eisenblätter and Martin Grötschel and
 	Alexander Martin},
   title = {The Orientation Model for Frequency Assignment Problems},
   year = {1998}
+}
+
+@ARTICLE{SiteFAPWLAN,
+  author = {Jeremy K. Chen and Gustavo de Veciana and Theodore S. Rappaport},
+  title = {Site-Specific Knowledge and Interference Measurement for Improving
+	Frequency Allocatoins in Wireless Networks},
+  journal = {IEEE Transactions on Vehicular Technology},
+  year = {2009},
+  volume = {58},
+  pages = {2366-2376},
+  owner = {william},
+  timestamp = {2010.03.24}
+}
+
+@ARTICLE{DynamicFAP,
+  author = {Audrey Dupont and Andrea Carneiro Linhares and Christian Artigues
+	and Dominique Feillet and Philippe and Michel Vasquez},
+  title = {The Dynamic Frequency assignment problem},
+  journal = {European Journal of Operational Research},
+  year = {2009},
+  volume = {195},
+  pages = {75-88},
+  owner = {william},
+  timestamp = {2010.03.24}
 }
 
 @TECHREPORT{AndreasPaper,
@@ -55,21 +108,51 @@
   timestamp = {2010.02.14}
 }
 
-@ARTICLE{Karen2004,
-  author = {{Karen I. Aardal, Stan P. M. van Hoesel, Arie M. C. A. Koster Contact
-	Information, Carlo Mannino and Antonio Sassano}},
-  title = {Models and solution techniques for frequency assignment problems},
-  journal = {4OR: A Quarterly Journal of Operations Research},
-  year = {2004},
-  volume = {1},
-  pages = {261-317},
-  number = {4},
-  month = {December},
-  doi = {10.1007/s10288-003-0022-6},
-  file = {:/media/BAGGY_PANTS/Masters/Research/Read/FAP/Models and solution
-	techniques for frequency assignment problems.PDF:PDF},
+@INPROCEEDINGS{SDMASatelite,
+  author = {Houssin, L. and Artigues, C. and Corbel, E.},
+  title = {Frequency allocation problem in a SDMA satellite communication system},
+  year = {2009},
+  pages = {1599 -1604},
+  month = {july},
+  doi = {10.1109/ICCIE.2009.5223821},
+  journal = {Computers Industrial Engineering, 2009. CIE 2009. International Conference
+	on},
+  keywords = {FDMA;SDMA;TDMA;adaptive beamforming;communication channels;cumulative
+	interference constraints;dynamic beamforming;frequency allocation
+	problem;greedy allocation algorithms;integer linear programming;link
+	budget;radio resource sharing;resource allocation;satellite communication
+	system;terrestrial communication standards;array signal processing;frequency
+	allocation;greedy algorithms;linear programming;satellite communication;space
+	division multiple access;telecommunication channels;}
+}
+
+@ARTICLE{RadioFAP,
+  author = {Lhassane Idoumghar and Ren{é} Schott},
+  title = {Two Distributed Algorithms for the Frequency Assignment Problem in
+	the Field of Radio Broadcasting},
+  journal = {IEEE Transactions on Broadcasting},
+  year = {2009},
+  volume = {55},
+  pages = {223-229},
   owner = {william},
-  timestamp = {2009.05.23}
+  timestamp = {2010.03.24}
+}
+
+@ARTICLE{MISatelite,
+  author = {Wen Liu and Haixiang Shi and Lipo Wang},
+  title = {Minimizing Interference in Satellite Communications Using Chaotic
+	Neural Networks},
+  journal = {Natural Computation, 2007. ICNC 2007. Third International Conference
+	on},
+  year = {2007},
+  volume = {2},
+  pages = {441 -444},
+  month = {aug.},
+  doi = {10.1109/ICNC.2007.473},
+  keywords = {cochannel interference;frequency assignment problem;minimizing interference;satellite
+	communications;satellite systems;transiently chaotic neural networks;chaotic
+	communication;cochannel interference;inference mechanisms;neural
+	nets;satellite communication;telecommunication computing;}
 }
 
 @INPROCEEDINGS{ACOvsEA,
@@ -121,6 +204,16 @@
   file = {:/media/BAGGY_PANTS/Masters/Research/Read/Adaptive Diversity in PSO.pdf:PDF},
   isbn = {1-59593-186-4},
   location = {Seattle, Washington, USA}
+}
+
+@PHDTHESIS{MontemanniThesis,
+  author = {Montemanni, Roberto},
+  title = {Upper and Lower bounds for the fixed spectrum frequency assignment
+	problem},
+  school = {School of Tecnology, University of Glamorgan},
+  year = {2001},
+  owner = {william},
+  timestamp = {2010.03.24}
 }
 
 @ARTICLE{TabuMontemanniSmith,
@@ -184,6 +277,21 @@
   doi = {http://dx.doi.org/10.1016/j.compeleceng.2008.02.001},
   issn = {0045-7906},
   publisher = {Pergamon Press, Inc.}
+}
+
+@ARTICLE{MultiradioMeshNetworks,
+  author = {Anand Prabhu Subramanian and Himanshu Gupta and Samir R. Das and
+	Jing Cao},
+  title = {Minimum Interference Channel Assignment Multiradio Wireless Mesh
+	Networks},
+  journal = {IEEE Transactions on Mobile Computing},
+  year = {2008},
+  volume = {7},
+  pages = {1459-1473},
+  number = {7},
+  month = {December},
+  owner = {william},
+  timestamp = {2010.03.24}
 }
 
 @INPROCEEDINGS{FixedFAPPSO,
