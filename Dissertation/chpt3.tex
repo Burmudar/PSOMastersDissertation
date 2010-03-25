@@ -120,7 +120,7 @@ In this section we discussed the different industries in which the Frequency Ass
 We also gave some brief references to some literature where the FAP is discuess with regard to the particular domain. In the next section we will give a brief description of the different types of Frequency Assignment Problems as well as give a small discussion on the literature found for the individual problems.
 \section{Frequency Assignment Problem types}
 \label{sec:FAPVariants}
-In this section we will give a brief explanation on some of the various problems the exist for the FAP.
+I We will start of giving a brief overview on one of the first and oldest problems in the domain and we  will end of discussing the problem we will base our implementation on.n this section we will give a brief explanation on some of the various problems that exist for the FAP. We will start of giving a brief overview on one of the first and oldest problems in the domain and we  will end of discussing the problem we will base our implementation on.
 \subsection{Minimum Order FAP}
 The Minimum Order FAP (MO-FAP) was the first FAP that emerged in the 70's. The MO-FAP is concerned with assigning frequencies to transmitters while interference is minimized as well as minimizing the amount of different frequencies that are used. 
 
@@ -134,15 +134,19 @@ The Minimum Span FAP (MS-FAP) is a problem that is very relevant today, especial
 
 The span is defined as an interval on the frequency domain. This interval is calculated by taking the difference of the maximum and minimum frequnecies used during assignment. With the span value, network operators are able to request certain frequency bands and know their network will be able to operate at suitable interference levels \cite{Karen2004,MontemanniThesis,MSFAP}.
 
-The MS-FAP and MO-FAP are two very similar problems, the only difference is that MO-FAP focuses on minimizing different frequencies and MS-FAP forcuses on minimizing the interval of frequencies used during assignment \cite{Karen2004}.
+The MS-FAP and MO-FAP are two very similar problems, the only difference is that MO-FAP focuses on minimizing different frequencies and MS-FAP forcuses on minimizing the interval of frequencies used during assignment \cite{Karen2004}. The Philadelphia benchmark is usually used to gauge how good the algorithm performs.
 \subsection{Minimum Interference FAP}
-The Minimum Interference FAP (MI-FAP) or Fixed Spectrum FAP (FS-FAP) is typically encountered after the network operator has obtained a frequency band from a regulatory body. Other problems use matrices to forbid certain frequencies from being with certain transmitter. In the MI-FAP any available frequency in the allocated band may be used even though it produces interference. 
+The Minimum Interference FAP (MI-FAP) or Fixed Spectrum FAP (FS-FAP) is typically encountered after the network operator has obtained a frequency band from a regulatory body. Other problems use matrices to forbid certain frequencies from being with certain transmitter \cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}. 
 
-Other problems are concerned with the frequencies used, even though they might be violating some constraints that incur some interference. The interference value doesn't play a large role in their respective objective functions. In MI-FAP the objective is to minimize the total amount of interference on the network. It is important to note that this amount of interfernece might not necessarily be zero.
+Unlike previous discussed problems, in MI-FAP any available frequency in the allocated band may be used even though it produces interference. The other problems are concerned with the frequencies used, even though they might be violating some constraints that incur a huge amount of interference. The interference value doesn't play a large role in their respective objective functions. In MI-FAP the objective is to minimize the total amount of interference on the network. It is important to note that this amount of interfernece might not necessarily be zero \cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}.
 
-The MI-FAP is the most encountered problem currently in cellular networks, since there are more operating networks than new networks being designed in the cellular industry today. This particular problem for form the focus for this dissertation. We'll benchmark the quality and efficiency of our solution with the COST 259 benchmark which is discussed in section \ref{sec:FAPBenchmarks}.
+The MI-FAP is the most encountered problem currently in cellular networks, since there are more operating networks than new networks being designed in the cellular industry today. This particular problem for form the focus for this dissertation. 
 
-In this section we laid out the different types of Frequency Assignment Problems there are in the literature. We also gave a brief discussion on some of the literature found on the individual problems. Finally we formally stated on which one of the frequency assignment problems we will be concentrating on, namely the Fixed Spectrum Minimum Interference Frequency Assignment Problem (MI-FAP). In the next section we will give a Mathematical definition for the Fixed Spectrum MI-FAP which will form the bases for the objective/cost function that we are going to minimize to find an optimal frequency plan.
+Since MI-FAP is very close to real world instance problems, authors tend to use real world instances or benchmarks that resemble real world instance to test the quality and efficiency of their algorithms \cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}. We'll benchmark the quality and efficiency of our solution with the COST 259 benchmark which is discussed in section \ref{sec:FAPBenchmarks}.
+
+In this section we laid out the different types of Frequency Assignment Problems there are in the literature. We also gave a brief discussion on some of the literature found on the individual problems. Finally we formally stated on which one of the frequency assignment problems we will be concentrating on, namely the Fixed Spectrum Minimum Interference Frequency Assignment Problem (MI-FAP). 
+
+In the next section we will give a Mathematical definition for the Fixed Spectrum MI-FAP which will form the bases for the objective/cost function that we are going to minimize to find an optimal frequency plan.
 \section{Fixed Spectrum MI-FAP Mathematical Formulation}
 In this section we will give a Mathematical definition of the Frequency Assignment Problem which will form the core of what our algorithm discussed in this dissertation will optimize. We'll start of by denoting the symbols we will use and then we will give the Mathematical definition of the cost function we will minimize.
 
@@ -187,8 +191,23 @@ Formally the Fixed Spectrum Frequency Assignment Problem (FS-FAP) can now be def
 In this section we Mathematically defined the Frequency Assignment Problem using the symbols we defined. In the next section we will give a brief discussion on the different Frequency Assignment Benchmark Problems that exist and also define the benchmark we will be using in our implemention.
 \section{FAP Benchmarks}
 \label{sec:FAPBenchmarks}
-\paragraph{Philledelphia Benchmark}
-\paragraph{Calma Project}
-\paragraph{COST 256}
+In this sections will discuss some of the most used benchmarks in the FAP domain. We will start of with the first benchmark that was introduced in the 70s and end of with a disuccsion on the benchmark we will be using to test our implementation.
+\subsection{Philedelphia Benchmark}
+The Philedelphia benchmarks are derived from an instance that was introduced in 1973 by Anderson. Each instance is a hexogonal grid of cells that overlaps the area of interest. At the center of each cellthere is a transmitter. Past approaches used these hexagonal systems to model modern cellular networks \cite{Karen2004,ExactMIFAP}.
 
+In this benchmark interference is measured by a co-channel reuse distance. This distance stipulates that the difference of the frequencies  assigned to two cells must greater of equal to a certain value $d$. A frequency cannot be assigned to a cell if it violates this minimum distance \cite{Karen2004,ExactMIFAP}.
+
+These benchmarks are typically used to test algorithms developed for MS-FAP, since there is no concept of cost or penalty for interference incurred by violating constraints.
+\subsection{CELAR}
+In 1994 EUCLID introduced a project called CALMA which was a combined effort by various Europena goverments that were part of EUCLID to investigate algorithms for Military applications. The project was granted to six research groups. Within the project 36 instances were made available by CELAR for Radio Link Frequency Assignment \cite{Karen2004,DynamicFAP}.
+
+All the CELAR instances have the constraint that the difference between frequencies assigned to interfering radio links must be greater that a certain predefined distance in the frequency domain. This is a soft constraint and may be violated. Another constraint in the CELAR instances is that each pair of parallel links must differ by an exact predefined distance. This constraint is a hard constraint an may not be violated \cite{DynamicFAP}.
+
+These instances were initially not available to the general public as it was contained to be within the CALMA project. In 2001 the CELAR launched an the International ROADEF challenge, were certain instances from the CALMA project were made available for the research teams taking part in the challenge. The instances made available had been modified to take polarizations and controlled relaxations of certain EMC constraints \cite{LowerPolarFAP}.
+\subsection{COST 256}
+The COST (COoperation européene dans le domaine de la recherche Scientifique et Technique) 259 is a set of real world GSM instances made available by die European Union. The instances are publicly available and can  be downloaded for free at http://fap.zib.de/ (FAP Web 2007). The website also constains the most recent results obtained by researchers using these instances\cite{Karen2004,Eisenblatter}.
+
+The instances are fairly difficult due to the large amount of transmitters (900 - 4000) that need to be assigned frequencies, with a relatively small amount spectrum of frequencies. The main important characteristic of this benchmark is that is resembles real world GSM network data, which is why we the authors have selected this as the primary benchmark we will be concentrating on \cite{Karen2004,FAPWeb}.
+
+More specifically we will concentrate on a small subset of the instances that are available, namely Siemens1, Siemens2, Siemens3 and Siemens4. In the paper by Montemanni and Smith \cite{TabuMontemanniSmith} the same subset of problems is used and to date their algorithm has produced some of the best results. %Check if this is the right paper
 \section{Summary}

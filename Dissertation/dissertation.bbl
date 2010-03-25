@@ -41,6 +41,11 @@ Andreas Eisenbl{\"a}tter.
   and Lower Bounds}.
 \newblock PhD thesis, Technische Universit{\"a}t Berlin, Berlin, Germany, 2001.
 
+\bibitem{MultipleBinaryFAP}
+J.S Graham, R.~Montemanni, J.~N~J. Moon, and D.~H. Smith.
+\newblock Frequency assignment. multiple interference and binary constraints.
+\newblock {\em Wireless Networking}, 14:449--464, 2008.
+
 \bibitem{EfficientEvoChannelManagement}
 Joe Rodriguez-Tellez Harilaos G.~Standalidis, Peter P.~Stavroulakis.
 \newblock An efficient evolutionary algorithm for channel resource management
@@ -55,11 +60,22 @@ Hassan M.~Elragal Hassan M.~Elkamchouchi.
 \newblock In {\em The 23rd National radio Science Conference (NRSC 2006)},
   March 2006.
 
+\bibitem{LowerPolarFAP}
+Alan Herz, David Schindl, and Nicolas Zufferey.
+\newblock Lower bounding and tabu search procedures for the frequency
+  assignment problem with polarization constraints.
+\newblock {\em 4OR: A Quarterly Journal of Operations Research}, 3:139--161,
+  2005.
+
 \bibitem{SDMASatelite}
 L.~Houssin, C.~Artigues, and E.~Corbel.
 \newblock Frequency allocation problem in a sdma satellite communication
   system.
 \newblock pages 1599 --1604, july 2009.
+
+\bibitem{FAPWeb}
+http://fap.zib.de/.
+\newblock Fap web, 2010.
 
 \bibitem{RadioFAP}
 Lhassane Idoumghar and Ren{é} Schott.
@@ -81,6 +97,13 @@ Francisco Luna, Christian Blum, Enrique Alba, and Antonio~J. Nebro.
 \newblock In {\em GECCO '07: Proceedings of the 9th annual conference on
   Genetic and evolutionary computation}, pages 94--101, New York, NY, USA,
   2007. ACM.
+
+\bibitem{ExactMIFAP}
+Vittoria Maniezzo and Roberto Montemanni.
+\newblock An exact algorithm for the min-interference frequency assignment
+  problem.
+\newblock Technical report, Department of Computer Science, University of
+  Bologna.
 
 \bibitem{GSMSysEngin}
 Asha Mehrotra.
