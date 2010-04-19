@@ -1,0 +1,39 @@
+\documentclass[pdftex,11pt]{article}
+\title{Tabu Search Articles summaries}
+\author{William Bezuidenhout}
+\date{Friday, 16 April 2010}
+
+
+\begin{document}
+\maketitle
+\section*{Application of Self Controlling Software Approach to Reactive Tabu Search}
+Self adaptive software is software that changes itself at runtime to achieve better performance. Heuristic search algorithms are software which try to find good solutions to optimization problems within reasonable time limits. Reactive heuristics search algorithms modify algorithm paramters and/or strategies during the search to improve search quality.
+
+Most of the real life combinatorial optimization problems cannot be solved with exact algorithms within reasonable time limits. Heuristic algorithms are used to solved these problems but the performance of these algorithms depends on the values of their paramters.
+
+This paper uses the self controlling software paradigm proposed by Koar, Eracar and Baclawski and use a control theoretic approach to adjust the parameters of the controlled plant - the tabu search algorithm.\\
+
+Laddage separated the work on self-adaptive software into three groups: coding as a dynamic planning system, coding as a control system and coding as a self aware system. In the coding as a dynamic planning system approach, a system plans its actions and re-plans when the effectiveness of the plan decreases. In the coding as a control system approach, the software is a system with monitoring and control units. The reconfiguration of the system is managed by the evaluation, measurement and control units. In the coding as a self aware system approach evaluation, revision and reconfiguration is part of the running software. The application has knowledge of its operation, evaulates itself, reconfigures and adapts to changes.
+
+In engineering, \textit{control theory} is used for controlling dynamic systems. Kokar, Eracar and Baclawski identified software as a candidate for a control plant whose efficiency can increase by dunamic adjustments. This approach is called the \emph{self controlling software approach}.
+
+The control theory based self-controlling software model maps the conecpt of control theory to software engineering. In this model:
+\begin{itemize}
+\item Sofware is treated as the controlled plant.
+\item The bahavior of the plant and environment is modelled as a dynamic system.
+\item Inputs to the plant are classified as \emph{control inputs} and \emph{disturbances}. Control inputs control the behavior of the plant according to the control goal, while disturbances change the plant's behavior unpredictably.
+\item A \emph{controller} subsystem changes the value of control inputs to the plant.
+\item A \emph{quality of service} (QoS) subsystem provides feedback to control the plant.
+\end{itemize}
+
+Tabu Search (TS) is an iterative heuristic algorithm. TS uses the history of search (\emph{memory}) to prevent cycling back to previously visisted solutions. In each iteration, a transformation operator - the \emph{move} is used to generate the \emph{neighborhood} of the current solution. The moves operated stored in the \emph{Tabu list}. A move is \emph{tabu} if it reverses one of the transformations on the tabu list. The tebu list size $ts$ indicates the number of iterations a move will be considered as tabu. If the \emph{aspiration condition} is met, a move is not prohibited. One commonly used aspiration condition is: if a move results in a solution which has a better objective value than the best solution, it is not tabu.
+
+The intesification strategies direct tabu search to search for solution similar to each other whereas diversification drives the search to unexplored areas in the solution space.\\
+
+Iterative search algorithms moves through space of solutions by selecting a different solution in each iteration. They use different intensification and diversification strategies to direct the search. Intensification refers to focusing the search efforts on a region within the solution space. Diversificatio, refers to driving the search to different regions. Finding a balance between intensification and diversification is important for the success of the search algorithms. The balance is determined by some paramters of the algorithm.
+
+Even while solving a specific problem the need for intesification and diversification cahnge during the search depending on the region the search is currently in.\\
+
+The control theory based self-controlling software model is used for controlling the intensification of the search. In this model the software is treated as a system whose parameters can be dynamically changed using a feedback controller. A feedback control system is composed of the following elements. The \emph{Target system} (also referred to as \emph{Plant}) is the system to be controled. In this case it is the tabu search. The goal is to control the intensification of the search. The \emph{Controlled output} is a variable of the target system that is controlled. The \emph{Reference input} is the desired value of the measured output. The \emph{Controller} is an equation which determines the value of the control input, given reference input and the controlled output.
+
+\end{document}
