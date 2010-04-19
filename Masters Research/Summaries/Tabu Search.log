@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=latex 2010.2.13)  19 APR 2010 12:23
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2010.2.13)  19 APR 2010 16:44
 entering extended mode
  %&-line parsing enabled.
 **"Tabu Search.tex"
@@ -55,7 +55,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 [1
 
-]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \hbox (3.50705pt too wide) in paragraph at lines 20--21
 []\OT1/cmr/m/n/10.95 The con-trol the-ory based self-controlling soft-ware mode
 l maps the conecpt
@@ -109,14 +109,49 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 66.
-[5] (./Tabu Search.aux) ) 
+[5]
+Overfull \hbox (1.89676pt too wide) in paragraph at lines 70--71
+\OT1/cmr/m/n/10.95 pre-vi-ously pre-sented al-go-rithm we call MOTS (Multi-Obje
+ctve Tabu Search).
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--97
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+[8] (./Tabu Search.aux) ) 
 Here is how much of TeX's memory you used:
- 260 strings out of 95087
- 2946 string characters out of 1183278
+ 261 strings out of 95086
+ 2956 string characters out of 1183255
  49105 words of memory out of 1500000
  3501 multiletter control sequences out of 10000+50000
  9799 words of font info for 34 fonts, out of 1200000 for 2000
  28 hyphenation exceptions out of 8191
  23i,8n,19p,1041b,187s stack positions out of 5000i,500n,6000p,200000b,5000s
+</usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmbx1
+2.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/t
+exmf-texlive/fonts/type1/bluesky/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/t
+ype1/bluesky/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr1
+2.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/te
+xmf-texlive/fonts/type1/bluesky/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/typ
+e1/bluesky/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmr9.pf
+b></usr/share/texmf-texlive/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf
+-texlive/fonts/type1/bluesky/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type
+1/bluesky/cm/cmti9.pfb>
+Output written on "Tabu Search.pdf" (8 pages, 95214 bytes).
+PDF statistics:
+ 77 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on "Tabu Search.dvi" (5 pages, 16864 bytes).

@@ -69,7 +69,41 @@ Path relinking strategies are quite common in the discrete optimisation field. T
 
 In this paper, we present two multi-objective TS algorithms. The first, previously presented algorithm we call MOTS (Multi-Objectve Tabu Search). The second algorithm ,which contains the newly developed design variable scheme, we call PRMOTS (Path relinking Multi-Objective Tabu Search). The fundamental basis for both algorithms is the same. The two algorithms differ in their local search pattern, a key component of TS and a n area in which significant performance enhancements can be made.
 
-The single-objective  TS implementation of Connor and Tilley is used as a starting point for multi-objective variants. THis uses a Hooke and Jeeves (H&J) local search algorithm coupled with short, medium and long term memories to implement search intesification and diversification as prescribed by Glover and Laguna.
+The single-objective  TS implementation of Connor and Tilley is used as a starting point for multi-objective variants. This uses a Hooke and Jeeves (H\&J) local search algorithm coupled with short, medium and long term memories to implement search intesification and diversification as prescribed by Glover and Laguna.
 
-Recently visited points are stored in the \emph{short term memory 
+Recently visited points are stored in the \emph{short term memory} (STM) and are Tabu -- the search is not allowed to revisist these points. Optimal or near-optimal points are stored in the \emph{medium term memory} (MTM) and are used for intensification, focusing the search on areas of the search space with known good objective funtion values. The \emph{long term memory} (LTM) records the regions of the search space which have been explored, and is used on diversification, directing the search to regions which are under-explored.
+
+The strategy used to move in the authors algorithms accept both uphill and downhill moves -- the next point is simply the ``best" allowed point (or one of the Pareto-equivalent best points) selected from the candidate solutions.
+
+In the Conor and Tilley's single-objective TS, the MTM is a bounded, sortd list of near-optimal solutions. As the concept of a single optimal point does not exist in multi-objective optimisation, we replace the MTM in our multi-objective TS variant by an unbounded set of non-dominated solutions produced by the search.
+
+An unbounded MTM was chosen for two main reasons. First, for continuous problems the dieal Pareto set is inifinite and an unbounded set is a logical discretisation of this concept. While there are legitimate concerns regards the presentation of a large number of Pareto-optimal solutions to a designer as the result of an optimisation run, we feel it would be better to deal with these issues at the post-processing stage. It is worth pointing out that some GAs use bounded archivse of optimal points because this is consistent with the use of fixed size populations in those algorithms.
+
+The orignal single-objective TS produced intensification points by using the MTM to generate points in the neighbourhood of good solutions. At search intensification, a point is chosen randomly from the \emph{Immediate Memory} (IM). The IM is continuously updated and points which become dominated by the addition of a new point are removed. Thus, the IM should always contain points which are on, or near to, the current Pareto-optimal front (stored in the MTM).
+
+The single-objective TS restart strategy returns the search to the current best point in the MTM. As the MTM is now a set of Pareto-optimal points, we simply select one point at random from the set.
+
+The authors emply a very simply constriant handling strategy: any point which violates any constraint is deemed to be Tabu and the seach is not allowed to visit that point. Thus, accepted solutions are limited to feasible space. We refere to this as a binary constraint -- solutions are either feasible or not and there is no need to quantify the extent of constraint violation.
+
+A futher benefit to running our algorithm on highly constrained problems is the local search pattern at the heart of TS, which reduces the likelihood of generating infeasible solutions.\\
+
+The most computational expensive step in the optimisation procedure is the solutions evaluations (allowing for points that are Tabu or violate constraints) -- assuming that objecive functions evaluations are expensive compared to the optimisation algorithm logic, a reasonable assumption for most real-world problems -- and there is consuderavke scope for efficiency savings at this step.
+
+In the design variable selection scheme for the PRMOTS algorithm the authors keep all the points without removing those that are Tabu and \emph{without makign any funciton evaluations}. The authors then assess the potential for improvement in the objective functions for each design variable in the following way.
+
+Taking the current set of Pareto-optimal points (stored in the MTM) as the reference set, the Euclidean distance in design space between these two points and every point in the reference set is cacluted, THe smallest of these distance is saved, and the design variables are ranked according to this distance.
+
+In essesence, thsi selection scheme is only allowing the optimiser to vary those variables that will progress the search from current point to the reference set in the fastest possible way. This assessment is based soley on a measure of the Euclidean distance in design space.\\
+
+The test functions used in this study are from the ZDT family of problems. They have $10 \leq n\_var \leq 30$ and the number of objectives $n\_obj=2$, and they are designed to have Pareto-optimal sets which are difficult to locate accurately by means of an optimisation algorithm.
+
+The algorithm chosen for comparison was NSGA-II which has been shown to be one of the better multi-objective Genetic Algorithms and has a number of high-quality, open-source software implementations freely available. Although various studies have been published which show competitive algorithms outperforming it on the family of ZDT problems. 
+
+There are two main reasons for the choice of NSGA-II as the benchmark algorithm. First, the algorithm is very well known, due both to its inclusion in a number of free and commercial software packages and to its featuring in a range of published studies. Second, the authors ultimate goal in developing their TS algorithms is not absolute performance on a set of benchmark problems. Rather, our development is motivated by the requirements of real-world optimisation problems, for which authors believe their TS algorithms to be well suited.
+
+Performance assessment on a set of well known problems against a well known algorithm then serves a validation of their approach and provides them with suggestions for improvments on their algorithms.\\
+
+The results showed that the variable selection scheme gave a clear improvement in performance over the basic MOTS algorithm. Additionally, both algorithms performed comparably with NSGA-II. Overall, bnoth TS algorithms exibited greater performance variability than NSGA-II, but this was compensated by a greater likely improvement in the objective functions.
+
+Based on these findings, it appears that out PRMOTS algorithm is competitive iwith NSGA-II and both could be expected to perform well on other multi-objective optimisation probelms. NSGA-II may be better chioce where low performance variability is desired. However, as the authors have argued in their paper and as reported by other researchersm the local-search components and the constrain handling flexibility of TS makes it partuclarly attractive for problems which may be highly constrinaed and we believe that PRMOTS is a good choise for these types of problems.
 \end{document}
