@@ -1,46 +1,57 @@
-\contentsline {part}{I\hspace {1em}Background}{5}
-\contentsline {chapter}{\numberline {1}Introduction}{7}
-\contentsline {section}{\numberline {1.1}Test}{7}
-\contentsline {chapter}{\numberline {2}Cellular Technology}{9}
-\contentsline {section}{\numberline {2.1}Introduction}{9}
-\contentsline {section}{\numberline {2.2}GSM Networks}{10}
-\contentsline {subsection}{\numberline {2.2.1}A Brief History of GSM Networks}{10}
-\contentsline {section}{\numberline {2.3}Topology of a GSM Network}{14}
-\contentsline {subsubsection}{Mobile Station (MS)}{14}
-\contentsline {subsection}{\numberline {2.3.1}Base Station Subsystem (BSS)}{15}
-\contentsline {subsection}{\numberline {2.3.2}Mobile Switching Centre (MSC)}{16}
-\contentsline {subsection}{\numberline {2.3.3}Network Databases}{18}
-\contentsline {paragraph}{Home Location Register (HLR)}{18}
-\contentsline {paragraph}{Authentication Center (AUC)}{18}
-\contentsline {paragraph}{Equipment Identity Register (EIR)}{19}
-\contentsline {subsection}{\numberline {2.3.4}GSM Network Management entities}{19}
-\contentsline {paragraph}{Operational and Managemenet Center}{20}
-\contentsline {paragraph}{Network Management Center}{21}
-\contentsline {section}{\numberline {2.4}GSM Network problems}{21}
-\contentsline {section}{\numberline {2.5}Summary}{21}
-\contentsline {chapter}{\numberline {3}The Frequency Assignment Problem}{23}
-\contentsline {section}{\numberline {3.1}Introduction}{23}
-\contentsline {section}{\numberline {3.2}Frequency Assignment Types}{24}
-\contentsline {section}{\numberline {3.3}Interference}{26}
-\contentsline {section}{\numberline {3.4}FAP in the industry}{28}
-\contentsline {subsection}{\numberline {3.4.1}Satelite communication}{28}
-\contentsline {subsection}{\numberline {3.4.2}Wireless mesh networks and WLANs}{30}
-\contentsline {subsection}{\numberline {3.4.3}Military field communication}{31}
-\contentsline {subsection}{\numberline {3.4.4}Television and Radio Broadcasting}{33}
-\contentsline {subsection}{\numberline {3.4.5}Cellular Communication}{33}
-\contentsline {section}{\numberline {3.5}Frequency Assignment Problem types}{35}
-\contentsline {subsection}{\numberline {3.5.1}Minimum Order FAP}{35}
-\contentsline {subsection}{\numberline {3.5.2}Minimum Span FAP}{36}
-\contentsline {subsection}{\numberline {3.5.3}Minimum Interference FAP}{36}
-\contentsline {section}{\numberline {3.6}Fixed Spectrum MI-FAP Mathematical Formulation}{38}
-\contentsline {section}{\numberline {3.7}FAP Benchmarks}{40}
-\contentsline {subsection}{\numberline {3.7.1}Philedelphia Benchmark}{40}
-\contentsline {subsection}{\numberline {3.7.2}CELAR}{41}
-\contentsline {subsection}{\numberline {3.7.3}COST 256}{41}
-\contentsline {section}{\numberline {3.8}Summary}{42}
-\contentsline {chapter}{\numberline {4}Metaheuristics Algorithms}{43}
-\contentsline {section}{\numberline {4.1}Introduction}{43}
-\contentsline {chapter}{\numberline {5}Swarm Intelligence}{45}
-\contentsline {section}{\numberline {5.1}Introduction}{45}
-\contentsline {part}{II\hspace {1em}Implementation}{47}
-\contentsline {chapter}{Bibliography}{49}
+\contentsline {part}{I\hspace {1em}Background}{7}
+\contentsline {chapter}{\numberline {1}Introduction}{9}
+\contentsline {section}{\numberline {1.1}Test}{9}
+\contentsline {chapter}{\numberline {2}Cellular Technology}{11}
+\contentsline {section}{\numberline {2.1}Introduction}{11}
+\contentsline {section}{\numberline {2.2}GSM Networks}{12}
+\contentsline {subsection}{\numberline {2.2.1}A Brief History of GSM Networks}{12}
+\contentsline {section}{\numberline {2.3}Topology of a GSM Network}{16}
+\contentsline {subsubsection}{Mobile Station (MS)}{16}
+\contentsline {subsection}{\numberline {2.3.1}Base Station Subsystem (BSS)}{17}
+\contentsline {subsection}{\numberline {2.3.2}Mobile Switching Centre (MSC)}{18}
+\contentsline {subsection}{\numberline {2.3.3}Network Databases}{20}
+\contentsline {paragraph}{Home Location Register (HLR)}{20}
+\contentsline {paragraph}{Authentication Center (AUC)}{20}
+\contentsline {paragraph}{Equipment Identity Register (EIR)}{21}
+\contentsline {subsection}{\numberline {2.3.4}GSM Network Management entities}{21}
+\contentsline {paragraph}{Operational and Managemenet Center}{22}
+\contentsline {paragraph}{Network Management Center}{23}
+\contentsline {section}{\numberline {2.4}GSM Network problems}{23}
+\contentsline {section}{\numberline {2.5}Summary}{23}
+\contentsline {chapter}{\numberline {3}The Frequency Assignment Problem}{25}
+\contentsline {section}{\numberline {3.1}Introduction}{25}
+\contentsline {section}{\numberline {3.2}Frequency Assignment Types}{26}
+\contentsline {section}{\numberline {3.3}Interference}{28}
+\contentsline {section}{\numberline {3.4}FAP in the industry}{30}
+\contentsline {subsection}{\numberline {3.4.1}Satelite communication}{30}
+\contentsline {subsection}{\numberline {3.4.2}Wireless mesh networks and WLANs}{32}
+\contentsline {subsection}{\numberline {3.4.3}Military field communication}{33}
+\contentsline {subsection}{\numberline {3.4.4}Television and Radio Broadcasting}{35}
+\contentsline {subsection}{\numberline {3.4.5}Cellular Communication}{35}
+\contentsline {section}{\numberline {3.5}Frequency Assignment Problem types}{37}
+\contentsline {subsection}{\numberline {3.5.1}Minimum Order FAP}{37}
+\contentsline {subsection}{\numberline {3.5.2}Minimum Span FAP}{38}
+\contentsline {subsection}{\numberline {3.5.3}Minimum Interference FAP}{38}
+\contentsline {section}{\numberline {3.6}Fixed Spectrum MI-FAP Mathematical Formulation}{40}
+\contentsline {section}{\numberline {3.7}FAP Benchmarks}{42}
+\contentsline {subsection}{\numberline {3.7.1}Philedelphia Benchmark}{42}
+\contentsline {subsection}{\numberline {3.7.2}CELAR}{43}
+\contentsline {subsection}{\numberline {3.7.3}COST 256}{43}
+\contentsline {section}{\numberline {3.8}Summary}{44}
+\contentsline {chapter}{\numberline {4}Metaheuristics Algorithms}{45}
+\contentsline {section}{\numberline {4.1}Introduction}{45}
+\contentsline {section}{\numberline {4.2}Characteristics of Metaheuristics}{46}
+\contentsline {section}{\numberline {4.3}Tabu Search}{47}
+\contentsline {subsection}{\numberline {4.3.1}Basic Algorithm}{47}
+\contentsline {subsection}{\numberline {4.3.2}Literature study}{47}
+\contentsline {section}{\numberline {4.4}Simulated Annealing}{47}
+\contentsline {subsection}{\numberline {4.4.1}Basic Algorithm}{47}
+\contentsline {subsection}{\numberline {4.4.2}Literature study}{47}
+\contentsline {section}{\numberline {4.5}Genetic Algorithm}{47}
+\contentsline {subsection}{\numberline {4.5.1}Basic Algorithm}{47}
+\contentsline {subsection}{\numberline {4.5.2}Literature study}{47}
+\contentsline {section}{\numberline {4.6}Summary}{47}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{49}
+\contentsline {section}{\numberline {5.1}Introduction}{49}
+\contentsline {part}{II\hspace {1em}Implementation}{51}
+\contentsline {chapter}{Bibliography}{53}
