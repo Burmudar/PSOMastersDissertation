@@ -14,11 +14,35 @@ The above mentioned algorithms aren't the only algorithms to form part of this s
 In this chapter our main focus will be to discuss each of the above listed algorithms. We will start of by briefly discussing the characteristics of metaheuristic algorithms after which we will discuss each of the above algorithms in detail. We will also provide a literature study for each algorithm inorder for us to see how an algorithm needs to be changed and optimised for particular problem domain. 
 
 \section{Characteristics of Metaheuristics}
-NP-Complete problems have been proven to not be solveble in polinomial by local search methods such as 1,2,3. Metaheuristic algorihtms on the other hand are much more efficient in search the problem space and produce much better results in a short amount of time.
+NP-Complete problems have been proven to not be solveble in polinomial time by local search methods such as 1,2,3. Metaheuristic algorihtms on the other hand are much more efficient in searching the problem space and produce much better results in a short amount of time.
 
-Metaheuristic Algorihtms do not search a problem space statically by testing every possible permutation in the problem space and evaluating it. Instead these algorithms make use of local and global search methods that explore the search space probilistically; moving in the problem space to a region with a high probability of finding high qaulity candidate solutions.
+Metaheuristic Algorihtms do not search a problem space statically by testing every possible permutation in the solution space and evaluating it. Instead these algorithms make use of local and global search methods that explore the search space probilistically; moving in the problem space to a region with a high probability of finding high qaulity candidate solutions.
+
+\paragraph{Heuristic Manipulation, tabu search and Frequency Assignment}
+Metaheuristic algorithms (i.e iterative methods which, using particular strategies, drive a subordinate heuristic algorithm to explore the search space in an intelligent way.
+
+\paragraph{A Cooperative and Self-adaptive Metaheuristic for the Facility Location Problem}
+Distributed artificial intelligence and particularly multiagent systems seem to be promising field of research to tackle thse new issues. Multiagent appraoch  is tightly linked to metaheuristics considering that both approaches can exploit the social methaphor and self-organization paradigm. Thus, multiagent concepts are widely used in metaheuristics, particularly for population-based, hybrid and distributed metaheuristics. The advantages of using multiagent approach for metaheuristics may be justified by the distribution and robustness inherent to multiagent systems and the need flexibility and modularity.
+
+\paragraph{The improved sweep metaheuristic for simulation optimization and application to job shop scheduling}
+Today, the most attractive simulation optimization methods are metaheuristics, such as tabu serach, simulated annealing, or genetic algorithm. Metaheuristics are algoritms which guide a series of simulation runs to produce better solutions than simple heuristics can generate. A metaheuristic algorithm, a separate module from a simulation model, caries out (designs and evaluates) multiple simulation runs executed sequentially. IN this tradional simulation optimization, the simulation model is used as a black box function evaluator. For recent review of literature on simuilation optimization, see Fu, Glover and April(2005) or Henderson and Nelson(2006).
+
+\paragraph{A Meatheuristic Algorithm for simultaneous simulation optimization and applications to traveling salesman and job shop scheduling with due dates}
+``The metaheuristic appraoch to simulation optimization is based on viewing the simulation modle as a black box function evaluator" writes April et al. (2003). Hence during a simulation optimization, a sequence of somulations runs is carried out, and the simulation model is trated as a black box -- no knowledge of the workings of the model is required.
+
+\paragraph{Metaheuristic Appraoches for Optimizing Argicultural Land Areas}
+Metaheuristic methods use stochastic processes that are based on local search procedure, which finds the optimal solution by trail and error, but incorporate some strategies (i.e metaheuristics) to explore the solution space efficiently. Metaheuristic methods are suaulyy emploed to find good (i.e near optimal) but not necassary gauranteed optimal solutions, in such problems. The effectiveness of metaheuristic methods depends upon their ability to adapt to particular constraint, avoid entrapment at local optima, and efficiently exploit it the basic structure of the problem. Building on these notions various metaheuristic search techniques have been developed that have demonstrably improved the ability to obtain good solution to difficult combinatorial optimization problems. In other words, metaheuristics are formed to find optima solution for each particular problem parts and then will solve the overall problem parts and then it will solve the overall problem, eventually show a significant improvement of user satisfaction.
+
+\paragraph{A Metaheuristic Approach to the graceful labeling problem of Graphs}
+Many problems of practical importance can be modeled as combinatorial optimization problems. It is known that the majority of these problems cannot be solved by a polynomial time algorithm. For this reason, heuristics have been invented to find solutions fo these problems in a reasonable amount of time. Some of these heuristic algorithms are not restircted to specific problem types but may be applied , with suitable modifications, to a broad class of optimization problems. Often these ``general-purpose'' algorithms are called \emph{metaheuristics}.
+
+\paragraph{Automatic Configuration of Metaheuristic Agorithms for Complex COmbinatorial Optimization Problems}
+Based on the No Free Lunch(NFL) theorem, there does not exist a universal black-box algorithm, such as metaheuristics, which performs ``well'' for all the optimization problems. ofr particular problem domain, one has to configure highly specialized algorithsm for ``good'' solution. However, in the conventional algorithm development, the performance of highly specialized metaheuristic algorithm depends very much on the designers's expertise on both algorithm design and the knowledge specific to the problem domain.
+
 \section{Tabu Search}
 
+\paragraph{Applying Metaheuristic Techniques to Search the space of bidding Strategies in Combinatorial Auctions}
+Tabu Search is a variation of hill-climbing search enhanced with a memory that keeps the search from backtracking into spce it has already examined. tabu Serach begins at a seed solution and iterativel moves from one solution to its best neighbor until a termination condition is satisfied. The algorithms keeps track of the best solution found so far, and incorporates some elements of simulated annealing that allow it to escape from local optima. These features are particularly useful in serach problems iwth many plateaus  or rugged topolog. THe important components of tabu search are the definition of the neighborhood function, memory, aspiration criteria, and termination criteria.
 \subsection{Basic Algorithm}
 
 \subsection{Literature study}
