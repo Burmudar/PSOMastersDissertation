@@ -10,45 +10,45 @@ Database file #1: ReferenceDB.bib
 Warning--empty booktitle in SDMASatelite
 Warning--empty year in ExactMIFAP
 Warning--can't use both author and editor fields in GSMSecurInTeleNetwork
-You've used 28 entries,
+You've used 29 entries,
             2118 wiz_defined-function locations,
-            688 strings with 9424 characters,
-and the built_in function-call counts, 8801 in all, are:
-= -- 842
-> -- 413
+            690 strings with 9466 characters,
+and the built_in function-call counts, 9134 in all, are:
+= -- 877
+> -- 426
 < -- 3
-+ -- 170
-- -- 136
-* -- 613
-:= -- 1498
-add.period$ -- 83
-call.type$ -- 28
-change.case$ -- 148
++ -- 175
+- -- 140
+* -- 639
+:= -- 1553
+add.period$ -- 86
+call.type$ -- 29
+change.case$ -- 153
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 326
-empty$ -- 702
-format.name$ -- 136
-if$ -- 1827
+cite$ -- 32
+duplicate$ -- 337
+empty$ -- 729
+format.name$ -- 140
+if$ -- 1895
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 26
-newline$ -- 141
-num.names$ -- 56
-pop$ -- 159
+int.to.str$ -- 29
+missing$ -- 27
+newline$ -- 146
+num.names$ -- 58
+pop$ -- 162
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 128
 quote$ -- 0
-skip$ -- 217
+skip$ -- 225
 stack$ -- 0
-substring$ -- 525
-swap$ -- 51
+substring$ -- 555
+swap$ -- 52
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
+type$ -- 108
 warning$ -- 3
-while$ -- 77
-width$ -- 30
-write$ -- 300
+while$ -- 81
+width$ -- 31
+write$ -- 311
 (There were 3 warnings)

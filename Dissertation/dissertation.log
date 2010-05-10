@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.1)  3 MAY 2010 14:33
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  10 MAY 2010 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -245,45 +245,45 @@ Chapter 4.
 
 
 
-])
+] [46] [47] [48])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46]
-[47]
+ [49]
+[50]
 \openout2 = `chpt5.aux'.
 
- (./chpt5.tex [48
-
-
-
-]
+ (./chpt5.tex
 Chapter 5.
-) [49] [50
+) [51
 
 
-] [51] [52] (./dissertation.bbl
+
+] [52
+
+
+] [53] [54] (./dissertation.bbl
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¤ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
- [53
+ [55
 
 ]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
- [54] [55]) [56]
+ [56] [57]) [58]
 (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
 (./chpt5.aux)) ) 
 Here is how much of TeX's memory you used:
- 1448 strings out of 495061
- 16169 string characters out of 1182622
- 65878 words of memory out of 3000000
- 4604 multiletter control sequences out of 15000+50000
+ 1449 strings out of 495061
+ 16192 string characters out of 1182621
+ 65882 words of memory out of 3000000
+ 4605 multiletter control sequences out of 15000+50000
  13153 words of font info for 50 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,19n,24p,955b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,19n,24p,1114b,248s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
 share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf
@@ -298,9 +298,9 @@ pe1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/
 amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on dissertation.pdf (56 pages, 278907 bytes).
+Output written on dissertation.pdf (58 pages, 284854 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
+ 249 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

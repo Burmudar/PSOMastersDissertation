@@ -41,17 +41,24 @@
 \contentsline {chapter}{\numberline {4}Metaheuristics Algorithms}{45}
 \contentsline {section}{\numberline {4.1}Introduction}{45}
 \contentsline {section}{\numberline {4.2}Characteristics of Metaheuristics}{46}
-\contentsline {section}{\numberline {4.3}Tabu Search}{47}
-\contentsline {subsection}{\numberline {4.3.1}Basic Algorithm}{47}
-\contentsline {subsection}{\numberline {4.3.2}Literature study}{47}
-\contentsline {section}{\numberline {4.4}Simulated Annealing}{47}
-\contentsline {subsection}{\numberline {4.4.1}Basic Algorithm}{47}
-\contentsline {subsection}{\numberline {4.4.2}Literature study}{47}
-\contentsline {section}{\numberline {4.5}Genetic Algorithm}{47}
-\contentsline {subsection}{\numberline {4.5.1}Basic Algorithm}{47}
-\contentsline {subsection}{\numberline {4.5.2}Literature study}{47}
-\contentsline {section}{\numberline {4.6}Summary}{47}
-\contentsline {chapter}{\numberline {5}Swarm Intelligence}{49}
-\contentsline {section}{\numberline {5.1}Introduction}{49}
-\contentsline {part}{II\hspace {1em}Implementation}{51}
-\contentsline {chapter}{Bibliography}{53}
+\contentsline {paragraph}{A Cooperative and Self-adaptive Metaheuristic for the Facility Location Problem}{46}
+\contentsline {paragraph}{The improved sweep metaheuristic for simulation optimization and application to job shop scheduling}{47}
+\contentsline {paragraph}{A Meatheuristic Algorithm for simultaneous simulation optimization and applications to traveling salesman and job shop scheduling with due dates}{47}
+\contentsline {paragraph}{Metaheuristic Appraoches for Optimizing Argicultural Land Areas}{47}
+\contentsline {paragraph}{A Metaheuristic Approach to the graceful labeling problem of Graphs}{48}
+\contentsline {paragraph}{Automatic Configuration of Metaheuristic Agorithms for Complex COmbinatorial Optimization Problems}{48}
+\contentsline {section}{\numberline {4.3}Tabu Search}{49}
+\contentsline {paragraph}{Applying Metaheuristic Techniques to Search the space of bidding Strategies in Combinatorial Auctions}{49}
+\contentsline {subsection}{\numberline {4.3.1}Basic Algorithm}{50}
+\contentsline {subsection}{\numberline {4.3.2}Literature study}{50}
+\contentsline {section}{\numberline {4.4}Simulated Annealing}{50}
+\contentsline {subsection}{\numberline {4.4.1}Basic Algorithm}{50}
+\contentsline {subsection}{\numberline {4.4.2}Literature study}{50}
+\contentsline {section}{\numberline {4.5}Genetic Algorithm}{50}
+\contentsline {subsection}{\numberline {4.5.1}Basic Algorithm}{50}
+\contentsline {subsection}{\numberline {4.5.2}Literature study}{50}
+\contentsline {section}{\numberline {4.6}Summary}{50}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{51}
+\contentsline {section}{\numberline {5.1}Introduction}{51}
+\contentsline {part}{II\hspace {1em}Implementation}{53}
+\contentsline {chapter}{Bibliography}{55}
