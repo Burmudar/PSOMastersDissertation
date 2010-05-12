@@ -29,6 +29,20 @@
   timestamp = {2009.05.23}
 }
 
+@INPROCEEDINGS{MetaAgricultural,
+  author = {Badarudin, I. and Sultan, A.B.M. and Sulaiman, M.N. and Mamat, A.
+	and Mohamed, M.T.M.},
+  title = {Metaheuristic approaches for optimizing agricultural land areas},
+  booktitle = {Data Mining and Optimization, 2009. DMO '09. 2nd Conference on},
+  year = {2009},
+  pages = {28 -31},
+  month = {27-28},
+  doi = {10.1109/DMO.2009.5341914},
+  keywords = {agricultural land area optimization;agricultural land use planning;metaheuristic
+	approach;resource allocation;single objective optimization problem;agriculture;land
+	use planning;optimisation;resource allocation;}
+}
+
 @MISC{FAPOrientationModel,
   author = {Ralf Borndörfer and Andreas Eisenblätter and Martin Grötschel and
 	Alexander Martin},
@@ -202,6 +216,18 @@
   location = {London, England}
 }
 
+@INPROCEEDINGS{MetaGraph,
+  author = {Mahmoudzadeh, H. and Eshghi, K.},
+  title = {A Metaheuristic Approach to the Graceful Labeling Problem of Graphs},
+  booktitle = {Swarm Intelligence Symposium, 2007. SIS 2007. IEEE},
+  year = {2007},
+  pages = {84 -91},
+  month = {1-5},
+  doi = {10.1109/SIS.2007.368030},
+  keywords = {ant colony optimization;graceful labeling problem;graphs;metaheuristic
+	approach;graph theory;optimisation;}
+}
+
 @TECHREPORT{ExactMIFAP,
   author = {Vittoria Maniezzo and Roberto Montemanni},
   title = {An Exact Algorithm for the Min-Interference Frequency Assignment
@@ -218,6 +244,33 @@
   author = {Asha Mehrotra},
   owner = {william},
   timestamp = {2009.08.08}
+}
+
+@INPROCEEDINGS{Self-AdaptiveMeta,
+  author = {Meignan, David and Cr\'{e}put, Jean-Charles and Koukam, Abderrafiaa},
+  title = {A cooperative and self-adaptive metaheuristic for the facility location
+	problem},
+  booktitle = {GECCO '09: Proceedings of the 11th Annual conference on Genetic and
+	evolutionary computation},
+  year = {2009},
+  pages = {317--324},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  doi = {http://doi.acm.org/10.1145/1569901.1569946},
+  isbn = {978-1-60558-325-9},
+  location = {Montreal, Qu\'{e}bec, Canada}
+}
+
+@INPROCEEDINGS{SweepMeta,
+  author = {Mejtsky, George Jiri},
+  title = {The improved sweep metaheuristic for simulation optimization and
+	application to job shop scheduling},
+  booktitle = {WSC '08: Proceedings of the 40th Conference on Winter Simulation},
+  year = {2008},
+  pages = {731--739},
+  publisher = {Winter Simulation Conference},
+  isbn = {978-1-4244-2708-6},
+  location = {Miami, Florida}
 }
 
 @BOOK{GSM92,

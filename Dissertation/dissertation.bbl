@@ -12,6 +12,12 @@ Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
 \newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
   December 2004.
 
+\bibitem{MetaAgricultural}
+I.~Badarudin, A.B.M. Sultan, M.N. Sulaiman, A.~Mamat, and M.T.M. Mohamed.
+\newblock Metaheuristic approaches for optimizing agricultural land areas.
+\newblock In {\em Data Mining and Optimization, 2009. DMO '09. 2nd Conference
+  on}, pages 28 --31, 27-28 2009.
+
 \bibitem{FAPOrientationModel}
 Ralf Borndörfer, Andreas Eisenblätter, Martin Grötschel, and Alexander
   Martin.
@@ -98,6 +104,12 @@ Francisco Luna, Christian Blum, Enrique Alba, and Antonio~J. Nebro.
   Genetic and evolutionary computation}, pages 94--101, New York, NY, USA,
   2007. ACM.
 
+\bibitem{MetaGraph}
+H.~Mahmoudzadeh and K.~Eshghi.
+\newblock A metaheuristic approach to the graceful labeling problem of graphs.
+\newblock In {\em Swarm Intelligence Symposium, 2007. SIS 2007. IEEE}, pages 84
+  --91, 1-5 2007.
+
 \bibitem{ExactMIFAP}
 Vittoria Maniezzo and Roberto Montemanni.
 \newblock An exact algorithm for the min-interference frequency assignment
@@ -109,6 +121,21 @@ Vittoria Maniezzo and Roberto Montemanni.
 Asha Mehrotra.
 \newblock {\em GSM System Engineering}.
 \newblock Arteh House, Inc, 1997.
+
+\bibitem{Self-AdaptiveMeta}
+David Meignan, Jean-Charles Cr\'{e}put, and Abderrafiaa Koukam.
+\newblock A cooperative and self-adaptive metaheuristic for the facility
+  location problem.
+\newblock In {\em GECCO '09: Proceedings of the 11th Annual conference on
+  Genetic and evolutionary computation}, pages 317--324, New York, NY, USA,
+  2009. ACM.
+
+\bibitem{SweepMeta}
+George~Jiri Mejtsky.
+\newblock The improved sweep metaheuristic for simulation optimization and
+  application to job shop scheduling.
+\newblock In {\em WSC '08: Proceedings of the 40th Conference on Winter
+  Simulation}, pages 731--739. Winter Simulation Conference, 2008.
 
 \bibitem{GSM92}
 Marie-Bernadette~Pautet Michel~Mouly.
@@ -165,6 +192,14 @@ Anand~Prabhu Subramanian, Himanshu Gupta, Samir~R. Das, and Jing Cao.
   networks.
 \newblock {\em IEEE Transactions on Mobile Computing}, 7(7):1459--1473,
   December 2008.
+
+\bibitem{AutoComplexMeta}
+Yiliang Xu, Meng~Hiot Lim, and Yew-Soon Ong.
+\newblock Automatic configuration of metaheuristic algorithms for complex
+  combinatorial optimization problems.
+\newblock In {\em Evolutionary Computation, 2008. CEC 2008. (IEEE World
+  Congress on Computational Intelligence). IEEE Congress on}, pages 2380
+  --2387, 1-6 2008.
 
 \bibitem{FixedFAPPSO}
 Dominic C~O'Brien Yangyang~Zhang.

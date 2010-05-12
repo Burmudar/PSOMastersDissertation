@@ -1,7 +1,7 @@
 \chapter{Metaheuristics Algorithms}
 
 \section{Introduction}
-Metaheuristics is a sub domain of the artificial intelligence domain. It evoled out of a need for more efficient search techniques with regard to hard problems. 
+Metaheuristics is a sub domain of the artificial intelligence domain. It evolved out of a need for more efficient search techniques with regard to hard problems. 
 
 Metaheuristics forms part of a collective body of algorithms that use heuristics to search a particular domain's problem space, for the most optimal solution adhering to certain hard and soft constraints. Some of the msot important Algorithms that form part of this collectivee body is:
 \begin{itemize}
@@ -9,35 +9,85 @@ Metaheuristics forms part of a collective body of algorithms that use heuristics
 \item Simulated Annealing
 \item Genetic Algorithm
 \end{itemize}
-The above mentioned algorithms aren't the only algorithms to form part of this sub-domain, but they are the algorithms that have recieved the most attention in the literature and generally produce good results.
+The above mentioned algorithms aren't the only algorithms to form part of this sub-domain, but they are the algorithms that have recieved the most attention in the literature and generally produce good results \cite{SweepMeta}.
 
 In this chapter our main focus will be to discuss each of the above listed algorithms. We will start of by briefly discussing the characteristics of metaheuristic algorithms after which we will discuss each of the above algorithms in detail. We will also provide a literature study for each algorithm inorder for us to see how an algorithm needs to be changed and optimised for a particular problem domain. 
 
 \section{Characteristics of Metaheuristics}
 NP-Complete problems have been proven to not be solveble in polinomial time by local search methods such as 1,2,3. Metaheuristic algorihtms on the other hand are much more efficient in searching the problem space and produce much better results in a short amount of time. 
 
-Metaheuristic Algorihtms do not search statically by testing and evalutating every possible permutation in the solution space. Instead these algorithms make use of certain strategies and heuristics (specific to the problem domain) to search the solution space intelligently. The heuristics guide the algorithm to move to possible desireable regions in the solution space where there is a high probability of obtaining high qaulity candidate solutions \cite{HeuristicManipulation}.
+These algorihms are considered to be \emph{general-purpose} algorithsm and can thus be applied to a wide variety of optimization problems with only small modifications that need to made to the algorithm model.\cite{MetaGraph}.
 
-\paragraph{A Cooperative and Self-adaptive Metaheuristic for the Facility Location Problem}
-Distributed artificial intelligence and particularly multiagent systems seem to be promising field of research to tackle thse new issues. Multiagent appraoch  is tightly linked to metaheuristics considering that both approaches can exploit the social methaphor and self-organization paradigm. Thus, multiagent concepts are widely used in metaheuristics, particularly for population-based, hybrid and distributed metaheuristics. The advantages of using multiagent approach for metaheuristics may be justified by the distribution and robustness inherent to multiagent systems and the need flexibility and modularity.
+Metaheuristic Algorihtms do not search statically by testing and evalutating every possible permutation in the solution space. Instead these algorithms make use of certain strategies and heuristics (specific to the problem domain) to search the solution space intelligently through trail and error \cite{MetaAgricultural}. 
 
-\paragraph{The improved sweep metaheuristic for simulation optimization and application to job shop scheduling}
-Today, the most attractive simulation optimization methods are metaheuristics, such as tabu serach, simulated annealing, or genetic algorithm. Metaheuristics are algoritms which guide a series of simulation runs to produce better solutions than simple heuristics can generate. A metaheuristic algorithm, a separate module from a simulation model, caries out (designs and evaluates) multiple simulation runs executed sequentially. IN this tradional simulation optimization, the simulation model is used as a black box function evaluator. For recent review of literature on simuilation optimization, see Fu, Glover and April(2005) or Henderson and Nelson(2006).
+These algorithms iteratively move through the solution space, using a heuristic to guide the search to move to more desireable regions in the solution space where there is a high probability of obtaining high qaulity candidate solutions \cite{HeuristicManipulation,SweepMeta}.
 
-\paragraph{A Meatheuristic Algorithm for simultaneous simulation optimization and applications to traveling salesman and job shop scheduling with due dates}
-``The metaheuristic appraoch to simulation optimization is based on viewing the simulation modle as a black box function evaluator" writes April et al. (2003). Hence during a simulation optimization, a sequence of somulations runs is carried out, and the simulation model is trated as a black box -- no knowledge of the workings of the model is required.
+Metaheuristic based search methods aren't gauranteed to find the most optimal solutions in the solution space, instead these methods are usually used to find near-optimal solutions. Thus most algorithmic development in the metaheuristic domain focus developing new techniques that will increase the probability that a good solution will be obtained in difficult combinatorial problems \cite{MetaAgricultural}.
 
-\paragraph{Metaheuristic Appraoches for Optimizing Argicultural Land Areas}
-Metaheuristic methods use stochastic processes that are based on local search procedure, which finds the optimal solution by trail and error, but incorporate some strategies (i.e metaheuristics) to explore the solution space efficiently. Metaheuristic methods are suaulyy emploed to find good (i.e near optimal) but not necassary gauranteed optimal solutions, in such problems. The effectiveness of metaheuristic methods depends upon their ability to adapt to particular constraint, avoid entrapment at local optima, and efficiently exploit it the basic structure of the problem. Building on these notions various metaheuristic search techniques have been developed that have demonstrably improved the ability to obtain good solution to difficult combinatorial optimization problems. In other words, metaheuristics are formed to find optima solution for each particular problem parts and then will solve the overall problem parts and then it will solve the overall problem, eventually show a significant improvement of user satisfaction.
+Similarly, Metaheuristics aren't gauranteed to find ``good'' solutions or perform well in each problem domain it is applied. The quality of the solution and performance of the metaheuristic is very much depended on the expertise of the algorithm designer \cite{AutoComplexMeta}. 
 
-\paragraph{A Metaheuristic Approach to the graceful labeling problem of Graphs}
-Many problems of practical importance can be modeled as combinatorial optimization problems. It is known that the majority of these problems cannot be solved by a polynomial time algorithm. For this reason, heuristics have been invented to find solutions fo these problems in a reasonable amount of time. Some of these heuristic algorithms are not restircted to specific problem types but may be applied , with suitable modifications, to a broad class of optimization problems. Often these ``general-purpose'' algorithms are called \emph{metaheuristics}.
+The standard metaheuristic algorithms won't take advantage of specific domain knowledge to exploit the search domain and will produce relatively poor results. It is up to the algorithm designer to modify the algorithm sufficiently based on domain knowledge he/she as obtained\cite{AutoComplexMeta}.
 
-\paragraph{Automatic Configuration of Metaheuristic Agorithms for Complex COmbinatorial Optimization Problems}
-Based on the No Free Lunch(NFL) theorem, there does not exist a universal black-box algorithm, such as metaheuristics, which performs ``well'' for all the optimization problems. ofr particular problem domain, one has to configure highly specialized algorithsm for ``good'' solution. However, in the conventional algorithm development, the performance of highly specialized metaheuristic algorithm depends very much on the designers's expertise on both algorithm design and the knowledge specific to the problem domain.
+Although heuristics play a key role in the performance of metauheuristic algorithms, it isn't the only factor that has an impact on performance and results.  Algorithms also use techniques and concepts from other system paradigms like multi-agent systems. 
 
+In multi-agent systems, multiple agents have to communicate with each other and the system as a whole has to perform some sort of autonomous self-organization. This social and self-organization concepts enable these systems to be distrubuted,robust and flexible. Which is why in metaheuristic algorithms that are population-based,hybird and/or distributed these same concepts are used to beter exploit the solution space\cite{Self-AdaptiveMeta}.
+
+In this section we introduced the characteristics of metaheuristics which sets these algorithms apart from the convential algorithms used on difficult problems. We gave a general overview on how solutions are obtained as well as the quality of solutions. We also briefly discussed why for each problem domain the algorithm used, must be changed to fit the domain. 
+
+In the next section of this chapter we will discuss the first metaheuristic which we are investigating namely, Tabu Search.
 \section{Tabu Search}
+\subsection{An Evolutionary Parallel Tabu Search approach for distribution systems reinforcement planning}
+The Tabu Search is intrinsically a feasible search algorithm for this kind of problem. Indeed, it does not need many iterations to obtain better solutions; it is effective for optimising discrete combinatorial problems and it is straightforward and deterministic. On the other hand it does not have the potential to handle efficiently problems with large search spaces.
 
+The Tabu Search algorithm is basically different from the hill-climbing (or descent algorithm because the allter stops at a local minimum whereas Tabu Search includes a mechanism for escaping local minima. Unlike other heuristic methods, like genetic algorithms, or simulated annealing, Tabu Search does not converge to the best solution at the final iteration. Rather, it provides better solutions during the solutions search process.
+
+The Tabu Search aglorithm is based on a local search and thus, a suitable neighbourhood, should be defined beforehand. Nearby points can then be identified and a set of 'Tabu rules' guiding the move can be derived. These rules are often based on memory structures. The appraoch followed in the present application takes as Tabu rules a recencybased criterion and some practical rules derived from the problem knowledge. That measn that recent moves will not be repeated for a number of times (Tabu tenure) and that some movies will be more easily allowed than others.
+
+Generally the basic tasks of local heuristic involve directing the search towards high quality areas of the search space and avoiding being trapped into local minima.
+
+The TS algorithm tries to achieve these goals by using the Tabu rules to guide the local search process. If a recency-based Tabu rule is adpoted, the search proceeds as follows:
+
+At iteration $t$, the most cost-effective 'Allowed' move in the neighbourhood of the current solution is chosen and if no Tabu rule is violated, the move is made. The move then becomes a Tabu move and it will be forbidden (more or less strictly) at the next steps. At iteration $t$ between the sets of the Allowed and Tabu moves the following relations are verified.
+\begin{itemize}
+\item $A(t) \cap T(t) = M(t)$
+\item $A(t) \cup T(t) = \emptyset$
+\end{itemize}
+
+The starting point is randomly generated and at the first iteration all the moves are allowed.
+
+The introduction of a recency-based Tabu rule has proved to be sensible, as the current point can be a local minimum. Indeed. escaping this situation is possible only if a certain number of moves backwards are forbidden, moving along the neighbourhood;s minima for each current solution and not considering, at each iteration, the quality of the current solution itself.
+
+The efficiency of the TS algorithm depends essentially on the type of restriction selected and on the Tbau tenure. As a meta-heuristic method Tabu Search is in many cases better than simulated annealing and genetic algorithm for solving combinatorial optimisation problems in terms of computaional effort and solution accuracy. However, Tabu Search is inclined to deteriorate the performance of the solution search for a large scale problem.
+
+Tabu Search is efficeint for solving combinatorial optimisation problems. HOwever, as the problem size gets larger, TS has some drawbacks.
+
+\begin{enumerate}
+\item Tabu search needs to compute the ost function for solution candidates in the neighbourhood around a solution at each iteration. The calculation is very time consuming in large-scale problems. The large size problem often gives large neighbourhood even though the neighbourhood is defined as a set of solution candidate with the Hamming distance equal to 1.
+\item The complicated non-linear optimisation problem has many local minima in large scale problems. THa implies that one-point search does not gives satisfactory solutions due to the huge search space. Complicated optimisation problems require the solutions diversity.
+\end{enumerate}
+
+\subsection{A New Tabu Search Heauristic Algorithm for the Vehicle Routing Problem with Time Windows}
+Tabu list is one of the key factors that determine the quality of a Tabu Search algorithm. The most popular tabu list is constructed by those recently visisted solutions, or the moves to a solution. If the size of the tabu list is too large, it will spend more time to compare with the current solution one by one, but the size of the tabu list is too small, it will be very hard to escape for local optima. As for the combinatorial optimization problem like VRPTW problem, especially for as large instance as have over 100 customers, the solution space is very huge. Even the forbidding of a few hundred or thousand solutions works very poorly to escape from local optima and reach the global satisfying solution..
+
+In this paper, we give a new Tabu List design. The Tabu List memorizes intervales that contain each object value of the solutions reached by the search algorithms. TO make the maximum object value be our target, we take A-COST as our object functions, with A referring to big constant that guarantee object value is nonnegative. If a solution's objective value is in any of the intervals, it is considered as tabu. When as solution with objective value $z$ is reached, we tabu the interval $[z-h,z+h]$ for specific $T$ steps. By using tabu of object value intervales, instead of solution collection, the algorithm can quickly escape from local optimal solutions, otherwise, as we know, the quantity of solutions value in $[z-h,z+h]$ is enormous and even we have a very big sized tradition tabu list, it still takes a long time to get out of this area.
+
+\subsection{A parallel adaptive tabu search approach}
+A combinatorial optimization problem is defined by the specification of a pair $(X,f)$, where the search spce $X$ is a discrete set of all (feasible) solutions , and the objective function $f$ is a mapping $f \colon X \rightarrow R$. A neighbourhood $N$ is a mapping $N \colon X \rightarrow P(X)$, which specifies for each$S \in X$ a subset $N(S)$ of $X$ of neighbors of $S$.
+
+ The most famous local search optimisation method is the descent method. A descent method starts from an initial solution and then continaully explores the neighborhood of the current solution for a better solution. If such as solution is found, it replace the current solution. THe algorithm terminates as soons as the current solution has neighboring solution of better quality. Such a method genrally stops at a local but not global minimum.
+
+ Unlike a descent methods, TS uses an adaptive memory $H$ to control the search process. For example, a solution $S'$ in $N(S)$ may be classified tabu, when selecting a potential neighbor of $S$, due to memory considerations. $N(H,S)$ contains all neighborhood cnadidates that the memory $H$ will allow the algorithm to consider. Tabu Search my be viewed as a variable neighborhod method: each iteration rediefines the neighborhood, based on the conditions that classifiy certain moves as tabu.
+
+ At each iteration, Tabu Search selects the best neighbor solution in $N(H,S)$ even if this results in a worst solution than the current one. A form of short-term memory embodied in $H$ is the tabu list $T$ that forbid the selection of certain moves to prevent cycling.
+
+ To use Tabu Search for sovling an optimization problem, we must define in the input the following items:
+ \begin{itemize}
+ \item An initial solution $S_0$
+ \item The definition of the memory $H$.
+ \item The stopping condition: there may be several possible stopping conditions. A maximum number $nbmax$ of iterations between two improvemnents of $f$ is used as the stopping condition.
+ \end{itemize}
+
+A Tabu move applied to a current solution may appear attractive because it gives, for example, a solution better than the best found so far. We would like to accept the move in spite of its status by defining \emph{aspiration conditions}. Other advanced techniques may be implemented in a \emph{a long-term-memory} such as intensification to encourage the exploutation of a primising region in the search spacem and diversification to encourage the exploration of new regions.
 \paragraph{Applying Metaheuristic Techniques to Search the space of bidding Strategies in Combinatorial Auctions}
 Tabu Search is a variation of hill-climbing search enhanced with a memory that keeps the search from backtracking into spce it has already examined. tabu Serach begins at a seed solution and iterativel moves from one solution to its best neighbor until a termination condition is satisfied. The algorithms keeps track of the best solution found so far, and incorporates some elements of simulated annealing that allow it to escape from local optima. These features are particularly useful in serach problems iwth many plateaus  or rugged topolog. THe important components of tabu search are the definition of the neighborhood function, memory, aspiration criteria, and termination criteria.
 \subsection{Basic Algorithm}
