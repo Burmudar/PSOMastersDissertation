@@ -1,0 +1,77 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tabu Search Notes
+\end_layout
+
+\begin_layout Date
+William Bezuidenhout
+\end_layout
+
+\begin_layout Date
+19 May 2010
+\end_layout
+
+\begin_layout Section
+An Improved Tabu Search for Economic 
+\end_layout
+
+\begin_layout Standard
+@ARTICLE{982200, author={Whei-Min Lin and Fu-Sheng Cheng and Ming-Tong Tsay},
+ journal={Power Systems, IEEE Transactions on}, title={An improved tabu
+ search for economic dispatch with multiple minima }, year={2002}, month={feb},
+ volume={17}, number={1}, pages={108 -112}, keywords={adaptive progressing
+ scheme;aspiration criteria;convergence rate;economic dispatch;evolutionary
+ programming;flexible memory system;improved tabu search algorithm;modified
+ tabu search;noncontinuous cost functions;nonsmooth cost functions;optimization;
+parallelism;real valued optimization problem;simple tabu search;tabu restriction
+s;evolutionary computation;load dispatching;power system economics;search
+ problems;}, doi={10.1109/59.982200}, ISSN={0885-8950},}
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
