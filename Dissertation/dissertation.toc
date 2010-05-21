@@ -5,57 +5,62 @@
 \contentsline {section}{\numberline {2.1}Introduction}{11}
 \contentsline {section}{\numberline {2.2}GSM Networks}{12}
 \contentsline {subsection}{\numberline {2.2.1}A Brief History of GSM Networks}{12}
-\contentsline {section}{\numberline {2.3}Topology of a GSM Network}{16}
-\contentsline {subsubsection}{Mobile Station (MS)}{16}
-\contentsline {subsection}{\numberline {2.3.1}Base Station Subsystem (BSS)}{17}
-\contentsline {subsection}{\numberline {2.3.2}Mobile Switching Centre (MSC)}{18}
-\contentsline {subsection}{\numberline {2.3.3}Network Databases}{20}
-\contentsline {paragraph}{Home Location Register (HLR)}{20}
-\contentsline {paragraph}{Authentication Center (AUC)}{20}
-\contentsline {paragraph}{Equipment Identity Register (EIR)}{21}
-\contentsline {subsection}{\numberline {2.3.4}GSM Network Management entities}{21}
-\contentsline {paragraph}{Operational and Managemenet Center}{22}
-\contentsline {paragraph}{Network Management Center}{23}
-\contentsline {section}{\numberline {2.4}GSM Network problems}{23}
-\contentsline {section}{\numberline {2.5}Summary}{23}
-\contentsline {chapter}{\numberline {3}The Frequency Assignment Problem}{25}
-\contentsline {section}{\numberline {3.1}Introduction}{25}
-\contentsline {section}{\numberline {3.2}Frequency Assignment Types}{26}
-\contentsline {section}{\numberline {3.3}Interference}{28}
-\contentsline {section}{\numberline {3.4}FAP in the industry}{30}
-\contentsline {subsection}{\numberline {3.4.1}Satelite communication}{30}
-\contentsline {subsection}{\numberline {3.4.2}Wireless mesh networks and WLANs}{32}
-\contentsline {subsection}{\numberline {3.4.3}Military field communication}{33}
-\contentsline {subsection}{\numberline {3.4.4}Television and Radio Broadcasting}{35}
-\contentsline {subsection}{\numberline {3.4.5}Cellular Communication}{35}
-\contentsline {section}{\numberline {3.5}Frequency Assignment Problem types}{37}
-\contentsline {subsection}{\numberline {3.5.1}Minimum Order FAP}{37}
-\contentsline {subsection}{\numberline {3.5.2}Minimum Span FAP}{38}
-\contentsline {subsection}{\numberline {3.5.3}Minimum Interference FAP}{38}
-\contentsline {section}{\numberline {3.6}Fixed Spectrum MI-FAP Mathematical Formulation}{40}
-\contentsline {section}{\numberline {3.7}FAP Benchmarks}{42}
-\contentsline {subsection}{\numberline {3.7.1}Philedelphia Benchmark}{42}
-\contentsline {subsection}{\numberline {3.7.2}CELAR}{43}
-\contentsline {subsection}{\numberline {3.7.3}COST 256}{43}
-\contentsline {section}{\numberline {3.8}Summary}{44}
-\contentsline {chapter}{\numberline {4}Metaheuristics Algorithms}{45}
-\contentsline {section}{\numberline {4.1}Introduction}{45}
-\contentsline {section}{\numberline {4.2}Characteristics of Metaheuristics}{46}
-\contentsline {section}{\numberline {4.3}Tabu Search}{48}
-\contentsline {subsection}{\numberline {4.3.1}An Evolutionary Parallel Tabu Search approach for distribution systems reinforcement planning}{48}
-\contentsline {subsection}{\numberline {4.3.2}A New Tabu Search Heauristic Algorithm for the Vehicle Routing Problem with Time Windows}{50}
-\contentsline {subsection}{\numberline {4.3.3}A parallel adaptive tabu search approach}{51}
-\contentsline {paragraph}{Applying Metaheuristic Techniques to Search the space of bidding Strategies in Combinatorial Auctions}{52}
-\contentsline {subsection}{\numberline {4.3.4}Basic Algorithm}{53}
-\contentsline {subsection}{\numberline {4.3.5}Literature study}{53}
-\contentsline {section}{\numberline {4.4}Simulated Annealing}{53}
-\contentsline {subsection}{\numberline {4.4.1}Basic Algorithm}{53}
-\contentsline {subsection}{\numberline {4.4.2}Literature study}{53}
-\contentsline {section}{\numberline {4.5}Genetic Algorithm}{53}
-\contentsline {subsection}{\numberline {4.5.1}Basic Algorithm}{53}
-\contentsline {subsection}{\numberline {4.5.2}Literature study}{53}
-\contentsline {section}{\numberline {4.6}Summary}{53}
-\contentsline {chapter}{\numberline {5}Swarm Intelligence}{55}
-\contentsline {section}{\numberline {5.1}Introduction}{55}
-\contentsline {part}{II\hspace {1em}Implementation}{57}
-\contentsline {chapter}{Bibliography}{59}
+\contentsline {section}{\numberline {2.3}Topology of a GSM Network}{15}
+\contentsline {subsubsection}{Mobile Station (MS)}{15}
+\contentsline {subsection}{\numberline {2.3.1}Base Station Subsystem (BSS)}{16}
+\contentsline {subsection}{\numberline {2.3.2}Mobile Switching Centre (MSC)}{17}
+\contentsline {subsection}{\numberline {2.3.3}Network Databases}{18}
+\contentsline {paragraph}{Home Location Register (HLR)}{18}
+\contentsline {paragraph}{Authentication Center (AUC)}{19}
+\contentsline {paragraph}{Equipment Identity Register (EIR)}{19}
+\contentsline {subsection}{\numberline {2.3.4}GSM Network Management entities}{20}
+\contentsline {paragraph}{Operational and Managemenet Center}{20}
+\contentsline {paragraph}{Network Management Center}{21}
+\contentsline {section}{\numberline {2.4}GSM Network problems}{21}
+\contentsline {section}{\numberline {2.5}Summary}{21}
+\contentsline {chapter}{\numberline {3}The Frequency Assignment Problem}{23}
+\contentsline {section}{\numberline {3.1}Introduction}{23}
+\contentsline {section}{\numberline {3.2}Frequency Assignment Types}{24}
+\contentsline {section}{\numberline {3.3}Interference}{25}
+\contentsline {section}{\numberline {3.4}FAP in the industry}{27}
+\contentsline {subsection}{\numberline {3.4.1}Satelite communication}{27}
+\contentsline {subsection}{\numberline {3.4.2}Wireless mesh networks and WLANs}{28}
+\contentsline {subsection}{\numberline {3.4.3}Military field communication}{30}
+\contentsline {subsection}{\numberline {3.4.4}Television and Radio Broadcasting}{31}
+\contentsline {subsection}{\numberline {3.4.5}Cellular Communication}{31}
+\contentsline {section}{\numberline {3.5}Frequency Assignment Problem types}{32}
+\contentsline {subsection}{\numberline {3.5.1}Minimum Order FAP}{33}
+\contentsline {subsection}{\numberline {3.5.2}Minimum Span FAP}{33}
+\contentsline {subsection}{\numberline {3.5.3}Minimum Interference FAP}{34}
+\contentsline {section}{\numberline {3.6}Fixed Spectrum MI-FAP Mathematical Formulation}{35}
+\contentsline {section}{\numberline {3.7}FAP Benchmarks}{37}
+\contentsline {subsection}{\numberline {3.7.1}Philedelphia Benchmark}{37}
+\contentsline {subsection}{\numberline {3.7.2}CELAR}{37}
+\contentsline {subsection}{\numberline {3.7.3}COST 256}{38}
+\contentsline {section}{\numberline {3.8}Summary}{38}
+\contentsline {chapter}{\numberline {4}Metaheuristics Algorithms}{39}
+\contentsline {section}{\numberline {4.1}Introduction}{39}
+\contentsline {section}{\numberline {4.2}Characteristics of Metaheuristics}{40}
+\contentsline {section}{\numberline {4.3}Tabu Search}{41}
+\contentsline {subsection}{\numberline {4.3.1}Introduction}{41}
+\contentsline {subsection}{\numberline {4.3.2}Important Tabu Search characteristics}{42}
+\contentsline {subsection}{\numberline {4.3.3}An Evolutionary Parallel Tabu Search approach for distribution systems reinforcement planning}{43}
+\contentsline {subsection}{\numberline {4.3.4}A New Tabu Search Heauristic Algorithm for the Vehicle Routing Problem with Time Windows}{45}
+\contentsline {subsection}{\numberline {4.3.5}A parallel adaptive tabu search approach}{46}
+\contentsline {subsection}{\numberline {4.3.6}A Tabu Search Approach to Automated Map Generalisation}{47}
+\contentsline {subsection}{\numberline {4.3.7}Methodology for Service Restoration based Adaptive-Selective Tabu Search}{48}
+\contentsline {subsection}{\numberline {4.3.8}Hybrid simulated annealing algorithm based on adaptive cooling schedule for TSP}{49}
+\contentsline {paragraph}{Applying Metaheuristic Techniques to Search the space of bidding Strategies in Combinatorial Auctions}{49}
+\contentsline {subsection}{\numberline {4.3.9}Basic Algorithm}{50}
+\contentsline {subsection}{\numberline {4.3.10}Literature study}{50}
+\contentsline {section}{\numberline {4.4}Simulated Annealing}{50}
+\contentsline {subsection}{\numberline {4.4.1}Basic Algorithm}{50}
+\contentsline {subsection}{\numberline {4.4.2}Literature study}{50}
+\contentsline {section}{\numberline {4.5}Genetic Algorithm}{50}
+\contentsline {subsection}{\numberline {4.5.1}Basic Algorithm}{50}
+\contentsline {subsection}{\numberline {4.5.2}Literature study}{50}
+\contentsline {section}{\numberline {4.6}Summary}{50}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{51}
+\contentsline {section}{\numberline {5.1}Introduction}{51}
+\contentsline {part}{II\hspace {1em}Implementation}{53}
+\contentsline {chapter}{Bibliography}{55}

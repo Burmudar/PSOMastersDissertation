@@ -47,6 +47,12 @@ Andreas Eisenbl{\"a}tter.
   and Lower Bounds}.
 \newblock PhD thesis, Technische Universit{\"a}t Berlin, Berlin, Germany, 2001.
 
+\bibitem{TabuCarryOver}
+Mohan Gopalakrishnan, Ke~Ding, Jean-Marie Bourjolly, and Srimathy Mohan.
+\newblock A tabu-search heuristic for the capacitated lot-sizing problem with
+  set-up carryover.
+\newblock {\em Manage. Sci.}, 47(6):851--863, 2001.
+
 \bibitem{MultipleBinaryFAP}
 J.S Graham, R.~Montemanni, J.~N~J. Moon, and D.~H. Smith.
 \newblock Frequency assignment. multiple interference and binary constraints.
@@ -193,6 +199,12 @@ Anand~Prabhu Subramanian, Himanshu Gupta, Samir~R. Das, and Jing Cao.
 \newblock {\em IEEE Transactions on Mobile Computing}, 7(7):1459--1473,
   December 2008.
 
+\bibitem{ReactiveTabuVHR}
+N.~A. Wassan.
+\newblock A reactive tabu search for the vehicle routing problem.
+\newblock {\em The Journal of the Operation Research Society}, 57:111--116,
+  2006.
+
 \bibitem{AutoComplexMeta}
 Yiliang Xu, Meng~Hiot Lim, and Yew-Soon Ong.
 \newblock Automatic configuration of metaheuristic algorithms for complex
@@ -207,5 +219,12 @@ Dominic C~O'Brien Yangyang~Zhang.
   swarm optimization.
 \newblock In {\em Proceedings of the Internation Symposium of Industrial
   Electronics}, June 2005.
+
+\bibitem{TSHazardous}
+L.~Zhang, S.~Guo, Y.~Zhu, and A.~Lim.
+\newblock A tabu search algorithm for the safe transportation of hazardous
+  materials.
+\newblock In {\em SAC '05: Proceedings of the 2005 ACM symposium on Applied
+  computing}, pages 940--946, New York, NY, USA, 2005. ACM.
 
 \end{thebibliography}

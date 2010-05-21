@@ -3,7 +3,7 @@
 \section{Introduction}
 Metaheuristics is a sub domain of the artificial intelligence domain. It evolved out of a need for more efficient search techniques with regard to hard problems. 
 
-Metaheuristics forms part of a collective body of algorithms that use heuristics to search a particular domain's problem space, for the most optimal solution adhering to certain hard and soft constraints. Some of the msot important Algorithms that form part of this collectivee body is:
+Metaheuristics forms part of a collective body of algorithms that use heuristics to search a particular domain's problem space, for the most optimal solution adhering to certain hard and soft constraints. Some of the most important Algorithms that form part of this collectivee body is:
 \begin{itemize}
 \item Tabu Search
 \item Simulated Annealing
@@ -16,7 +16,7 @@ In this chapter our main focus will be to discuss each of the above listed algor
 \section{Characteristics of Metaheuristics}
 NP-Complete problems have been proven to not be solveble in polinomial time by local search methods such as 1,2,3. Metaheuristic algorihtms on the other hand are much more efficient in searching the problem space and produce much better results in a short amount of time. 
 
-These algorihms are considered to be \emph{general-purpose} algorithsm and can thus be applied to a wide variety of optimization problems with only small modifications that need to made to the algorithm model.\cite{MetaGraph}.
+These algorihms are considered to be \emph{general-purpose} algorithsm and can thus be applied to a wide variety of optimization problems with only small modifications that need to made to the algorithm model\cite{MetaGraph}.
 
 Metaheuristic Algorihtms do not search statically by testing and evalutating every possible permutation in the solution space. Instead these algorithms make use of certain strategies and heuristics (specific to the problem domain) to search the solution space intelligently through trail and error \cite{MetaAgricultural}. 
 
@@ -36,6 +36,34 @@ In this section we introduced the characteristics of metaheuristics which sets t
 
 In the next section of this chapter we will discuss the first metaheuristic which we are investigating namely, Tabu Search.
 \section{Tabu Search}
+\subsection{Introduction}
+Tabu Search (TS) has been relatively successful in a lot of optimization problems. If we observe the results in papers by 1,2,3,4,5,6,7,8,10; Tabu Search has on average obtained the best results compared to previous attempts. %A Tabu Search algorithm for the Resource-Constrained Assignment Problem --- The Metaheuristic, Tabu Search was proposed by Glover as a technique to overcome entrapment at a local optimal solution in local search-based heuristic algorithms.%
+
+General search algorithsm like Hill-climbing, Random-restart or Scatter search tend to get stuck on local optima. The local optima might be a very attractive solution and thus general search algorithms will not move to beter solutions since according the algorihtms built in strategy it has found the best solution, but in actual fact its solution is the best it its \emph{local} search space but not in the \emph{global} search space. This is why an important charateristic that algorithms being applied on optimisation problems need to posess is breaking out of local optima.
+
+In the next section we will explain what makes Tabu Search such a better algorithm that previous algorihtms and why it is able on average to produce better results.
+
+\subsection{Important Tabu Search characteristics}
+In this section we will discuss some of the key characteristics and tehcniques that Tabu search exibits that enables it to find relatively good solutions in a short amount of time.
+
+The core feature of the TS algorithm is sequentially improving the initial solution \cite{TSHazardous}. Thus an important consideration to make is how initial solutions are generated for the TS to start on. Random initial solutions might seem to be a good starting point, but by introducing randomization it becomes hard to control the quality of the end solution. Thus the generation of starting solutions must be controlled to limit the infeasibility of potential soltuions \cite{TSHazardous}.
+
+Tabu Search uses a neighbourhood local search process to explore the solution space. There is no set process of how neighbourhoud candidate solutions are selected. Depending on the problem the TS is applied different neighborhoud solution selection strategies are needed. The overall quality of the solution produced by TS is also dependent on the neighbourhood search strategy used \cite{TSHazardous}. 
+
+The TS algorithm isn't limited to just one neighbourhood search strategy. In the paper by Gopalakrishnan et al.\cite{TabuCarryOver} five neighbourhood move strategies are developed and are used interchangebly, in some cases a strategy is used three times in a row due to stagnation in the search space. However to combat this stagnation, the authors opted to use all the move strategies 15 percent of the time, and the last four moves strategies for 85 percent of the time when generating neighbourhood solutions.
+
+Other neighbourhood strategies developed is one developed by N. A. Wassan \cite{ReactiveTabuVHR}. In the authors paper a neighbourhood selection strategy is used that exchanges route nodes from initial vehicle routes for the Vehicle Routing Problem. This route exchange enalbes the TS algorithm to search much more broadly due to the constant supply of different solutions. Since initial solutions are constantly modified it enables the TS procedure to be a very fined grained process, because often a small changes in a potential solution can have a big impact on the overall proposed solution by the TS algorithm.
+
+In the research done by Zhang et. al \cite{TSHazardous} an interesting neighbourhood selection scheme called \emph{dynamic penalty} is discussed. When the algorithm moves onto an infeasible solution a penalty is imposed. By dynamically changing the penalty that is imposed the ``feasibility'' of solutions produced is influenced. Therefore, when and if the algorithm continually produces infeasible solutions, the penalty imposed is increased as to guide to algorithm to produce more feasible solutions. Finally, in the case when the algorithm is stuck on local optima, the penalty is reduced, which allows the algorithm to consider moving onto infeasible solutions thus escaping local optima.
+
+%Show papers that use other neighbourhood selection schemes%
+The Hill-climbing and Random-restart algorithms are able to break out of local minima, but there is nothing stopping these algorithms from avoiding the local optima with their second or n-pass in the search space. Tabu Search differs from these algorihtms by incorporating an important concept; the notion of memory.
+
+In its most basic form Tabu Search keeps a local memory of all its recent best moves, and puts them into a \emph{Tabu List} that has a predefined size. In the literature the size of the tabu list is refered to as the \emph{Tabu tenure}(must reference). The algorithm is not allowed to move to any solution that is in the tabu list unless a solution that is \emph{tabu} is better than any current moves available in the immediate search neighborhoud.
+
+%Discuss LTM,MTM,STM
+
+%Discuss Intensification and Diversification
 \subsection{An Evolutionary Parallel Tabu Search approach for distribution systems reinforcement planning}
 The Tabu Search is intrinsically a feasible search algorithm for this kind of problem. Indeed, it does not need many iterations to obtain better solutions; it is effective for optimising discrete combinatorial problems and it is straightforward and deterministic. On the other hand it does not have the potential to handle efficiently problems with large search spaces.
 
@@ -88,6 +116,29 @@ A combinatorial optimization problem is defined by the specification of a pair $
  \end{itemize}
 
 A Tabu move applied to a current solution may appear attractive because it gives, for example, a solution better than the best found so far. We would like to accept the move in spite of its status by defining \emph{aspiration conditions}. Other advanced techniques may be implemented in a \emph{a long-term-memory} such as intensification to encourage the exploutation of a primising region in the search spacem and diversification to encourage the exploration of new regions.
+
+\subsection{A Tabu Search Approach to Automated Map Generalisation}
+Tabu Search is a procedure for solving discrete combinatorial optimisation problems. Glover prvides evidence of both the adaptability and efficiency of the approach, with it having been successfully applied to obtain optimal or near optimal solutions to such problems as scheduling, timetabling, traveling salesman and layout optimisation. Recently the technique has been applied successfully to the problem of point-feature cartographic label placement. 
+
+Tabu serach can be viewed as an iterative technique that explores a set of feasible states by a sequence of moves. In general, the best move is taken at each iteration. However, to help prevent the search process from returning to a previous solution (called cycling), some moves are based on the short-term and long-term history of the sequence of movies that meet defined criteria. For example, one might classiffy a move as tabu if the reverse move has been made recently (with in a given number of iterations) or frequently (a given number of times). It may sometimes be desirable to make an otherwise tabu move; in order to achieve this, a particular implementation may include aspiration criteria that override the tbau status of particular moves. Such aspiration criteria might include a case which, by ignoring that a move is tabu, leads to a that is the best obtained so far.
+
+The search space $S$ to which Tabu Search can be applied can be characterised as set of $i$ moves $M = \{ m_1,\dots,m_i \}$ and the application of the moves to a feasible solution $s \in S$ that leads to $i$ usually distinct solutions $M(s)=\{m_1(s),\dots,m_i(s)\}$. The subseteq $N(s) \subseteq M(s)$ of feasible solutions is known as the neighbourhood of $s$. The method commences with a solution $s_0 \in S$ and determines a sequence of solutions $s_1,s_2,\dots,s_i \in S$ by succession of $i$ moves. At each iteration a solution is selected from the neighborhood $(s_{i+1} \in N(s_i))$. The selection process first determines the current solution's $s_i$ tabu set of neighbours $T(s_i)\subseteq N(s_i)$ and the aspirant or non-tabu neighborhour. The Tabu search procedure is halted when a given threshold for an acceptabnle solution has been achieved or when a certain bnumber of iterations have been completed.
+
+\subsection{Methodology for Service Restoration based Adaptive-Selective Tabu Search}
+Tabu Search is an efficient heuristic procedure applied in solution of optimization problems, which is projected to help other optimization methods or its components escape from local valley.
+
+It is based on combing the hill climbing method of local search with the adaptive memory in order to make the search more flexible. Therefore, TS differs from other tehcniques that do not use memory procedures, as Simulated Annealing (SA) do is; or utilize the technique in a strict way, as branch and bound. The memory application is based on procedures presented as follows:
+\begin{itemize}
+\item Flexible attributes --- memory structes which enable the variation of the parpamters and search past history;
+\item Associative adjusting mechanism --- interaction between exclusion and inclusion mechanism parameters;
+\item Different Times Memory Function --- enables intensification and diversification search.
+\end{itemize}
+
+This method can be applied in various areas, that is, financial analysis, distribution power system, environment protection, logistic, etc., and has presented optimal or near optimal results. TS has two distinct strategies to use memory: short period memory, more aggressive, and long period one, used as a strategy for technique improvement.
+
+\subsection{Hybrid simulated annealing algorithm based on adaptive cooling schedule for TSP}
+It hasb nee seeen that tabu search algorithm uses short term memory of recently visisted solution known as tabu list to escape from local optima, but tabu list has a deterministic nature and thus cannot avoid cycling. This drawback of tabu search has been taken care of by SA in which stochastic characteristic avoid cycling. Because SA has no memory of recently visisted solutions, the rate of improvement of solutions is very slow. There is always a probability for the search to return to the same solution again. However, with the help of a short-term memory, the search can be restricted from retiring to a previously visisted solution and performance of SA can be enchanced significantly.
+
 \paragraph{Applying Metaheuristic Techniques to Search the space of bidding Strategies in Combinatorial Auctions}
 Tabu Search is a variation of hill-climbing search enhanced with a memory that keeps the search from backtracking into spce it has already examined. tabu Serach begins at a seed solution and iterativel moves from one solution to its best neighbor until a termination condition is satisfied. The algorithms keeps track of the best solution found so far, and incorporates some elements of simulated annealing that allow it to escape from local optima. These features are particularly useful in serach problems iwth many plateaus  or rugged topolog. THe important components of tabu search are the definition of the neighborhood function, memory, aspiration criteria, and termination criteria.
 \subsection{Basic Algorithm}

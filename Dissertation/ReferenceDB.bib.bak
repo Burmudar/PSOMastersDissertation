@@ -344,6 +344,21 @@
   timestamp = {2009.09.20}
 }
 
+@ARTICLE{TabuCSP,
+  author = {Koji Nonobe and Toshihide Ibaraki},
+  title = {A tabu search approach to the constraint satisfaction problem as
+	a general problem solver},
+  journal = {European Journal of Operational Research},
+  year = {1998},
+  volume = {106},
+  pages = {599 - 623},
+  number = {2-3},
+  doi = {DOI: 10.1016/S0377-2217(97)00294-4},
+  issn = {0377-2217},
+  keywords = {Combinatorial problems},
+  url = {http://www.sciencedirect.com/science/article/B6VCT-3V7B1NM-V/2/a49ab58d0eff599cf403127692efbd88}
+}
+
 @BOOK{GSMSecurInTeleNetwork,
   title = {Security for Telecommunications Networks},
   publisher = {Springer US},
@@ -410,6 +425,35 @@
   timestamp = {2010.03.24}
 }
 
+@ARTICLE{ReactiveTabuVHR,
+  author = {N. A. Wassan},
+  title = {A Reactive Tabu Search for the Vehicle Routing Problem},
+  journal = {The Journal of the Operation Research Society},
+  year = {2006},
+  volume = {57},
+  pages = {111-116},
+  owner = {william},
+  timestamp = {2010.05.20}
+}
+
+@INPROCEEDINGS{AutoComplexMeta,
+  author = {Yiliang Xu and Meng Hiot Lim and Yew-Soon Ong},
+  title = {Automatic configuration of metaheuristic algorithms for complex combinatorial
+	optimization problems},
+  booktitle = {Evolutionary Computation, 2008. CEC 2008. (IEEE World Congress on
+	Computational Intelligence). IEEE Congress on},
+  year = {2008},
+  pages = {2380 -2387},
+  month = {1-6},
+  doi = {10.1109/CEC.2008.4631116},
+  keywords = {automatic configuration engine for metaheuristics;complex combinatorial
+	optimization problem;evolutionary learning algorithm;evolutionary
+	methodology;left variation-right property tree structure;metaheuristic
+	algorithms;quadratic assignment problem;user-defined satisfaction
+	function;computational complexity;evolutionary computation;learning
+	(artificial intelligence);optimisation;trees (mathematics);}
+}
+
 @INPROCEEDINGS{FixedFAPPSO,
   author = {Yangyang Zhang, Dominic C O'Brien},
   title = {Fixed Channel Assignment in Cellular Radio Networks Using Particle
@@ -419,6 +463,20 @@
   month = {June},
   owner = {william},
   timestamp = {2010.02.14}
+}
+
+@INPROCEEDINGS{TSHazardous,
+  author = {Zhang, L. and Guo, S. and Zhu, Y. and Lim, A.},
+  title = {A tabu search algorithm for the safe transportation of hazardous
+	materials},
+  booktitle = {SAC '05: Proceedings of the 2005 ACM symposium on Applied computing},
+  year = {2005},
+  pages = {940--946},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  doi = {http://doi.acm.org/10.1145/1066677.1066893},
+  isbn = {1-58113-964-0},
+  location = {Santa Fe, New Mexico}
 }
 
 @comment{jabref-meta: selector_publisher:}
