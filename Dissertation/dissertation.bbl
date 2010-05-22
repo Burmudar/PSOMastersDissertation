@@ -95,6 +95,13 @@ Lhassane Idoumghar and Ren{é} Schott.
   the field of radio broadcasting.
 \newblock {\em IEEE Transactions on Broadcasting}, 55:223--229, 2009.
 
+\bibitem{TabuParameterization}
+I.~Jovanoski, I.~Chorbev, D.~Mihajlov, and I.~Dimitrovski.
+\newblock Tabu search parameterization and implementation in a constraint
+  programming library.
+\newblock In {\em EUROCON, 2007. The International Conference on Computer as a
+  Tool}, pages 459 --464, 9-12 2007.
+
 \bibitem{MISatelite}
 Wen Liu, Haixiang Shi, and Lipo Wang.
 \newblock Minimizing interference in satellite communications using chaotic
@@ -148,6 +155,14 @@ Marie-Bernadette~Pautet Michel~Mouly.
 \newblock {\em The GSM System for Mobile Communications}.
 \newblock Cell \& Sys, 1992.
 
+\bibitem{TabuVechicleRoutingWithTimeWindows}
+Qi~Ming-yao, Miao Li-xin, Zhang Le, and Xu~Hua-yu.
+\newblock A new tabu search heuristic algorithm for the vehicle routing problem
+  with time windows.
+\newblock In {\em Management Science and Engineering, 2008. ICMSE 2008. 15th
+  Annual Conference Proceedings., International Conference on}, pages 1648
+  --1653, 10-12 2008.
+
 \bibitem{MontemanniThesis}
 Roberto Montemanni.
 \newblock {\em Upper and Lower bounds for the fixed spectrum frequency
@@ -169,11 +184,25 @@ Garry Mullet.
 \newblock {\em Wireless telecommunications systems and networks}.
 \newblock Thomsan Delmar Learning, 2006.
 
+\bibitem{TabuSingleMachineScheduling}
+E.~Nowicki and S.~Zdrzalka.
+\newblock Single machine scheduling with major and minor setup times - a tabu
+  search approach.
+\newblock {\em The Journal of the Operational Research Society}, 47:1054--1064,
+  1996.
+
 \bibitem{GSMSecurInTeleNetwork}
 Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
 \newblock {\em Security for Telecommunications Networks}, volume~40 of {\em
   Advances in Information Security}.
 \newblock Springer US, 2008.
+
+\bibitem{TabuRCAProblem}
+Abraham~P. Punnen and Y.~P. Aneja.
+\newblock A tabu search algorithm for the resource-constrained assignment
+  problem.
+\newblock {\em The Journal of the Operational Research Society}, 46:214--220,
+  1995.
 
 \bibitem{MSFAP}
 Angelos~N. Rouskas, Michael~G. Kazantzakis, and Miltiades~E. Anagnostou.
@@ -198,6 +227,21 @@ Anand~Prabhu Subramanian, Himanshu Gupta, Samir~R. Das, and Jing Cao.
   networks.
 \newblock {\em IEEE Transactions on Mobile Computing}, 7(7):1459--1473,
   December 2008.
+
+\bibitem{TabuBiddingStrats}
+Ashish Sureka and Peter~R. Wurman.
+\newblock Applying metaheuristic techniques to search the space of bidding
+  strategies in combinatorial auctions.
+\newblock In {\em GECCO '05: Proceedings of the 2005 conference on Genetic and
+  evolutionary computation}, pages 2097--2103, New York, NY, USA, 2005. ACM.
+
+\bibitem{TabuFormGames}
+Ashish Sureka and Peter~R. Wurman.
+\newblock Using tabu best-response search to find pure strategy nash equilibria
+  in normal form games.
+\newblock In {\em AAMAS '05: Proceedings of the fourth international joint
+  conference on Autonomous agents and multiagent systems}, pages 1023--1029,
+  New York, NY, USA, 2005. ACM.
 
 \bibitem{ReactiveTabuVHR}
 N.~A. Wassan.
