@@ -44,23 +44,24 @@
 \contentsline {section}{\numberline {4.3}Tabu Search}{39}
 \contentsline {subsection}{\numberline {4.3.1}Introduction}{39}
 \contentsline {subsection}{\numberline {4.3.2}Important Tabu Search characteristics}{40}
-\contentsline {subsection}{\numberline {4.3.3}An Evolutionary Parallel Tabu Search approach for distribution systems reinforcement planning}{42}
-\contentsline {subsection}{\numberline {4.3.4}A New Tabu Search Heauristic Algorithm for the Vehicle Routing Problem with Time Windows}{43}
-\contentsline {subsection}{\numberline {4.3.5}A parallel adaptive tabu search approach}{44}
-\contentsline {subsection}{\numberline {4.3.6}A Tabu Search Approach to Automated Map Generalisation}{45}
-\contentsline {subsection}{\numberline {4.3.7}Methodology for Service Restoration based Adaptive-Selective Tabu Search}{46}
-\contentsline {subsection}{\numberline {4.3.8}Hybrid simulated annealing algorithm based on adaptive cooling schedule for TSP}{47}
-\contentsline {paragraph}{Applying Metaheuristic Techniques to Search the space of bidding Strategies in Combinatorial Auctions}{47}
-\contentsline {subsection}{\numberline {4.3.9}Basic Algorithm}{48}
-\contentsline {subsection}{\numberline {4.3.10}Literature study}{48}
-\contentsline {section}{\numberline {4.4}Simulated Annealing}{48}
-\contentsline {subsection}{\numberline {4.4.1}Basic Algorithm}{48}
-\contentsline {subsection}{\numberline {4.4.2}Literature study}{48}
-\contentsline {section}{\numberline {4.5}Genetic Algorithm}{48}
-\contentsline {subsection}{\numberline {4.5.1}Basic Algorithm}{48}
-\contentsline {subsection}{\numberline {4.5.2}Literature study}{48}
-\contentsline {section}{\numberline {4.6}Summary}{48}
-\contentsline {chapter}{\numberline {5}Swarm Intelligence}{49}
-\contentsline {section}{\numberline {5.1}Introduction}{49}
-\contentsline {part}{II\hspace {1em}Implementation}{51}
-\contentsline {chapter}{Bibliography}{53}
+\contentsline {subsubsection}{Initial Solution Generation}{40}
+\contentsline {subsubsection}{Neighbourhood search}{40}
+\contentsline {subsubsection}{Memory structures of Tabu Search}{42}
+\contentsline {subsubsection}{Search phases}{43}
+\contentsline {subsection}{\numberline {4.3.3}A parallel adaptive tabu search approach}{44}
+\contentsline {subsection}{\numberline {4.3.4}A Tabu Search Approach to Automated Map Generalisation}{44}
+\contentsline {subsection}{\numberline {4.3.5}Methodology for Service Restoration based Adaptive-Selective Tabu Search}{44}
+\contentsline {subsection}{\numberline {4.3.6}Hybrid simulated annealing algorithm based on adaptive cooling schedule for TSP}{45}
+\contentsline {subsection}{\numberline {4.3.7}Basic Algorithm}{46}
+\contentsline {subsection}{\numberline {4.3.8}Literature study}{46}
+\contentsline {section}{\numberline {4.4}Simulated Annealing}{46}
+\contentsline {subsection}{\numberline {4.4.1}Basic Algorithm}{46}
+\contentsline {subsection}{\numberline {4.4.2}Literature study}{46}
+\contentsline {section}{\numberline {4.5}Genetic Algorithm}{46}
+\contentsline {subsection}{\numberline {4.5.1}Basic Algorithm}{46}
+\contentsline {subsection}{\numberline {4.5.2}Literature study}{46}
+\contentsline {section}{\numberline {4.6}Summary}{46}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{47}
+\contentsline {section}{\numberline {5.1}Introduction}{47}
+\contentsline {part}{II\hspace {1em}Implementation}{49}
+\contentsline {chapter}{Bibliography}{51}

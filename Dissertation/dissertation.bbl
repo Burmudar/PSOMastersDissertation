@@ -12,6 +12,18 @@ Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
 \newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
   December 2004.
 
+\bibitem{CircuitTabu}
+Shawki Areibi and Anthony Vannelli.
+\newblock Circuit partitioning using a tabu search approach.
+\newblock In {\em In 1993 IEEE International Symposium on Circuits and
+  Systems}, pages 1643--1646, 1993.
+
+\bibitem{EvoParallelTabu}
+A.~Augugliaro, L.~Dusonchet, and E.~R. Sanseverino.
+\newblock An evolutionary parallel tabu search approach for distribution
+  systems reinforcement planning.
+\newblock {\em Advanced Engineering Informatics}, 16(3):205 -- 215, 2002.
+
 \bibitem{MetaAgricultural}
 I.~Badarudin, A.B.M. Sultan, M.N. Sulaiman, A.~Mamat, and M.T.M. Mohamed.
 \newblock Metaheuristic approaches for optimizing agricultural land areas.
@@ -22,6 +34,13 @@ I.~Badarudin, A.B.M. Sultan, M.N. Sulaiman, A.~Mamat, and M.T.M. Mohamed.
 Ralf Borndörfer, Andreas Eisenblätter, Martin Grötschel, and Alexander
   Martin.
 \newblock The orientation model for frequency assignment problems, 1998.
+
+\bibitem{TabuCrewSchedulingProblem}
+L.~Cavique, C.~Rego, and I.~Themido.
+\newblock Subgraph ejection chains and tabu search for the crew scheduling
+  problem.
+\newblock {\em The Journal of the Operational Research Society}, 50:608--616,
+  1999.
 
 \bibitem{SiteFAPWLAN}
 Jeremy~K. Chen, Gustavo de~Veciana, and Theodore~S. Rappaport.
@@ -47,6 +66,13 @@ Andreas Eisenbl{\"a}tter.
   and Lower Bounds}.
 \newblock PhD thesis, Technische Universit{\"a}t Berlin, Berlin, Germany, 2001.
 
+\bibitem{SelfControllingReactiveTabu}
+N.~Fescioglu-Unver and M.M. Kokar.
+\newblock Application of self controlling software approach to reactive tabu
+  search.
+\newblock In {\em Self-Adaptive and Self-Organizing Systems, 2008. SASO '08.
+  Second IEEE International Conference on}, pages 297 --305, 20-24 2008.
+
 \bibitem{TabuCarryOver}
 Mohan Gopalakrishnan, Ke~Ding, Jean-Marie Bourjolly, and Srimathy Mohan.
 \newblock A tabu-search heuristic for the capacitated lot-sizing problem with
@@ -71,6 +97,12 @@ Hassan M.~Elragal Hassan M.~Elkamchouchi.
   optimization.
 \newblock In {\em The 23rd National radio Science Conference (NRSC 2006)},
   March 2006.
+
+\bibitem{NonlinearGlobalTabu}
+{Abdel-rahman} Hedar and Masao Fukushima.
+\newblock Tabu search directed by direct search methods for nonlinear global
+  optimization.
+\newblock {\em European Journal of Operational Research}, 170:329--349, 2006.
 
 \bibitem{LowerPolarFAP}
 Alan Herz, David Schindl, and Nicolas Zufferey.
