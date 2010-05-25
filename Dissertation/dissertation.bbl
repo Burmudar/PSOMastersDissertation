@@ -115,7 +115,8 @@ Alan Herz, David Schindl, and Nicolas Zufferey.
 L.~Houssin, C.~Artigues, and E.~Corbel.
 \newblock Frequency allocation problem in a sdma satellite communication
   system.
-\newblock pages 1599 --1604, july 2009.
+\newblock In {\em Computers Industrial Engineering, 2009. CIE 2009.
+  International Conference on}, pages 1599 --1604, 6-9 2009.
 
 \bibitem{FAPWeb}
 http://fap.zib.de/.
@@ -126,6 +127,13 @@ Lhassane Idoumghar and Ren{é} Schott.
 \newblock Two distributed algorithms for the frequency assignment problem in
   the field of radio broadcasting.
 \newblock {\em IEEE Transactions on Broadcasting}, 55:223--229, 2009.
+
+\bibitem{MultiObjTabu}
+D.M. Jaeggi, G.T. Parks, T.~Kipouros, and P.J. Clarkson.
+\newblock The development of a multi-objective tabu search algorithm for
+  continuous optimisation problems.
+\newblock {\em European Journal of Operational Research}, 185(3):1192 -- 1212,
+  2008.
 
 \bibitem{TabuParameterization}
 I.~Jovanoski, I.~Chorbev, D.~Mihajlov, and I.~Dimitrovski.
@@ -160,7 +168,7 @@ Vittoria Maniezzo and Roberto Montemanni.
 \newblock An exact algorithm for the min-interference frequency assignment
   problem.
 \newblock Technical report, Department of Computer Science, University of
-  Bologna.
+  Bologna, 2000.
 
 \bibitem{GSMSysEngin}
 Asha Mehrotra.
@@ -215,6 +223,13 @@ Roberto Montemanni and Derek~H. Smith.
 Garry Mullet.
 \newblock {\em Wireless telecommunications systems and networks}.
 \newblock Thomsan Delmar Learning, 2006.
+
+\bibitem{TabuCSP}
+Koji Nonobe and Toshihide Ibaraki.
+\newblock A tabu search approach to the constraint satisfaction problem as a
+  general problem solver.
+\newblock {\em European Journal of Operational Research}, 106(2-3):599 -- 623,
+  1998.
 
 \bibitem{TabuSingleMachineScheduling}
 E.~Nowicki and S.~Zdrzalka.

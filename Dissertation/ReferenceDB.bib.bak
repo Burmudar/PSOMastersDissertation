@@ -239,12 +239,12 @@
 @INPROCEEDINGS{SDMASatelite,
   author = {Houssin, L. and Artigues, C. and Corbel, E.},
   title = {Frequency allocation problem in a SDMA satellite communication system},
+  booktitle = {Computers Industrial Engineering, 2009. CIE 2009. International Conference
+	on},
   year = {2009},
   pages = {1599 -1604},
-  month = {july},
+  month = {6-9},
   doi = {10.1109/ICCIE.2009.5223821},
-  journal = {Computers Industrial Engineering, 2009. CIE 2009. International Conference
-	on},
   keywords = {FDMA;SDMA;TDMA;adaptive beamforming;communication channels;cumulative
 	interference constraints;dynamic beamforming;frequency allocation
 	problem;greedy allocation algorithms;integer linear programming;link
@@ -272,6 +272,21 @@
   pages = {223-229},
   owner = {william},
   timestamp = {2010.03.24}
+}
+
+@ARTICLE{MultiObjTabu,
+  author = {D.M. Jaeggi and G.T. Parks and T. Kipouros and P.J. Clarkson},
+  title = {The development of a multi-objective Tabu Search algorithm for continuous
+	optimisation problems},
+  journal = {European Journal of Operational Research},
+  year = {2008},
+  volume = {185},
+  pages = {1192 - 1212},
+  number = {3},
+  doi = {DOI: 10.1016/j.ejor.2006.06.048},
+  issn = {0377-2217},
+  keywords = {Tabu Search},
+  url = {http://www.sciencedirect.com/science/article/B6VCT-4M69JKG-6/2/f853818e3dbbb9b390c6b14de1d808bb}
 }
 
 @INPROCEEDINGS{TabuParameterization,
@@ -342,6 +357,7 @@
   title = {An Exact Algorithm for the Min-Interference Frequency Assignment
 	Problem},
   institution = {Department of Computer Science, University of Bologna},
+  year = {2000},
   owner = {william},
   timestamp = {2010.03.25}
 }

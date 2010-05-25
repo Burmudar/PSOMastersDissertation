@@ -39,14 +39,30 @@ In this section we introduced the characteristics of metaheuristics which sets t
 In the next section of this chapter we will discuss the Tabu Search metaheuristic which we are investigating.
 \section{Tabu Search}
 \subsection{Introduction}
-Tabu Search (TS) was first proposed by Glover as a new searching technique to help algorithms avoid getting  stuck in local optima present in combinatorial and optimization problems \cite{TabuRCAProblem}. Since Glover introduced the algoritm in the 1980's, Tabu Search has been applied to a wide range of problems that include a wide variety of problems such as:\cite{TabuVechicleRoutingWithTimeWindows}. Even though these problem differ by a large margin, the algorithm has been relatively successful in most of optimization problems it has been applied to. If we observe the results presented in the following research 1,2,3,4,5,6,7,8,10 we can deduce that Tabu Search has on average obtained the best results compared to previous attempts with other algorithms. 
+Tabu Search (TS) was first proposed by Glover as a new searching technique to help algorithms avoid getting  stuck in local optima present in combinatorial and optimization problems \cite{TabuRCAProblem}. Since Glover introduced the algoritm in the 1980's, Tabu Search has been applied to a wide range of problems that include a wide variety of problems such as the Vehicle Routing Problem, Frequency assignment Problem, Capacitated-Lot Sizing Problem, Nurse Scheduling and the Resource Constrained Assignment Problem. Even though the problems mentioned differ by a large margin, the algorithm has been relatively successful in most of optimization problems it has been applied to. If we observe the results presented in the following research \cite{TabuCarryOver,TabuSingleMachineScheduling,TabuVechicleRoutingWithTimeWindows,TabuBiddingStrats,TabuCrewSchedulingProblem,ReactiveTabuVHR,TabuRCAProblem,TabuCSP,TabuMontemanniSmith,tabuglobalplanning3g} we can deduce that Tabu Search has on average obtained the best results compared to previous attempts with other algorithms. 
 
 Tabu search resembles in its most basic form the Hill-climbing search algorithm, but it differs in the sense that Tabu Search keeps a memory of its recent moves in the solution space \cite{TabuBiddingStrats}. 
 
 General search algorithsm like Hill-climbing, Random-restart or Scatter search tend to get stuck on local optima. The local optima might be a very attractive solution and thus general search algorithms will not move to beter solutions since according the algorihtms built in strategy it has found the best solution, but in actual fact its solution is the best it its \emph{local} search space but not in the \emph{global} search space. This is why an important charateristic that algorithms being applied on optimisation problems need to posess is breaking out of local optima.
 
 In the next section we will explain what makes Tabu Search such a better algorithm that previous algorihtms and why it is able on average to produce better results.
-
+\subsection{Algorithm and Data flow}
+\begin{figure}[h]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in]{./pictures/captainplaceholder.png}}
+	\caption{Placeholder for algorithm pseudo code}
+	\label{fig:TSAlgorithmPseudoCode}
+\end{figure}
+\begin{figure}[htbp!]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.8in,height=7.0in]{./pictures/captainplaceholder.png}}
+	\caption{Placeholder for algorithm data flow diagram code}
+	\label{fig:TSFlowDiagram}
+\end{figure}
 \subsection{Important Tabu Search characteristics}
 In this section we will discuss some of the key characteristics and tehcniques that Tabu search exibits that enables it to find relatively good solutions in a short amount of time. We will start of briefly discussing how the start solution Tabu Search iteratively improves upon. After initial solution generation we will give an overview of research done on neighbourhood strategies for TS. One of the most important features of TS will be discussed in the memory structures section. Finally, we will finish of this section with a discussion on the two search phases present in TS.
 
@@ -76,46 +92,30 @@ Research done by Ashish Sureka and Peter R. Wurman makes an important distinctio
 With explicit memory the algorithm stores a complete solution in the tabu tenure, hence the algorithm is porhibited to move to that position in the solution for as long as the solution is in the tabu tenure\cite{TabuBiddingStrats,TabuFormGames}. With attribute-based memory the algorithm stores the \emph{operation} the is used to move from the previous solution, to the current solution\cite{TabuBiddingStrats,TabuFormGames}. Therefore with attribute-based memory, the tabu tenure intended function is changed from prohibiting certain solutions already encountered, to rather prohibit making changes to the current solution that would lead to solutions already present in the tabu tenure \cite{TabuBiddingStrats,TabuFormGames}.
 
 %Discuss LTM,MTM,STM --- In TabuCrewSchedulingProblem Page 4, Talk about STM and LTM, Cell Planning Tabu Search paper Page 3
+In research conducted by D.M. Jaeggi and G.T. Parks and T. Kipouros and P.J. Clarkson, the authors add two addtional memory structures called \emph{Medium Term Memory} (MTM) and \emph{Long Term Memory} (LTM) besides the stardard Short Term Memory, typically refered to as the Tabu List \cite{MultiObjTabu} . Each addtional structure remembers a different set of solutions for use by the diversification and intensification phases in the algorithm. These two phases will be discussed in the next section.
+
+STM purpose is similar to the traditional tabu list, to store the most recent solutions produced by the algorithm. MTM is designed to remember optimal or near optimal solutions. These solutions are therefore used later in the intensification phase. Finally, the LTM structure stores all the regions that the algorithm has already explored and is thus used in the diversification phase of the algorithm \cite{MultiObjTabu}.
 
 \subsubsection{Search phases}
 As Tabu Search searches through the solution space, it goes through two cycles of search phases called \emph{diversification} and \emph{intensification} \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
 
-The diversification phase in the TS algorithm, is the phase where the algorithm is directed to areas in the solution space which hasn't been explored yet. Diversification is usually applied by the algoruithm as soon as mechanisms monitoring the memory notice, that solutions being produced are being repeated \cite{ReactiveTabuVHR,SelfControllingReactiveTabu}. 
+The diversification phase in the TS algorithm, is the phase where the algorithm is directed to areas in the solution space which hasn't been explored yet. Diversification is usually applied by the algorithm as soon as mechanisms monitoring the memory, notice that solutions being produced are being repeated \cite{ReactiveTabuVHR,SelfControllingReactiveTabu}. 
 
 In the literature diversification is achieved by new and innovative methods. A diversification strategy developed in research presented by Wassan \cite{ReactiveTabuVHR} dicusses a strategy called \emph{escape diversification} where the algorithm is taken out of its current position in solution space as soons as solutions are being repeated. 
 
-In Research done by Fescioglu-Unver and Kokar \cite{SelfControllingReactiveTabu} presents a strategy that consists of two components namely the \emph{Observer} and the \emph{Diversifier}. The goal of the Observer is to continually monitor the algorithm best obtained solution to check whether it violates the \emph{stagnation period}. The stagnation period is the amount of iterations where the current best obtained solution hasn't changed. 
+In Research done by Fescioglu-Unver and Kokar \cite{SelfControllingReactiveTabu} a strategy is presented that consists of two components namely the \emph{Observer} and the \emph{Diversifier}. The goal of the Observer is to continually monitor the best solution obtained by the algorithm whether it violates the \emph{stagnation period}. The stagnation period is defined as the amount of iterations where the current best obtained solution hasn't changed \cite{SelfControllingReactiveTabu}. 
 
-As soon as the stagnation peroid is exceeded by the algorithm the Observer component activates and transfers the nessecery information need by the Diversifier component. The Diversifier component dynamically changes the size of the Tabu tenure based on the information the Observer gathered. The diversifier mainly targets older moves but for short burst of time it would decrease the tabu list size to a very small value in an attempt to combine new and old moves.
+As soon as the stagnation peroid is exceeded by the algorithm the Observer component activates and transfers the nessecery information needed by the Diversifier component. The Diversifier component dynamically changes the size of the tabu tenure based on the information the Observer gathered. The diversifier mainly targets older moves to diversify, but for short burst of time it would decrease the tabu list size to a very small value in an attempt to combine new and old moves \cite{SelfControllingReactiveTabu}.
 
-The specific mechanism used to define a new position where the algorithm can continue search, should ideally select solution spaces which have not been searched yet. Therefore, the diversification phase typically makes extensive use of the knowledge present in the long term memory structures as an indication where the algorithm has searched and not searched \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
+The specific mechanism used to define a new position where the algorithm can continue search, should ideally select areas in the solution space which have not been explored yet. Therefore, the diversification phase typically makes extensive use of the knowledge present in the long term memory structures as an indication to what areas of the solution space have been previously explored and which areas have not \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
 
-%Discuss Intensification and Diversification diversification reference in TabuParameterization, Page 5 TabuCrewSchedulingProblem, Tabu Search directed by direct search methods for nonlinear global optimization Page 1 and 2.
+Intensification is usually the first phase of the Tabu Search algorithm, since it is responsible to build up a history in memory for which the diversification phase can act upon. Fescioglu-Unver and Kokar also presented a intensification strategy based on control theory in their research \cite{SelfControllingReactiveTabu}. The authors identified the repition length as a ciritcal value for their intensification strategy to be based upon. The repition length is a control measure that defines how many times a solution may be repeated.
 
-\subsection{A parallel adaptive tabu search approach}
-A Tabu move applied to a current solution may appear attractive because it gives, for example, a solution better than the best found so far. We would like to accept the move in spite of its status by defining \emph{aspiration conditions}. Other advanced techniques may be implemented in a \emph{a long-term-memory} such as intensification to encourage the exploutation of a primising region in the search spacem and diversification to encourage the exploration of new regions.
+Repition length was chosen because the authors observed through experimentation, that as solutions were repeated the algorithm was intensifying around a point in solution space. As the repition length was increased that algorithm is forced to find more diverse solutions thus moving away from the intesification point \cite{SelfControllingReactiveTabu}.
 
-\subsection{A Tabu Search Approach to Automated Map Generalisation}
-Tabu serach can be viewed as an iterative technique that explores a set of feasible states by a sequence of moves. In general, the best move is taken at each iteration. However, to help prevent the search process from returning to a previous solution (called cycling), some moves are based on the short-term and long-term history of the sequence of movies that meet defined criteria. For example, one might classiffy a move as tabu if the reverse move has been made recently (with in a given number of iterations) or frequently (a given number of times). It may sometimes be desirable to make an otherwise tabu move; in order to achieve this, a particular implementation may include aspiration criteria that override the tbau status of particular moves. Such aspiration criteria might include a case which, by ignoring that a move is tabu, leads to a that is the best obtained so far.
+In this sub section we discussed the different phases of the Tabu Search algorithm. We discussed the intended purpose of each phase and presented some revelant research done in this area.
 
-\subsection{Methodology for Service Restoration based Adaptive-Selective Tabu Search}
-Tabu Search is an efficient heuristic procedure applied in solution of optimization problems, which is projected to help other optimization methods or its components escape from local valley.
-
-It is based on combing the hill climbing method of local search with the adaptive memory in order to make the search more flexible. Therefore, TS differs from other tehcniques that do not use memory procedures, as Simulated Annealing (SA) do is; or utilize the technique in a strict way, as branch and bound. The memory application is based on procedures presented as follows:
-\begin{itemize}
-\item Flexible attributes --- memory structes which enable the variation of the parpamters and search past history;
-\item Associative adjusting mechanism --- interaction between exclusion and inclusion mechanism parameters;
-\item Different Times Memory Function --- enables intensification and diversification search.
-\end{itemize}
-
-This method can be applied in various areas, that is, financial analysis, distribution power system, environment protection, logistic, etc., and has presented optimal or near optimal results. TS has two distinct strategies to use memory: short period memory, more aggressive, and long period one, used as a strategy for technique improvement.
-
-\subsection{Hybrid simulated annealing algorithm based on adaptive cooling schedule for TSP}
-It hasb nee seeen that tabu search algorithm uses short term memory of recently visisted solution known as tabu list to escape from local optima, but tabu list has a deterministic nature and thus cannot avoid cycling. This drawback of tabu search has been taken care of by SA in which stochastic characteristic avoid cycling. Because SA has no memory of recently visisted solutions, the rate of improvement of solutions is very slow. There is always a probability for the search to return to the same solution again. However, with the help of a short-term memory, the search can be restricted from retiring to a previously visisted solution and performance of SA can be enchanced significantly.
-
-\subsection{Basic Algorithm}
-
-\subsection{Literature study}
+In this section we presented the pseudo code for the Tabu Search algorithm as well as presented a Flow diagram depicted when and why certain phases are activated in the algorithm. We then gave a overview of the core characteristics that are important for the Tabu Search algorithm. In the next section we will discuss Simulated annealing, where will start off by giving the pseudo code and flow diagram for the algorithm and end of the section by giving a overview on the core fearures of the algorithm.
 
 \section{Simulated Annealing}
 
