@@ -1,0 +1,409 @@
+#LyX file created by tex2lyx 1.6.5
+\lyxformat 264
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+\title{SimulatedAnnealingArticlessummaries}\author{WilliamBezuidenhout}\date{Tuesday,25May2010}
+
+
+\end_preamble
+\options pdftex
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize 11
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+
+An Unsupervised Intrusion Detection Method Combined Clustering with Chaos Simulated Annealing
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\end_inset
+
+ @INPROCEEDINGS
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+4370702, author=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Lin Ni and Hong-Ying Zheng
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, booktitle=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+Machine Learning and Cybernetics, 2007 International Conference on
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, title=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+An Unsupervised Intrusion Detection Method Combined Clustering with Chaos Simulated Annealing
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, year=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+2007
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, month=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+19-22
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, volume=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+6
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, number=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{}
+\end_layout
+
+\end_inset
+
+, pages=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+3217 -3222
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, keywords=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+chaos simulated annealing algorithm;computer networks security; hardware failures;malicious attacks; near-optimal partitioning clustering; optimization technique;software flaws;tentative probing; unsupervised clustering intrusion detection method;chaos;computer networks;pattern clustering; security of data;simulated annealing;telecommunication security;
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, doi=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{
+\end_layout
+
+\end_inset
+
+10.1109/ICMLC.2007.4370702
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+, ISSN=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+{}
+\end_layout
+
+\end_inset
+
+,
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+ Simulated Annealing is a powerful optimization technique taht attempts to find a global minimum of a function using concepts borrowed from Statistical Mechanics. The algorithm was originall intened for simulating the evolution of a solid in a heat bath to thermal equilibrium. As it was first described, the algorithm starts with a 
+\begin_inset Quotes eld
+\end_inset
+
+substance
+\begin_inset Quotes erd
+\end_inset
+
+ composed of many interacting individual molecules arranged in a random fashion. Then, small random perturbations to the structure of the molecules are attempted, and each perturbations is accepted with a probability based on the associated 
+\begin_inset Quotes eld
+\end_inset
+
+energy
+\begin_inset Quotes erd
+\end_inset
+
+ increase, 
+\begin_inset Formula $\triangle{E}$
+\end_inset
+
+. If 
+\begin_inset Formula $\triangle{E}$
+\end_inset
+
+ is at least 0, then the perturbation is accpeted with probability 
+\begin_inset Formula $exp(\frac{\triangle{E}}{T})$
+\end_inset
+
+. If 
+\begin_inset Formula $\triangle{E}$
+\end_inset
+
+ is less than 0, then the perturbation is accept with probability 1. Eventually, after a large number of trial perturbations, the energy settles to equilibrium for the temperature. SA uses both the high- and the low-temperature properties of the Metropolis algorithm to find low eneergy, regardless of teh initial structure. The cooling is made slow to overcome the high dependence of low temperature equilibrium energies on the initial state. Simulated annealing exploits the obvious ananlogy between process annealing and combinatorial optimization problems, where the 
+\begin_inset Quotes eld
+\end_inset
+
+molecules
+\begin_inset Quotes erd
+\end_inset
+
+ are the variables in the data structure and the 
+\begin_inset Quotes eld
+\end_inset
+
+energy
+\begin_inset Quotes erd
+\end_inset
+
+ function is the objective function. 
+\end_layout
+
+\begin_layout Section*
+
+A Simulated Annealing Algorithm with Constant Temperature for Discrete Stochastic
+\end_layout
+
+\begin_layout Standard
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\end_inset
+
+ A Simulated Annealing Algorithm with Constant Temperature for Discrete Stochastic Optimization Author(s): Mahmoud H. Alrefaei and Sigrún Andradóttir Source: Management Science, Vol. 45, No. 5 (May, 1999), pp. 748-764 Published by: INFORMS Stable URL: http://www.jstor.org/stable/2634729 Accessed: 09/03/2010 05:10 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Standard
+
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document
