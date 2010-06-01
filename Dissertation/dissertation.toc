@@ -49,14 +49,20 @@
 \contentsline {subsubsection}{Neighbourhood search}{40}
 \contentsline {subsubsection}{Memory structures of Tabu Search}{41}
 \contentsline {subsubsection}{Search phases}{43}
-\contentsline {section}{\numberline {4.4}Simulated Annealing}{44}
-\contentsline {subsection}{\numberline {4.4.1}Basic Algorithm}{44}
-\contentsline {subsection}{\numberline {4.4.2}Literature study}{44}
-\contentsline {section}{\numberline {4.5}Genetic Algorithm}{44}
-\contentsline {subsection}{\numberline {4.5.1}Basic Algorithm}{44}
-\contentsline {subsection}{\numberline {4.5.2}Literature study}{44}
-\contentsline {section}{\numberline {4.6}Summary}{44}
-\contentsline {chapter}{\numberline {5}Swarm Intelligence}{45}
-\contentsline {section}{\numberline {5.1}Introduction}{45}
-\contentsline {part}{II\hspace {1em}Implementation}{47}
-\contentsline {chapter}{Bibliography}{49}
+\contentsline {section}{\numberline {4.4}Simulated Annealing}{45}
+\contentsline {subsection}{\numberline {4.4.1}Introduction}{45}
+\contentsline {subsection}{\numberline {4.4.2}Algorithm and Data flow}{45}
+\contentsline {subsection}{\numberline {4.4.3}Important Simulated Annealing characteristics}{45}
+\contentsline {section}{\numberline {4.5}Genetic Algorithm}{45}
+\contentsline {subsection}{\numberline {4.5.1}Introduction}{45}
+\contentsline {subsection}{\numberline {4.5.2}Algorithm and Data flow}{45}
+\contentsline {subsection}{\numberline {4.5.3}Important Genetic Algorithm characteristics}{45}
+\contentsline {subsubsection}{Initial Temperature Selection}{45}
+\contentsline {subsubsection}{Cooling Schedule}{45}
+\contentsline {subsubsection}{Move generation}{45}
+\contentsline {subsubsection}{Algorithm efficiency}{45}
+\contentsline {section}{\numberline {4.6}Summary}{45}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{47}
+\contentsline {section}{\numberline {5.1}Introduction}{47}
+\contentsline {part}{II\hspace {1em}Implementation}{49}
+\contentsline {chapter}{Bibliography}{51}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  25 MAY 2010 20:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  1 JUN 2010 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,31 +302,35 @@ Overfull \hbox (6.72404pt too wide) in paragraph at lines 108--109
 -nent dy-nam-i-cally changes|
  []
 
-[43]) [44]
+[43])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44]
+[45]
 \openout2 = `chpt5.aux'.
 
- (./chpt5.tex
+ (./chpt5.tex [46
+
+
+
+]
 Chapter 5.
-) [45
+) [47] [48
 
 
-
-] [46
-
-
-] [47] [48] (./dissertation.bbl
+] [49] [50] (./dissertation.bbl
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [49
+ [51
 
-] [50]
+] [52]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [51] [52] [53]) [54]
+ [53] [54] [55]) [56]
 (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
 (./chpt5.aux)) ) 
 Here is how much of TeX's memory you used:
@@ -353,9 +357,9 @@ mti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/t
 exmf-texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dissertation.pdf (54 pages, 346988 bytes).
+Output written on dissertation.pdf (56 pages, 349015 bytes).
 PDF statistics:
- 250 PDF objects out of 1000 (max. 8388607)
+ 257 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
