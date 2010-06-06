@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  30 MAY 2010 22:46
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  6 JUN 2010 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -236,14 +236,19 @@ ciety},[]
  []
 
 [6] [7] [8]
-Overfull \hbox (508.05185pt too wide) in paragraph at lines 139--139
+Overfull \hbox (76.90027pt too wide) in paragraph at lines 139--139
 []\OT1/cmtt/m/n/10.95 booktitle={Design Automation Conference, 1988. Proceeding
-s., 25th ACM/IEEE}, title={Clustering based simulated annealing for standard ce
-ll placement },[] 
+s., 25th ACM/IEEE},[] 
+ []
+
+
+Overfull \hbox (65.4029pt too wide) in paragraph at lines 140--140
+[]\OT1/cmtt/m/n/10.95 title={Clustering based simulated annealing for standard 
+cell placement },[] 
  []
 
 [9]
-Overfull \hbox (1376.1037pt too wide) in paragraph at lines 145--145
+Overfull \hbox (1376.1037pt too wide) in paragraph at lines 146--146
 []\OT1/cmtt/m/n/10.95 keywords={CPU time;LTX2 VLSI layout system;clustering bas
 ed simulated annealing;interconnections;optimisation technique;simulated anneal
 ing;standard cell placement;wire length;annealing;circuit layout CAD;digital si
@@ -251,31 +256,82 @@ mulation;electrical engineering computing;integrated circuit technology;optimis
 ation;},[] 
  []
 
-[10] [11] (./SimulatedAnnealing.aux) ) 
+[10]
+Overfull \hbox (203.3714pt too wide) in paragraph at lines 167--167
+[] \OT1/cmtt/m/n/10.95 title = {Simulated annealing, its parameter settings and
+ the longest common subsequence problem},[] 
+ []
+
+
+Overfull \hbox (180.37665pt too wide) in paragraph at lines 168--168
+[] \OT1/cmtt/m/n/10.95 booktitle = {GECCO '08: Proceedings of the 10th annual c
+onference on Genetic and evolutionary[] 
+ []
+
+[11] [12]
+Overfull \hbox (59.6542pt too wide) in paragraph at lines 191--191
+[]  \OT1/cmtt/m/n/10.95 author = {Nilesh B. Prajapati and Rupal R. Agravat and 
+Mosin I. Hasan},[] 
+ []
+
+
+Overfull \hbox (71.15158pt too wide) in paragraph at lines 192--192
+[]  \OT1/cmtt/m/n/10.95 title = {Comparative Study of Various Cooling Schedules
+ for Location Area[] 
+ []
+
+
+Overfull \hbox (42.40814pt too wide) in paragraph at lines 194--194
+[]  \OT1/cmtt/m/n/10.95 journal = {Networks \& Communications, International Co
+nference on},[] 
+ []
+
+
+Overfull \hbox (30.91077pt too wide) in paragraph at lines 199--199
+[]  \OT1/cmtt/m/n/10.95 doi = {http://doi.ieeecomputersociety.org/10.1109/NetCo
+M.2009.60},[] 
+ []
+
+[13]
+Overfull \hbox (105.6437pt too wide) in paragraph at lines 220--220
+[]\OT1/cmtt/m/n/10.95 booktitle={Systems, Man and Cybernetics, 2003. IEEE Inter
+national Conference on},[] 
+ []
+
+
+Overfull \hbox (1220.88913pt too wide) in paragraph at lines 227--227
+[]\OT1/cmtt/m/n/10.95 keywords={ acceptance probability; adaptive simulated ann
+ealing; heating process; meta heuristic method; optimization; simulated anneali
+ng method; temperature parameters; travelling salesman problems; heating; proba
+bility; simulated annealing; travelling salesman problems;},[] 
+ []
+
+[14] [15] [16] [17] (./SimulatedAnnealing.aux) ) 
 Here is how much of TeX's memory you used:
- 1188 strings out of 495061
- 13412 string characters out of 1182621
+ 1194 strings out of 495061
+ 13473 string characters out of 1182621
  65837 words of memory out of 3000000
- 4394 multiletter control sequences out of 15000+50000
- 11559 words of font info for 44 fonts, out of 3000000 for 9000
+ 4398 multiletter control sequences out of 15000+50000
+ 12511 words of font info for 48 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,8n,24p,2190b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
-hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb>
-Output written on SimulatedAnnealing.pdf (11 pages, 205879 bytes).
+ 27i,12n,24p,2190b,255s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/sh
+are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public
+/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive
+/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb>
+Output written on SimulatedAnnealing.pdf (17 pages, 232212 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

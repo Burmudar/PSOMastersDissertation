@@ -132,11 +132,12 @@ The search space in SA is explored one by one and in a sequential manner. Theref
 
 SA generates the new solution vector randomly; it is inefficient for search for the optimal solution of large parameter optimization problems. 
 
-\section*{}
+\section*{Clustering based simulated annealing for standard cell placement}
 \begin{verbatim}
 @INPROCEEDINGS{14776, 
 author={Mallela, S. and Grover, L.K.}, 
-booktitle={Design Automation Conference, 1988. Proceedings., 25th ACM/IEEE}, title={Clustering based simulated annealing for standard cell placement }, 
+booktitle={Design Automation Conference, 1988. Proceedings., 25th ACM/IEEE}, 
+title={Clustering based simulated annealing for standard cell placement }, 
 year={1988}, 
 month={12-15}, 
 volume={}, 
@@ -158,5 +159,106 @@ In the first stage the conventional simulated annealing algorithm is used to pla
 In the second stage, we determine the precise location for each cell. First, we break up all the clusters and convert the problem back to the one onvoling the placement of individual cells. Then we use an inexpensive simulated annealing technique, which limits the range of cell moves to a small neighborhood of their location, and anneals quickly from low temperature. The number of moves per cell is also less than in the conventional process. The effect is to permit some amount of hill-climbing, while ensuring that the final configuration does not stray too far from the starting state. After this stage we obtain the final placement, which is a refinement of the placement obtained from the first stage.
 
 \emph{In article ``Global Planning of 3G Networks using Simulated Annealing'' nice flow chart of SA algorithm}
+
+\section*{Simulated annealing, its parameter settings and the longest common subsequence problem}
+\begin{verbatim}
+@inproceedings{1389253,
+ author = {Weyland, Dennis},
+ title = {Simulated annealing, its parameter settings and the longest common subsequence problem},
+ booktitle = {GECCO '08: Proceedings of the 10th annual conference on Genetic and evolutionary 
+ computation},
+ year = {2008},
+ isbn = {978-1-60558-130-9},
+ pages = {803--810},
+ location = {Atlanta, GA, USA},
+ doi = {http://doi.acm.org/10.1145/1389095.1389253},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ }
+\end{verbatim}
+
+The algorithm we investigate is a kind of standard Simulated Annealing Algorithm operatiing on fixed length bit strings. This algorithm has, besides the fitness function and the input length, two different parameters, namely the initial temperature and the cooldown factor. These two parameters do not change during the execution of the algorithm.
+
+At the beginning the temperature is set to the value of the initial temperature and an initial solution is created uniformly at random. In each iteration the current solution is modified by mean of 1-bit mutation. If the fitness value of the new solution is better or equal than the fitness value of the current solution, the new solution will replace the current solution for the next iteration, otherwise the new solution will replace the current solution only with a probability of $exp(-\frac{\Delta f}{T})$, where $\Delta f$ is the (positive) difference of the fitness values and $T$ is the current temperature. If the current solution after that step fulfulls the stopping criterion, the algorithm stops, otherwise the temperature will be updated by multiplying the current temperature with the cooldown factor and the algorithm continues with the next iteration.
+
+For theoretical analyses these general suggestions are not very helpful, since the probability of accepting a worse solution is independent of the input size and so it decrease too fast below an exponentially small value. That means, the number of iterations to leave a local optimum is too small with constant values for the initial temperature and the cooldown factor.
+
+A low initial temperature and small colldown factor lead to a small time window for leaving local optima, high initial temperature and a cooldown factor very near to 1 leavd to a huge time window for leaving local optima, On the other hand, once the basin of attraction of a flobal optima is reachead, a low initial temperature and a small cooldown factor lead to a faster convergence to this optimum in general, whereas an algorithm with a high iniital temperature and a cooldown factor near to 1 needs more iterations to reach that optimum. So there is a kind of tradeoff between the number of iterations, within local optima can be left, and the number of iterations the algorithm needs  to reache a global optimum once there is a solution in its basin of attraction.
+
+\section*{Comparative Study of Various Cooling Schedules for Location Area Planning in Cellular Networks Using Simulated Annealing}
+\begin{verbatim}
+@ARTICLE{10.1109/NetCoM.2009.60,
+  author = {Nilesh B. Prajapati and Rupal R. Agravat and Mosin I. Hasan},
+  title = {Comparative Study of Various Cooling Schedules for Location Area
+	Planning in Cellular Networks Using Simulated Annealing},
+  journal = {Networks \& Communications, International Conference on},
+  year = {2009},
+  volume = {0},
+  pages = {146-150},
+  address = {Los Alamitos, CA, USA},
+  doi = {http://doi.ieeecomputersociety.org/10.1109/NetCoM.2009.60},
+  isbn = {978-0-7695-3924-9},
+  publisher = {IEEE Computer Society}
+}
+\end{verbatim}
+Simulated Annealing (SA) is a random-search technique which exploits an analogy between the way in which a metal cools and freezes into a minimum energy crystalline structure(the annealing process) and the search for a minimum in a more general system; it forms the basis of an optimization technique for combinatorial and other problem. In 1983 SA was developed for dealing with highly nonlinear problems. An important characteristic of the SA algorithm is that it does not require specialist knowledge about how to sovle a particular problem. This makes the algorithm generic in the sense that it can be used in a variety of optimization problem without change the basic structure of the computation. There are two important criteria for SA: Selection of Neighbor and Cooling Schemes. Accuracy and optimization of SA depends on these two criteria.
+
+In Neighboring Solution, collection of all the optimal and non-optimal solutions is caleld Solution Space. During annealing process, algorithm randomly selects any solution from these Solution space.
+
+\subsection{Cooling Schedule}
+A cooling schedule consists of three important components: setting the starting (initial) temperature, the decision of when and how to decrease the temperature, and the decision of when to stop the algorithm.
+
+Initial temperature calculation is very important, because if it is too high, then it may take too long to reach the result. And if the initial temperature is too small, then the algorithm does not have the freedom of making sufficient number of random moves to visit different local minima and stay in relatively deep one.
+
+\subsection{Conclusion}
+SA is one of the best heuristic methods for finding optimal or near-optimal solution in cellular network in tolerable run-times. SA gives the better LA planning in cellular network so total localtion management cost is rduced. The main aim of the experiment of better LA planning is fulfilled.
+
+\section*{Adaptive Simulated Annealing for maximum temperature}
+\begin{verbatim}
+@INPROCEEDINGS{1243786, 
+author={Miki, M. and Hiroyasu, T. and Jitta, T.}, 
+booktitle={Systems, Man and Cybernetics, 2003. IEEE International Conference on},
+title={Adaptive Simulated Annealing for maximum temperature}, 
+year={2003}, 
+month={5-8}, 
+volume={1}, 
+number={}, 
+pages={ 20 - 25 vol.1}, 
+keywords={ acceptance probability; adaptive simulated annealing; heating process; meta heuristic method; optimization; simulated annealing method; temperature parameters; travelling salesman problems; heating; probability; simulated annealing; travelling salesman problems;}, 
+doi={10.1109/ICSMC.2003.1243786}, 
+ISSN={1062-922X},}
+\end{verbatim}
+
+It was Kirkpatrick et. al. who first proposed simulated annealing, SA, as a method for solving combinatorial problems. It is reported that Sa is very useful for several types of combinatorial optimization problems. However, the most remarkable disadvantages are that it needs a lot of time to find the optimum solution and it is very difficult to determine the proper cooling schedule.
+
+FOr continuous optimization problems, reduced computation time can be realized by using sophisticated generating functions such as the very fast simulated reannealing, but we can not use such approaches for discrete optimization problems. For discrete optimization, the generation fo a new solution is determined by defining the operation for changing the current solution. Therefore, we can control only the temperature schedule.
+
+The most appropriate temperature schedule has the following characterisitcsL sufficiently high maximum temperature, sufficiently low minimum temperature, and sifficiently slow cooling. However, this type of temperature schedule has one drawback, that is, a long computation time. There are three approaches to reduce the computation time. They are: 1) t odecrease the maximum temperature, 2) to increase the minimum temperature, 3) to increase the cooling rate. Among those, the minimum temperature is generally determined by the acceptance ratio during the SA process, that is, the temperature is decreased until the system is `freezed'. Thereforem the first and last approaches are promising, Klebsch et al. proposed a new method for estimating the maximum temperature by using equilibrium dynamics, and Romeo et al. proposed an efficient cooling methodm but these methods use experimental parameters and some tuning of these parameters is necessary.
+
+The most important characteristic of SA is the probabilistic acceptance of a bad solution. The probability of a acceptance of a newly generated, $P_{AC}$, is as follows.
+\begin{equation}
+	P_{AC} = 
+	\begin{cases}
+		1, &\text{if $\Delta E < 0$}\\
+		exp(-\frac{\Delta E}{T}), &otherwise\\
+	\end{cases}
+\end{equation}
+
+This type of criterion is called the Metropolis's Criterion, and $\Delta E$ is the change in the energy, $T$ is the temperature.
+
+In SA, a particular temperature region the can be performed very effectively exists. It is called the important temperature region in this paper. In order to find the important temperature region, some traveling salesman problems (TSPs) are solved by a SA with constant temperature, where the neighbor is generated by using the 2-change method.
+
+In SA, the maximum temperature should be sufficiently high in order to escape local optima, but an excessively high maximum temperature wastes computational time. The relation between the important temperature region and the maximum temperature is investigated for some TSPs.
+
+It is clearly found that the maximum temperature that is higher than the important temperature region provides good solutions, and the maxixmum temperature lower than the important temperature does not. Therefore, it can be conclued that the effective maximum temperature must be higher than the important temperature region and the lowest maxixmum temperature should be the upper bound of the important temperature region. If we can find this lowest maximum temperature before or at the beginning of searching an optimum, the number of annealing steps can be reduced to roughly half. Thaat is, the maximum temperature determind by a conventional method is excessively high, and massive computation is consumed ineffectively.
+
+\subsection{SA with an adaptive maximum}
+From the above result, the lowest maximum temperature is found to be the upper bound of the important temperature. However, each problem has its own important temperature regions, and a lot of experiments have to be performed to find them, Therefore, we have to find a characterisitc movement of the solutions during the annealing. The histories of the solutions to some typical TSPs are investigated here. The temperature is conventionally determined as follows.
+
+We conduct an experiment on SA with reversed temperature schedule, that is, heating, not cooling. At the beginning ,the temperature is very low and hill-climbing local search is performed, and a local minimum is obtained. And, as the temperature increases the solution remains at the local minimum, but the solution escapes the local minimum and it becomes better as the temperature enters the important temperature region. The solution become worse as the temperature increases beyond the important temperature region.
+
+The propsoed method, which is called the Adaptive SA for Maximum Temperature is based on this method. At first, the temperature is the lowest, and it is increased until the preliminary maximum temperature determined by a conventional method. The histories of  the energy can be classified into three types. At $T = 0$, the local hill-climbing search is perfomred and a local minimum is obtained. After that, the temperature is increased to the maximum temperature. During this process, the energy decreases below the local minimum once (Type 1) or more than once (Type 2), or the energy do not decrease (Type 3), and the energy increases as the temperature increases. The actual maximum temperature is determiend as the temperature where the energy finally increases across local minimum. When the actual maximum temperature is found, a conventional SA is carried out with this maximum temperature. The heating rate is 10 times as fast as the cooling rate, and therefore, the total computation time can be reduced considerably. If the energy history during the heating has no decrease below the local minimum as shown as Type, this local minimum is the global minimum, and the optimum solution has been obtained already. In this case, a conventional Sa is not necessary. Some easy problem show such behavior and the probabilistic hill-climbing provides the global optimum.
+
+This method is called the Adaptive Simulated Annealing for Maximum Temperature, and this method determines the effective maximum temperature in SA adatpively. There is no parameter in the method, and therefore the method can be considered to be easy to use for many combinatorial problems.
 \end{document}
 

@@ -142,6 +142,22 @@ I.~Jovanoski, I.~Chorbev, D.~Mihajlov, and I.~Dimitrovski.
 \newblock In {\em EUROCON, 2007. The International Conference on Computer as a
   Tool}, pages 459 --464, 9-12 2007.
 
+\bibitem{TempCyclingSA}
+Sergio Ledesma, Miguel Torres, Donato Hern{á}ndez, Gabriel Avi{ñ}a, and
+  Guadalupe Garc{í}a.
+\newblock Temperature cycling on simulated annealing for neural network
+  learning.
+\newblock In {\em MICAI 2007: Advances in Artificial Intelligence}, pages
+  161--171, 2007.
+
+\bibitem{MobileRobotSA}
+Yuming Liang and Lihong Xu.
+\newblock Mobile robot global path planning using hybrid modified simulated
+  annealing optimization algorithm.
+\newblock In {\em GEC '09: Proceedings of the first ACM/SIGEVO Summit on
+  Genetic and Evolutionary Computation}, pages 309--314, New York, NY, USA,
+  2009. ACM.
+
 \bibitem{MISatelite}
 Wen Liu, Haixiang Shi, and Lipo Wang.
 \newblock Minimizing interference in satellite communications using chaotic
@@ -162,6 +178,12 @@ H.~Mahmoudzadeh and K.~Eshghi.
 \newblock A metaheuristic approach to the graceful labeling problem of graphs.
 \newblock In {\em Swarm Intelligence Symposium, 2007. SIS 2007. IEEE}, pages 84
   --91, 1-5 2007.
+
+\bibitem{ClusterSA}
+S.~Mallela and L.K. Grover.
+\newblock Clustering based simulated annealing for standard cell placement.
+\newblock In {\em Design Automation Conference, 1988. Proceedings., 25th
+  ACM/IEEE}, pages 312 --317, 12-15 1988.
 
 \bibitem{ExactMIFAP}
 Vittoria Maniezzo and Roberto Montemanni.
@@ -189,6 +211,13 @@ George~Jiri Mejtsky.
   application to job shop scheduling.
 \newblock In {\em WSC '08: Proceedings of the 40th Conference on Winter
   Simulation}, pages 731--739. Winter Simulation Conference, 2008.
+
+\bibitem{NewSAs}
+P.R.S. Mendonca and L.P. Caloba.
+\newblock New simulated annealing algorithms.
+\newblock In {\em Circuits and Systems, 1997. ISCAS '97., Proceedings of 1997
+  IEEE International Symposium on}, volume~3, pages 1668 --1671 vol.3, 9-12
+  1997.
 
 \bibitem{GSM92}
 Marie-Bernadette~Pautet Michel~Mouly.
@@ -274,6 +303,13 @@ Anand~Prabhu Subramanian, Himanshu Gupta, Samir~R. Das, and Jing Cao.
   networks.
 \newblock {\em IEEE Transactions on Mobile Computing}, 7(7):1459--1473,
   December 2008.
+
+\bibitem{SASingleMultiObj}
+B.~Suman and P.~Kumar.
+\newblock A survey of simulated annealing as a tool for single and
+  multiobjective optimization.
+\newblock {\em The Journal of the Operational Research Society},
+  57(10):1143--1160, 2006.
 
 \bibitem{TabuBiddingStrats}
 Ashish Sureka and Peter~R. Wurman.

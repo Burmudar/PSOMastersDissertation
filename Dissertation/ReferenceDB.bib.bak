@@ -306,6 +306,34 @@
 	problems;}
 }
 
+@INPROCEEDINGS{TempCyclingSA,
+  author = {Sergio Ledesma and Miguel Torres and Donato Hern{á}ndez and Gabriel
+	Avi{ñ}a and Guadalupe Garc{í}a},
+  title = {Temperature Cycling on Simulated Annealing for Neural Network Learning},
+  booktitle = {MICAI 2007: Advances in Artificial Intelligence},
+  year = {2007},
+  pages = {161-171},
+  doi = {10.1007/978-3-540-76631-5_16},
+  owner = {william},
+  timestamp = {2010.06.06},
+  url = {http://www.springerlink.com/content/H05858112434461X}
+}
+
+@INPROCEEDINGS{MobileRobotSA,
+  author = {Liang, Yuming and Xu, Lihong},
+  title = {Mobile robot global path planning using hybrid modified simulated
+	annealing optimization algorithm},
+  booktitle = {GEC '09: Proceedings of the first ACM/SIGEVO Summit on Genetic and
+	Evolutionary Computation},
+  year = {2009},
+  pages = {309--314},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  doi = {http://doi.acm.org/10.1145/1543834.1543876},
+  isbn = {978-1-60558-326-6},
+  location = {Shanghai, China}
+}
+
 @ARTICLE{MISatelite,
   author = {Wen Liu and Haixiang Shi and Lipo Wang},
   title = {Minimizing Interference in Satellite Communications Using Chaotic
@@ -352,6 +380,21 @@
 	approach;graph theory;optimisation;}
 }
 
+@INPROCEEDINGS{ClusterSA,
+  author = {Mallela, S. and Grover, L.K.},
+  title = {Clustering based simulated annealing for standard cell placement
+	},
+  booktitle = {Design Automation Conference, 1988. Proceedings., 25th ACM/IEEE},
+  year = {1988},
+  pages = {312 -317},
+  month = {12-15},
+  doi = {10.1109/DAC.1988.14776},
+  keywords = {CPU time;LTX2 VLSI layout system;clustering based simulated annealing;interconnections;optimisation
+	technique;simulated annealing;standard cell placement;wire length;annealing;circuit
+	layout CAD;digital simulation;electrical engineering computing;integrated
+	circuit technology;optimisation;}
+}
+
 @TECHREPORT{ExactMIFAP,
   author = {Vittoria Maniezzo and Roberto Montemanni},
   title = {An Exact Algorithm for the Min-Interference Frequency Assignment
@@ -396,6 +439,22 @@
   publisher = {Winter Simulation Conference},
   isbn = {978-1-4244-2708-6},
   location = {Miami, Florida}
+}
+
+@INPROCEEDINGS{NewSAs,
+  author = {Mendonca, P.R.S. and Caloba, L.P.},
+  title = {New simulated annealing algorithms},
+  booktitle = {Circuits and Systems, 1997. ISCAS '97., Proceedings of 1997 IEEE
+	International Symposium on},
+  year = {1997},
+  volume = {3},
+  pages = {1668 -1671 vol.3},
+  month = {9-12},
+  doi = {10.1109/ISCAS.1997.621454},
+  keywords = {D-dimensional density probability functions;adaptive algorithm;cooling
+	schedule;global minima points;initial convergence speed;nFSA;simulated
+	annealing algorithms;convergence of numerical methods;probability;simulated
+	annealing;}
 }
 
 @BOOK{GSM92,
@@ -571,6 +630,24 @@
   month = {December},
   owner = {william},
   timestamp = {2010.03.24}
+}
+
+@ARTICLE{SASingleMultiObj,
+  author = {Suman, B. and Kumar, P.},
+  title = {A Survey of Simulated Annealing as a Tool for Single and Multiobjective
+	Optimization},
+  journal = {The Journal of the Operational Research Society},
+  year = {2006},
+  volume = {57},
+  pages = {1143--1160},
+  number = {10},
+  copyright = {Copyright Â© 2006 Operational Research Society},
+  issn = {01605682},
+  jstor_articletype = {primary_article},
+  jstor_formatteddate = {Oct., 2006},
+  publisher = {Palgrave Macmillan Journals on behalf of the Operational Research
+	Society},
+  url = {http://www.jstor.org/stable/4102365}
 }
 
 @INPROCEEDINGS{TabuBiddingStrats,

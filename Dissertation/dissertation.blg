@@ -7,46 +7,47 @@ A level-1 auxiliary file: chpt4.aux
 A level-1 auxiliary file: chpt5.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
+Warning--I didn't find a database entry for "VariousCoolingSA"
 Warning--can't use both author and editor fields in GSMSecurInTeleNetwork
-You've used 50 entries,
+You've used 55 entries,
             2118 wiz_defined-function locations,
-            831 strings with 14220 characters,
-and the built_in function-call counts, 18328 in all, are:
-= -- 1825
-> -- 772
-< -- 15
-+ -- 321
-- -- 254
-* -- 1245
-:= -- 2909
-add.period$ -- 154
-call.type$ -- 50
-change.case$ -- 273
+            866 strings with 15354 characters,
+and the built_in function-call counts, 20726 in all, are:
+= -- 2073
+> -- 852
+< -- 20
++ -- 353
+- -- 280
+* -- 1398
+:= -- 3243
+add.period$ -- 170
+call.type$ -- 55
+change.case$ -- 301
 chr.to.int$ -- 0
-cite$ -- 51
-duplicate$ -- 731
-empty$ -- 1484
-format.name$ -- 254
-if$ -- 3968
+cite$ -- 56
+duplicate$ -- 840
+empty$ -- 1688
+format.name$ -- 280
+if$ -- 4523
 int.to.chr$ -- 0
-int.to.str$ -- 50
-missing$ -- 48
-newline$ -- 251
-num.names$ -- 100
-pop$ -- 292
+int.to.str$ -- 55
+missing$ -- 53
+newline$ -- 276
+num.names$ -- 110
+pop$ -- 328
 preamble$ -- 1
-purify$ -- 227
+purify$ -- 250
 quote$ -- 0
-skip$ -- 556
+skip$ -- 655
 stack$ -- 0
-substring$ -- 1312
-swap$ -- 208
-text.length$ -- 15
+substring$ -- 1521
+swap$ -- 259
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
+type$ -- 212
 warning$ -- 1
-while$ -- 164
-width$ -- 52
-write$ -- 553
-(There was 1 warning)
+while$ -- 185
+width$ -- 57
+write$ -- 611
+(There were 2 warnings)
