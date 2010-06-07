@@ -48,6 +48,13 @@ Jeremy~K. Chen, Gustavo de~Veciana, and Theodore~S. Rappaport.
   frequency allocatoins in wireless networks.
 \newblock {\em IEEE Transactions on Vehicular Technology}, 58:2366--2376, 2009.
 
+\bibitem{TheoPraticalSA}
+Agnieszka Debudaj-Grabysz and Zbigniew~J. Czech.
+\newblock Theoretical and practical issues of parallel simulated annealing.
+\newblock In {\em PPAM'07: Proceedings of the 7th international conference on
+  Parallel processing and applied mathematics}, pages 189--198, Berlin,
+  Heidelberg, 2008. Springer-Verlag.
+
 \bibitem{DynamicFAP}
 Audrey Dupont, Andrea~Carneiro Linhares, Christian Artigues, Dominique Feillet,
   Philippe, and Michel Vasquez.
@@ -253,6 +260,12 @@ Garry Mullet.
 \newblock {\em Wireless telecommunications systems and networks}.
 \newblock Thomsan Delmar Learning, 2006.
 
+\bibitem{VeryFastSAImageEnchancement}
+B.~Natrajan and B.E. Rosen.
+\newblock Image enhancement using very fast simulated reannealing.
+\newblock In {\em Image Analysis and Interpretation, 1996., Proceedings of the
+  IEEE Southwest Symposium on}, pages 230 --235, 8-9 1996.
+
 \bibitem{TabuCSP}
 Koji Nonobe and Toshihide Ibaraki.
 \newblock A tabu search approach to the constraint satisfaction problem as a
@@ -272,6 +285,13 @@ Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
 \newblock {\em Security for Telecommunications Networks}, volume~40 of {\em
   Advances in Information Security}.
 \newblock Springer US, 2008.
+
+\bibitem{VariousCoolingSA}
+Nilesh~B. Prajapati, Rupal~R. Agravat, and Mosin~I. Hasan.
+\newblock Comparative study of various cooling schedules for location area
+  planning in cellular networks using simulated annealing.
+\newblock {\em Networks \& Communications, International Conference on},
+  0:146--150, 2009.
 
 \bibitem{TabuRCAProblem}
 Abraham~P. Punnen and Y.~P. Aneja.
@@ -325,6 +345,13 @@ Ashish Sureka and Peter~R. Wurman.
 \newblock In {\em AAMAS '05: Proceedings of the fourth international joint
   conference on Autonomous agents and multiagent systems}, pages 1023--1029,
   New York, NY, USA, 2005. ACM.
+
+\bibitem{CurveFittingSA}
+Hsien-Yu Tseng and Chang-Ching Lin.
+\newblock A simulated annealing approach for curve fitting in automated
+  manufacturing systems.
+\newblock {\em Journal of Manufacturing Technology Management}, 18:202 -- 216,
+  2007.
 
 \bibitem{ReactiveTabuVHR}
 N.~A. Wassan.
