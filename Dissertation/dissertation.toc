@@ -52,18 +52,18 @@
 \contentsline {section}{\numberline {4.4}Simulated Annealing}{44}
 \contentsline {subsection}{\numberline {4.4.1}Introduction}{44}
 \contentsline {subsection}{\numberline {4.4.2}Algorithm and Data flow}{46}
-\contentsline {subsection}{\numberline {4.4.3}Important Simulated Annealing characteristics}{46}
-\contentsline {subsubsection}{Markov Chain}{46}
-\contentsline {subsubsection}{Initial Temperature Selection}{46}
-\contentsline {subsubsection}{Cooling Schedule}{46}
-\contentsline {subsubsection}{Move generation}{46}
-\contentsline {subsubsection}{Algorithm efficiency}{46}
-\contentsline {section}{\numberline {4.5}Genetic Algorithm}{47}
-\contentsline {subsection}{\numberline {4.5.1}Introduction}{47}
-\contentsline {subsection}{\numberline {4.5.2}Algorithm and Data flow}{47}
-\contentsline {subsection}{\numberline {4.5.3}Important Genetic Algorithm characteristics}{47}
-\contentsline {section}{\numberline {4.6}Summary}{47}
-\contentsline {chapter}{\numberline {5}Swarm Intelligence}{49}
-\contentsline {section}{\numberline {5.1}Introduction}{49}
-\contentsline {part}{II\hspace {1em}Implementation}{51}
-\contentsline {chapter}{Bibliography}{53}
+\contentsline {subsection}{\numberline {4.4.3}Important Simulated Annealing characteristics}{48}
+\contentsline {subsubsection}{Markov Chain}{48}
+\contentsline {subsubsection}{Cooling Schedule}{48}
+\contentsline {subsubsection}{Initial temperature}{49}
+\contentsline {subsubsection}{Move generation}{50}
+\contentsline {subsubsection}{Algorithm efficiency}{50}
+\contentsline {section}{\numberline {4.5}Genetic Algorithm}{51}
+\contentsline {subsection}{\numberline {4.5.1}Introduction}{51}
+\contentsline {subsection}{\numberline {4.5.2}Algorithm and Data flow}{51}
+\contentsline {subsection}{\numberline {4.5.3}Important Genetic Algorithm characteristics}{51}
+\contentsline {section}{\numberline {4.6}Summary}{51}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{53}
+\contentsline {section}{\numberline {5.1}Introduction}{53}
+\contentsline {part}{II\hspace {1em}Implementation}{55}
+\contentsline {chapter}{Bibliography}{57}

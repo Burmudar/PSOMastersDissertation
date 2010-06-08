@@ -119,21 +119,47 @@ In this section we presented the pseudo code for the Tabu Search algorithm as we
 
 \section{Simulated Annealing}
 \subsection{Introduction}
-Simulated Annealing (SA) is a heuristic search technique proposed in the 80's by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgical as Annealing \cite{SASingleMultiObj,TempCyclingSA}. 
+Simulated Annealing (SA) is a heuristic search technique proposed in the 80's by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgical as Annealing \cite{CurveFittingSA,SASingleMultiObj,TempCyclingSA,ChaosSA}. Kirkpatrick was the first to use the simulated annealing to solve optimisations problems but the basic algorithm structure was defined in by Metropolis et. al. in 1953 \cite{CurveFittingSA,VeryFastSAImageEnchancement}
 
-Annealing is the natural process of crystalization when a solid is heated to a high temperature and then systematically cooled to a low temperature to reach a crystalized form \cite{NewSAs,MobileRobotSA}. This crystalized form of the solid is known the be the global minimum of the solids internal energy state. When the solid is rapidly cooled from a high temperature, the molecules have no time to reach a termaldynamic equilibrium stage. Therefore, the molecules of the solid have high energy and the resultant structure has no real crystaline form, thus the solid energy is at a local minima. When the solid is slowly cooled in a controlled manner, the molecules are able to reach a thermal equilibrium at each temperature.
+Annealing is the natural process of crystalization when a solid is heated to a high temperature and then systematically cooled to a low temperature to reach a crystalized form \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}. This crystalized form of the solid is known the be the global minimum of the solids internal energy state. When the solid is rapidly cooled from a high temperature, the molecules have no time to reach a termaldynamic equilibrium stage \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}. Therefore, the molecules of the solid have high energy and the resultant structure has no real crystaline form, thus the solid energy is at a local minima \cite{CurveFittingSA,NewSAs,MobileRobotSA}. When the solid is slowly cooled in a controlled manner, the molecules are able to reach a thermal equilibrium at each temperature \cite{ChaosSA,CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}.
 
 In the algorithm the energy state is the \emph{cost function} that needs to be minimised, and the molecules are the \emph{variables} which reperesent the solutions, and thus their state needs to be optimised to reach the desired energy state.
 
+The following equation is the standard propability function that is used to determine when an uphill move performed by the algorithm. This function is known in the literature as the \emph{Metropolis Criterion}. 
+\begin{equation}
+	M_{AC} =
+	\begin{cases}
+	1, &\text{if $f(y) \leq f(x)$}\\
+	exp(-\frac{\Delta E}{T_k}), &\text{otherwise}\\
+	\end{cases}
+\end{equation}
+The function $f$ is the objective function or a function that determines the state of a given position in solution space\cite{EcoEquilSA}. The parameter $T_k$ is the temperature of the algorithm at iteration $k$ \cite{EcoEquilSA}. Finally, $\Delta E$ is the change in ``energy'' between two solutions $x$ and $y$ \cite{EcoEquilSA}.
+
+
 The main purpose of the SA algorithm (like most optimization algorithms) is to minimize or maximise the cost function \cite{SASingleMultiObj}. This cost function typically evaluates a solutions desirebility compared to other solutions in the immediate \emph{neighborhoud} of the algorithms current position \cite{TheoPraticalSA}. Typically a neighboring solution is only selected as the new best state if its desirebility ranks hire than the current solution. When the algorithm moves to a beter solution from the previous solution, the move is typically refered in the literature as a \emph{downhill} move \cite{CurveFittingSA}.
 
-The best state isn't always selected the algorithm is also able to move to solutions which are worse than the current solution. A worse solution is only selected based on some probability which is controlled by the \emph{annealing temperature} of the algorithm \cite{TheoPraticalSA}. At a high annealing temperature the probability that the algorithm will select a bad solution is very good. As the annealing temperature decreases so does the probability that a bad solution will be selected \cite{CurveFittingSA}. When the algorithm moves to a worse solution, the move is typically in the literature referred to as a \emph{uphill} move \cite{CurveFittingSA}. Uphill moves allows the algorithm to breakout of local minima and can lead the algorithm down a different path which may ultimately result in obtaining the global optimum \cite{SASingleMultiObj}. 
+The best state isn't always selected, in some case the algorithm is also able to move to solutions which are worse than the current solution. A worse solution is only selected based on some probability which is controlled by the \emph{annealing temperature} of the algorithm \cite{TheoPraticalSA}. At a high annealing temperature the probability that the algorithm will select a bad solution is very good. As the annealing temperature decreases so does the probability that a bad solution will be selected \cite{CurveFittingSA}. When the algorithm moves to a worse solution, the move is typically in the literature referred to as a \emph{uphill} move \cite{CurveFittingSA}. Uphill moves allows the algorithm to breakout of local minima and can lead the algorithm down a different path which may ultimately result in obtaining the global optimum \cite{SASingleMultiObj}. 
 
-The SA algorithm is also very popular due to the basic structure of the algorithm being generic\cite{VariousCoolingSA}. Therefore, applying the algorithm to other problems is relatively trivial since only small changes are required. These changes usually need to applied to the \emph{Neighborhood selection} scheme and the \emph{Cooling Schedule}\cite{VariousCoolingSA}. Both of these concepts will be discussed in the next sub section.
+The SA algorithm is also very popular due to the basic structure of the algorithm being generic\cite{VariousCoolingSA}. Therefore, applying the algorithm to other problems is relatively trivial since only small changes are required. These changes usually need to applied to the \emph{Neighborhood selection} scheme and the \emph{Cooling Schedule}\cite{VariousCoolingSA,DormRoomSA}. Both of these concepts will be discussed in the next sub section.
 
 In this subsection we gave a brief overview of the Simulated Annealing (SA) algorithm. We briefly discussed what the algorithm is based on and how the algorithm goes about searching the solution space. We also introduced some concepts like move probability selection and annealing temperature, which forms part of the core the algorithm. In the next section we will explain some of the concepts we've touched upon in this section as well as more advanced concepts that makes the algorithm unique.
 \subsection{Algorithm and Data flow}
-
+\begin{figure}[h]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=3.5in]{./pictures/captainplaceholder.png}}
+	\caption{Pseudo code for Tabu Search Algorithm}
+	\label{fig:SAAlgorithmPseudoCode}
+\end{figure}
+\begin{figure}[htbp!]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.8in,height=7.0in]{./pictures/captainplaceholder.png}}
+	\caption{Placeholder for algorithm data flow diagram code}
+	\label{fig:SAFlowDiagram}
+\end{figure}
 \subsection{Important Simulated Annealing characteristics}
 \subsubsection{Markov Chain}
 The SA Algorithm is typically modelled by using Markov chains due to each Markov chain represents a set of trails that the algorithm has executed at the same temperature.  It has been proven with the use of Markov Chain theory that SA will find the global minimum in the solution space \cite{ClusterSA}. This proof is only valid when the following properties for the underlying Markov chian hold \cite{VeryFastSAImageEnchancement}:
@@ -143,9 +169,42 @@ The SA Algorithm is typically modelled by using Markov chains due to each Markov
 \item The detailed balance condition must hold
 \end{itemize}
 Due to the above proof the SA algorithm has been applied to a wide range of optimisation problems because as long as the algorithm designer can uphold these properties the find the global optimum. Even though the algorithm will find the global optimum, the algorithm is known to take a very long time to do so.
-\subsubsection{Initial Temperature Selection}
 \subsubsection{Cooling Schedule}
+The Cooling Schedule / Annealing Schedule is the most defining characteristic of the SA algorithm. It is the procedure where the natural annealing process is mimiced. The temperature of the SA algorithm is a control parameter that defines how much the algorithm moves around in the solution space.
+
+In general, when the SA algorithm temperature has a very high value most solutions that are produced from the neighborhood are accepted \cite{ClusterSA}. Thus the algorithm moves freely in the solution space with little constraints. As the temperature decreases the probability that the algorithm will select bad or just any solution gets lower. When the temperature is very low, the SA algorithm is similar to a greedy algorithm in a sense that it only accepts downhill movements\cite{ClusterSA}.
+
+In the literature there are three annealing schedules in common use are namely \emph{the logarithmic schedule}, the \emph{geometric schedule} and the \emph{Cauchy schedule}\cite{VeryFastSAImageEnchancement,SASingleMultiObj}. 
+
+The standard and most common used schedule is commonly known as the logarithmic schedule and is based on Boltzmann annealing \cite{VeryFastSAImageEnchancement}. The main disadvantage of this schedule is that is slow due to its logarithmic nature \cite{VeryFastSAImageEnchancement}. It also requires that moves be generated from a Gaussian distribution \cite{SASingleMultiObj} for it to be able to reach the global minimum. The logarithmic annealing function has the following form:
+\begin{equation}
+	T_k = \frac{T_0}{ln(k)},\text{where k is the iteration value}\\
+\end{equation}
+
+The Cauchy schedule is faster than the logarithmic schedule. Similar to the logarithmic, this schedule also has a movement requirement. Moves must be generated from a Cauchy distribution for the algorithm to be able to reach the global minimum \cite{SASingleMultiObj,VeryFastSAImageEnchancement}. The Cauchy schedule is also typically referred to as Fast annealing. The schedule has the following form:
+\begin{equation}
+	T_k = \frac{T_0}{k}
+\end{equation}
+
+Finally, the fastest annealing schedule is known as the geometric or exponential annealing schedule \cite{SASingleMultiObj}. This schedule introduces the concept of \emph{reannealing}. Reannealing is a procedure by which all SA temperatures are rescaled \cite{VeryFastSAImageEnchancement}. This schedule has no move generation requirement to reach the global minimum, since there is no regious proof in the literature to prove it \cite{SASingleMultiObj}. The geometric schedule has the following form:
+\begin{equation}
+	T(i)=T_0exp(-C_i),\text{where C is a constant}
+\end{equation}
+\subsubsection{Initial temperature}
+The initial temperature is a very important parameter to define in the SA algorithm, since it defines a point from which the cooling schedule will start of from. Therefore, depending on what the initial value of the temperature is the final result that the algorithm will produce can be influenced\cite{SALongestCommon,VariousCoolingSA,AutoConfigSA}.
+
+When the initial temperature is set to a very high value the algorithm takes a long time reach a result. On the other hand if the initial temperature is set to a very low temperature the algorithm might converge to quickly and thus produce a result which may be the local minima\cite{SALongestCommon,VariousCoolingSA,AutoConfigSA}.
+
+The initial temperature together with the cooling factor allows the algorithm designer to defines the time window for the algorithm to escape local minima, as well as the rate of convergence to an optimum solution\cite{SALongestCommon,VariousCoolingSA}.
+
+A low initial temperature together with a small cooling factor makes the time window for the algorithm to leave a local optimum very small\cite{SALongestCommon}. With a high initial temperature and cooling factor value that is almost 1, the time window for the algorithm to leave the local optimum is much larger \cite{SALongestCommon}. 
+
+When the algorithm is near a global optimum, a low initial temperature and low cooling factor will allow the algorithm to reach the optimum faster in the solution space. In contrast, if a high temperature and a very low cooling factor is used the algorithm will take longer to reach the optimum even tough it is near the global optimum\cite{SALongestCommon}.
+
 \subsubsection{Move generation}
+Most of the research done on the SA algorithm focuses on the annealing schedule and not so much on the move/solution/neighborhoud generation. Typically an initial solution is generated and then small changes are made to the solution to represent a new solution. The solution is said the be preturbed to the next solution. 
+
+In research done by Tseung and Lin \cite{CurveFittingSA} a initial solution isn't modified but a move generation technique known as \emph{Pattern} search is used. Pattern search has two forms of movement namely the exploratory move and the patter move. The exploratory move continually changes the certain variables of a solution \cite{CurveFittingSA}. This is done so that it can rapidly find and identify a ``downhill'' move. The Pattern move uses the information gathered by the exploratory move to move towards the minimum of the function \cite{CurveFittingSA}.
 \subsubsection{Algorithm efficiency}
 The algorithm is also efficient with regards to CPU cycles when compared to the Genetic Algorithm because it only has to evaluate a certain number of moves each iteration, instead of a evaluating a whole population each iteration. Unlike Tabu Search the basic SA algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that solution will cyclicing. Which is hwy the number of iterations spent at a temperature, since the longer the algorithm spends at a temperature the higher the probability is that solutions will cycle.
 \section{Genetic Algorithm}

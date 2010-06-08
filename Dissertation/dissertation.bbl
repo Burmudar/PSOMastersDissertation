@@ -12,6 +12,12 @@ Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
 \newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
   December 2004.
 
+\bibitem{ConstantTempSA}
+Mahmoud~H. Alrefaei and Sigr{ú}n Andrad{ó}ttir.
+\newblock A simulated annealing algorithm with constant temperature for
+  discrete stochastic optimization.
+\newblock {\em Management Science}, 45:748--764, 1999.
+
 \bibitem{CircuitTabu}
 Shawki Areibi and Anthony Vannelli.
 \newblock Circuit partitioning using a tabu search approach.
@@ -266,6 +272,13 @@ B.~Natrajan and B.E. Rosen.
 \newblock In {\em Image Analysis and Interpretation, 1996., Proceedings of the
   IEEE Southwest Symposium on}, pages 230 --235, 8-9 1996.
 
+\bibitem{ChaosSA}
+Lin Ni and Hong-Ying Zheng.
+\newblock An unsupervised intrusion detection method combined clustering with
+  chaos simulated annealing.
+\newblock In {\em Machine Learning and Cybernetics, 2007 International
+  Conference on}, volume~6, pages 3217 --3222, 19-22 2007.
+
 \bibitem{TabuCSP}
 Koji Nonobe and Toshihide Ibaraki.
 \newblock A tabu search approach to the constraint satisfaction problem as a
@@ -311,6 +324,14 @@ P.~Demestichas E.~Tzifa S.~Kotrotsos, G.~Kotsakis and V.~Demesticha.
   interference-orientated version of the frequency assignment problem.
 \newblock {\em Wireless Personal Communications}, 18:289--317, 2001.
 
+\bibitem{AutoConfigSA}
+J.~R. Slagle, A.~Bose, P.~Busalacchi, and C.~Wee.
+\newblock Enhanced simulated annealing for automatic reconfiguration of
+  multiprocessors in space.
+\newblock In {\em IEA/AIE '89: Proceedings of the 2nd international conference
+  on Industrial and engineering applications of artificial intelligence and
+  expert systems}, pages 401--408, New York, NY, USA, 1989. ACM.
+
 \bibitem{tabuglobalplanning3g}
 Marc St-Hilaire, Steven Chamberland, and Samuel Pierre.
 \newblock A tabu search algorithm for the global planning problem of third
@@ -346,6 +367,13 @@ Ashish Sureka and Peter~R. Wurman.
   conference on Autonomous agents and multiagent systems}, pages 1023--1029,
   New York, NY, USA, 2005. ACM.
 
+\bibitem{DormRoomSA}
+Nguyen~Thanh Trung and Duong~Tuan Anh.
+\newblock Comparing three improved variants of simulated annealing for
+  optimizing dorm room assignments.
+\newblock In {\em Computing and Communication Technologies, 2009. RIVF '09.
+  International Conference on}, pages 1 --5, 13-17 2009.
+
 \bibitem{CurveFittingSA}
 Hsien-Yu Tseng and Chang-Ching Lin.
 \newblock A simulated annealing approach for curve fitting in automated
@@ -358,6 +386,20 @@ N.~A. Wassan.
 \newblock A reactive tabu search for the vehicle routing problem.
 \newblock {\em The Journal of the Operation Research Society}, 57:111--116,
   2006.
+
+\bibitem{SALongestCommon}
+Dennis Weyland.
+\newblock Simulated annealing, its parameter settings and the longest common
+  subsequence problem.
+\newblock In {\em GECCO '08: Proceedings of the 10th annual conference on
+  Genetic and evolutionary computation}, pages 803--810, New York, NY, USA,
+  2008. ACM.
+
+\bibitem{EcoEquilSA}
+Lihua Wu and Yuyun Wang.
+\newblock An introduction to simulated annealing algorithms for the computation
+  of economic equilibrium.
+\newblock {\em Computational Economics}, 12:151--169, 1998.
 
 \bibitem{AutoComplexMeta}
 Yiliang Xu, Meng~Hiot Lim, and Yew-Soon Ong.
