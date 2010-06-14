@@ -1,0 +1,24 @@
+This directory contains four .sty files that are mutually compatible,
+but (mostly) independent:
+
+cite.sty       Compressed, sorted lists of numerical citations: [8,11-16]
+               with many options for controlling the formatting.
+
+overcite.sty   like \usepackage[superscript]{cite}
+
+drftcite.sty   Print the tags instead of the numbers for \cite and \bibitem.
+
+chapterbib.sty Do multiple bibliographies--one for each \include file.
+
+The documentation is included as plain text after the definitions in 
+each file (below \endinput).  It can be read online or printed directly, 
+but don't try to typeset it with LaTeX!
+
+They are all released under a very simple permissive license in
+the MIT/BSD style:  They may be freely used, transmitted, reproduced, 
+or modified provided that [the copyright and permission] notice is 
+left intact.
+
+
+
+Donald Arseneau                         asnd@triumf.ca
