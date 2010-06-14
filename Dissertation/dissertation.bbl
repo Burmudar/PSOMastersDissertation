@@ -48,6 +48,12 @@ L.~Cavique, C.~Rego, and I.~Themido.
 \newblock {\em The Journal of the Operational Research Society}, 50:608--616,
   1999.
 
+\bibitem{HumanPassiveGA}
+A.~Chawla, S.~Mukherjee, and B.~Karthikeyan.
+\newblock Characterization of human passive muscles for impact loads using
+  genetic algorithm and inverse finite element methods.
+\newblock {\em Biomechanics and Modeling in Mechanobiology}, 8(1):67--76, 2009.
+
 \bibitem{SiteFAPWLAN}
 Jeremy~K. Chen, Gustavo de~Veciana, and Theodore~S. Rappaport.
 \newblock Site-specific knowledge and interference measurement for improving
@@ -86,6 +92,12 @@ N.~Fescioglu-Unver and M.M. Kokar.
 \newblock In {\em Self-Adaptive and Self-Organizing Systems, 2008. SASO '08.
   Second IEEE International Conference on}, pages 297 --305, 20-24 2008.
 
+\bibitem{DistributedHierarchicalGA}
+Gautam Garai and B.~B. Chaudhuri.
+\newblock A distributed hierarchical genetic algorithm for efficient
+  optimization and pattern matching.
+\newblock {\em Pattern Recogn.}, 40(1):212--228, 2007.
+
 \bibitem{TabuCarryOver}
 Mohan Gopalakrishnan, Ke~Ding, Jean-Marie Bourjolly, and Srimathy Mohan.
 \newblock A tabu-search heuristic for the capacitated lot-sizing problem with
@@ -96,6 +108,13 @@ Mohan Gopalakrishnan, Ke~Ding, Jean-Marie Bourjolly, and Srimathy Mohan.
 J.S Graham, R.~Montemanni, J.~N~J. Moon, and D.~H. Smith.
 \newblock Frequency assignment. multiple interference and binary constraints.
 \newblock {\em Wireless Networking}, 14:449--464, 2008.
+
+\bibitem{AcceleratingGA}
+Timo H\"{a}m\"{a}l\"{a}inen, Harri Klapuri, Jukka Saarinen, Pekka Ojala, and
+  Kimmo Kaski.
+\newblock Accelerating genetic algorithm computation in tree shaped parallel
+  computer.
+\newblock {\em J. Syst. Archit.}, 42(1):19--36, 1996.
 
 \bibitem{EfficientEvoChannelManagement}
 Joe Rodriguez-Tellez Harilaos G.~Standalidis, Peter P.~Stavroulakis.
@@ -148,12 +167,25 @@ D.M. Jaeggi, G.T. Parks, T.~Kipouros, and P.J. Clarkson.
 \newblock {\em European Journal of Operational Research}, 185(3):1192 -- 1212,
   2008.
 
+\bibitem{HybridIntelliGA}
+A.A. Javadi, R.~Farmani, and T.P. Tan.
+\newblock A hybrid intelligent genetic algorithm.
+\newblock {\em Advanced Engineering Informatics}, 19(4):255 -- 262, 2005.
+\newblock Computing in Civil Engineering.
+
 \bibitem{TabuParameterization}
 I.~Jovanoski, I.~Chorbev, D.~Mihajlov, and I.~Dimitrovski.
 \newblock Tabu search parameterization and implementation in a constraint
   programming library.
 \newblock In {\em EUROCON, 2007. The International Conference on Computer as a
   Tool}, pages 459 --464, 9-12 2007.
+
+\bibitem{AdaptiveSAGA}
+Il~kwon Jeong and Ju~jang Lee.
+\newblock Adaptive simulated annealing genetic algorithm for system
+  identification.
+\newblock {\em Engineering Applications of Artificial Intelligence}, 9(5):523
+  -- 532, 1996.
 
 \bibitem{TempCyclingSA}
 Sergio Ledesma, Miguel Torres, Donato Hern{á}ndez, Gabriel Avi{ñ}a, and
@@ -299,6 +331,11 @@ Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
   Advances in Information Security}.
 \newblock Springer US, 2008.
 
+\bibitem{GATSP}
+Jean-Yves Potvin.
+\newblock Genetic algorithms for the traveling salesman problem.
+\newblock {\em Annals of Operations Research}, 63:337--370, 1996.
+
 \bibitem{VariousCoolingSA}
 Nilesh~B. Prajapati, Rupal~R. Agravat, and Mosin~I. Hasan.
 \newblock Comparative study of various cooling schedules for location area
@@ -313,6 +350,11 @@ Abraham~P. Punnen and Y.~P. Aneja.
 \newblock {\em The Journal of the Operational Research Society}, 46:214--220,
   1995.
 
+\bibitem{ConstrainedGA}
+D.~J. Reid.
+\newblock Genetic algorithms in constrained optimization.
+\newblock {\em Mathematical and Computer Modelling}, 23(5):87 -- 111, 1996.
+
 \bibitem{MSFAP}
 Angelos~N. Rouskas, Michael~G. Kazantzakis, and Miltiades~E. Anagnostou.
 \newblock Minimizing of frequency assignment span in cellular networks.
@@ -323,6 +365,11 @@ P.~Demestichas E.~Tzifa S.~Kotrotsos, G.~Kotsakis and V.~Demesticha.
 \newblock Forumlation and computationally efficient algirithms for an
   interference-orientated version of the frequency assignment problem.
 \newblock {\em Wireless Personal Communications}, 18:289--317, 2001.
+
+\bibitem{MultiPopGA}
+Patrick Siarry, Alain P\'{e}trowski, and Mourad Bessaou.
+\newblock A multipopulation genetic algorithm aimed at multimodal optimization.
+\newblock {\em Adv. Eng. Softw.}, 33(4):207--213, 2002.
 
 \bibitem{AutoConfigSA}
 J.~R. Slagle, A.~Bose, P.~Busalacchi, and C.~Wee.
@@ -367,6 +414,12 @@ Ashish Sureka and Peter~R. Wurman.
   conference on Autonomous agents and multiagent systems}, pages 1023--1029,
   New York, NY, USA, 2005. ACM.
 
+\bibitem{SelfAdaptiveGA}
+Vedat To\u{g}an and Ay\c{s}e~T. Dalo\u{g}lu.
+\newblock An improved genetic algorithm with initial population strategy and
+  self-adaptive member grouping.
+\newblock {\em Comput. Struct.}, 86(11-12):1204--1218, 2008.
+
 \bibitem{DormRoomSA}
 Nguyen~Thanh Trung and Duong~Tuan Anh.
 \newblock Comparing three improved variants of simulated annealing for
@@ -381,11 +434,30 @@ Hsien-Yu Tseng and Chang-Ching Lin.
 \newblock {\em Journal of Manufacturing Technology Management}, 18:202 -- 216,
   2007.
 
+\bibitem{FamilyGA}
+Roger~L. Wainwright.
+\newblock A family of genetic algorithm packages on a workstation for solving
+  combinatorial optimization problems.
+\newblock {\em SIGICE Bull.}, 19(3):30--36, 1994.
+
+\bibitem{ParallelGASA}
+Z.~G. Wang, Y.~S. Wong, and M.~Rahman.
+\newblock Development of a parallel optimization method based on genetic
+  simulated annealing algorithm.
+\newblock {\em Parallel Comput.}, 31(8+9):839--857, 2005.
+
 \bibitem{ReactiveTabuVHR}
 N.~A. Wassan.
 \newblock A reactive tabu search for the vehicle routing problem.
 \newblock {\em The Journal of the Operation Research Society}, 57:111--116,
   2006.
+
+\bibitem{GeostatisticalGA}
+Xian-Huan Wen, Tina Yu, and Seong Lee.
+\newblock Coupling sequential-self calibration and genetic algorithms to
+  integrate production data in geostatistical reservoir modeling.
+\newblock In {\em Geostatistics Banff 2004}, volume~14 of {\em Quantitative
+  Geology and Geostatistics}, pages 691--701. Springer Netherlands, 2005.
 
 \bibitem{SALongestCommon}
 Dennis Weyland.

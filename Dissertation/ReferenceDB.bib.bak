@@ -113,6 +113,21 @@
   timestamp = {2010.05.22}
 }
 
+@ARTICLE{HumanPassiveGA,
+  author = {A. Chawla and S. Mukherjee and B. Karthikeyan},
+  title = {Characterization of human passive muscles for impact loads using
+	genetic algorithm and inverse finite element methods},
+  journal = {Biomechanics and Modeling in Mechanobiology},
+  year = {2009},
+  volume = {8},
+  pages = {67--76},
+  number = {1},
+  doi = {10.1007/s10237-008-0121-6},
+  owner = {william},
+  timestamp = {2010.06.14},
+  url = {http://www.springerlink.com/content/1J8061123NH3533H}
+}
+
 @ARTICLE{SiteFAPWLAN,
   author = {Jeremy K. Chen and Gustavo de Veciana and Theodore S. Rappaport},
   title = {Site-Specific Knowledge and Interference Measurement for Improving
@@ -187,6 +202,21 @@
 	engineering;}
 }
 
+@ARTICLE{DistributedHierarchicalGA,
+  author = {Garai, Gautam and Chaudhuri, B. B.},
+  title = {A distributed hierarchical genetic algorithm for efficient optimization
+	and pattern matching},
+  journal = {Pattern Recogn.},
+  year = {2007},
+  volume = {40},
+  pages = {212--228},
+  number = {1},
+  address = {New York, NY, USA},
+  doi = {http://dx.doi.org/10.1016/j.patcog.2006.04.023},
+  issn = {0031-3203},
+  publisher = {Elsevier Science Inc.}
+}
+
 @ARTICLE{TabuCarryOver,
   author = {Gopalakrishnan, Mohan and Ding, Ke and Bourjolly, Jean-Marie and
 	Mohan, Srimathy},
@@ -213,6 +243,22 @@
   pages = {449-464},
   owner = {william},
   timestamp = {2010.03.25}
+}
+
+@ARTICLE{AcceleratingGA,
+  author = {H\"{a}m\"{a}l\"{a}inen, Timo and Klapuri, Harri and Saarinen, Jukka
+	and Ojala, Pekka and Kaski, Kimmo},
+  title = {Accelerating genetic algorithm computation in tree shaped parallel
+	computer},
+  journal = {J. Syst. Archit.},
+  year = {1996},
+  volume = {42},
+  pages = {19--36},
+  number = {1},
+  address = {New York, NY, USA},
+  doi = {http://dx.doi.org/10.1016/1383-7621(96)00009-4},
+  issn = {1383-7621},
+  publisher = {Elsevier North-Holland, Inc.}
 }
 
 @ARTICLE{EfficientEvoChannelManagement,
@@ -313,6 +359,35 @@
   issn = {0377-2217},
   keywords = {Tabu Search},
   url = {http://www.sciencedirect.com/science/article/B6VCT-4M69JKG-6/2/f853818e3dbbb9b390c6b14de1d808bb}
+}
+
+@ARTICLE{HybridIntelliGA,
+  author = {A.A. Javadi and R. Farmani and T.P. Tan},
+  title = {A hybrid intelligent genetic algorithm},
+  journal = {Advanced Engineering Informatics},
+  year = {2005},
+  volume = {19},
+  pages = {255 - 262},
+  number = {4},
+  note = {Computing in Civil Engineering},
+  doi = {DOI: 10.1016/j.aei.2005.07.003},
+  issn = {1474-0346},
+  keywords = {Genetic algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6X1X-4HCDTH9-2/2/cbf83cd94e09e329f40fa7f8b93825b8}
+}
+
+@ARTICLE{AdaptiveSAGA,
+  author = {Il-kwon Jeong and Ju-jang Lee},
+  title = {Adaptive simulated annealing genetic algorithm for system identification},
+  journal = {Engineering Applications of Artificial Intelligence},
+  year = {1996},
+  volume = {9},
+  pages = {523 - 532},
+  number = {5},
+  doi = {DOI: 10.1016/0952-1976(96)00049-8},
+  issn = {0952-1976},
+  keywords = {Genetic algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6V2M-3WC4CC5-5/2/7a00b8f29ed3dc1da0dd7d196dccf2e0}
 }
 
 @INPROCEEDINGS{TabuParameterization,
@@ -628,6 +703,19 @@
   timestamp = {2009.08.16}
 }
 
+@ARTICLE{GATSP,
+  author = {Jean-Yves Potvin},
+  title = {Genetic algorithms for the traveling salesman problem},
+  journal = {Annals of Operations Research},
+  year = {1996},
+  volume = {63},
+  pages = {337--370},
+  doi = {10.1007/BF02125403},
+  owner = {william},
+  timestamp = {2010.06.14},
+  url = {http://www.springerlink.com/content/J13214073H2808K0}
+}
+
 @ARTICLE{VariousCoolingSA,
   author = {Nilesh B. Prajapati and Rupal R. Agravat and Mosin I. Hasan},
   title = {Comparative Study of Various Cooling Schedules for Location Area
@@ -653,6 +741,20 @@
   timestamp = {2010.05.21}
 }
 
+@ARTICLE{ConstrainedGA,
+  author = {D. J. Reid},
+  title = {Genetic algorithms in constrained optimization},
+  journal = {Mathematical and Computer Modelling},
+  year = {1996},
+  volume = {23},
+  pages = {87 - 111},
+  number = {5},
+  doi = {DOI: 10.1016/0895-7177(96)00014-3},
+  issn = {0895-7177},
+  keywords = {Discrete optimization},
+  url = {http://www.sciencedirect.com/science/article/B6V0V-3VSNGMY-1C/2/2fddf7337e38ddc5458bc22e8cf56e2a}
+}
+
 @ARTICLE{MSFAP,
   author = {Angelos N. Rouskas and Michael G. Kazantzakis and Miltiades E. Anagnostou},
   title = {Minimizing of Frequency Assignment Span in Cellular Networks},
@@ -674,6 +776,20 @@
   pages = {289-317},
   owner = {william},
   timestamp = {2010.02.14}
+}
+
+@ARTICLE{MultiPopGA,
+  author = {Siarry, Patrick and P\'{e}trowski, Alain and Bessaou, Mourad},
+  title = {A multipopulation genetic algorithm aimed at multimodal optimization},
+  journal = {Adv. Eng. Softw.},
+  year = {2002},
+  volume = {33},
+  pages = {207--213},
+  number = {4},
+  address = {Oxford, UK, UK},
+  doi = {http://dx.doi.org/10.1016/S0965-9978(02)00010-8},
+  issn = {0965-9978},
+  publisher = {Elsevier Science Ltd.}
 }
 
 @INPROCEEDINGS{AutoConfigSA,
@@ -770,6 +886,21 @@
   location = {The Netherlands}
 }
 
+@ARTICLE{SelfAdaptiveGA,
+  author = {To\u{g}an, Vedat and Dalo\u{g}lu, Ay\c{s}e T.},
+  title = {An improved genetic algorithm with initial population strategy and
+	self-adaptive member grouping},
+  journal = {Comput. Struct.},
+  year = {2008},
+  volume = {86},
+  pages = {1204--1218},
+  number = {11-12},
+  address = {Elmsford, NY, USA},
+  doi = {http://dx.doi.org/10.1016/j.compstruc.2007.11.006},
+  issn = {0045-7949},
+  publisher = {Pergamon Press, Inc.}
+}
+
 @INPROCEEDINGS{DormRoomSA,
   author = {Nguyen Thanh Trung and Duong Tuan Anh},
   title = {Comparing Three Improved Variants of Simulated Annealing for Optimizing
@@ -798,6 +929,36 @@
   timestamp = {2010.06.07}
 }
 
+@ARTICLE{FamilyGA,
+  author = {Wainwright, Roger L.},
+  title = {A family of genetic algorithm packages on a workstation for solving
+	combinatorial optimization problems},
+  journal = {SIGICE Bull.},
+  year = {1994},
+  volume = {19},
+  pages = {30--36},
+  number = {3},
+  address = {New York, NY, USA},
+  doi = {http://doi.acm.org/10.1145/182063.182071},
+  issn = {0893-2875},
+  publisher = {ACM}
+}
+
+@ARTICLE{ParallelGASA,
+  author = {Wang, Z. G. and Wong, Y. S. and Rahman, M.},
+  title = {Development of a parallel optimization method based on genetic simulated
+	annealing algorithm},
+  journal = {Parallel Comput.},
+  year = {2005},
+  volume = {31},
+  pages = {839--857},
+  number = {8+9},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  doi = {http://dx.doi.org/10.1016/j.parco.2005.03.006},
+  issn = {0167-8191},
+  publisher = {Elsevier Science Publishers B. V.}
+}
+
 @ARTICLE{ReactiveTabuVHR,
   author = {N. A. Wassan},
   title = {A Reactive Tabu Search for the Vehicle Routing Problem},
@@ -807,6 +968,21 @@
   pages = {111-116},
   owner = {william},
   timestamp = {2010.05.20}
+}
+
+@INCOLLECTION{GeostatisticalGA,
+  author = {Xian-Huan Wen and Tina Yu and Seong Lee},
+  title = {Coupling Sequential-Self calibration and Genetic Algorithms to Integrate
+	Production Data in Geostatistical Reservoir Modeling},
+  booktitle = {Geostatistics Banff 2004},
+  publisher = {Springer Netherlands},
+  year = {2005},
+  volume = {14},
+  series = {Quantitative Geology and Geostatistics},
+  pages = {691-701},
+  doi = {10.1007/978-1-4020-3610-1},
+  owner = {william},
+  timestamp = {2010.06.14}
 }
 
 @INPROCEEDINGS{SALongestCommon,
