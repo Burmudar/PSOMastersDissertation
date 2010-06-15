@@ -46,23 +46,7 @@ Tabu search resembles in its most basic form the Hill-climbing search algorithm,
 General search algorithsm like Hill-climbing, Random-restart or Scatter search tend to get stuck on local optima. The local optima might be a very attractive solution and thus general search algorithms will not move to beter solutions since according the algorihtms built in strategy it has found the best solution, but in actual fact its solution is the best it its \emph{local} search space but not in the \emph{global} search space. This is why an important charateristic that algorithms being applied on optimisation problems need to posess is breaking out of local optima.
 
 In the next section we will explain what makes Tabu Search such a better algorithm that previous algorihtms and why it is able on average to produce better results.
-\subsection{Algorithm and Data flow}
-\begin{figure}[h]
-	\centering
-	\setlength \fboxsep{0pt}
-	\setlength \fboxrule{0.5pt}
-	\fbox{\includegraphics[width=3.0in]{./pictures/captainplaceholder.png}}
-	\caption{Pseudo code for Tabu Search Algorithm}
-	\label{fig:TSAlgorithmPseudoCode}
-\end{figure}
-\begin{figure}[htbp!]
-	\centering
-	\setlength \fboxsep{0pt}
-	\setlength \fboxrule{0.5pt}
-	\fbox{\includegraphics[width=3.8in,height=7.0in]{./pictures/captainplaceholder.png}}
-	\caption{Placeholder for algorithm data flow diagram code}
-	\label{fig:TSFlowDiagram}
-\end{figure}
+
 \subsection{Important Tabu Search characteristics}
 In this section we will discuss some of the key characteristics and tehcniques that Tabu search exibits that enables it to find relatively good solutions in a short amount of time. We will start of briefly discussing how the start solution Tabu Search iteratively improves upon. After initial solution generation we will give an overview of research done on neighbourhood strategies for TS. One of the most important features of TS will be discussed in the memory structures section. Finally, we will finish of this section with a discussion on the two search phases present in TS.
 
@@ -116,7 +100,23 @@ Repition length was chosen because the authors observed through experimentation,
 In this sub section we discussed the different phases of the Tabu Search algorithm. We discussed the intended purpose of each phase and presented some revelant research done in this area.
 
 In this section we presented the pseudo code for the Tabu Search algorithm as well as presented a Flow diagram depicted when and why certain phases are activated in the algorithm. We then gave a overview of the core characteristics that are important for the Tabu Search algorithm. In the next section we will discuss Simulated annealing, where will start off by giving the pseudo code and flow diagram for the algorithm and end of the section by giving a overview on the core fearures of the algorithm.
-
+\subsection{Algorithm and Data flow}
+\begin{figure}[h]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in]{./pictures/captainplaceholder.png}}
+	\caption{Pseudo code for Tabu Search Algorithm}
+	\label{fig:TSAlgorithmPseudoCode}
+\end{figure}
+\begin{figure}[htbp!]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.8in,height=7.0in]{./pictures/captainplaceholder.png}}
+	\caption{Placeholder for algorithm data flow diagram code}
+	\label{fig:TSFlowDiagram}
+\end{figure}
 \section{Simulated Annealing}
 \subsection{Introduction}
 Simulated Annealing (SA) is a heuristic search technique proposed in the 80's by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgical as Annealing \cite{CurveFittingSA,SASingleMultiObj,TempCyclingSA,ChaosSA}. Kirkpatrick was the first to use the simulated annealing to solve optimisations problems but the basic algorithm structure was defined in by Metropolis et. al. in 1953 \cite{CurveFittingSA,VeryFastSAImageEnchancement}
@@ -143,24 +143,7 @@ The best state isn't always selected, in some case the algorithm is also able to
 The SA algorithm is also very popular due to the basic structure of the algorithm being generic\cite{VariousCoolingSA}. Therefore, applying the algorithm to other problems is relatively trivial since only small changes are required. These changes usually need to applied to the \emph{Neighborhood selection} scheme and the \emph{Cooling Schedule}\cite{VariousCoolingSA,DormRoomSA}. Both of these concepts will be discussed in the next sub section.
 
 In this subsection we gave a brief overview of the Simulated Annealing (SA) algorithm. We briefly discussed what the algorithm is based on and how the algorithm goes about searching the solution space. We also introduced some concepts like move probability selection and annealing temperature, which forms part of the core the algorithm. In the next section we will explain some of the concepts we've touched upon in this section as well as more advanced concepts that makes the algorithm unique.
-\subsection{Algorithm and Data flow}
-In this section we will give the start of by providing the pseudo code of the Genetic Algorithm. We will also provide a flow diagram depicting the general search procedure flow of the algorithm. 
-\begin{figure}[h]
-	\centering
-	\setlength \fboxsep{0pt}
-	\setlength \fboxrule{0.5pt}
-	\fbox{\includegraphics[width=3.0in,height=3.5in]{./pictures/captainplaceholder.png}}
-	\caption{Pseudo code for Tabu Search Algorithm}
-	\label{fig:SAAlgorithmPseudoCode}
-\end{figure}
-\begin{figure}[htbp!]
-	\centering
-	\setlength \fboxsep{0pt}
-	\setlength \fboxrule{0.5pt}
-	\fbox{\includegraphics[width=3.8in,height=7.0in]{./pictures/captainplaceholder.png}}
-	\caption{Placeholder for algorithm data flow diagram code}
-	\label{fig:SAFlowDiagram}
-\end{figure}
+
 \subsection{Important Simulated Annealing characteristics}
 In this section we will provide five brief discussions on the characteristics of the Simulated Annealing Algorithm that we think make the algorithm unique. We will start of with a discussion on Markov Chains. An discussion on one of the most important defining characteristc, namely the cooling schedule, will follow after the Markov Chain section. Futhermore we will discuss the importantance of the initial temperature generation and what impact it has on the overall algorithm. Finally, we will end of this section with an overview on the efficiency of the algorithm.
 \subsubsection{Markov Chain}
@@ -209,8 +192,25 @@ Most of the research done on the SA algorithm focuses on the annealing schedule 
 In research done by Tseung and Lin \cite{CurveFittingSA} a initial solution isn't modified but a move generation technique known as \emph{Pattern} search is used. Pattern search has two forms of movement namely the exploratory move and the patter move. The exploratory move continually changes the certain variables of a solution \cite{CurveFittingSA}. This is done so that it can rapidly find and identify a ``downhill'' move. The Pattern move uses the information gathered by the exploratory move to move towards the minimum of the function \cite{CurveFittingSA}.
 \subsubsection{Algorithm efficiency}
 The algorithm is also efficient with regards to CPU cycles when compared to the Genetic Algorithm because it only has to evaluate a certain number of moves each iteration, instead of a evaluating a whole population each iteration. Unlike Tabu Search the basic SA algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that solution will cyclicing. Which is hwy the number of iterations spent at a temperature, since the longer the algorithm spends at a temperature the higher the probability is that solutions will cycle.
+\subsection{Algorithm and Data flow}
+In this section we will give the start of by providing the pseudo code of the Genetic Algorithm. We will also provide a flow diagram depicting the general search procedure flow of the algorithm. 
+\begin{figure}[h]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=3.5in]{./pictures/captainplaceholder.png}}
+	\caption{Pseudo code for Tabu Search Algorithm}
+	\label{fig:SAAlgorithmPseudoCode}
+\end{figure}
+\begin{figure}[htbp!]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.8in,height=7.0in]{./pictures/captainplaceholder.png}}
+	\caption{Placeholder for algorithm data flow diagram code}
+	\label{fig:SAFlowDiagram}
+\end{figure}
 \section{Genetic Algorithm}
-%Training Recurrent Neural Networks for Dynamic System Identification Using Parallel Tabu Search Algorithm Page 115
 \subsection{Introduction}
 Genetic Algorithm (GA) is a stochastic search method which is based on the natural process of genetic evolution and the Darwinian concept of ``survival of the fittest'' \cite{DistributedHierarchicalGA,AcceleratingGA,AdaptiveSAGA,FamilyGA}. GA was initially developed for adaptive systems by Holland but has then, been widely used in the optimization field of study due to its effective exploration of the solution space as well as its relative success in multi-dimensional problems\cite{ParallelGASA,DistributedHierarchicalGA,FamilyGA}. The wide use of the GA algorithm can also be attributed to its generic algorihtm structure as well as the ease of implementation of the algorithm \cite{FamilyGA,AdaptiveSAGA}. GA are application dependant and thus the designer needs to tailor the algorithm to his needs to obtain good results \cite{AcceleratingGA}.
 
@@ -218,15 +218,49 @@ The GA search procedure involves searching the solution space through artificial
 
 The population is artificially evolved each iteration by using a set of stochastic operators\cite{SelfAdaptiveGA}. This set consists of a selection operator, crossover operator and mutation operator\cite{SelfAdaptiveGA,MultiPopGA}. Each operator plays an important role in emulating the evolutionary process. The selection operator is in charge of applying the \emph{objective function} to each chromosome in the population \cite{AdaptiveSAGA,HumanPassiveGA}. Depending on if the selection operator is setup for maximization of minization, each individual is ranked based on its ``fitness'' or objective function value. In accordence with the Dawinian theory, only the fittest individuals are selected from the population \cite{HumanPassiveGA}. The fittest individuals are copied and sent to the the next phase of the algorithm which is known as the \emph{Reproduction} phase \cite{HumanPassiveGA}.
 
-Depending on how complicated the objective function is and how large the population is, the selection phase may be the most compuationally expensive as well as time consuming \cite{AcceleratingGA}. The Reproduction phase mostly consists of string manipulations on the chromosome, to drive to search forward and it thus a phase which is completed quickly, especially if the string encoding is of a binary nature \cite{AdaptiveSAGA}. These string manipulations occur through the application of the crossover and mutation operators \cite{ConstrainedGA}. The reproduction phase is where a new population is generated for the next generation to be evaluated by the selection operator. The reproduction is said to generate ``offspring'' from the selected fittest population who are in turn known as the ``parents'' of the offspring \cite{HumanPassiveGA,ConstrainedGA}. Reproduction will occur until a certain number of predefined generations is reach or a suitable solution is found to be greater/less than a certain fitness thershold that would indicate a good chromosome \cite{GATSP}.
+Depending on how complicated the objective function is and how large the population is, the selection phase may be the most compuationally expensive as well as time consuming \cite{AcceleratingGA}. The Reproduction phase mostly consists of string manipulations on the chromosome, to drive to search forward and it thus a phase which is completed quickly, especially if the string encoding is of a binary nature \cite{AcceleratingGA,AdaptiveSAGA}. These string manipulations occur through the application of the crossover and mutation operators \cite{ConstrainedGA}. The reproduction phase is where a new population is generated for the next generation to be evaluated by the selection operator. The reproduction is said to generate ``offspring'' from the selected fittest population who are in turn known as the ``parents'' of the offspring \cite{HumanPassiveGA,ConstrainedGA}. Reproduction will occur until a certain number of predefined generations is reach or a suitable solution is found to be greater/less than a certain fitness thershold that would indicate a good chromosome \cite{GATSP}.
 
 There are two basic forms of the GA where both forms differ in the way that offspring and parents are handled \cite{FamilyGA}. The one form is called the \emph{generational} GA  and the other form is known as the \emph{steady-state} GA \cite{GeostatisticalGA,FamilyGA}. With the generational GA the offspring aren't immediately used in the next generation, instead they are kept in a pool until the pool reaches a certain size \cite{FamilyGA}. The offspring are then used to replace the parents entirely in the next generation \cite{FamilyGA}. In the steady-state GA the offspring are continually integrated with the population, thus offspring and parents occupy the same population pool every generation \cite{GeostatisticalGA,FamilyGA}.
 
 The GA search process moves around in the search space using probabilistic rules rather than deterministic rules \cite{FamilyGA}. The probabilistic transition rules aid the algorithm to avoid local optima regions in the solution space \cite{HybridIntelliGA}. 
 
-Some sequential search algorithms require that the objective function be differentiable \cite{ConstrainedGA}. These sequential algorithms use the derivative to obtain gradient information so that they can move in the solution space \cite{ConstrainedGA}. The derivative of the objective function may be used in to increase the efficiency of the GA but is by no means a core requirement of the algorithm \cite{ConstrainedGA,HybridIntelliGA}. GA makes no assumptions about the solution space and only works on the information provided by the objective function \cite{ConstrainedGA,HybridIntelliGA}. 
+Some sequential search algorithms require that the objective function be differentiable \cite{ConstrainedGA}. These sequential algorithms use the derivative to obtain gradient information so that they can move in the solution space \cite{ConstrainedGA,SelfAdaptiveGA}. The derivative of the objective function may be used in to increase the efficiency of the GA but is by no means a core requirement of the algorithm \cite{ConstrainedGA,HybridIntelliGA,SelfAdaptiveGA}. GA makes no assumptions about the solution space and primarily works on the information provided by the objective function \cite{ConstrainedGA,HybridIntelliGA}. 
 
 In this section we gave a overview of the Genetic Algorithm. We introduced the core concepts on which the algorihtm is based upon as well as defined how the algorithm searches for solutions in a given domain. In the next section we will provide the pseudo code for the basic algorithmic structure as well as a flow diagram of the search procedure.
+
+\subsection{Important Genetic Algorithm characteristics}
+In this section we will give an overview on characteristicis which make the GA search procedure unique. We will start of by discussing initial population generation, after which we will discuss the core operators that the GA uses. We will end of this section with a discussion on the efficiency of the GA.
+\subsubsection{Initial Population Generation}
+Initial population generation is the very first activity that the GA performs. Out of this population potential mating candidates are selected based on their fitness which indicates the desireability. Generally the initial population is generated by means of randomization \cite{SelfAdaptiveGA}. Since the algorithm searches multple points simultaneously in the solution space, it is desireable that the initial population have a wide diversity with regard to the solution they represent \cite{CombinedBranchBoundGA,DistributedHierarchicalGA}. By controlling the initial population generation we can control, to a small degree, the amount of exploration the aglorithm does initially as well as avoid premature convergence \cite{CombinedBranchBoundGA}. Therefore, care must be taken in the selection of the particular randomization scheme that will be used to generate solutions.
+
+In a survey done by Andrea Reese, two randomization schemes are defined namely pseudo-random number generators (PRNGs) and quasirandom number generators (QRNGs). PRNGs where found to be heavily problem dependant, improving the search efficiency in some instances and in other instances having no considerable impact. QRNGs on the other hand, were shown to significantly improve the final solution produced by the GA as well as lowering the number of generations for the solution to be obtained \cite{RandomNumberGA}.
+
+Not all GA algorithm use randomization entirely for their initial population generation. In research done by Amit Nagar, Sunderesh S. Heragu and Jorge Haddock an algorithm is presented that generates an initial popualtion through some aid of a branch-and-bound algorithm. The branch-and-bound algorithm provides the GA with an upper bound of acceptable solution in the solution space. The inital population is then randomly generated in the constrained space defined by the upper bound\cite{CombinedBranchBoundGA}.
+\subsubsection{Selection Operator}
+The Selection operator is the first operator to be applied to the population after each generation. This operator is in charge of evaluating the current population to determine which individuals will survive and which will be ``killed'' off \cite{CoactiveFuzzyGA,CombinedBranchBoundGA,ConstrainedGA}. The individuals who survive and thus have the highest fitness are moved to a ``mating pool'' \cite{HumanPassiveGA}. Individuals from this mating pool will be used in the the reproduction phase to generate a new population \cite{AdaptiveSAGA,AcceleratingGA}.
+
+By favouring high fitness individuals above low fitness individuals the operator guides the search towards better high quality solutions \cite{ConstrainedGA}. But care must be taken if the operator is to keen on high quality individuals since it may eliminate diversity in the population and thus result in premature convergence for certain problems \cite{ConstrainedGA}. If the solution space is known to have only one optimum, then a strict selection policy may be used, therefore directing the search into a gradient based direction \cite{ConstrainedGA}. In contrast, with a solution space that is known to have multiple optima, a forgiving selection policy might be more favourable since it allows the solution space to be more widely explored \cite{ConstrainedGA}.
+
+The most widely adopted selection scheme is known as the \emph{Roulette Wheel} selection scheme \cite{ConstrainedGA,GeostatisticalGA,HybridBaldwinGA,CoactiveFuzzyGA}. With this scheme an individual is selected based on a probability defined by the fitness of the individual divided by the collective fitness of the population \cite{GeostatisticalGA}.
+\subsubsection{Crossover Operator}
+The Crossover operator is usually the first operator applied to the population in the reproduction phase. The crossover operates exclusively only on the chromosomes that are in the mating pool. This operator is the main process by which by the GA algorithm is able to diversify as well as exploit certain optimal regions \cite{CombinedBranchBoundGA,CoactiveFuzzyGA}. Crossover works by interchanging and matching two parent chromosomes randomly selected from the mating pool to produce a single chromosome known as the offspring \cite{FamilyGA,HumanPassiveGA,CoactiveFuzzyGA}. Since two chromosomes are combined or partially changed, some historical information is retained in the new chromosome \cite{FamilyGA}.
+
+In some algorithms like for instance the one presented in Nagar et. al., before the crossover operator is applied to the two parent chromosomes, the parents are first evaluated to determine if they represent suboptimal regions. If the either of the parents are from a suboptimal region, a disruption operator is applied that interchanges certain domain specific information between the parents. After the disruption operator is applied the crossover operator is applied \cite{CombinedBranchBoundGA}.
+
+There are a variety of ways with which values are interchanged between chromosomes in the crossover operation i.e, Fixed point crossver, Two Point Crossover, Uniform Crossover and Gausian Crossover. Fixed point crossover operates on binary parents where by a point is selected in one parent and then all other bits are replaced by the other parents bits \cite{HumanPassiveGA}. Two point crossover generates two random indices which dictates a certain segment in the one parent to be interchanged with the other parent \cite{ConstrainedGA}. Uniform crossover is the most basic of all crossovers since it randomly selects bits from one parent to be replaced by another parents bits and is usually used when a large solution space must be search\cite{ParallelGASA,GeostatisticalGA}. Finally, the Gausian crossover, interchanges bits between parents based on a Gausian distrubtion \cite{ParallelGASA,GeostatisticalGA}. Depening on the state of the algorithm, crossover operators can also be interchanged or even paired if the algorithm needs better search performance for large or small solution spaces \cite{HetergeneousGA,ParallelGASA}.
+
+Note, in all above crossovers it is assumed that the chromosomes are bit encoded, but these crossover do require them to be. All these crossover operators are able to work on any encoding, it just depends on what is considered to be a ``bit'' if a non-binary encoding is used. 
+\subsubsection{Mutation Operator}
+The mutation operator is a probabilistic operator, which means it is applied infrequently and thus only with a certain probability will it be applied to parent solution. The operator typically changes some small in the solution regardless of the fitness of the chromosome \cite{HybridBaldwinGA,HumanPassiveGA}.
+
+Given enough time, the mutation operator enables the algorithm to search the entire search space \cite{FamilyGA}. The operator also aids the algorithm with regard to escaping local optima in the solution space \cite{FamilyGA}.
+
+Due to the way the crossover works, some information may be lost when it is replaced by another chromosomes bits \cite{AcceleratingGA,ConstrainedGA}. Mutation is a source of new information which is continuously inserted into the algorithm, hence it works against information loss \cite{CoactiveFuzzyGA,AcceleratingGA,ConstrainedGA}. Usually, the mutation operator has no previious information on the chromosome it is mutating, thus it is entirely possible that the mutation may modify the chromosome for the worse \cite{AcceleratingGA}. A worse solution might lead the algorithm out of local optima or lead it down a new path to find the global optima, but this isn't always the case and thus in the literature the probability of the mutation operator is set to be very low \cite{AdaptiveSAGA,FamilyGA,ConstrainedGA}.
+
+The mutation operator isn't always simple random operations. In research done by Il-kwon Jeong and Ju-jang Lee, a mutation operator is presented that incorporates the Simulated Annealing algorithm. Th SA mutation operator generates a new chromosome whose fitness is also calculated. If the new chromosome fitness is worse than the chromosome to be mutated, then depening on the SA mutation temperature as well cooling schedule , the newly generated chromosome might replace the chromosome to be mutated. Otherwise, if the new chromosome has a better fitness than the chromosome to be mutated, then it is replaced \cite{AdaptiveSAGA}.
+
+\subsubsection{Elitism Operator}
+\subsubsection{Algorithm Efficiency}
 \subsection{Algorithm and Data flow}
 In this section we will give the start of by providing the pseudo code of the Genetic Algorithm. We will also provide a flow diagram depicting the general search procedure flow of the algorithm. 
 %Fuzzy genetic optimization on performance-based seismic design of reinforced concrete bridge piers with single-column type page  10 for flow chart
@@ -234,7 +268,7 @@ In this section we will give the start of by providing the pseudo code of the Ge
 	\centering
 	\setlength \fboxsep{0pt}
 	\setlength \fboxrule{0.5pt}
-	\fbox{\includegraphics[width=3.0in,height=3.5in]{./pictures/captainplaceholder.png}}
+	\fbox{\includegraphics[width=3.0in,height=3.7in]{./pictures/captainplaceholder.png}}
 	\caption{Pseudo code for Tabu Search Algorithm}
 	\label{fig:GAlgorithmPseudoCode}
 \end{figure}
@@ -246,14 +280,4 @@ In this section we will give the start of by providing the pseudo code of the Ge
 	\caption{Placeholder for algorithm data flow diagram code}
 	\label{fig:GAFlowDiagram}
 \end{figure}
-\subsection{Important Genetic Algorithm characteristics}
-In this section we will give an overview on characteristicis which make the GA search procedure unique. We will start of by discussing initial population generation, after which we will discuss the core operators that the GA uses. We will end of this section with a discussion on the efficiency of the GA.
-\subsubsection{Initial Population Generation}
-%Check SelfAdaptiveGA for Info on initial generation
-\subsubsection{Selection Operator}
-%Check  p346
-\subsubsection{Crossover Operator}
-\subsubsection{Mutation Operator}
-\subsubsection{Elitism Operator}
-\subsubsection{Algorithm Efficiency}
 \section {Summary}

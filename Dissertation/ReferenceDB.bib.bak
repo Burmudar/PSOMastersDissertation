@@ -44,6 +44,20 @@
   timestamp = {2009.05.23}
 }
 
+@ARTICLE{HetergeneousGA,
+  author = {Alba, E. and Luna, F. and Nebro, A. J. and Troya, J. M.},
+  title = {Parallel heterogeneous genetic algorithms for continuous optimization},
+  journal = {Parallel Comput.},
+  year = {2004},
+  volume = {30},
+  pages = {699--719},
+  number = {5-6},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  doi = {http://dx.doi.org/10.1016/j.parco.2003.12.011},
+  issn = {0167-8191},
+  publisher = {Elsevier Science Publishers B. V.}
+}
+
 @ARTICLE{ConstantTempSA,
   author = {Mahmoud H. Alrefaei and Sigr{ú}n Andrad{ó}ttir},
   title = {A Simulated Annealing Algorithm with Constant Temperature for Discrete
@@ -629,6 +643,22 @@
   timestamp = {2009.09.20}
 }
 
+@ARTICLE{CombinedBranchBoundGA,
+  author = {Amit Nagar and Sunderesh S. Heragu and Jorge Haddock},
+  title = {A combined branch-and-bound and genetic algorithm based approach
+	for a flowshop scheduling problem},
+  journal = {Annals of Operations Research},
+  year = {1996},
+  volume = {63},
+  pages = {397--414},
+  number = {3},
+  month = {June},
+  doi = {10.1007/BF02125405},
+  owner = {william},
+  timestamp = {2010.06.14},
+  url = {http://www.springerlink.com/content/TQH4417L16381R67}
+}
+
 @INPROCEEDINGS{VeryFastSAImageEnchancement,
   author = {Natrajan, B. and Rosen, B.E.},
   title = {Image enhancement using very fast simulated reannealing},
@@ -741,6 +771,21 @@
   timestamp = {2010.05.21}
 }
 
+@ARTICLE{RandomNumberGA,
+  author = {Andrea Reese},
+  title = {Random number generators in genetic algorithms for unconstrained
+	and constrained optimization},
+  journal = {Nonlinear Analysis: Theory, Methods \& Applications},
+  year = {2009},
+  volume = {71},
+  pages = {e679 - e692},
+  number = {12},
+  doi = {DOI: 10.1016/j.na.2008.11.084},
+  issn = {0362-546X},
+  keywords = {Genetic algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6V0Y-4TYR04X-6/2/b26a68c944f89dfb979a908d50596160}
+}
+
 @ARTICLE{ConstrainedGA,
   author = {D. J. Reid},
   title = {Genetic algorithms in constrained optimization},
@@ -776,6 +821,22 @@
   pages = {289-317},
   owner = {william},
   timestamp = {2010.02.14}
+}
+
+@ARTICLE{CoactiveFuzzyGA,
+  author = {Mohsen Saemi and Morteza Ahmadi},
+  title = {Integration of genetic algorithm and a coactive neuro-fuzzy inference
+	system for permeability prediction from well logs data},
+  journal = {Transport in Porous Media},
+  year = {2008},
+  volume = {71},
+  pages = {273--288},
+  number = {3},
+  month = {February},
+  doi = {10.1007/s11242-007-9125-4},
+  owner = {william},
+  timestamp = {2010.06.15},
+  url = {http://www.springerlink.com/content/920L650THG321227}
 }
 
 @ARTICLE{MultiPopGA,
@@ -944,7 +1005,7 @@
   publisher = {ACM}
 }
 
-@ARTICLE{ParallelGASA,
+@ARTICLE{ParallelGSAA,
   author = {Wang, Z. G. and Wong, Y. S. and Rahman, M.},
   title = {Development of a parallel optimization method based on genetic simulated
 	annealing algorithm},
@@ -1041,6 +1102,20 @@
   month = {June},
   owner = {william},
   timestamp = {2010.02.14}
+}
+
+@ARTICLE{HybridBaldwinGA,
+  author = {Quan Yuan and Feng Qian and Wenli Du},
+  title = {A hybrid genetic algorithm with the Baldwin effect},
+  journal = {Information Sciences},
+  year = {2010},
+  volume = {180},
+  pages = {640 - 652},
+  number = {5},
+  doi = {DOI: 10.1016/j.ins.2009.11.015},
+  issn = {0020-0255},
+  keywords = {Hybrid genetic algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6V0C-4XNW48V-7/2/3bef1e377d8206396153946177df8477}
 }
 
 @INPROCEEDINGS{TSHazardous,

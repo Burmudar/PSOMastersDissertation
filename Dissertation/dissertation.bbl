@@ -12,6 +12,12 @@ Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
 \newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
   December 2004.
 
+\bibitem{HetergeneousGA}
+E.~Alba, F.~Luna, A.~J. Nebro, and J.~M. Troya.
+\newblock Parallel heterogeneous genetic algorithms for continuous
+  optimization.
+\newblock {\em Parallel Comput.}, 30(5-6):699--719, 2004.
+
 \bibitem{ConstantTempSA}
 Mahmoud~H. Alrefaei and Sigr{ú}n Andrad{ó}ttir.
 \newblock A simulated annealing algorithm with constant temperature for
@@ -298,6 +304,12 @@ Garry Mullet.
 \newblock {\em Wireless telecommunications systems and networks}.
 \newblock Thomsan Delmar Learning, 2006.
 
+\bibitem{CombinedBranchBoundGA}
+Amit Nagar, Sunderesh~S. Heragu, and Jorge Haddock.
+\newblock A combined branch-and-bound and genetic algorithm based approach for
+  a flowshop scheduling problem.
+\newblock {\em Annals of Operations Research}, 63(3):397--414, June 1996.
+
 \bibitem{VeryFastSAImageEnchancement}
 B.~Natrajan and B.E. Rosen.
 \newblock Image enhancement using very fast simulated reannealing.
@@ -350,6 +362,13 @@ Abraham~P. Punnen and Y.~P. Aneja.
 \newblock {\em The Journal of the Operational Research Society}, 46:214--220,
   1995.
 
+\bibitem{RandomNumberGA}
+Andrea Reese.
+\newblock Random number generators in genetic algorithms for unconstrained and
+  constrained optimization.
+\newblock {\em Nonlinear Analysis: Theory, Methods \& Applications},
+  71(12):e679 -- e692, 2009.
+
 \bibitem{ConstrainedGA}
 D.~J. Reid.
 \newblock Genetic algorithms in constrained optimization.
@@ -365,6 +384,12 @@ P.~Demestichas E.~Tzifa S.~Kotrotsos, G.~Kotsakis and V.~Demesticha.
 \newblock Forumlation and computationally efficient algirithms for an
   interference-orientated version of the frequency assignment problem.
 \newblock {\em Wireless Personal Communications}, 18:289--317, 2001.
+
+\bibitem{CoactiveFuzzyGA}
+Mohsen Saemi and Morteza Ahmadi.
+\newblock Integration of genetic algorithm and a coactive neuro-fuzzy inference
+  system for permeability prediction from well logs data.
+\newblock {\em Transport in Porous Media}, 71(3):273--288, February 2008.
 
 \bibitem{MultiPopGA}
 Patrick Siarry, Alain P\'{e}trowski, and Mourad Bessaou.
@@ -487,6 +512,11 @@ Dominic C~O'Brien Yangyang~Zhang.
   swarm optimization.
 \newblock In {\em Proceedings of the Internation Symposium of Industrial
   Electronics}, June 2005.
+
+\bibitem{HybridBaldwinGA}
+Quan Yuan, Feng Qian, and Wenli Du.
+\newblock A hybrid genetic algorithm with the baldwin effect.
+\newblock {\em Information Sciences}, 180(5):640 -- 652, 2010.
 
 \bibitem{TSHazardous}
 L.~Zhang, S.~Guo, Y.~Zhu, and A.~Lim.
