@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  15 JUN 2010 02:27
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  15 JUN 2010 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -300,21 +300,25 @@ Overfull \hbox (6.72404pt too wide) in paragraph at lines 92--93
 -nent dy-nam-i-cally changes|
  []
 
-[44] <./pictures/captainplaceholder.png, id=158, 746.79pt x 1056.94875pt>
-[45] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58]) [59]
-[60]
+[44] [45] [46] [47] [48] [49] [50] [51]
+Overfull \hbox (0.9094pt too wide) in paragraph at lines 237--238
+\OT1/cmr/m/n/10.95 fined namely pseudo-random num-ber gen-er-a-tors (PRNGs) and
+ quasi-random|
+ []
+
+[52] [53] [54] [55] [56]) [57]
 \openout2 = `chpt5.aux'.
 
- (./chpt5.tex
+ (./chpt5.tex [58
+
+
+
+]
 Chapter 5.
-) [61
+) [59] [60
 
 
-
-] [62
-
-
-] [63] [64] (./dissertation.bbl
+] [61] [62] (./dissertation.bbl
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no º in font cmr10!
 Missing character: There is no Ã in font cmr10!
@@ -325,29 +329,28 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [65
+ [63
 
-] [66]
+] [64] [65]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [67]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
- [68] [69] [70]
-[71] [72] [73]) [74] (./dissertation.aux (./chpt1.aux) (./chpt2.aux)
+ [66] [67] [68]
+[69] [70] [71]) [72] (./dissertation.aux (./chpt1.aux) (./chpt2.aux)
 (./chpt3.aux) (./chpt4.aux) (./chpt5.aux)) ) 
 Here is how much of TeX's memory you used:
- 2282 strings out of 495061
- 27199 string characters out of 1182621
- 81912 words of memory out of 3000000
- 5403 multiletter control sequences out of 15000+50000
- 14420 words of font info for 54 fonts, out of 3000000 for 9000
+ 2273 strings out of 495061
+ 26986 string characters out of 1182621
+ 81875 words of memory out of 3000000
+ 5398 multiletter control sequences out of 15000+50000
+ 14252 words of font info for 53 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,19n,24p,1214b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,19n,24p,1222b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
@@ -362,12 +365,12 @@ are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/font
 s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dissertation.pdf (74 pages, 400095 bytes).
+/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msa
+m10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b>
+Output written on dissertation.pdf (72 pages, 388399 bytes).
 PDF statistics:
- 319 PDF objects out of 1000 (max. 8388607)
+ 305 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -160,6 +160,12 @@ L.~Houssin, C.~Artigues, and E.~Corbel.
 http://fap.zib.de/.
 \newblock Fap web, 2010.
 
+\bibitem{RealParameterGASA}
+Shun-Fa Hwang and Rong-Song He.
+\newblock Improving real-parameter genetic algorithm with simulated annealing
+  for engineering problems.
+\newblock {\em Adv. Eng. Softw.}, 37(6):406--418, 2006.
+
 \bibitem{RadioFAP}
 Lhassane Idoumghar and Ren{é} Schott.
 \newblock Two distributed algorithms for the frequency assignment problem in
@@ -337,11 +343,26 @@ E.~Nowicki and S.~Zdrzalka.
 \newblock {\em The Journal of the Operational Research Society}, 47:1054--1064,
   1996.
 
+\bibitem{DynamicPenaltyGA}
+W.~Paszkowicz.
+\newblock Properties of a genetic algorithm equipped with a dynamic penalty
+  function.
+\newblock {\em Computational Materials Science}, 45(1):77 -- 83, 2009.
+\newblock Selected papers from the E-MRS 2007 Fall Meeting Symposium G: Genetic
+  Algorithms in Materials Science and Engineering - GAMS-2007.
+
 \bibitem{GSMSecurInTeleNetwork}
 Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
 \newblock {\em Security for Telecommunications Networks}, volume~40 of {\em
   Advances in Information Security}.
 \newblock Springer US, 2008.
+
+\bibitem{PatternDetectionGA}
+Pedro Pereira, Fernando Silva, and Nuno~A. Fonseca.
+\newblock Biored - a genetic algorithm for pattern detection in biosequences.
+\newblock In {\em 2nd International Workshop on Practical Applications of
+  Computational Biology and Bioinformatics (IWPACBB 2008)}, pages 156--165,
+  2009.
 
 \bibitem{GATSP}
 Jean-Yves Potvin.
@@ -403,6 +424,12 @@ J.~R. Slagle, A.~Bose, P.~Busalacchi, and C.~Wee.
 \newblock In {\em IEA/AIE '89: Proceedings of the 2nd international conference
   on Industrial and engineering applications of artificial intelligence and
   expert systems}, pages 401--408, New York, NY, USA, 1989. ACM.
+
+\bibitem{SelfAdaptiveDataMiningGA}
+K.G. Srinivasa, K.R. Venugopal, and L.M. Patnaik.
+\newblock A self-adaptive migration model genetic algorithm for data mining
+  applications.
+\newblock {\em Information Sciences}, 177(20):4295 -- 4313, 2007.
 
 \bibitem{tabuglobalplanning3g}
 Marc St-Hilaire, Steven Chamberland, and Samuel Pierre.

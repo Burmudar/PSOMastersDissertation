@@ -38,9 +38,9 @@
 \contentsline {subsection}{\numberline {3.7.2}CELAR}{35}
 \contentsline {subsection}{\numberline {3.7.3}COST 256}{35}
 \contentsline {section}{\numberline {3.8}Summary}{36}
-\contentsline {chapter}{\numberline {4}Metaheuristics Algorithms}{37}
+\contentsline {chapter}{\numberline {4}Heuristics Algorithms}{37}
 \contentsline {section}{\numberline {4.1}Introduction}{37}
-\contentsline {section}{\numberline {4.2}Characteristics of Metaheuristics}{38}
+\contentsline {section}{\numberline {4.2}Characteristics of Meta-heuristics}{38}
 \contentsline {section}{\numberline {4.3}Tabu Search}{39}
 \contentsline {subsection}{\numberline {4.3.1}Introduction}{39}
 \contentsline {subsection}{\numberline {4.3.2}Important Tabu Search characteristics}{40}
@@ -51,25 +51,25 @@
 \contentsline {subsection}{\numberline {4.3.3}Algorithm and Data flow}{45}
 \contentsline {section}{\numberline {4.4}Simulated Annealing}{45}
 \contentsline {subsection}{\numberline {4.4.1}Introduction}{45}
-\contentsline {subsection}{\numberline {4.4.2}Important Simulated Annealing characteristics}{48}
-\contentsline {subsubsection}{Markov Chain}{48}
-\contentsline {subsubsection}{Cooling Schedule}{49}
-\contentsline {subsubsection}{Initial temperature}{50}
-\contentsline {subsubsection}{Move generation}{51}
-\contentsline {subsubsection}{Algorithm efficiency}{51}
-\contentsline {subsection}{\numberline {4.4.3}Algorithm and Data flow}{51}
-\contentsline {section}{\numberline {4.5}Genetic Algorithm}{52}
-\contentsline {subsection}{\numberline {4.5.1}Introduction}{52}
-\contentsline {subsection}{\numberline {4.5.2}Important Genetic Algorithm characteristics}{55}
-\contentsline {subsubsection}{Initial Population Generation}{55}
-\contentsline {subsubsection}{Selection Operator}{56}
-\contentsline {subsubsection}{Crossover Operator}{57}
-\contentsline {subsubsection}{Mutation Operator}{58}
-\contentsline {subsubsection}{Elitism Operator}{59}
-\contentsline {subsubsection}{Algorithm Efficiency}{59}
-\contentsline {subsection}{\numberline {4.5.3}Algorithm and Data flow}{59}
-\contentsline {section}{\numberline {4.6}Summary}{59}
-\contentsline {chapter}{\numberline {5}Swarm Intelligence}{61}
-\contentsline {section}{\numberline {5.1}Introduction}{61}
-\contentsline {part}{II\hspace {1em}Implementation}{63}
-\contentsline {chapter}{Bibliography}{65}
+\contentsline {subsection}{\numberline {4.4.2}Important Simulated Annealing characteristics}{46}
+\contentsline {subsubsection}{Markov Chain}{47}
+\contentsline {subsubsection}{Cooling Schedule}{47}
+\contentsline {subsubsection}{Initial temperature}{48}
+\contentsline {subsubsection}{Move generation}{49}
+\contentsline {subsubsection}{Algorithm efficiency}{49}
+\contentsline {subsection}{\numberline {4.4.3}Algorithm and Data flow}{50}
+\contentsline {section}{\numberline {4.5}Genetic Algorithm}{50}
+\contentsline {subsection}{\numberline {4.5.1}Introduction}{50}
+\contentsline {subsection}{\numberline {4.5.2}Important Genetic Algorithm characteristics}{52}
+\contentsline {subsubsection}{Initial Population Generation}{52}
+\contentsline {subsubsection}{Selection Operator}{53}
+\contentsline {subsubsection}{Crossover Operator}{54}
+\contentsline {subsubsection}{Mutation Operator}{55}
+\contentsline {subsubsection}{Elitism Operator}{55}
+\contentsline {subsubsection}{Algorithm Efficiency}{56}
+\contentsline {subsection}{\numberline {4.5.3}Algorithm and Data flow}{56}
+\contentsline {section}{\numberline {4.6}Summary}{57}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{59}
+\contentsline {section}{\numberline {5.1}Introduction}{59}
+\contentsline {part}{II\hspace {1em}Implementation}{61}
+\contentsline {chapter}{Bibliography}{63}
