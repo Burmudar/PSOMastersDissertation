@@ -3,7 +3,7 @@
 \bibitem{CALMA}
 Karen Aardal, Cor Hurkens, Jan~Karel Lenstra, and Sergey Tiourine.
 \newblock Algorithm for radio link frequency assignment: The calma project.
-\newblock {\em Operations Research}, 50(6):968--980, 2002.
+\newblock {\em Operations Research}, 50(6):968--980, Nov - Dec 2002.
 
 \bibitem{Karen2004}
 Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
@@ -25,10 +25,10 @@ Mahmoud~H. Alrefaei and Sigr{ú}n Andrad{ó}ttir.
 \newblock {\em Management Science}, 45:748--764, 1999.
 
 \bibitem{CircuitTabu}
-Shawki Areibi and Anthony Vannelli.
+S.~Areibi and A.~Vannelli.
 \newblock Circuit partitioning using a tabu search approach.
-\newblock In {\em In 1993 IEEE International Symposium on Circuits and
-  Systems}, pages 1643--1646, 1993.
+\newblock In {\em Circuits and Systems, 1993., ISCAS '93, 1993 IEEE
+  International Symposium on}, pages 1643 --1645, 3-6 1993.
 
 \bibitem{EvoParallelTabu}
 A.~Augugliaro, L.~Dusonchet, and E.~R. Sanseverino.
@@ -42,10 +42,30 @@ I.~Badarudin, A.B.M. Sultan, M.N. Sulaiman, A.~Mamat, and M.T.M. Mohamed.
 \newblock In {\em Data Mining and Optimization, 2009. DMO '09. 2nd Conference
   on}, pages 28 --31, 27-28 2009.
 
+\bibitem{AntIntroTrends}
+Christian Blum.
+\newblock Ant colony optimization: Introduction and recent trends.
+\newblock {\em Physics of Life Reviews}, 2(4):353 -- 373, 2005.
+
+\bibitem{DLearning}
+Bruce~M. Blumberg.
+\newblock {\em Exploring Artificial Intelligence in the New Millenium}, chapter
+  D-Learning: what learning in dogs tells us about building characters that
+  learn what they ought to learn, pages 37--67.
+\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 2003.
+
 \bibitem{FAPOrientationModel}
 Ralf Borndörfer, Andreas Eisenblätter, Martin Grötschel, and Alexander
   Martin.
-\newblock The orientation model for frequency assignment problems, 1998.
+\newblock The orientation model for frequency assignment problems.
+\newblock Technical report, Konrad-Zuse-Zentrum Berlin, 1998.
+
+\bibitem{SwarmArt}
+Jeffrey~E. Boyd, Gerald Hushlak, and Christian~J. Jacob.
+\newblock Swarmart: interactive art from swarm intelligence.
+\newblock In {\em MULTIMEDIA '04: Proceedings of the 12th annual ACM
+  international conference on Multimedia}, pages 628--635, New York, NY, USA,
+  2004. ACM.
 
 \bibitem{TabuCrewSchedulingProblem}
 L.~Cavique, C.~Rego, and I.~Themido.
@@ -73,6 +93,21 @@ Agnieszka Debudaj-Grabysz and Zbigniew~J. Czech.
   Parallel processing and applied mathematics}, pages 189--198, Berlin,
   Heidelberg, 2008. Springer-Verlag.
 
+\bibitem{ACOSurvey}
+Marco Dorigo and Christian Blum.
+\newblock Ant colony optimization theory: A survey.
+\newblock {\em Theoretical Computer Science}, 344(2-3):243 -- 278, 2005.
+
+\bibitem{AntSurvey}
+Marco Dorigo and Christian Blum.
+\newblock Ant colony optimization theory: A survey.
+\newblock {\em Theoretical Computer Science}, 344(2-3):243 -- 278, 2005.
+
+\bibitem{AntsAndStigmergy}
+Marco Dorigo, Eric Bonabeau, and Guy Theraulaz.
+\newblock Ant algorithms and stigmergy.
+\newblock {\em Future Gener. Comput. Syst.}, 16(9):851--871, 2000.
+
 \bibitem{DynamicFAP}
 Audrey Dupont, Andrea~Carneiro Linhares, Christian Artigues, Dominique Feillet,
   Philippe, and Michel Vasquez.
@@ -91,12 +126,30 @@ Andreas Eisenbl{\"a}tter.
   and Lower Bounds}.
 \newblock PhD thesis, Technische Universit{\"a}t Berlin, Berlin, Germany, 2001.
 
+\bibitem{EgyptFAPPSO}
+H.M. Elkamchouchi, H.M. Elragal, and M.A. Makar.
+\newblock Channel assignment for cellular radio using particle swarm
+  optimization.
+\newblock In {\em Radio Science Conference, 2006. NRSC 2006. Proceedings of the
+  Twenty Third National}, volume~0, pages 1 --9, 14-16 2006.
+
+\bibitem{CompuIntelligenceIntro}
+Andries~P. Engelbrecht.
+\newblock {\em Computational Intelligence: An Introduction}.
+\newblock Wiley Publishing, 2007.
+
 \bibitem{SelfControllingReactiveTabu}
 N.~Fescioglu-Unver and M.M. Kokar.
 \newblock Application of self controlling software approach to reactive tabu
   search.
 \newblock In {\em Self-Adaptive and Self-Organizing Systems, 2008. SASO '08.
   Second IEEE International Conference on}, pages 297 --305, 20-24 2008.
+
+\bibitem{AntQAP}
+L.~M. Gambardella, {É}D Taillard, and M.~Dorigo.
+\newblock Ant colonies for the quadratic assignment problem.
+\newblock {\em The Journal of the Operational Research Society},
+  50(2):167--176, Feb 1999.
 
 \bibitem{DistributedHierarchicalGA}
 Gautam Garai and B.~B. Chaudhuri.
@@ -122,19 +175,10 @@ Timo H\"{a}m\"{a}l\"{a}inen, Harri Klapuri, Jukka Saarinen, Pekka Ojala, and
   computer.
 \newblock {\em J. Syst. Archit.}, 42(1):19--36, 1996.
 
-\bibitem{EfficientEvoChannelManagement}
-Joe Rodriguez-Tellez Harilaos G.~Standalidis, Peter P.~Stavroulakis.
-\newblock An efficient evolutionary algorithm for channel resource management
-  in cellular mobile systems.
-\newblock {\em IEEE Transactions of Evolutionary Computation}, 2(4):125--137,
-  November 1998.
-
-\bibitem{EgyptFAPPSO}
-Hassan M.~Elragal Hassan M.~Elkamchouchi.
-\newblock Channel assignment for cellular radio using particle swarm
-  optimization.
-\newblock In {\em The 23rd National radio Science Conference (NRSC 2006)},
-  March 2006.
+\bibitem{AntSwarmClustering}
+Julia Handl and Bernd Meyer.
+\newblock Ant-based and swarm-based clustering.
+\newblock {\em Swarm Intelligence}, 1(2):95--113, December 2007.
 
 \bibitem{NonlinearGlobalTabu}
 {Abdel-rahman} Hedar and Masao Fukushima.
@@ -214,6 +258,11 @@ Yuming Liang and Lihong Xu.
 \newblock In {\em GEC '09: Proceedings of the first ACM/SIGEVO Summit on
   Genetic and Evolutionary Computation}, pages 309--314, New York, NY, USA,
   2009. ACM.
+
+\bibitem{ChaoticSwarmIntel}
+Hongbo Liu, Ajith Abraham, and Maurice Clerc.
+\newblock Chaotic dynamic characteristics in swarm intelligence.
+\newblock {\em Applied Soft Computing}, 7(3):1019 -- 1026, 2007.
 
 \bibitem{MISatelite}
 Wen Liu, Haixiang Shi, and Lipo Wang.
@@ -300,11 +349,6 @@ Roberto Montemanni and Derek~H. Smith.
 \newblock Heuristic manipulation, tabu search and frequency assignment.
 \newblock {\em Comput. Oper. Res.}, 37(3):543--551, 2008.
 
-\bibitem{HeuristicManipulation}
-Roberto Montemanni and Derek~H. Smith.
-\newblock Heuristic manipulation, tabu search and frequency assignment.
-\newblock {\em Comput. Oper. Res.}, 37(3):543--551, 2010.
-
 \bibitem{wirelesstelcoMullet}
 Garry Mullet.
 \newblock {\em Wireless telecommunications systems and networks}.
@@ -380,8 +424,8 @@ Nilesh~B. Prajapati, Rupal~R. Agravat, and Mosin~I. Hasan.
 Abraham~P. Punnen and Y.~P. Aneja.
 \newblock A tabu search algorithm for the resource-constrained assignment
   problem.
-\newblock {\em The Journal of the Operational Research Society}, 46:214--220,
-  1995.
+\newblock {\em The Journal of the Operational Research Society},
+  46(2):214--220, Feb 1995.
 
 \bibitem{RandomNumberGA}
 Andrea Reese.
@@ -411,6 +455,13 @@ Mohsen Saemi and Morteza Ahmadi.
 \newblock Integration of genetic algorithm and a coactive neuro-fuzzy inference
   system for permeability prediction from well logs data.
 \newblock {\em Transport in Porous Media}, 71(3):273--288, February 2008.
+
+\bibitem{EfficientEvoChannelManagement}
+H.G. Sandalidis, P.P. Stavroulakis, and J.~Rodriguez-Tellez.
+\newblock An efficient evolutionary algorithm for channel resource management
+  in cellular mobile systems.
+\newblock {\em Evolutionary Computation, IEEE Transactions on}, 2(4):125 --137,
+  nov 1998.
 
 \bibitem{MultiPopGA}
 Patrick Siarry, Alain P\'{e}trowski, and Mourad Bessaou.
@@ -466,6 +517,13 @@ Ashish Sureka and Peter~R. Wurman.
   conference on Autonomous agents and multiagent systems}, pages 1023--1029,
   New York, NY, USA, 2005. ACM.
 
+\bibitem{ACOLargeProblem}
+Raj~Gaurang Tiwari, Mohd. Husain, Sandeep Gupta, and Arun~Pratap Srivastava.
+\newblock A new ant colony optimization meta-heuristic algorithm to tackle
+  large optimization problem.
+\newblock In {\em COMPUTE '10: Proceedings of the Third Annual ACM Bangalore
+  Conference}, pages 1--4, New York, NY, USA, 2010. ACM.
+
 \bibitem{SelfAdaptiveGA}
 Vedat To\u{g}an and Ay\c{s}e~T. Dalo\u{g}lu.
 \newblock An improved genetic algorithm with initial population strategy and
@@ -501,8 +559,8 @@ Z.~G. Wang, Y.~S. Wong, and M.~Rahman.
 \bibitem{ReactiveTabuVHR}
 N.~A. Wassan.
 \newblock A reactive tabu search for the vehicle routing problem.
-\newblock {\em The Journal of the Operation Research Society}, 57:111--116,
-  2006.
+\newblock {\em The Journal of the Operation Research Society}, 57(1):111--116,
+  Jan 2006.
 
 \bibitem{GeostatisticalGA}
 Xian-Huan Wen, Tina Yu, and Seong Lee.
@@ -532,6 +590,12 @@ Yiliang Xu, Meng~Hiot Lim, and Yew-Soon Ong.
 \newblock In {\em Evolutionary Computation, 2008. CEC 2008. (IEEE World
   Congress on Computational Intelligence). IEEE Congress on}, pages 2380
   --2387, 1-6 2008.
+
+\bibitem{ImpACOComplex}
+Jingan Yang and Yanbin Zhuang.
+\newblock An improved ant colony optimization algorithm for solving a complex
+  combinatorial optimization problem.
+\newblock {\em Appl. Soft Comput.}, 10(2):653--660, 2010.
 
 \bibitem{FixedFAPPSO}
 Dominic C~O'Brien Yangyang~Zhang.

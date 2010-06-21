@@ -1,3 +1,148 @@
 \chapter{Swarm Intelligence}
 \section{Introduction}
+We stand a lot to gain in Artificial Intelligence by studying the underlying inner workings of nature itself; this is why there is a branch of Artificial Intelligence which incorporates some of nature’s processes, like Genetics, which can be seen in action in the Genetic Algorithm.
+
+ There are other approaches in Artificial Intelligence which also have their routes in Nature, like Animal Learning /Dog Learning.  These approaches only look at a “single agent” thought process when it maps percepts (senses) to actions in its respective environment \cite{DLearning}.
+
+Swarm Intelligence is an approach more concerned with the underlying processes and behavior patterns when multiple agents (insects, animals) come together and perform a task as one collective entity.  This study of animals or insects in groups has already contributed to Artificial Intelligence as a whole \cite{ChaoticSwarmIntel}. New algorithms which incorporate the lessons learned from the study of the collective intelligence are now being used and form part of the Meta-heuristic Algorithm group.
+
+The initial algorithms developed with regard to Swarm Intelligence, where based on the coordination and behavior exhibited by schools of fish and flocks of birds. The newer generation of algorithms include:
+\begin{itemize}
+\item Ant Colony Optimization
+\item Particle Swarm Optimization 
+\item Artificial Bee Colony Optimization.
+\end{itemize}
+
+These newer generations of algorithms are primarily being used in combinatorial NP-Hard problems, where there is no defined solution, only an optimization that comes close to a solution. Swarm Intelligence works on a key feature observed in nature, the notion of emergent behavior. Whenever an entity does something unconventional and gains success, it can be considered as exhibiting “Emergent behavior” as if it is emerging out of the masses way of doing things. 
+
+Typical emergent properties exhibited by Swarms are self-organization and synchronization \cite{SwarmArt}. In Swarm Intelligence, when an agent exhibits emergent behavior, the behavior of the agent propagates through the whole swarm.  The behaviour progrates from one agent to another through social interaction which brings forth information exchange \cite{SwarmArt}. Therefore, the whole swarm adapts to a new way of doing things through information that was shared by one agent. The information can be anything that contributes to the swarm as a whole, like for instance the information might be about a new solution that is better than all previous solutions \cite{SwarmArt}. 
+
+Social interaction is but one component of self-organization. Other components that form part of self-organization are \cite{SwarmArt}:
+\begin{itemize}
+\item positive and negative feedback
+\item increasing the magnitude of fluctuations
+\end{itemize}
+This is why Ant Colony Optimization, Particle Swarm Optimization and Artificial Bee Colony Optimization work so well in NP-Hard problems. The swarm always moves to a better state than previously observed.
+
+NP-Hard optimization problems are only one of the fields of applicability for Swarm Intelligence. Other fields where Swarm Intelligence is being applied include neural network training, network routing, clustering\cite{AntSwarmClustering} , search engines and load balancing \cite{}. Swarm Intelligence thus seems more suited towards problems with combinatorial complexity (B. Denby, 2003).
+
+In this chapter we will first start off with a discusson on Ant Colony Optimization in section~\ref{sec:ACO}. Particle Swarm Optimization will be discussed in section~\ref{sec:PSO}. Finally, we will end of this chapter in section~\ref{sec:BEE} with a discussion on the Bee Colony Algorithm. Each section is divided into 3 subsections. First, we will give an overview of the algorithm, where we'll explain basic concepts about the algorithm and give an outline of the search process the algorithm uses. The second sub section will give an in depth discussion on some of the core characteristics that make the algorithm unique. We will finish of each section with a diagram depicting the general process flow and peseudo code of the algorithm.
+
+\section{Ant Colony Optimization (ACO)}
+\label{sec:ACO}
+\subsection{Overview}
+Ant Colony Optimization is a class of algorithms incorporating different aspects that ants exhibit when they perform certain activities i.e, gather food, build nests and construct cemetries. The first ACO algorithms that were developed were based on the foraging behaviour that was exhibited by ants when finding the most optimal path towards a food source. The foraging behaviour was noticed by Deneubourg when he performed the Bridge experiment \cite{AntsAndStigmergy,CompuIntelligenceIntro}.
+\begin{figure}[b!]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=4.0in,height=2.0in]{./pictures/antBridgeExperiment.png}}
+	\caption{The Ant bridge experiment}
+	\label{fig:antBridgeExperiment}
+\end{figure}
+
+Deneubourg seeked to know how ants where able to find the shortest path towards a food resource and communicate it to the whole nest \cite{AntsAndStigmergy}. Thus an experiment was setup up to study the ants behaviour. In the experiment a food source was placed a certain distance away from the nest. Two paths were setup towards the food resource, one path was purposely made longer than the other path as can bee seen in figure \ref{fig:antBridgeExperiment} \cite{AntsAndStigmergy}.
+
+The ants would then go out of the nest to gather food for their colony and would in order to do so need to take one of the provided paths toward the food souce. What J.L Deneubourg found was that the ants would initially oscillate between the bridges with no clear distinction of the more dominant route to take to retrieve food. But after a certain amount of time more and more ants would start preferring the path which is the shortest path towards food \cite{AntsAndStigmergy}.
+
+Naturally the questioned that was asked was how were the ants able to communicate to each other that the one food source was closer than the other? The answer lies in the use of \emph{stigmergy} by ants. Stigmergy is defined as the method animals and insects use to facilitate communication through interaction. Interaction occurs through signals that the individuals receive which might require them to perform a specific action \cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends}.
+
+Two forms of stigmergy can be observed in nature. The one form , \emph{Sematectonic stigmergy}, is a direct and physical form of interaction since it relies on altering the environment to communicate \cite{CompuIntelligenceIntro}. Examples of this type of stigmergy include nest building and brood sorting \cite{CompuIntelligenceIntro}. The other form, \emph{Sign-based stigmergy} is an indirect form of interaction, where communication occurs through some sort signal mechanism \cite{CompuIntelligenceIntro}. Ants use sign-based stigmergy when they are retrieving food. As the ant moves their path is reinforced with a chemical signal that alerts other ants to the desirebility of the path \cite{CompuIntelligenceIntro}. The chemical signal that ants use to indicate optimal paths is called \emph{pheromones}.  The concept of pheromones is a critical concept of ACO hence, we will we will provide an in depth discussion on pheromones in sub section \ref{sec:ACOcharacter}.
+
+The ACO algorithms are considered stochastic search procedures due to their inate use of randomness when exploring the solution space \cite{ACOSurvey,ImpACOComplex}.The ACO class of algorithms has been applied to a wide range of problems that include --- INSERT EXAMPLES. The algorithm does have some disadvantages. One of the primiary disadvantages of ACO is that ittends to get stuck on local minima in the solution space therefore, the solution space isn't adaquately explored and the algorithm prematurely converges to a local optima \cite{ImpACOComplex}.
+
+Improving the exploration of a population of agents in Swarm Intelligence algorithms is no easy feat, especially for the Ant System which uses positive feedback(Gang Wang, 2005). To combat this shortcoming the MAX-MIN Ant Optimization algorithm was developed. The MAX-MIN algorithm is based on the original Ant system algorithm. MAX-MIN addresses the local minima problem by imposing dynamically changing bounds on the pheromones of the ants such that it is always with limit of the heuristic and best current path of the colony (Gang Wang, 2005).
+
+The first algorithm to be based on the behaviour of ants was called the Ants System (AS) \cite{CompuIntelligenceIntro,AntIntroTrends}. The AS was initially applied to the Traveling Salesman problem (TSP) as a proof of concept application, but its performance was lackluster compared to other algorithms applied to the the same problem \cite{CompuIntelligenceIntro,AntIntroTrends}. Subsequently, various algorithms have been developed that improve on the AS. These improved algorithms include the Ant Colony System (ACS), The ANTS system, Ant-Q and AntTabu \cite{CompuIntelligenceIntro,AntIntroTrends}. Where applicable we will refer to these algorithms to indicate how the have improved the AS system.
+
+In this sub section we gave an overview of the ACO algorithm. We discussed how the algorithm was developed from observing ants. We also discussed how the algorithm utilizes the core communication conceptused my ants, called pheromones, is used to search the solution space. Finally we gave a small indication of of the typical problems at which ACO excells at as well as some of the disadvantages the algorithm has in its standard form.
+
+In the next section we will give a more in depth discussion on the core characteristics of the ACO as well as additional characteristics that were developed in response to improve the algorithm efficiency.
+\subsection{ACO characteristics}
+\label{sec:ACOcharacter}
+In this section we will discuss characteristics which are important and unique to the ACO class of algorithm. We will discuss the following topics (in order of discussion): Pheromones, State Transition Rules and Pheromone evapuration.
+\subsubsection{Pheromones trail}
+\label{sec:pheromonetrail}
+The pheromone technique used by ants forms part of the core methodology used by the Ant Colony Optimization (ACO) algorithm \cite{AntQAP}. As an ant moves it lays down pheromones to mark the path it is walking. Pheromones decay over time therefore, as the ant follows the pheromone trail it reinforces the pheromone that is already on a path \cite{AntQAP}.Thus the more ants following a path the stronger the pheromone trail for that path and the stronger the pheromone the higher probability is that an ant will follow the path \cite{AntQAP}. 
+
+In the bridge experiment the ants started following the shorter path, because an ant following the shorter path would reinforce its pheromone trail faster than on the longer path. Initally, the ants oscillated between the two paths since there was no clear indication to the colony what the shortest path was, therefore the ants initially randomly selected the paths they would follow \cite{AntQAP}. Once a path as been marked with pehromones the ant no longer selects a path based solely on randomness. Instead the ant selects a path based on a probability transition rule \cite{AntsAndStigmergy}. Transition rules will be discussed in the next sub section.
+
+With the use of pheromones ants are able to communicate the best and shortest path. The more ants following a preferred path the more pheromones would be laid on that specific path and in return increase the strength of the pheromones \cite{ImpACOComplex}. The increase in strength of the pheromones on a path would thus let ants more clearly distinguish between paths it “should” and “should not” take \cite{ImpACOComplex}. Therefore, a pheromone provides positive feedback to the colony.
+
+When the algorithm starts there are no pheromones to indicate path and the ants are placed at certain positions which are problem dependent. Initially, all the ants will choose random paths. After all the ants have completed their paths, each path is evaluated\cite{CompuIntelligenceIntro}. The amount of pheromone marking a path is in the standard ACO related to the cost function. Therefore, a low cost function value will have a high pheromone dosage indicating the path the ant took from each node and a high cost function value will have a low dosage\cite{CompuIntelligenceIntro}. The pheromone of each path hence, allows the colony to remember good and bad decisions from previous iterations\cite{CompuIntelligenceIntro}. This is a form of local pheromone updating \label{def:localpheromoneupdate}which will be discussed in the pheromone update section. In the iterations following the initial one, the ants will at each node decide based on a probabilitly function whether it should follow the pheromone trail laid down in previous iterations or choose a new path to another node. Thus as the ACO iterates through more iterations the stronger particular path pheromone trail will become, hence signalling the path out as the best found \cite{CompuIntelligenceIntro}.
+
+The pheromone trail was initially developed with only one colony in mind \cite{CompuIntelligenceIntro}. In the research done by Tiwari et al. pheromones in multiple colonies are considered. The basic principle of how pheromones are used by the ants stays the same, but the meaning of the pheromone changes if an ant of another colony encounters the pheromone trail. The ant will not follow or even consider the pheromone trail since any pheromone encountered from other colonies respulse the ant. Thus pheromones only provide positive feedback if the ant is from the same colony, otherwise the pheromone gives negative feedback, in a way warning the ant to stay away. This repulsion strategy promotes exploration among the multiple colonies  \cite{ACOLargeProblem}.
+
+In this section we gave an in depth discussion on what pheromones are as well as how they are applied in the most basic of cases. In the next sub section we will discuss the different transition rules that each algorithm in the class of ACO algorithms use.
+\subsubsection{State transition rules}
+ As discussed in the previous sub section the ants select which path next to follow based on a probability. This probability is also known as the \emph{transition probability}. In this sub section we will provide some of transition probabilities in use. Pheromone trails is the core concept upon which the Ant System is based and was the first algorithm developed based on ants that used the pheromones concept\cite{CompuIntelligenceIntro}. 
+\begin{equation}
+\label{eq:ASprobability}
+p^k_{ij}(t) =
+\begin{cases}
+	\frac{\tau^{\alpha}_{ij}(t)\eta^{\beta}_{ij}}{\sum_{u \in N^k_i(t)} {\tau^{\alpha}_{iu}(t)\eta^{\beta}_{iu}(t)}}, &\text{if $j \in N^k_i(t)$}\\
+	0, &\text{if $j \notin N^k_i(t)$}\\
+\end{cases}
+\end{equation}
+The first transition probability is formualted in equation (\ref{eq:ASprobability}) and is used by individual ants of the AS algorithm \cite{CompuIntelligenceIntro,AntSurvey}. An ant $k$ uses this equation to decide with what probability it will move from a node $i$ to a node $j$ \cite{CompuIntelligenceIntro}. $\tau_{ij}$ is the amount pheromone that exists between the path linking node $i$ and $j$ \cite{CompuIntelligenceIntro,AntsAndStigmergy}. Heuristic information is incorporated into the equation through the symbol $\eta_{ij}$ which is the desirebility of the path from node $i$ to node $j$ as evaluated by an heuristic function \cite{CompuIntelligenceIntro,AntsAndStigmergy}. 
+
+Through the use of parameters $\alpha$ to represent pheromone intensity and $\beta$ to represent heuristic information the algorithm is able to achieve a good balance between exploration and exploitation when $\alpha=\beta$ \cite{CompuIntelligenceIntro}. When $\alpha = 0$ no pheromone is taken into account, hence, any history that the algorithm has on the path between node $i$ and node $j$ is negelected and the algorithm degrades to a stochastic greedy search procedure. If $\beta = 0$ then the algorithm does not take into account the amount of desirebility the path between node $i$ and node $j$ as dictated by the problem specific heuristic function.
+
+The set $j \in N^k_i(t)$ contains all the valid neighborhood moves ant $k$ is allowed to make when moving from node $i$ to node $j$. A tabu list is kept by each ant to trim the set of moves already performed previously, hence cycling is prevented.
+
+Various other algorithms have been developed that improve on the basic AS. Each algorithm uses a different transition probability equation that might be very specific to the domain or a slight variant of the above equation as with the Ant Colony System. This section is not intended to give an exhaustive survey of different transition rules that exist in the literate. Therefore, we only discuss the first transition rule developed since most other rules can simply be considered deravites of the basic transition rule.
+\subsubsection{Pheromone update}
+As dicussed in the pheromone section, pheromones start to evapurate \footnote{Pheromone evapuration is discussed on page \pageref{sec:pheromoneevapuation}}over time hence, the path marked by the pheromone trail becomes less attrative to the ants. Therefore, a path that represents a good solution needs its pheromone trail to be continuously updated. In this sub section we will discuss the rules that govern when and by how much pheromones are updated.
+
+ Most of the variants that have been developed differ in the sense of what pheromone update rules they employ. In the literature pheromone update rules are classified into two groups \cite{CompuIntelligenceIntro}. The one group is called the global update rule. The other group is called the iteration based or local update rule of which an example has been given on page \pageref{def:localpheromoneupdate} \cite{CompuIntelligenceIntro}. 
+
+The first local pheromone rule was presented in the AS algorithm \cite{CompuIntelligenceIntro}. The ants would retrace their path after each iteration, depositing pheromones on each link that makes the complete path. The following equation was used to update the pheromone:
+\begin{align}
+ \tau_{ij}(t+1) &= \tau_{ij}(t) + \Delta\tau_{ij}(t),\\ 
+ \text{where }\Delta\tau_{ij} &= \sum^{n_k}_{k=1}\Delta\tau^k_{ij}(t) \notag
+\end{align}
+Pheromone update rules that are in the global update group, only allow the pheromone trail of the path representing the best found solution by the algorithm since the first iteration, to be updated \cite{CompuIntelligenceIntro}. Thus the global rule favours intensification where the algorithm exploits the global knowledge gained by the ants to find a better solution. By updating we mean the pheromone is reinforced. 
+
+The Ant Colony System (ACS) was the first to use the global update rule together with the local update rule\cite{CompuIntelligenceIntro}. By using both types of rules the algorithm is able to efficiently exploit the history provided by the pheromones\cite{CompuIntelligenceIntro}. The global update rule used by the ACS is formulated in the following equation\cite{CompuIntelligenceIntro}:
+\begin{align}
+	\tau_{ij}(t + 1) &= (1 - p_1)\tau_{ij}(t) + p_1\Delta\tau_{ij}(t),\\
+	\text{where }\Delta\tau_{ij} &= \notag
+	\begin{cases}
+		\frac{1}{f(x^+(t))} &\text{if $(i,j) \in x+(t)$}\\
+		0 &\text{otherwise}
+	\end{cases}
+\end{align}
+The parameter $x+(t)$ represents the best / shortest path so far found by the algorithm\cite{CompuIntelligenceIntro}. The rest of the parameters represents the same concepts as discussed on page \pageref{eq:ASprobability}
+
+As can been seen in the following equation, the ACS uses a slight variant of the local update rule first used in AS\cite{CompuIntelligenceIntro}.
+\begin{equation}
+	\tau_{ij}(t) = (1 - p_2)\tau_{ij} + p_2\tau_0
+\end{equation}
+In the above equation $\tau_0$ is a small constant and $p_2 \in [0,1]$ is the constant that defines the rate of evapuration\cite{CompuIntelligenceIntro}.
+
+\subsubsection{Pheromone evapuration}
+\label{sec:pheromoneevapuation}
+Initially when the pheromone concept was first implemeneted the ants of the colony rapidly converged on a solution and did not adaquately search the solution space for alternate path that might lead to beter solutions. To combat this premature convergence and force the ants to explore the solution space more, the concept of \emph{pheromone evapuration} was introduced\cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}. As discussed in the pheromone sub section (see \pageref{sec:pheromonetrail}) the pheromone marking a trail evapurates over time until it is reinforced by an ant. The evapuration of pheromones is governed by equation \ref{eq:pheromoneevapuration}\cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}:
+\begin{equation}
+\label{eq:pheromoneevapuration}
+	\tau_{ij}(t) \leftarrow (1-p)\tau_{ij}(t), p\in [0,1]
+\end{equation}
+The constant $p$ defines the rate at which pheromone evapurates. If $p=1$ the pheromone completely evapurates every iteration and the ants take no history into account with regard to there path selection and the search is completely random \cite{CompuIntelligenceIntro,AntsAndStigmergy}. Thus, the amount of exploration done by the algorithm can be controlled with the constant $p$ \cite{CompuIntelligenceIntro,AntsAndStigmergy}.
+
+The above equation (\ref{eq:pheromoneevapuration}) was first introduced in the Ant System \cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}. Most subsequent algorithms that are form of the ACO class of algorithms also use the concept of pheromone evapuration, but they either use the standard equation or develop their own varaint \cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}.
+
+% Content in "A new solution algorithm for improving performance of ant colony optimization"
+A more aggressive form of Pheromone evapuration  is add to the Ant system discussed in the research done by \cite{AntQAP}. The more aggressive form works beside the already present pheromone evapuration, instead this form seeks to add an additional search phase called \emph{diversification}. In the ant system developed by the authors a mechanism is added that monitors a certain number of solutionis that have been recently produced. If the solution hasn't changed a certain number of iterations the mechanism removes all pheromone trails currently in the system. Therefore, the algorithm is forced to re-search the search space to create new solutions as it cannot rely on previous historic information provided by the pheromone trails. This mechanism forces the algoritm to diversify \cite{AntQAP}.
+\subsection{ACO Pseudo Code and Process Flow}
+\section{Particle Swarm Optimization (PSO)}
+\label{sec:PSO}
+\subsection{Overview}
+\subsection{PSO characteristics}
+\subsection{PSO Pseudo Code and Process Flow}
+\section{Bee Foraging Algorithm}
+\label{sec:BEE}
+\subsection{Overview}
+\subsection{BEE algorithm characteristics}
+\subsection{BEE algorithm Pseudo Code and Process Flow}
+\section{Summary}
 %Read An Evolutionary Parallel Tabu Search approach for distribution systems reinforcement planning for more information on PSO%

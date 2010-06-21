@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  15 JUN 2010 12:56
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  22 JUN 2010 00:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -184,31 +184,31 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [3])
+) [3] [4])
 \tf@toc=\write3
 \openout3 = `dissertation.toc'.
 
- [4] [5
+ [5] [6
 
-] [6]
+] [7]
+[8]
 \openout2 = `chpt1.aux'.
 
-
-(./chpt1.tex
+ (./chpt1.tex
 Chapter 1.
-) [7
+) [9
 
 
 ]
 \openout2 = `chpt2.aux'.
 
- (./chpt2.tex [8
+ (./chpt2.tex [10
 
 
 
 ]
 Chapter 2.
-[9] [10]
+[11] [12]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -224,12 +224,12 @@ Overfull \hbox (1.73949pt too wide) in paragraph at lines 38--41
 a rate for GSM Evo-lu-tion \OT1/cmr/m/n/10.95 (EDGE)|
  []
 
-[11] [12]
+[13] [14]
 Overfull \hbox (4.12582pt too wide) in paragraph at lines 67--69
 []\OT1/cmr/m/n/10.95 --- Usu-ally in-serted into a mo-|
  []
 
-[13]
+[15]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -242,20 +242,16 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [14] [15] [16] [17])
-Underfull \vbox (badness 1199) has occurred while \output is active []
-
- [18]
-[19]
+ [16] [17] [18] [19]) [20] [21]
 \openout2 = `chpt3.aux'.
 
- (./chpt3.tex [20
+ (./chpt3.tex [22
 
 
 
 ]
 Chapter 3.
-[21] [22] [23] [24]
+[23] [24] [25] [26]
 Overfull \hbox (1.13452pt too wide) in paragraph at lines 58--59
 []\OT1/cmr/m/n/10.95 In this sec-tion we de-scribed what in-ter-fenece is and w
 hat the con-siquences|
@@ -267,110 +263,155 @@ Overfull \hbox (0.13086pt too wide) in paragraph at lines 66--67
 to one or more satelites|
  []
 
-[25]
+[27]
 Overfull \hbox (11.50961pt too wide) in paragraph at lines 81--82
 \OT1/cmr/m/n/10.95 port for large fixed line netwroks, en-ter-prise net-works, 
 cam-puses and metropoli-|
  []
 
-[26] [27] [28]
+[28] [29] [30] [31]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ∂ in font cmr10!
- [29] [30] [31]
+ [32] [33]
 Overfull \hbox (2.65535pt too wide) in paragraph at lines 153--154
 []\OT1/cmr/m/n/10.95 The Fre-quency As-sign-ment Prob-lem can be rep-re-sented 
 as a graph colour-|
  []
 
-[32] [33] [34]
+[34] [35] [36]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no © in font cmr10!
- [35]) [36]
+ [37]) [38]
 \openout2 = `chpt4.aux'.
 
  (./chpt4.tex
 Chapter 4.
-[37
+[39
 
 
 
-] [38] [39] [40] [41] [42] [43]
+] [40] [41] [42] [43] [44] [45]
 Overfull \hbox (6.72404pt too wide) in paragraph at lines 92--93
 \OT1/cmr/m/n/10.95 by the Di-ver-si-fier com-po-nent. The Di-ver-si-fier com-po
 -nent dy-nam-i-cally changes|
  []
 
-[44] [45] [46] [47] [48] [49] [50] [51]
+[46] [47] [48] [49] [50] [51] [52] [53] [54]
 Overfull \hbox (0.9094pt too wide) in paragraph at lines 237--238
 \OT1/cmr/m/n/10.95 fined namely pseudo-random num-ber gen-er-a-tors (PRNGs) and
  quasi-random|
  []
 
-[52] [53] [54] [55] [56]) [57]
+[55] [56] [57] [58]) [59]
 \openout2 = `chpt5.aux'.
 
- (./chpt5.tex [58
+ (./chpt5.tex [60
 
 
 
 ]
 Chapter 5.
-) [59] [60
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+[61] [62] <./pictures/antBridgeExperiment.png, id=216, 498.86375pt x 240.9pt>
+[63] [64] [65]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [66] [67]
+Overfull \hbox (1.6546pt too wide) in paragraph at lines 99--100
+\OT1/cmr/m/n/10.95 The ants would re-trace their path af-ter each it-er-a-tion,
+ de-posit-ing pheromones|
+ []
+
+[68] [69])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70]
+[71] [72
 
 
-] [61] [62] (./dissertation.bbl
+] [73] [74] (./dissertation.bbl
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ∫ in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ≥ in font cmr10!
+ [75
+
+]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ∂ in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no § in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ∂ in font cmr10!
- [63
-
-] [64] [65]
+ [76]
+Missing character: There is no √ in font cmr10!
+Missing character: There is no â in font cmr10!
+ [77]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no © in font cmr10!
+ [78]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ° in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ≠ in font cmr10!
- [66] [67] [68]
-[69] [70] [71]) [72] (./dissertation.aux (./chpt1.aux) (./chpt2.aux)
+ [79] [80] [81]
+[82] [83] [84]) [85] (./dissertation.aux (./chpt1.aux) (./chpt2.aux)
 (./chpt3.aux) (./chpt4.aux) (./chpt5.aux)) ) 
 Here is how much of TeX's memory you used:
- 2273 strings out of 495061
- 26986 string characters out of 1182621
- 81875 words of memory out of 3000000
- 5398 multiletter control sequences out of 15000+50000
- 14252 words of font info for 53 fonts, out of 3000000 for 9000
+ 2303 strings out of 495061
+ 27521 string characters out of 1182621
+ 82051 words of memory out of 3000000
+ 5424 multiletter control sequences out of 15000+50000
+ 14420 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 27i,19n,24p,1222b,252s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,19n,24p,1352b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/font
-s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/publ
-ic/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msa
-m10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pf
-b>
-Output written on dissertation.pdf (72 pages, 388399 bytes).
+cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cmextra/cmex8.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/c
+m/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmt
+i9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on dissertation.pdf (85 pages, 445039 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
+ 357 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

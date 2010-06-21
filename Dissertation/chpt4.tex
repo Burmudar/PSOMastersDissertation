@@ -20,7 +20,7 @@ These algorithms are considered to be \emph{general-purpose} algorithms and can 
 
 Meta-heuristic Algorithms do not search statically by testing and evaluating every possible permutation in the solution space. Instead these algorithms make use of certain strategies and heuristics (specific to the problem domain) to search the solution space intelligently through trail and error \cite{MetaAgricultural}. 
 
-These algorithms iteratively move through the solution space, using a heuristic to guide the search to move to more desirable regions in the solution space where there is a high probability of obtaining high quality candidate solutions \cite{HeuristicManipulation,SweepMeta}.
+These algorithms iteratively move through the solution space, using a heuristic to guide the search to move to more desirable regions in the solution space where there is a high probability of obtaining high quality candidate solutions \cite{TabuMontemanniSmith,SweepMeta}.
 
 Meta-heuristic based search methods aren't guaranteed to find the most optimal solutions in the solution space, instead these methods are usually used to find near-optimal solutions. Thus most algorithmic development in the meta-heuristic domain focus developing new techniques that will increase the probability that a good solution will be obtained in difficult combinatorial problems \cite{MetaAgricultural}.
 
@@ -38,7 +38,7 @@ In this section we introduced the characteristics of meta-heuristics which sets 
 
 In the next section of this chapter we will discuss the Tabu Search meta-heuristic which we are investigating.
 \section{Tabu Search}
-\subsection{Introduction}
+\subsection{Overview}
 Tabu Search (TS) was first proposed by Glover as a new searching technique to help algorithms avoid getting  stuck in local optima present in combinatorial and optimization problems \cite{TabuRCAProblem}. Since Glover introduced the algorithm in the 1980's, Tabu Search has been applied to a wide range of problems that include a wide variety of problems such as the Vehicle Routing Problem, Frequency assignment Problem, Capacitated-Lot Sizing Problem, Nurse Scheduling and the Resource Constrained Assignment Problem. Even though the problems mentioned differ by a large margin, the algorithm has been relatively successful in most of optimization problems it has been applied to. If we observe the results presented in the following research \cite{TabuCarryOver,TabuSingleMachineScheduling,TabuVechicleRoutingWithTimeWindows,TabuBiddingStrats,TabuCrewSchedulingProblem,ReactiveTabuVHR,TabuRCAProblem,TabuCSP,TabuMontemanniSmith,tabuglobalplanning3g} we can deduce that Tabu Search has on average obtained the best results compared to previous attempts with other algorithms. 
 
 Tabu search resembles in its most basic form the Hill-climbing search algorithm, but it differs in the sense that Tabu Search keeps a memory of its recent moves in the solution space \cite{TabuBiddingStrats}. 
@@ -118,7 +118,7 @@ In this section we presented the pseudo code for the Tabu Search algorithm as we
 %%	\label{fig:TSFlowDiagram}
 %\end{figure}
 \section{Simulated Annealing}
-\subsection{Introduction}
+\subsection{Overview}
 Simulated Annealing (SA) is a heuristic search technique proposed in the 80's by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgical as Annealing \cite{CurveFittingSA,SASingleMultiObj,TempCyclingSA,ChaosSA}. Kirkpatrick was the first to use the simulated annealing to solve optimisations problems but the basic algorithm structure was defined in by Metropolis et. al. in 1953 \cite{CurveFittingSA,VeryFastSAImageEnchancement}
 
 Annealing is the natural process of crystallization when a solid is heated to a high temperature and then systematically cooled to a low temperature to reach a crystallized form \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}. This crystallized form of the solid is known the be the global minimum of the solids internal energy state. When the solid is rapidly cooled from a high temperature, the molecules have no time to reach a thermodynamic equilibrium stage \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}. Therefore, the molecules of the solid have high energy and the resultant structure has no real crystalline form, thus the solid energy is at a local minima \cite{CurveFittingSA,NewSAs,MobileRobotSA}. When the solid is slowly cooled in a controlled manner, the molecules are able to reach a thermal equilibrium at each temperature \cite{ChaosSA,CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}.
@@ -211,7 +211,7 @@ In this section we will give the start of by providing the pseudo code of the Ge
 %%	\label{fig:SAFlowDiagram}
 %\end{figure}
 \section{Genetic Algorithm}
-\subsection{Introduction}
+\subsection{Overview}
 Genetic Algorithm (GA) is a stochastic search method which is based on the natural process of genetic evolution and the Darwinian concept of ``survival of the fittest'' \cite{DistributedHierarchicalGA,AcceleratingGA,AdaptiveSAGA,FamilyGA}. GA was initially developed for adaptive systems by Holland but has then, been widely used in the optimization field of study due to its effective exploration of the solution space as well as its relative success in multi-dimensional problems\cite{ParallelGASA,DistributedHierarchicalGA,FamilyGA}. The wide use of the GA algorithm can also be attributed to its generic algorithm structure as well as the ease of implementation of the algorithm \cite{FamilyGA,AdaptiveSAGA}. GA are application dependant and thus the designer needs to tailor the algorithm to his needs to obtain good results \cite{AcceleratingGA}.
 
 
@@ -244,6 +244,7 @@ By favouring high fitness individuals above low fitness individuals the operator
 
 The most widely adopted selection scheme is known as the \emph{Roulette Wheel} selection scheme \cite{ConstrainedGA,GeostatisticalGA,HybridBaldwinGA,CoactiveFuzzyGA}. With this scheme an individual is selected based on a probability defined by the fitness of the individual divided by the collective fitness of the population \cite{GeostatisticalGA}.
 \subsubsection{Crossover Operator}
+\label{sec:crossover}
 The Crossover operator is usually the first operator applied to the population in the reproduction phase. The crossover operates exclusively only on the chromosomes that are in the mating pool. This operator is the main process by which by the GA algorithm is able to diversify as well as exploit certain optimal regions \cite{CombinedBranchBoundGA,CoactiveFuzzyGA}. Crossover works by interchanging and matching two parent chromosomes randomly selected from the mating pool to produce a single chromosome known as the offspring \cite{FamilyGA,HumanPassiveGA,CoactiveFuzzyGA}. Since two chromosomes are combined or partially changed, some historical information is retained in the new chromosome \cite{FamilyGA}.
 
 In some algorithms like for instance the one presented in Nagar et. al., before the crossover operator is applied to the two parent chromosomes, the parents are first evaluated to determine if they represent suboptimal regions. If the either of the parents are from a suboptimal region, a disruption operator is applied that interchanges certain domain specific information between the parents. After the disruption operator is applied the crossover operator is applied \cite{CombinedBranchBoundGA}.
@@ -251,6 +252,7 @@ In some algorithms like for instance the one presented in Nagar et. al., before 
 There are a variety of ways with which values are interchanged between chromosomes in the crossover operation i.e, Fixed point crossover, Two Point Crossover, Uniform Crossover and Gaussian Crossover. Fixed point crossover operates on binary parents where by a point is selected in one parent and then all other bits are replaced by the other parents bits \cite{HumanPassiveGA}. Two point crossover generates two random indices's which dictates a certain segment in the one parent to be interchanged with the other parent \cite{ConstrainedGA}. Uniform crossover is the most basic of all crossovers since it randomly selects bits from one parent to be replaced by another parents bits and is usually used when a large solution space must be search\cite{ParallelGASA,GeostatisticalGA}. Finally, the Gaussian crossover, interchanges bits between parents based on a Gaussian distribution \cite{ParallelGASA,GeostatisticalGA}. Depending on the state of the algorithm, crossover operators can also be interchanged or even paired if the algorithm needs better search performance for large or small solution spaces \cite{HetergeneousGA,ParallelGASA}.
 
 Note, in all above crossovers it is assumed that the chromosomes are bit encoded, but these crossover do require them to be. All these crossover operators are able to work on any encoding, it just depends on what is considered to be a ``bit'' if a non-binary encoding is used. 
+
 \subsubsection{Mutation Operator}
 The mutation operator is a probabilistic operator, which means it is applied infrequently and thus only with a certain probability will it be applied to parent solution. The operator typically changes some small in the solution regardless of the fitness of the chromosome \cite{HybridBaldwinGA,HumanPassiveGA}.
 
@@ -258,7 +260,9 @@ Given enough time, the mutation operator enables the algorithm to search the ent
 
 Due to the way the crossover works, some information may be lost when it is replaced by another chromosomes bits \cite{AcceleratingGA,ConstrainedGA}. Mutation is a source of new information which is continuously inserted into the algorithm, hence it works against information loss \cite{CoactiveFuzzyGA,AcceleratingGA,ConstrainedGA}. Usually, the mutation operator has no previous information on the chromosome it is mutating, thus it is entirely possible that the mutation may modify the chromosome for the worse \cite{AcceleratingGA}. A worse solution might lead the algorithm out of local optima or lead it down a new path to find the global optima, but this isn't always the case and thus in the literature the probability of the mutation operator is set to be very low \cite{AdaptiveSAGA,FamilyGA,ConstrainedGA}.
 
-The mutation operator isn't always simple random operations. In research done by Il-kwon Jeong and Ju-jang Lee, a mutation operator is presented that incorporates the Simulated Annealing algorithm. Th SA mutation operator generates a new chromosome whose fitness is also calculated. If the new chromosome fitness is worse than the chromosome to be mutated, then Depending on the SA mutation temperature as well cooling schedule , the newly generated chromosome might replace the chromosome to be mutated. Otherwise, if the new chromosome has a better fitness than the chromosome to be mutated, then it is replaced \cite{AdaptiveSAGA}.
+In a survey done by Engelbrecht another mutation operator is dicussed. Instead of mutating a small part of a randomly selected chromosomes, this operator generates new offspring to be inserted back into the population. The operator randomly generates a new chromosome and then using any of the previous discussed crossover operators (see page~\pageref{sec:crossover}) a 
+
+The mutation operator isn't always simple random operations. In research done by Il-kwon Jeong and Ju-jang Lee, a mutation operator is presented that incorporates the Simulated Annealing algorithm. Th SA mutation operator generates a new chromosome whose fitness is also calculated. If the new chromosome fitness is worse than the chromosome to be mutated, then depending on the SA mutation temperature as well cooling schedule , the newly generated chromosome might replace the chromosome to be mutated. Otherwise, if the new chromosome has a better fitness than the chromosome to be mutated, then it is replaced \cite{AdaptiveSAGA}.
 
 \subsubsection{Elitism Operator}
 The elitist operator differs from the crossover and mutation operator in a sense that, it doesn't modify the chromosomes in any way. Instead, the operator works on the population \cite{PatternDetectionGA}. The elitist operator ensures that the best chromosomes do not get lost from one population to the next, when the crossover and mutation operators are applied \cite{HetergeneousGA}. Thus the elitist operator is only applied after the crossover and mutation operators have generated a new population. 
