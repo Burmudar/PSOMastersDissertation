@@ -9,45 +9,45 @@ The style file: plain.bst
 Database file #1: ReferenceDB.bib
 Warning--I didn't find a database entry for ""
 Warning--can't use both author and editor fields in GSMSecurInTeleNetwork
-You've used 97 entries,
+You've used 98 entries,
             2118 wiz_defined-function locations,
-            1157 strings with 23910 characters,
-and the built_in function-call counts, 36711 in all, are:
-= -- 3708
-> -- 1481
-< -- 36
-+ -- 613
-- -- 484
-* -- 2593
-:= -- 5765
-add.period$ -- 305
-call.type$ -- 97
-change.case$ -- 528
+            1163 strings with 24150 characters,
+and the built_in function-call counts, 37278 in all, are:
+= -- 3769
+> -- 1504
+< -- 37
++ -- 623
+- -- 492
+* -- 2629
+:= -- 5844
+add.period$ -- 309
+call.type$ -- 98
+change.case$ -- 535
 chr.to.int$ -- 0
-cite$ -- 98
-duplicate$ -- 1445
-empty$ -- 2979
-format.name$ -- 484
-if$ -- 7961
+cite$ -- 99
+duplicate$ -- 1470
+empty$ -- 3023
+format.name$ -- 492
+if$ -- 8092
 int.to.chr$ -- 0
-int.to.str$ -- 97
-missing$ -- 97
-newline$ -- 489
-num.names$ -- 194
-pop$ -- 517
+int.to.str$ -- 98
+missing$ -- 98
+newline$ -- 494
+num.names$ -- 196
+pop$ -- 526
 preamble$ -- 1
-purify$ -- 436
+purify$ -- 442
 quote$ -- 0
-skip$ -- 1101
+skip$ -- 1123
 stack$ -- 0
-substring$ -- 2837
-swap$ -- 415
-text.length$ -- 36
+substring$ -- 2883
+swap$ -- 428
+text.length$ -- 37
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 376
+type$ -- 380
 warning$ -- 1
-while$ -- 343
-width$ -- 99
-write$ -- 1095
+while$ -- 348
+width$ -- 100
+write$ -- 1107
 (There were 2 warnings)

@@ -2,15 +2,15 @@
 \section{Introduction}
 We stand a lot to gain in Artificial Intelligence by studying the underlying inner workings of nature itself; this is why there is a branch of Artificial Intelligence which incorporates some of nature’s processes, like Genetics, which can be seen in action in the Genetic Algorithm.
 
- There are other approaches in Artificial Intelligence which also have their routes in Nature, like Animal Learning /Dog Learning.  These approaches only look at a “single agent” thought process when it maps percepts (senses) to actions in its respective environment \cite{DLearning}.
+ There are other approaches in Artificial Intelligence which also have their routes in Nature, like Animal Learning /Dog Learning.  These approaches only look at a “single agent” thought process when it maps percepts (senses) to actions in its respective environment \cite{DLearning}. 
 
-Swarm Intelligence is an approach more concerned with the underlying processes and behavior patterns when multiple agents (insects, animals) come together and perform a task as one collective entity.  This study of animals or insects in groups has already contributed to Artificial Intelligence as a whole \cite{ChaoticSwarmIntel}. New algorithms which incorporate the lessons learned from the study of the collective intelligence are now being used and form part of the Meta-heuristic Algorithm group.
+Swarm Intelligence is an approach more concerned with the underlying processes and behavior patterns when multiple agents (insects, animals) come together and perform a task as one collective entity.  This study of animals or insects in groups has already contributed to Artificial Intelligence as a whole \cite{ChaoticSwarmIntel,BeeJobShop}. Each individual in the swarm might not be able to solve the problem on his own, but by interacting with other individuals and performing primitive actions, the individual can contribute to solving the problem as a whole entity \cite{BeeJobShop}. 
 
-The initial algorithms developed with regard to Swarm Intelligence, where based on the coordination and behavior exhibited by schools of fish and flocks of birds. The newer generation of algorithms include:
+New algorithms which incorporate the lessons learned from the study of the collective intelligence are now being used and form part of the Meta-heuristic Algorithm group. The initial algorithms developed with regard to Swarm Intelligence, where based on the coordination and behavior exhibited by schools of fish and flocks of birds. The newer generation of algorithms include:
 \begin{itemize}
 \item Ant Colony Optimization
-\item Particle Swarm Optimization 
 \item Artificial Bee Colony Optimization.
+\item Particle Swarm Optimization 
 \end{itemize}
 
 These newer generations of algorithms are primarily being used in combinatorial NP-Hard problems, where there is no defined solution, only an optimization that comes close to a solution. Swarm Intelligence works on a key feature observed in nature, the notion of emergent behavior. Whenever an entity does something unconventional and gains success, it can be considered as exhibiting “Emergent behavior” as if it is emerging out of the masses way of doing things. 
@@ -45,9 +45,9 @@ Deneubourg seeked to know how ants where able to find the shortest path towards 
 
 The ants would then go out of the nest to gather food for their colony and would in order to do so need to take one of the provided paths toward the food souce. What J.L Deneubourg found was that the ants would initially oscillate between the bridges with no clear distinction of the more dominant route to take to retrieve food. But after a certain amount of time more and more ants would start preferring the path which is the shortest path towards food \cite{AntsAndStigmergy}.
 
-Naturally the questioned that was asked was how were the ants able to communicate to each other that the one food source was closer than the other? The answer lies in the use of \emph{stigmergy} by ants. Stigmergy is defined as the method animals and insects use to facilitate communication through interaction. Interaction occurs through signals that the individuals receive which might require them to perform a specific action \cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends}.
+Naturally the questioned that was asked was how were the ants able to communicate to each other that the one food source was closer than the other? The answer lies in the use of \emph{stigmergy} \label{def:stigmergy} by ants. Stigmergy is defined as the method animals and insects use to facilitate communication through interaction. Interaction occurs through signals that the individuals receive which might require them to perform a specific action \cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends}.
 
-Two forms of stigmergy can be observed in nature. The one form , \emph{Sematectonic stigmergy}, is a direct and physical form of interaction since it relies on altering the environment to communicate \cite{CompuIntelligenceIntro}. Examples of this type of stigmergy include nest building and brood sorting \cite{CompuIntelligenceIntro}. The other form, \emph{Sign-based stigmergy} is an indirect form of interaction, where communication occurs through some sort signal mechanism \cite{CompuIntelligenceIntro}. Ants use sign-based stigmergy when they are retrieving food. As the ant moves their path is reinforced with a chemical signal that alerts other ants to the desirebility of the path \cite{CompuIntelligenceIntro}. The chemical signal that ants use to indicate optimal paths is called \emph{pheromones}.  The concept of pheromones is a critical concept of ACO hence, we will we will provide an in depth discussion on pheromones in sub section \ref{sec:ACOcharacter}.
+Two forms of stigmergy can be observed in nature. The one form , \emph{Sematectonic stigmergy} \label{def:sematectonic}, is a direct and physical form of interaction since it relies on altering the environment or by using some for of physical action to communicate \cite{CompuIntelligenceIntro}. Examples of this type of stigmergy include nest building and brood sorting \cite{CompuIntelligenceIntro}. The other form, \emph{Sign-based stigmergy} is an indirect form of interaction, where communication occurs through some sort signal mechanism \cite{CompuIntelligenceIntro}. Ants use sign-based stigmergy when they are retrieving food. As the ant moves their path is reinforced with a chemical signal that alerts other ants to the desirebility of the path \cite{CompuIntelligenceIntro}. The chemical signal that ants use to indicate optimal paths is called \emph{pheromones}.  The concept of pheromones is a critical concept of ACO hence, we will we will provide an in depth discussion on pheromones in sub section \ref{sec:ACOcharacter}.
 
 The ACO algorithms are considered stochastic search procedures due to their inate use of randomness when exploring the solution space \cite{ACOSurvey,ImpACOComplex}.The ACO class of algorithms has been applied to a wide range of problems that include --- INSERT EXAMPLES. The algorithm does have some disadvantages. One of the primiary disadvantages of ACO is that ittends to get stuck on local minima in the solution space therefore, the solution space isn't adaquately explored and the algorithm prematurely converges to a local optima \cite{ImpACOComplex}.
 
@@ -132,17 +132,60 @@ The constant $p$ defines the rate at which pheromone evapurates. If $p=1$ the ph
 The above equation (\ref{eq:pheromoneevapuration}) was first introduced in the Ant System \cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}. Most subsequent algorithms that are form of the ACO class of algorithms also use the concept of pheromone evapuration, but they either use the standard equation or develop their own varaint \cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}.
 
 % Content in "A new solution algorithm for improving performance of ant colony optimization"
-A more aggressive form of Pheromone evapuration  is add to the Ant system discussed in the research done by \cite{AntQAP}. The more aggressive form works beside the already present pheromone evapuration, instead this form seeks to add an additional search phase called \emph{diversification}. In the ant system developed by the authors a mechanism is added that monitors a certain number of solutionis that have been recently produced. If the solution hasn't changed a certain number of iterations the mechanism removes all pheromone trails currently in the system. Therefore, the algorithm is forced to re-search the search space to create new solutions as it cannot rely on previous historic information provided by the pheromone trails. This mechanism forces the algoritm to diversify \cite{AntQAP}.
+A more aggressive form of Pheromone evapuration  is add to the Ant system discussed in the research done by \cite{AntQAP}. The more aggressive form works beside the already present pheromone evapuration, instead this form seeks to add an additional search phase called \emph{diversification}. 
+
+In the ant system developed by the authors a mechanism is added that monitors a certain number of solutionis that have been recently produced. If the solution hasn't changed a certain number of iterations the mechanism removes all pheromone trails currently in the system. 
+
+Therefore, the algorithm is forced to re-search the search space to create new solutions as it cannot rely on previous historic information provided by the pheromone trails. This mechanism forces the algoritm to diversify \cite{AntQAP}.
 \subsection{ACO Pseudo Code and Process Flow}
+\section{Artificial Bee Colony Algorithm}
+\label{sec:BEE}
+\subsection{Overview}
+The Artificial Bee Colony (ABC) algorithm is the youngest algoritm discussed in this chapter. It was first proposed by Karaboga in 2005 and seeked to mimic the foraging behaviour exibited by bees. Like ants, bees need to gather food to support the colony. To understand how the ABC algorithm tries to mimic the foraging behaviour of bees, we first need to explain how real bees forage. 
+
+In a bee colony there are a numerous number of bees, each with a specific role that performs certain actions for the colony. There are bees that protect the queen, bees that maintain the colony, bees that scout for resources and finally bees that gather food i.e the worker bees. The most important bees for foraging are those that scout and gather food. 
+
+The scout bees are sent out and as their role implies, the a responsible for exploring the surroundings of the hive to find suitable food sources. If a food source has been found by scout bee, then it needs to return to the colony to share the information with the worker bees. When the bee enters the colony it needs to communicate to the other bees by using some form of stigmergy (see page \pageref{def:stigmergy}. The scout bee accomplishes this communication by performing a dance known as the ``waggle dance'' in the colony for all the bees to see. This isn't a dance like in the traditional sense, since through certian movements the bee is able to commuicate a variety of characteristics about the food source that include:
+\begin{itemize}
+\item How far the food source is from the colony.
+\item Quality of the food source.
+\item Path towards the food source.
+\end{itemize}
+
+Therefore, it can be concluded that with regard to foraging bees use \emph{Sematectonic} stigmergy (see page \pageref{def:sematectonic}) as the dance is a physical form of communication.
+
+The dance is observed by ``onlooker'' worker bees. These onlooker bees are currently ``unemployed'' in the colony. After the information of the scout be has been transferred the onlooker bees, becomes an ``employed'' bee since it is moving to the food source to start gather food. Thus it is the job of the worker bees to \emph{exploite} the information provided by the \emph{exploration} done by the scout bees. 
+
+Worker bees gather food from the designated food source, until the food source reaches a certain quantatiy with regard to nectar content. Each time the bee returns to the colony it evaluates the current food source versus other food sources discovered. Hence, if there is better food source found, the bee abandons the previous and starts gathering food from the new source. On the other hand, if the food source has been exhausted meaning there is no more nectar content to gather, the bee returns to the colony and becomes ``unemployed'' again.
+
+In the ABC algorithm, the food sources are the solutions. Each food source has an employed bee associated with it. Onlooker bees either wait for new food sources or become employed bees by moving to another food source. Bees can transition to different roles depending on their situation. An onlooker bee becomes employed when assigned to a food sources and a employed bee can become a scout if his initial food source becomes exhausted. Note, that not all employed bees of a food source become scouts, only the first employed bee of a food source transitions to a scout. A scout bees are sent to randomly generated food sources. 
+
+The more onlooker bees a food source attracts, the more neighborhood will get explored since the onlooker bees move to the food source and choose an immediate neighboring food source to be eployed upon.. Thus, this can be considered exploitation and the algorithm is therefore performing a local search. Finally, the numer of onlooker bees a food source has also indicates its desirebility, hence, a very good solution will have the majority of onlooker bees choosing it and search for nearby better food sources.
+
+When a food source is abandoned, the previous bee that occupied the food source transition to a scout bee. The scout bee is responsible for replacing the abandoned food source by find a new one, therefore, a new one is generated and communicated back to the colony.
+
+Karaboga was not the first to base an algorithm on the above foraging ehaviour. In the literature other bee foraging inspired algorithms have been developed such as the BeeHive Algorithm, Bee Colony Optimisation (BCO) and Bee Swarm Optimization (BSO). The BeeHive algorithm is based on the dance communication used inside the colony of bees. In BCO solutions are randomly generated and assigned to bees. The solutions are the progressively modified using certain strategies. Finally BSO solutions are iteratively constructed by forager (worker) bees and the best solution is communicated to the rest of the colony by performing a dance. All of these algorithms were developed to be primarily used on combinatorial problems.
+
+Another bee algorithm is the Virtual Bee Algorithm (VBA) which, like the previous algorithms, is also based on the foraging behaviour of bees but it differs in the sense that it isn't designed for combinatorial problems. Instead, VBA is designed for numerical function optimization. In VBA bees would move around in the search space communicating to each other any target nectar food sources that were found.
+
+Karaboga developed the ABC algorithm based on the previous research done on bee colony optimization and the above algorithms. The ABC algorithm is designed to be a multivairable optmization algorithm and has to date been applied to the Job Scheduling Problem, Cluster, Neural Network training and Reconfiguration of Distribution Networks. Due to the nature of the algorithm being similar to that of the ACO, we can expect the ABC algorithm to be applied to a whole host of problems present in the literature.
+
+In this sub sectino we gave a brief overview of the Artificial Bee Colony Algorithm. We discussed the real bee behaviour the algorithm tries to recreate and  gave other algorithms that are also based on the same process. Finally, we defined the primary design goal of the algorithm and presented some of the problem on which the algorithm has been applied.
+
+In the next sub section, we will discuss some of the core characteristics of the algorithm.
+\subsection{BEE algorithm characteristics}
+\subsubsection{Food Sources}
+\subsubsection{Waggle Dance}
+\subsubsection{Foraging}
+\subsection{BEE algorithm Pseudo Code and Process Flow}
+% Flow diagram ---- Application artificial bee colony algorithm (ABC) for reconfiguring distribution network
+
 \section{Particle Swarm Optimization (PSO)}
 \label{sec:PSO}
 \subsection{Overview}
 \subsection{PSO characteristics}
 \subsection{PSO Pseudo Code and Process Flow}
-\section{Bee Foraging Algorithm}
-\label{sec:BEE}
-\subsection{Overview}
-\subsection{BEE algorithm characteristics}
-\subsection{BEE algorithm Pseudo Code and Process Flow}
+
 \section{Summary}
+%Talk about how ABC has less control parameters to adjust than ACO and PSO
 %Read An Evolutionary Parallel Tabu Search approach for distribution systems reinforcement planning for more information on PSO%

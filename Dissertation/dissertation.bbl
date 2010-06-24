@@ -86,6 +86,13 @@ Jeremy~K. Chen, Gustavo de~Veciana, and Theodore~S. Rappaport.
   frequency allocatoins in wireless networks.
 \newblock {\em IEEE Transactions on Vehicular Technology}, 58:2366--2376, 2009.
 
+\bibitem{BeeJobShop}
+Chin~Soon Chong, Appa~Iyer Sivakumar, Malcolm Yoke~Hean Low, and Kheng~Leng
+  Gay.
+\newblock A bee colony optimization algorithm to job shop scheduling.
+\newblock In {\em WSC '06: Proceedings of the 38th conference on Winter
+  simulation}, pages 1954--1961. Winter Simulation Conference, 2006.
+
 \bibitem{TheoPraticalSA}
 Agnieszka Debudaj-Grabysz and Zbigniew~J. Czech.
 \newblock Theoretical and practical issues of parallel simulated annealing.
