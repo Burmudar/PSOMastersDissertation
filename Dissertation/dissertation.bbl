@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{CALMA}
 Karen Aardal, Cor Hurkens, Jan~Karel Lenstra, and Sergey Tiourine.
@@ -41,6 +41,13 @@ I.~Badarudin, A.B.M. Sultan, M.N. Sulaiman, A.~Mamat, and M.T.M. Mohamed.
 \newblock Metaheuristic approaches for optimizing agricultural land areas.
 \newblock In {\em Data Mining and Optimization, 2009. DMO '09. 2nd Conference
   on}, pages 28 --31, 27-28 2009.
+
+\bibitem{ABCImageEnhancement}
+T.R. Benala, S.D. Jampala, S.H. Villa, and B.~Konathala.
+\newblock A novel approach to image edge enhancement using artificial bee
+  colony optimization algorithm for hybridized smoothening filters.
+\newblock In {\em Nature Biologically Inspired Computing, 2009. NaBIC 2009.
+  World Congress on}, pages 1071 --1076, 9-11 2009.
 
 \bibitem{AntIntroTrends}
 Christian Blum.
@@ -243,6 +250,17 @@ I.~Jovanoski, I.~Chorbev, D.~Mihajlov, and I.~Dimitrovski.
 \newblock In {\em EUROCON, 2007. The International Conference on Computer as a
   Tool}, pages 459 --464, 9-12 2007.
 
+\bibitem{ABCCompareStudy}
+Dervis Karaboga and Bahriye Akay.
+\newblock A comparative study of artificial bee colony algorithm.
+\newblock {\em Applied Mathematics and Computation}, 214(1):108 -- 132, 2009.
+
+\bibitem{ABCNumericalOptimization}
+Dervis Karaboga and Bahriye Basturk.
+\newblock A powerful and efficient algorithm for numerical function
+  optimization: artificial bee colony (abc) algorithm.
+\newblock {\em J. of Global Optimization}, 39(3):459--471, 2007.
+
 \bibitem{AdaptiveSAGA}
 Il~kwon Jeong and Ju~jang Lee.
 \newblock Adaptive simulated annealing genetic algorithm for system
@@ -265,6 +283,13 @@ Yuming Liang and Lihong Xu.
 \newblock In {\em GEC '09: Proceedings of the first ACM/SIGEVO Summit on
   Genetic and Evolutionary Computation}, pages 309--314, New York, NY, USA,
   2009. ACM.
+
+\bibitem{ABCReconfigDistro}
+Nguyen~Tung Linh and Nguyen~Quynh Anh.
+\newblock Application artificial bee colony algorithm (abc) for reconfiguring
+  distribution network.
+\newblock In {\em Computer Modeling and Simulation, 2010. ICCMS '10. Second
+  International Conference on}, volume~1, pages 102 --106, 22-24 2010.
 
 \bibitem{ChaoticSwarmIntel}
 Hongbo Liu, Ajith Abraham, and Maurice Clerc.
@@ -304,6 +329,13 @@ Vittoria Maniezzo and Roberto Montemanni.
   problem.
 \newblock Technical report, Department of Computer Science, University of
   Bologna, 2000.
+
+\bibitem{HybridABCClustering}
+Y.~Marinakis, M.~Marinaki, and N.~Matsatsinis.
+\newblock A hybrid discrete artificial bee colony - grasp algorithm for
+  clustering.
+\newblock In {\em Computers Industrial Engineering, 2009. CIE 2009.
+  International Conference on}, pages 548 --553, 6-9 2009.
 
 \bibitem{GSMSysEngin}
 Asha Mehrotra.
@@ -475,6 +507,12 @@ Patrick Siarry, Alain P\'{e}trowski, and Mourad Bessaou.
 \newblock A multipopulation genetic algorithm aimed at multimodal optimization.
 \newblock {\em Adv. Eng. Softw.}, 33(4):207--213, 2002.
 
+\bibitem{ABCLeafConstrained}
+Alok Singh.
+\newblock An artificial bee colony algorithm for the leaf-constrained minimum
+  spanning tree problem.
+\newblock {\em Applied Soft Computing}, 9(2):625 -- 631, 2009.
+
 \bibitem{AutoConfigSA}
 J.~R. Slagle, A.~Bose, P.~Busalacchi, and C.~Wee.
 \newblock Enhanced simulated annealing for automatic reconfiguration of
@@ -523,6 +561,12 @@ Ashish Sureka and Peter~R. Wurman.
 \newblock In {\em AAMAS '05: Proceedings of the fourth international joint
   conference on Autonomous agents and multiagent systems}, pages 1023--1029,
   New York, NY, USA, 2005. ACM.
+
+\bibitem{BCO}
+Dusan Teodorovic, Panta Lucic, Goran Markovic, and Mauro~Dell' Orco.
+\newblock Bee colony optimization: Principles and applications.
+\newblock In {\em Neural Network Applications in Electrical Engineering, 2006.
+  NEUREL 2006. 8th Seminar on}, pages 151 --156, 25-27 2006.
 
 \bibitem{ACOLargeProblem}
 Raj~Gaurang Tiwari, Mohd. Husain, Sandeep Gupta, and Arun~Pratap Srivastava.

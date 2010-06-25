@@ -112,6 +112,24 @@
 	use planning;optimisation;resource allocation;}
 }
 
+@INPROCEEDINGS{ABCImageEnhancement,
+  author = {Benala, T.R. and Jampala, S.D. and Villa, S.H. and Konathala, B.},
+  title = {A novel approach to image edge enhancement using Artificial Bee Colony
+	optimization algorithm for hybridized smoothening filters},
+  booktitle = {Nature Biologically Inspired Computing, 2009. NaBIC 2009. World Congress
+	on},
+  year = {2009},
+  pages = {1071 -1076},
+  month = {9-11},
+  doi = {10.1109/NABIC.2009.5393866},
+  keywords = {artificial bee colony optimization algorithm;feature extraction;hybridized
+	smoothening filters;image classification;image edge enhancement;image
+	edge quality;image generation;image processing techniques;image transmission;information
+	retrieval;medical images;satellite images;unbiased optimization technique;unbiased
+	stochastic sampling;image enhancement;information retrieval;optimisation;smoothing
+	methods;}
+}
+
 @ARTICLE{AntIntroTrends,
   author = {Christian Blum},
   title = {Ant colony optimization: Introduction and recent trends},
@@ -200,6 +218,18 @@
   pages = {2366-2376},
   owner = {william},
   timestamp = {2010.03.24}
+}
+
+@INPROCEEDINGS{BeeJobShop,
+  author = {Chong, Chin Soon and Sivakumar, Appa Iyer and Low, Malcolm Yoke Hean
+	and Gay, Kheng Leng},
+  title = {A bee colony optimization algorithm to job shop scheduling},
+  booktitle = {WSC '06: Proceedings of the 38th conference on Winter simulation},
+  year = {2006},
+  pages = {1954--1961},
+  publisher = {Winter Simulation Conference},
+  isbn = {1-4244-0501-7},
+  location = {Monterey, California}
 }
 
 @INPROCEEDINGS{TheoPraticalSA,
@@ -553,6 +583,35 @@
 	problems;}
 }
 
+@ARTICLE{ABCCompareStudy,
+  author = {Dervis Karaboga and Bahriye Akay},
+  title = {A comparative study of Artificial Bee Colony algorithm},
+  journal = {Applied Mathematics and Computation},
+  year = {2009},
+  volume = {214},
+  pages = {108 - 132},
+  number = {1},
+  doi = {DOI: 10.1016/j.amc.2009.03.090},
+  issn = {0096-3003},
+  keywords = {Swarm intelligence},
+  url = {http://www.sciencedirect.com/science/article/B6TY8-4W211Y3-1/2/f92b8a34ede7a7e7a24cb2b0834e7c33}
+}
+
+@ARTICLE{ABCNumericalOptimization,
+  author = {Karaboga, Dervis and Basturk, Bahriye},
+  title = {A powerful and efficient algorithm for numerical function optimization:
+	artificial bee colony (ABC) algorithm},
+  journal = {J. of Global Optimization},
+  year = {2007},
+  volume = {39},
+  pages = {459--471},
+  number = {3},
+  address = {Hingham, MA, USA},
+  doi = {http://dx.doi.org/10.1007/s10898-007-9149-x},
+  issn = {0925-5001},
+  publisher = {Kluwer Academic Publishers}
+}
+
 @INPROCEEDINGS{TempCyclingSA,
   author = {Sergio Ledesma and Miguel Torres and Donato Hern{á}ndez and Gabriel
 	Avi{ñ}a and Guadalupe Garc{í}a},
@@ -579,6 +638,23 @@
   doi = {http://doi.acm.org/10.1145/1543834.1543876},
   isbn = {978-1-60558-326-6},
   location = {Shanghai, China}
+}
+
+@INPROCEEDINGS{ABCReconfigDistro,
+  author = {Nguyen Tung Linh and Nguyen Quynh Anh},
+  title = {Application Artificial Bee Colony Algorithm (ABC) for Reconfiguring
+	Distribution Network},
+  booktitle = {Computer Modeling and Simulation, 2010. ICCMS '10. Second International
+	Conference on},
+  year = {2010},
+  volume = {1},
+  pages = {102 -106},
+  month = {22-24},
+  doi = {10.1109/ICCMS.2010.306},
+  keywords = {artificial bee colony algorithm;distribution system loss minimization
+	problem;power loss reduction;power systems;reconfiguring distribution
+	network;sectionalizing switch;distribution networks;minimisation;power
+	system management;}
 }
 
 @ARTICLE{ChaoticSwarmIntel,
@@ -665,6 +741,23 @@
   citeseerurl = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.3898},
   owner = {william},
   timestamp = {2010.03.25}
+}
+
+@INPROCEEDINGS{HybridABCClustering,
+  author = {Marinakis, Y. and Marinaki, M. and Matsatsinis, N.},
+  title = {A hybrid discrete Artificial Bee Colony - GRASP algorithm for clustering},
+  booktitle = {Computers Industrial Engineering, 2009. CIE 2009. International Conference
+	on},
+  year = {2009},
+  pages = {548 -553},
+  month = {6-9},
+  doi = {10.1109/ICCIE.2009.5223810},
+  keywords = {GRASP algorithm;UCI Machine Learning Repository;ant colony optimization;artificial
+	bee colony optimization algorithm;clustering;feature selection problem;genetic
+	algorithm;greedy randomized adaptive search procedure;honey bees
+	mating optimization algorithm;hybrid discrete artificial bee colony;particle
+	swarm optimization;tabu search;genetic algorithms;greedy algorithms;particle
+	swarm optimisation;pattern clustering;search problems;}
 }
 
 @BOOK{GSMSysEngin,
@@ -1038,6 +1131,21 @@
   doi = {http://dx.doi.org/10.1016/S0965-9978(02)00010-8},
   issn = {0965-9978},
   publisher = {Elsevier Science Ltd.}
+}
+
+@ARTICLE{ABCLeafConstrained,
+  author = {Alok Singh},
+  title = {An artificial bee colony algorithm for the leaf-constrained minimum
+	spanning tree problem},
+  journal = {Applied Soft Computing},
+  year = {2009},
+  volume = {9},
+  pages = {625 - 631},
+  number = {2},
+  doi = {DOI: 10.1016/j.asoc.2008.09.001},
+  issn = {1568-4946},
+  keywords = {Artificial bee colony algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6W86-4TDC093-1/2/c00d080ad03f406be3509ed6493a1072}
 }
 
 @INPROCEEDINGS{AutoConfigSA,

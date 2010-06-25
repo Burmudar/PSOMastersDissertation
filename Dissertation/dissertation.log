@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  24 JUN 2010 23:42
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  26 JUN 2010 01:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -347,15 +347,16 @@ Overfull \hbox (1.6546pt too wide) in paragraph at lines 99--100
  de-posit-ing pheromones|
  []
 
-[68] [69] [70] [71] [72]) [73] [74
+[68] [69] [70] [71] [72] [73] [74] [75]) [76] [77
 
 
-] [75] [76] (./dissertation.bbl
+] [78] (./dissertation.bbl
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no º in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ³ in font cmr10!
- [77
+
+[79
 
 ]
 Missing character: There is no Ã in font cmr10!
@@ -364,51 +365,50 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [78]
+ [80] [81]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ‰ in font cmr10!
-
-[79]
+ [82]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [80]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
- [81] [82] [83] [84] [85] [86]) [87] (./dissertation.aux (./chpt1.aux) (./chpt2
-.aux) (./chpt3.aux) (./chpt4.aux) (./chpt5.aux)) ) 
+ [83] [84] [85] [86] [87] [88] [89]) [90]
+(./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
+(./chpt5.aux)) ) 
 Here is how much of TeX's memory you used:
- 2306 strings out of 495061
- 27566 string characters out of 1182621
- 82081 words of memory out of 3000000
- 5427 multiletter control sequences out of 15000+50000
+ 2316 strings out of 495061
+ 27748 string characters out of 1182621
+ 82148 words of memory out of 3000000
+ 5437 multiletter control sequences out of 15000+50000
  14420 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  27i,19n,24p,1352b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cmextra/
-cmex8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></us
-r/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dissertation.pdf (87 pages, 452175 bytes).
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10
+.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmsl10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-tex
+live/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/
+public/amsfonts/symbols/msbm10.pfb>
+Output written on dissertation.pdf (90 pages, 462449 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
+ 372 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

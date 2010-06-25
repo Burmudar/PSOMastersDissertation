@@ -82,14 +82,15 @@
 \contentsline {section}{\numberline {5.3}Artificial Bee Colony Algorithm}{70}
 \contentsline {subsection}{\numberline {5.3.1}Overview}{70}
 \contentsline {subsection}{\numberline {5.3.2}BEE algorithm characteristics}{73}
-\contentsline {subsubsection}{Food Sources}{73}
-\contentsline {subsubsection}{Waggle Dance}{73}
-\contentsline {subsubsection}{Foraging}{73}
-\contentsline {subsection}{\numberline {5.3.3}BEE algorithm Pseudo Code and Process Flow}{73}
-\contentsline {section}{\numberline {5.4}Particle Swarm Optimization (PSO)}{73}
-\contentsline {subsection}{\numberline {5.4.1}Overview}{73}
-\contentsline {subsection}{\numberline {5.4.2}PSO characteristics}{73}
-\contentsline {subsection}{\numberline {5.4.3}PSO Pseudo Code and Process Flow}{73}
-\contentsline {section}{\numberline {5.5}Summary}{73}
-\contentsline {part}{II\hspace {1em}Implementation}{75}
-\contentsline {chapter}{Bibliography}{77}
+\contentsline {subsubsection}{Food Sources}{74}
+\contentsline {subsubsection}{Employed Bee solution generation}{74}
+\contentsline {subsubsection}{Scout bee solution generation}{75}
+\contentsline {subsubsection}{Waggle Dance}{76}
+\contentsline {subsection}{\numberline {5.3.3}BEE algorithm Pseudo Code and Process Flow}{76}
+\contentsline {section}{\numberline {5.4}Particle Swarm Optimization (PSO)}{76}
+\contentsline {subsection}{\numberline {5.4.1}Overview}{76}
+\contentsline {subsection}{\numberline {5.4.2}PSO characteristics}{76}
+\contentsline {subsection}{\numberline {5.4.3}PSO Pseudo Code and Process Flow}{76}
+\contentsline {section}{\numberline {5.5}Summary}{76}
+\contentsline {part}{II\hspace {1em}Implementation}{77}
+\contentsline {chapter}{Bibliography}{79}
