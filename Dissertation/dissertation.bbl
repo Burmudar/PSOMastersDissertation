@@ -171,6 +171,15 @@ Gautam Garai and B.~B. Chaudhuri.
   optimization and pattern matching.
 \newblock {\em Pattern Recogn.}, 40(1):212--228, 2007.
 
+\bibitem{ABCFusionGrid}
+Antonio G\'{o}mez-Iglesias, Miguel~A. Vega-Rodr\'{\i}guez, Francisco
+  Castej\'{o}n, Miguel C\'{a}rdenas-Montes, and Enrique Morales-Ramos.
+\newblock Artificial bee colony inspired algorithm applied to fusion research
+  in a grid computing environment.
+\newblock In {\em PDP '10: Proceedings of the 2010 18th Euromicro Conference on
+  Parallel, Distributed and Network-based Processing}, pages 508--512,
+  Washington, DC, USA, 2010. IEEE Computer Society.
+
 \bibitem{TabuCarryOver}
 Mohan Gopalakrishnan, Ke~Ding, Jean-Marie Bourjolly, and Srimathy Mohan.
 \newblock A tabu-search heuristic for the capacitated lot-sizing problem with

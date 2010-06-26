@@ -1257,6 +1257,21 @@
   location = {The Netherlands}
 }
 
+@INPROCEEDINGS{BCO,
+  author = {Teodorovic, Dusan and Lucic, Panta and Markovic, Goran and Orco,
+	Mauro Dell'},
+  title = {Bee Colony Optimization: Principles and Applications},
+  booktitle = {Neural Network Applications in Electrical Engineering, 2006. NEUREL
+	2006. 8th Seminar on},
+  year = {2006},
+  pages = {151 -156},
+  month = {25-27},
+  doi = {10.1109/NEUREL.2006.341200},
+  keywords = {approximate reasoning;bee colony optimization;combinatorial optimization
+	problem;fuzzy logic;combinatorial mathematics;fuzzy logic;optimisation;uncertainty
+	handling;}
+}
+
 @INPROCEEDINGS{ACOLargeProblem,
   author = {Tiwari, Raj Gaurang and Husain, Mohd. and Gupta, Sandeep and Srivastava,
 	Arun Pratap},
