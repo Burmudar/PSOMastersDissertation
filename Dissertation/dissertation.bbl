@@ -147,6 +147,11 @@ H.M. Elkamchouchi, H.M. Elragal, and M.A. Makar.
 \newblock In {\em Radio Science Conference, 2006. NRSC 2006. Proceedings of the
   Twenty Third National}, volume~0, pages 1 --9, 14-16 2006.
 
+\bibitem{FundamentalSwarm}
+Andries~P. Engelbrecht.
+\newblock {\em Fundamentals of Computational Swarm Intelligence}.
+\newblock John Wiley \& Sons, 2006.
+
 \bibitem{CompuIntelligenceIntro}
 Andries~P. Engelbrecht.
 \newblock {\em Computational Intelligence: An Introduction}.
@@ -258,6 +263,13 @@ I.~Jovanoski, I.~Chorbev, D.~Mihajlov, and I.~Dimitrovski.
   programming library.
 \newblock In {\em EUROCON, 2007. The International Conference on Computer as a
   Tool}, pages 459 --464, 9-12 2007.
+
+\bibitem{PSOHybridJobShop}
+Wei jun Xia and Zhi ming Wu.
+\newblock A hybrid particle swarm optimization approach for the job-shop
+  scheduling problem.
+\newblock {\em The International Journal of Advanced Manufacturing Technology},
+  29(3):360--366, June 2006.
 
 \bibitem{ABCCompareStudy}
 Dervis Karaboga and Bahriye Akay.
@@ -435,6 +447,11 @@ E.~Nowicki and S.~Zdrzalka.
 \newblock {\em The Journal of the Operational Research Society}, 47:1054--1064,
   1996.
 
+\bibitem{SOSwarm}
+Michael O\&\#x2019;Neill and Anthony Brabazon.
+\newblock Self-organising swarm (soswarm).
+\newblock {\em Soft Comput.}, 12(11):1073--1080, 2008.
+
 \bibitem{DynamicPenaltyGA}
 W.~Paszkowicz.
 \newblock Properties of a genetic algorithm equipped with a dynamic penalty
@@ -475,6 +492,13 @@ Abraham~P. Punnen and Y.~P. Aneja.
 \newblock {\em The Journal of the Operational Research Society},
   46(2):214--220, Feb 1995.
 
+\bibitem{PSOSelfHierarch}
+A.~Ratnaweera, S.K. Halgamuge, and H.C. Watson.
+\newblock Self-organizing hierarchical particle swarm optimizer with
+  time-varying acceleration coefficients.
+\newblock {\em Evolutionary Computation, IEEE Transactions on}, 8(3):240 --
+  255, june 2004.
+
 \bibitem{RandomNumberGA}
 Andrea Reese.
 \newblock Random number generators in genetic algorithms for unconstrained and
@@ -510,6 +534,12 @@ H.G. Sandalidis, P.P. Stavroulakis, and J.~Rodriguez-Tellez.
   in cellular mobile systems.
 \newblock {\em Evolutionary Computation, IEEE Transactions on}, 2(4):125 --137,
   nov 1998.
+
+\bibitem{PSOGABreeding}
+Matthew Settles and Terence Soule.
+\newblock Breeding swarms: a ga/pso hybrid.
+\newblock In {\em GECCO '05: Proceedings of the 2005 conference on Genetic and
+  evolutionary computation}, pages 161--168, New York, NY, USA, 2005. ACM.
 
 \bibitem{MultiPopGA}
 Patrick Siarry, Alain P\'{e}trowski, and Mourad Bessaou.
@@ -636,6 +666,13 @@ Dennis Weyland.
 \newblock In {\em GECCO '08: Proceedings of the 10th annual conference on
   Genetic and evolutionary computation}, pages 803--810, New York, NY, USA,
   2008. ACM.
+
+\bibitem{PSOSoftTesting}
+Andreas Windisch, Stefan Wappler, and Joachim Wegener.
+\newblock Applying particle swarm optimization to software testing.
+\newblock In {\em GECCO '07: Proceedings of the 9th annual conference on
+  Genetic and evolutionary computation}, pages 1121--1128, New York, NY, USA,
+  2007. ACM.
 
 \bibitem{EcoEquilSA}
 Lihua Wu and Yuyun Wang.

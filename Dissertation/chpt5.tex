@@ -218,7 +218,7 @@ When a food source in the algorithm is abandoned, it needs to be replaced with a
 It is the responsibility of the scout bee to replace the abandoned food source with a new randomly generated one. Scout be uses equation (\ref{eq:scoutGenerate}) to produce new food source that will replace food source $x_i$.
 \begin{equation}
 \label{eq:scoutGenerate}
-x^j_i = x^j_min + rand[0,1](x^j_{max} - x^j_{min})
+x^j_i = x^j_{min} + rand[0,1](x^j_{max} - x^j_{min})
 \end{equation}
 
 In research done by G\'{o}mez-Iglesias et. al \cite{ABCFusionGrid} an extension is made to the scout bees. The Scout bee individuals are divided into two types of bees namely \emph{Rovers} and \emph{Cubs} bees\cite{ABCFusionGrid}.
@@ -233,7 +233,48 @@ By using two different scout bees a good balance is achieved when searching the 
 \section{Particle Swarm Optimization (PSO)}
 \label{sec:PSO}
 \subsection{Overview}
+Particle Swarm Optimization (PSO) is a self-adaptive, population-based stochastic search technique as was developed by Kennedy and Ebenhart in 1995 \cite{PSOGABreeding,PSOGABreeding}. The basic model of the algorithm is based on simulations done to recreate the natural behaviour of a flock of birds \cite{PSOSoftTesting}.
+
+In the early stages of the particle swarm development, simulations were developed to closely model the stigmergy (see page \pageref{def:stigmergy}) exhibited when a flock of birds cohesively move as one and is able to suddenly change direction in a unpredictable graceful manner only to regroup as one observed entity \cite{PSOHybridJobShop}. As the ``leading'' bird of the flock changes his movements the information is shared to the all birds that are in the immediaet neighborhood of the leading bird. As the informaiton is shared locally among the birds, each bird modifies his own movement to that of the leading birds movement. 
+
+Thus, because birds obtain information through observation of their neighboring birds, the stigmergy can be deemed of a physical nature. Therefore, the particular stigmergy used by birds is Sematectonic stigmergy (see page \pageref{def:sematectonic}).
+
+The simulations based on this behaviour of the flock, allowed researchers to discover the underlying patterns that governed the way birds are able to share information about the general movement of the flock. Based on these patterns and simulations the particle swarm alogrithm emerged into an optimization algorithm \cite{CompuIntelligenceIntro}.
+
+In the algorithm a particle is an individual. A group of particles, reffered to in the literature as swarm, is ``flown'' through the solution space of the problem the algorithm is being applied to. Each particle changes his movement based on information shared to him by neighboring particles in the swarm \cite{FundamentalSwarm,CompuIntelligenceIntro}. As information is shared among particles, the success of one particle ripples through the rest of the swarm and each particle is able to utilize shared information that lead to success of another particle. Thus, each particle own personal experience and knowledge of the search space has an effect on its neighboring particles \cite{FundamentalSwarm,CompuIntelligenceIntro}.
+
+There exists two primary PSO algorithms called Global PSO and Local PSO. The only difference between the two algorithms are how they go about sharing information to the rest of the swarm. The sharing models of these two algorithms along with other sharing models will be discussed in the PSO characteristics subsection \cite{SOSwarm}.
+
+In the swarm, each particle is a potential solution that is encoded in a D-dimensional vector \cite{PSOHybridJobShop,PSOSelfHierarch}. As a particle moves through the solution space, it continually evaluates current position and adjusts it accordingly to move in the general direction of the best particle of the swarm. Depending on the sharing model used, the best particle in the swarm is denoted as either \emph{gbest} of the global PSO and \emph{lbest} for the Local PSO \cite{SOSwarm,FundamentalSwarm,CompuIntelligenceIntro}. 
+
+A particle evaluates current position by using a heuristic function or in more evolutionary algorithm terms, a fitness function. The fitness value indicates to the particle how far it is from an optimal position. 
+
+As a particle moves through the solution space it keeps a memory of the personal best position it has achieved since the start of the algorithm. In the literature and in the algorithm this personal best position is reffered to as \emph{pbest} \cite{SOSwarm}.
+
+A particle moves with a certain velocity through the solution space. As the information is shared the particle must take advantage of the newly gained knowledge and therefore, needs to adjust its own velocity to match the swarm movement. The particle updates its own velocity to move in the direction of the \emph{gbest} shared position, its own \emph{pbest} positon and its current heading. The velocity update is shown in figure \ref{fig:particleVelocityUpdate} \cite{SOSwarm,FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch}
+\begin{figure}[h]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=4.0in,height=2.0in]{./pictures/captianplaceholder.png}}
+	\caption{Particle velocity update}
+	\label{fig:particleVelocityUpdate}
+\end{figure}
+
+A particle needs to systematically explore the solution space. Hence, when the particle needs to update its personal velocity, it doesn't use ``all'' the information it has available to it otherwise it will start to cycle solutions. The particle uses a certain amount of global information together with a certain amount of local information to produce a direction and new velocity. The amount of global knowledge is reffered to in the literature as the \emph{social} component \cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}. The amount of information personal information used by a particle is referred to as the \emph{cognitive} component in the literature \cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}.
+
+The PSO aglorithm is quick to converge on an optimum, which might not necessarily be the global optimum \cite{PSOSelfHierarch}. Hence, most of the research done on PSO has focused on the convergence of the algorithm as well as improving the diversity \cite{FundamentalSwarm}. Most of these improvements and modifications will be discussed on the next sub section called PSO Characteristics.
+
+In this section, gave an overview of the PSO algorithm. We started of by discussing how and why the algorithm was developed. We then discussed the what natural search procedure the algorithm incorporates and went on to explain how it is applied in the algorithm. After the search procedure was discussed, we starting giving a general outline of the a particle moves and how its velocity is updated. 
+
+In the next section, we will go into more depth about imporant PSO characteristics that we only touched upon in the overview, like Particle Velocity and Information sharing.
+
 \subsection{PSO characteristics}
+\subsubsection{Swarm Size}
+\subsubsection{Particle Velocity}
+% constriction factor discussed in A Study of Global Optimization using Particle Swarm Optimization
+\subsubsection{Inertia Weight}
+\subsubsection{Information Sharing}
 \subsection{PSO Pseudo Code and Process Flow}
 
 \section{Summary}

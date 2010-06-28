@@ -8,46 +8,45 @@ A level-1 auxiliary file: chpt5.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
 Warning--I didn't find a database entry for ""
-Warning--can't use both author and editor fields in GSMSecurInTeleNetwork
-You've used 106 entries,
+You've used 112 entries,
             2118 wiz_defined-function locations,
-            1217 strings with 26120 characters,
-and the built_in function-call counts, 40918 in all, are:
-= -- 4136
-> -- 1642
-< -- 43
-+ -- 682
-- -- 538
-* -- 2876
-:= -- 6372
-add.period$ -- 334
-call.type$ -- 106
-change.case$ -- 582
+            1250 strings with 26975 characters,
+and the built_in function-call counts, 43177 in all, are:
+= -- 4373
+> -- 1724
+< -- 45
++ -- 715
+- -- 564
+* -- 3029
+:= -- 6722
+add.period$ -- 354
+call.type$ -- 112
+change.case$ -- 612
 chr.to.int$ -- 0
-cite$ -- 107
-duplicate$ -- 1628
-empty$ -- 3322
-format.name$ -- 538
-if$ -- 8915
+cite$ -- 112
+duplicate$ -- 1721
+empty$ -- 3510
+format.name$ -- 564
+if$ -- 9413
 int.to.chr$ -- 0
-int.to.str$ -- 106
-missing$ -- 106
-newline$ -- 534
-num.names$ -- 212
-pop$ -- 580
+int.to.str$ -- 112
+missing$ -- 113
+newline$ -- 564
+num.names$ -- 224
+pop$ -- 614
 preamble$ -- 1
-purify$ -- 481
+purify$ -- 506
 quote$ -- 0
-skip$ -- 1260
+skip$ -- 1329
 stack$ -- 0
-substring$ -- 3179
-swap$ -- 496
-text.length$ -- 43
+substring$ -- 3361
+swap$ -- 521
+text.length$ -- 45
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 412
-warning$ -- 1
-while$ -- 379
-width$ -- 109
-write$ -- 1198
-(There were 2 warnings)
+type$ -- 434
+warning$ -- 0
+while$ -- 401
+width$ -- 115
+write$ -- 1267
+(There was 1 warning)
