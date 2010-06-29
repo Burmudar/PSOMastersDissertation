@@ -90,10 +90,9 @@
 \contentsline {subsection}{\numberline {5.4.1}Overview}{77}
 \contentsline {subsection}{\numberline {5.4.2}PSO characteristics}{79}
 \contentsline {subsubsection}{Swarm Size}{79}
-\contentsline {subsubsection}{Particle Velocity}{79}
-\contentsline {subsubsection}{Inertia Weight}{79}
-\contentsline {subsubsection}{Information Sharing}{79}
-\contentsline {subsection}{\numberline {5.4.3}PSO Pseudo Code and Process Flow}{79}
-\contentsline {section}{\numberline {5.5}Summary}{79}
-\contentsline {part}{II\hspace {1em}Implementation}{81}
-\contentsline {chapter}{Bibliography}{83}
+\contentsline {subsubsection}{Particle Velocity}{80}
+\contentsline {subsubsection}{Inertia Weight}{83}
+\contentsline {subsection}{\numberline {5.4.3}PSO Pseudo Code and Process Flow}{84}
+\contentsline {section}{\numberline {5.5}Summary}{84}
+\contentsline {part}{II\hspace {1em}Implementation}{85}
+\contentsline {chapter}{Bibliography}{87}

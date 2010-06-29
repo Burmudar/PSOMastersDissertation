@@ -247,21 +247,15 @@ There exists two primary PSO algorithms called Global PSO and Local PSO. The onl
 
 In the swarm, each particle is a potential solution that is encoded in a D-dimensional vector \cite{PSOHybridJobShop,PSOSelfHierarch}. As a particle moves through the solution space, it continually evaluates current position and adjusts it accordingly to move in the general direction of the best particle of the swarm. Depending on the sharing model used, the best particle in the swarm is denoted as either \emph{gbest} of the global PSO and \emph{lbest} for the Local PSO \cite{SOSwarm,FundamentalSwarm,CompuIntelligenceIntro}. 
 
+The global PSO uses a star neighborhood for information sharing to allow for information to be shared by everyone in the swarm. In contrast, the Local PSO follows process natural birds more closely and subsequently uses the ring neighborhood for information sharing, hence, particles only share information with their immediate neighborhood and not with the whole swarm.
+
 A particle evaluates current position by using a heuristic function or in more evolutionary algorithm terms, a fitness function. The fitness value indicates to the particle how far it is from an optimal position. 
 
 As a particle moves through the solution space it keeps a memory of the personal best position it has achieved since the start of the algorithm. In the literature and in the algorithm this personal best position is reffered to as \emph{pbest} \cite{SOSwarm}.
 
-A particle moves with a certain velocity through the solution space. As the information is shared the particle must take advantage of the newly gained knowledge and therefore, needs to adjust its own velocity to match the swarm movement. The particle updates its own velocity to move in the direction of the \emph{gbest} shared position, its own \emph{pbest} positon and its current heading. The velocity update is shown in figure \ref{fig:particleVelocityUpdate} \cite{SOSwarm,FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch}
-\begin{figure}[h]
-	\centering
-	\setlength \fboxsep{0pt}
-	\setlength \fboxrule{0.5pt}
-	\fbox{\includegraphics[width=4.0in,height=2.0in]{./pictures/captianplaceholder.png}}
-	\caption{Particle velocity update}
-	\label{fig:particleVelocityUpdate}
-\end{figure}
+A particle moves with a certain velocity through the solution space. As the information is shared the particle must take advantage of the newly gained knowledge and therefore, needs to adjust its own velocity to match the swarm movement. The particle updates its own velocity to move in the direction of the \emph{gbest} shared position, its own \emph{pbest} positon and its current heading.
 
-A particle needs to systematically explore the solution space. Hence, when the particle needs to update its personal velocity, it doesn't use ``all'' the information it has available to it otherwise it will start to cycle solutions. The particle uses a certain amount of global information together with a certain amount of local information to produce a direction and new velocity. The amount of global knowledge is reffered to in the literature as the \emph{social} component \cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}. The amount of information personal information used by a particle is referred to as the \emph{cognitive} component in the literature \cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}.
+A particle needs to systematically explore the solution space. Hence, when the particle needs to update its personal velocity, it doesn't use ``all'' the information it has available to it otherwise it will start to cycle solutions. The particle uses a certain amount of global information together with a certain amount of local information to produce a direction and new velocity. The amount of global knowledge is reffered to in the literature as the \emph{social} \label{def:socialcomponent} component \cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}. The amount of information personal information used by a particle is referred to as the \emph{cognitive} \label{def:cognitivecomponent} component in the literature \cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}.
 
 The PSO aglorithm is quick to converge on an optimum, which might not necessarily be the global optimum \cite{PSOSelfHierarch}. Hence, most of the research done on PSO has focused on the convergence of the algorithm as well as improving the diversity \cite{FundamentalSwarm}. Most of these improvements and modifications will be discussed on the next sub section called PSO Characteristics.
 
@@ -270,13 +264,78 @@ In this section, gave an overview of the PSO algorithm. We started of by discuss
 In the next section, we will go into more depth about imporant PSO characteristics that we only touched upon in the overview, like Particle Velocity and Information sharing.
 
 \subsection{PSO characteristics}
+In this sub section, we will discuss some of the characteristics of the PSO algorithm. We will start off with a discussion on the \emph{swarm size}. After the discussion on swarm size we will discuss the \emph{particle velocity} where we will give the equation used to update particle positions as well as their velocities. A discussion on \emph{Inertia} follows the particle velocity section. Finally we will end this sub section with a discussion on the different \emph{information sharing} models of PSO.
 \subsubsection{Swarm Size}
+The swarm size dictates the search breath the algorithm has to maintain each iteration. The initializing of particles in a swarm are the same as traditional population-based evolutionary algorithm initilize their respective populations \cite{FixedFAPPSO}.  At start of the algorithm the swarm is initialized by randomly generating possible solutions that will represent the position of particles. 
+
+Even though the PSO algorithm in some aspects resembles evolutionary algorithms like the Genetic Algorithm, it does not continually generate new solutions to be re-inserted into the swarm to increase diversity \cite{PSOHybridUnitCommit}. Thus, the swarm size needs to be adjusted to get an optimal representation of the search space because as particles move in the swarm, the diversity among particles decrease rapidly as information is shared \cite{FundamentalSwarm,CompuIntelligenceIntro}. 
+
+A large swarm might increase diversity but at the expensive of computational time since the algorithm has to spend more time evaluating particles \cite{FundamentalSwarm,CompuIntelligenceIntro}. Where as with a small swarm there might be low diversity but the algoritm requires little computational effort to evaluate and move the swarm around in the solution space \cite{FundamentalSwarm,CompuIntelligenceIntro}.
+
+With a small swarm the algoritm will converge faster to a optimum, which is not gauranteed to be the global minimum \cite{FundamentalSwarm,CompuIntelligenceIntro}. Therefore, care must be taken with the selection of the swarm size, because if a large swarm size is selected the algoritm will be slower to converge to an optimum but in turn, gains diversity which allows for a higher probability of finding the global optimum \cite{PSOPESO}.
 \subsubsection{Particle Velocity}
-% constriction factor discussed in A Study of Global Optimization using Particle Swarm Optimization
+The velocity caluclation of each particle is where the optimization procedure occurs in the PSO algorithm and is the only means by which the PSO algorithm searches the solution space. 
+
+The velocity update is where the personal experience of a particle and the knowledge gained through social sharing are incorporated, to steer a particle into a certain direction by modifying its velocity. The most basic function to update a particle is formulated in equation (\ref{eq:velocityupdate}).
+\begin{align}
+v_i(t+1) &= v_i(t) + c_1\phi_{1}(t)[pbest - x_i(t)] + c_2\phi_{2}(t)[gbest - x_i(t)]\label{eq:velocityupdate}\\
+x_i(t+1) &= x_i(t) + v_i(t+1)\label{eq:positionupdate}
+\end{align}
+where $v_i(t+1)$ is the new velocity of a particle $i$ for the next time step $t+1$. The cognitive component is represented by parameter $c_1$ and the social component is represented by the parameter $c_2$ (discussed on page \pageref{def:cognitivecomponent}). The current position of a particle in the solution space at time step $t$ is represented by parameter $x_i(t)$. After the new velocity is calculated the position of the particle is updated for time step $t+1$ using equation (\ref{eq:positionupdate}) \cite{FundamentalSwarm,CompuIntelligenceIntro}. The velocity update can be visually depicted as shown in figure \ref{fig:particleVelocityUpdate}. 
+\begin{figure}[h]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=4.0in,height=2.0in]{./pictures/captianplaceholder.png}}
+	\caption{Visual particle velocity update \cite{SOSwarm,FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch}}
+	%A Particle Swarm Algorithm for Symbols Detection in Wideband Spatial Multiplexing Systems --- Particle movement diagram
+
+	\label{fig:particleVelocityUpdate}
+\end{figure}
+
+As discussed in the PSO algorithm overview pbest is the best position the particle has occupied since the start of the algorithm. In the literature there are two defined methods of determining gbest. The most common method used is where gbest is the best position obtained by a particle in the swarm since the start of the algorithm. Thus long term knowledge dictates the best position found which favours exploitation \cite{CompuIntelligenceIntro,FundamentalSwarm}.
+
+With the second method of determining the gbest is the best particle position occupied by any particle in the swarm in the \emph{current} iteration of the algorithm. Thus, short term knowledge dictates the best position found which favours exploration \cite{CompuIntelligenceIntro,FundamentalSwarm}.
+
+As can be observed in equation (\ref{eq:velocityupdate}) the new velocity is added to the old velocity. Therefore, the velocity of particle can get very large, especially for those particles that are far from the pbest and gbest positions. Large velocities are necessary for early exploration, but if the velocity gets too large, the rate at which the particle moves in the solution space is to high and good solutions might be missed \cite{FundamentalSwarm}. Thus, the velocity of a particle needs to be clamped to ensure it step size stays within acceptable bounds. Equation (\ref{eq:velocityclamp}) is used to clamp the velocity of a particle \emph{before} its position is updated \cite{FundamentalSwarm}.
+\begin{align}
+	v_i(t+1) &=
+	\begin{cases}
+	v'_i(t+1), &\text{if $v'_i(t+1) < V_{max}$}\\
+	V_{max}, &\text{if $v'_i(t+1) \geq V_{max}$}
+	\end{cases} \label{eq:velocityclamp}\\
+	V_(max) &= \delta(x_{max} - x_{min})
+\end{align}
+where $V_{max}$ is the maximum allowed velocity and $\delta \in (0,1]$. The values $x_{max}$ and $x_{min}$ are the respective minimums and maximums of the domain the algorithm is being applied to \cite{FundamentalSwarm}. The value of $\delta$ is very problem dependent and must be carefully chosen as the maximise the exploration - exploitation trade off \cite{FundamentalSwarm}. 
+
+Most of the literature has concentrated on the velocity of the particle as a focal point because it is the main function performing the optimization. In research done by Ratnaweera et. al.\cite{PSOSelfHierarch} a particle positions in the solutions space are continually monitored. If the particle appears to be stagnant in the solution space, the velocity is first updated, and then the particle is reinitialized with a random position. The new position of the particle is then updated with the new velocity. Thus knowledge of the previous discared particle is retained by using the velocity it had \cite{PSOSelfHierarch}.
+
+In research done by Kalivarapu et al. \cite{PSOPheromones} an PSO algorithm is developed that seeks to incorporate the pheromone notion of ACO algorithms into the velocity updating of particles. The premise of the method is to allow greater sharing of information about promising areas between particles. The algorithm developed by the authors achieved promising results with the algorithm in certain cases finding solutions faster and better solutions than other PSO algorithms \cite{PSOPheromones}. 
+
+Other research done by Monson and Seppi \cite{adaptPSO} is more concerned with how particle presented. In the general PSO algorithm, particles have no physical form or volume, thus particles in the swarm move through each other. The authors changed this in their algorithm by letting each particle have a radius around itself. Therefore, as particles move through the solution space and if another particle at a certain time step occupies the same space, the particles are said to collide. As one would expect, when a collision occurs both particles are deflected into random directions \cite{adaptPSO}. At a greater expense of computational time due to constant collision detection, the PSO gains greater exploration in the solution space. 
+
+Finally, in the research by Lenin and Monan a PSO algorithm is developed that is called the Attract and Repulse PSO (ARPSO). The algorithm continually monitors the solutions in the swarm. If the algorithm picks up that a certain percentage of the swarm is stagnating, the algorithm activates the respulse state. In the repulse state particle are repelled from other particles in the swarm, this facilates greater exploration. After a certain number of iterations, the algorithm returns to its default state, where particles attract each other. The attract state facilates exploitation \cite{PSOAttractRepulse}.
 \subsubsection{Inertia Weight}
-\subsubsection{Information Sharing}
+As a object moves with a certain velocity it carries momentum, if the object were to suddenly change direction, momentum would for a certain period still move the article in the previous direction. Inertia wieght seeks to add type of behaviour to the particles of the PSO algorithm. It was initially developed to negate the use of clamping a particle velocity. The velocity update equation with added inertia is formulated in equation (\ref{eq:inertia}) \cite{FundamentalSwarm}.
+\begin{equation}
+v_i(t+1) = wv_i(t) + c_1\phi_{1}(t)[pbest - x_i(t)] + c_2\phi_{2}(t)[gbest - x_i(t)]\label{eq:inertia}\\
+\end{equation}
+The addition of inertia ($w$ in equation (\ref{inertia}) to the general velocity update equation is simple and ellegant which is why it has been adapted to a wide variety of PSO algorithms. The inertia value allows one to control the amount of control the social and cognitive components have with regard to velocity updates \cite{FundamentalSwarm}. 
+
+For values of $w$ that are greater than 1, a large amount of momentum is preserved as the particles velocity are updated and hence, the particle explores more \cite{FundamentalSwarm}. When $w < 1$, each time the particle updates it velocity is loses a certain amount of momemtum, hence, the particle seems to slow down allowing it to exploit the current solution space in finer detail \cite{FundamentalSwarm}.
+
+Even though inertia was developed to remove the use of velocity clamping, it did not entirely achieve its goal. For values of $w$ that are greater than 1, the particle keeps a lot of momemtum and accelerates even more. Therefore, as the particle accelerates its step size through the solution space gets larger and larger, increasing the probabilitly that it will miss a good solution. This disadvantage is only applicable for algorithms that keep the inertia value static \cite{CompuIntelligenceIntro,FundamentalSwarm}.
+
+To allow for a greater trade-off between exploration and exploitation, the inertia value was made dynamic. Exploration is favoured early on in a optimization algorithm and in return exploitation is favoured later on the algorithm when it is near a optimum. Thus, various methods linear decreasing and nonlinear decreasing and have been developed that modify the inertia component as the algorithm moves around in the solution space \cite{CompuIntelligenceIntro,FundamentalSwarm}.
+
+Finally, a similar inertia type component was developed from the ananlys of particle dynamics \cite{FundamentalSwarm}. This new component is called the \emph{constriction coeffcient} and like the inertia above, also modifies the velocity update equation slighty as can be seen in equation (\ref{eq:velocityconstriction})is formulated in equation (\ref{eq:constriction})\cite{adaptPSO,FundamentalSwarm,CompuIntelligenceIntro}.
+\begin{align}
+v_i(t+1) &= \chi[v_i(t) + c_1\phi_{1}(t)[pbest - x_i(t)] + c_2\phi_{2}(t)[gbest - x_i(t)]]\label{eq:velocityconstriction}\\
+\chi &= \frac{2\kappa}{\lvert 2 - \phi - \sqrt{\phi^2 - 4\phi}\rvert}\label{eq:constriction}
+\end{align}
+
+The constriction coeffcient is represented by the value $phi$ and allows one to omit the usage of velocity clamping. The constriction coeffcient evaluates to a ever decreasing value between $[0,1]$. By using the constriction coeffcient the PSO algorithm is also gauranteed to converge for values of $phi \geq 4$ and $\kappa \in [0,1]$. As with the inertia discussed above, high values of $\kappa$ allows for greater exploration and slow convergeance. Where as low values of $\kappa$ forces the algorithm to exploit the solution space and converge quickly \cite{adaptPSO,FundamentalSwarm,CompuIntelligenceIntro}.
 \subsection{PSO Pseudo Code and Process Flow}
 
 \section{Summary}
 %Talk about how ABC has less control parameters to adjust than ACO and PSO
-%Read An Evolutionary Parallel Tabu Search approach for distribution systems reinforcement planning for more information on PSO%

@@ -271,6 +271,13 @@ Wei jun Xia and Zhi ming Wu.
 \newblock {\em The International Journal of Advanced Manufacturing Technology},
   29(3):360--366, June 2006.
 
+\bibitem{PSOPheromones}
+Vijay Kalivarapu, Jung-Leng Foo, and Eliot Winer.
+\newblock Improving solution characteristics of particle swarm optimization
+  using digital pheromones.
+\newblock {\em Structural and Multidisciplinary Optimization}, 37:415 -- 427,
+  2009.
+
 \bibitem{ABCCompareStudy}
 Dervis Karaboga and Bahriye Akay.
 \newblock A comparative study of artificial bee colony algorithm.
@@ -296,6 +303,13 @@ Sergio Ledesma, Miguel Torres, Donato Hern{á}ndez, Gabriel Avi{ñ}a, and
   learning.
 \newblock In {\em MICAI 2007: Advances in Artificial Intelligence}, pages
   161--171, 2007.
+
+\bibitem{PSOAttractRepulse}
+K.~Lenin and M.R. Mohan.
+\newblock Attractive and repulsive particle swarm optimization for reactive
+  power optimization.
+\newblock {\em Journal of Engineering and Applied Sciences}, 1(4):288--292,
+  2006.
 
 \bibitem{MobileRobotSA}
 Yuming Liang and Lihong Xu.
@@ -398,6 +412,13 @@ Qi~Ming-yao, Miao Li-xin, Zhang Le, and Xu~Hua-yu.
   Annual Conference Proceedings., International Conference on}, pages 1648
   --1653, 10-12 2008.
 
+\bibitem{adaptPSO}
+Christopher~K. Monson and Kevin~D. Seppi.
+\newblock Adaptive diversity in pso.
+\newblock In {\em GECCO '06: Proceedings of the 8th annual conference on
+  Genetic and evolutionary computation}, pages 59--66, New York, NY, USA, 2006.
+  ACM.
+
 \bibitem{MontemanniThesis}
 Roberto Montemanni.
 \newblock {\em Upper and Lower bounds for the fixed spectrum frequency
@@ -408,6 +429,14 @@ Roberto Montemanni.
 Roberto Montemanni and Derek~H. Smith.
 \newblock Heuristic manipulation, tabu search and frequency assignment.
 \newblock {\em Comput. Oper. Res.}, 37(3):543--551, 2008.
+
+\bibitem{PSOPESO}
+Angel~E. Mu\, {n}oz~Zavala, Arturo~Hern\'{a}ndez Aguirre, and Enrique~R.
+  Villa~Diharce.
+\newblock Constrained optimization via particle evolutionary swarm optimization
+  algorithm (peso).
+\newblock In {\em GECCO '05: Proceedings of the 2005 conference on Genetic and
+  evolutionary computation}, pages 209--216, New York, NY, USA, 2005. ACM.
 
 \bibitem{wirelesstelcoMullet}
 Garry Mullet.
@@ -606,6 +635,13 @@ Dusan Teodorovic, Panta Lucic, Goran Markovic, and Mauro~Dell' Orco.
 \newblock Bee colony optimization: Principles and applications.
 \newblock In {\em Neural Network Applications in Electrical Engineering, 2006.
   NEUREL 2006. 8th Seminar on}, pages 151 --156, 25-27 2006.
+
+\bibitem{PSOHybridUnitCommit}
+T.O. Ting, M.V.C. Rao, and C.K. Loo.
+\newblock A novel approach for unit commitment problem via an effective hybrid
+  particle swarm optimization.
+\newblock {\em Power Systems, IEEE Transactions on}, 21(1):411 -- 418, feb.
+  2006.
 
 \bibitem{ACOLargeProblem}
 Raj~Gaurang Tiwari, Mohd. Husain, Sandeep Gupta, and Arun~Pratap Srivastava.
