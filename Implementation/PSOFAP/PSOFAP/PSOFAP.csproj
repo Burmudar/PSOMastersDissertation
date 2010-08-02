@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,10 +10,16 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PSOFAP</RootNamespace>
     <AssemblyName>PSOFAP</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +45,7 @@
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -55,8 +62,12 @@
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Window1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -70,26 +81,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FAPModel\Cell.cs" />
-    <Compile Include="FAPModel\CellInterferer.cs" />
-    <Compile Include="FAPModel\CellRelation.cs" />
-    <Compile Include="FAPModel\Coordinate.cs" />
-    <Compile Include="FAPModel\FAPModel.cs" />
-    <Compile Include="FAPModel\FAPObjectiveFunction.cs" />
-    <Compile Include="FAPModel\Format.cs" />
-    <Compile Include="FAPModel\GeneralInformation.cs" />
-    <Compile Include="FAPModel\Interfaces\ICell.cs" />
-    <Compile Include="FAPModel\Interfaces\ICellInterferer.cs" />
-    <Compile Include="FAPModel\Interfaces\ICellRelation.cs" />
-    <Compile Include="FAPPSO\FAPCostFunction.cs" />
-    <Compile Include="FAPPSO\FAPPositionGenerator.cs" />
-    <Compile Include="FAPPSO\FAPPSOAlgorithm.cs" />
-    <Compile Include="FAPPSO\Functions\MateFunction.cs" />
-    <Compile Include="FAPPSO\Functions\ParticlePerTrxFunction.cs" />
-    <Compile Include="FAPPSO\Functions\PerTRXFunction.cs" />
-    <Compile Include="Parser\Lexer\Lexer.cs" />
-    <Compile Include="Parser\Lexer\Token.cs" />
-    <Compile Include="Parser\Lexer\Scanner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -103,18 +94,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PSO\Interfaces\IFitnessFunction.cs" />
-    <Compile Include="PSO\Interfaces\IMoveFunction.cs" />
-    <Compile Include="PSO\Interfaces\IPositionGenerator.cs" />
-    <Compile Include="PSO\Particle.cs" />
-    <Compile Include="PSO\ParticleBest.cs" />
-    <Compile Include="PSO\PSOAlgorithm.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="FAPModel\Problems\MaOrRi02.ass" />
-    <None Include="FAPModel\Problems\siemens1" />
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -123,6 +107,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="GUI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PSOFAPConsole\PSOFAPConsole.csproj">
+      <Project>{575ABCB4-4F4B-481F-8BA9-82198FEFC7A3}</Project>
+      <Name>PSOFAPConsole</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
