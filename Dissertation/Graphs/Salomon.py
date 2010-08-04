@@ -6,7 +6,7 @@ matplotlib.use('PDF')
 import matplotlib.pyplot as plt
 import numpy as np
 
-AMOUNT_OF_POINTS = 150
+AMOUNT_OF_POINTS = 350
 
 def Salomon(x,y):
 	SalomonSum1 = 0
@@ -14,16 +14,16 @@ def Salomon(x,y):
 	SalomonSum1 += y ** 2
 	SalomonSum1 = -np.cos(2*np.pi*np.sqrt(SalomonSum1))
 	SalomonSum2 = 0
-	SalomonSum2 += (x ** 2) + 1
-	SalomonSum2 += (y ** 2) + 1
-	SalomonSum2 = 0.1 * np.sqrt(SalomonSum2)
+	SalomonSum2 += (x ** 2)# + 1
+	SalomonSum2 += (y ** 2)# + 1
+	SalomonSum2 = 0.1 * np.sqrt(SalomonSum2)+1
 	return SalomonSum1 + SalomonSum2
 
 
 fig = plt.figure()
 ax = Axes3D(fig)
-X = np.linspace(-65356, 65356, AMOUNT_OF_POINTS)
-Y = np.linspace(-65356, 65356, AMOUNT_OF_POINTS)
+X = np.linspace(-5, 5, AMOUNT_OF_POINTS)
+Y = np.linspace(-5, 5, AMOUNT_OF_POINTS)
 X, Y = np.meshgrid(X, Y)
 
 print 'Initializing Function'
@@ -46,5 +46,5 @@ ax.w_zaxis.set_major_formatter(FormatStrFormatter('%.0f'))
 fig.colorbar(surf, shrink=0.5, aspect=5)
 print '----Complete----'
 print 'Saving the finished graph to disk'
-plt.savefig('Salomon')
+plt.savefig('SalomonTest')
 print '----Complete----'

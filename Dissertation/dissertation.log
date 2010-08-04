@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  30 JUN 2010 01:21
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.10)  5 AUG 2010 00:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -143,7 +143,7 @@ Package tocbibind Note: The document has chapter divisions.
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
 ) (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
-(./chpt5.aux))
+(./chpt5.aux) (./chpt6.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -158,7 +158,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
- (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count101
 \scratchdimen=\dimen114
@@ -363,12 +364,22 @@ LaTeX Warning: Reference `inertia' on page 83 undefined on input line 323.
 [83]) [84] [85
 
 
-] [86] (./dissertation.bbl
+] [86]
+\openout2 = `chpt6.aux'.
+
+ (./chpt6.tex
+Chapter 6.
+[87
+
+
+] [88] [89] [90] <./Graphs/Ackley.pdf, id=308, 578.16pt x 433.62pt>)
+[91] [92] (./dissertation.bbl
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no º in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ³ in font cmr10!
- [87
+ [93
+
 
 ]
 Missing character: There is no Ã in font cmr10!
@@ -377,7 +388,7 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [88] [89]
+ [94] [95]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ‰ in font cmr10!
 
@@ -386,27 +397,28 @@ Underfull \hbox (badness 4060) in paragraph at lines 180--187
 Fran-cisco
  []
 
-[90]
+[96]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [91]
+ [97]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
- [92] [93] [94] [95] [96] [97] [98] [99]) [100] (./dissertation.aux
-(./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux) (./chpt5.aux))
+ [98] [99] [100] [101] [102] [103] [104] [105]) [106]
+(./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
+(./chpt5.aux) (./chpt6.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2342 strings out of 495061
- 28165 string characters out of 1182621
- 82317 words of memory out of 3000000
- 5462 multiletter control sequences out of 15000+50000
+ 2357 strings out of 495061
+ 28359 string characters out of 1182621
+ 82611 words of memory out of 3000000
+ 5468 multiletter control sequences out of 15000+50000
  14420 words of font info for 54 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  27i,19n,28p,1352b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -429,9 +441,9 @@ e1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/am
 sfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symb
 ols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/ms
 bm10.pfb>
-Output written on dissertation.pdf (100 pages, 498964 bytes).
+Output written on dissertation.pdf (106 pages, 517372 bytes).
 PDF statistics:
- 408 PDF objects out of 1000 (max. 8388607)
+ 428 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

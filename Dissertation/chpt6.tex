@@ -1,0 +1,125 @@
+\chapter{PSO on benchmark functions}
+\section{Introduction}
+\section{Benchmark mathematical formulation}
+In this section we will give the formulation of all the benchmark functions we have implemented for the developed PSO to optimize. The functions vary from being relatively easy to optimize, to functions that contain lots of local minima and a slightly concealed global minmima. In total we will formulate 14 benchmark functions.
+
+The reason why these functions have to variate amount of local and global minima, it to test various factors on how good the algorithm is that is being applied on the function. The factors that are tested are:
+\begin{itemize}
+\item Rate of convergeance
+\item Exploration
+\item Exploitation
+\item Diversity
+\item Breaking out of local minima
+\item Information sharing
+\end{itemize}
+\subsection{Test Functions}
+\subsubsection{DeJong F1 Function}
+\begin{equation}
+\label{eq:DeJongF1}
+	f(x) = \sum_{i=1}^n x^2_i, -5.12 \leq x_i \geq 5.12, i \in \mathbb{N}
+\end{equation}
+The DeJong F1 Function has the following global minium when $f(x) = 0, x(i) = 0, i:n$ where $n$ is the amount of dimensions. 
+\subsubsection{Shekel's Foxhole}
+\begin{align}
+	f(x_1,x_2) &= \{0.002 + \sum^{25}_{j=1} [j + (x_1 - a_{1j})^6 + (x_2 - a_{2j})^6]^{-1}\}^{-1}\\
+\intertext{where}
+	a &= \begin{pmatrix} \nonumber
+			-32 & -16 & 0 & 16 & 32 & -32 & ... & 0 & 16 & 32 \\
+			-32 & -32 & -32 & -32 & -32 & -16 & ... & 32 & 32 & 32 \\
+		 \end{pmatrix}
+\end{align}
+the variables $x_1$ and $x_2$ are usually restricted to the square represented by $-65.356 \leq x_1 \leq 65.357, -65.357 \leq x_2 \leq 65.356$. The global optimum is when $f(x_1,x_2) = 0, \{x_1,x_2\} = \{-32,-32\}$
+\subsubsection{Rastrigin}
+\begin{equation}
+	f(x) = 10n + \sum_{i=1}^n [x_i^2 - 10\cos(2 \pi x_i)],\, i \in \mathbb{N}
+\end{equation}
+The values of the variable $x_i$ is bounded by the hypercube $-5.12 \leq x_i \leq 5.12$. The global optimum for the function is when $f(x_i) = 0,\, x_i = 0, \, i = 1,\dots,n$
+\subsubsection{Schwefel}
+\begin{equation}
+	f(x) = 418.9829n - \sum^n_{i=1} [x_i\sin{\sqrt{|x_i|}}], \qquad i \in \mathbb{N}
+\end{equation}
+The variable $x_i$ is restricted to be in the hybercube $-500 \leq x_i \leq 500, i = 1,\ldots,n$. The global optimum for the function is $f(x) = 0$ when $x_i = 420.9687$.
+\subsubsection{Griewank}
+\begin{equation}
+	f(x) = \sum^n_{i=1} \frac{x^2_i}{4000} - \prod^n_{i=1}\cos{(\frac{x_i}{\sqrt{i}})} + 1, \qquad i \in \mathbb{N}
+\end{equation}
+The variable $x_i$ is bounded to within the hypercube $ -600 \leq x_i \leq 600 $. The global optimum of the function is when $f(x) =0$ which occurs when $ x_i = 0, i = 1, \dots, n $
+\subsubsection{Salomon}
+\begin{equation}
+	f(x) = -\cos{(2\pi\sum_{i=1}^n\sqrt{x_i^2})} + 0.1 \sqrt{\sum_{i=1}^n x_i^2} + 1, \quad i \in \mathbb{N}
+\end{equation}
+Unlike the previous functions discussed in this section, the Salomon function imposes no constraint on the $x_i$ variable. The global optimum is when $f(x) = 0$ and $x_i = 0$ where $i = 1,\ldots,n$
+\subsubsection{Ackley}
+\begin{equation}
+	f(x) = -20e^{-0.2\sqrt{\frac{1}{2}\sum_{i=1}^n x_i^2}} - e^{\frac{1}{2}\sum_{i=1}^n\cos{2\pi x_i}} + 20 + e^1, \qquad i \in \mathbb{N}
+\end{equation}
+The variable $x_i$ is restricted to the hypercybe represented by $-32.768 \leq x_i \leq 32.768$. The global minimum is when $f(x) = 0$ and is obtainable for $x_i = 0, i = 1,\ldots,n$.
+\subsubsection{Six-Hump Camel Back}
+\begin{equation}
+	f(x_1,x_2) = (4 - 2.1x_1^2 + x_1^{\frac{4}{3}})x_1^2 + (x_1x_2) + (-4 + 4x_2^2)x_2^2
+\end{equation}
+The variables $x_1$ and $x_2$ are subject to the following boundary constraints $-3 \leq x_1 \leq 3$ and $-2 \leq x_2 \leq 2$. The global minimum is when $f(x_1,x_2) = -1.0316$ and is obtained when $x_1 = -0.0898$ and $x_2 = 0.7126$
+\subsubsection{Shubert}
+\begin{equation}
+	f(x_1,x_2) = -\sum_{i = 1}^5 (i\cos{(i +1)x_1 + 1})\sum_{i=1}^5 (i\cos{(i+1)x_2 + 1})
+\end{equation}
+\subsubsection{Himmelblau}
+\begin{equation}
+	f(x_1,x_2) = (x_1^2 + x_2 - 11)^2 + (x_1 + x_2^2 - 7)^2
+\end{equation}
+The variables $x_1,x_2$ are constraint to be within the hypercube represented by $-6 \leq x_1 \leq 6, -6 \leq x_2 \leq 6$. The Himmelblau function contains no local optima, but on the contrary, it has 4 global optima when 
+\begin{align}
+(x_1,x_2) &= (-3.779310,-3.283185)\nonumber\\
+		  &= (-2.805118,3.131312)\nonumber\\
+		  &= (3,2)\nonumber\\
+		  &= (3.584428,-1.848126)\nonumber
+\end{align}
+\subsubsection{Rosebrock Valley}
+\begin{equation}
+	f(x) = \sum_{i=1}^{n-1}[100(x_{i+1} - x_i^2)^2 + (1-x_i)^2
+\end{equation}
+The variable $x_i$ is bounded to with the following constraint $ -2.048 \leq x_i \leq 2.048 $. The global optimum is when $f(x) = 0$ and is obtained when $x_i = 1, i = 1,\ldots,n$.
+\subsubsection{Dropwave}
+\begin{equation}
+	f(x) = -\frac{1 + \cos{(12\sqrt{x_1^2 + x_2^2})}}{\frac{1}{2}(x_1^2 + x_2^2) + 2}
+\end{equation}
+The variables $x_1$ and $x_2$ are restricted to be within the following bounds $-5.12 \leq x_i \leq 5.12$
+The variables $x_1$ and $x_2$ are restricted to be within the following bounds $-5.12 \leq x_i \leq 5.12$
+\subsubsection{Easom}
+\begin{equation}
+	f(x_1,x_2) = -\cos(x_1)\cos(x_2)e^{(-(x_1 - \pi)^2 - (x_2 - \pi)^2)}
+\end{equation}
+The variables $x_1$ and $x_2$ are restricted to be within the hypercube represented by $-100 \leq x_1 \leq 100, -100 \leq x_2 \leq 100$. The global minimum is when $f(x_1,x_2) = -1$ and is obtainable if $(x_1,x_2) = (\pi,\pi)$
+\subsubsection{Branins}
+\begin{equation}
+	f(x) =
+\end{equation}
+\subsubsection{Michalewicz}
+\begin{equation}
+	f(x) = -\sum_{i=1}^n\sin{(x_i)}[\sin{(\frac{(1 - x_i^2)}{\pi})}]^{2m}, \qquad i,m \in \mathbb{N}
+\end{equation}
+The variable $x_i$ is usually constricted to the following defined boundary $0 \leq x_i \leq \pi, i = 1,\ldots,n$. The parameter $m$ defines the steepness of the valleys in the function. The function has two approximated global minima's
+%http://www.geatbx.com/docu/fcnindex-01.html#P216_11735
+\begin{enumerate}
+\item $f(x) = -4.687,\: n = 5$
+\item $f(x) = -9.66,\: n = 10$
+\end{enumerate}
+\subsubsection{Goldstein}
+\begin{align}
+	f(x_1,x_2) &= (1 + (x_1 + x_2 + 1)^2)\nonumber\\
+			   &=*(19-14x_1+3x_1^2 -14x_2 + 6x_1x_2 + 3x_2^2)\nonumber\\
+			   &=*(30 + (2x_1 -3x_2)^2\nonumber\\
+			   &=*(18 - 32x_1 + 12x_1^2 +48x_2 -36x_1x_2 + 27x_2)\nonumber
+\end{align}
+The variables $x_1$ and $x_2$ are subject to the following boundary constraints $-2 \leq x_1 \leq 2, -2 \leq x_2 \leq 2$. The function has only global minimum when $f(x_1,x_2) = 3$ and is obtainable when $x_1 = 0$ and $x_2 = -1$
+\section{Graphs of Benchmark Functions}
+\begin{figure}[c!]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Ackley.pdf}}
+	\caption{THe Ackley Function}
+	\label{fig:AckleyGraph}
+\end{figure}
+\section{Results}
+\section{Summary}

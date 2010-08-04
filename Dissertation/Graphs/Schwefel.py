@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 AMOUNT_OF_POINTS = 150
-SCHWEFEL_CONSTANT = 418.9829 * 3
+SCHWEFEL_CONSTANT = 418.9829 * 2
 def Schwefel(x,y):
 	schwefelSum = 0
 	schwefelSum += (-1 * x)*np.sin(np.sqrt(abs(x)))
