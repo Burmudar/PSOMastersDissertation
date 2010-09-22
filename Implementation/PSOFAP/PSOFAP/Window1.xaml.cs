@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using PSOFAP.FAPPSO;
+using PSOFAPConsole.FAPPSO;
 using System.Threading;
 using System.Windows.Controls;
 using System.Windows.Media;

@@ -97,25 +97,40 @@
 \contentsline {part}{II\hspace {1em}Implementation}{85}
 \contentsline {chapter}{\numberline {6}PSO on benchmark functions}{87}
 \contentsline {section}{\numberline {6.1}Introduction}{87}
-\contentsline {section}{\numberline {6.2}Benchmark mathematical formulation}{87}
-\contentsline {subsection}{\numberline {6.2.1}Test Functions}{88}
-\contentsline {subsubsection}{DeJong F1 Function}{88}
+\contentsline {subsection}{\numberline {6.1.1}Test Functions}{87}
+\contentsline {subsubsection}{DeJong F1 Function}{87}
 \contentsline {subsubsection}{Shekel's Foxhole}{88}
 \contentsline {subsubsection}{Rastrigin}{88}
 \contentsline {subsubsection}{Schwefel}{88}
-\contentsline {subsubsection}{Griewank}{89}
+\contentsline {subsubsection}{Griewank}{88}
 \contentsline {subsubsection}{Salomon}{89}
 \contentsline {subsubsection}{Ackley}{89}
 \contentsline {subsubsection}{Six-Hump Camel Back}{89}
 \contentsline {subsubsection}{Shubert}{89}
-\contentsline {subsubsection}{Himmelblau}{90}
-\contentsline {subsubsection}{Rosebrock Valley}{90}
+\contentsline {subsubsection}{Himmelblau}{89}
+\contentsline {subsubsection}{Rosenbrock Valley}{90}
 \contentsline {subsubsection}{Dropwave}{90}
 \contentsline {subsubsection}{Easom}{90}
 \contentsline {subsubsection}{Branins}{90}
 \contentsline {subsubsection}{Michalewicz}{91}
 \contentsline {subsubsection}{Goldstein}{91}
-\contentsline {section}{\numberline {6.3}Graphs of Benchmark Functions}{91}
-\contentsline {section}{\numberline {6.4}Results}{91}
-\contentsline {section}{\numberline {6.5}Summary}{91}
-\contentsline {chapter}{Bibliography}{93}
+\contentsline {section}{\numberline {6.2}Graphs of Benchmark Functions}{91}
+\contentsline {subsection}{\numberline {6.2.1}Graphs}{92}
+\contentsline {subsubsection}{DeJong's First Function}{92}
+\contentsline {subsubsection}{Shekel's Foxhole Function}{92}
+\contentsline {subsubsection}{Rastrigin Function}{93}
+\contentsline {subsubsection}{Schwefel Function}{93}
+\contentsline {subsubsection}{Griewank Function}{94}
+\contentsline {subsubsection}{Salomon Function}{94}
+\contentsline {subsubsection}{Ackley}{95}
+\contentsline {subsubsection}{Six-Hump Camel Back Function}{95}
+\contentsline {subsubsection}{Shubert Function}{96}
+\contentsline {subsubsection}{Himmelblau Function}{96}
+\contentsline {subsubsection}{Rosenbrock Valley Function}{97}
+\contentsline {subsubsection}{Dropwave Function}{97}
+\contentsline {subsubsection}{Easom Function}{98}
+\contentsline {subsubsection}{Branin Function}{98}
+\contentsline {subsubsection}{Michalewicz Function}{99}
+\contentsline {subsubsection}{Goldstein Function}{99}
+\contentsline {section}{\numberline {6.3}Results}{100}
+\contentsline {chapter}{Bibliography}{101}

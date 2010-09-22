@@ -2,22 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PSOFAP.PSO.Interfaces;
-using PSOFAP.FAPModel;
-using PSOFAP.PSO;
-using PSOFAP.FAPModel.Interfaces;
+using PSOFAPConsole.PSO.Interfaces;
+using PSOFAPConsole.FAP;
+using PSOFAPConsole.PSO;
+using PSOFAPConsole.FAP.Interfaces;
+using System.Threading.Tasks;
 
-namespace PSOFAP.FAPPSO
+namespace PSOFAPConsole.FAPPSO
 {
     public class ParticlePerTrxFunction : IMoveFunction<Particle<ICell[]>>
     {
-        public int[] Spectrum { get; set; }
-        public int[] GBC { get; set; }
+        private int upperBound;
+        private int lowerBound;
+        private double localCoefficient;
+        private double globalCoefficient;
 
-        public ParticlePerTrxFunction(int[] spectrum, int[] gbc)
+        public ParticlePerTrxFunction(int lowerBound, int upperBound, int[] gbc, double localCoef, double globalCoef)
         {
-            Spectrum = spectrum;
-            GBC = gbc;
+            this.upperBound = upperBound;
+            this.lowerBound = lowerBound;
+            localCoefficient = localCoef;
+            globalCoefficient = globalCoef;
+
         }
 
         #region IMoveFunction<Particle<Cell[]>> Members
@@ -26,90 +32,130 @@ namespace PSOFAP.FAPPSO
         {
             ICell[] pbest = from.PersonalBest.Position;
 
-            ICell[] a = Multiply(0.41,true,Subtract(pbest,from.Position));
-            ICell[] b = Multiply(0.52,true,Subtract(to.Position, from.Position));
+            ICell[] a = Multiply(localCoefficient,true,Subtract(pbest,from.Position));
+            ICell[] b = Multiply(globalCoefficient,true,Subtract(to.Position, from.Position));
             if (from.Velocity != null)
             {
-                from.Velocity = Multiply(0.7,false, Add(a, b));
+                from.Velocity = Multiply(0.5,false, Add(from.Velocity,Add(a, b)));
             }
             else
             {
                 from.Velocity = Add(a, b);
+                
             }
-            from.Position = Add(from.Position, from.Velocity);
+            //EnsureUnique(from.Velocity);
+            EnsureUnique(Add(from.Position, from.Velocity));
+            MigrateFrequencies(from.Position);
             return from;
         }
 
-        private Cell[] Subtract(ICell[] a, ICell[] b)
+        private void MigrateFrequencies(ICell[] iCell)
         {
-            Cell[] answ = new Cell[a.Length];
+            Parallel.ForEach(iCell, cell =>
+                {
+                    cell.FrequencyHandler.MigrateFrequenciesToParent();
+                });
+        }
+
+        private void EnsureUnique(ICell[] iCells)
+        {
+            Parallel.ForEach(iCells, MakeUnique);
+        }
+
+        private void MakeUnique(ICell cell)
+        {
+            Random r = new Random();
+            FrequencyHandler handler = cell.FrequencyHandler;
+            for (int i = 0; i < handler.Length; i++)
+            {
+                if (hasValue(i, handler))
+                {
+                    int newFrequency = r.Next(upperBound);
+                    newFrequency = BoundValue(newFrequency);
+                    handler[i] = newFrequency;
+                    i--;
+                }
+            }
+        }
+
+        private bool hasValue(int i, FrequencyHandler handler)
+        {
+            for (int j = 0; j < handler.Length; j++)
+            {
+                if (handler[i] == handler[j] && i != j)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        //Loops through each cell and then each trx that a cell contains. 
+        //It takes each trx and subtracts it from the same cell trx found in the other cell array
+        private BasicCell[] Subtract(ICell[] a, ICell[] b)
+        {
+            BasicCell[] answ = new BasicCell[a.Length];
             for(int i = 0; i < a.Length;i++)
             {
-                answ[i] = a[i].Clone() as Cell;
-                for (int j = 0; j < a[i].Frequencies.Length; j++)
+                answ[i] = a[i].Clone() as BasicCell;
+                for (int j = 0; j < a[i].FrequencyHandler.Length; j++)
                 {
-                    answ[i].Frequencies[j] = Math.Abs(a[i].Frequencies[j] - b[i].Frequencies[j]);
+                    answ[i].FrequencyHandler[j] = (a[i].FrequencyHandler[j] - b[i].FrequencyHandler[j]);
                 }
             }
             return answ;
         }
 
+        //Loops through the given cell array and then it loops through each trx that a cell contains and multiplies it with x.
+        //If random is true, the product of the trx multiplied by x is also multiplied with a random value in range [0.0,1.0]
         private ICell[] Multiply(double x,Boolean random, ICell[] a)
         {
             Random r = new Random();
             for (int i = 0; i < a.Length; i++)
             {
-                for (int j = 0; j < a[i].Frequencies.Length; j++)
+                for (int j = 0; j < a[i].FrequencyHandler.Length; j++)
                 {
                     if (random)
                     {
-                        a[i].Frequencies[j] = (int)(a[i].Frequencies[j] * x * r.NextDouble());
+                        a[i].FrequencyHandler[j] = (int)(a[i].FrequencyHandler[j] * x * r.NextDouble());
                     }
                     else
                     {
-                        a[i].Frequencies[j] = (int)(a[i].Frequencies[j] * x);
+                        a[i].FrequencyHandler[j] = (int)(a[i].FrequencyHandler[j] * x);
                     }
                 }
             }
             return a;
         }
 
+        //Takes each corresponding trx found in a cell and adds it together.
+        //The result of two trx's being added is then bounded to ensure it lies within the spectrum bounds
         private ICell[] Add(ICell[] a, ICell[] b)
         {
             for (int i = 0; i < a.Length; i++)
             {
-                for (int j = 0; j < a[i].Frequencies.Length; j++)
+                for (int j = 0; j < a[i].FrequencyHandler.Length; j++)
                 {
-                    a[i].Frequencies[j] += b[i].Frequencies[j];
-                    a[i].Frequencies[j] = BoundFrequency(a[i].Frequencies[j], Spectrum[0],Spectrum[1]);
+                    a[i].FrequencyHandler[j] += b[i].FrequencyHandler[j];
+                    a[i].FrequencyHandler[j] = BoundValue(a[i].FrequencyHandler[j]);
                 }
             }
             return a;
         }
 
-        private bool NotInGBC(int channel)
+        private int BoundValue(int value)
         {
-            if (channel < GBC[0] || channel > GBC[GBC.Length - 1])
-                return true;
-            foreach (int i in GBC)
+            if (value < 0)
+                return BoundValue(Math.Abs(value));
+            if(value > upperBound)
             {
-                if (channel == i)
-                    return false;
+                return value % upperBound;
             }
-            return true;
-        }
-
-        private int BoundFrequency(int frequency, int lower, int upper)
-        {
-            if(frequency > upper)
+            else if (value < lowerBound)
             {
-                return frequency % upper;
+                return value % lowerBound;
             }
-            else if (frequency < lower)
-            {
-                return frequency % lower;
-            }
-            return frequency;
+            return value;
         }
 
         #endregion

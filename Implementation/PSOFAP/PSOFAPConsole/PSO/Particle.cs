@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PSOFAP.PSO.Interfaces;
+using PSOFAPConsole.PSO.Interfaces;
 
-namespace PSOFAP.PSO
+namespace PSOFAPConsole.PSO
 {
     public class Particle<T> : ICloneable
     {
@@ -35,9 +35,9 @@ namespace PSOFAP.PSO
             return evalFitness;
         }
 
-        public void MoveTowards(T TargetPosition, IMoveFunction<T> function)
+        public void MoveTowards(Particle<T> TargetPosition, IMoveFunction<Particle<T>> function)
         {
-            Position = function.MoveTowards(Position, TargetPosition);
+            function.MoveTowards(this, TargetPosition);
         }
 
         private bool IsPersonalBest(double fitness)
@@ -64,6 +64,7 @@ namespace PSOFAP.PSO
         public object Clone()
         {
             Particle<T> clone = new Particle<T>();
+            clone.PersonalBest = (ParticleBest<T>)PersonalBest.Clone();
             clone.Position = (T)((ICloneable)Position).Clone();
             clone.Fitness = this.Fitness;
             return clone;

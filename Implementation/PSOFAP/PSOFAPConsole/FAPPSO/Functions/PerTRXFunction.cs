@@ -2,20 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PSOFAP.PSO.Interfaces;
-using PSOFAP.FAPModel.Interfaces;
+using PSOFAPConsole.PSO.Interfaces;
+using PSOFAPConsole.FAP.Interfaces;
+using PSOFAPConsole.FAP;
 
-namespace PSOFAP.FAPPSO
+namespace PSOFAPConsole.FAPPSO
 {
     public class PerTRXFunction : IMoveFunction<ICell[]>
     {
         public int[] Spectrum { get; set; }
         public int[] GBC { get; set; }
 
-        public PerTRXFunction(int[] spectrum, int[] gbc)
+        public PerTRXFunction(FAPModel model)
         {
-            Spectrum = spectrum;
-            GBC = gbc;
+            Spectrum = model.GeneralInformation.Spectrum;
+            GBC = model.GeneralInformation.GloballyBlockedChannels;
         }
         #region IMoveFunction<ICell[]> Members
 
@@ -23,17 +24,20 @@ namespace PSOFAP.FAPPSO
         {
             for (int i = 0; i < to.Length; i++)
             {
-                MoveTowardsChannelArray(from[i].Frequencies, to[i].Frequencies);
+                FrequencyHandler newFrequencies = MoveTowardsChannelArray(from[i].FrequencyHandler, to[i].FrequencyHandler);
+
+                newFrequencies.MigrateFrequenciesToParent();
             }
             return from;
         }
 
-        private void MoveTowardsChannelArray(int[] from, int[] to)
+        private FrequencyHandler MoveTowardsChannelArray(FrequencyHandler from, FrequencyHandler to)
         {
             for (int i = 0; i < to.Length; i++)
             {
                 from[i] = MoveTowardsChannel(from[i], to[i]);
             }
+            return from;
         }
 
         private int MoveTowardsChannel(int from, int to)

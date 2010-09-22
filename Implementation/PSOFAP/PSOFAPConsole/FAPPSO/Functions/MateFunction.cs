@@ -2,33 +2,36 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PSOFAP.PSO.Interfaces;
-using PSOFAP.FAPModel.Interfaces;
+using PSOFAPConsole.PSO.Interfaces;
+using PSOFAPConsole.FAP.Interfaces;
+using PSOFAPConsole.PSO;
 
-namespace PSOFAP.FAPPSO
+namespace PSOFAPConsole.FAPPSO
 {
-    public class MateFunction : IMoveFunction<ICell[]>
+    public class MateFunction : IMoveFunction<Particle<ICell[]>>
     {
-        FAPPositionGenerator Generator;
-        public MateFunction(FAPPositionGenerator gen)
+        FrequencyPositionGenerator Generator;
+        public MateFunction(FrequencyPositionGenerator gen)
         {
             Generator = gen;
         }
 
-        #region IMoveFunction<ICell[]> Members
+        #region IMoveFunction<Particle<ICell[]>> Members
 
-        public ICell[] MoveTowards(ICell[] from, ICell[] to)
+        public Particle<ICell[]> MoveTowards(Particle<ICell[]> from, Particle<ICell[]> to)
         {
+            ICell[] fromPosition = from.Position;
+            ICell[] toPosition = to.Position;
             
-            int c2 = (int)(to.Length * 0.6);
+            int c2 = (int)(toPosition.Length * 0.6);
             ICell[] random = Generator.GeneratePosition();
-            for (int c1 = (int)(from.Length * 0.4); c1 < from.Length; c1++)
+            for (int c1 = (int)(fromPosition.Length * 0.4); c1 < fromPosition.Length; c1++)
             {
-                from[c1] = to[c1];
+                fromPosition[c1] = toPosition[c1];
             }
-            for (int i = 0; i < from.Length / 2; i++)
+            for (int i = 0; i < fromPosition.Length / 2; i++)
             {
-                from[i] = random[i];
+                fromPosition[i] = random[i];
             }
             return from;
         }

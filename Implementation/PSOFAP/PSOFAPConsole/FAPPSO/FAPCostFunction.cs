@@ -2,48 +2,48 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using PSOFAP.PSO.Interfaces;
-using PSOFAP.FAPModel.Interfaces;
-using PSOFAP.FAPModel;
+using PSOFAPConsole.PSO.Interfaces;
+using PSOFAPConsole.FAP.Interfaces;
+using PSOFAPConsole.FAP;
 
-namespace PSOFAP.FAPPSO
+namespace PSOFAPConsole.FAPPSO
 {
     public class FAPCostFunction : IFitnessFunction<ICell[]>
     {
-        public ICellRelation[] InterferenceMatrix { get; set; }
-        public GeneralInformation GeneralInformation { get; set; }
+        public ICellRelation[] InterferenceMatrix { get; private set; }
+        public GeneralInformation GeneralInformation { get; private set; }
 
-        public FAPCostFunction(ICellRelation[] interferenxMatrix,GeneralInformation generalInformation)
+        public FAPCostFunction(FAPModel model)
         {
-            InterferenceMatrix = interferenxMatrix;
-            GeneralInformation = generalInformation;
+            InterferenceMatrix = model.InterferenceMatrix.ToArray();
+            GeneralInformation = model.GeneralInformation;
         }
 
         #region IFitnessFunction<ICell[]> Members
 
-        public double Evaluate(ICell[] position)
+        public virtual double Evaluate(ICell[] position)
         {
-            double costValue = calculateInterfernece(position);;
-            return costValue;
+            return CalculateInterfernece(position);
         }
 
-        private double calculateInterfernece(ICell[] position)
+        protected virtual double CalculateInterfernece(ICell[] position)
         {
             double totalInterference = 0;
+            
             foreach (ICellRelation cellRelation in InterferenceMatrix)
             {
                 ICell cell = position[cellRelation.CellIndex[0]];
                 ICell interferingCell = position[cellRelation.CellIndex[1]];
                 double interference = 0;
-                for (int i = 0; i < interferingCell.Frequencies.Length; i++)
+                for (int i = 0; i < interferingCell.FrequencyHandler.Length; i++)
                 {
-                    for (int j = 0; j < cell.Frequencies.Length; j++)
+                    for (int j = 0; j < cell.FrequencyHandler.Length; j++)
                     {
-                        if (SameFrequency(interferingCell.Frequencies[i],cell.Frequencies[j]))
+                        if (SameFrequency(interferingCell.FrequencyHandler[i],cell.FrequencyHandler[j]))
                         {
                             interference += ZeroIfOusideInterferneceThreshold(cellRelation.DA[0]);
                         }
-                        else if (frequenciesDifferByOne(interferingCell.Frequencies[i],cell.Frequencies[j]))
+                        else if (FrequenciesDifferByOne(interferingCell.FrequencyHandler[i],cell.FrequencyHandler[j]))
                         {
                             interference += ZeroIfOusideInterferneceThreshold(cellRelation.DA[1]);
                         }
@@ -57,7 +57,7 @@ namespace PSOFAP.FAPPSO
 
         #endregion
 
-        private double ZeroIfOusideInterferneceThreshold(double value)
+        protected double ZeroIfOusideInterferneceThreshold(double value)
         {
             if (value <= GeneralInformation.MinTolerableInterference)
             {
@@ -67,12 +67,12 @@ namespace PSOFAP.FAPPSO
         }
 
 
-        private bool SameFrequency(int freqA, int freqB)
+        protected bool SameFrequency(int freqA, int freqB)
         {
             return freqA == freqB;
         }
 
-        private bool frequenciesDifferByOne(int freqA, int freqB)
+        protected bool FrequenciesDifferByOne(int freqA, int freqB)
         {
             return Math.Abs(freqA - freqB) == 1;
         }

@@ -1,6 +1,5 @@
 \chapter{PSO on benchmark functions}
 \section{Introduction}
-\section{Benchmark mathematical formulation}
 In this section we will give the formulation of all the benchmark functions we have implemented for the developed PSO to optimize. The functions vary from being relatively easy to optimize, to functions that contain lots of local minima and a slightly concealed global minmima. In total we will formulate 14 benchmark functions.
 
 The reason why these functions have to variate amount of local and global minima, it to test various factors on how good the algorithm is that is being applied on the function. The factors that are tested are:
@@ -63,18 +62,13 @@ The variables $x_1$ and $x_2$ are subject to the following boundary constraints 
 \begin{equation}
 	f(x_1,x_2) = -\sum_{i = 1}^5 (i\cos{(i +1)x_1 + 1})\sum_{i=1}^5 (i\cos{(i+1)x_2 + 1})
 \end{equation}
+The search domain constrained to $-10 \leq x_i \leq 10, i = 1,2, \ldots, n$. The global optimum which is when $f(x_i) = -186.7309$.
 \subsubsection{Himmelblau}
 \begin{equation}
 	f(x_1,x_2) = (x_1^2 + x_2 - 11)^2 + (x_1 + x_2^2 - 7)^2
 \end{equation}
-The variables $x_1,x_2$ are constraint to be within the hypercube represented by $-6 \leq x_1 \leq 6, -6 \leq x_2 \leq 6$. The Himmelblau function contains no local optima, but on the contrary, it has 4 global optima when 
-\begin{align}
-(x_1,x_2) &= (-3.779310,-3.283185)\nonumber\\
-		  &= (-2.805118,3.131312)\nonumber\\
-		  &= (3,2)\nonumber\\
-		  &= (3.584428,-1.848126)\nonumber
-\end{align}
-\subsubsection{Rosebrock Valley}
+The variables $x_1,x_2$ are constraint to be within the hypercube represented by $-6 \leq x_1 \leq 6, -6 \leq x_2 \leq 6$. The Himmelblau function contains no local optima, but on the contrary, it has 4 global optima when $f(x_i) = 0$ which can be obtained at the following points $(x_1,x_2) \in \{(-3.779310,-3.283185),(-2.805118,3.131312),(3,2),(3.584428,-1.848126)\}$
+\subsubsection{Rosenbrock Valley}
 \begin{equation}
 	f(x) = \sum_{i=1}^{n-1}[100(x_{i+1} - x_i^2)^2 + (1-x_i)^2
 \end{equation}
@@ -91,9 +85,22 @@ The variables $x_1$ and $x_2$ are restricted to be within the following bounds $
 \end{equation}
 The variables $x_1$ and $x_2$ are restricted to be within the hypercube represented by $-100 \leq x_1 \leq 100, -100 \leq x_2 \leq 100$. The global minimum is when $f(x_1,x_2) = -1$ and is obtainable if $(x_1,x_2) = (\pi,\pi)$
 \subsubsection{Branins}
-\begin{equation}
-	f(x) =
-\end{equation}
+\begin{align}
+	f(x_1,x_2) &= a(x_2 - bx_1^2 + cx_1 - d)^2 + e(1-f)\cos{x_1} + e \\
+\intertext{where}
+	a &= 1\nonumber\\
+	b &= \frac{5.1}{4\pi^2}\nonumber\\
+	c &= \frac{5}{\pi}\nonumber\\
+	d &= 6\nonumber\\
+	e &= 10\nonumber\\
+	f &= \frac{1}{8\pi}\nonumber
+\end{align}
+The variables $x_1$ and $x_2$ are subject to the following boundary constraints $-5\leq x_1 \leq 10, 0 \leq x_2 \leq 10$. The global optimum is when $f(x_1,x_2) = 0.397887$ and is obtainable when $x_1$ and $x_2$ have the following values:
+\begin{enumerate}
+\item $x_1 = -\pi,\:x_2=12.275$
+\item $x_1 = \pi,\:x_2=2.275$
+\item $x_1 = 9.42478,\:x_2=2.475$
+\end{enumerate}
 \subsubsection{Michalewicz}
 \begin{equation}
 	f(x) = -\sum_{i=1}^n\sin{(x_i)}[\sin{(\frac{(1 - x_i^2)}{\pi})}]^{2m}, \qquad i,m \in \mathbb{N}
@@ -113,13 +120,185 @@ The variable $x_i$ is usually constricted to the following defined boundary $0 \
 \end{align}
 The variables $x_1$ and $x_2$ are subject to the following boundary constraints $-2 \leq x_1 \leq 2, -2 \leq x_2 \leq 2$. The function has only global minimum when $f(x_1,x_2) = 3$ and is obtainable when $x_1 = 0$ and $x_2 = -1$
 \section{Graphs of Benchmark Functions}
-\begin{figure}[c!]
+In this section we will present 3D surface and contour graphs for all the mathematical functions discussed in the previous section. These graphs allows one to see the search landscape more visually as well as to comprehend how difficult it is to find the global minima for a particular function.
+
+\subsection{Graphs}
+\subsubsection{DeJong's First Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/DeJongF1.pdf}}
+	\caption{DeJong's First Function}
+	\label{fig:DeJongF1Graph}
+\end{figure}
+~
+\subsubsection{Shekel's Foxhole Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Shekel.pdf}}
+	\caption{Shekel's Foxhole Function}
+	\label{fig:ShekelGraph}
+\end{figure}
+~
+\subsubsection{Rastrigin Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Rastrigin.pdf}}
+	\caption{The Function}
+	\label{fig:RastriginGraph}
+\end{figure}
+~
+\subsubsection{Schwefel Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Schwefel.pdf}}
+	\caption{Schwefel Function}
+	\label{fig:SchwefelGraph}
+\end{figure}
+~
+\subsubsection{Griewank Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Griewank_-50_+50.pdf}}
+	\caption{Griewank Function}
+	\label{fig:GriewankGraph}
+\end{figure}
+~
+\subsubsection{Salomon Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Salomon_-10_+10.pdf}}
+	\caption{Salomon Function}
+	\label{fig:SalomonGraph}
+\end{figure}
+~
+\subsubsection{Ackley}
+~
+\begin{figure}[ht]
 	\centering
 	\setlength \fboxsep{0pt}
 	\setlength \fboxrule{0.5pt}
 	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Ackley.pdf}}
-	\caption{THe Ackley Function}
+	\caption{Ackley Function}
 	\label{fig:AckleyGraph}
 \end{figure}
+~
+\subsubsection{Six-Hump Camel Back Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Camel.pdf}}
+	\caption{Six-Hump Camel Back Function}
+	\label{fig:CamelGraph}
+\end{figure}
+~
+\subsubsection{Shubert Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Shubert.pdf}}
+	\caption{Shubert Function}
+	\label{fig:ShubertGraph}
+\end{figure}
+~
+\subsubsection{Himmelblau Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Himmelblau.pdf}}
+	\caption{Himmelblau Function}
+	\label{fig:HimmelblaueGraph}
+\end{figure}
+~
+\subsubsection{Rosenbrock Valley Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Rosenbrock.pdf}}
+	\caption{Rosenbrock Valley Function}
+	\label{fig:Rosenbrock}
+\end{figure}
+~
+\subsubsection{Dropwave Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Dropwave.pdf}}
+	\caption{Dropwave Function}
+	\label{fig:DropwaveGraph}
+\end{figure}
+~
+\subsubsection{Easom Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Easom_-100_+100.pdf}}
+	\caption{Easom Function}
+	\label{fig:EasomGraph}
+\end{figure}
+~
+\subsubsection{Branin Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Branin.pdf}}
+	\caption{Branin Function}
+	\label{fig:BraninGraph}
+\end{figure}
+~
+\subsubsection{Michalewicz Function}
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Michalewicz.pdf}}
+	\caption{Michalewicz Function}
+	\label{fig:MichalewiczGraph}
+\end{figure}
+~
+\subsubsection{Goldstein Function}
+~
+~
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=3.0in,height=2.5in]{./Graphs/Goldstein.pdf}}
+	\caption{THe Goldstein Function}
+	\label{fig:GoldsteinGraph}
+\end{figure}
+~
+
 \section{Results}
-\section{Summary}
