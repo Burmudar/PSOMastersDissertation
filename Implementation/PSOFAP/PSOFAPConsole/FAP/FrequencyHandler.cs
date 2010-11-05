@@ -7,8 +7,8 @@ namespace PSOFAPConsole.FAP
 {
     public class FrequencyHandler : IEnumerable<int>
     {
-        private BasicCell parentCell;
-        private TRX[] frequencies;
+        protected BasicCell parentCell;
+        protected TRX[] frequencies;
 
         public FrequencyHandler(BasicCell parent)
         {
@@ -24,13 +24,18 @@ namespace PSOFAPConsole.FAP
             handler.frequencies.CopyTo(frequencies,0);
         }
 
-        public void MigrateFrequenciesToParent()
+        public virtual void MigrateFrequenciesToParent()
         {
-            for (int i = 0; i < frequencies.Length;i++ )
+            for (int i = 0; i < frequencies.Length; i++)
             {
                 TRX trx = (TRX)frequencies[i].Clone();
-                parentCell.Frequencies[i] = trx ;
+                parentCell.Frequencies[i] = trx;
             }
+        }
+
+        public TRX[] GetFrequencyArray()
+        {
+            return frequencies;
         }
 
         public void SetSingleTrxInterference(int index, double interference)

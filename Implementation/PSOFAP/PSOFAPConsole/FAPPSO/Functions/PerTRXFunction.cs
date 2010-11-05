@@ -5,6 +5,7 @@ using System.Text;
 using PSOFAPConsole.PSO.Interfaces;
 using PSOFAPConsole.FAP.Interfaces;
 using PSOFAPConsole.FAP;
+using PSOFAPConsole.FAPPSO.Functions;
 
 namespace PSOFAPConsole.FAPPSO
 {
@@ -12,12 +13,23 @@ namespace PSOFAPConsole.FAPPSO
     {
         public int[] Spectrum { get; set; }
         public int[] GBC { get; set; }
+        public AbstractCollisionResolver CollisionResolver { get; set; }
+        public double LocalCoefficient { get; set; }
+        public double GlobalCoefficient { get; set; }
+        private int coSite;
+        private int coCell;
 
-        public PerTRXFunction(FAPModel model)
+        public PerTRXFunction(FAPModel model, double localCoefficient, double globalCoefficient, AbstractCollisionResolver collisionResolver)
         {
             Spectrum = model.GeneralInformation.Spectrum;
             GBC = model.GeneralInformation.GloballyBlockedChannels;
+            CollisionResolver = collisionResolver;
+            LocalCoefficient = localCoefficient;
+            GlobalCoefficient = globalCoefficient;
+            coSite = model.GeneralInformation.CoSiteSeperation;
+            coCell = model.GeneralInformation.DefaultCoCellSeperation;
         }
+
         #region IMoveFunction<ICell[]> Members
 
         public ICell[] MoveTowards(ICell[] from, ICell[] to)
@@ -25,7 +37,7 @@ namespace PSOFAPConsole.FAPPSO
             for (int i = 0; i < to.Length; i++)
             {
                 FrequencyHandler newFrequencies = MoveTowardsChannelArray(from[i].FrequencyHandler, to[i].FrequencyHandler);
-
+                CollisionResolver.ResolveCollisions(newFrequencies);
                 newFrequencies.MigrateFrequenciesToParent();
             }
             return from;
@@ -46,7 +58,7 @@ namespace PSOFAPConsole.FAPPSO
             int newChannel = 0;
             while (true)
             {
-                newChannel = Math.Abs((int)(((0.4 * random.Next() * from) + (0.6 * random.Next() * to)) % Spectrum[1]));
+                newChannel = Math.Abs((int)(((LocalCoefficient * random.Next() * from) + (GlobalCoefficient * random.Next() * to)) % Spectrum[1]));
                 if (NotInGBC(newChannel))
                     break;
             }

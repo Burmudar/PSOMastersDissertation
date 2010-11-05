@@ -1,15 +1,20 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.5.13)  10 AUG 2010 13:07
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009) (format=pdflatex 2010.8.21)  4 NOV 2010 14:23
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **dissertation.tex
 (./dissertation.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/book.cls
+yphenation, german-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, ku
+rmanji, latin, latvian, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, po
+lish, portuguese, romanian, russian, sanskrit, serbian, slovak, slovenian, span
+ish, swedish, turkish, ukenglish, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/bk11.clo
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/bk11.clo
 File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -27,19 +32,19 @@ File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 ) (./ujthesis.sty
 Package: ujthesis 
 
-(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \spaceLength=\skip43
 )
-(/usr/share/texmf-texlive/tex/latex/tools/enumerate.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks14
 )
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks15
 \symAMSa=\mathgroup4
@@ -47,24 +52,24 @@ Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen103
 ))
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
@@ -108,32 +113,32 @@ LaTeX Info: Redefining \] on input line 2667.
 LaTeX Info: Redefining \cite on input line 285.
 LaTeX Info: Redefining \nocite on input line 356.
 Package: cite 2009/08/29  v 5.2
-)
-(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+) (/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks21
 )
-(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2009/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/etc/texmf/tex/latex/config/graphics.cfg
+(/usr/local/texlive/2009/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2009/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 \Gread@gobject=\count100
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
-) (./tocbibind.sty
+)
+(./tocbibind.sty
 Package: tocbibind 2003/03/13 v1.5g extra ToC listings
 
 
@@ -143,7 +148,7 @@ Package tocbibind Note: The document has chapter divisions.
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
 ) (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
-(./chpt5.aux) (./chpt6.aux))
+(./chpt5.aux) (./chpt6.aux) (./chpt7.aux))
 \openout1 = `dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -159,7 +164,7 @@ LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2009/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count101
 \scratchdimen=\dimen114
@@ -173,26 +178,27 @@ LaTeX Font Info:    ... okay on input line 17.
 \everyMPtoPDFconversion=\toks23
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+{/usr/local/texlive/2009/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2
 
-]
-(./dissertation.toc
+] (./dissertation.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2009/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [3] [4])
+) [3] [4]
+[5])
 \tf@toc=\write3
 \openout3 = `dissertation.toc'.
 
- [5] [6
+ [6] [7
 
-] [7]
-[8]
+] [8]
 \openout2 = `chpt1.aux'.
 
  (./chpt1.tex
@@ -213,20 +219,20 @@ Chapter 2.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
- (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 30.
+ (/usr/local/texlive/2009/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
 
-Overfull \hbox (1.73949pt too wide) in paragraph at lines 38--41
+Overfull \hbox (1.73949pt too wide) in paragraph at lines 39--42
 \OT1/cmr/m/n/10.95 Ra-dio Sys-tem (GPRS) and \OT1/cmr/m/it/10.95 En-chanced Dat
 a rate for GSM Evo-lu-tion \OT1/cmr/m/n/10.95 (EDGE)
  []
 
 [13] [14]
-Overfull \hbox (4.12582pt too wide) in paragraph at lines 67--69
+Overfull \hbox (4.12582pt too wide) in paragraph at lines 68--70
 []\OT1/cmr/m/n/10.95 --- Usu-ally in-serted into a mo-
  []
 
@@ -253,19 +259,19 @@ Missing character: There is no ™ in font cmr10!
 ]
 Chapter 3.
 [23] [24] [25] [26]
-Overfull \hbox (1.13452pt too wide) in paragraph at lines 58--59
+Overfull \hbox (1.13452pt too wide) in paragraph at lines 59--60
 []\OT1/cmr/m/n/10.95 In this sec-tion we de-scribed what in-ter-fenece is and w
 hat the con-siquences
  []
 
 
-Overfull \hbox (0.13086pt too wide) in paragraph at lines 66--67
+Overfull \hbox (0.13086pt too wide) in paragraph at lines 67--68
 []\OT1/cmr/m/n/10.95 In Satelite com-mu-ni-ca-tion, a sig-nal is trans-mit-ted 
 to one or more satelites
  []
 
 [27]
-Overfull \hbox (11.50961pt too wide) in paragraph at lines 81--82
+Overfull \hbox (11.50961pt too wide) in paragraph at lines 82--83
 \OT1/cmr/m/n/10.95 port for large fixed line netwroks, en-ter-prise net-works, 
 cam-puses and metropoli-
  []
@@ -273,13 +279,19 @@ cam-puses and metropoli-
 [28] [29] [30] [31]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [32] [33]
-Overfull \hbox (2.65535pt too wide) in paragraph at lines 153--154
+ [32]
+Underfull \vbox (badness 2529) has occurred while \output is active []
+
+ [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+Overfull \hbox (2.65535pt too wide) in paragraph at lines 154--155
 []\OT1/cmr/m/n/10.95 The Fre-quency As-sign-ment Prob-lem can be rep-re-sented 
 as a graph colour-
  []
 
-[34] [35] [36]
+[35] [36]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
  [37]) [38]
@@ -352,28 +364,15 @@ Overfull \hbox (1.6546pt too wide) in paragraph at lines 99--100
  []
 
 [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79]
+<./pictures/captainplaceholder.png, id=272, 746.79pt x 1056.94875pt>
+File: ./pictures/captainplaceholder.png Graphic file (type png)
 
-LaTeX Warning: File `./pictures/captianplaceholder.png' not found on input line
- 289.
-
-
-! Package pdftex.def Error: File `./pictures/captianplaceholder.png' not found.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.289 ....0in]{./pictures/captianplaceholder.png}}
-                                                  
-? 
-[80]
+<use ./pictures/captainplaceholder.png> [80]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]
-[82]
+ [81 <./pictures/captainplaceholder.png>] [82]
 
-LaTeX Warning: Reference `inertia' on page 83 undefined on input line 323.
+LaTeX Warning: Reference `inertia' on page 83 undefined on input line 324.
 
 [83]) [84] [85
 
@@ -402,84 +401,107 @@ m/it/10.95 :\OT1/cmr/m/n/10.95 584428\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95
 /m/n/10.95 g$ 
  []
 
-[89] [90] <./Graphs/DeJongF1.pdf, id=308, 578.16pt x 433.62pt>
+[89] [90] <./Graphs/DeJongF1.pdf, id=310, 578.16pt x 433.62pt>
 File: ./Graphs/DeJongF1.pdf Graphic file (type pdf)
 
 <use ./Graphs/DeJongF1.pdf> [91]
-<./Graphs/Shekel.pdf, id=313, 578.16pt x 433.62pt>
+<./Graphs/Shekel.pdf, id=315, 578.16pt x 433.62pt>
 File: ./Graphs/Shekel.pdf Graphic file (type pdf)
  <use ./Graphs/Shekel.pdf>
-<./Graphs/Rastrigin.pdf, id=314, 578.16pt x 433.62pt>
+<./Graphs/Rastrigin.pdf, id=316, 578.16pt x 433.62pt>
 File: ./Graphs/Rastrigin.pdf Graphic file (type pdf)
 
 <use ./Graphs/Rastrigin.pdf> [92 <./Graphs/DeJongF1.pdf> <./Graphs/Shekel.pdf>]
-<./Graphs/Schwefel.pdf, id=345, 578.16pt x 433.62pt>
+<./Graphs/Schwefel.pdf, id=347, 578.16pt x 433.62pt>
 File: ./Graphs/Schwefel.pdf Graphic file (type pdf)
 
 <use ./Graphs/Schwefel.pdf>
-<./Graphs/Griewank_-50_+50.pdf, id=346, 578.16pt x 433.62pt>
+<./Graphs/Griewank_-50_+50.pdf, id=348, 578.16pt x 433.62pt>
 File: ./Graphs/Griewank_-50_+50.pdf Graphic file (type pdf)
 
 <use ./Graphs/Griewank_-50_+50.pdf> [93 <./Graphs/Rastrigin.pdf> <./Graphs/Schw
-efel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=378, 578.16pt x 433.62pt>
+efel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=380, 578.16pt x 433.62pt>
 File: ./Graphs/Salomon_-10_+10.pdf Graphic file (type pdf)
 
 <use ./Graphs/Salomon_-10_+10.pdf>
-<./Graphs/Ackley.pdf, id=379, 578.16pt x 433.62pt>
+<./Graphs/Ackley.pdf, id=381, 578.16pt x 433.62pt>
 File: ./Graphs/Ackley.pdf Graphic file (type pdf)
  <use ./Graphs/Ackley.pdf>
 [94 <./Graphs/Griewank_-50_+50.pdf> <./Graphs/Salomon_-10_+10.pdf>]
-<./Graphs/Camel.pdf, id=412, 578.16pt x 433.62pt>
+<./Graphs/Camel.pdf, id=414, 578.16pt x 433.62pt>
 File: ./Graphs/Camel.pdf Graphic file (type pdf)
  <use ./Graphs/Camel.pdf>
-<./Graphs/Shubert.pdf, id=413, 578.16pt x 433.62pt>
+<./Graphs/Shubert.pdf, id=415, 578.16pt x 433.62pt>
 File: ./Graphs/Shubert.pdf Graphic file (type pdf)
  <use ./Graphs/Shubert.pdf>
 [95 <./Graphs/Ackley.pdf> <./Graphs/Camel.pdf>]
-<./Graphs/Himmelblau.pdf, id=446, 578.16pt x 433.62pt>
+<./Graphs/Himmelblau.pdf, id=448, 578.16pt x 433.62pt>
 File: ./Graphs/Himmelblau.pdf Graphic file (type pdf)
 
 <use ./Graphs/Himmelblau.pdf>
-<./Graphs/Rosenbrock.pdf, id=447, 578.16pt x 433.62pt>
+<./Graphs/Rosenbrock.pdf, id=449, 578.16pt x 433.62pt>
 File: ./Graphs/Rosenbrock.pdf Graphic file (type pdf)
 
 <use ./Graphs/Rosenbrock.pdf> [96 <./Graphs/Shubert.pdf> <./Graphs/Himmelblau.p
-df>] <./Graphs/Dropwave.pdf, id=481, 578.16pt x 433.62pt>
+df>] <./Graphs/Dropwave.pdf, id=483, 578.16pt x 433.62pt>
 File: ./Graphs/Dropwave.pdf Graphic file (type pdf)
 
 <use ./Graphs/Dropwave.pdf>
-<./Graphs/Easom_-100_+100.pdf, id=482, 578.16pt x 433.62pt>
+<./Graphs/Easom_-100_+100.pdf, id=484, 578.16pt x 433.62pt>
 File: ./Graphs/Easom_-100_+100.pdf Graphic file (type pdf)
 
 <use ./Graphs/Easom_-100_+100.pdf> [97 <./Graphs/Rosenbrock.pdf> <./Graphs/Drop
-wave.pdf>] <./Graphs/Branin.pdf, id=518, 578.16pt x 433.62pt>
+wave.pdf>] <./Graphs/Branin.pdf, id=520, 578.16pt x 433.62pt>
 File: ./Graphs/Branin.pdf Graphic file (type pdf)
 
 <use ./Graphs/Branin.pdf>
-<./Graphs/Michalewicz.pdf, id=519, 578.16pt x 433.62pt>
+<./Graphs/Michalewicz.pdf, id=521, 578.16pt x 433.62pt>
 File: ./Graphs/Michalewicz.pdf Graphic file (type pdf)
 
 <use ./Graphs/Michalewicz.pdf> [98 <./Graphs/Easom_-100_+100.pdf> <./Graphs/Bra
-nin.pdf>] <./Graphs/Goldstein.pdf, id=555, 578.16pt x 433.62pt>
+nin.pdf>] <./Graphs/Goldstein.pdf, id=557, 578.16pt x 433.62pt>
 File: ./Graphs/Goldstein.pdf Graphic file (type pdf)
 
 <use ./Graphs/Goldstein.pdf>) [99 <./Graphs/Michalewicz.pdf> <./Graphs/Goldstei
-n.pdf>] [100] (./dissertation.bbl
+n.pdf>] [100]
+\openout2 = `chpt7.aux'.
+
+ (./chpt7.tex
+Chapter 7.
+
+LaTeX Warning: Reference `' on page 101 undefined on input line 5.
+
+[101
+
+
+
+] [102] <./pictures/fapPlanDiagram.pdf, id=603, 338.86601pt x 207.174pt>
+File: ./pictures/fapPlanDiagram.pdf Graphic file (type pdf)
+
+<use ./pictures/fapPlanDiagram.pdf> [103 <./pictures/fapPlanDiagram.pdf>]
+[104] [105]
+Overfull \hbox (0.5567pt too wide) in paragraph at lines 94--96
+[]\OT1/cmr/m/n/10.95 Vector math has stan-dard ba-sic op-er-a-tions de-fined fo
+r adding,subtracting
+ []
+
+[106] [107] [108] [109] [110] [111] [112]) [113] (./dissertation.bbl [114
+
+
+]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no º in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ³ in font cmr10!
- [101
 
-
-]
+[115]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¤ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¶ in font cmr10!
- [102] [103]
+ [116] [117]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ‰ in font cmr10!
 
@@ -488,56 +510,54 @@ Underfull \hbox (badness 4060) in paragraph at lines 180--187
 Fran-cisco
  []
 
-[104]
+[118]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no © in font cmr10!
- [105]
+ [119]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ¡ in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ­ in font cmr10!
- [106] [107] [108] [109] [110] [111] [112] [113]) [114]
+ [120] [121] [122] [123] [124] [125] [126] [127]) [128]
 (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
-(./chpt5.aux) (./chpt6.aux))
+(./chpt5.aux) (./chpt6.aux) (./chpt7.aux))
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 2449 strings out of 495061
- 30538 string characters out of 1182621
- 82777 words of memory out of 3000000
- 5545 multiletter control sequences out of 15000+50000
- 14420 words of font info for 54 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
+ 2469 strings out of 493848
+ 31457 string characters out of 3149207
+ 83079 words of memory out of 3000000
+ 5658 multiletter control sequences out of 15000+200000
+ 14252 words of font info for 53 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
  27i,19n,28p,1352b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmsl10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symb
-ols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb>
-Output written on dissertation.pdf (114 pages, 15107696 bytes).
+</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
+b></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+></usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
+/usr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loca
+l/texlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
+exlive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texl
+ive/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texli
+ve/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
+2009/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
+09/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/200
+9/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2009/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
+009/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on dissertation.pdf (128 pages, 15172004 bytes).
 PDF statistics:
- 708 PDF objects out of 1000 (max. 8388607)
+ 762 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -37,17 +37,29 @@ namespace PSOFAPConsole.FAP
 
         public BasicCell(ICell cell)
         {
+            BasicCell basicCell = cell as BasicCell;
             CellID = cell.CellID;
             SiteName = cell.SiteName;
             Sector = cell.Sector;
             Traffic = cell.Traffic;
             Location = cell.Location;
-            if(cell.LocallyBlocked != null)
+            CopyLocallyBlockedIfNotNull(cell);
+            CopyFrequenciesIfNotNull(basicCell);
+            InitializeFrequencyHandlerIfNotNullFromCell(basicCell);
+            CoSiteSeperation = cell.CoSiteSeperation;
+            interference = cell.Interference;
+        }
+
+        private void InitializeFrequencyHandlerIfNotNullFromCell(BasicCell basicCell)
+        {
+            if (basicCell.frequencyHandler != null)
             {
-                LocallyBlocked = new int[cell.LocallyBlocked.Length];
-                cell.LocallyBlocked.CopyTo(this.LocallyBlocked, 0);
+                frequencyHandler = CreateFrequencyHandler();
             }
-            BasicCell basicCell = cell as BasicCell;
+        }
+
+        private void CopyFrequenciesIfNotNull(BasicCell basicCell)
+        {
             if (basicCell.Frequencies != null)
             {
                 basicCell.frequencies.CopyTo(frequencies, 0);
@@ -56,12 +68,15 @@ namespace PSOFAPConsole.FAP
                     frequencies[i] = (TRX)basicCell.frequencies[i].Clone();
                 }
             }
-            if (basicCell.frequencyHandler != null)
+        }
+
+        private void CopyLocallyBlockedIfNotNull(ICell cell)
+        {
+            if (cell.LocallyBlocked != null)
             {
-                frequencyHandler = new FrequencyHandler(this);
+                LocallyBlocked = new int[cell.LocallyBlocked.Length];
+                cell.LocallyBlocked.CopyTo(this.LocallyBlocked, 0);
             }
-            CoSiteSeperation = cell.CoSiteSeperation;
-            interference = cell.Interference;
         }
 
         #region ICell Members
@@ -114,10 +129,16 @@ namespace PSOFAPConsole.FAP
                 {
                     frequencies = new TRX[(int)value];
                     InitializeFrequenciesTRXObjects(frequencies);
-                    this.FrequencyHandler = new FrequencyHandler(this);
+                    frequencyHandler = CreateFrequencyHandler();
                 }
                 traffic = value;
             }
+        }
+
+        protected FrequencyHandler CreateFrequencyHandler()
+        {
+            return new FrequencyHandlerWithTabu(this);
+            //return new FrequencyHandler(this);
         }
 
         private void InitializeFrequenciesTRXObjects(TRX[] frequencies)

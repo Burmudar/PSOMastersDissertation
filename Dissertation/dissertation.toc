@@ -31,12 +31,12 @@
 \contentsline {section}{\numberline {3.5}Frequency Assignment Problem types}{32}
 \contentsline {subsection}{\numberline {3.5.1}Minimum Order FAP}{32}
 \contentsline {subsection}{\numberline {3.5.2}Minimum Span FAP}{33}
-\contentsline {subsection}{\numberline {3.5.3}Minimum Interference FAP}{33}
-\contentsline {section}{\numberline {3.6}Fixed Spectrum MI-FAP Mathematical Formulation}{34}
+\contentsline {subsection}{\numberline {3.5.3}Minimum Interference FAP}{34}
+\contentsline {section}{\numberline {3.6}Fixed Spectrum MI-FAP Mathematical Formulation}{35}
 \contentsline {section}{\numberline {3.7}FAP Benchmarks}{36}
-\contentsline {subsection}{\numberline {3.7.1}Philedelphia Benchmark}{36}
+\contentsline {subsection}{\numberline {3.7.1}Philedelphia Benchmark}{37}
 \contentsline {subsection}{\numberline {3.7.2}CELAR}{37}
-\contentsline {subsection}{\numberline {3.7.3}COST 256}{37}
+\contentsline {subsection}{\numberline {3.7.3}COST 256}{38}
 \contentsline {section}{\numberline {3.8}Summary}{38}
 \contentsline {chapter}{\numberline {4}Heuristics Algorithms}{39}
 \contentsline {section}{\numberline {4.1}Introduction}{39}
@@ -133,4 +133,15 @@
 \contentsline {subsubsection}{Michalewicz Function}{99}
 \contentsline {subsubsection}{Goldstein Function}{99}
 \contentsline {section}{\numberline {6.3}Results}{100}
-\contentsline {chapter}{Bibliography}{101}
+\contentsline {chapter}{\numberline {7}Applying the PSO to the FAP}{101}
+\contentsline {section}{\numberline {7.1}Introduction}{101}
+\contentsline {section}{\numberline {7.2}A Position in the Frequency Planning domain}{102}
+\contentsline {section}{\numberline {7.3}The Fitness Function}{104}
+\contentsline {section}{\numberline {7.4}Velocity Function for Frequency Planning}{105}
+\contentsline {subsection}{\numberline {7.4.1}Movement in the Frequency Planning domain}{106}
+\contentsline {subsection}{\numberline {7.4.2}Keeping frequencies bounded}{107}
+\contentsline {subsection}{\numberline {7.4.3}Using indicies instead of frequencies}{108}
+\contentsline {section}{\numberline {7.5}Building a Global Best}{109}
+\contentsline {section}{\numberline {7.6}Keeping History}{111}
+\contentsline {section}{\numberline {7.7}Summary}{113}
+\contentsline {chapter}{Bibliography}{115}

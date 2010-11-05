@@ -18,7 +18,7 @@ namespace PSOFAPConsole
             {
                 FAPModelFactory modelFactory = new FAPModelFactory();
                 FAPPSOFactory factory = new FAPPSOFactory(modelFactory.CreateSiemens1Model(),500);
-                PSOAlgorithm<ICell[]> algo1 = factory.CreateIndexBasedFAPPSOWithGlobalBestTRXBuilder(1.52, 3.41);
+                PSOAlgorithm<ICell[]> algo1 = factory.CreateIndexBasedFAPPSOWithGlobalBestCellBuilder(3.52, 1.41);
                 algo1.Start();
             });           
             t1.Start();

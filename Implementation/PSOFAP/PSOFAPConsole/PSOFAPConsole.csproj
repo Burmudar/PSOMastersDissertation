@@ -33,7 +33,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="FAPPSO\FAPIndexCostFunction.cs" />
     <Compile Include="FAPPSO\FAPPSOFactory.cs" />
+    <Compile Include="FAP\AbstractCollisionResolver.cs" />
     <Compile Include="FAPPSO\GBestFactory.cs" />
     <Compile Include="FAPPSO\Functions\PerTRXChannelIndexFunction.cs" />
     <Compile Include="FAPPSO\GBestBuilder.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="FAP\FAPModel.cs" />
     <Compile Include="FAP\FAPModelFactory.cs" />
     <Compile Include="FAP\FAPObjectiveFunction.cs" />
+    <Compile Include="FAP\FAPSeperator.cs" />
     <Compile Include="FAP\FAPTestLoader.cs" />
     <Compile Include="FAP\FAPTestRunner.cs" />
     <Compile Include="FAP\Format.cs" />
@@ -93,8 +95,9 @@
     <Compile Include="FAPPSO\Functions\ParticlePerTrxFunction.cs" />
     <Compile Include="FAPPSO\Functions\PerTRXFunction.cs" />
     <Compile Include="FAP\GBCViolationChecker.cs" />
+    <Compile Include="FAP\RandomCollisionResolver.cs" />
     <Compile Include="FAP\TRX.cs" />
-    <Compile Include="FAP\TRXCollision.cs" />
+    <Compile Include="FAP\TRXTabu.cs" />
     <Compile Include="Parser\Lexer\Lexer.cs" />
     <Compile Include="Parser\Lexer\Scanner.cs" />
     <Compile Include="Parser\Lexer\Token.cs" />

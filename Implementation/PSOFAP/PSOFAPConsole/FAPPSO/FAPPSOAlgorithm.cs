@@ -29,13 +29,6 @@ namespace PSOFAPConsole.FAPPSO
         public GlobalBestSelector Selector { get; set; }
         private ICellIntegrityChecker cellIntegrityChecker;
 
-        private Boolean fakeMode = false;
-        
-
-        private int IdleCount = 0;
-        private int FakeCount = 0;
-        private double oldGlobalFitness = 0;
-
         public FAPPSOAlgorithm(int population,FitnessFuncCellArray evalFunction, ParticleMoveFunction moveFunction, PositionGenCellArray positionGenerator, ICellIntegrityChecker checker,GlobalBestSelector selector)
         {
             Particles = new List<ParticleCellArray>();

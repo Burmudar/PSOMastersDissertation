@@ -16,13 +16,19 @@ namespace PSOFAPConsole.FAPPSO
         private int lowerBound;
         private double localCoefficient;
         private double globalCoefficient;
+        private AbstractCollisionResolver collisionResolver;
+        private int coSite;
+        private int coCell;
 
-        public ParticlePerTrxFunction(int lowerBound, int upperBound, int[] gbc, double localCoef, double globalCoef)
+        public ParticlePerTrxFunction(FAPModel model,int lowerBound, int upperBound, double localCoef, double globalCoef,AbstractCollisionResolver collisionResolver)
         {
             this.upperBound = upperBound;
             this.lowerBound = lowerBound;
             localCoefficient = localCoef;
             globalCoefficient = globalCoef;
+            this.collisionResolver = collisionResolver;
+            coSite = model.GeneralInformation.CoSiteSeperation;
+            coCell = model.GeneralInformation.DefaultCoCellSeperation;
 
         }
 
@@ -53,8 +59,21 @@ namespace PSOFAPConsole.FAPPSO
         {
             Parallel.ForEach(iCell, cell =>
                 {
+                    collisionResolver.ResolveCollisions(cell.FrequencyHandler);
+                    AdhereToSeperation(cell.FrequencyHandler);
                     cell.FrequencyHandler.MigrateFrequenciesToParent();
                 });
+        }
+
+        private void AdhereToSeperation(FrequencyHandler frequencyHandler)
+        {
+            for (int i = 0; i < frequencyHandler.Length; i++)
+            {
+                if (ViolatesSeperation(i, frequencyHandler, coCell))
+                {
+                    frequencyHandler[i] = BoundValue(frequencyHandler[i] - coCell);
+                }
+            }
         }
 
         private void EnsureUnique(ICell[] iCells)
@@ -83,6 +102,24 @@ namespace PSOFAPConsole.FAPPSO
             for (int j = 0; j < handler.Length; j++)
             {
                 if (handler[i] == handler[j] && i != j)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private bool ViolatesSeperation(int i, FrequencyHandler handler,int seperation)
+        {
+            for (int j = 0; j < handler.Length; j++)
+            {
+                if (i == j)
+                    continue;
+                if (handler[i] == handler[j])
+                {
+                    return true;
+                }
+                if (Math.Abs(handler[j] - handler[i]) < seperation)
                 {
                     return true;
                 }
@@ -149,11 +186,11 @@ namespace PSOFAPConsole.FAPPSO
                 return BoundValue(Math.Abs(value));
             if(value > upperBound)
             {
-                return value % upperBound;
+                return lowerBound + (value % upperBound);
             }
             else if (value < lowerBound)
             {
-                return value % lowerBound;
+                return BoundValue(value + lowerBound) ;
             }
             return value;
         }

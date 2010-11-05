@@ -12,10 +12,21 @@ namespace PSOFAPConsole.FAPPSO.Functions
 {
     public class PerTRXChannelIndexFunction : IMoveFunction<Particle<ICell[]>>
     {
+        public AbstractCollisionResolver CollisionResolver { get; set; }
+        public double LocalCoefficient { get; set; }
+        public double GlobalCoefficient { get; set; }
         public int[] Channels { get; set; }
-        public PerTRXChannelIndexFunction(FAPModel model)
+        private int coSite;
+        private int coCell;
+
+        public PerTRXChannelIndexFunction(FAPModel model,double localCoefficient, double globalCoefficient,AbstractCollisionResolver collisionResolver)
         {
+            CollisionResolver = collisionResolver;
             Channels = model.Channels;
+            LocalCoefficient = localCoefficient;
+            GlobalCoefficient = globalCoefficient;
+            coSite = model.GeneralInformation.CoSiteSeperation;
+            coCell = model.GeneralInformation.DefaultCoCellSeperation;
         }
 
         public Particle<ICell[]> MoveTowards(Particle<ICell[]> from, Particle<ICell[]> to)
@@ -42,8 +53,45 @@ namespace PSOFAPConsole.FAPPSO.Functions
         private void MigrateFrequencies(ICell[] iCell)
         {
             Parallel.ForEach(iCell, cell => {
+                CollisionResolver.ResolveCollisions(cell.FrequencyHandler);
+                AdhereToSeperation(cell.FrequencyHandler);
                 cell.FrequencyHandler.MigrateFrequenciesToParent();
             });
+        }
+
+        private void AdhereToSeperation(FrequencyHandler frequencyHandler)
+        {
+            for (int i = 0; i < frequencyHandler.Length; i++)
+            {
+                if (ViolatesSeperation(i, frequencyHandler, coCell))
+                {
+                    if (frequencyHandler[i] - coCell < 0)
+                    {
+                        frequencyHandler[i] = Channels.Length - coCell;
+                    }
+                    else
+                    {
+                        frequencyHandler[i] = frequencyHandler[i] - coCell;
+                    }
+                }
+            }
+        }
+
+        private bool ViolatesSeperation(int i, FrequencyHandler handler, int seperation)
+        {
+            for (int j = 0; j < handler.Length; j++)
+            {
+                if (handler[i] == handler[j] && i != j)
+                {
+                    return true;
+                }
+                //handler[j] and [i] contain channel indexes
+                if (Math.Abs(Channels[handler[j]] - Channels[handler[i]]) < seperation)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         private void ApplyVelocity(FrequencyHandler indexVelocity, FrequencyHandler fromIndex)
@@ -87,8 +135,8 @@ namespace PSOFAPConsole.FAPPSO.Functions
             {
                 double r1 = random.NextDouble();
                 double r2 = random.NextDouble();
-                double a1 = (1.5 * r1 * (pbest[i] - from[i]));
-                double a2 = (3.0 * r2 * (pbest[i] - to[i]));
+                double a1 = (LocalCoefficient * r1 * (pbest[i] - from[i]));
+                double a2 = (GlobalCoefficient * r2 * (pbest[i] - to[i]));
                 from[i] = (int)(a1 + a2);
             }
             return from;

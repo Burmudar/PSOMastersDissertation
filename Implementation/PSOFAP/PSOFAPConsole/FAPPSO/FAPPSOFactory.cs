@@ -30,8 +30,8 @@ namespace PSOFAPConsole.FAPPSO
         {
             PositionGenCellArray generator = new FrequencyPositionGenerator(model);
             FitnessFuncCellArray evalFunction = new FAPCostFunction(model);
-            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(model.GeneralInformation.Spectrum[0], model.GeneralInformation.Spectrum[1], 
-                model.GeneralInformation.GloballyBlockedChannels, localCoefficient, globalCoefficient);
+            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(model, model.GeneralInformation.Spectrum[0], model.GeneralInformation.Spectrum[1],
+                 localCoefficient, globalCoefficient, CreateCollisionResolver());
             ICellIntegrityChecker checker = new GBCViolationChecker(model.GeneralInformation.GloballyBlockedChannels);
             return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker,GBestFactory.GetStandardSelector());
         }
@@ -40,7 +40,7 @@ namespace PSOFAPConsole.FAPPSO
         {
             PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
             FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(0, model.Channels.Length - 1, model.GeneralInformation.GloballyBlockedChannels, 0.41, 0.52);
+            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(model, 0, model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver());
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
             return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector());
         }
@@ -49,7 +49,7 @@ namespace PSOFAPConsole.FAPPSO
         {
             PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
             FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(model);
+            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(model, localCoefficient,globalCoefficient,CreateCollisionResolver());
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
             return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector());
         }
@@ -58,7 +58,7 @@ namespace PSOFAPConsole.FAPPSO
         {
             PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
             FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(0, model.Channels.Length - 1, model.GeneralInformation.GloballyBlockedChannels, 0.41, 0.52);
+            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(model,0, model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver());
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
             return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
         }
@@ -67,7 +67,7 @@ namespace PSOFAPConsole.FAPPSO
         {
             PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
             FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(model);
+            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(model,localCoefficient,globalCoefficient, CreateCollisionResolver());
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
             return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
         }
@@ -76,7 +76,7 @@ namespace PSOFAPConsole.FAPPSO
         {
             PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
             FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(0, model.Channels.Length - 1, model.GeneralInformation.GloballyBlockedChannels, 0.41, 0.52);
+            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(model, 0, model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver());
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
             return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
         }
@@ -85,9 +85,14 @@ namespace PSOFAPConsole.FAPPSO
         {
             PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
             FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(model);
+            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(model, localCoefficient,globalCoefficient,CreateCollisionResolver());
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
             return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
+        }
+
+        protected AbstractCollisionResolver CreateCollisionResolver()
+        {
+            return new RandomCollisionResolver(model.Channels);
         }
 
     }
