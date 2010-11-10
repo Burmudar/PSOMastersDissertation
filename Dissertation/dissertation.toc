@@ -140,7 +140,7 @@
 \contentsline {section}{\numberline {7.4}Velocity Function for Frequency Planning}{105}
 \contentsline {subsection}{\numberline {7.4.1}Movement in the Frequency Planning domain}{106}
 \contentsline {subsection}{\numberline {7.4.2}Keeping frequencies bounded}{107}
-\contentsline {subsection}{\numberline {7.4.3}Using indicies instead of frequencies}{108}
+\contentsline {subsection}{\numberline {7.4.3}Using indices instead of frequencies}{108}
 \contentsline {section}{\numberline {7.5}Building a Global Best}{109}
 \contentsline {section}{\numberline {7.6}Keeping History}{111}
 \contentsline {section}{\numberline {7.7}Summary}{113}
