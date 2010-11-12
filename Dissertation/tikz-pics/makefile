@@ -1,3 +1,3 @@
 all:
-	pdflatex GSMArchitecture.tex
-	evince GSMArchitecture.pdf
+	pdflatex GSMCell.tex
+	evince GSMCell.pdf

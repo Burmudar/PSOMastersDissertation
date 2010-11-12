@@ -58,16 +58,18 @@ UMTS is a large improvement of the GSM in two areas namely Data Transmission ban
 
 In this section we gave a brief overview of the history of the GSM Network specification. In the next section we will present an explanation of the topology of GSM network as well as look at the 
 underlying problems present in a GSM networks.
-\begin{figure}[ht]
-	\centering
-	\setlength \fboxsep{0pt}
-	\setlength \fboxrule{0.5pt}
-	\caption{GSM Architecture}
-	\label{fig:GSMArchitecture}
+
+\begin{figure}[hptb]
+	\begin{centering}
+		\input{tikz-pics/GSMArchitecture.tex}
+		\caption{GSM Architecture}
+		\label{fig:GSMArchitecture}
+	\end{centering}
 \end{figure}
+
 \section{Topology of a GSM Network}
 GSM networks consists of a variety of different subsystems to realise the goal of establishing a radio communication link between two parties. The hierarchy of systems and their respective connections to
-each other is illustrated in figure 1. We will now briefly explain each subsystem.
+each other is illustrated in figure \ref{fig:GSMArchitecture}. We will now briefly explain each subsystem.
 \subsubsection{Mobile Station (MS)}
 A Mobile station (MS) as it is defined in the GSM spec refers to any mobile device that is capable of of making and receiving calls on a GSM network.  The MS is the main gateway 
 for a user to gain access to the GSM network. The MS has two features which play an important role throughout the GSM Network, namely:
@@ -82,7 +84,15 @@ The MS has the capability to change the transmission power is uses from its base
 
 According to the GSM Phase 2+ specification this system is viewed by the \emph{Mobile Switching Centre} (MSC) through an Abis radio interface as the system responsible for communicating with Mobile Stations in a particular location area. The BSS usually consists of one \emph{Base Station Controller} (BSC) with one or more \emph{Base Transceiver Stations} (BTS) which it controls. The communication link between the MSC and BSC is the called the A-interface and the communication link between the BSC and BTS is called the Abis interface. The definition of these communication interfaces is beyond the scope of this disseration, the interested reader is directed to the book \emph{GSM System Engineering} by Asha Mehrotra. A BTS has similar equipment to that of a Mobile Station. Both have transceivers, antennas and the necessary functions to perform radio communication. 
 
-In a GSM network the Service Area (SA) is subdivided into Location Areas(LA's) which are then futher divided into smaller radio zones called cells \cite{GSMSecurInTeleNetwork}. A cell is served by only one BTS and is usually regarded to be in the center of a cell. Even though cells are modelled as being hexagons (See figure 3) the actual coverage area of a cell has no predefined regular shape. Futhermore a cell is divided into 1 to 3 service sectors and each sector is allocated an antenna/transceiver \cite{GSMSysEngin}. Depending on how many sectors are at a cell, the operating angle of the antennae needs to be adjusted accordingly to ensure 360 degree service. If there is only one sector an omni-directional antenna is used, otherwise the antennae operating angle are adjusted to $\frac{360\,^{\circ}}{n}$ where ${n}$ is the amount of antennae \cite{Eisenblatter}.
+In a GSM network the Service Area (SA) is subdivided into Location Areas(LA's) which are then futher divided into smaller radio zones called cells \cite{GSMSecurInTeleNetwork}. A cell is served by only one BTS and is usually regarded to be in the center of a cell as can be seen in figure \ref{fig:GSMCell}. Even though cells are modelled as being hexagons (see figure \ref{fig:GSMCell}) the actual coverage area of a cell has no predefined regular shape. Futhermore a cell is divided into 1 to 3 service sectors and each sector is allocated an antenna/transceiver \cite{GSMSysEngin}. Depending on how many sectors are at a cell, the operating angle of the antennae needs to be adjusted accordingly to ensure 360 degree service. If there is only one sector an omni-directional antenna is used, otherwise the antennae operating angle are adjusted to $\frac{360\,^{\circ}}{n}$ where ${n}$ is the amount of antennae \cite{Eisenblatter}.
+\begin{figure}[h]
+	\begin{centering}
+		\input{tikz-pics/GSMCell.tex}
+		\caption{Cells with BTS's}
+		\label{fig:GSMCell}
+	\end{centering}
+\end{figure}
+
 
 Each sector operates one or more elementary transceivers called TRX’s. The amount of TRX’s per sector is determined by the expected peak traffic demand that the cell must be able to handle. Each TRX can handle 7 to 8 communication links or calls in parallel except the first TRX, which handles fewer calls than normal due to it being responsible for transmitting cell organisation and protocol information \cite{Eisenblatter}. TRX’s are able to handle 7-8 calls in parallel due to the use of \emph{Frequency Division Multiplexing} (FDM) and \emph{Time Division Multiplexing} (TDM) schemes. TRX’s are assigned channels which enable them to provide conversion between digital traffic data on the network side and the radio communication between Mobile Stations and 
 the GSM network. \cite{ACOvsEA,FAPOrientationModel}
