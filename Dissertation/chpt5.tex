@@ -37,7 +37,7 @@ Ant Colony Optimization is a class of algorithms incorporating different aspects
 	\setlength \fboxsep{0pt}
 	\setlength \fboxrule{0.5pt}
 	\fbox{\includegraphics[width=4.0in,height=2.0in]{./pictures/antBridgeExperiment.png}}
-	\caption{The Ant bridge experiment}
+	\caption{The Ant bridge experiment \cite{AntsAndStigmergy}}
 	\label{fig:antBridgeExperiment}
 \end{figure}
 
@@ -138,6 +138,13 @@ In the ant system developed by the authors a mechanism is added that monitors a 
 
 Therefore, the algorithm is forced to re-search the search space to create new solutions as it cannot rely on previous historic information provided by the pheromone trails. This mechanism forces the algoritm to diversify \cite{AntQAP}.
 \subsection{ACO Pseudo Code and Process Flow}
+\begin{figure}[htbp!]
+	\begin{center}
+	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/AntColonyOptimization.pdf}}
+	\caption{Flow Chart for ACO Algorithm}
+	\label{fig:ACOAlgorithmFlowChart}
+	\end{center}
+\end{figure}
 \section{Artificial Bee Colony Algorithm}
 \label{sec:BEE}
 \subsection{Overview}
@@ -229,6 +236,13 @@ In research done by G\'{o}mez-Iglesias et. al \cite{ABCFusionGrid} an extension 
 By using two different scout bees a good balance is achieved when searching the solution space in the beginning where diversity if preffered and late in the algorithm where intensification is preffered \cite{ABCFusionGrid}.
 \subsection{BEE algorithm Pseudo Code and Process Flow}
 % Flow diagram ---- Application artificial bee colony algorithm (ABC) for reconfiguring distribution network
+\begin{figure}[htbp!]
+	\begin{center}
+	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/BeeAlgorithm.pdf}}
+	\caption{Flow Chart for the BEE Algorithm}
+	\label{fig:BeeAlgorithmFlowChart}
+	\end{center}
+\end{figure}
 
 \section{Particle Swarm Optimization (PSO)}
 \label{sec:PSO}
@@ -337,6 +351,13 @@ v_i(t+1) &= \chi[v_i(t) + c_1\phi_{1}(t)[pbest - x_i(t)] + c_2\phi_{2}(t)[gbest 
 
 The constriction coeffcient is represented by the value $phi$ and allows one to omit the usage of velocity clamping. The constriction coeffcient evaluates to a ever decreasing value between $[0,1]$. By using the constriction coeffcient the PSO algorithm is also gauranteed to converge for values of $phi \geq 4$ and $\kappa \in [0,1]$. As with the inertia discussed above, high values of $\kappa$ allows for greater exploration and slow convergeance. Where as low values of $\kappa$ forces the algorithm to exploit the solution space and converge quickly \cite{adaptPSO,FundamentalSwarm,CompuIntelligenceIntro}.
 \subsection{PSO Pseudo Code and Process Flow}
+\begin{figure}[htbp!]
+	\begin{center}
+	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/ParticleSwarmOptimization.pdf}}
+	\caption{Flow Chart for PSO Algorithm}
+	\label{fig:PSOAlgorithmFlowChart}
+	\end{center}
+\end{figure}
 
 \section{Summary}
 %Talk about how ABC has less control parameters to adjust than ACO and PSO

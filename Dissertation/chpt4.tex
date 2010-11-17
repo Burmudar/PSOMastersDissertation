@@ -101,14 +101,13 @@ In this sub section we discussed the different phases of the Tabu Search algorit
 
 In this section we presented the pseudo code for the Tabu Search algorithm as well as presented a Flow diagram depicted when and why certain phases are activated in the algorithm. We then gave a overview of the core characteristics that are important for the Tabu Search algorithm. In the next section we will discuss Simulated annealing, where will start off by giving the pseudo code and flow diagram for the algorithm and end of the section by giving a overview on the core features of the algorithm.
 \subsection{Algorithm and Data flow}
-%\begin{figure}[h]
-%	\centering
-%	\setlength \fboxsep{0pt}
-%	\setlength \fboxrule{0.5pt}
-%	\fbox{\includegraphics[width=3.0in]{./pictures/captainplaceholder.png}}
-%	\caption{Pseudo code for Tabu Search Algorithm}
-%	\label{fig:TSAlgorithmPseudoCode}
-%\end{figure}
+\begin{figure}[htbp!]
+	\begin{center}
+	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/TabuSearch.pdf}}
+	\caption{Flow Chart for Tabu Search Algorithm}
+	\label{fig:TSAlgorithmFlowChart}
+	\end{center}
+\end{figure}
 %\begin{figure}[htbp!]
 %	\centering
 %	\setlength \fboxsep{0pt}
@@ -193,23 +192,30 @@ In research done by Tseung and Lin \cite{CurveFittingSA} a initial solution isn'
 \subsubsection{Algorithm efficiency}
 The algorithm is also efficient with regards to CPU cycles when compared to the Genetic Algorithm because it only has to evaluate a certain number of moves each iteration, instead of a evaluating a whole population each iteration. Unlike Tabu Search the basic SA algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that solution will cycling. Which is hwy the number of iterations spent at a temperature, since the longer the algorithm spends at a temperature the higher the probability is that solutions will cycle.
 \subsection{Algorithm and Data flow}
-In this section we will give the start of by providing the pseudo code of the Genetic Algorithm. We will also provide a flow diagram depicting the general search procedure flow of the algorithm. 
-%\begin{figure}[h]
-%	\centering
-%	\setlength \fboxsep{0pt}
-%	\setlength \fboxrule{0.5pt}
-%	\fbox{\includegraphics[width=3.0in,height=3.5in]{./pictures/captainplaceholder.png}}
-%	\caption{Pseudo code for Tabu Search Algorithm}
-%	\label{fig:SAAlgorithmPseudoCode}
-%\end{figure}
-%\begin{figure}[htbp!]
-%	\centering
+\begin{figure}[htbp!]
+	\begin{center}
+	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/SimulatedAnnealing.pdf}}
+	\caption{Flow Chart for Simulated Annealing Algorithm}
+	\label{fig:SimulatedAnnealingFlowChart}
+	\end{center}
+\end{figure}
+\begin{algorithm}
+\caption{Pseudo Code for the Simulated Annealing Algorithm}
+\begin{algorithmic}
+\IF {$i\geq maxval$} 
+        \STATE $i\gets 0$
+\ELSE
+        \IF {$i+k\leq maxval$}
+                \STATE $i\gets i+k$
+        \ENDIF
+\ENDIF 
 %	\setlength \fboxsep{0pt}
 %	\setlength \fboxrule{0.5pt}
 %	\fbox{\includegraphics[width=3.8in,height=7.0in]{./pictures/captainplaceholder.png}}
 %	\caption{Placeholder for algorithm data flow diagram code}
 %%	\label{fig:SAFlowDiagram}
-%\end{figure}
+\end{algorithmic}
+\end{algorithm}
 \section{Genetic Algorithm}
 \subsection{Overview}
 Genetic Algorithm (GA) is a stochastic search method which is based on the natural process of genetic evolution and the Darwinian concept of ``survival of the fittest'' \cite{DistributedHierarchicalGA,AcceleratingGA,AdaptiveSAGA,FamilyGA}. GA was initially developed for adaptive systems by Holland but has then, been widely used in the optimization field of study due to its effective exploration of the solution space as well as its relative success in multi-dimensional problems\cite{ParallelGASA,DistributedHierarchicalGA,FamilyGA}. The wide use of the GA algorithm can also be attributed to its generic algorithm structure as well as the ease of implementation of the algorithm \cite{FamilyGA,AdaptiveSAGA}. GA are application dependant and thus the designer needs to tailor the algorithm to his needs to obtain good results \cite{AcceleratingGA}.
@@ -280,20 +286,11 @@ Finally, the algorithm has some sort of hill-climbing through the mutation opera
 \subsection{Algorithm and Data flow}
 In this section we will give the start of by providing the pseudo code of the Genetic Algorithm. We will also provide a flow diagram depicting the general search procedure flow of the algorithm. 
 %Fuzzy genetic optimization on performance-based seismic design of reinforced concrete bridge piers with single-column type page  10 for flow chart
-%\begin{figure}[h]
-%	\centering
-%	\setlength \fboxsep{0pt}
-%	\setlength \fboxrule{0.5pt}
-%	\fbox{\includegraphics[width=3.0in,height=3.7in]{./pictures/captainplaceholder.png}}
-%	\caption{Pseudo code for Tabu Search Algorithm}
-%	\label{fig:GAlgorithmPseudoCode}
-%\end{figure}
-%\begin{figure}[htbp!]
-%	\centering
-%	\setlength \fboxsep{0pt}
-%	\setlength \fboxrule{0.5pt}
-%	\fbox{\includegraphics[width=3.8in,height=7.0in]{./pictures/captainplaceholder.png}}
-%	\caption{Placeholder for algorithm data flow diagram code}
-%%	\label{fig:GAFlowDiagram}
-%\end{figure}
+\begin{figure}[htbp!]
+	\begin{center}
+	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/GeneticAlgorithm.pdf}}
+	\caption{Flow Chart for Genetic Algorithm}
+	\label{fig:GeneticAlgorithmFlowChart}
+	\end{center}
+\end{figure}
 \section {Summary}

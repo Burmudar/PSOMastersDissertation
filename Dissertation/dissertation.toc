@@ -49,99 +49,99 @@
 \contentsline {subsubsection}{Memory structures of Tabu Search}{44}
 \contentsline {subsubsection}{Search phases}{45}
 \contentsline {subsection}{\numberline {4.3.3}Algorithm and Data flow}{47}
-\contentsline {section}{\numberline {4.4}Simulated Annealing}{47}
-\contentsline {subsection}{\numberline {4.4.1}Overview}{47}
+\contentsline {section}{\numberline {4.4}Simulated Annealing}{48}
+\contentsline {subsection}{\numberline {4.4.1}Overview}{48}
 \contentsline {subsection}{\numberline {4.4.2}Important Simulated Annealing characteristics}{49}
-\contentsline {subsubsection}{Markov Chain}{49}
+\contentsline {subsubsection}{Markov Chain}{50}
 \contentsline {subsubsection}{Cooling Schedule}{50}
 \contentsline {subsubsection}{Initial temperature}{51}
-\contentsline {subsubsection}{Move generation}{51}
+\contentsline {subsubsection}{Move generation}{52}
 \contentsline {subsubsection}{Algorithm efficiency}{52}
-\contentsline {subsection}{\numberline {4.4.3}Algorithm and Data flow}{52}
-\contentsline {section}{\numberline {4.5}Genetic Algorithm}{52}
-\contentsline {subsection}{\numberline {4.5.1}Overview}{52}
-\contentsline {subsection}{\numberline {4.5.2}Important Genetic Algorithm characteristics}{54}
-\contentsline {subsubsection}{Initial Population Generation}{55}
-\contentsline {subsubsection}{Selection Operator}{55}
-\contentsline {subsubsection}{Crossover Operator}{56}
-\contentsline {subsubsection}{Mutation Operator}{57}
-\contentsline {subsubsection}{Elitism Operator}{58}
-\contentsline {subsubsection}{Algorithm Efficiency}{58}
-\contentsline {subsection}{\numberline {4.5.3}Algorithm and Data flow}{59}
-\contentsline {section}{\numberline {4.6}Summary}{59}
-\contentsline {chapter}{\numberline {5}Swarm Intelligence}{61}
-\contentsline {section}{\numberline {5.1}Introduction}{61}
-\contentsline {section}{\numberline {5.2}Ant Colony Optimization (ACO)}{63}
-\contentsline {subsection}{\numberline {5.2.1}Overview}{63}
-\contentsline {subsection}{\numberline {5.2.2}ACO characteristics}{65}
-\contentsline {subsubsection}{Pheromones trail}{65}
-\contentsline {subsubsection}{State transition rules}{67}
-\contentsline {subsubsection}{Pheromone update}{68}
-\contentsline {subsubsection}{Pheromone evapuration}{69}
-\contentsline {subsection}{\numberline {5.2.3}ACO Pseudo Code and Process Flow}{70}
-\contentsline {section}{\numberline {5.3}Artificial Bee Colony Algorithm}{70}
-\contentsline {subsection}{\numberline {5.3.1}Overview}{70}
-\contentsline {subsection}{\numberline {5.3.2}BEE algorithm characteristics}{73}
-\contentsline {subsubsection}{Food Sources}{74}
-\contentsline {subsubsection}{Employed and Onlooker Bees}{74}
-\contentsline {subsubsection}{Scout bee}{76}
-\contentsline {subsection}{\numberline {5.3.3}BEE algorithm Pseudo Code and Process Flow}{77}
-\contentsline {section}{\numberline {5.4}Particle Swarm Optimization (PSO)}{77}
-\contentsline {subsection}{\numberline {5.4.1}Overview}{77}
-\contentsline {subsection}{\numberline {5.4.2}PSO characteristics}{79}
-\contentsline {subsubsection}{Swarm Size}{79}
-\contentsline {subsubsection}{Particle Velocity}{80}
-\contentsline {subsubsection}{Inertia Weight}{83}
-\contentsline {subsection}{\numberline {5.4.3}PSO Pseudo Code and Process Flow}{84}
-\contentsline {section}{\numberline {5.5}Summary}{84}
-\contentsline {part}{II\hspace {1em}Implementation}{85}
-\contentsline {chapter}{\numberline {6}PSO on benchmark functions}{87}
-\contentsline {section}{\numberline {6.1}Introduction}{87}
-\contentsline {subsection}{\numberline {6.1.1}Test Functions}{87}
-\contentsline {subsubsection}{DeJong F1 Function}{87}
-\contentsline {subsubsection}{Shekel's Foxhole}{88}
-\contentsline {subsubsection}{Rastrigin}{88}
-\contentsline {subsubsection}{Schwefel}{88}
-\contentsline {subsubsection}{Griewank}{88}
-\contentsline {subsubsection}{Salomon}{89}
-\contentsline {subsubsection}{Ackley}{89}
-\contentsline {subsubsection}{Six-Hump Camel Back}{89}
-\contentsline {subsubsection}{Shubert}{89}
-\contentsline {subsubsection}{Himmelblau}{89}
-\contentsline {subsubsection}{Rosenbrock Valley}{90}
-\contentsline {subsubsection}{Dropwave}{90}
-\contentsline {subsubsection}{Easom}{90}
-\contentsline {subsubsection}{Branins}{90}
-\contentsline {subsubsection}{Michalewicz}{91}
-\contentsline {subsubsection}{Goldstein}{91}
-\contentsline {section}{\numberline {6.2}Graphs of Benchmark Functions}{91}
-\contentsline {subsection}{\numberline {6.2.1}Graphs}{92}
-\contentsline {subsubsection}{DeJong's First Function}{92}
-\contentsline {subsubsection}{Shekel's Foxhole Function}{92}
-\contentsline {subsubsection}{Rastrigin Function}{93}
-\contentsline {subsubsection}{Schwefel Function}{93}
-\contentsline {subsubsection}{Griewank Function}{94}
-\contentsline {subsubsection}{Salomon Function}{94}
+\contentsline {subsection}{\numberline {4.4.3}Algorithm and Data flow}{53}
+\contentsline {section}{\numberline {4.5}Genetic Algorithm}{54}
+\contentsline {subsection}{\numberline {4.5.1}Overview}{54}
+\contentsline {subsection}{\numberline {4.5.2}Important Genetic Algorithm characteristics}{56}
+\contentsline {subsubsection}{Initial Population Generation}{56}
+\contentsline {subsubsection}{Selection Operator}{57}
+\contentsline {subsubsection}{Crossover Operator}{58}
+\contentsline {subsubsection}{Mutation Operator}{59}
+\contentsline {subsubsection}{Elitism Operator}{60}
+\contentsline {subsubsection}{Algorithm Efficiency}{60}
+\contentsline {subsection}{\numberline {4.5.3}Algorithm and Data flow}{61}
+\contentsline {section}{\numberline {4.6}Summary}{62}
+\contentsline {chapter}{\numberline {5}Swarm Intelligence}{63}
+\contentsline {section}{\numberline {5.1}Introduction}{63}
+\contentsline {section}{\numberline {5.2}Ant Colony Optimization (ACO)}{65}
+\contentsline {subsection}{\numberline {5.2.1}Overview}{65}
+\contentsline {subsection}{\numberline {5.2.2}ACO characteristics}{67}
+\contentsline {subsubsection}{Pheromones trail}{67}
+\contentsline {subsubsection}{State transition rules}{69}
+\contentsline {subsubsection}{Pheromone update}{70}
+\contentsline {subsubsection}{Pheromone evapuration}{71}
+\contentsline {subsection}{\numberline {5.2.3}ACO Pseudo Code and Process Flow}{72}
+\contentsline {section}{\numberline {5.3}Artificial Bee Colony Algorithm}{72}
+\contentsline {subsection}{\numberline {5.3.1}Overview}{72}
+\contentsline {subsection}{\numberline {5.3.2}BEE algorithm characteristics}{76}
+\contentsline {subsubsection}{Food Sources}{77}
+\contentsline {subsubsection}{Employed and Onlooker Bees}{77}
+\contentsline {subsubsection}{Scout bee}{79}
+\contentsline {subsection}{\numberline {5.3.3}BEE algorithm Pseudo Code and Process Flow}{81}
+\contentsline {section}{\numberline {5.4}Particle Swarm Optimization (PSO)}{81}
+\contentsline {subsection}{\numberline {5.4.1}Overview}{81}
+\contentsline {subsection}{\numberline {5.4.2}PSO characteristics}{83}
+\contentsline {subsubsection}{Swarm Size}{83}
+\contentsline {subsubsection}{Particle Velocity}{84}
+\contentsline {subsubsection}{Inertia Weight}{87}
+\contentsline {subsection}{\numberline {5.4.3}PSO Pseudo Code and Process Flow}{88}
+\contentsline {section}{\numberline {5.5}Summary}{88}
+\contentsline {part}{II\hspace {1em}Implementation}{91}
+\contentsline {chapter}{\numberline {6}PSO on benchmark functions}{93}
+\contentsline {section}{\numberline {6.1}Introduction}{93}
+\contentsline {subsection}{\numberline {6.1.1}Test Functions}{93}
+\contentsline {subsubsection}{DeJong F1 Function}{93}
+\contentsline {subsubsection}{Shekel's Foxhole}{94}
+\contentsline {subsubsection}{Rastrigin}{94}
+\contentsline {subsubsection}{Schwefel}{94}
+\contentsline {subsubsection}{Griewank}{94}
+\contentsline {subsubsection}{Salomon}{95}
 \contentsline {subsubsection}{Ackley}{95}
-\contentsline {subsubsection}{Six-Hump Camel Back Function}{95}
-\contentsline {subsubsection}{Shubert Function}{96}
-\contentsline {subsubsection}{Himmelblau Function}{96}
-\contentsline {subsubsection}{Rosenbrock Valley Function}{97}
-\contentsline {subsubsection}{Dropwave Function}{97}
-\contentsline {subsubsection}{Easom Function}{98}
-\contentsline {subsubsection}{Branin Function}{98}
-\contentsline {subsubsection}{Michalewicz Function}{99}
-\contentsline {subsubsection}{Goldstein Function}{99}
-\contentsline {section}{\numberline {6.3}Results}{100}
-\contentsline {chapter}{\numberline {7}Applying the PSO to the FAP}{101}
-\contentsline {section}{\numberline {7.1}Introduction}{101}
-\contentsline {section}{\numberline {7.2}A Position in the Frequency Planning domain}{102}
-\contentsline {section}{\numberline {7.3}The Fitness Function}{104}
-\contentsline {section}{\numberline {7.4}Velocity Function for Frequency Planning}{105}
-\contentsline {subsection}{\numberline {7.4.1}Movement in the Frequency Planning domain}{106}
-\contentsline {subsection}{\numberline {7.4.2}Keeping frequencies bounded}{107}
-\contentsline {subsection}{\numberline {7.4.3}Using indices instead of frequencies}{108}
-\contentsline {section}{\numberline {7.5}Building a Global Best}{109}
-\contentsline {section}{\numberline {7.6}Keeping History}{111}
-\contentsline {section}{\numberline {7.7}Summary}{113}
-\contentsline {chapter}{Bibliography}{115}
+\contentsline {subsubsection}{Six-Hump Camel Back}{95}
+\contentsline {subsubsection}{Shubert}{95}
+\contentsline {subsubsection}{Himmelblau}{95}
+\contentsline {subsubsection}{Rosenbrock Valley}{96}
+\contentsline {subsubsection}{Dropwave}{96}
+\contentsline {subsubsection}{Easom}{96}
+\contentsline {subsubsection}{Branins}{96}
+\contentsline {subsubsection}{Michalewicz}{97}
+\contentsline {subsubsection}{Goldstein}{97}
+\contentsline {section}{\numberline {6.2}Graphs of Benchmark Functions}{97}
+\contentsline {subsection}{\numberline {6.2.1}Graphs}{98}
+\contentsline {subsubsection}{DeJong's First Function}{98}
+\contentsline {subsubsection}{Shekel's Foxhole Function}{98}
+\contentsline {subsubsection}{Rastrigin Function}{99}
+\contentsline {subsubsection}{Schwefel Function}{99}
+\contentsline {subsubsection}{Griewank Function}{100}
+\contentsline {subsubsection}{Salomon Function}{100}
+\contentsline {subsubsection}{Ackley}{101}
+\contentsline {subsubsection}{Six-Hump Camel Back Function}{101}
+\contentsline {subsubsection}{Shubert Function}{102}
+\contentsline {subsubsection}{Himmelblau Function}{102}
+\contentsline {subsubsection}{Rosenbrock Valley Function}{103}
+\contentsline {subsubsection}{Dropwave Function}{103}
+\contentsline {subsubsection}{Easom Function}{104}
+\contentsline {subsubsection}{Branin Function}{104}
+\contentsline {subsubsection}{Michalewicz Function}{105}
+\contentsline {subsubsection}{Goldstein Function}{105}
+\contentsline {section}{\numberline {6.3}Results}{106}
+\contentsline {chapter}{\numberline {7}Applying the PSO to the FAP}{107}
+\contentsline {section}{\numberline {7.1}Introduction}{107}
+\contentsline {section}{\numberline {7.2}A Position in the Frequency Planning domain}{108}
+\contentsline {section}{\numberline {7.3}The Fitness Function}{110}
+\contentsline {section}{\numberline {7.4}Velocity Function for Frequency Planning}{111}
+\contentsline {subsection}{\numberline {7.4.1}Movement in the Frequency Planning domain}{112}
+\contentsline {subsection}{\numberline {7.4.2}Keeping frequencies bounded}{113}
+\contentsline {subsection}{\numberline {7.4.3}Using indices instead of frequencies}{114}
+\contentsline {section}{\numberline {7.5}Building a Global Best}{115}
+\contentsline {section}{\numberline {7.6}Keeping History}{117}
+\contentsline {section}{\numberline {7.7}Summary}{119}
+\contentsline {chapter}{Bibliography}{121}

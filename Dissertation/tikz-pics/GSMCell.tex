@@ -1,0 +1,87 @@
+\begin{tikzpicture}
+	%===============================Top======================================
+	\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (0,1) {};
+	\path (0,1.75) coordinate (TowerCirlce);
+	\path (0 - 0.10,1.635) coordinate (startLeftMast);
+	\path (0 + 0.10,1.635) coordinate (startRightMast);
+	\path (0 - 0.45,0.01) coordinate (endLeftMast);
+	\path (0 + 0.45,0.01) coordinate (endRightMast);
+	\path (0 - 0.140,1.345) coordinate (startTopHorizontalBar);
+	\path (0 + 0.140,1.345) coordinate (endTopHorizontalBar);
+	\path (0 - 0.260,0.85) coordinate (startMiddelHorizontalBar);
+	\path (0 + 0.260,0.85) coordinate (endMiddelHorizontalBar);
+	\path (0 - 0.370,0.35) coordinate (startBottomHorizontalBar);
+	\path (0 + 0.370,0.35) coordinate (endBottomHorizontalBar);
+	\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+	\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] {\tiny{BTS}};
+	%%========================================================================
+	%%================================Second Line======================================
+	\foreach \x in {-2.25,2.25}
+	{
+		\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (\x,-0.3) {};
+		\path (\x,-0.3 + 0.75) coordinate (TowerCirlce);
+		\path (\x - 0.10,-0.3 + 0.635) coordinate (startLeftMast);
+		\path (\x + 0.10,-0.3 + 0.635) coordinate (startRightMast);
+		\path (\x - 0.45,-0.3 - 0.99) coordinate (endLeftMast);
+		\path (\x + 0.45,-0.3 - 0.99) coordinate (endRightMast);
+		\path (\x - 0.140,-0.3 + 0.345) coordinate (startTopHorizontalBar);
+		\path (\x + 0.140,-0.3 + 0.345) coordinate (endTopHorizontalBar);
+		\path (\x - 0.260,-0.3 - 0.15) coordinate (startMiddelHorizontalBar);
+		\path (\x + 0.260,-0.3 - 0.15) coordinate (endMiddelHorizontalBar);
+		\path (\x - 0.370,-0.3 - 0.65) coordinate (startBottomHorizontalBar);
+		\path (\x + 0.370,-0.3 - 0.65) coordinate (endBottomHorizontalBar);
+		\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+		\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] {\tiny{BTS}};
+	}
+	%%========================================================================
+	%%================================Third Line======================================
+	\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (0,-1.6) {};
+	\path (0,-1.6 + 0.75) coordinate (TowerCirlce);
+	\path (0 - 0.10,-1.6 + 0.635) coordinate (startLeftMast);
+	\path (0 + 0.10,-1.6 + 0.635) coordinate (startRightMast);
+	\path (0 - 0.45,-1.6 - 0.99) coordinate (endLeftMast);
+	\path (0 + 0.45,-1.6 - 0.99) coordinate (endRightMast);
+	\path (0 - 0.140,-1.6 + 0.345) coordinate (startTopHorizontalBar);
+	\path (0 + 0.140,-1.6 + 0.345) coordinate (endTopHorizontalBar);
+	\path (0 - 0.260,-1.6 - 0.15) coordinate (startMiddelHorizontalBar);
+	\path (0 + 0.260,-1.6 - 0.15) coordinate (endMiddelHorizontalBar);
+	\path (0 - 0.370,-1.6 - 0.65) coordinate (startBottomHorizontalBar);
+	\path (0 + 0.370,-1.6 - 0.65) coordinate (endBottomHorizontalBar);
+	\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+	\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] {\tiny{BTS}};
+	%%========================================================================
+	%%================================Fourth Line======================================
+	\foreach \x in {-2.25,2.25}
+	{
+		\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (\x,-2.9) {};
+		\path (\x,-2.9 + 0.75) coordinate (TowerCirlce);
+		\path (\x - 0.10,-2.9 + 0.635) coordinate (startLeftMast);
+		\path (\x + 0.10,-2.9 + 0.635) coordinate (startRightMast);
+		\path (\x - 0.45,-2.9 - 0.99) coordinate (endLeftMast);
+		\path (\x + 0.45,-2.9 - 0.99) coordinate (endRightMast);
+		\path (\x - 0.140,-2.9 + 0.345) coordinate (startTopHorizontalBar);
+		\path (\x + 0.140,-2.9 + 0.345) coordinate (endTopHorizontalBar);
+		\path (\x - 0.260,-2.9 - 0.15) coordinate (startMiddelHorizontalBar);
+		\path (\x + 0.260,-2.9 - 0.15) coordinate (endMiddelHorizontalBar);
+		\path (\x - 0.370,-2.9 - 0.65) coordinate (startBottomHorizontalBar);
+		\path (\x + 0.370,-2.9 - 0.65) coordinate (endBottomHorizontalBar);
+		\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+		\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] {\tiny{BTS}};
+	}
+	%%========================================================================
+	%%================================Fifth Line======================================
+	\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (0,-4.2) {};
+	\path (0,-4.2 + 0.75) coordinate (TowerCirlce);
+	\path (0 - 0.10,-4.2 + 0.635) coordinate (startLeftMast);
+	\path (0 + 0.10,-4.2 + 0.635) coordinate (startRightMast);
+	\path (0 - 0.45,-4.2 - 0.99) coordinate (endLeftMast);
+	\path (0 + 0.45,-4.2 - 0.99) coordinate (endRightMast);
+	\path (0 - 0.140,-4.2 + 0.345) coordinate (startTopHorizontalBar);
+	\path (0 + 0.140,-4.2 + 0.345) coordinate (endTopHorizontalBar);
+	\path (0 - 0.260,-4.2 - 0.15) coordinate (startMiddelHorizontalBar);
+	\path (0 + 0.260,-4.2 - 0.15) coordinate (endMiddelHorizontalBar);
+	\path (0 - 0.370,-4.2 - 0.65) coordinate (startBottomHorizontalBar);
+	\path (0 + 0.370,-4.2 - 0.65) coordinate (endBottomHorizontalBar);
+	\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] {\tiny{BTS}};
+\end{tikzpicture}

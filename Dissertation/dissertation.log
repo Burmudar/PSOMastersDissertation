@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.8)  12 NOV 2010 20:38
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.11.8)  17 NOV 2010 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -104,6 +104,33 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
+) (./algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count100
+\float@exts=\toks21
+\float@box=\box28
+\@float@everytoks=\toks22
+\@floatcapt=\box29
+)
+\@float@every@algorithm=\toks23
+\c@algorithm=\count101
+) (./algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks24
+)
+\c@ALC@unique=\count102
+\c@ALC@line=\count103
+\c@ALC@rem=\count104
+\c@ALC@depth=\count105
+\ALC@tlm=\skip47
+\algorithmicindent=\skip48
 ) (./cite.sty
 LaTeX Info: Redefining \cite on input line 285.
 LaTeX Info: Redefining \nocite on input line 356.
@@ -112,10 +139,6 @@ Package: cite 2009/08/29  v 5.2
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks21
-)
 (/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
@@ -129,7 +152,7 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
-\Gread@gobject=\count100
+\Gread@gobject=\count106
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
@@ -138,7 +161,7 @@ File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
 (/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks22
+\pgfutil@everybye=\toks25
 )
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def)
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
@@ -152,8 +175,8 @@ Package: pgf 2008/01/15 v2.00 (rcs-revision 1.12)
 Package: pgfsys 2008/02/07 v2.00 (rcs-revision 1.31)
 
 (/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
 )
 \pgf@x=\dimen114
 \pgf@y=\dimen115
@@ -163,10 +186,10 @@ Package: pgfsys 2008/02/07 v2.00 (rcs-revision 1.31)
 \pgf@yb=\dimen119
 \pgf@xc=\dimen120
 \pgf@yc=\dimen121
-\c@pgf@counta=\count101
-\c@pgf@countb=\count102
-\c@pgf@countc=\count103
-\c@pgf@countd=\count104
+\c@pgf@counta=\count107
+\c@pgf@countb=\count108
+\c@pgf@countc=\count109
+\c@pgf@countd=\count110
 
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/01/13  (rcs-revision 1.6)
@@ -181,8 +204,8 @@ File: pgfsys-common-pdf.def 2007/12/17  (rcs-revision 1.8)
 )))
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2008/01/23  (rcs-revision 1.6)
-\pgfsyssoftpath@smallbuffer@items=\count105
-\pgfsyssoftpath@bigbuffer@items=\count106
+\pgfsyssoftpath@smallbuffer@items=\count111
+\pgfsyssoftpath@bigbuffer@items=\count112
 )
 (/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
@@ -210,13 +233,13 @@ Package: pgfcore 2008/01/15 v2.00 (rcs-revision 1.6)
 (/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex
-\pgfmath@box=\box28
+\pgfmath@box=\box30
 )
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@stack=\toks25
-\c@pgfmath@parsecounta=\count107
-\c@pgfmath@parsecountb=\count108
-\c@pgfmath@parsecountc=\count109
+\pgfmath@stack=\toks28
+\c@pgfmath@parsecounta=\count113
+\c@pgfmath@parsecountb=\count114
+\c@pgfmath@parsecountc=\count115
 \pgfmath@parsex=\dimen122
 )
 (/usr/share/texmf/tex/generic/pgf/math/pgfmathoperations.code.tex
@@ -252,10 +275,10 @@ File: pgfcorepathusage.code.tex 2008/01/23  (rcs-revision 1.11)
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2008/01/15  (rcs-revision 1.26)
-\pgfpic=\box29
-\pgf@hbox=\box30
-\pgf@layerbox@main=\box31
-\pgf@picture@serial@count=\count110
+\pgfpic=\box31
+\pgf@hbox=\box32
+\pgf@layerbox@main=\box33
+\pgf@picture@serial@count=\count116
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2007/12/12  (rcs-revision 1.8)
@@ -282,11 +305,11 @@ File: pgfcorearrows.code.tex 2007/06/07  (rcs-revision 1.8)
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2007/12/10  (rcs-revision 1.9)
 \pgf@max=\dimen145
-\pgf@sys@shading@range@num=\count111
+\pgf@sys@shading@range@num=\count117
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2008/01/15  (rcs-revision 1.1)
-\pgfexternal@startupbox=\box32
+\pgfexternal@startupbox=\box34
 )
 (/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2008/01/15  (rcs-revision 1.1)
@@ -299,8 +322,8 @@ File: pgfcorepatterns.code.tex 2008/01/15  (rcs-revision 1.1)
 )))
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2008/02/13  (rcs-revision 1.4)
-\pgfnodeparttextbox=\box33
-\toks@savedmacro=\toks26
+\pgfnodeparttextbox=\box35
+\toks@savedmacro=\toks29
 )
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2008/01/15  (rcs-revision 1.1)
@@ -325,7 +348,7 @@ Package: tikz 2008/02/13 v2.00 (rcs-revision 1.27)
 
 (/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2007/03/09 v2.00 (rcs-revision 1.9)
-\pgf@plot@mark@count=\count112
+\pgf@plot@mark@count=\count118
 \pgfplotmarksize=\dimen150
 )
 \tikz@lastx=\dimen151
@@ -334,20 +357,20 @@ File: pgflibraryplothandlers.code.tex 2007/03/09 v2.00 (rcs-revision 1.9)
 \tikz@lastysaved=\dimen154
 \tikzleveldistance=\dimen155
 \tikzsiblingdistance=\dimen156
-\tikz@figbox=\box34
-\tikz@tempbox=\box35
-\tikztreelevel=\count113
-\tikznumberofchildren=\count114
-\tikznumberofcurrentchild=\count115
-\tikz@fig@count=\count116
+\tikz@figbox=\box36
+\tikz@tempbox=\box37
+\tikztreelevel=\count119
+\tikznumberofchildren=\count120
+\tikznumberofcurrentchild=\count121
+\tikz@fig@count=\count122
 
 (/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2008/01/15  (rcs-revision 1.1)
-\pgfmatrixcurrentrow=\count117
-\pgfmatrixcurrentcolumn=\count118
-\pgf@matrix@numberofcolumns=\count119
+\pgfmatrixcurrentrow=\count123
+\pgfmatrixcurrentcolumn=\count124
+\pgf@matrix@numberofcolumns=\count125
 )
-\tikz@expandcount=\count120
+\tikz@expandcount=\count126
 
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
 hs.code.tex
@@ -402,16 +425,16 @@ LaTeX Font Info:    ... okay on input line 20.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
+\scratchcounter=\count127
 \scratchdimen=\dimen157
-\scratchbox=\box36
-\nofMPsegments=\count122
-\nofMParguments=\count123
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count124
+\scratchbox=\box38
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count130
 \MPscratchDim=\dimen158
-\MPnumerator=\count125
-\everyMPtoPDFconversion=\toks28
+\MPnumerator=\count131
+\everyMPtoPDFconversion=\toks31
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
@@ -559,20 +582,60 @@ Overfull \hbox (6.72404pt too wide) in paragraph at lines 92--93
 -nent dy-nam-i-cally changes
  []
 
-[46] [47] [48] [49] [50] [51] [52] [53] [54]
-Overfull \hbox (0.9094pt too wide) in paragraph at lines 237--238
+[46]
+
+pdfTeX warning: pdflatex (file ./pictures/TabuSearch.pdf): PDF inclusion: found
+ PDF version <1.5>, but at most version <1.4> allowed
+<./pictures/TabuSearch.pdf, id=169, 722.7pt x 542.025pt>
+File: ./pictures/TabuSearch.pdf Graphic file (type pdf)
+
+<use ./pictures/TabuSearch.pdf>
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 106--107
+ [] 
+ []
+
+[47 <./pictures/TabuSearch.pdf>] [48] [49] [50] [51] [52]
+
+pdfTeX warning: pdflatex (file ./pictures/SimulatedAnnealing.pdf): PDF inclusio
+n: found PDF version <1.5>, but at most version <1.4> allowed
+<./pictures/SimulatedAnnealing.pdf, id=314, 722.7pt x 542.025pt>
+File: ./pictures/SimulatedAnnealing.pdf Graphic file (type pdf)
+
+<use ./pictures/SimulatedAnnealing.pdf>
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 197--198
+ [] 
+ []
+
+[53 <./pictures/SimulatedAnnealing.pdf>] [54] [55]
+Overfull \hbox (0.9094pt too wide) in paragraph at lines 243--244
 \OT1/cmr/m/n/10.95 fined namely pseudo-random num-ber gen-er-a-tors (PRNGs) and
  quasi-random
  []
 
-[55] [56] [57] [58]) [59]
+[56]
+Underfull \vbox (badness 1681) has occurred while \output is active []
+
+ [57]
+[58]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
+[60]
+
+pdfTeX warning: pdflatex (file ./pictures/GeneticAlgorithm.pdf): PDF inclusion:
+ found PDF version <1.5>, but at most version <1.4> allowed
+<./pictures/GeneticAlgorithm.pdf, id=453, 722.7pt x 542.025pt>
+File: ./pictures/GeneticAlgorithm.pdf Graphic file (type pdf)
+
+<use ./pictures/GeneticAlgorithm.pdf>
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 291--292
+ [] 
+ []
+
+[61 <./pictures/GeneticAlgorithm.pdf>]) [62]
 \openout2 = `chpt5.aux'.
 
- (./chpt5.tex [60
-
-
-
-]
+ (./chpt5.tex
 Chapter 5.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -583,18 +646,22 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[61]
+[63
+
+
+
+]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [62] <./pictures/antBridgeExperiment.png, id=221, 498.86375pt x 240.9pt>
+ [64] <./pictures/antBridgeExperiment.png, id=572, 498.86375pt x 240.9pt>
 File: ./pictures/antBridgeExperiment.png Graphic file (type png)
 
-<use ./pictures/antBridgeExperiment.png> [63 <./pictures/antBridgeExperiment.pn
-g (PNG copy)>] [64] [65]
+<use ./pictures/antBridgeExperiment.png> [65 <./pictures/antBridgeExperiment.pn
+g (PNG copy)>] [66] [67]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -607,35 +674,72 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [66] [67]
+ [68] [69]
 Overfull \hbox (1.6546pt too wide) in paragraph at lines 99--100
 \OT1/cmr/m/n/10.95 The ants would re-trace their path af-ter each it-er-a-tion,
  de-posit-ing pheromones
  []
 
-[68] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] [79]
-<./pictures/captainplaceholder.png, id=277, 746.79pt x 1056.94875pt>
+[70] [71]
+
+pdfTeX warning: pdflatex (file ./pictures/AntColonyOptimization.pdf): PDF inclu
+sion: found PDF version <1.5>, but at most version <1.4> allowed
+<./pictures/AntColonyOptimization.pdf, id=596, 722.7pt x 542.025pt>
+File: ./pictures/AntColonyOptimization.pdf Graphic file (type pdf)
+
+<use ./pictures/AntColonyOptimization.pdf>
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 143--144
+ [] 
+ []
+
+[72] [73 <./pictures/AntColonyOptimization.pdf>] [74] [75] [76] [77] [78]
+
+pdfTeX warning: pdflatex (file ./pictures/BeeAlgorithm.pdf): PDF inclusion: fou
+nd PDF version <1.5>, but at most version <1.4> allowed
+<./pictures/BeeAlgorithm.pdf, id=736, 722.7pt x 542.025pt>
+File: ./pictures/BeeAlgorithm.pdf Graphic file (type pdf)
+
+<use ./pictures/BeeAlgorithm.pdf>
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 241--242
+ [] 
+ []
+
+[79] [80 <./pictures/BeeAlgorithm.pdf>] [81] [82] [83]
+<./pictures/captainplaceholder.png, id=844, 746.79pt x 1056.94875pt>
 File: ./pictures/captainplaceholder.png Graphic file (type png)
 
-<use ./pictures/captainplaceholder.png> [80]
+<use ./pictures/captainplaceholder.png> [84]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81 <./pictures/captainplaceholder.png>] [82]
+ [85 <./pictures/captainplaceholder.png>] [86]
 
-LaTeX Warning: Reference `inertia' on page 83 undefined on input line 324.
+LaTeX Warning: Reference `inertia' on page 87 undefined on input line 338.
 
-[83]) [84] [85
+[87]
+
+pdfTeX warning: pdflatex (file ./pictures/ParticleSwarmOptimization.pdf): PDF i
+nclusion: found PDF version <1.5>, but at most version <1.4> allowed
+<./pictures/ParticleSwarmOptimization.pdf, id=861, 722.7pt x 542.025pt>
+File: ./pictures/ParticleSwarmOptimization.pdf Graphic file (type pdf)
+
+<use ./pictures/ParticleSwarmOptimization.pdf>
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 356--357
+ [] 
+ []
+
+) [88] [89 <./pictures/ParticleSwarmOptimization.pdf>] [90
 
 
-] [86]
+] [91] [92]
 \openout2 = `chpt6.aux'.
 
- (./chpt6.tex
+
+(./chpt6.tex
 Chapter 6.
-[87
+[93
 
 
-] [88]
+] [94]
 Overfull \hbox (225.09033pt too wide) in paragraph at lines 69--71
 \OT1/cmr/m/n/10.95 be ob-tained at the fol-low-ing points $(\OML/cmm/m/it/10.95
  x[]; x[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 f\OT1/cmr/m/n/10.95 (\OMS/c
@@ -651,91 +755,91 @@ m/it/10.95 :\OT1/cmr/m/n/10.95 584428\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95
 /m/n/10.95 g$ 
  []
 
-[89] [90] <./Graphs/DeJongF1.pdf, id=315, 578.16pt x 433.62pt>
+[95] [96] <./Graphs/DeJongF1.pdf, id=971, 578.16pt x 433.62pt>
 File: ./Graphs/DeJongF1.pdf Graphic file (type pdf)
 
-<use ./Graphs/DeJongF1.pdf> [91]
-<./Graphs/Shekel.pdf, id=320, 578.16pt x 433.62pt>
+<use ./Graphs/DeJongF1.pdf> [97]
+<./Graphs/Shekel.pdf, id=976, 578.16pt x 433.62pt>
 File: ./Graphs/Shekel.pdf Graphic file (type pdf)
  <use ./Graphs/Shekel.pdf>
-<./Graphs/Rastrigin.pdf, id=321, 578.16pt x 433.62pt>
+<./Graphs/Rastrigin.pdf, id=977, 578.16pt x 433.62pt>
 File: ./Graphs/Rastrigin.pdf Graphic file (type pdf)
 
-<use ./Graphs/Rastrigin.pdf> [92 <./Graphs/DeJongF1.pdf> <./Graphs/Shekel.pdf>]
-<./Graphs/Schwefel.pdf, id=352, 578.16pt x 433.62pt>
+<use ./Graphs/Rastrigin.pdf> [98 <./Graphs/DeJongF1.pdf> <./Graphs/Shekel.pdf>]
+<./Graphs/Schwefel.pdf, id=1008, 578.16pt x 433.62pt>
 File: ./Graphs/Schwefel.pdf Graphic file (type pdf)
 
 <use ./Graphs/Schwefel.pdf>
-<./Graphs/Griewank_-50_+50.pdf, id=353, 578.16pt x 433.62pt>
+<./Graphs/Griewank_-50_+50.pdf, id=1009, 578.16pt x 433.62pt>
 File: ./Graphs/Griewank_-50_+50.pdf Graphic file (type pdf)
 
-<use ./Graphs/Griewank_-50_+50.pdf> [93 <./Graphs/Rastrigin.pdf> <./Graphs/Schw
-efel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=385, 578.16pt x 433.62pt>
+<use ./Graphs/Griewank_-50_+50.pdf> [99 <./Graphs/Rastrigin.pdf> <./Graphs/Schw
+efel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=1041, 578.16pt x 433.62pt>
 File: ./Graphs/Salomon_-10_+10.pdf Graphic file (type pdf)
 
 <use ./Graphs/Salomon_-10_+10.pdf>
-<./Graphs/Ackley.pdf, id=386, 578.16pt x 433.62pt>
+<./Graphs/Ackley.pdf, id=1042, 578.16pt x 433.62pt>
 File: ./Graphs/Ackley.pdf Graphic file (type pdf)
  <use ./Graphs/Ackley.pdf>
-[94 <./Graphs/Griewank_-50_+50.pdf> <./Graphs/Salomon_-10_+10.pdf>]
-<./Graphs/Camel.pdf, id=419, 578.16pt x 433.62pt>
+[100 <./Graphs/Griewank_-50_+50.pdf> <./Graphs/Salomon_-10_+10.pdf>]
+<./Graphs/Camel.pdf, id=1075, 578.16pt x 433.62pt>
 File: ./Graphs/Camel.pdf Graphic file (type pdf)
  <use ./Graphs/Camel.pdf>
-<./Graphs/Shubert.pdf, id=420, 578.16pt x 433.62pt>
+<./Graphs/Shubert.pdf, id=1076, 578.16pt x 433.62pt>
 File: ./Graphs/Shubert.pdf Graphic file (type pdf)
- <use ./Graphs/Shubert.pdf>
-[95 <./Graphs/Ackley.pdf> <./Graphs/Camel.pdf>]
-<./Graphs/Himmelblau.pdf, id=453, 578.16pt x 433.62pt>
+
+<use ./Graphs/Shubert.pdf> [101 <./Graphs/Ackley.pdf> <./Graphs/Camel.pdf>]
+<./Graphs/Himmelblau.pdf, id=1109, 578.16pt x 433.62pt>
 File: ./Graphs/Himmelblau.pdf Graphic file (type pdf)
 
 <use ./Graphs/Himmelblau.pdf>
-<./Graphs/Rosenbrock.pdf, id=454, 578.16pt x 433.62pt>
+<./Graphs/Rosenbrock.pdf, id=1110, 578.16pt x 433.62pt>
 File: ./Graphs/Rosenbrock.pdf Graphic file (type pdf)
 
-<use ./Graphs/Rosenbrock.pdf> [96 <./Graphs/Shubert.pdf> <./Graphs/Himmelblau.p
-df>] <./Graphs/Dropwave.pdf, id=488, 578.16pt x 433.62pt>
+<use ./Graphs/Rosenbrock.pdf> [102 <./Graphs/Shubert.pdf> <./Graphs/Himmelblau.
+pdf>] <./Graphs/Dropwave.pdf, id=1144, 578.16pt x 433.62pt>
 File: ./Graphs/Dropwave.pdf Graphic file (type pdf)
 
 <use ./Graphs/Dropwave.pdf>
-<./Graphs/Easom_-100_+100.pdf, id=489, 578.16pt x 433.62pt>
+<./Graphs/Easom_-100_+100.pdf, id=1145, 578.16pt x 433.62pt>
 File: ./Graphs/Easom_-100_+100.pdf Graphic file (type pdf)
 
-<use ./Graphs/Easom_-100_+100.pdf> [97 <./Graphs/Rosenbrock.pdf> <./Graphs/Drop
-wave.pdf>] <./Graphs/Branin.pdf, id=525, 578.16pt x 433.62pt>
+<use ./Graphs/Easom_-100_+100.pdf> [103 <./Graphs/Rosenbrock.pdf> <./Graphs/Dro
+pwave.pdf>] <./Graphs/Branin.pdf, id=1181, 578.16pt x 433.62pt>
 File: ./Graphs/Branin.pdf Graphic file (type pdf)
 
 <use ./Graphs/Branin.pdf>
-<./Graphs/Michalewicz.pdf, id=526, 578.16pt x 433.62pt>
+<./Graphs/Michalewicz.pdf, id=1182, 578.16pt x 433.62pt>
 File: ./Graphs/Michalewicz.pdf Graphic file (type pdf)
 
-<use ./Graphs/Michalewicz.pdf> [98 <./Graphs/Easom_-100_+100.pdf> <./Graphs/Bra
-nin.pdf>] <./Graphs/Goldstein.pdf, id=562, 578.16pt x 433.62pt>
+<use ./Graphs/Michalewicz.pdf> [104 <./Graphs/Easom_-100_+100.pdf> <./Graphs/Br
+anin.pdf>] <./Graphs/Goldstein.pdf, id=1218, 578.16pt x 433.62pt>
 File: ./Graphs/Goldstein.pdf Graphic file (type pdf)
 
-<use ./Graphs/Goldstein.pdf>) [99 <./Graphs/Michalewicz.pdf> <./Graphs/Goldstei
-n.pdf>] [100]
+<use ./Graphs/Goldstein.pdf>) [105 <./Graphs/Michalewicz.pdf> <./Graphs/Goldste
+in.pdf>] [106]
 \openout2 = `chpt7.aux'.
 
  (./chpt7.tex
 Chapter 7.
 
-LaTeX Warning: Reference `' on page 101 undefined on input line 5.
+LaTeX Warning: Reference `' on page 107 undefined on input line 5.
 
-[101
+[107
 
 
 
-] [102] <./pictures/fapPlanDiagram.pdf, id=608, 338.86601pt x 207.174pt>
+] [108] <./pictures/fapPlanDiagram.pdf, id=1264, 338.86601pt x 207.174pt>
 File: ./pictures/fapPlanDiagram.pdf Graphic file (type pdf)
 
-<use ./pictures/fapPlanDiagram.pdf> [103 <./pictures/fapPlanDiagram.pdf>]
-[104] [105]
+<use ./pictures/fapPlanDiagram.pdf> [109 <./pictures/fapPlanDiagram.pdf>]
+[110] [111]
 Overfull \hbox (0.5567pt too wide) in paragraph at lines 96--98
 []\OT1/cmr/m/n/10.95 Vector math has stan-dard ba-sic op-er-a-tions de-fined fo
 r adding,subtracting
  []
 
-[106] [107] [108] [109] [110] [111] [112]) [113] (./dissertation.bbl [114
+[112] [113] [114] [115] [116] [117] [118]) [119] (./dissertation.bbl [120
 
 
 ]
@@ -744,14 +848,14 @@ Missing character: There is no ∫ in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ≥ in font cmr10!
 
-[115]
+[121]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ∂ in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no § in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ∂ in font cmr10!
- [116] [117]
+ [122] [123]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no â in font cmr10!
 
@@ -760,17 +864,17 @@ Underfull \hbox (badness 4060) in paragraph at lines 180--187
 Fran-cisco
  []
 
-[118]
+[124]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no © in font cmr10!
- [119]
+ [125]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ° in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ≠ in font cmr10!
- [120] [121] [122] [123] [124] [125] [126] [127]) [128]
+ [126] [127] [128] [129] [130] [131] [132] [133]) [134]
 (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
 (./chpt5.aux) (./chpt6.aux) (./chpt7.aux))
 
@@ -778,13 +882,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 9891 strings out of 495061
- 173965 string characters out of 1182621
- 251308 words of memory out of 3000000
- 12789 multiletter control sequences out of 15000+50000
+ 10159 strings out of 495061
+ 177812 string characters out of 1182621
+ 255747 words of memory out of 3000000
+ 13041 multiletter control sequences out of 15000+50000
  14252 words of font info for 53 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 47i,19n,54p,1352b,802s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,19n,54p,1352b,804s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts
@@ -803,9 +907,9 @@ e/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/typ
 e1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/am
 sfonts/symbols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /symbols/msbm10.pfb>
-Output written on dissertation.pdf (128 pages, 15188828 bytes).
+Output written on dissertation.pdf (134 pages, 16245986 bytes).
 PDF statistics:
- 767 PDF objects out of 1000 (max. 8388607)
+ 1423 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
