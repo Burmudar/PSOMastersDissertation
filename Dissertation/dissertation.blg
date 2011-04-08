@@ -10,45 +10,45 @@ A level-1 auxiliary file: chpt7.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
 Warning--I didn't find a database entry for ""
-You've used 117 entries,
+You've used 118 entries,
             2118 wiz_defined-function locations,
-            1283 strings with 28011 characters,
-and the built_in function-call counts, 45174 in all, are:
-= -- 4583
-> -- 1804
+            1288 strings with 28183 characters,
+and the built_in function-call counts, 45433 in all, are:
+= -- 4607
+> -- 1817
 < -- 47
-+ -- 747
-- -- 590
-* -- 3173
-:= -- 7034
-add.period$ -- 371
-call.type$ -- 117
-change.case$ -- 640
++ -- 752
+- -- 594
+* -- 3187
+:= -- 7079
+add.period$ -- 374
+call.type$ -- 118
+change.case$ -- 645
 chr.to.int$ -- 0
-cite$ -- 117
-duplicate$ -- 1798
-empty$ -- 3669
-format.name$ -- 590
-if$ -- 9849
+cite$ -- 118
+duplicate$ -- 1810
+empty$ -- 3691
+format.name$ -- 594
+if$ -- 9904
 int.to.chr$ -- 0
-int.to.str$ -- 117
-missing$ -- 118
-newline$ -- 589
-num.names$ -- 234
-pop$ -- 640
+int.to.str$ -- 118
+missing$ -- 120
+newline$ -- 594
+num.names$ -- 236
+pop$ -- 648
 preamble$ -- 1
-purify$ -- 529
+purify$ -- 533
 quote$ -- 0
-skip$ -- 1385
+skip$ -- 1392
 stack$ -- 0
-substring$ -- 3522
-swap$ -- 542
+substring$ -- 3527
+swap$ -- 543
 text.length$ -- 47
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 454
+type$ -- 456
 warning$ -- 0
-while$ -- 421
-width$ -- 120
-write$ -- 1326
+while$ -- 423
+width$ -- 121
+write$ -- 1337
 (There was 1 warning)

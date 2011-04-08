@@ -1,26 +1,42 @@
 \chapter{Cellular Technology}
 \label{chpt:celltech}
 \section{Introduction}
-In the information age we currently live in almost every device has some sort of wireless technology it uses to provide a specific service. Radios for audio entertainment; Television remotes to change 
-channels; Cellular phones for communication; Wireless access points to create wireless LAN's\cite{Karen2004}. Wireless technology is now part of our everyday life.
+In the information age we currently live in almost every device has a wireless technology of sort that it uses to provide a specific service. Radios for audio entertainment; television remotes to change 
+channels; cellular phones for communication; wireless access points to create wireless LAN's\cite{Karen2004}. Wireless technology is now part of our everyday life.
 
-The popularity and rapid adoption of wireless technology hasn't been kind to the management, planning and operation of wireless networks; It has actually worsen a problem known as the Frequency Assignment problem (FAP) which is present in all forms of wireless communication especially in GSM Cellular networks.
+The popularity and rapid adoption of wireless technology has made it difficult to plan,manage and operate wireless networks. Wireless technology facilitates communication between two entities by transmitting data or voice via a radio frequency. 
 
-In this chapter we will start of by giving a brief history of the Frequency Assignment Problem. After the brief history overview we will give a description of the problem and explain some of the
-underlying concepts needed to understand the Frequency Assignment Problem. We will then move on to discuss the different variants present in the current domain. Further more we will
-then discuss the two underlying approaches used in solving the Frequency Assignment Problem (FAP).
+As the popularity and use of services that use wireless technology increase, the greater the need for these services to use different radio frequencies to communicate. This need arises due to an effect called \emph{interference} which occurs when two or more connections between entities use the same radio frequency to facilitate communication. This effect is discussed in more detail in Chapter 3.
+
+Therefore the use of frequencies by services must be carefully considered to avoid interference when entities communicate with each other, which is a problem since the amount of entities that communicate far out strip the amount of frequencies available for communication. Thus assigning frequencies to entities for communication is a difficult problem and refered to as the frequency assignment problem (FAP).
+
+Initially manual techniques were used to assign frequencies in an attempt to solve the FAP. But as a result, the assignment of frequencies was either to complex or just too daunting because of shear amount of entities that need to be assigned frequencies. Also, because of the rapid adoption of wireless technology the assignment of frequencies needed to be dynamic and hence, automated.
+
+When a task needs to be automated an algorithm needs to be developed to tell the machine how it must go about to solve the problem it is destined to work on. Early algorithms developed to solve the FAP utilized brute force\footnote{Brute force refers to a method which sequentialy tries every possible combination in hope of finding a solution} techniques to assign frequencies.
+
+Since the FAP is proven to be NP-Hard problem, thus using an algorithm that tries to brute force a solution is futile as no solution can be found in a reasonable time frame. Hence, algorithms based on heuristic techniques are utilized in an attempt to either solve the FAP or come close to a solution. Heuristic Algorithms will be discussed in Chapter 4.
+
+In this chapter we start by discussing GSM as well as a brief history of GSM. The topology of GSM is then explained before moving onto the problems in that are present GSM network. One of the major problems being the FAP.
+
 \section{GSM Networks}
 The General System for Mobile Communications (GSM) is a system for multi-service cellular communication which is capable of providing voice as well as data services. Most cellular networks in operation 
 are GSM based. The primary service that GSM caters for is voice communication, but other data services such as Short Message Service (SMS), Multimedia Message Service (MMS) and Internet 
-connectivity services such as GPRS are becoming more important\cite{Eisenblatter}.
+connectivity services such as \emph{general packet radio system} (GPRS),\emph{enhanced data rate for global evolution} (EDGE) and \emph{high speed circuit switched data} (HSCSD) are becoming more important\cite{GSMArchitectureProtocolsServices,Eisenblatter}.
 
-GSM is one of the most widely used radio communications technologies, which is why we need to look at the history behind it in order for us to understand the domain of radio communication better.We will now present a brief history of the GSM network specification.
+GSM is one of the most widely used radio communications technologies, which is why we need to look at the history behind it in order for us to understand the domain of radio communication better \cite{GSMArchitectureProtocolsServices}. A brief history of the GSM network specification will now be presented in the next section.
+
 \subsection{A Brief History of GSM Networks}
 In the early 1981 a group known as the Groupe Speciale Mobile (GSM) was established to develop a Europe wide radio communication system using the reserved 900 MHz band\footnote{In 1990 the United Kingdom requested that 1800MHz band be added to the scope of the GSM standard group. This variant of the GSM specification became known as the \emph{Digital Cellular System 1800} (DCS1800) \cite{GSM92}.}.
 
-At the start of the GSM specification in the early 1980's it was initially thought that the system would be analogue based, but this soon changed with the \emph{Integrated Service Digital Network} (ISDN) specification nearing completetion. As such the GSM specification started following much of the same design principles and access protocols that ISDN exhibited. After the completion of the ISDN specification and the advantages it brought to the field, it became unofficially clear that GSM would be based on digital transmission and that speech would be represented by a digital stream of 16 kbits/s \cite{GSM92}.
+At the start of the GSM specification in the early 1980's it was initially thought that the system would be analogue based, but this soon changed with the \emph{integrated service digital network} (ISDN) specification nearing completion. As such the GSM specification started following much of the same design principles and access protocols that ISDN exhibited.
 
-Before the switch to digital transmission was finalized the GSM first wanted to evaluate the spectral efficiency of analogue and digital based transmission. Spectral efficiency plays an important part in wireless communication since the radio spectrum is a limited resource and whichever transmission technology is used, should maximise the utilization of the spectrum. Maximum utilisation is an important problem which we will discuss in detail in later sections of this chapter. The Spectral evaluation was conducted over a period of 3 years from 1984-1987. In 1987 a report was published about the 3 year evaluation and subsequently it became official that the GSM system would be digital based using \emph{Time Division Multiple Access} (TDMA) \cite{GSM92,GSMSysEngin}.
+After the completion of the ISDN specification and the advantages of switching to digital instead of analogue for communication became clear. One of the primary advantages of ISDN is that it is capable of transmitting data as higher speeds. GSM would therefore be based on digital transmission and speech would be represented by a digital stream of 16 kbits/s \cite{GSM92}.
+
+The primary benefit that one can deduce from the use of ISDN over slower analogue connections is because data can be transmitted faster, more data can be sent for the same amount of time it would've taken on an analogue connection. Hence, since more data can be sent it has the net effect of increasing the quality and efficientcy of the connection between two entities, the network therefore does not need to remove as much information from a packet to be sent to fit within the data transmission constraints.
+
+Before the switch to digital transmission was finalized the GSM first wanted to evaluate the spectral efficiency of analogue and digital based transmission. Spectral efficiency plays an important part in wireless communication since the radio spectrum is a limited resource and whichever transmission technology is used, the utilization of the spectrum should be maximised. 
+
+Maximum utilisation is an important problem which we will discuss in detail in later sections of this chapter. After an evaluation on sepctrail efficiency it was finalized that the GSM system would be digital based using \emph{time division multiple access} (TDMA) \cite{GSM92,GSMSysEngin}.
 
 By the early 1990’s GSM became an evolving standard and the first GSM based network was demonstrated in 1991\footnote{Near the end of 1991 the GSM group was renamed to \emph{Speciale Mobile Group} (SMG) to eliminate confusion with the standard and the group.}. The following year a number of GSM networks were operating in Europe due to mobile terminals / equipment capable of operating on the networks becoming more widely available to the general public. In the same year an operator in Australia became the first non-European operator to implement a GSM based network\cite{Eisenblatter}.
 
@@ -33,14 +49,13 @@ Some of the extensions that were made are the following\cite{Eisenblatter}:
 \item Call waiting
 \item Call holding
 \end{itemize}
-The specification with these extensions defined is known as the GSM Phase 2. As the world shifted towards more digital and data intensive services it became difficult to deliver these services over GSM 
-networks. This difficulty was due to the restriction that data could only be transmitted at 9.6 Kbps. A move to eliminate this restriction was made with the specification of GSM Phase 2+. 
+The specification with these extensions defined is known as the GSM Phase 2. As the world shifted towards more digital and data intensive services it became difficult to deliver these services over GSM networks. This difficulty was due to the restriction that data could only be transmitted at 9.6 Kbps \cite{GSM92}.
 
-The new specification defined new technologies such as General Packet Radio System (GPRS) and \emph{Enchanced Data rate for GSM Evolution} (EDGE) which were designed with the primary goal of making more bandwidth available for data transmission.
-These new technologies have an inherent requirement that there be a higher signal to noise ratio present at transceivers. This requirement has an impact that effects radio interfaces and more 
-importantly Frequency planning \cite{Eisenblatter}. 
+The new specification defined new technologies such as GPRS,EDGE and HSCSD which were designed with the primary goal of making more bandwidth available for data transmission \cite{GSMArchitectureProtocolsServices}. Data transmission was improved by these technologies by enabling that more than one GSM slot be used for a terminal or service at a time\cite{GSMArchitectureProtocolsServices}.
 
-The actual signal to noise ratio at a receiver is dependent on a number of factors that include \cite{Karen2004}:
+By enabling that more than one GSM slot be used by a terminal or service, tranceivers are required to have a higher signal to noise ratio \cite{GSMArchitectureProtocolsServices}. This requirement has an impact that effects radio interfaces as there is a higher likelyhood that interference might occur, hence it makes it more difficult to generate a low interference Freuqnecy plan \cite{Eisenblatter}. 
+
+The actual signal to noise ratio at a receiver is dependent on a number of factors that include \cite{GSMArchitectureProtocolsServices,Karen2004}:
 \begin{itemize}
 \item Frequency used at the transceiver
 \item Strength of the signal
@@ -50,14 +65,22 @@ The actual signal to noise ratio at a receiver is dependent on a number of facto
 \end{itemize}
 Even taking these factors into account the calculation of the signal to noise ratio at a transceiver is not trivial. For a more in depth discussion on the calculation the reader is directed at the survey by \cite{Karen2004}.
 
-As the GSM standard matured as a cellular technology, industry experts already began specification of the next generation of cellular networks which would in time, replace the GSM cellular system. The specification of a new standard is considered to be a natural evolution of the technology. Each standard is designed with specific use cases in mind as to what its users might want to do as well as what is possible with the technology at the designers disposal. As time goes by, the technology improves and users habits and needs change, thus the standard must be improved upon to serve these new needs and incorporate new technology.
+As the GSM standard matured as a cellular technology, industry experts already began specification of the next generation of cellular networks which would in time, replace the GSM cellular system. 
 
-The \emph{Universal Mobile Telecommunications System} (UMTS) can be considered the 3rd generation (3G) of cellular networks. UMTS was designed from the beginning to operate in parallel with the legacy GSM system. This decision was made to make the deployment of the system as hassle free as possible for the network operators. The first standard of the UMTS was issued in the beginning of 2000 and subsequently most modern networks are based on it or are migrating their networks to it.
+The \emph{Universal Mobile Telecommunications System} (UMTS) can be considered the 3rd generation (3G) of cellular networks. UMTS was designed from the beginning to operate in parallel with the legacy GSM system. The first standard of the UMTS was issued in the beginning of 2000 and subsequently most modern networks are based on it or are migrating their networks to it.
 
-UMTS is a large improvement of the GSM in two areas namely Data Transmission bandwidth and Frequency Planning due to UMTS utilising \emph{DS-CDMA} (direct sequence code division multiple access) and \emph{WCDMA} (Wide Band Code Division Multiple Access). The higher data transmission speed (2 Mb/s) can be attributed to UMTS using the DS-CDMA scheme. The scheme also allows more users to be served than previous generation of networks. A direct consequence of WCDMA which sends information over a wide-band of 5 MHz is that no frequency planning problem comparable to that of GSM has to be solved\cite{tabuglobalplanning3g,Eisenblatter}.
+UMTS is a large improvement of the GSM in two areas namely Data Transmission bandwidth and Frequency Planning due to UMTS utilising \emph{DS-CDMA} (direct sequence code division multiple access) and \emph{WCDMA} (Wide Band Code Division Multiple Access). The higher data transmission speed (2 Mb/s) can be attributed to UMTS using the DS-CDMA scheme. The scheme also allows more users to be served than previous generation of networks\cite{tabuglobalplanning3g,Eisenblatter}. 
 
-In this section we gave a brief overview of the history of the GSM Network specification. In the next section we will present an explanation of the topology of GSM network as well as look at the 
-underlying problems present in a GSM networks.
+A direct consequence of UMTS utilizing DS-CDMA and WCDMA, which sends data over a wide-band of 5 Mhz, therefore no frequency planning problem comparable to GSM has to be solved\cite{tabuglobalplanning3g,Eisenblatter}. 
+
+\emph{Code division multiple access} (CDMA) is a technology primarily used in broadband systems. Users do not gain access to only a small portion of the bandwith, but rather use the entire band for the duration of a connection. Users also do not gain exclusive access to the whole band, but instead share the usage of the bandwith with other users simultaneously, hence the name \emph{multiple access}. Users using a band simultaneously are seperated using orthogonal codes \cite{GSMArchitectureProtocolsServices}.
+
+With CDMA a users signal is not transmitted as its original signal. Instead the signal is spectrally spread over a mutiple of its original bandwith using a spreading factor \cite{GSMArchitectureProtocolsServices}. The spreading factor fluctuates between values of 10 and 1000 \cite{GSMArchitectureProtocolsServices}. Using these spreading factors less interference and distrubances are encountered because the broadband signal is generated from a narrowband signal \cite{GSMArchitectureProtocolsServices}.
+UMTS may be a large improvement, but its adoption does not spread very far from busy city centres which contain a large concentration of clients in a small geographical area. The reason for this is that, as mentioned previously, UMTS caters for larger data usage and therefore more clients can be serviced simultaneously \cite{GSMArchitectureProtocolsServices}.
+
+Most network operators do not implement entirely new backbone architecture for UMTS to operate on but instead, utilize the same backbone used for GSM and GPRS. This not only extends the lifetime of previous infrastructure investment by the operator but also builds upon the redundancy provided by the GSM network \cite{GSMArchitectureProtocolsServices}. Thus even with new technological improvements such as UMTS, GSM as a wireless technology is still used for communication and is therefore still relevant today.
+
+In this section a brief overview of the history of the GSM Network specification was given. In the next section an explanation of the topology of GSM network will be given. This will broad the understanding behind GSM networks.
 
 \begin{figure}[hptb]
 	\begin{centering}
@@ -68,23 +91,29 @@ underlying problems present in a GSM networks.
 \end{figure}
 
 \section{Topology of a GSM Network}
-GSM networks consists of a variety of different subsystems to realise the goal of establishing a radio communication link between two parties. The hierarchy of systems and their respective connections to
-each other is illustrated in figure \ref{fig:GSMArchitecture}. We will now briefly explain each subsystem.
+GSM networks consists of a variety of different subsystems to realise the goal of establishing a radio communication link between two parties. The hierarchy of systems and their respective connections to each other is illustrated in figure \ref{fig:GSMArchitecture}. Each subsystem will now be discussed.
 \subsubsection{Mobile Station (MS)}
-A Mobile station (MS) as it is defined in the GSM spec refers to any mobile device that is capable of of making and receiving calls on a GSM network.  The MS is the main gateway 
-for a user to gain access to the GSM network. The MS has two features which play an important role throughout the GSM Network, namely:
+A Mobile station (MS) as it is defined in the GSM specification refers to any mobile device that is capable of of making and receiving calls on a GSM network.  The MS is the main gateway 
+for a user to gain access to the GSM network \cite{Eisenblatter,GSMArchitectureProtocolsServices}. Typical devices that fall under the category of MS are Cellular Phones, Smart Phones and POS devices. The MS has two features which play an important role throughout the GSM Network, namely:
 \begin{description}
-\item[Subscriber Identification Module (SIM)] --- Usually inserted into a mobile devices. The SIM contains the \emph{International Mobile Subscriber Identity} (IMSI) and is used throughout the network 
-for Authentication as well as being a key part in providing encrypted transmissions.
-\item[International Mobile Equipment Identity(IMEI)] --- Used to identify mobile station equipment. Primarily used in the denial of service to equipment that has been blacklisted\footnote{Equipment can be blacklisted for a variety of reasons e.g. theft} and tries to gain access to the network.
+\item[Subscriber Identification Module (SIM)] --- Usually inserted into a mobile devices. The SIM contains the \emph{international mobile subscriber identity} (IMSI) and is used throughout the network for authentication as well as being a key part in providing encrypted transmissions \cite{Eisenblatter}.
+\item[International Mobile Equipment Identity(IMEI)] --- Used to identify mobile station equipment. Primarily used in the denial of service to equipment that has been blacklisted\footnote{Equipment can be blacklisted for a variety of reasons e.g. theft} and tries to gain access to the network \cite{Eisenblatter}.
 \end{description}
-The MS has the capability to change the transmission power is uses from its base value to a maximum value of 20 mW. The change in transmission power is automatically set to the lowest level by the Base Transceiver Station to ensure reliable communication after evaluating the signal strength as measured by the MS \cite{GSMSysEngin}. % The power adjustment also minimizes cochannel interference, which we can talk about later when we introduce interference
+The MS has the capability to change the transmission power it uses from its base value to a maximum value of 20 mW. The change in transmission power is automatically set to the lowest level by the base transceiver station (BTS) to ensure reliable communication after evaluating the signal strength as measured by the MS \cite{GSMSysEngin,GSMArchitectureProtocolsServices}. The power adjustment also minimizes cochannel interference because the transmitted signal is less powerful therefore less likely to interfere with other signals\cite{GSMSysEngin}.
 
 \subsection{Base Station Subsystem (BSS)}
 
-According to the GSM Phase 2+ specification this system is viewed by the \emph{Mobile Switching Centre} (MSC) through an Abis radio interface as the system responsible for communicating with Mobile Stations in a particular location area. The BSS usually consists of one \emph{Base Station Controller} (BSC) with one or more \emph{Base Transceiver Stations} (BTS) which it controls. The communication link between the MSC and BSC is the called the A-interface and the communication link between the BSC and BTS is called the Abis interface. The definition of these communication interfaces is beyond the scope of this disseration, the interested reader is directed to the book \emph{GSM System Engineering} by Asha Mehrotra. A BTS has similar equipment to that of a Mobile Station. Both have transceivers, antennas and the necessary functions to perform radio communication. 
+According to the GSM Phase 2+ specification this system is viewed by the \emph{mobile switching centre} (MSC) through an Abis radio interface as the system responsible for communicating with mobile stations in a particular location area. The BSS usually consists of one \emph{base station controller} (BSC) with one or more \emph{base transceiver stations} (BTS) which it controls. The communication link between the MSC and BSC is the called the A-interface and the communication link between the BSC and BTS is called the Abis interface. A BTS has similar equipment to that of a Mobile Station. Both have transceivers, antennas and the necessary functions to perform radio communication. 
 
-In a GSM network the Service Area (SA) is subdivided into Location Areas(LA's) which are then futher divided into smaller radio zones called cells \cite{GSMSecurInTeleNetwork}. A cell is served by only one BTS and is usually regarded to be in the center of a cell as can be seen in figure \ref{fig:GSMCell}. Even though cells are modelled as being hexagons (see figure \ref{fig:GSMCell}) the actual coverage area of a cell has no predefined regular shape. Futhermore a cell is divided into 1 to 3 service sectors and each sector is allocated an antenna/transceiver \cite{GSMSysEngin}. Depending on how many sectors are at a cell, the operating angle of the antennae needs to be adjusted accordingly to ensure 360 degree service. If there is only one sector an omni-directional antenna is used, otherwise the antennae operating angle are adjusted to $\frac{360\,^{\circ}}{n}$ where ${n}$ is the amount of antennae \cite{Eisenblatter}.
+In a GSM network the Service Area (SA) is subdivided into Location Areas(LA's) which are then futher divided into smaller radio zones called cells \cite{GSMSecurInTeleNetwork}. 
+
+When a cellular network is modeled, cells are modeled as hexagonal shapes. Each cell in the modelled network is served by only one BTS and is usually regarded to be in the center of a cell as can be seen in figure \ref{fig:GSMCell}\cite{GSMArchitectureProtocolsServices}. Even though cells are modelled as being hexagons (see figure \ref{fig:GSMCell}) the actual coverage area of a cell has no predefined regular shape \cite{GSMArchitectureProtocolsServices}.
+
+With the network modelled as a series of interconnecting hexagons it allows one to more easily take constraints into account. For a cell to serve its geographical area, it needs to be allocated frequencies to operate on. Therefore, for each cell $i$ in the modelled network a subset $S_i$ of frequencies from the total frequencies $F$ allocated to the GSM network is assigned\cite{GSMArchitectureProtocolsServices}. Neighboring cells must at all cost avoid having the same subset of frequencies allocated to them, since such a scenario would lead to severe interference on any communication and thus degrade quality \cite{GSMArchitectureProtocolsServices}.
+
+Since the amount of cells in a network greatly outnumber the availbe of subset frequencies available one is forced to start reusing frequency subsets in cells. To ensure the resused frequency subsets do not interfere with their neighboring cells a reuse distance $D$ is defined \cite{GSMArchitectureProtocolsServices}. Which basically means that a certain amount of cells must be between the cell already assigned the frequency subset $S_i$ and the cell to be assigned a frequency subset \cite{GSMArchitectureProtocolsServices}. The amount of cells is the distance value $D$.
+
+A cell is divided into 1 to 3 service sectors and each sector is allocated an antenna/transceiver \cite{GSMSysEngin}. Depending on how many sectors are at a cell, the operating angle of the antennae needs to be adjusted accordingly to ensure 360 degree service. If there is only one sector an omni-directional antenna is used, otherwise the antennae operating angle are adjusted to $\frac{360\,^{\circ}}{n}$ where ${n}$ is the amount of antennae \cite{Eisenblatter}.
 \begin{figure}[h]
 	\begin{centering}
 		\input{tikz-pics/GSMCell.tex}
@@ -93,9 +122,7 @@ In a GSM network the Service Area (SA) is subdivided into Location Areas(LA's) w
 	\end{centering}
 \end{figure}
 
-
-Each sector operates one or more elementary transceivers called TRX’s. The amount of TRX’s per sector is determined by the expected peak traffic demand that the cell must be able to handle. Each TRX can handle 7 to 8 communication links or calls in parallel except the first TRX, which handles fewer calls than normal due to it being responsible for transmitting cell organisation and protocol information \cite{Eisenblatter}. TRX’s are able to handle 7-8 calls in parallel due to the use of \emph{Frequency Division Multiplexing} (FDM) and \emph{Time Division Multiplexing} (TDM) schemes. TRX’s are assigned channels which enable them to provide conversion between digital traffic data on the network side and the radio communication between Mobile Stations and 
-the GSM network. \cite{ACOvsEA,FAPOrientationModel}
+Each sector operates one or more elementary transceivers called TRX’s. The amount of TRX’s per sector is determined by the expected peak traffic demand that the cell must be able to handle. Each TRX can handle 7 to 8 communication links or calls in parallel except the first TRX, which handles fewer calls than normal due to it being responsible for transmitting cell organisation and protocol information \cite{Eisenblatter}. TRX’s are able to handle 7-8 calls in parallel due to the use of \emph{frequency division multiplexing} (FDM) and \emph{time division multiplexing} (TDM) schemes. TRX’s are assigned channels which enable them to provide conversion between digital traffic data on the network side and the radio communication between Mobile Stations and the GSM network\cite{ACOvsEA,FAPOrientationModel}.
 
 \subsection{Mobile Switching Centre (MSC)}
 

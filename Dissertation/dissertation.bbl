@@ -244,6 +244,11 @@ Lhassane Idoumghar and Ren{é} Schott.
   the field of radio broadcasting.
 \newblock {\em IEEE Transactions on Broadcasting}, 55:223--229, 2009.
 
+\bibitem{GSMArchitectureProtocolsServices}
+C.~Bettstetter J.~Eberspächer, H.-J.~Vögel and C.~Hartmann.
+\newblock {\em GSM - Architecture, Protocols and Services}.
+\newblock Wiley Publishing, third edition, 2009.
+
 \bibitem{MultiObjTabu}
 D.M. Jaeggi, G.T. Parks, T.~Kipouros, and P.J. Clarkson.
 \newblock The development of a multi-objective tabu search algorithm for
