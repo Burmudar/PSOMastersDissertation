@@ -1,3 +1,3 @@
 all:
-	pdflatex GSMCell.tex
-	evince GSMCell.pdf
+	pdflatex GSMChannel.tex
+	evince GSMChannel.pdf
