@@ -1,33 +1,17 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage{tikz}
-\usetikzlibrary{chains,positioning,calc,shapes.geometric}
-\tikzset{flowItem/.style={rectangle,rounded corners,text centered,draw=gray,very thick, on chain},decisionItem/.style={diamond,rounded corners,text centered,draw=gray,very thick, on chain}}
-\begin{document}
-\begin{tikzpicture}[scale=1.0]
+\begin{tikzpicture}[scale=0.5]
 	\begin{scope}
-			\node (LeftBCS) at (-3.55,-0.75) [shape=rectangle,draw=blue!40, fill=blue!20,minimum size = 2.25cm] {BCS};
-			\draw (LeftBCS.south) -- (-5,-3.35);
-			\draw (LeftBCS.south) -- (-2,-3.35);
-			\node (RightBCS) at (3.55,-0.75) [shape=rectangle,draw=blue!40, fill=blue!20,minimum size = 2.25cm] {BCS};
-			\draw (RightBCS.south) -- (5,-3.35);
-			\draw (RightBCS.south) -- (2,-3.35);
-			\draw [dashed,thick,color=black] (-5.6,0.5) rectangle (5.6,-5.85) (0,0.25) node [anchor=north] {BSS System};
+		\draw (-4,0.0) rectangle (-3.0,1.0);
+		\draw (-3,0.0) rectangle (-2.0,1.0);
+		\draw (-2,0.0) rectangle (1.0,1.0);
+		\node (TS0) at (-0.5,0.5) [shape=rectangle,draw=black,fill=gray!40,minimum size = 0.5cm]{TS0};
+		\node (TS1) at (0.5,0.5) [shape=rectangle,draw=black,fill=gray!40,minimum size = 0.5cm]{TS1};
+		\node (TS2) at (1.5,0.5) [shape=rectangle,draw=black,fill=gray!40,minimum size = 0.5cm]{TS2};
+		\node (TS3) at (2.5,0.5) [shape=rectangle,draw=black,fill=gray!40,minimum size = 0.5cm]{TS3};
+		\node (TS4) at (3.5,0.5) [shape=rectangle,draw=black,fill=gray!40,minimum size = 0.5cm]{TS4};
+		\node (TS5) at (4.5,0.5) [shape=rectangle,draw=black,fill=gray!40,minimum size = 0.5cm]{TS5};
+		\node (TS6) at (5.5,0.5) [shape=rectangle,draw=black,fill=gray!40,minimum size = 0.5cm]{TS6};
+		\draw (7,0.0) rectangle (6.0,1.0);
+		\draw (8,0.0) rectangle (7.0,1.0);
+		\draw (9,0.0) rectangle (8.0,1.0);
 	\end{scope}
-		%Draw MSC
-		\node (MiddelMSC) at (0,2.75) [shape=rectangle,draw=black,minimum height=2.5cm, minimum width=1.5cm] {MSC};
-		\draw [thick] (MiddelMSC.west) to [bend right=30] (LeftBCS.north);
-		\draw [thick] (MiddelMSC.east) to [bend left=30] (RightBCS.north);
-		\node (LeftMSC) at (-5,2.75) [shape=rounded rectangle,draw=black,minimum height=2.5cm, minimum width=1.5cm] {Other MSC's};
-		\node (OtherNetworks) at (5,2.75) [cloud,cloud ignores aspect,cloud puffs=11,minimum height = 2.5cm,draw=black] {Other Networks};
-		\draw (LeftMSC.east) to (MiddelMSC);
-		\draw (MiddelMSC) to (OtherNetworks);
-		%Databases
-		\node (VLRDB) at (0,6.25) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {VLR};
-		\node (EIRDB) at (-4,6.25) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {EIR};
-		\node (HLRDB) at (4,6.25) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {HLR};
-		\draw[thick] (EIRDB) to [bend left=20] (MiddelMSC);
-		\draw[thick] (VLRDB) to (MiddelMSC);
-		\draw[thick] (HLRDB) to [bend right=20] (MiddelMSC);
-		\draw[dashed,thick,color=black] (-6,8) -- (0,8) node [anchor=north] {NSS System} -- (6,8) -- (6,5) -- (2,5) -- (2,1) -- (-2,1) -- (-2,5) -- (-6,5) -- (-6,8) -- cycle;
 \end{tikzpicture}
-\end{document}
