@@ -1,7 +1,7 @@
 \chapter{Cellular Technology}
 \label{chpt:celltech}
 \section{Introduction}
-In the information age we currently live in almost every device has a wireless technology of sort that it uses to provide a specific service. Radios for audio entertainment; television remotes to change 
+In the information age we currently live in almost every device has a wireless technology of sort that it uses to provide a specific service. Radios for audio entertainment; television remotes to change
 channels; cellular phones for communication; wireless access points to create wireless LAN's\cite{Karen2004}. Wireless technology is now part of our everyday life.
 
 The popularity and rapid adoption of wireless technology has made it difficult to plan,manage and operate wireless networks. Wireless technology facilitates communication between two entities by transmitting data or voice via a radio frequency. 
@@ -79,7 +79,7 @@ A direct consequence of UMTS utilizing DS-CDMA and WCDMA, which sends data over 
 With CDMA a users signal is not transmitted as its original signal. Instead the signal is spectrally spread over a multiple of its original bandwidth using a spreading factor \cite{GSMArchitectureProtocolsServices}. The spreading factor fluctuates between values of 10 and 1000 \cite{GSMArchitectureProtocolsServices}. Using these spreading factors less interference and disturbances are encountered because the broadband signal is generated from a narrowband signal \cite{GSMArchitectureProtocolsServices}.
 UMTS may be a large improvement, but its adoption does not spread very far from busy city centres which contain a large concentration of clients in a small geographical area. The reason for this is that, as mentioned previously, UMTS caters for larger data usage and therefore more clients can be serviced simultaneously \cite{GSMArchitectureProtocolsServices}.
 
-Most network operators do not implement entirely new backbone architecture for UMTS to operate on but instead, utilize the same backbone used for GSM and GPRS. This not only extends the lifetime of previous infrastructure investment by the operator but also builds upon the redundancy provided by the GSM network \cite{GSMArchitectureProtocolsServices}. Thus even with new technological improvements such as UMTS, GSM as a wireless technology is still used for communication and is therefore still relevant today.
+Most network operators do not implement entirely new backbone architecture for UMTS\label{UMTSGSMBackbone} to operate on but instead, utilize the same backbone used for GSM and GPRS. This not only extends the lifetime of previous infrastructure investment by the operator but also builds upon the redundancy provided by the GSM network \cite{GSMArchitectureProtocolsServices}. Thus even with new technological improvements such as UMTS, GSM as a wireless technology is still used for communication and is therefore still relevant today.
 
 In this section a brief overview of the history of the GSM Network specification was presented. In the next section an explanation of the topology of GSM network will be given. This will broad the understanding behind GSM networks.
 
@@ -167,8 +167,6 @@ The HLR is a database that permanently stores information pertaining to a given 
 
 Subscriber parameters that are stored in the database include: Billing information, routing information, identification numbers, authentication parameters,subscribed services. The following information is also stored but the information is of a temporary nature and can change at any time: Current VLR and MSC the subscriber is registered with; Whether the subscriber is roaming \cite{GSMSysEngin}.
 
-\paragraph{Visited Location Register (VLR)}
-
 \paragraph{Authentication Center (AUC)}
 The Authentication center is the entity in the GSM network that performs security functions and thus stores information that enables it to provide secure over the air communication\cite{GSM92,GSMSysEngin}. The information that is stored contains authentication information as well as keys that are used in ciphering of information\cite{GSM92,GSMSysEngin}.
 
@@ -213,15 +211,22 @@ In the GSM network all the various entities communicate with each other through 
 In this section a brief overview of the most critical interfaces used by all the involved entities of the GSM network was presented. In the next section a discussion will be given describing the difference between a logical channel and a frequency. Additionally an outline and overview of all the logical channels defined in the GSM will be presented. 
 \section{GSM Channels}
 \label{sec:interfacech}
-GSM defines a series of logical channels which are used for communication over these interfaces. A distinction needs to be made between channels and frequencies. A Frequency is the physical radio link by which information is transmitted over the air. Using TDMA the GSM system is able to provide additional transmission capacity by dividing the radio link into equal time slots \cite{wirelesstelcoMullet}. 
+GSM defines a series of logical channels which are used for communication over these interfaces. A distinction needs to be made between channels and frequencies. As discussed earlier, a network is licensed a certain section of the wireless spectrum for use for commercial communication. This piece of spectrum is referred to as bandwidth and is measured in Hz, therefore $W$ Hz, where $W$ denotes the allocated bandwidth\cite{FundamentalsWirelessCommunication}.
+
+This bandwidth W is then divided into N smaller chunks of bandwidth called narrowband chunks. Each N narrowband chunk is a channel and has a width of $W/N$ Hz\cite{FundamentalsWirelessCommunication}. This channel of $W/N$ Hz width is also refferred to as a frequency.
+The terms channel and frequency can therefore be used interchangebly. In this dissertation the authors will use the term channel.
+
+Using TDMA the GSM system is able to provide additional transmission capacity by dividing the channel into eight equal time slots \cite{wirelesstelcoMullet}. 
 \begin{figure}[h]
 	\begin{centering}
 		\input{tikz-pics/GSMChannel.tex}
-		\caption{Logical channel \cite{wirelesstelcoMullet}}
+		\caption{TDMA Frame and Logical channels \cite{wirelesstelcoMullet}}
 		\label{fig:GSMChannels}
 	\end{centering}
 \end{figure}
 As can be observed from figure \ref{fig:GSMChannels} each TDMA frame has a series of consecutive timeslots. Each timeslot can be used for both uplink and downlink transmission. A GSM \emph{channel} is a logical channel and referres to a single timeslot within a TDMA frame \cite{wirelesstelcoMullet,GSMArchitectureProtocolsServices}.
+
+The GSM system is hence able to use the same physical frequency in eight different timeslots without interference as these \emph{logical} channels are used at different times. Therefore using TDMA the available channels than can be used for communication in GSM is increased eight fold \cite{wirelesstelcoMullet}.
 
 Frequencies are assigned to the uplink and downlink portion of the connection with a certain duplex separation in the frequency band \footnote{Separation is usually 45 MHz} to avoid interference between uplink and downlink. There are two types of channels, traffic channels and control channels. Traffic channels (TCHs) primary purpose is to enable communication of user speech and data and therefore carry no control information \cite{GSMArchitectureProtocolsServices}.
 

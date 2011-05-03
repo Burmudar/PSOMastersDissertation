@@ -9,46 +9,50 @@ A level-1 auxiliary file: chpt6.aux
 A level-1 auxiliary file: chpt7.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
+Warning--I didn't find a database entry for "MobileWirelessCommunicationss"
+Warning--I didn't find a database entry for "AdreasPaper"
+Warning--I didn't find a database entry for "Karen200"
 Warning--I didn't find a database entry for ""
-You've used 118 entries,
+Warning--there's a number but no volume in FAPInCell
+You've used 123 entries,
             2118 wiz_defined-function locations,
-            1288 strings with 28183 characters,
-and the built_in function-call counts, 45433 in all, are:
-= -- 4607
-> -- 1817
-< -- 47
-+ -- 752
-- -- 594
-* -- 3187
-:= -- 7079
-add.period$ -- 374
-call.type$ -- 118
-change.case$ -- 645
+            1314 strings with 28807 characters,
+and the built_in function-call counts, 46167 in all, are:
+= -- 4663
+> -- 1858
+< -- 46
++ -- 769
+- -- 606
+* -- 3202
+:= -- 7242
+add.period$ -- 389
+call.type$ -- 123
+change.case$ -- 662
 chr.to.int$ -- 0
-cite$ -- 118
-duplicate$ -- 1810
-empty$ -- 3691
-format.name$ -- 594
-if$ -- 9904
+cite$ -- 124
+duplicate$ -- 1852
+empty$ -- 3762
+format.name$ -- 606
+if$ -- 10042
 int.to.chr$ -- 0
-int.to.str$ -- 118
-missing$ -- 120
-newline$ -- 594
-num.names$ -- 236
-pop$ -- 648
+int.to.str$ -- 123
+missing$ -- 130
+newline$ -- 619
+num.names$ -- 246
+pop$ -- 691
 preamble$ -- 1
-purify$ -- 533
+purify$ -- 549
 quote$ -- 0
-skip$ -- 1392
+skip$ -- 1400
 stack$ -- 0
-substring$ -- 3527
-swap$ -- 543
-text.length$ -- 47
+substring$ -- 3475
+swap$ -- 533
+text.length$ -- 46
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 456
-warning$ -- 0
-while$ -- 423
-width$ -- 121
-write$ -- 1337
-(There was 1 warning)
+type$ -- 464
+warning$ -- 1
+while$ -- 430
+width$ -- 126
+write$ -- 1387
+(There were 5 warnings)

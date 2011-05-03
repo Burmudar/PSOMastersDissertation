@@ -19,7 +19,7 @@ E.~Alba, F.~Luna, A.~J. Nebro, and J.~M. Troya.
 \newblock {\em Parallel Comput.}, 30(5-6):699--719, 2004.
 
 \bibitem{ConstantTempSA}
-Mahmoud~H. Alrefaei and Sigr{ú}n Andrad{ó}ttir.
+Mahmoud~H. Alrefaei and Sigr{{\'u}}n Andrad{{\'o}}ttir.
 \newblock A simulated annealing algorithm with constant temperature for
   discrete stochastic optimization.
 \newblock {\em Management Science}, 45:748--764, 1999.
@@ -61,9 +61,14 @@ Bruce~M. Blumberg.
   learn what they ought to learn, pages 37--67.
 \newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 2003.
 
+\bibitem{FAPInCell}
+R.~Bornd{\"o}rfer, A.~Eisenbl{\"a}tter, M.~Gr{\"o}tschel, and A.~Martin.
+\newblock Frequency assignment in cellular phone networks.
+\newblock {\em Annals of Operations Research}, (76):73--93, 1998.
+
 \bibitem{FAPOrientationModel}
-Ralf Borndörfer, Andreas Eisenblätter, Martin Grötschel, and Alexander
-  Martin.
+Ralf Bornd{\"o}rfer, Andreas Eisenbl{\"a}tter, Martin Gr{\"o}tschel, and
+  Alexander Martin.
 \newblock The orientation model for frequency assignment problems.
 \newblock Technical report, Konrad-Zuse-Zentrum Berlin, 1998.
 
@@ -86,12 +91,6 @@ A.~Chawla, S.~Mukherjee, and B.~Karthikeyan.
 \newblock Characterization of human passive muscles for impact loads using
   genetic algorithm and inverse finite element methods.
 \newblock {\em Biomechanics and Modeling in Mechanobiology}, 8(1):67--76, 2009.
-
-\bibitem{SiteFAPWLAN}
-Jeremy~K. Chen, Gustavo de~Veciana, and Theodore~S. Rappaport.
-\newblock Site-specific knowledge and interference measurement for improving
-  frequency allocatoins in wireless networks.
-\newblock {\em IEEE Transactions on Vehicular Technology}, 58:2366--2376, 2009.
 
 \bibitem{BeeJobShop}
 Chin~Soon Chong, Appa~Iyer Sivakumar, Malcolm Yoke~Hean Low, and Kheng~Leng
@@ -128,6 +127,12 @@ Audrey Dupont, Andrea~Carneiro Linhares, Christian Artigues, Dominique Feillet,
 \newblock The dynamic frequency assignment problem.
 \newblock {\em European Journal of Operational Research}, 195:75--88, 2009.
 
+\bibitem{FAPRAMColouring}
+A.~Eisenbl{\"a}tter, M.~Gr{\"o}tschel, and A.~Martin.
+\newblock Frequency planning and rammifications of colouring.
+\newblock Technical report, Konrad-Zuse-Zentrum fu ̈r Informationstechnik
+  Berlin, 2000.
+
 \bibitem{AndreasPaper}
 Andreas Eisenbl{\"a}tter.
 \newblock Assigning frequencies in gsm networks.
@@ -157,6 +162,12 @@ Andries~P. Engelbrecht.
 \newblock {\em Computational Intelligence: An Introduction}.
 \newblock Wiley Publishing, 2007.
 
+\bibitem{WirelessDigitalCommunications}
+Dr.~Kamilo Feher.
+\newblock {\em Wireless Digital Communications: Modulation \& Spread Sprectrum
+  Applications}.
+\newblock Prentice Hall, 1995.
+
 \bibitem{SelfControllingReactiveTabu}
 N.~Fescioglu-Unver and M.M. Kokar.
 \newblock Application of self controlling software approach to reactive tabu
@@ -165,7 +176,7 @@ N.~Fescioglu-Unver and M.M. Kokar.
   Second IEEE International Conference on}, pages 297 --305, 20-24 2008.
 
 \bibitem{AntQAP}
-L.~M. Gambardella, {É}D Taillard, and M.~Dorigo.
+L.~M. Gambardella, {{\'E}}D Taillard, and M.~Dorigo.
 \newblock Ant colonies for the quadratic assignment problem.
 \newblock {\em The Journal of the Operational Research Society},
   50(2):167--176, Feb 1999.
@@ -175,6 +186,11 @@ Gautam Garai and B.~B. Chaudhuri.
 \newblock A distributed hierarchical genetic algorithm for efficient
   optimization and pattern matching.
 \newblock {\em Pattern Recogn.}, 40(1):212--228, 2007.
+
+\bibitem{WirelessCommunications}
+Andrea Goldsmith.
+\newblock {\em Wireless Communications}.
+\newblock Cambridge University Press, 2005.
 
 \bibitem{ABCFusionGrid}
 Antonio G\'{o}mez-Iglesias, Miguel~A. Vega-Rodr\'{\i}guez, Francisco
@@ -221,13 +237,6 @@ Alan Herz, David Schindl, and Nicolas Zufferey.
 \newblock {\em 4OR: A Quarterly Journal of Operations Research}, 3:139--161,
   2005.
 
-\bibitem{SDMASatelite}
-L.~Houssin, C.~Artigues, and E.~Corbel.
-\newblock Frequency allocation problem in a sdma satellite communication
-  system.
-\newblock In {\em Computers Industrial Engineering, 2009. CIE 2009.
-  International Conference on}, pages 1599 --1604, 6-9 2009.
-
 \bibitem{FAPWeb}
 http://fap.zib.de/.
 \newblock Fap web, 2010.
@@ -239,13 +248,13 @@ Shun-Fa Hwang and Rong-Song He.
 \newblock {\em Adv. Eng. Softw.}, 37(6):406--418, 2006.
 
 \bibitem{RadioFAP}
-Lhassane Idoumghar and Ren{é} Schott.
+Lhassane Idoumghar and Ren{{\'e}} Schott.
 \newblock Two distributed algorithms for the frequency assignment problem in
   the field of radio broadcasting.
 \newblock {\em IEEE Transactions on Broadcasting}, 55:223--229, 2009.
 
 \bibitem{GSMArchitectureProtocolsServices}
-C.~Bettstetter J.~Eberspächer, H.-J.~Vögel and C.~Hartmann.
+C.~Bettstetter J.~Ebersp{\"a}cher, H.-J.~V{\"o}gel and C.~Hartmann.
 \newblock {\em GSM - Architecture, Protocols and Services}.
 \newblock Wiley Publishing, third edition, 2009.
 
@@ -302,8 +311,8 @@ Il~kwon Jeong and Ju~jang Lee.
   -- 532, 1996.
 
 \bibitem{TempCyclingSA}
-Sergio Ledesma, Miguel Torres, Donato Hern{á}ndez, Gabriel Avi{ñ}a, and
-  Guadalupe Garc{í}a.
+Sergio Ledesma, Miguel Torres, Donato Hern{{\'a}}ndez, Gabriel Avi{{\~n}}a, and
+  Guadalupe Garc{{\'\i}}a.
 \newblock Temperature cycling on simulated annealing for neural network
   learning.
 \newblock In {\em MICAI 2007: Advances in Artificial Intelligence}, pages
@@ -335,13 +344,6 @@ Nguyen~Tung Linh and Nguyen~Quynh Anh.
 Hongbo Liu, Ajith Abraham, and Maurice Clerc.
 \newblock Chaotic dynamic characteristics in swarm intelligence.
 \newblock {\em Applied Soft Computing}, 7(3):1019 -- 1026, 2007.
-
-\bibitem{MISatelite}
-Wen Liu, Haixiang Shi, and Lipo Wang.
-\newblock Minimizing interference in satellite communications using chaotic
-  neural networks.
-\newblock {\em Natural Computation, 2007. ICNC 2007. Third International
-  Conference on}, 2:441 --444, aug. 2007.
 
 \bibitem{ACOvsEA}
 Francisco Luna, Christian Blum, Enrique Alba, and Antonio~J. Nebro.
@@ -550,6 +552,11 @@ Angelos~N. Rouskas, Michael~G. Kazantzakis, and Miltiades~E. Anagnostou.
 \newblock Minimizing of frequency assignment span in cellular networks.
 \newblock {\em IEEE Transactions on Vehicular Technology}, 48:873--882, 1999.
 
+\bibitem{AIModernApproach}
+Stuart Russel and Peter Norvig.
+\newblock {\em Artificial Intelligence A Modern Approach}.
+\newblock Prentice Hall, second edition, 2003.
+
 \bibitem{InterferenceOrientatedFAP}
 P.~Demestichas E.~Tzifa S.~Kotrotsos, G.~Kotsakis and V.~Demesticha.
 \newblock Forumlation and computationally efficient algirithms for an
@@ -568,6 +575,11 @@ H.G. Sandalidis, P.P. Stavroulakis, and J.~Rodriguez-Tellez.
   in cellular mobile systems.
 \newblock {\em Evolutionary Computation, IEEE Transactions on}, 2(4):125 --137,
   nov 1998.
+
+\bibitem{MobileWirelessCommunications}
+Mischa Schwartz.
+\newblock {\em Mobile Wireless Communications}.
+\newblock Cambridge University Press, 2005.
 
 \bibitem{PSOGABreeding}
 Matthew Settles and Terence Soule.
@@ -605,6 +617,11 @@ Marc St-Hilaire, Steven Chamberland, and Samuel Pierre.
 \newblock A tabu search algorithm for the global planning problem of third
   generation mobile networks.
 \newblock {\em Comput. Electr. Eng.}, 34(6):470--487, 2008.
+
+\bibitem{PrinciplesMobileCommunication}
+Gordon~L. Stu\"{u}ber.
+\newblock {\em Principles of Mobile Communication}.
+\newblock Kluwer Academic Publishers, 1996.
 
 \bibitem{MultiradioMeshNetworks}
 Anand~Prabhu Subramanian, Himanshu Gupta, Samir~R. Das, and Jing Cao.
@@ -667,6 +684,11 @@ Nguyen~Thanh Trung and Duong~Tuan Anh.
   optimizing dorm room assignments.
 \newblock In {\em Computing and Communication Technologies, 2009. RIVF '09.
   International Conference on}, pages 1 --5, 13-17 2009.
+
+\bibitem{FundamentalsWirelessCommunication}
+David Tse and Pramod Viswanath.
+\newblock {\em Fundamentals of Wireless Communication}.
+\newblock Cambridge University Press, 2005.
 
 \bibitem{CurveFittingSA}
 Hsien-Yu Tseng and Chang-Ching Lin.

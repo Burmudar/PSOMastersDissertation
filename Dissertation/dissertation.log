@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.4.5)  17 APR 2011 16:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.5.2)  3 MAY 2011 20:43
 entering extended mode
  %&-line parsing enabled.
 **dissertation.tex
@@ -150,7 +150,7 @@ File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count106
 ))
 \Gin@req@height=\dimen112
@@ -375,6 +375,37 @@ File: pgfmodulematrix.code.tex 2008/01/15  (rcs-revision 1.1)
 hs.code.tex
 File: tikzlibrarytopaths.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
 )))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryploth
+andlers.code.tex
+File: tikzlibraryplothandlers.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryposit
+ioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/02/12 v2.00 (rcs-revision 1.5)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.pathreplacing.code.tex
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecor
+ations.code.tex
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen157
+\pgfdecoratedremainingdistance=\dimen158
+\pgfdecoratedinputsegmentcompleteddistance=\dimen159
+\pgfdecoratedinputsegmentremainingdistance=\dimen160
+\pgf@decorate@distancetomove=\dimen161
+\pgf@decorate@repeatstate=\count127
+\pgfdecorationsegmentamplitude=\dimen162
+\pgfdecorationsegmentlength=\dimen163
+))
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibrarydecorations.pathreplacing
+.code.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatte
+rns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v2.00 (rcs-revision 1.2)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2008/01/15 v2.00 (rcs-revision 1.12)
+))
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
 s.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.00 (rcs-revision 1.1)
@@ -409,30 +440,30 @@ Package tocbibind Note: Using chapter style headings, unless overridden.
 (./chpt5.aux) (./chpt6.aux) (./chpt7.aux))
 \openout1 = `dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
-\scratchdimen=\dimen157
+\scratchcounter=\count128
+\scratchdimen=\dimen164
 \scratchbox=\box38
-\nofMPsegments=\count128
-\nofMParguments=\count129
+\nofMPsegments=\count129
+\nofMParguments=\count130
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count130
-\MPscratchDim=\dimen158
-\MPnumerator=\count131
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen165
+\MPnumerator=\count132
 \everyMPtoPDFconversion=\toks31
 ) [1
 
@@ -517,9 +548,12 @@ Missing character: There is no ô in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [21] [22] [23] [24] [25]
-(./tikz-pics/GSMChannel.tex) [26] [27]
-Overfull \hbox (14.76125pt too wide) in paragraph at lines 249--250
+ [21] [22]
+Underfull \vbox (badness 1533) has occurred while \output is active []
+
+ [23]
+[24] [25] (./tikz-pics/GSMChannel.tex) [26] [27]
+Overfull \hbox (14.76125pt too wide) in paragraph at lines 254--255
 []\OT1/cmr/m/n/10.95 The last group of sig-nalling chan-nels are re-ferred to a
 s Ded-i-cated/Associated
  []
@@ -533,62 +567,99 @@ s Ded-i-cated/Associated
 
 ]
 Chapter 3.
-[35] [36] [37] [38]
-Overfull \hbox (1.13452pt too wide) in paragraph at lines 59--60
-[]\OT1/cmr/m/n/10.95 In this sec-tion we de-scribed what in-ter-fenece is and w
-hat the con-siquences
+[35]
+
+LaTeX Warning: Reference `sec:interference' on page 36 undefined on input line 
+18.
+
+[36]
+Underfull \vbox (badness 1168) has occurred while \output is active []
+
+ [37]
+[38]
+Overfull \hbox (2.40002pt too wide) in paragraph at lines 64--64
+[]\OT1/cmr/bx/n/12 Dynamic Fre-quency/Channel As-sign-ment (DFA/DCA) 
  []
 
 
-Overfull \hbox (0.13086pt too wide) in paragraph at lines 67--68
-[]\OT1/cmr/m/n/10.95 In Satelite com-mu-ni-ca-tion, a sig-nal is trans-mit-ted 
-to one or more satelites
+Overfull \hbox (4.66287pt too wide) in paragraph at lines 67--68
+[]\OT1/cmr/m/n/10.95 The co-channel reuse con-straint must be ad-hered to oth-e
+r-wise, the amount
  []
+
+
+LaTeX Warning: Citation `MobileWirelessCommunicationss' on page 39 undefined on
+ input line 69.
+
+
+LaTeX Warning: Citation `MobileWirelessCommunicationss' on page 39 undefined on
+ input line 71.
 
 [39]
-Overfull \hbox (11.50961pt too wide) in paragraph at lines 82--83
-\OT1/cmr/m/n/10.95 port for large fixed line netwroks, en-ter-prise net-works, 
-cam-puses and metropoli-
+
+LaTeX Warning: Citation `MobileWirelessCommunicationss' on page 40 undefined on
+ input line 73.
+
+
+LaTeX Warning: Citation `MobileWirelessCommunicationss' on page 40 undefined on
+ input line 75.
+
+
+LaTeX Warning: Citation `MobileWirelessCommunicationss' on page 40 undefined on
+ input line 77.
+
+[40] (./tikz-pics/cochannel.tex) (./tikz-pics/adjchannel.tex) [41]
+(./tikz-pics/SeparationGraph.tex) [42] [43]
+
+LaTeX Warning: Citation `AdreasPaper' on page 44 undefined on input line 157.
+
+
+LaTeX Warning: Citation `Karen200' on page 44 undefined on input line 158.
+
+
+LaTeX Warning: Citation `Karen200' on page 44 undefined on input line 159.
+
+[44]
+Overfull \hbox (1.71176pt too wide) in paragraph at lines 166--167
+[]\OT1/cmr/m/n/10.95 The sec-ond set of hard-constraint fre-quen-cies are known
+ as \OT1/cmr/m/it/10.95 Lo-cally blocked
  []
 
-[40] [41] [42] [43]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∂ in font cmr10!
- [44]
-Underfull \vbox (badness 2529) has occurred while \output is active []
-
- [45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46]
-Overfull \hbox (2.65535pt too wide) in paragraph at lines 154--155
+[45] [46] [47]
+Overfull \hbox (2.65535pt too wide) in paragraph at lines 203--204
 []\OT1/cmr/m/n/10.95 The Fre-quency As-sign-ment Prob-lem can be rep-re-sented 
 as a graph colour-
  []
 
-[47] [48]
+[48] [49]
 Missing character: There is no √ in font cmr10!
 Missing character: There is no © in font cmr10!
- [49]) [50]
+ [50] [51] [52]
+Overfull \hbox (11.20543pt too wide) in paragraph at lines 304--305
+\OT1/cmr/m/n/10.95 port for large fixed line net-works, en-ter-prise net-works,
+ cam-puses and metropoli-
+ []
+
+[53] [54] [55] [56]) [57]
 \openout2 = `chpt4.aux'.
 
- (./chpt4.tex
+ (./chpt4.tex [58
+
+
+
+]
 Chapter 4.
-[51
-
-
-
-] [52] [53] [54] [55] [56] [57]
+[59] [60] [61] [62] [63] [64] [65]
 Overfull \hbox (6.72404pt too wide) in paragraph at lines 92--93
 \OT1/cmr/m/n/10.95 by the Di-ver-si-fier com-po-nent. The Di-ver-si-fier com-po
 -nent dy-nam-i-cally changes
  []
 
-[58]
+[66]
 
 pdfTeX warning: pdflatex (file ./pictures/TabuSearch.pdf): PDF inclusion: found
  PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/TabuSearch.pdf, id=208, 722.7pt x 542.025pt>
+<./pictures/TabuSearch.pdf, id=238, 722.7pt x 542.025pt>
 File: ./pictures/TabuSearch.pdf Graphic file (type pdf)
 
 <use ./pictures/TabuSearch.pdf>
@@ -596,11 +667,11 @@ Overfull \hbox (8.1491pt too wide) in paragraph at lines 106--107
  [] 
  []
 
-[59 <./pictures/TabuSearch.pdf>] [60] [61] [62] [63] [64]
+[67 <./pictures/TabuSearch.pdf>] [68] [69] [70] [71] [72]
 
 pdfTeX warning: pdflatex (file ./pictures/SimulatedAnnealing.pdf): PDF inclusio
 n: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/SimulatedAnnealing.pdf, id=353, 722.7pt x 542.025pt>
+<./pictures/SimulatedAnnealing.pdf, id=382, 722.7pt x 542.025pt>
 File: ./pictures/SimulatedAnnealing.pdf Graphic file (type pdf)
 
 <use ./pictures/SimulatedAnnealing.pdf>
@@ -608,25 +679,25 @@ Overfull \hbox (8.1491pt too wide) in paragraph at lines 197--198
  [] 
  []
 
-[65 <./pictures/SimulatedAnnealing.pdf>] [66] [67]
+[73 <./pictures/SimulatedAnnealing.pdf>] [74] [75]
 Overfull \hbox (0.9094pt too wide) in paragraph at lines 243--244
 \OT1/cmr/m/n/10.95 fined namely pseudo-random num-ber gen-er-a-tors (PRNGs) and
  quasi-random
  []
 
-[68]
+[76]
 Underfull \vbox (badness 1681) has occurred while \output is active []
 
- [69]
-[70]
+ [77]
+[78]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [71]
-[72]
+ [79]
+[80]
 
 pdfTeX warning: pdflatex (file ./pictures/GeneticAlgorithm.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/GeneticAlgorithm.pdf, id=492, 722.7pt x 542.025pt>
+<./pictures/GeneticAlgorithm.pdf, id=522, 722.7pt x 542.025pt>
 File: ./pictures/GeneticAlgorithm.pdf Graphic file (type pdf)
 
 <use ./pictures/GeneticAlgorithm.pdf>
@@ -634,7 +705,7 @@ Overfull \hbox (8.1491pt too wide) in paragraph at lines 291--292
  [] 
  []
 
-[73 <./pictures/GeneticAlgorithm.pdf>]) [74]
+[81 <./pictures/GeneticAlgorithm.pdf>]) [82]
 \openout2 = `chpt5.aux'.
 
  (./chpt5.tex
@@ -648,7 +719,7 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[75
+[83
 
 
 
@@ -659,11 +730,11 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [76] <./pictures/antBridgeExperiment.png, id=611, 498.86375pt x 240.9pt>
+ [84] <./pictures/antBridgeExperiment.png, id=640, 498.86375pt x 240.9pt>
 File: ./pictures/antBridgeExperiment.png Graphic file (type png)
 
-<use ./pictures/antBridgeExperiment.png> [77 <./pictures/antBridgeExperiment.pn
-g (PNG copy)>] [78] [79]
+<use ./pictures/antBridgeExperiment.png> [85 <./pictures/antBridgeExperiment.pn
+g (PNG copy)>] [86] [87]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -676,17 +747,17 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [80] [81]
+ [88] [89]
 Overfull \hbox (1.6546pt too wide) in paragraph at lines 99--100
 \OT1/cmr/m/n/10.95 The ants would re-trace their path af-ter each it-er-a-tion,
  de-posit-ing pheromones
  []
 
-[82] [83]
+[90] [91]
 
 pdfTeX warning: pdflatex (file ./pictures/AntColonyOptimization.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/AntColonyOptimization.pdf, id=635, 722.7pt x 542.025pt>
+<./pictures/AntColonyOptimization.pdf, id=665, 722.7pt x 542.025pt>
 File: ./pictures/AntColonyOptimization.pdf Graphic file (type pdf)
 
 <use ./pictures/AntColonyOptimization.pdf>
@@ -694,11 +765,11 @@ Overfull \hbox (8.1491pt too wide) in paragraph at lines 143--144
  [] 
  []
 
-[84] [85 <./pictures/AntColonyOptimization.pdf>] [86] [87] [88] [89] [90]
+[92] [93 <./pictures/AntColonyOptimization.pdf>] [94] [95] [96] [97] [98]
 
 pdfTeX warning: pdflatex (file ./pictures/BeeAlgorithm.pdf): PDF inclusion: fou
 nd PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/BeeAlgorithm.pdf, id=775, 722.7pt x 542.025pt>
+<./pictures/BeeAlgorithm.pdf, id=805, 722.7pt x 542.025pt>
 File: ./pictures/BeeAlgorithm.pdf Graphic file (type pdf)
 
 <use ./pictures/BeeAlgorithm.pdf>
@@ -706,22 +777,22 @@ Overfull \hbox (8.1491pt too wide) in paragraph at lines 241--242
  [] 
  []
 
-[91] [92 <./pictures/BeeAlgorithm.pdf>] [93] [94] [95]
-<./pictures/captainplaceholder.png, id=883, 746.79pt x 1056.94875pt>
+[99] [100 <./pictures/BeeAlgorithm.pdf>] [101] [102] [103]
+<./pictures/captainplaceholder.png, id=913, 746.79pt x 1056.94875pt>
 File: ./pictures/captainplaceholder.png Graphic file (type png)
 
-<use ./pictures/captainplaceholder.png> [96]
+<use ./pictures/captainplaceholder.png> [104]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [97 <./pictures/captainplaceholder.png>] [98]
+ [105 <./pictures/captainplaceholder.png>] [106]
 
-LaTeX Warning: Reference `inertia' on page 99 undefined on input line 338.
+LaTeX Warning: Reference `inertia' on page 107 undefined on input line 338.
 
-[99]
+[107]
 
 pdfTeX warning: pdflatex (file ./pictures/ParticleSwarmOptimization.pdf): PDF i
 nclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/ParticleSwarmOptimization.pdf, id=899, 722.7pt x 542.025pt>
+<./pictures/ParticleSwarmOptimization.pdf, id=928, 722.7pt x 542.025pt>
 File: ./pictures/ParticleSwarmOptimization.pdf Graphic file (type pdf)
 
 <use ./pictures/ParticleSwarmOptimization.pdf>
@@ -729,19 +800,19 @@ Overfull \hbox (8.1491pt too wide) in paragraph at lines 356--357
  [] 
  []
 
-) [100] [101 <./pictures/ParticleSwarmOptimization.pdf>] [102
+) [108] [109 <./pictures/ParticleSwarmOptimization.pdf>] [110
 
 
-] [103] [104]
+] [111] [112]
 \openout2 = `chpt6.aux'.
 
 
 (./chpt6.tex
 Chapter 6.
-[105
+[113
 
 
-] [106]
+] [114]
 Overfull \hbox (225.09033pt too wide) in paragraph at lines 69--71
 \OT1/cmr/m/n/10.95 be ob-tained at the fol-low-ing points $(\OML/cmm/m/it/10.95
  x[]; x[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 f\OT1/cmr/m/n/10.95 (\OMS/c
@@ -757,165 +828,143 @@ m/it/10.95 :\OT1/cmr/m/n/10.95 584428\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95
 /m/n/10.95 g$ 
  []
 
-[107] [108] <./Graphs/DeJongF1.pdf, id=1009, 578.16pt x 433.62pt>
+[115] [116] <./Graphs/DeJongF1.pdf, id=1039, 578.16pt x 433.62pt>
 File: ./Graphs/DeJongF1.pdf Graphic file (type pdf)
 
-<use ./Graphs/DeJongF1.pdf> [109]
-<./Graphs/Shekel.pdf, id=1014, 578.16pt x 433.62pt>
+<use ./Graphs/DeJongF1.pdf> [117]
+<./Graphs/Shekel.pdf, id=1043, 578.16pt x 433.62pt>
 File: ./Graphs/Shekel.pdf Graphic file (type pdf)
  <use ./Graphs/Shekel.pdf>
-<./Graphs/Rastrigin.pdf, id=1015, 578.16pt x 433.62pt>
+<./Graphs/Rastrigin.pdf, id=1044, 578.16pt x 433.62pt>
 File: ./Graphs/Rastrigin.pdf Graphic file (type pdf)
 
-<use ./Graphs/Rastrigin.pdf> [110 <./Graphs/DeJongF1.pdf> <./Graphs/Shekel.pdf>
-] <./Graphs/Schwefel.pdf, id=1046, 578.16pt x 433.62pt>
+<use ./Graphs/Rastrigin.pdf> [118 <./Graphs/DeJongF1.pdf> <./Graphs/Shekel.pdf>
+] <./Graphs/Schwefel.pdf, id=1075, 578.16pt x 433.62pt>
 File: ./Graphs/Schwefel.pdf Graphic file (type pdf)
 
 <use ./Graphs/Schwefel.pdf>
-<./Graphs/Griewank_-50_+50.pdf, id=1047, 578.16pt x 433.62pt>
+<./Graphs/Griewank_-50_+50.pdf, id=1076, 578.16pt x 433.62pt>
 File: ./Graphs/Griewank_-50_+50.pdf Graphic file (type pdf)
 
-<use ./Graphs/Griewank_-50_+50.pdf> [111 <./Graphs/Rastrigin.pdf> <./Graphs/Sch
-wefel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=1079, 578.16pt x 433.62pt>
+<use ./Graphs/Griewank_-50_+50.pdf> [119 <./Graphs/Rastrigin.pdf> <./Graphs/Sch
+wefel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=1108, 578.16pt x 433.62pt>
 File: ./Graphs/Salomon_-10_+10.pdf Graphic file (type pdf)
 
 <use ./Graphs/Salomon_-10_+10.pdf>
-<./Graphs/Ackley.pdf, id=1080, 578.16pt x 433.62pt>
+<./Graphs/Ackley.pdf, id=1109, 578.16pt x 433.62pt>
 File: ./Graphs/Ackley.pdf Graphic file (type pdf)
  <use ./Graphs/Ackley.pdf>
-[112 <./Graphs/Griewank_-50_+50.pdf> <./Graphs/Salomon_-10_+10.pdf>]
-<./Graphs/Camel.pdf, id=1113, 578.16pt x 433.62pt>
+[120 <./Graphs/Griewank_-50_+50.pdf> <./Graphs/Salomon_-10_+10.pdf>]
+<./Graphs/Camel.pdf, id=1142, 578.16pt x 433.62pt>
 File: ./Graphs/Camel.pdf Graphic file (type pdf)
  <use ./Graphs/Camel.pdf>
-<./Graphs/Shubert.pdf, id=1114, 578.16pt x 433.62pt>
+<./Graphs/Shubert.pdf, id=1143, 578.16pt x 433.62pt>
 File: ./Graphs/Shubert.pdf Graphic file (type pdf)
 
-<use ./Graphs/Shubert.pdf> [113 <./Graphs/Ackley.pdf> <./Graphs/Camel.pdf>]
-<./Graphs/Himmelblau.pdf, id=1147, 578.16pt x 433.62pt>
+<use ./Graphs/Shubert.pdf> [121 <./Graphs/Ackley.pdf> <./Graphs/Camel.pdf>]
+<./Graphs/Himmelblau.pdf, id=1177, 578.16pt x 433.62pt>
 File: ./Graphs/Himmelblau.pdf Graphic file (type pdf)
 
 <use ./Graphs/Himmelblau.pdf>
-<./Graphs/Rosenbrock.pdf, id=1148, 578.16pt x 433.62pt>
+<./Graphs/Rosenbrock.pdf, id=1178, 578.16pt x 433.62pt>
 File: ./Graphs/Rosenbrock.pdf Graphic file (type pdf)
 
-<use ./Graphs/Rosenbrock.pdf> [114 <./Graphs/Shubert.pdf> <./Graphs/Himmelblau.
-pdf>] <./Graphs/Dropwave.pdf, id=1182, 578.16pt x 433.62pt>
+<use ./Graphs/Rosenbrock.pdf> [122 <./Graphs/Shubert.pdf> <./Graphs/Himmelblau.
+pdf>] <./Graphs/Dropwave.pdf, id=1212, 578.16pt x 433.62pt>
 File: ./Graphs/Dropwave.pdf Graphic file (type pdf)
 
 <use ./Graphs/Dropwave.pdf>
-<./Graphs/Easom_-100_+100.pdf, id=1183, 578.16pt x 433.62pt>
+<./Graphs/Easom_-100_+100.pdf, id=1213, 578.16pt x 433.62pt>
 File: ./Graphs/Easom_-100_+100.pdf Graphic file (type pdf)
 
-<use ./Graphs/Easom_-100_+100.pdf> [115 <./Graphs/Rosenbrock.pdf> <./Graphs/Dro
-pwave.pdf>] <./Graphs/Branin.pdf, id=1219, 578.16pt x 433.62pt>
+<use ./Graphs/Easom_-100_+100.pdf> [123 <./Graphs/Rosenbrock.pdf> <./Graphs/Dro
+pwave.pdf>] <./Graphs/Branin.pdf, id=1248, 578.16pt x 433.62pt>
 File: ./Graphs/Branin.pdf Graphic file (type pdf)
 
 <use ./Graphs/Branin.pdf>
-<./Graphs/Michalewicz.pdf, id=1220, 578.16pt x 433.62pt>
+<./Graphs/Michalewicz.pdf, id=1249, 578.16pt x 433.62pt>
 File: ./Graphs/Michalewicz.pdf Graphic file (type pdf)
 
-<use ./Graphs/Michalewicz.pdf> [116 <./Graphs/Easom_-100_+100.pdf> <./Graphs/Br
-anin.pdf>] <./Graphs/Goldstein.pdf, id=1256, 578.16pt x 433.62pt>
+<use ./Graphs/Michalewicz.pdf> [124 <./Graphs/Easom_-100_+100.pdf> <./Graphs/Br
+anin.pdf>] <./Graphs/Goldstein.pdf, id=1285, 578.16pt x 433.62pt>
 File: ./Graphs/Goldstein.pdf Graphic file (type pdf)
 
-<use ./Graphs/Goldstein.pdf>) [117 <./Graphs/Michalewicz.pdf> <./Graphs/Goldste
-in.pdf>] [118]
+<use ./Graphs/Goldstein.pdf>) [125 <./Graphs/Michalewicz.pdf> <./Graphs/Goldste
+in.pdf>] [126]
 \openout2 = `chpt7.aux'.
 
  (./chpt7.tex
 Chapter 7.
 
-LaTeX Warning: Reference `' on page 119 undefined on input line 5.
+LaTeX Warning: Reference `' on page 127 undefined on input line 5.
 
-[119
+[127
 
 
 
-] [120] <./pictures/fapPlanDiagram.pdf, id=1302, 338.86601pt x 207.174pt>
+] [128] <./pictures/fapPlanDiagram.pdf, id=1332, 338.86601pt x 207.174pt>
 File: ./pictures/fapPlanDiagram.pdf Graphic file (type pdf)
 
-<use ./pictures/fapPlanDiagram.pdf> [121 <./pictures/fapPlanDiagram.pdf>]
-[122] [123]
+<use ./pictures/fapPlanDiagram.pdf> [129 <./pictures/fapPlanDiagram.pdf>]
+[130] [131]
 Overfull \hbox (0.5567pt too wide) in paragraph at lines 96--98
 []\OT1/cmr/m/n/10.95 Vector math has stan-dard ba-sic op-er-a-tions de-fined fo
 r adding,subtracting
  []
 
-[124] [125] [126] [127] [128] [129] [130]) [131] (./dissertation.bbl [132
+[132] [133] [134] [135] [136] [137] [138]) [139] (./dissertation.bbl [140
 
 
 ]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∫ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ≥ in font cmr10!
-
-[133]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∂ in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∂ in font cmr10!
- [134] [135]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no â in font cmr10!
-
-Underfull \hbox (badness 4060) in paragraph at lines 180--187
+[141] [142]
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no à in font cmr10!
+ [143]
+Underfull \hbox (badness 4060) in paragraph at lines 196--203
 []\OT1/cmr/m/n/10.95 Antonio G^^Somez-Iglesias, Miguel A. Vega-Rodr^^S^^Pguez, 
 Fran-cisco
  []
 
-[136]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no © in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no § in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ∂ in font cmr10!
- [137]
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ° in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ± in font cmr10!
-Missing character: There is no √ in font cmr10!
-Missing character: There is no ≠ in font cmr10!
- [138] [139] [140] [141] [142] [143] [144] [145]) [146]
+[144] [145] [146] [147] [148] [149] [150] [151] [152] [153]) [154]
 (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
 (./chpt5.aux) (./chpt6.aux) (./chpt7.aux))
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 10212 strings out of 495061
- 178564 string characters out of 1182622
- 257188 words of memory out of 3000000
- 13091 multiletter control sequences out of 15000+50000
+ 10804 strings out of 495061
+ 196093 string characters out of 1182622
+ 272781 words of memory out of 3000000
+ 13650 multiletter control sequences out of 15000+50000
  14252 words of font info for 53 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 47i,19n,54p,1352b,804s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,19n,67p,1352b,805s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts
 /type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-texlive/fonts/type1/
 public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
-onts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmsl10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/
-texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texliv
-e/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/am
-sfonts/symbols/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
-/symbols/msbm10.pfb>
-Output written on dissertation.pdf (146 pages, 16275514 bytes).
+onts/cm/cmmi5.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-
+texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsl10.pfb><
+/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-texliv
+e/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbo
+ls/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb>
+Output written on dissertation.pdf (154 pages, 16308261 bytes).
 PDF statistics:
- 1462 PDF objects out of 1728 (max. 8388607)
+ 1494 PDF objects out of 1728 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
