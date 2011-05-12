@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99c (TeX Live 2009)
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: chpt1.aux
 A level-1 auxiliary file: chpt2.aux
@@ -14,45 +14,46 @@ Warning--I didn't find a database entry for "AdreasPaper"
 Warning--I didn't find a database entry for "Karen200"
 Warning--I didn't find a database entry for ""
 Warning--there's a number but no volume in FAPInCell
-You've used 123 entries,
+Warning--can't use both author and editor fields in IntroMathProgramming
+You've used 128 entries,
             2118 wiz_defined-function locations,
-            1314 strings with 28807 characters,
-and the built_in function-call counts, 46167 in all, are:
-= -- 4663
-> -- 1858
-< -- 46
-+ -- 769
-- -- 606
-* -- 3202
-:= -- 7242
-add.period$ -- 389
-call.type$ -- 123
-change.case$ -- 662
+            1346 strings with 29631 characters,
+and the built_in function-call counts, 47715 in all, are:
+= -- 4816
+> -- 1917
+< -- 47
++ -- 792
+- -- 624
+* -- 3292
+:= -- 7490
+add.period$ -- 404
+call.type$ -- 128
+change.case$ -- 685
 chr.to.int$ -- 0
-cite$ -- 124
-duplicate$ -- 1852
-empty$ -- 3762
-format.name$ -- 606
-if$ -- 10042
+cite$ -- 130
+duplicate$ -- 1922
+empty$ -- 3894
+format.name$ -- 624
+if$ -- 10379
 int.to.chr$ -- 0
-int.to.str$ -- 123
-missing$ -- 130
-newline$ -- 619
-num.names$ -- 246
-pop$ -- 691
+int.to.str$ -- 128
+missing$ -- 136
+newline$ -- 644
+num.names$ -- 256
+pop$ -- 722
 preamble$ -- 1
-purify$ -- 549
+purify$ -- 568
 quote$ -- 0
-skip$ -- 1400
+skip$ -- 1454
 stack$ -- 0
-substring$ -- 3475
-swap$ -- 533
-text.length$ -- 46
+substring$ -- 3566
+swap$ -- 552
+text.length$ -- 47
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 464
-warning$ -- 1
-while$ -- 430
-width$ -- 126
-write$ -- 1387
-(There were 5 warnings)
+type$ -- 480
+warning$ -- 2
+while$ -- 444
+width$ -- 131
+write$ -- 1440
+(There were 6 warnings)

@@ -99,6 +99,12 @@ Chin~Soon Chong, Appa~Iyer Sivakumar, Malcolm Yoke~Hean Low, and Kheng~Leng
 \newblock In {\em WSC '06: Proceedings of the 38th conference on Winter
   simulation}, pages 1954--1961. Winter Simulation Conference, 2006.
 
+\bibitem{ProblemDecompMIFAP}
+G.~Colombo and S.M. Allen.
+\newblock Problem decomposition for minimum interference frequency assignment.
+\newblock In {\em Evolutionary Computation, 2007. CEC 2007. IEEE Congress on},
+  pages 3492 --3499, sept. 2007.
+
 \bibitem{TheoPraticalSA}
 Agnieszka Debudaj-Grabysz and Zbigniew~J. Czech.
 \newblock Theoretical and practical issues of parallel simulated annealing.
@@ -120,6 +126,12 @@ Marco Dorigo and Christian Blum.
 Marco Dorigo, Eric Bonabeau, and Guy Theraulaz.
 \newblock Ant algorithms and stigmergy.
 \newblock {\em Future Gener. Comput. Syst.}, 16(9):851--871, 2000.
+
+\bibitem{TabuNurse}
+K~A Dowsland and J~M Thompson.
+\newblock Solving a nurse scheduling problem with knapsacks, networks and tabu
+  search.
+\newblock {\em J Oper Res Soc}, 51(7):825--833, 07 2000.
 
 \bibitem{DynamicFAP}
 Audrey Dupont, Andrea~Carneiro Linhares, Christian Artigues, Dominique Feillet,
@@ -371,6 +383,11 @@ Vittoria Maniezzo and Roberto Montemanni.
   problem.
 \newblock Technical report, Department of Computer Science, University of
   Bologna, 2000.
+
+\bibitem{SolvingSuperIntervalGraphs}
+Carlo Mannino and Gianpaolo Oriolo.
+\newblock Solving stability problems on a superclass of interval graphs.
+\newblock Technical report, Centro Vito Volterra, 2002.
 
 \bibitem{HybridABCClustering}
 Y.~Marinakis, M.~Marinaki, and N.~Matsatsinis.
@@ -737,6 +754,11 @@ Andreas Windisch, Stefan Wappler, and Joachim Wegener.
   Genetic and evolutionary computation}, pages 1121--1128, New York, NY, USA,
   2007. ACM.
 
+\bibitem{IntroMathProgramming}
+Wayne~L. Winston and Munirpallam Venkataramanan.
+\newblock {\em Introduction to Mathematical Programming}.
+\newblock Thomson Learning, 2003.
+
 \bibitem{EcoEquilSA}
 Lihua Wu and Yuyun Wang.
 \newblock An introduction to simulated annealing algorithms for the computation
@@ -756,6 +778,11 @@ Jingan Yang and Yanbin Zhuang.
 \newblock An improved ant colony optimization algorithm for solving a complex
   combinatorial optimization problem.
 \newblock {\em Appl. Soft Comput.}, 10(2):653--660, 2010.
+
+\bibitem{NatureInspiredMetaHeuristic}
+Xin-She Yang.
+\newblock {\em Nature-Inspired Metaheuristic Algorithms}.
+\newblock Luniver Press, 2008.
 
 \bibitem{FixedFAPPSO}
 Dominic C~O'Brien Yangyang~Zhang.

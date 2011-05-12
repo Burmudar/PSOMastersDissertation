@@ -260,6 +260,19 @@
   location = {Monterey, California}
 }
 
+@INPROCEEDINGS{ProblemDecompMIFAP,
+  author = {Colombo, G. and Allen, S.M.},
+  title = {Problem decomposition for minimum interference frequency assignment},
+  booktitle = {Evolutionary Computation, 2007. CEC 2007. IEEE Congress on},
+  year = {2007},
+  pages = {3492 -3499},
+  month = {sept.},
+  doi = {10.1109/CEC.2007.4424925},
+  keywords = {genetic algorithms;meta-heuristics;minimum interference frequency
+	assignment;problem decomposition approach;frequency allocation;genetic
+	algorithms;radiofrequency interference;}
+}
+
 @INPROCEEDINGS{TheoPraticalSA,
   author = {Debudaj-Grabysz, Agnieszka and Czech, Zbigniew J.},
   title = {Theoretical and practical issues of parallel simulated annealing},
@@ -318,6 +331,27 @@
   publisher = {Elsevier Science Publishers B. V.}
 }
 
+@ARTICLE{TabuNurse,
+  author = {Dowsland, K A and Thompson, J M},
+  title = {Solving a nurse scheduling problem with knapsacks, networks and tabu
+	search},
+  journal = {J Oper Res Soc},
+  year = {2000},
+  volume = {51},
+  pages = {825--833},
+  number = {7},
+  month = {07},
+  bdsk-url-1 = {http://dx.doi.org/10.1057/palgrave.jors.2600970},
+  date = {2000/07/06/print},
+  date-added = {2011-05-05 10:14:16 +0200},
+  date-modified = {2011-05-05 10:14:16 +0200},
+  day = {06},
+  isbn = {0160-5682},
+  publisher = {Operational Research Society},
+  ty = {JOUR},
+  url = {http://dx.doi.org/10.1057/palgrave.jors.2600970}
+}
+
 @ARTICLE{DynamicFAP,
   author = {Audrey Dupont and Andrea Carneiro Linhares and Christian Artigues
 	and Dominique Feillet and Philippe and Michel Vasquez},
@@ -353,7 +387,7 @@
   url = {http://www.zib.de/bib/diss/}
 }
 
-@TECHREPORT{FAPRAMColoring,
+@TECHREPORT{FAPRAMColouring,
   author = {A. Eisenbl{\"a}tter and M. Gr{\"o}tschel and A. Martin},
   title = {Frequency Planning and Rammifications of Colouring},
   institution = {Konrad-Zuse-Zentrum fu ̈r Informationstechnik Berlin},
@@ -897,6 +931,15 @@
   citeseerurl = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.3898},
   owner = {william},
   timestamp = {2010.03.25}
+}
+
+@TECHREPORT{SolvingSuperIntervalGraphs,
+  author = {Carlo Mannino and Gianpaolo Oriolo},
+  title = {Solving Stability Problems on a Superclass of Interval Graphs},
+  institution = {Centro Vito Volterra},
+  year = {2002},
+  owner = {william},
+  timestamp = {2011.05.09}
 }
 
 @INPROCEEDINGS{HybridABCClustering,
@@ -1752,6 +1795,16 @@
   location = {London, England}
 }
 
+@BOOK{IntroMathProgramming,
+  title = {Introduction to Mathematical Programming},
+  publisher = {Thomson Learning},
+  year = {2003},
+  editor = {Curt Himrichs},
+  author = {Wayne L. Winston and Munirpallam Venkataramanan},
+  owner = {william},
+  timestamp = {2011.05.09}
+}
+
 @ARTICLE{EcoEquilSA,
   author = {Lihua Wu and Yuyun Wang},
   title = {An Introduction to Simulated Annealing Algorithms for the Computation
@@ -1819,6 +1872,14 @@
   doi = {http://dx.doi.org/10.1016/j.asoc.2009.08.040},
   issn = {1568-4946},
   publisher = {Elsevier Science Publishers B. V.}
+}
+
+@BOOK{NatureInspiredMetaHeuristic,
+  title = {Nature-Inspired Metaheuristic Algorithms},
+  publisher = {Luniver Press},
+  year = {2008},
+  author = {Yang, Xin-She},
+  isbn = {1905986106, 9781905986101}
 }
 
 @INPROCEEDINGS{FixedFAPPSO,

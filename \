@@ -1,0 +1,41 @@
+Made changes to chapter 5. Moved the diagrams so that they are not in their own sections but actually in the overview section of the the particular algorithm being explained. Added a section for each algorithm which discusses the algorithm being applied on the FAP. Also made some extra paragraphs. Finally also typed up as summary for the chapter.
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: William Bezuidenhout <william@William-Bezuidenhouts-MacBook-Pro.local>
+#
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   Dissertation/ReferenceDB.bib
+#	modified:   Dissertation/ReferenceDB.bib.bak
+#	modified:   Dissertation/chpt3.tex
+#	modified:   Dissertation/chpt4.aux
+#	modified:   Dissertation/chpt4.tex
+#	modified:   Dissertation/chpt5.aux
+#	modified:   Dissertation/chpt5.tex
+#	modified:   Dissertation/chpt6.aux
+#	modified:   Dissertation/chpt7.aux
+#	modified:   Dissertation/dissertation.aux
+#	modified:   Dissertation/dissertation.bbl
+#	modified:   Dissertation/dissertation.blg
+#	modified:   Dissertation/dissertation.log
+#	modified:   Dissertation/dissertation.pdf
+#	modified:   Dissertation/dissertation.toc
+#	modified:   Masters Research/ReferenceDB.bib
+#	modified:   Masters Research/ReferenceDB.bib.bak
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#   (commit or discard the untracked or modified content in submodules)
+#
+#	deleted:    Dissertation/q.log
+#	modified:   Implementation/c++/ChartPlotter (modified content, untracked content)
+#	modified:   Implementation/c++/pso (modified content)
+#	deleted:    Masters Research/William MSc Proposal.doc
+#	deleted:    Masters Research/William MSc Proposal.doc.bak~
+#	deleted:    Masters Research/William MSc Proposal.odt
+#	deleted:    Masters Research/William MSc Proposal.pdf
+#
