@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99c (TeX Live 2009)
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: chpt1.aux
 A level-1 auxiliary file: chpt2.aux
@@ -7,6 +7,8 @@ A level-1 auxiliary file: chpt4.aux
 A level-1 auxiliary file: chpt5.aux
 A level-1 auxiliary file: chpt6.aux
 A level-1 auxiliary file: chpt7.aux
+A level-1 auxiliary file: chpt8.aux
+A level-1 auxiliary file: chpt9.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
 Warning--I didn't find a database entry for "MobileWirelessCommunicationss"
@@ -17,7 +19,7 @@ Warning--there's a number but no volume in FAPInCell
 Warning--can't use both author and editor fields in IntroMathProgramming
 You've used 128 entries,
             2118 wiz_defined-function locations,
-            1346 strings with 29631 characters,
+            1348 strings with 29649 characters,
 and the built_in function-call counts, 47715 in all, are:
 = -- 4816
 > -- 1917
