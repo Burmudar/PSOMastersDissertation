@@ -2,7 +2,7 @@
 \section{Introduction}
 In this section we will give the formulation of all the benchmark functions we have implemented for the developed PSO to optimize. The functions vary from being relatively easy to optimize, to functions that contain lots of local minima and a slightly concealed global minmima. In total we will formulate 14 benchmark functions.
 
-The reason why these functions have to variate amount of local and global minima, it to test various factors on how good the algorithm is that is being applied on the function. The factors that are tested are:
+The reason why these functions have variate amount of local and global minima, it to test various factors on how good the algorithm is that is being applied on the function. The factors that are tested are:
 \begin{itemize}
 \item Rate of convergeance
 \item Exploration
@@ -11,7 +11,31 @@ The reason why these functions have to variate amount of local and global minima
 \item Breaking out of local minima
 \item Information sharing
 \end{itemize}
+
+The benchmark functions were chosen because of their extensive use in the literature. For each new optimization algorithm these functions are used to showcase how good the algorithm is with regard to optimisation.
+
+The functions have known global optima and local optima, which means researchers are able to produce statistical information on how the algorithm performs. For instance, researchers will not be able to measure accurately the performance of the algorithm on a NP-Complete problem. Yes, they can compare results with what other algorithms have produce, but cannot with absolute certain say or measure the algorithm convergence,diversity etc. 
+
+With these benchmark functions, their optima are mathematically determined. Thus, researchers can now with sureity measure the convergence rate, diversity and compare it with other algorithms, since the domain the algorithms operate it is not as specific as a NP-Complete problem. Rather, the domain is mathematical and deterministic and therefore allows easy comparison.
+
+To measure the performance of the PSO algorithm, two variants have been developed. One normal PSO that uses the original PSO algorithm and then a second PSO which utilizes the notion of inertia to move particles. These two algorithms will be applied to all the benchmarks presented in the next section.
+
+In the next section, all the benchmarks that will be used for testing the PSO algorithms will be formulated. Followng the test function section, a section will be presented that shows that 3D graphs of these functions. This chapter will concluded with the results sections where the results of the PSO algorithms that were developed are presented as well as compared with other results that have been presented in the literature
 \subsection{Test Functions}
+\textbf{Development of a parallel optimization method based on genetic simulated annealing algorithm}\\
+\textbf{Adaptive Diversity in PSO}\\
+\textbf{A hybrid intelligent genetic algorithm}\\
+\textbf{A Diversity-Guided Particle Swarm Optimizer – the ARPSO}\\
+\textbf{A distributed hierarchical genetic algorithm for efficient optimization and pattern matching}\\
+\textbf{Tabu search for global optimization of continuous functions with application to phase equilibrium calculations}\\
+\textbf{Tabu Search applied to global optimization}\\
+\textbf{On the performance of artificial bee colony (ABC) algorithm}\\
+\textbf{Improving solution characteristics of particle swarm optimization using digital pheromones}\\
+\textbf{Continuous ant colony system and tabu search algorithms hybridized for global minimization of continuous multi-minima functions}\\
+\textbf{Chaotic bee colony algorithms for global numerical optimization}\\
+\textbf{A powerful and efficient algorithm for numerical function optimization: artificial bee colony (ABC) algorithm}\\
+\textbf{A New Quantum Behaved Particle Swarm Optimization}\\
+\textbf{A comparative study of Artificial Bee Colony algorithm}\\
 \subsubsection{DeJong F1 Function}
 \begin{equation}
 \label{eq:DeJongF1}
@@ -302,3 +326,132 @@ In this section we will present 3D surface and contour graphs for all the mathem
 ~
 
 \section{Results}
+\subsubsection{DeJong's First Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\hline
+	\end{tabular}
+\end{center}
+\subsubsection{Shekel's Foxhole Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Rastrigin Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Schwefel Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Griewank Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Salomon Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Ackley}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Six-Hump Camel Back Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Shubert Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Himmelblau Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Rosenbrock Valley Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Dropwave Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Easom Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Branin Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Michalewicz Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline
+	\end{tabular}
+\end{center}
+\subsubsection{Goldstein Function}
+\begin{center}
+	\begin{tabular}{| c | c |}
+	\hline
+	Normal PSO & PSO with Inertia \\  \hline
+	VALUES & VALUES \\ \hline 
+	\end{tabular}
+\end{center}

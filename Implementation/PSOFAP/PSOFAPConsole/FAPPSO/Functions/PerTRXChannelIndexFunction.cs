@@ -122,7 +122,7 @@ namespace PSOFAPConsole.FAPPSO.Functions
         {
             for (int i = 0; i < velocity.Length; i++)
             {
-                velocity[i] = velocity[i] + movedIndexes[i];
+                velocity[i] = velocity[i] + (int)(0.5 * movedIndexes[i]);
             }
             return velocity;
         }

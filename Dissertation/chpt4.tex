@@ -1,4 +1,5 @@
-\chapter{Heuristics Algorithms}
+\chapter{Meta-heuristic Algorithms}
+\label{ch:metaheuristic}
 \section{Introduction}
 Meta-heuristics is a sub domain of the artificial intelligence domain. It evolved out of a need for more efficient search techniques with regard to hard problems. 
 
@@ -71,6 +72,34 @@ In this section the characteristics of meta-heuristics which sets these algorith
 In the next section of this chapter a discussion will be presented on the Tabu Search algorithm.
 
 \section{Tabu Search}
+\begin{algorithm}
+\caption{Basic Tabu Search Algorithm}
+\label{alg:TS}
+	\begin{algorithmic}
+		\STATE Initialize parameters
+		\STATE $x_0 \leftarrow$ Intialize starting solution
+		\WHILE{stopping criteria not met}
+			\STATE $y_i \leftarrow$ Determine $x_i$ neighborhood solutions 
+			\STATE Evaluate neighboring solutions with fitness function $f(y_i)$
+			\STATE $z_i \leftarrow$Select best neighbor from $y_i$
+			\IF{Move to $z_i$ is Tabu}
+				\IF{$z_i$ meets Aspiration Criterion}
+					\STATE $x_i \leftarrow z_i$
+					\STATE continue to next iteration
+				\ENDIF
+			\ELSE
+				\STATE Add $x_i$ to Tabu List
+				\STATE $x_i \leftarrow z_i$
+				\IF{$x_i$ repeated $\ge$ max repeats}
+					\STATE diversify()
+				\ELSE
+					\STATE intensify()
+				\ENDIF
+			\ENDIF
+		\ENDWHILE
+		\STATE Return $x_i$ as best found solution
+	\end{algorithmic}
+\end{algorithm}
 \begin{figure}[p!]
 	\begin{center}
 	\fbox{\includegraphics[width=5.0in,height=6.5in]{./pictures/TabuSearch.pdf}}
@@ -194,6 +223,23 @@ As can be observed from the above results obtained by the authors, the TS algori
 
 In this section a literature review was presented on the TS algorithm being applied to the same problem this dissertation addresses. In the next section a discussion will be presented on the Simulated Annealing algorithm.
 \section{Simulated Annealing}
+\begin{algorithm}
+\caption{Basic Simulated Annealing Algorithm}
+\label{alg:SA}
+	\begin{algorithmic}
+		\STATE Initialize parameters
+		\STATE Set starting temperature $T(0)$
+		\STATE $x_0 \leftarrow$ Generate initial starting solution
+		\WHILE{Stopping criteria not met}
+			\STATE $y_i \leftarrow$ Generate neighboring solutions to $x_i$
+			\STATE Evaluate $y_i$ neighbors with fitness function $f(y_i)$
+			\STATE Calculate probability $p_i$ of $y_i$ neighbors with equation~\ref{eq:saprobability}
+			\STATE $x_i \leftarrow$ Select $y_i$ neighbor based on probability $p_i$
+			\STATE Reduce temperature $T(i)$ based on cooling schedule
+		\ENDWHILE
+		\STATE Return best solution $x_i$
+	\end{algorithmic}
+\end{algorithm}
 \begin{figure}[htbp!]
 	\begin{center}
 	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/SimulatedAnnealing.pdf}}
@@ -213,6 +259,7 @@ In the algorithm the energy state is the \emph{cost function} that needs to be m
 
 The following equation is the standard probability function that is used to determine when an uphill move performed by the algorithm. This function is known in the literature as the \emph{Metropolis Criterion}. 
 \begin{equation}
+\label{eq:saprobability}
 	M_{AC} =
 	\begin{cases}
 	1, &\text{if $f(y) \leq f(x)$}\\
@@ -264,17 +311,20 @@ In the literature there are three annealing schedules in common use namely \emph
 
 The standard and most common used schedule is commonly known as the logarithmic schedule and is based on Boltzmann annealing \cite{VeryFastSAImageEnchancement}. The main disadvantage of this schedule is that is slow due to its logarithmic nature \cite{VeryFastSAImageEnchancement}. It also requires moves to be generated from a Gaussian distribution for it to be able to reach the global minimum\cite{SASingleMultiObj}. The logarithmic annealing function has the following form:
 \begin{equation}
+\label{eq:logcooling}
 	T_k = \frac{T_0}{ln(k)},\text{where k is the iteration value}\\
 \end{equation}
 Where $T_k$ is the temperature at iteration $k$.
 
 The Cauchy schedule is faster than the logarithmic schedule. Similar to the logarithmic, this schedule also has a movement requirement. Moves must be generated from a Cauchy distribution for the algorithm to be able to reach the global minimum \cite{SASingleMultiObj,VeryFastSAImageEnchancement}. The Cauchy schedule is also typically referred to as Fast annealing\cite{VeryFastSAImageEnchancement}. The schedule has the following form:
 \begin{equation}
+\label{eq:cauchycooling}
 	T_k = \frac{T_0}{k}
 \end{equation}
 
 Finally, the fastest annealing schedule is known as the geometric or exponential annealing schedule \cite{SASingleMultiObj}. This schedule introduces the concept of \emph{re-annealing}. Re-annealing is a procedure by which all SA temperatures are rescaled \cite{VeryFastSAImageEnchancement}. This schedule has no move generation requirement to reach the global minimum, since there is no regious proof in the literature to prove it \cite{SASingleMultiObj}. The geometric schedule has the following form:
 \begin{equation}
+\label{eq:geocooling}
 	T(k)=T_0exp(-C_k),\text{where C is a constant}
 \end{equation}
 \subsubsection{Initial temperature}
@@ -317,19 +367,33 @@ The resulting SA algorithm was benchmarked on the COST 259 siemens benchmark ins
 	Siemens 4 & 80.96 & 80.80 & 81.89\\ \hline
 	\end{tabular}
 \end{center}
-%\begin{algorithm}
-%\caption{Pseudo Code for the Simulated Annealing Algorithm}
-%\begin{algorithmic}
-%\IF {$i\geq maxval$} 
-        %\STATE $i\gets 0$
-%\ELSE
-        %\IF {$i+k\leq maxval$}
-                %\STATE $i\gets i+k$
-        %\ENDIF
-%\ENDIF 
-%\end{algorithmic}
-%\end{algorithm}
 \section{Genetic Algorithm}
+\begin{algorithm}
+\caption{Basic Genetic Algorithm Algorithm}
+\label{alg:GA}
+	\begin{algorithmic}
+		\STATE $pop_n\leftarrow$Initialize population
+		\STATE Evalute population with fitness function $f(i)$
+		\WHILE{Stopping criteria is not met}
+		\STATE $y_k \leftarrow$ Select best performing genes from population
+		\STATE Remove other genes from population
+		\REPEAT
+			\FOR{Each gene $g_i$ in $y_{k-1}$}
+				\STATE $z_i \leftarrow$ Perform crossover with $g_i$ and $g_{i+1}$
+				\STATE $m_i\leftarrow$ Calculate Mutation probability for $z_i$
+				\IF{$m_i \geq$ Mutation threshold}
+					\STATE Perform mutation on gene $z_i$
+				\ENDIF
+				\STATE Add gene $z_i$ to $new_pop$
+			\ENDFOR
+		\UNTIL{$size(new_pop) = size(pop_n)$}
+		\STATE $pop_n \leftarrow new_pop$
+		\ENDWHILE
+		\STATE $x_i \leftarrow$ Determine best gene in $pop_n$
+		\STATE Return best solution $x_i$
+	\end{algorithmic}
+\end{algorithm}
+\label{sec:geneticalgorithm}
 \begin{figure}[htbp!]
 	\begin{center}
 	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/GeneticAlgorithm.pdf}}

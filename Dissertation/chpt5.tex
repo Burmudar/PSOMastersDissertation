@@ -1,36 +1,84 @@
 \chapter{Swarm Intelligence}
 \section{Introduction}
-We stand a lot to gain in Artificial Intelligence by studying the underlying inner workings of nature itself; this is why there is a branch of Artificial Intelligence which incorporates some of nature’s processes, like Genetics, which can be seen in action in the Genetic Algorithm.
+The research field of Artificial Intelligence stands a lot to gain by studying the underlying inner workings of nature itself; this is why there is a branch of Artificial Intelligence which incorporates some of nature’s processes, like genetics, which can be seen being appliedi in practice in the genetic algorithm (see section \ref{sec:geneticalgorithm} page \pageref{sec:geneticalgorithm}).
 
- There are other approaches in Artificial Intelligence which also have their routes in Nature, like Animal Learning /Dog Learning.  These approaches only look at a “single agent” thought process when it maps percepts (senses) to actions in its respective environment \cite{DLearning}. 
+ There are other approaches in Artificial Intelligence which also have their routes in nature, like for instance animal learning or the study of how dogs learn. These approaches only look at a “single agent” thought process when it maps percepts (senses) to actions in its respective environment \cite{DLearning}. 
+ 
+ A percept can be said to be a process that is specificially designed to take data from the surrounding environment, process it and present it as information upon which decisions can be made\cite{DLearning,AIModernApproach}. For instance, eyes are percepts, which take visual data presented by the environment. The visual data is processed by the brain into information to enable decisions to be made on navigating the environment.
 
-Swarm Intelligence is an approach more concerned with the underlying processes and behavior patterns when multiple agents (insects, animals) come together and perform a task as one collective entity.  This study of animals or insects in groups has already contributed to Artificial Intelligence as a whole \cite{ChaoticSwarmIntel,BeeJobShop}. Each individual in the swarm might not be able to solve the problem on his own, but by interacting with other individuals and performing primitive actions, the individual can contribute to solving the problem as a whole entity \cite{BeeJobShop}. 
+The research field of swarm intelligence is an approach more concerned with the underlying processes and behavior patterns when multiple agents (insects, animals) come together and perform a task as one collective entity.  This study of animals or insects in groups has already contributed to Artificial Intelligence as a whole \cite{ChaoticSwarmIntel,BeeJobShop}. Each individual in the swarm might not be able to solve the problem on his own, but by interacting with other individuals and performing primitive actions, the individual can contribute to solving the problem as a whole entity \cite{BeeJobShop}. 
 
-New algorithms which incorporate the lessons learned from the study of the collective intelligence are now being used and form part of the Meta-heuristic algorithm group. The initial algorithms developed with regard to Swarm Intelligence, where based on the coordination and behavior exhibited by schools of fish and flocks of birds. The newer generation of algorithms include\cite{SwarmArt,ChaoticSwarmIntel,BeeJobShop}:
+New algorithms which incorporate the lessons learned from the study of the collective intelligence are now being used and form part of the Meta-heuristic algorithm group. A discussion on some of the more popular meta-heuristic algorithms was presented in chapter~\ref{ch:metaheuristic} (see page~\ref{ch:metaheuristic}. 
+
+Swarm intelligence algorithms are also meta-heuristic algorithms, with the distinction being made that swarm intelligence algorithms use multiple agents as a collective entity of knowledge to search the problem space\cite{SwarmArt,ChaoticSwarmIntel,BeeJobShop,CompuIntelligenceIntro,FundamentalSwarm}.
+
+The initial algorithms developed with regard to swarm intelligence, where based on the coordination and behavior exhibited by schools of fish and flocks of birds. The newer generation of algorithms include\cite{SwarmArt,ChaoticSwarmIntel,BeeJobShop}:
 \begin{itemize}
 \item Ant Colony Optimization
 \item Artificial Bee Colony Optimization.
 \item Particle Swarm Optimization 
 \end{itemize}
 
-These newer generations of algorithms are primarily being used in combinatorial NP-Complete problems, where there is no defined solution, only an optimization that comes close to a solution. Swarm Intelligence works on a key feature observed in nature, the notion of emergent behavior. Whenever an entity does something unconventional and gains success, it can be considered as exhibiting “Emergent behavior” as if it is emerging out of the masses way of doing things\cite{SwarmArt,CompuIntelligenceIntro}. 
+These newer generations of algorithms are primarily being used in combinatorial NP-Complete problems, where there is no defined solution, only an optimization that comes close to a optimal solution. Swarm intelligence works on a key feature observed in nature, the notion of emergent behavior\cite{SwarmArt,CompuIntelligenceIntro,FundamentalSwarm}. Whenever an entity does something unconventional and gains success, it can be considered as exhibiting “emergent behavior” as if it is emerging out of the masses way of doing things\cite{SwarmArt,CompuIntelligenceIntro,FundamentalSwarm}. 
 
-Typical emergent properties exhibited by Swarms are self-organization and synchronization \cite{SwarmArt}. In Swarm Intelligence, when an agent exhibits emergent behavior, the behavior of the agent propagates through the whole swarm.  The behaviour progrates from one agent to another through social interaction which brings forth information exchange \cite{SwarmArt}. Therefore, the whole swarm adapts to a new way of doing things through information that was shared by one agent. The information can be anything that contributes to the swarm as a whole, like for instance the information might be about a new solution that is better than all previous solutions \cite{SwarmArt}. 
+Typical emergent properties exhibited by Swarms are self-organization and synchronization \cite{SwarmArt}. In Swarm intelligence, when an agent exhibits emergent behavior, the behavior of the agent needs to be shared to the whole swarm, in order for the swarm to adapt and use the newly gained knowledge\cite{SwarmArt,ChaoticSwarmIntel,CompuIntelligenceIntro,FundamentalSwarm}.
 
-Social interaction is but one component of self-organization. Other components that form part of self-organization are \cite{SwarmArt}:
+The information that is shared among the individuals of the swarm, can be anything that contributes to the swarm as a whole, like for instance the information might be about a new solution that is better than all previous solutions \cite{SwarmArt,ChaoticSwarmIntel,CompuIntelligenceIntro,FundamentalSwarm}. 
+
+The behaviour progrates from one agent to another through social interaction which brings forth information exchange\cite{SwarmArt}. Social interaction is but one component of self-organization. Other components that form part of self-organization are \cite{SwarmArt}:
 \begin{itemize}
 \item positive and negative feedback
 \item increasing the magnitude of fluctuations
 \end{itemize}
-This is why Ant Colony Optimization, Particle Swarm Optimization and Artificial Bee Colony Optimization work so well in NP-Complete problems. The swarm always moves to a better state than previously observed.
 
-NP-Hard optimization problems are only one of the fields of applicability for Swarm Intelligence. Other fields where Swarm Intelligence is being applied include neural network training, network routing, clustering\cite{AntSwarmClustering} , search engines and load balancing \cite{}. Swarm Intelligence thus seems more suited towards problems with combinatorial complexity (B. Denby, 2003).
+Individuals within swarm are able to accomplish social interaction with each other to achieve information sharing by using a concept reffered to as \emph{stigmergy}. A discussion on stigmergy as well as the different forms of stigmergy that exist will be discussed in section~\ref{sec:stigmergy}.
 
-In this chapter the first discussion will first on Ant Colony Optimization in section~\ref{sec:ACO}. Particle Swarm Optimization will be discussed in section~\ref{sec:PSO}. This chapter will conclude with section~\ref{sec:BEE} where a discussion on the Bee Colony Algorithm will be presented. 
+Utilizing stimergy along with self-organization swarm intelligence algorithms like Ant Colony Optimization, Particle Swarm Optimization and Artificial Bee Colony Optimization are able to produce relatively good results for NP-Complete problems\cite{CompuIntelligenceIntro,FundamentalSwarm,SwarmArt}. 
+
+Swarm intelligence based algorithm are able to achieve this since they have small individuals searching for more optimal values for a potential optimal solution on multiple fronts. As one individual makes progress on a certain front, its knowledge is shared\cite{CompuIntelligenceIntro,FundamentalSwarm}. 
+
+With traditional single agent based meta-heuristic algorithms like Tabu Search (section~\ref{sec:tabusearch} page~\pageref{sec:tabusearch}) and Simulated Annealing (section~\ref{sec:simulatedannealing} page~\pageref{sec:simulatedannealing}) only have in essence one "individual" searching for a solution\cite{CompuIntelligenceIntro,FundamentalSwarm}. 
+
+With algorithms like TS and SA, the information is not shared since there is nothing to share it with, rather the information is kept to influence future decisions\cite{AIModernApproach,TabuMontemanniSmith,TabuVechicleRoutingWithTimeWindows,CurveFittingSA,EcoEquilSA}. Swarm Intelligence algorithms also store information for use by the various individuals that make up the swarm to make more informed decisions as the explore the solution space\cite{CompuIntelligenceIntro,FundamentalSwarm}.
+
+NP-Complete\footnote{Discussion on NP-Complete problems is presented in section~\ref{sec:NPComplete} page~\pageref{sec:NPComplete}} optimization problems is but only one of the fields of applicability where swarm intelligence algorithm have been applied. Other fields where swarm intelligence has been applied include neural network training, network routing, clustering\cite{AntSwarmClustering} , search engines and load balancing \cite{}. Swarm Intelligence thus seems more suited towards problems with combinatorial complexity (B. Denby, 2003).
+
+In this chapter the first discussion will be on the Ant Colony Optimization in section~\ref{sec:ACO}. Particle Swarm Optimization will be discussed in section~\ref{sec:PSO}. This chapter will conclude with section~\ref{sec:BEE} where a discussion on the Bee Colony Algorithm will be presented. 
 
 Each section is divided into 3 subsections. First, an overview of the algorithm will be given, where basic concepts about the algorithm will be discussed as well as a general outline of the search process the algorithm uses. The second sub section will give an in depth discussion on some of the core characteristics that make the algorithm unique. Each section will conclude with a literate review of the algorithm being applied on the FAP.
 
 \section{Ant Colony Optimization (ACO)}
+\begin{algorithm}
+\caption{Basic Ant Colony Optimization Algorithm~\cite{CompuIntelligenceIntro}}
+\label{alg:ACO}
+	\begin{algorithmic}[1]
+	\STATE$\text{Initialize $\tau_{ij}$ with small starting values}$
+	\STATE$t \leftarrow 0$
+	\STATE$\text{Place $n_k$ ants on starting node}$
+	\WHILE{stopping condition not reached}
+		\FOR{each ant $k \leftarrow 0$ to  number of ants $n_k$}
+			\STATE$p^k(t) \leftarrow \text{Initialize path } p^k \text{for time step } t$
+			\REPEAT
+				\STATE$\text{Select next node based on probability equation~\ref{eq:ASprobability}}$
+				\STATE$\text{Add link (i,j) to path } p^k(t)$
+			\UNTIL{Final node reached}
+			\STATE$x^k(t) \leftarrow \text{Remove loops from path }p^k(t)$
+			\STATE$\text{Calculate length of path $f(p^k(t)$})$
+		\ENDFOR
+		\FOR{each link $(i,j)$ in graph}
+			\STATE$\tau_{ij} = \text{Reduce pheromone of link $(i,j)$ with equation~\ref{eq:pheromoneevapuration}}$
+		\ENDFOR
+		\FOR{each ant $k = 0$ to  number of ants $n_k$}
+			\FOR{each link $(i,j)$ in $p^k(t)$}
+				\STATE$\triangle \tau_{ij} = \frac{1}{f(p^k(t))}$
+				\STATE$\text{Update the pheromone $\tau_{ij}$ with equation~\ref{eq:pheromoneupdate}}$
+			\ENDFOR
+		\ENDFOR
+		\STATE$t \leftarrow t + 1$
+	\ENDWHILE
+	\RETURN $\text{path $x^k(t)$ with the smallest $f(x^k(t))$ as the solution}$
+	\end{algorithmic}
+\end{algorithm}
 \label{sec:ACO}
 \begin{figure}[p]
 	\begin{center}
@@ -124,6 +172,7 @@ Pheromone update rules that are in the global update group, only allow the phero
 
 The Ant Colony System (ACS) was the first to use the global update rule together with the local update rule\cite{CompuIntelligenceIntro}. By using both types of rules the algorithm is able to efficiently exploit the history provided by the pheromones\cite{CompuIntelligenceIntro}. The global update rule used by the ACS is formulated in the following equation\cite{CompuIntelligenceIntro}:
 \begin{align}
+\label{eq:pheromoneupdate}
 	\tau_{ij}(t + 1) &= (1 - p_1)\tau_{ij}(t) + p_1\Delta\tau_{ij}(t),\\
 	\text{where }\Delta\tau_{ij} &= \notag
 	\begin{cases}
@@ -186,6 +235,34 @@ The results the authors obtained will now be presented for both versions of the 
 The authors note, that if one observed the results they obtained, one can clearly see that the ACO version that incorporates heuristic information to reinforce pheromone trails outperforms the version which doesn't do it\cite{ACOvsEA}. The above values represent the amount of interference which will result if the plan is used in the network\cite{ACOvsEA}.
 \section{Artificial Bee Colony Algorithm}
 \label{sec:BEE}
+\begin{algorithm}
+\caption{Basic Artificial Bee Colony Algorithm}
+\label{alg:ABC}
+	\begin{algorithmic}[1]
+		\STATE$b_n \leftarrow \text{Initialize bees}$
+		\STATE$s_n \leftarrow \text{Initialize starting solutions}$
+		\STATE$\text{Evaluate starting solutions with fitness function $f(s_n)$}$
+		\STATE$t \leftarrow 0$
+		\WHILE{stopping criteria not met}
+			\FOR{each employed bee $eb_i = 0$ to max bees $b_n$}
+				\STATE$v_i \leftarrow \text{Generate new solution with equation~\ref{eq:beeGenerate}}$
+				\STATE$\text{Evaluate with fitness function $f(v_i)$}$
+				\STATE$\text{Apply greedy selection between $v_i$ and bee $eb_i$ current solution}$
+			\ENDFOR
+			\STATE$\text{Calculate probability $p_i$ for solutions $s_i$ in $s_n$ using equation~\ref{eq:beeProbability}}$
+			\FOR{each onlooker bee $ob_i \leftarrow 0$ to max bees $b_n$}
+				\STATE$x_i \leftarrow \text{Select solution $s_i$ based on $p_i$} $
+				\STATE$v_i \leftarrow \text{Generate new solution with $x_i$ and $p_i$}$
+				\STATE$\text{Evaluate $v_i$ with fitness function $f(v_i)$}$
+				\STATE$\text{Apply greedy selection between $v_i$ and bee $ob_i$ current solution}$
+			\ENDFOR
+			\IF{there is an abandoned solution for a scout bee}
+				\STATE Replace with solution generated with equation~\ref{eq:scoutGenerate}
+			\ENDIF
+			\STATE$t \leftarrow t + 1$
+		\ENDWHILE
+	\end{algorithmic}
+\end{algorithm}
 \begin{figure}[p]
 	\begin{center}
 	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/BeeAlgorithm.pdf}}
@@ -291,6 +368,28 @@ As of yet, no research has been done to apply the BEE algorithm to the FAP. Ther
 
 In the next section a discussion will be presented on the Particle Swarm Optimization algorithm.
 \section{Particle Swarm Optimization (PSO)}
+\begin{algorithm}
+\caption{Basic Global Particle Swarm Optimization Algorithm}
+\label{alg:PSO}
+	\begin{algorithmic}
+		\STATE Initialize $s_n$ swarm
+		\WHILE{Stopping condition not met}
+			\FOR{each particle $p_i \leftarrow 0$ in $s_n$}
+				\STATE Evaluate particle with fitness function $f(p_i)$
+				\IF{$f(p_i) \leq pbest(p_i)$}
+					\STATE personal best of $p_i$ to $f(p_i)$
+				\ENDIF
+				\IF{$f(p_i) \leq f(gbest)$}
+					\STATE $gbest \leftarrow f(p_i)$
+				\ENDIF
+			\ENDFOR
+			\FOR{each particle $p_i \leftarrow 0$ in $s_n$}
+				\STATE update velocity of $p_i$ with equation~\ref{eq:velocityupdate}
+				\STATE update position of $p_i$ with equation~\ref{eq:positionupdate}
+			\ENDFOR
+		\ENDWHILE
+	\end{algorithmic}
+\end{algorithm}
 \label{sec:PSO}
 \begin{figure}[p]
 	\begin{center}

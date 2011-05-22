@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.5.2)  12 MAY 2011 21:36
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.5.2)  22 MAY 2011 21:41
 entering extended mode
  %&-line parsing enabled.
 **dissertation.tex
@@ -657,61 +657,61 @@ pdfTeX warning: pdflatex (file ./pictures/TabuSearch.pdf): PDF inclusion: found
 File: ./pictures/TabuSearch.pdf Graphic file (type pdf)
 
 <use ./pictures/TabuSearch.pdf>
-Overfull \hbox (8.1491pt too wide) in paragraph at lines 76--77
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 105--106
  [] 
  []
 
-
-Overfull \hbox (4.84538pt too wide) in paragraph at lines 91--92
+[63] [64 <./pictures/TabuSearch.pdf>]
+Overfull \hbox (4.84538pt too wide) in paragraph at lines 120--121
 []\OT1/cmr/m/n/10.95 The Tabu search al-go-rithm ad-dresses this short com-ing 
 of the hill-climbing
  []
 
-[63] [64 <./pictures/TabuSearch.pdf>] [65] [66] [67] [68]
-Overfull \hbox (6.72404pt too wide) in paragraph at lines 161--162
+[65] [66] [67] [68] [69]
+Overfull \hbox (6.72404pt too wide) in paragraph at lines 190--191
 \OT1/cmr/m/n/10.95 by the Di-ver-si-fier com-po-nent. The Di-ver-si-fier com-po
 -nent dy-nam-i-cally changes
  []
 
-[69] [70]
+[70] [71]
 
 pdfTeX warning: pdflatex (file ./pictures/SimulatedAnnealing.pdf): PDF inclusio
 n: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/SimulatedAnnealing.pdf, id=376, 722.7pt x 542.025pt>
+<./pictures/SimulatedAnnealing.pdf, id=379, 722.7pt x 542.025pt>
 File: ./pictures/SimulatedAnnealing.pdf Graphic file (type pdf)
 
 <use ./pictures/SimulatedAnnealing.pdf>
-Overfull \hbox (8.1491pt too wide) in paragraph at lines 199--200
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 245--246
  [] 
  []
 
-[71] [72 <./pictures/SimulatedAnnealing.pdf>]
+[72] [73 <./pictures/SimulatedAnnealing.pdf>]
 
-LaTeX Warning: Reference `fig.SimulatedAnnealingFlowChart' on page 73 undefined
- on input line 226.
+LaTeX Warning: Reference `fig.SimulatedAnnealingFlowChart' on page 74 undefined
+ on input line 273.
 
-[73]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[74]
+Underfull \vbox (badness 1168) has occurred while \output is active []
 
- [74]
-[75] [76] [77]
+ [75]
+[76] [77] [78]
 
 pdfTeX warning: pdflatex (file ./pictures/GeneticAlgorithm.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/GeneticAlgorithm.pdf, id=512, 722.7pt x 542.025pt>
+<./pictures/GeneticAlgorithm.pdf, id=515, 722.7pt x 542.025pt>
 File: ./pictures/GeneticAlgorithm.pdf Graphic file (type pdf)
 
 <use ./pictures/GeneticAlgorithm.pdf>
-Overfull \hbox (8.1491pt too wide) in paragraph at lines 335--336
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 399--400
  [] 
  []
 
-[78] [79 <./pictures/GeneticAlgorithm.pdf>] [80] [81] [82] [83] [84] [85]
-[86]
+[79] [80] [81 <./pictures/GeneticAlgorithm.pdf>] [82] [83] [84] [85] [86]
+[87] [88]
 Underfull \vbox (badness 1596) has occurred while \output is active []
 
- [87])
-[88]
+ [89])
+[90]
 \openout2 = `chpt5.aux'.
 
  (./chpt5.tex
@@ -725,37 +725,60 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
-[89
+[91
 
 
 
 ]
+Overfull \hbox (0.31332pt too wide) in paragraph at lines 15--16
+[]\OT1/cmr/m/n/10.95 The ini-tial al-go-rithms de-vel-oped with re-gard to swar
+m in-tel-li-gence, where
+ []
+
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [90]
+[92]
+
+LaTeX Warning: Reference `sec:stigmergy' on page 93 undefined on input line 34.
+
+
+
+LaTeX Warning: Reference `sec:tabusearch' on page 93 undefined on input line 40
+.
+
+
+LaTeX Warning: Reference `sec:tabusearch' on page 93 undefined on input line 40
+.
+
+
+LaTeX Warning: Reference `sec:simulatedannealing' on page 93 undefined on input
+ line 40.
+
+
+LaTeX Warning: Reference `sec:simulatedannealing' on page 93 undefined on input
+ line 40.
+
+[93]
 
 pdfTeX warning: pdflatex (file ./pictures/AntColonyOptimization.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/AntColonyOptimization.pdf, id=659, 722.7pt x 542.025pt>
+<./pictures/AntColonyOptimization.pdf, id=669, 722.7pt x 542.025pt>
 File: ./pictures/AntColonyOptimization.pdf Graphic file (type pdf)
 
 <use ./pictures/AntColonyOptimization.pdf>
-Overfull \hbox (8.1491pt too wide) in paragraph at lines 37--38
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 85--86
  [] 
  []
 
-<./pictures/antBridgeExperiment.png, id=661, 498.86375pt x 240.9pt>
+<./pictures/antBridgeExperiment.png, id=671, 498.86375pt x 240.9pt>
 File: ./pictures/antBridgeExperiment.png Graphic file (type png)
 
-<use ./pictures/antBridgeExperiment.png> [91] [92 <./pictures/AntColonyOptimiza
-tion.pdf>] [93 <./pictures/antBridgeExperiment.png (PNG copy)>]
-Underfull \vbox (badness 1622) has occurred while \output is active []
-
- [94]
+<use ./pictures/antBridgeExperiment.png> [94] [95] [96 <./pictures/AntColonyOpt
+imization.pdf>] [97 <./pictures/antBridgeExperiment.png (PNG copy)>] [98]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -769,63 +792,75 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
 
-[95] [96] [97]
-Overfull \hbox (1.6546pt too wide) in paragraph at lines 118--119
+[99] [100] [101]
+Overfull \hbox (1.6546pt too wide) in paragraph at lines 166--167
 \OT1/cmr/m/n/10.95 The ants would re-trace their path af-ter each it-er-a-tion,
  de-posit-ing pheromones
  []
 
-[98] [99] [100]
+[102] [103] [104]
 
 pdfTeX warning: pdflatex (file ./pictures/BeeAlgorithm.pdf): PDF inclusion: fou
 nd PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/BeeAlgorithm.pdf, id=811, 722.7pt x 542.025pt>
+<./pictures/BeeAlgorithm.pdf, id=824, 722.7pt x 542.025pt>
 File: ./pictures/BeeAlgorithm.pdf Graphic file (type pdf)
 
 <use ./pictures/BeeAlgorithm.pdf>
-Overfull \hbox (8.1491pt too wide) in paragraph at lines 191--192
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 268--269
  [] 
  []
 
-[101] [102 <./pictures/BeeAlgorithm.pdf>] [103] [104] [105] [106] [107]
+[105] [106 <./pictures/BeeAlgorithm.pdf>] [107] [108]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [109]
+[110] [111] [112]
 
 pdfTeX warning: pdflatex (file ./pictures/ParticleSwarmOptimization.pdf): PDF i
 nclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/ParticleSwarmOptimization.pdf, id=925, 722.7pt x 542.025pt>
+<./pictures/ParticleSwarmOptimization.pdf, id=941, 722.7pt x 542.025pt>
 File: ./pictures/ParticleSwarmOptimization.pdf Graphic file (type pdf)
 
 <use ./pictures/ParticleSwarmOptimization.pdf>
-Overfull \hbox (8.1491pt too wide) in paragraph at lines 297--298
+Overfull \hbox (8.1491pt too wide) in paragraph at lines 396--397
  [] 
  []
 
-[108] [109 <./pictures/ParticleSwarmOptimization.pdf>] [110] [111] [112]
-<./pictures/captainplaceholder.png, id=1023, 746.79pt x 1056.94875pt>
+[113] [114 <./pictures/ParticleSwarmOptimization.pdf>] [115] [116] [117]
+<./pictures/captainplaceholder.png, id=1039, 746.79pt x 1056.94875pt>
 File: ./pictures/captainplaceholder.png Graphic file (type png)
 
-<use ./pictures/captainplaceholder.png>
+<use ./pictures/captainplaceholder.png> [118]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[113] [114 <./pictures/captainplaceholder.png>] [115] [116] [117])
-Overfull \hbox (0.88882pt too wide) in paragraph at lines 446--32
+ [119 <./pictures/captainplaceholder.png>] [120] [121] [122] [123])
+Overfull \hbox (0.88882pt too wide) in paragraph at lines 545--32
 []\OT1/cmr/m/n/10.95 A di-a-gram de-pict-ing the flow of the PSO al-go-rithm wa
 s also pre-sented(see
  []
 
-[118] [119] [120
+[124] [125
 
 
-] [121] [122]
+] [126]
 \openout2 = `chpt6.aux'.
 
  (./chpt6.tex
 Chapter 6.
-[123
+[127
 
 
-] [124]
-Overfull \hbox (225.09033pt too wide) in paragraph at lines 69--71
+]
+Missing character: There is no ‚ in font cmbx10!
+Missing character: There is no Ä in font cmbx10!
+Missing character: There is no ì in font cmbx10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--39
+
+ []
+
+[128] [129] [130]
+Overfull \hbox (225.09033pt too wide) in paragraph at lines 93--95
 \OT1/cmr/m/n/10.95 be ob-tained at the fol-low-ing points $(\OML/cmm/m/it/10.95
  x[]; x[]\OT1/cmr/m/n/10.95 ) \OMS/cmsy/m/n/10.95 2 f\OT1/cmr/m/n/10.95 (\OMS/c
 msy/m/n/10.95 ^^@\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 77
@@ -840,121 +875,122 @@ m/it/10.95 :\OT1/cmr/m/n/10.95 584428\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95
 /m/n/10.95 g$ 
  []
 
-[125] [126] <./Graphs/DeJongF1.pdf, id=1070, 578.16pt x 433.62pt>
+[131] [132] <./Graphs/DeJongF1.pdf, id=1089, 578.16pt x 433.62pt>
 File: ./Graphs/DeJongF1.pdf Graphic file (type pdf)
 
-<use ./Graphs/DeJongF1.pdf> [127]
-<./Graphs/Shekel.pdf, id=1075, 578.16pt x 433.62pt>
+<use ./Graphs/DeJongF1.pdf>
+<./Graphs/Shekel.pdf, id=1090, 578.16pt x 433.62pt>
 File: ./Graphs/Shekel.pdf Graphic file (type pdf)
  <use ./Graphs/Shekel.pdf>
-<./Graphs/Rastrigin.pdf, id=1076, 578.16pt x 433.62pt>
+[133 <./Graphs/DeJongF1.pdf>]
+<./Graphs/Rastrigin.pdf, id=1109, 578.16pt x 433.62pt>
 File: ./Graphs/Rastrigin.pdf Graphic file (type pdf)
 
-<use ./Graphs/Rastrigin.pdf> [128 <./Graphs/DeJongF1.pdf> <./Graphs/Shekel.pdf>
-] <./Graphs/Schwefel.pdf, id=1107, 578.16pt x 433.62pt>
+<use ./Graphs/Rastrigin.pdf>
+<./Graphs/Schwefel.pdf, id=1110, 578.16pt x 433.62pt>
 File: ./Graphs/Schwefel.pdf Graphic file (type pdf)
 
-<use ./Graphs/Schwefel.pdf>
-<./Graphs/Griewank_-50_+50.pdf, id=1108, 578.16pt x 433.62pt>
+<use ./Graphs/Schwefel.pdf> [134 <./Graphs/Shekel.pdf> <./Graphs/Rastrigin.pdf>
+] <./Graphs/Griewank_-50_+50.pdf, id=1143, 578.16pt x 433.62pt>
 File: ./Graphs/Griewank_-50_+50.pdf Graphic file (type pdf)
 
-<use ./Graphs/Griewank_-50_+50.pdf> [129 <./Graphs/Rastrigin.pdf> <./Graphs/Sch
-wefel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=1140, 578.16pt x 433.62pt>
+<use ./Graphs/Griewank_-50_+50.pdf>
+<./Graphs/Salomon_-10_+10.pdf, id=1144, 578.16pt x 433.62pt>
 File: ./Graphs/Salomon_-10_+10.pdf Graphic file (type pdf)
 
-<use ./Graphs/Salomon_-10_+10.pdf>
-<./Graphs/Ackley.pdf, id=1141, 578.16pt x 433.62pt>
+<use ./Graphs/Salomon_-10_+10.pdf> [135 <./Graphs/Schwefel.pdf> <./Graphs/Griew
+ank_-50_+50.pdf>] <./Graphs/Ackley.pdf, id=1174, 578.16pt x 433.62pt>
 File: ./Graphs/Ackley.pdf Graphic file (type pdf)
- <use ./Graphs/Ackley.pdf>
-[130 <./Graphs/Griewank_-50_+50.pdf> <./Graphs/Salomon_-10_+10.pdf>]
-<./Graphs/Camel.pdf, id=1174, 578.16pt x 433.62pt>
+
+<use ./Graphs/Ackley.pdf> <./Graphs/Camel.pdf, id=1175, 578.16pt x 433.62pt>
 File: ./Graphs/Camel.pdf Graphic file (type pdf)
- <use ./Graphs/Camel.pdf>
-<./Graphs/Shubert.pdf, id=1175, 578.16pt x 433.62pt>
+
+<use ./Graphs/Camel.pdf> [136 <./Graphs/Salomon_-10_+10.pdf> <./Graphs/Ackley.p
+df>] <./Graphs/Shubert.pdf, id=1209, 578.16pt x 433.62pt>
 File: ./Graphs/Shubert.pdf Graphic file (type pdf)
 
-<use ./Graphs/Shubert.pdf> [131 <./Graphs/Ackley.pdf> <./Graphs/Camel.pdf>]
-<./Graphs/Himmelblau.pdf, id=1208, 578.16pt x 433.62pt>
+<use ./Graphs/Shubert.pdf>
+<./Graphs/Himmelblau.pdf, id=1210, 578.16pt x 433.62pt>
 File: ./Graphs/Himmelblau.pdf Graphic file (type pdf)
 
-<use ./Graphs/Himmelblau.pdf>
-<./Graphs/Rosenbrock.pdf, id=1209, 578.16pt x 433.62pt>
+<use ./Graphs/Himmelblau.pdf> [137 <./Graphs/Camel.pdf> <./Graphs/Shubert.pdf>]
+<./Graphs/Rosenbrock.pdf, id=1242, 578.16pt x 433.62pt>
 File: ./Graphs/Rosenbrock.pdf Graphic file (type pdf)
 
-<use ./Graphs/Rosenbrock.pdf> [132 <./Graphs/Shubert.pdf> <./Graphs/Himmelblau.
-pdf>] <./Graphs/Dropwave.pdf, id=1243, 578.16pt x 433.62pt>
+<use ./Graphs/Rosenbrock.pdf>
+<./Graphs/Dropwave.pdf, id=1243, 578.16pt x 433.62pt>
 File: ./Graphs/Dropwave.pdf Graphic file (type pdf)
 
-<use ./Graphs/Dropwave.pdf>
-<./Graphs/Easom_-100_+100.pdf, id=1244, 578.16pt x 433.62pt>
+<use ./Graphs/Dropwave.pdf> [138 <./Graphs/Himmelblau.pdf> <./Graphs/Rosenbrock
+.pdf>] <./Graphs/Easom_-100_+100.pdf, id=1277, 578.16pt x 433.62pt>
 File: ./Graphs/Easom_-100_+100.pdf Graphic file (type pdf)
 
-<use ./Graphs/Easom_-100_+100.pdf> [133 <./Graphs/Rosenbrock.pdf> <./Graphs/Dro
-pwave.pdf>] <./Graphs/Branin.pdf, id=1280, 578.16pt x 433.62pt>
+<use ./Graphs/Easom_-100_+100.pdf>
+<./Graphs/Branin.pdf, id=1278, 578.16pt x 433.62pt>
 File: ./Graphs/Branin.pdf Graphic file (type pdf)
-
-<use ./Graphs/Branin.pdf>
-<./Graphs/Michalewicz.pdf, id=1281, 578.16pt x 433.62pt>
+ <use ./Graphs/Branin.pdf>
+[139 <./Graphs/Dropwave.pdf> <./Graphs/Easom_-100_+100.pdf>]
+<./Graphs/Michalewicz.pdf, id=1317, 578.16pt x 433.62pt>
 File: ./Graphs/Michalewicz.pdf Graphic file (type pdf)
 
-<use ./Graphs/Michalewicz.pdf> [134 <./Graphs/Easom_-100_+100.pdf> <./Graphs/Br
-anin.pdf>] <./Graphs/Goldstein.pdf, id=1317, 578.16pt x 433.62pt>
+<use ./Graphs/Michalewicz.pdf>
+<./Graphs/Goldstein.pdf, id=1318, 578.16pt x 433.62pt>
 File: ./Graphs/Goldstein.pdf Graphic file (type pdf)
 
-<use ./Graphs/Goldstein.pdf>) [135 <./Graphs/Michalewicz.pdf> <./Graphs/Goldste
-in.pdf>] [136]
+<use ./Graphs/Goldstein.pdf> [140 <./Graphs/Branin.pdf> <./Graphs/Michalewicz.p
+df>] [141 <./Graphs/Goldstein.pdf>] [142]) [143]
 \openout2 = `chpt7.aux'.
 
- (./chpt7.tex
+ (./chpt7.tex [144
+
+
+
+]
 Chapter 7.
 
-LaTeX Warning: Reference `' on page 137 undefined on input line 5.
+LaTeX Warning: Reference `' on page 145 undefined on input line 5.
 
-[137
-
-
-
-] [138] <./pictures/fapPlanDiagram.pdf, id=1363, 338.86601pt x 207.174pt>
+[145] [146] <./pictures/fapPlanDiagram.pdf, id=1389, 338.86601pt x 207.174pt>
 File: ./pictures/fapPlanDiagram.pdf Graphic file (type pdf)
 
-<use ./pictures/fapPlanDiagram.pdf> [139 <./pictures/fapPlanDiagram.pdf>]
-[140] [141]
+<use ./pictures/fapPlanDiagram.pdf> [147 <./pictures/fapPlanDiagram.pdf>]
+[148] [149]
 Overfull \hbox (0.5567pt too wide) in paragraph at lines 96--98
 []\OT1/cmr/m/n/10.95 Vector math has stan-dard ba-sic op-er-a-tions de-fined fo
 r adding,subtracting
  []
 
-[142] [143] [144] [145] [146] [147] [148]) [149]
+[150] [151] [152] [153] [154] [155] [156]) [157]
 \openout2 = `chpt8.aux'.
 
- (./chpt8.tex [150
+ (./chpt8.tex [158
 
 
 
 ]
 Chapter 8.
-) [151]
+) [159]
 \openout2 = `chpt9.aux'.
 
- (./chpt9.tex [152
+ (./chpt9.tex [160
 
 
 
 ]
 Chapter 9.
-) [153] (./dissertation.bbl [154
+) [161] (./dissertation.bbl [162
 
 
-] [155] [156]
+] [163] [164]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no à in font cmr10!
- [157]
+ [165]
 Underfull \hbox (badness 4060) in paragraph at lines 208--215
 []\OT1/cmr/m/n/10.95 Antonio G^^Somez-Iglesias, Miguel A. Vega-Rodr^^S^^Pguez, 
 Fran-cisco
  []
 
-[158] [159] [160] [161] [162] [163] [164] [165] [166] [167]) [168]
+[166] [167] [168] [169] [170] [171] [172] [173] [174] [175]) [176]
 (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
 (./chpt5.aux) (./chpt6.aux) (./chpt7.aux) (./chpt8.aux) (./chpt9.aux))
 
@@ -962,10 +998,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 10796 strings out of 495061
- 196162 string characters out of 1182622
- 272583 words of memory out of 3000000
- 13628 multiletter control sequences out of 15000+50000
+ 10844 strings out of 495061
+ 196653 string characters out of 1182622
+ 272742 words of memory out of 3000000
+ 13676 multiletter control sequences out of 15000+50000
  14252 words of font info for 53 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  47i,19n,67p,1047b,805s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -988,9 +1024,9 @@ e/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type
 sfonts/cm/cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbo
 ls/msam10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb>
-Output written on dissertation.pdf (168 pages, 16334284 bytes).
+Output written on dissertation.pdf (176 pages, 16353225 bytes).
 PDF statistics:
- 1538 PDF objects out of 1728 (max. 8388607)
+ 1564 PDF objects out of 1728 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
