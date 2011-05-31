@@ -1,0 +1,40 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces GSM Architecture}}{23}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Cells with BTS's}}{26}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces TDMA Frame and Logical channels \cite {wirelesstelcoMullet}}}{32}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Co-Channel interference}}{47}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Adjacent Channel interference}}{47}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Frequency Separation}}{48}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow Chart for Tabu Search Algorithm}}{70}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flow Chart for Simulated Annealing Algorithm}}{79}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Flow Chart for Genetic Algorithm}}{87}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flow Chart for ACO Algorithm}}{103}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The Ant bridge experiment \cite {AntsAndStigmergy}}}{104}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Flow Chart for the BEE Algorithm}}{116}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Flow Chart for PSO Algorithm}}{127}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Visual particle velocity update \cite {SOSwarm,FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch}}}{132}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces DeJong's First Function}}{147}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Shekel's Foxhole Function}}{148}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces The Function}}{148}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Schwefel Function}}{149}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Griewank Function}}{149}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Salomon Function}}{150}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Ackley Function}}{150}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Six-Hump Camel Back Function}}{151}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Shubert Function}}{151}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Himmelblau Function}}{152}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Rosenbrock Valley Function}}{152}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Dropwave Function}}{153}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Easom Function}}{153}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Branin Function}}{154}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Michalewicz Function}}{154}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces THe Goldstein Function}}{155}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The Structure of a Frequency Plan}}{161}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

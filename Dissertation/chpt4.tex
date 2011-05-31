@@ -75,7 +75,7 @@ In the next section of this chapter a discussion will be presented on the Tabu S
 \begin{algorithm}
 \caption{Basic Tabu Search Algorithm}
 \label{alg:TS}
-	\begin{algorithmic}
+	\begin{algorithmic}[1]
 		\STATE Initialize parameters
 		\STATE $x_0 \leftarrow$ Intialize starting solution
 		\WHILE{stopping criteria not met}
@@ -209,7 +209,8 @@ The HMT then uses the identified characteristics to add \emph{additional} constr
 
 The authors applied their TS algorithm together with HMT on the COST 259 family of benchmarks. Specifically the Siemens 1, Siemens 2, Siemens 3 and Siemens 4 problems.  The results will now be presented.
 
-\begin{center}
+\begin{table}
+\centering
 	\begin{tabular}{| c | c | c |}
 		\hline
 		Problem instance & TS with HMT & Best Cost 259 \\ \hline
@@ -218,7 +219,8 @@ The authors applied their TS algorithm together with HMT on the COST 259 family 
 		Siemens 3 & 6.6496 & 5.19 \\ \hline
 		Siemens 4 & 110.9725 & 81.89 \\ \hline
 	\end{tabular}
-\end{center}
+\caption{TS on Cost 259 Benchmark}
+\end{table}
 As can be observed from the above results obtained by the authors, the TS algorithm with HMT produces results that rank very favourably against other algorithms also applied to the COST 259.
 
 In this section a literature review was presented on the TS algorithm being applied to the same problem this dissertation addresses. In the next section a discussion will be presented on the Simulated Annealing algorithm.
@@ -226,7 +228,7 @@ In this section a literature review was presented on the TS algorithm being appl
 \begin{algorithm}
 \caption{Basic Simulated Annealing Algorithm}
 \label{alg:SA}
-	\begin{algorithmic}
+	\begin{algorithmic}[1]
 		\STATE Initialize parameters
 		\STATE Set starting temperature $T(0)$
 		\STATE $x_0 \leftarrow$ Generate initial starting solution
@@ -357,7 +359,8 @@ Utilizing the dynamic programming, the authors decompose the FAP problem into sm
 
 The resulting SA algorithm was benchmarked on the COST 259 siemens benchmark instances. The results will now be presented. Note that at the time the authors did the benchmark the best results obtained for the siemens problem were different than the latest results.
 
-\begin{center}
+\begin{table}
+\centering
 	\begin{tabular}{| c | c | c | c |}
 	\hline
 	Problem instance & SA & Cost 259 (old) & Cost 259 (new) \\ \hline
@@ -366,12 +369,13 @@ The resulting SA algorithm was benchmarked on the COST 259 siemens benchmark ins
 	Siemens 3 & 52.43 & 52.55 & 5.19\\ \hline
 	Siemens 4 & 80.96 & 80.80 & 81.89\\ \hline
 	\end{tabular}
-\end{center}
+\caption{SA on Cost 259 Benchmark}
+\end{table}
 \section{Genetic Algorithm}
 \begin{algorithm}
 \caption{Basic Genetic Algorithm Algorithm}
 \label{alg:GA}
-	\begin{algorithmic}
+	\begin{algorithmic}[1]
 		\STATE $pop_n\leftarrow$Initialize population
 		\STATE Evalute population with fitness function $f(i)$
 		\WHILE{Stopping criteria is not met}
@@ -512,7 +516,8 @@ The evaluations are more complex, since in most instances the sub problems (whic
 
 The results the authors obtained will now be represented.
 
-\begin{center}
+\begin{table}
+\centering
 	\begin{tabular}{| c | c | c |}
 	\hline
 	Problem instance & GA & Cost 259 \\ \hline
@@ -521,7 +526,8 @@ The results the authors obtained will now be represented.
 	Siemens 3 & 6.37 & 5.19 \\ \hline
 	Siemens 4 & 84.08 & 81.89 \\ \hline
 	\end{tabular}
-\end{center}
+\caption{GA on Cost 259 Benchmark}
+\end{table}
 %
 \section {Summary}
 In this chapter a presentation was given meta-heuristic algorithms. A definition was given on what it means for an algorithm to be classified as being of a meta-heuristic nature and also what characteristic these algorithms must exhibit.

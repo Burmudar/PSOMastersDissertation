@@ -8,7 +8,7 @@ The research field of Artificial Intelligence stands a lot to gain by studying t
 
 The research field of swarm intelligence is an approach more concerned with the underlying processes and behavior patterns when multiple agents (insects, animals) come together and perform a task as one collective entity.  This study of animals or insects in groups has already contributed to Artificial Intelligence as a whole \cite{ChaoticSwarmIntel,BeeJobShop}. Each individual in the swarm might not be able to solve the problem on his own, but by interacting with other individuals and performing primitive actions, the individual can contribute to solving the problem as a whole entity \cite{BeeJobShop}. 
 
-New algorithms which incorporate the lessons learned from the study of the collective intelligence are now being used and form part of the Meta-heuristic algorithm group. A discussion on some of the more popular meta-heuristic algorithms was presented in chapter~\ref{ch:metaheuristic} (see page~\ref{ch:metaheuristic}. 
+New algorithms which incorporate the lessons learned from the study of the collective intelligence are now being used and form part of the Meta-heuristic algorithm group. A discussion on some of the more popular meta-heuristic algorithms was presented in chapter~\ref{ch:metaheuristic} (see page~\pageref{ch:metaheuristic}. 
 
 Swarm intelligence algorithms are also meta-heuristic algorithms, with the distinction being made that swarm intelligence algorithms use multiple agents as a collective entity of knowledge to search the problem space\cite{SwarmArt,ChaoticSwarmIntel,BeeJobShop,CompuIntelligenceIntro,FundamentalSwarm}.
 
@@ -45,8 +45,32 @@ NP-Complete\footnote{Discussion on NP-Complete problems is presented in section~
 
 In this chapter the first discussion will be on the Ant Colony Optimization in section~\ref{sec:ACO}. Particle Swarm Optimization will be discussed in section~\ref{sec:PSO}. This chapter will conclude with section~\ref{sec:BEE} where a discussion on the Bee Colony Algorithm will be presented. 
 
-Each section is divided into 3 subsections. First, an overview of the algorithm will be given, where basic concepts about the algorithm will be discussed as well as a general outline of the search process the algorithm uses. The second sub section will give an in depth discussion on some of the core characteristics that make the algorithm unique. Each section will conclude with a literate review of the algorithm being applied on the FAP.
+Before the algorithms are discussed. A small overview on stigmergy will be given, as it forms a core concept upon which swarm intelligence algorithms are based upon.
+\section{Stigmergy}
+\label{sec:stigmergy}
+Stigmergy is defined as the method animals and insects use to facilitate communication through interaction. Through the use of stimergy animals or insects are able to socially interact with their own species to convey information to each other.
 
+Interaction occurs through signals that the individuals receive which might require them to perform a specific action\cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends}.
+
+Two forms of stigmergy can be observed in nature. The one form, \emph{Sematectonic stigmergy}\label{def:sematectonic}, is a direct and physical form of interaction since it relies on altering the environment or by using some for of physical action to communicate \cite{CompuIntelligenceIntro}. 
+
+Examples of this type of stigmergy being used include nest building and brood sorting by ants\cite{CompuIntelligenceIntro}. Schools of fish also use this type of stigmergy to communicate direction and speed by visually observing their closest partner in the school. Besides using visual information, birds use sound to communicate and alert each other\cite{SwarmArt}.
+
+The other form, \emph{Sign-based stigmergy} is an indirect form of interaction, where communication occurs through some sort signal mechanism\cite{CompuIntelligenceIntro}. Ants use sign-based stigmergy to communicate with each other. More on how ants communicate with this type of stigmergy will be discussed in section~\ref{sec:ACOverview}.
+
+Other species that use sign-based stigmergy are bees\cite{stigmergicoptimization}. When a bee determines that entity poses a threat to the hive, the bee might decide to sting the entity. The sting of a bee not only injects a toxin into the entity, but also releases a pheromone\cite{stigmergicoptimization}. This pheromone alerts nearby other bees from the hive of the presence of entity that is a potential danger to the hive\cite{stigmergicoptimization}. 
+
+The other bees of the hive pick up this pheromone that is released by the initial bees stinger and therefore attacks the entity by also stinging it\cite{stigmergicoptimization}. As more bees sting the entity, more bee stingers emit the danger pheromone identifying the entity\cite{stigmergicoptimization}. Hence the pheromone gets reinforced and thus stronger which persuades more bees into action\cite{stigmergicoptimization}.
+
+Stigmergy is a powerful mechanism which is able to alter the behaviour of a collective entity efficiently, as can be gathered from the above mentioned examples of where stigmergy is used in nature. Stigmergy is therefore a core concept upon which Swarm Intelligence algorithms are based as these communication techniques are exploited to aid the algorithm in finding better solutions.
+
+In the coming sections three swarm intelligence algorithms will be discussed. Each section is divided into 3 subsections. 
+
+First, an overview of the algorithm will be given, where basic concepts about the algorithm will be discussed as well as a general outline of the search process the algorithm uses. 
+
+The second sub section will give an in depth discussion on some of the core characteristics that make the algorithm unique. 
+
+For each algorithm discussed, the stigmergy used by the algorithm will be explicitly mentioned. Each discussion on a particular algorithm will conclude with a literature review of the algorithm being applied on the FAP.
 \section{Ant Colony Optimization (ACO)}
 \begin{algorithm}
 \caption{Basic Ant Colony Optimization Algorithm~\cite{CompuIntelligenceIntro}}
@@ -89,7 +113,7 @@ Each section is divided into 3 subsections. First, an overview of the algorithm 
 \end{figure}
 \subsection{Overview}
 \label{sec:ACOverview}
-Ant Colony Optimization is a class of algorithms incorporating different aspects that ants exhibit when they perform certain activities i.e, gather food, build nests and construct cemeteries. The first ACO algorithms that were developed were based on the foraging behaviour that was exhibited by ants when finding the most optimal path towards a food source. The foraging behaviour was noticed by Deneubourg when he performed the Bridge experiment \cite{AntsAndStigmergy,CompuIntelligenceIntro}.
+Ant Colony Optimization (ACO) is a class of algorithms incorporating different aspects that ants exhibit when they perform certain activities i.e, gather food, build nests and construct cemeteries. The first ACO algorithms that were developed were based on the foraging behaviour that was exhibited by ants when finding the most optimal path towards a food source. The foraging behaviour was noticed by Deneubourg when he performed the Bridge experiment \cite{AntsAndStigmergy,CompuIntelligenceIntro}.
 \begin{figure}[b!]
 	\centering
 	\setlength \fboxsep{0pt}
@@ -101,21 +125,33 @@ Ant Colony Optimization is a class of algorithms incorporating different aspects
 
 Deneubourg seeked to know how ants where able to find the shortest path towards a food resource and communicate it to the whole nest \cite{AntsAndStigmergy}. Thus an experiment was setup up to study the ants behaviour. In the experiment a food source was placed a certain distance away from the nest. Two paths were setup towards the food resource, one path was purposely made longer than the other path as can bee seen in figure \ref{fig:antBridgeExperiment} \cite{AntsAndStigmergy}.
 
-The ants would then go out of the nest to gather food for their colony and would in order to do so need to take one of the provided paths toward the food source. What J.L Deneubourg found was that the ants would initially oscillate between the bridges with no clear distinction of the more dominant route to take to retrieve food. But after a certain amount of time more and more ants would start preferring the path which is the shortest path towards food \cite{AntsAndStigmergy}.
+Ants would exit the nest in order to forage food. The ants first started exploring the area outside the nest in an attempt to locate a suitable food source. As the ants in the experiment explored the immediate space outside the nest to the food source, they had to take one of the provided paths to the food source\cite{AntsAndStigmergy}.
 
-Naturally the questioned that was asked was how were the ants able to communicate to each other that the one food source was closer than the other? The answer lies in the use of \emph{stigmergy} \label{def:stigmergy} by ants. Stigmergy is defined as the method animals and insects use to facilitate communication through interaction. Interaction occurs through signals that the individuals receive which might require them to perform a specific action \cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends}.
+The ants initially oscillated between the paths with no clear distinction of the more dominant route to take to retrieve food. After a certain amount of time the one path to the food source became the preffered route for the ants as the specific path was indeed the shortest path towards the food \cite{AntsAndStigmergy}.
 
-Two forms of stigmergy can be observed in nature. The one form , \emph{Sematectonic stigmergy} \label{def:sematectonic}, is a direct and physical form of interaction since it relies on altering the environment or by using some for of physical action to communicate \cite{CompuIntelligenceIntro}. Examples of this type of stigmergy include nest building and brood sorting \cite{CompuIntelligenceIntro}. 
+Naturally the questioned that was asked was how were the ants able to communicate to each other that the one food source was closer than the other? The answer lies in the use of \emph{stigmergy} \label{def:stigmergy} by ants. Ants use sign-based stigmergy when they are retrieving food. As the ant moves along a path it, it marks the path with a chemical signal that alerts other ants to the desirability of the path \cite{CompuIntelligenceIntro}. The chemical signal that ants use to indicate optimal paths is called \emph{pheromones}.
 
-The other form, \emph{Sign-based stigmergy} is an indirect form of interaction, where communication occurs through some sort signal mechanism \cite{CompuIntelligenceIntro}. Ants use sign-based stigmergy when they are retrieving food. As the ant moves their path is reinforced with a chemical signal that alerts other ants to the desirability of the path \cite{CompuIntelligenceIntro}. The chemical signal that ants use to indicate optimal paths is called \emph{pheromones}.  The concept of pheromones is a critical concept of ACO hence, we will we will provide an in depth discussion on pheromones in sub section \ref{sec:ACOcharacter}.
+A path is made up of a series of links between nodes. A link between two nodes, represents a movement from the one node to the other. Therefore, a path can be considered as the traversal of the interlinked nodes, from a starting node to a some final node. A path differs from another path by the order in which its interlinking nodes between its start and end node appear.
 
-The ACO algorithms are considered stochastic search procedures due to their innate use of randomness when exploring the solution space \cite{ACOSurvey,ImpACOComplex}.The ACO class of algorithms has been applied to a wide range of problems that include --- INSERT EXAMPLES. The algorithm does have some disadvantages. One of the primary disadvantages of ACO is that it tends to get stuck on local minima in the solution space therefore, the solution space isn't adequately explored and the algorithm prematurely converges to a local optima \cite{ImpACOComplex}.
+In the algorithm all ants in are initially placed on some random starting node. The main purpose of the ant, is to explore the solution space to ultimately produce a solution which might be optimal. The ant explores the solution space by performing a series of moves from one node to another node. Each move from one node to another is a link which is added to the path. This process can be seen in algorithm~\ref{alg:ACO} lines 7--10.
 
-Improving the exploration of a population of agents in Swarm Intelligence algorithms is no easy feat, especially for the Ant System which uses positive feedback(Gang Wang, 2005). To combat this shortcoming the MAX-MIN Ant Optimization algorithm was developed. The MAX-MIN algorithm is based on the original Ant system algorithm. MAX-MIN addresses the local minima problem by imposing dynamically changing bounds on the pheromones of the ants such that it is always with limit of the heuristic and best current path of the colony (Gang Wang, 2005).
+The ant selects which node to move to next based on a probability. The probability is calculated taking into account the amount of pheromone that is on the link representing the movement from the current node to the next node\cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
-The first algorithm to be based on the behaviour of ants was called the Ants System (AS) \cite{CompuIntelligenceIntro,AntIntroTrends}. The AS was initially applied to the Traveling Salesman problem (TSP) as a proof of concept application, but its performance was lacklustre compared to other algorithms applied to the same problem \cite{CompuIntelligenceIntro,AntIntroTrends}. Subsequently, various algorithms have been developed that improve on the AS. These improved algorithms include the Ant Colony System (ACS), The ANTS system, Ant-Q and AntTabu \cite{CompuIntelligenceIntro,AntIntroTrends}. Where applicable reference to these algorithms will be made to indicate how the have improved the AS system.
+As the ant moves it records each link between the nodes it traverses until the ant reaches the final node. All the links the ant traveresd in represents a path taken through the solution spac\cite{CompuIntelligenceIntro,FundamentalSwarm}. Thus, as the ant is moving it is actively building a optimal solution.
 
-In this sub section an overview of the ACO algorithm was given. A discussion was presented on how the algorithm was developed from observing ants. Furthermore a discussion was also presented on how the algorithm utilizes the core communication concept used my ants, called pheromones, is used to search the solution space. In conclusion a small indication of of the typical problems at which ACO excels at as well as some of the disadvantages the algorithm has in its standard form was given.
+After a path has been constructed, the ant needs to inform the rest of the ants on what movements it made to construct its solution worked well and what movements did not. Which is to say, the ant needs to signal the other ants. Therefore, in the next phase of the algorithm, pheromones get updated which occurs from line 14 -- 22 in algorithm~\ref{alg:ACO}.
+
+The concept of pheromones and how the ACO goes about in updating the pheromones is a critical concept of ACO hence, an in depth discussion on pheromones will be provided in sub section \ref{sec:ACOcharacter}.
+
+The ACO algorithms are considered stochastic search procedures due to their innate use of randomness when exploring the solution space \cite{ACOSurvey,ImpACOComplex}. The ACO class of algorithms has been applied to a wide range of problems that include --- INSERT EXAMPLES. The algorithm does have some disadvantages. One of the primary disadvantages of ACO is that it tends to get stuck on local minima in the solution space therefore, the solution space isn't adequately explored and the algorithm prematurely converges to a local optima \cite{ImpACOComplex}.
+
+To combat the shortcoming of getting stuck in local optima, the MAX-MIN Ant Optimization algorithm was developed. The MAX-MIN algorithm is based on the original Ant system algorithm. MAX-MIN addresses the local minima problem by imposing dynamically changing bounds on the pheromones of the ants such that it is always falls within the limit of the heuristic and best current path of the colony (Gang Wang, 2005).
+
+The first algorithm to be based on the behaviour of ants was called the Ants System (AS) \cite{CompuIntelligenceIntro,AntIntroTrends}. The AS was initially applied to the Traveling Salesman problem (TSP) as a proof of concept application, but its performance was lacklustre compared to other algorithms applied to the same problem \cite{CompuIntelligenceIntro,AntIntroTrends}. 
+
+Subsequently, various algorithms have been developed that improve on the AS algorithm. These improved algorithms include the Ant Colony System (ACS), The ANTS system, Ant-Q and AntTabu \cite{CompuIntelligenceIntro,AntIntroTrends}. Where applicable reference to these algorithms will be made to indicate how the have improved the AS system.
+
+In this sub section an overview of the ACO algorithm was given. A discussion was presented on how the algorithm was developed from observing ants. Furthermore a discussion was also presented on how the algorithm utilizes the core communication concept used by ants, called pheromones, is used to search the solution space. In conclusion a small indication of of the typical problems at which ACO excels at as well as some of the disadvantages the algorithm has in its standard form was given.
 
 In the next section a more in depth discussion on the core characteristics of the ACO will be given as well as additional characteristics that were developed in response to improve the efficiency of the algorithm.
 \subsection{ACO characteristics}
@@ -123,24 +159,33 @@ In the next section a more in depth discussion on the core characteristics of th
 In this section various characteristics which are important and unique to the ACO class of algorithms will be discussed. A discussion on each of the following characteristics will be discussed (in order of discussion): Pheromones, State Transition Rules and Pheromone evaporation.
 \subsubsection{Pheromones trail}
 \label{sec:pheromonetrail}
-The pheromone technique used by ants forms part of the core methodology used by the Ant Colony Optimization (ACO) algorithm \cite{AntQAP}. As an ant moves it lays down pheromones to mark the path it is walking. Pheromones decay over time therefore, as the ant follows the pheromone trail it reinforces the pheromone that is already on a path \cite{AntQAP}.Thus the more ants following a path the stronger the pheromone trail for that path and the stronger the pheromone the higher probability is that an ant will follow the path \cite{AntQAP}. 
+The pheromone technique used by ants forms part of the core methodology used by the Ant Colony Optimization (ACO) algorithm \cite{AntQAP}. As an ant moves it lays down pheromones to mark the path it is walking. This step can be observed in algorithm~\ref{alg:ACO} on line 17--21.
+
+Pheromones decay over time therefore, as the ant follows the pheromone trail it reinforces the pheromone that is already on a path \cite{AntQAP}. Thus the more ants following a path the stronger the pheromone trail for that path and the stronger the pheromone the higher probability is that an ant will follow the path \cite{AntQAP}. Pheromone decay can be seen in algorithm~\ref{alg:ACO} on line 14--16.
 
 The pheromone reinforcement is the last phase the algorithm enters before continuing to the next iteration as seen in figure \ref{fig:ACOAlgorithmFlowChart}.
 
-In the bridge experiment the ants started following the shorter path, because an ant following the shorter path would reinforce its pheromone trail faster than on the longer path. Initially, the ants oscillated between the two paths since there was no clear indication to the colony what the shortest path was, therefore the ants initially randomly selected the paths they would follow \cite{AntQAP}. Once a path as been marked with pheromones the ant no longer selects a path based solely on randomness. Instead the ant selects a path based on a probability transition rule \cite{AntsAndStigmergy}. Transition rules will be discussed in the next sub section.
+In the bridge experiment the ants started following the shorter path, because an ant following the shorter path would reinforce its pheromone trail faster than on the longer path. Initially, the ants oscillated between the two paths since there was no clear indication to the colony what the shortest path was, therefore the ants initially randomly selected the paths they would follow \cite{AntQAP}.
+
+Once a path as been marked with pheromones the ant no longer selects a path based solely on randomness. Instead the ant selects a path based on a probability transition rule \cite{AntsAndStigmergy}. Transition rules will be discussed in the next sub section.
 
 With the use of pheromones ants are able to communicate the best and shortest path. The more ants following a preferred path the more pheromones would be laid on that specific path and in return increase the strength of the pheromones \cite{ImpACOComplex}. The increase in strength of the pheromones on a path would thus let ants more clearly distinguish between paths it “should” and “should not” take \cite{ImpACOComplex}. Therefore, a pheromone provides positive feedback to the colony.
 
-When the algorithm starts there are no pheromones to indicate path and the ants are placed at certain positions which are problem dependent. Initially, all the ants will choose random paths. After all the ants have completed their paths, each path is evaluated\cite{CompuIntelligenceIntro}. The amount of pheromone marking a path is in the standard ACO related to the cost function. Therefore, a low cost function value will have a high pheromone dosage indicating the path the ant took from each node and a high cost function value will have a low dosage\cite{CompuIntelligenceIntro}. 
+When the algorithm starts there are no pheromones to indicate path and the ants are placed at certain positions which are problem dependent. In the general ACO algorithm presented in algorithm~\ref{alg:ACO}, the ants are placed on the first node. 
 
-The pheromone of each path hence, allows the colony to remember good and bad decisions from previous iterations\cite{CompuIntelligenceIntro}. This is a form of local pheromone updating \label{def:localpheromoneupdate}which will be discussed in the pheromone update section. In the iterations following the initial one, the ants will at each node decide based on a probability function whether it should follow the pheromone trail laid down in previous iterations or choose a new path to another node. Thus as the ACO iterates through more iterations the stronger particular path pheromone trail will become, hence signalling the path out as the best found \cite{CompuIntelligenceIntro}.
+Initially, all the ants will choose random paths. After all the ants have completed their paths, each path is evaluated\cite{CompuIntelligenceIntro}. The amount of pheromone marking a path is in the standard ACO related to the cost function. Therefore, a low cost function value will have a high pheromone dosage indicating the path the ant took from each node and a high cost function value will have a low dosage\cite{CompuIntelligenceIntro}. 
 
+The pheromone of each path, therefore allows the colony to remember good and bad decisions from previous iterations\cite{CompuIntelligenceIntro}. This is a form of local pheromone updating \label{def:localpheromoneupdate}which will be discussed in the pheromone update section. 
 
-The pheromone trail was initially developed with only one colony in mind \cite{CompuIntelligenceIntro}. In the research done by Tiwari et al. pheromones in multiple colonies are considered. The basic principle of how pheromones are used by the ants stays the same, but the meaning of the pheromone changes if an ant of another colony encounters the pheromone trail. The ant will not follow or even consider the pheromone trail since any pheromone encountered from other colonies repulse the ant. Thus pheromones only provide positive feedback if the ant is from the same colony, otherwise the pheromone gives negative feedback, in a way warning the ant to stay away. This repulsion strategy promotes exploration among the multiple colonies  \cite{ACOLargeProblem}.
+In the iterations following the initial one, the ants will at each node decide based on a probability function whether it should follow the pheromone trail laid down in previous iterations or choose a new path to another node. Thus as the ACO iterates through more iterations the stronger particular path pheromone trail will become, hence signalling the path out as the best found \cite{CompuIntelligenceIntro}.
+
+The pheromone trail was initially developed with only one colony in mind \cite{CompuIntelligenceIntro}. In the research done by Tiwari et al. pheromones in multiple colonies are considered. The basic principle of how pheromones are used by the ants stays the same, but the meaning of the pheromone changes if an ant of another colony encounters the pheromone trail. 
+
+The ant will not follow or even consider the pheromone trail since any pheromone encountered from other colonies repulse the ant. Thus pheromones only provide positive feedback if the ant is from the same colony, otherwise the pheromone gives negative feedback, in a way warning the ant to stay away. This repulsion strategy promotes exploration among the multiple colonies  \cite{ACOLargeProblem}.
 
 In this section we gave an in depth discussion on what pheromones are as well as how they are applied in the most basic of cases. In the next sub section we will discuss the different transition rules that each algorithm in the class of ACO algorithms use.
 \subsubsection{State transition rules}
- As discussed in the previous sub section the ants select which path next to follow based on a probability. This probability is also known as the \emph{transition probability}. In this sub section we will provide some of transition probabilities in use. Pheromone trails is the core concept upon which the Ant System is based and was the first algorithm developed based on ants that used the pheromones concept\cite{CompuIntelligenceIntro}. 
+ As discussed in the previous sub section the ants select which path next to follow based on a probability. This probability is also known as the \emph{transition probability}. In this sub section a discussion will be provided on some of transition probabilities in use. Pheromone trails is the core concept upon which the Ant System is based and was the first algorithm developed based on ants that used the pheromones concept\cite{CompuIntelligenceIntro}. 
 \begin{equation}
 \label{eq:ASprobability}
 p^k_{ij}(t) =
@@ -149,7 +194,7 @@ p^k_{ij}(t) =
 	0, &\text{if $j \notin N^k_i(t)$}\\
 \end{cases}
 \end{equation}
-The first transition probability is formulated in equation (\ref{eq:ASprobability}) and is used by individual ants of the AS algorithm \cite{CompuIntelligenceIntro,AntSurvey}. An ant $k$ uses this equation to decide with what probability it will move from a node $i$ to a node $j$ \cite{CompuIntelligenceIntro}. $\tau_{ij}$ is the amount pheromone that exists between the path linking node $i$ and $j$ \cite{CompuIntelligenceIntro,AntsAndStigmergy}. Heuristic information is incorporated into the equation through the symbol $\eta_{ij}$ which is the desirability of the path from node $i$ to node $j$ as evaluated by an heuristic function \cite{CompuIntelligenceIntro,AntsAndStigmergy}. 
+The first transition probability is formulated in equation (\ref{eq:ASprobability}) and is used by individual ants of the AS algorithm \cite{CompuIntelligenceIntro,AntSurvey}. An ant $k$ uses this equation to decide with what probability it will move from a node $i$ to a node $j$ \cite{CompuIntelligenceIntro}. $\tau_{ij}$ is the amount pheromone that exists on the link between node $i$ and $j$ \cite{CompuIntelligenceIntro,AntsAndStigmergy}. Heuristic information is incorporated into the equation through the symbol $\eta_{ij}$ which is the desirability of the path from node $i$ to node $j$ as evaluated by an heuristic function \cite{CompuIntelligenceIntro,AntsAndStigmergy}. 
 
 As can been observed from the figure \ref{fig:ACOAlgorithmFlowChart}, the algorithm individually moves each ant based on these defined transition probabilities.
 
@@ -157,9 +202,11 @@ Through the use of parameters $\alpha$ to represent pheromone intensity and $\be
 
 The set $j \in N^k_i(t)$ contains all the valid neighborhood moves ant $k$ is allowed to make when moving from node $i$ to node $j$. A tabu list is kept by each ant to trim the set of moves already performed previously, hence cycling is prevented.
 
-Various other algorithms have been developed that improve on the basic AS. Each algorithm uses a different transition probability equation that might be very specific to the domain or a slight variant of the above equation as with the Ant Colony System. This section is not intended to give an exhaustive survey of different transition rules that exist in the literate. Therefore, we only discuss the first transition rule developed since most other rules can simply be considered derivatives of the basic transition rule.
+Various other algorithms have been developed that improve on the basic AS. Each algorithm uses a different transition probability equation that might be very specific to the domain or a slight variant of the above equation as with the Ant Colony System.
+
+This section is not intended to give an exhaustive survey of different transition rules that exist in the literate. Therefore, only the first transition rule that was developed is discussed, since most of the other rules can simply be considered derivatives of the first transition rule.
 \subsubsection{Pheromone update}
-As discussed in the pheromone section, pheromones start to evaporate \footnote{Pheromone evaporation is discussed on page \pageref{sec:pheromoneevapuation}}over time hence, the path marked by the pheromone trail becomes less attractive to the ants. Therefore, a path that represents a good solution needs its pheromone trail to be continuously updated. In this sub section we will discuss the rules that govern when and by how much pheromones are updated.
+As discussed in the pheromone section, pheromones start to evaporate \footnote{Pheromone evaporation is discussed on in section~\ref{sec:pheromoneevapuation} page \pageref{sec:pheromoneevapuation}}over time hence, the path marked by the pheromone trail becomes less attractive to the ants. Therefore, a path that represents a good solution needs its pheromone trail to be continuously updated. In this sub section a discussion will be provided on the rules that govern when and by how much pheromones are updated.
 
  Most of the variants that have been developed differ in the sense of what pheromone update rules they employ. In the literature pheromone update rules are classified into two groups \cite{CompuIntelligenceIntro}. The one group is called the global update rule. The other group is called the iteration based or local update rule of which an example has been given on page \pageref{def:localpheromoneupdate} \cite{CompuIntelligenceIntro}. 
 
@@ -204,7 +251,7 @@ The constant $p$ defines the rate at which pheromone evaporates. If $p=1$ the ph
 The above equation (\ref{eq:pheromoneevapuration}) was first introduced in the Ant System \cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}. Most subsequent algorithms that are form of the ACO class of algorithms also use the concept of pheromone evaporation, but they either use the standard equation or develop their own variant \cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}.
 
 % Content in "A new solution algorithm for improving performance of ant colony optimization"
-A more aggressive form of Pheromone evaporation  is add to the Ant system discussed in the research done by \cite{AntQAP}. The more aggressive form works beside the already present pheromone evaporation, instead this form seeks to add an additional search phase called \emph{diversification}. 
+A more aggressive form of Pheromone evaporation  is added to the Ant system discussed in the research done by \cite{AntQAP}. The more aggressive form works beside the already present pheromone evaporation, instead this form seeks to add an additional search phase called \emph{diversification}. 
 
 In the ant system developed by the authors a mechanism is added that monitors a certain number of solutions that have been recently produced. If the solution hasn't changed a certain number of iterations the mechanism removes all pheromone trails currently in the system. 
 
@@ -214,6 +261,20 @@ As can be observed from the figure \ref{fig:ACOAlgorithmFlowChart} the last phas
 \subsection{ACO on the FAP}
 As discussed in the overview section \ref{sec:ACOverview} the ACO has been applied to a wide number of problems and has produced good results. Thus, the ACO has also been applied to the FAP instance of problems.
 
+When using the ACO algorithm on the FAP the ants need to construct a path which represents a frequency plan and has low interference. With the ACO, a node is a cell that has a unique set of channels assigned to it. Thus the same cell may exist, but will have a different set of channels assigned to it but will represent an entire different node to the ACO.
+
+As an ant moves in the frequency planning domain, the ant is actually moving between two cells that are said to interfere. The interference between caused by the two cells as a consequence of the channels that have been assigned to them measured by the ant the particular ant. The measured interference information is incorporated into the pheromone, which the ant will deposit on the link between the two cells.
+
+A optimal frequency plan would therefore be a path through all the interfering cells marked with a high dosage of pheromone. As discussed in the previous sections, the pheromone indicates the desirability of a particular path. In the FAP, a desirable path would be one where interference is low. Thus, a path with high dosage of pheromone would therefore be the frequency plan with the lowest interference found by the algorithm.
+
+When analyzing the basic ACO algorithm~\ref{alg:ACO} one can identify the following possible disadvantages if the algorithm would be applied to the FAP:
+\paragraph{Memory Usage}
+The algorithm requires a fair amount of memory. The memory is used to keep track of each permutation of a particular cell and its allocated frequencies until the pheromone that links to the cell has decayed enough to be discarded. As an ant moves from one cell to another cell, it might not select the previous cell (due to probability) to move to, but rather generate an entire new cell to move towards. This newly generated cell would then be linked to the previous cell, and therefore the algorithm needs to keep track of the pheromone on that link until it has completely been decayed away. The algorithm needs to keep track of these pheromones on the links even if the new link to the generated cell is not even close to optimal and has very high interference.
+\paragraph{Building a solution}
+As discussed in section~\ref{ACOverview} the ACO \emph{builds} an optimal solution. Therefore, early decisions made by the ants still influence the plan later for better or for worse. A good decision might seem to be good early on, but later the algorithm might be better of with a slighty worse decision. In the FAP, a cell can have multiple interfering cells, but a particular ant only knows about the one link between two cells and not about the other interfering cells. Thus an ant, will find the optimal path on the first interfering link between two cells, which is to say, optimize the channels allocated to these cells so that interference is low. The first interfering link is now optimized, and subsequent ants will now reinforce this channel allocation since the interference is low. When the ants later on reach the other cells that also interfere with the first cell that has been optimized, the ants will have difficulty changing the assignments that has already been made, since the pheromone representing that assignment is too strong to disregard.
+
+The above disadvanteges have only been identified by critically evaluating the algorithm as a possible point of interest to produce a optimal solution for the FAP for this dissertation. Even with these disadvanteges the ACO has achieved success in producing high quality optimal solutions for the FAP.
+
 In research presented by Luna et. al\cite{ACOvsEA} an ACO algorithm is presented and applied to a custom cellular network instance. The custom cellular network instance the authors use has 711 sectors with 2,612 tranceivers which need to be assigned frequencies. For their particular network, only 18 channels are available for assignment. The channels start at 134 and end at 151\cite{ACOvsEA}.
 
 The authors presented two versions of the algorithm. The one version uses no heuristic information (hence forth referred to as ACO*) and the other version uses heuristic information to update the pheromone laid done by the artificial ants\cite{ACOvsEA}.
@@ -222,7 +283,8 @@ With regard to the heuristic updating the pheromone trails, the authors opted to
 
 The results the authors obtained will now be presented for both versions of the algorithm that was developed\cite{ACOvsEA}.
 
-\begin{center}
+\begin{table}
+\centering
 	\begin{tabular}{| c | c | c |}
 	\hline
 	Time limit & ACO* & ACO \\ \hline
@@ -230,7 +292,8 @@ The results the authors obtained will now be presented for both versions of the 
 	600s & 103752.12 & 89703.44 \\ \hline
 	1800s & 103781.86 & 88345.94 \\ \hline
 	\end{tabular}
-\end{center}
+\caption{ACO and ACO* on custom GSM FAP benchmark}
+\end{table}
 
 The authors note, that if one observed the results they obtained, one can clearly see that the ACO version that incorporates heuristic information to reinforce pheromone trails outperforms the version which doesn't do it\cite{ACOvsEA}. The above values represent the amount of interference which will result if the plan is used in the network\cite{ACOvsEA}.
 \section{Artificial Bee Colony Algorithm}
@@ -247,7 +310,7 @@ The authors note, that if one observed the results they obtained, one can clearl
 			\FOR{each employed bee $eb_i = 0$ to max bees $b_n$}
 				\STATE$v_i \leftarrow \text{Generate new solution with equation~\ref{eq:beeGenerate}}$
 				\STATE$\text{Evaluate with fitness function $f(v_i)$}$
-				\STATE$\text{Apply greedy selection between $v_i$ and bee $eb_i$ current solution}$
+				\STATE Apply greedy selection between $v_i$ and the current solution $s_i$ of bee $eb_i$
 			\ENDFOR
 			\STATE$\text{Calculate probability $p_i$ for solutions $s_i$ in $s_n$ using equation~\ref{eq:beeProbability}}$
 			\FOR{each onlooker bee $ob_i \leftarrow 0$ to max bees $b_n$}
@@ -273,50 +336,73 @@ The authors note, that if one observed the results they obtained, one can clearl
 \subsection{Overview}
 The Artificial Bee Colony (ABC) algorithm is the youngest algorithm discussed in this chapter. It was first proposed by Karaboga in 2005 and seeked to mimic the foraging behaviour exhibited by bees \cite{ABCCompareStudy,ABCLeafConstrained,ABCNumericalOptimization}. Like ants, bees need to gather food to support the colony. To understand how the ABC algorithm tries to mimic the foraging behaviour of bees, we first need to explain how real bees forage \cite{ABCCompareStudy}. 
 
-In a bee colony there are a numerous number of bees, each with a specific role that performs certain actions for the colony. There are bees that protect the queen, bees that maintain the colony, bees that scout for resources and finally bees that gather food i.e the worker bees. The most important bees for foraging are those that scout and gather food \cite{ABCCompareStudy}. 
+In a bee colony there are a numerous number of bees, each with a specific role that performs certain actions for the colony. There are bees that protect the queen, maintain the colony, scout for resources and finally bees that gather food i.e the worker bees. The most important bees for foraging are those that scout and gather food\cite{ABCCompareStudy}. 
 
-The scout bees are sent out and as their role implies, they are responsible for exploring the surroundings of the hive to find suitable food sources \cite{ABCCompareStudy}. If a food source has been found by scout bee, then it needs to return to the colony to share the information with the worker bees \cite{ABCCompareStudy}. When the bee enters the colony it needs to communicate to the other bees by using some form of stigmergy (see page \pageref{def:stigmergy} \cite{ABCCompareStudy}.
+The scout bees are sent out and as their role implies, they are responsible for exploring the surroundings of the hive to find suitable food sources\cite{ABCCompareStudy}. If a food source has been found by scout bee, then it needs to return to the colony to share the information with the worker bees\cite{ABCCompareStudy}. When the bee enters the colony it needs to communicate to the other bees by using some form of stigmergy (see section~\ref{sec:stigmergy} page~\pageref{def:stigmergy})\cite{ABCCompareStudy}.
 
-The scout bee accomplishes this communication by performing a dance known as the ``waggle dance'' in the colony for all the bees to see \cite{ABCCompareStudy}. This isn't a dance like in the traditional sense, since through certain movements the bee is able to communicate a variety of characteristics about the food source that include \cite{ABCCompareStudy}:
+The scout bee accomplishes this communication by performing a dance known as the \emph{waggle dance} in the colony for all the bees to see\cite{ABCCompareStudy}. This isn't a dance like in the traditional sense, since through certain movements the bee is able to communicate a variety of characteristics about the food source that include\cite{ABCCompareStudy}:
 \begin{itemize}
 \item How far the food source is from the colony.
 \item Quality of the food source.
 \item Path towards the food source.
 \end{itemize}
 
-Therefore, it can be concluded that with regard to foraging bees use \emph{Sematectonic} stigmergy (see page \pageref{def:sematectonic}) as the dance is a physical form of communication.
+Therefore, it can be concluded that with regard to foraging bees use \emph{Sematectonic} stigmergy (dicussed in section~\ref{sec:stigmergy} page \pageref{def:sematectonic}) as the dance is a physical form of communication.
 
-The dance is observed by ``onlooker'' worker bee \cite{ABCCompareStudy,ABCImageEnhancement}. These onlooker bees are currently ``unemployed'' in the colony \cite{ABCCompareStudy,ABCImageEnhancement}. After the information of the scout be has been transferred the onlooker bees, becomes an ``employed'' bee since it is moving to the food source to start gather food \cite{ABCCompareStudy,ABCImageEnhancement}. Thus it is the job of the worker bees to \emph{exploit} the information provided by the \emph{exploration} done by the scout bees \cite{ABCCompareStudy,ABCNumericalOptimization}. 
+The dance is observed by \emph{onlooker} worker bee \cite{ABCCompareStudy,ABCImageEnhancement}. These onlooker bees are initially \emph{unemployed} in the colony \cite{ABCCompareStudy,ABCImageEnhancement}. After the information of the scout be has been transferred the onlooker bees become \emph{employed} bees since it is moving to the food source to start gather food \cite{ABCCompareStudy,ABCImageEnhancement}. Thus it is the job of the worker bees to \emph{exploit} the information provided by the \emph{exploration} done by the scout bees \cite{ABCCompareStudy,ABCNumericalOptimization}. 
 
 Worker bees gather food from the designated food source, until the food source reaches a certain quantity with regard to nectar content \cite{ABCCompareStudy,ABCNumericalOptimization}. Each time the bee returns to the colony it evaluates the current food source versus other food sources discovered \cite{ABCCompareStudy,ABCNumericalOptimization}. Hence, if there is better food source found, the bee abandons the previous and starts gathering food from the new source \cite{ABCCompareStudy,ABCNumericalOptimization}. On the other hand, if the food source has been exhausted meaning there is no more nectar content to gather, the bee returns to the colony and becomes ``unemployed'' again \cite{ABCCompareStudy,ABCNumericalOptimization}.
 
-In the ABC algorithm, the food sources are the solutions \cite{ABCCompareStudy,ABCNumericalOptimization}. Each food source has an employed bee associated with it. Onlooker bees either wait for new food sources to be communicated to them or become employed bees by moving to another an attractive food source \cite{ABCCompareStudy,ABCNumericalOptimization}. 
+In the ABC algorithm, possible solutions are considered to be food sources\cite{ABCCompareStudy,ABCNumericalOptimization}. Each food source has an employed bee associated with it. Onlooker bees either wait for new food sources to be communicated to them or become employed bees by moving to an other more attractive food source \cite{ABCCompareStudy,ABCNumericalOptimization}. 
 
-As with real honey bees, a ``waggle dance'' is performed to all the onlooker bees by employed bees which provides information on the nectar amount (fitness value) that they represent \cite{ABCReconfigDistro,ABCCompareStudy,ABCImageEnhancement}. The onlooker bees choose food sources depending on the nectar amount \cite{ABCReconfigDistro,ABCCompareStudy,ABCImageEnhancement}. Therefore as the nectar amount of a food source increases the probability that the more onlooker bees will choose the source increases \cite{ABCReconfigDistro,ABCCompareStudy,ABCImageEnhancement}. The probability will be discussed in the next sub section.
+A food source might be more attractive to a bee because it defined nectar content is more than the current food source the bee is operating on\cite{ABCCompareStudy,ABCNumericalOptimization}. The nectar content of a food source can be considered to be the fitness which is determined using the finess function of the specific problem domain\cite{ABCCompareStudy,ABCNumericalOptimization}.
+
+As with real honey bees, a \emph{waggle dance} is performed to all the onlooker bees by employed bees which provides information on the nectar amount (fitness value) that they represent \cite{ABCReconfigDistro,ABCCompareStudy,ABCImageEnhancement}. The onlooker bees choose food sources depending on the nectar amount \cite{ABCReconfigDistro,ABCCompareStudy,ABCImageEnhancement}. Therefore as the nectar amount of a food source increases the probability that the more onlooker bees will choose the source increases \cite{ABCReconfigDistro,ABCCompareStudy,ABCImageEnhancement}. How and what effects the probability will be discussed in the next sub section.
 
 Bees can transition to different roles depending on their situation \cite{ABCCompareStudy,ABCNumericalOptimization}. An onlooker bee becomes employed when assigned to a food sources and a employed bee can become a scout if his initial food source becomes exhausted \cite{ABCImageEnhancement,ABCCompareStudy,ABCReconfigDistro}. Note, that not all employed bees of a food source become scouts, only the first employed bee of a food source transitions to a scout \cite{ABCImageEnhancement,ABCCompareStudy,ABCReconfigDistro}. Scout bees are sent to randomly generated food sources \cite{ABCImageEnhancement,ABCCompareStudy,ABCReconfigDistro}. 
 
-The more onlooker bees a food source attracts, the more the neighbourhood will get explored since the onlooker bees move to the food source and choose an immediate neighbouring food source to be employed upon \cite{ABCCompareStudy,ABCNumericalOptimization}. Thus, this can be considered exploitation and the algorithm is therefore performing a local search. Finally, the number of onlooker bees a food source has also indicates its desirability, hence, a very good solution will have the majority of onlooker bees choosing it and search for nearby better food sources \cite{ABCCompareStudy,ABCReconfigDistro,ABCNumericalOptimization}.
+The more onlooker bees a food source attracts, the more the neighbourhood will get explored since the onlooker bees move to the food source and choose an immediate neighbouring food source to be employed upon \cite{ABCCompareStudy,ABCNumericalOptimization}. Thus, this can be considered exploitation and the algorithm is therefore performing a local search\cite{ABCCompareStudy,ABCReconfigDistro,ABCNumericalOptimization}. Finally, the number of onlooker bees a food source has also indicates its desirability, hence, a very good solution will have the majority of onlooker bees choosing it and search for nearby better food sources \cite{ABCCompareStudy,ABCReconfigDistro,ABCNumericalOptimization}. More bees are lured towards a particular food source due to the high nectar amount that has been communicated to them by other employeed bees\cite{ABCCompareStudy,ABCReconfigDistro,ABCNumericalOptimization}.
 
-When a food source is abandoned, the previous bee that occupied the food source transitions to a scout bee \cite{ABCCompareStudy,ABCNumericalOptimization}. The scout bee is responsible for replacing the abandoned food source by find a new one, therefore, a new one is generated and communicated back to the colony \cite{ABCCompareStudy,ABCImageEnhancement,ABCNumericalOptimization}. The generation of food sources will be discussed in the next sub section.
+When a food source is abandoned, the previous bee that occupied the food source transitions to a scout bee \cite{ABCCompareStudy,ABCNumericalOptimization}. The scout bee is responsible for replacing the abandoned food source by finding a new one, therefore, a new food source is generated and communicated back to the colony\cite{ABCCompareStudy,ABCImageEnhancement,ABCNumericalOptimization}. The generation of food sources will be discussed in the next sub section.
+
+Most of the concepts that are usd in the ABC algorithm have now been explained. The general search process of the algorithm will now be discussed using algorithm~\ref{alg:ABC} as reference point.
+
+The algorithm starts of by generating a set number of possible solutions. The number of solutions is equal to the number of employed bees. Each starting solution is evaluated using a fitness function. These set of operations can be observed from line 1 -- 3.
+
+Each bee is initially assigned to one of the initial generated solutions (food sources). Hence, the bees start of as employed bees and each bee has in its memory a particular possible solution with an associated nectar amount. The algorithm can now be considered to be initialized, therefore the algorithm enters the next phase which is where the actual optimization and search procedure occurs. This phase stretches from line 5 -- 22.
+
+From line 6 -- 10, each employed bee modifies its particular solution based on local information which is also refered to as visual information in the literature. The modified solution is then tested to determine its nectar amount, which is to say, the fitness of the generated solution is calculated. The employed bee then compares the newly generated nectar amount with the nectar amount of the solution in the bees memory. If the newly generated solution has a better nectar amount, the bee replaces the the current solution in its memory with the new generated solution.
+
+After all the employed bees have finished determining whether to keep the newly generated solution or keep the one in memory, the employed bees then need to communicate to the rest of the bee hive the nectar amount of the food sources that they occupy. This phase is where the waggle dance occurs and can be observed in algorithm~\ref{alg:ACO} from line 12 -- 17.
+
+Each onlooker bee then selects which food source it will move towards based on a probability. The probability takes into account the nectar amount which was communicated through the waggle dance by a particular employed bee. The probability is calculted using equaition~\ref{eq:beeProbability} which will be discussed in section~\ref{sec:foodsources}.
+
+Once a onlooker bee has selected a food source based on the calculated probability, the bee then starts search the immediate neighborhood of the selected food source, for other food sources. The neighboring food sources are generated using equation~\ref{eq:beeGenerate} which will be discussed in section~\ref{sec:employonlookerbees}. This procedure of generating neighboring food sources by an onlooker bee can be observed on line 14 in algorithm~\ref{alg:ABC}.
+
+The onlooker bee then applies the same procudure as an employed bee with regard to determining if the newly generated food source should be remembered or discarded. The bee does this by evaluating each generated neighboring food source to determine its nectar amount which is then compared to the nectar amount of the food source in the bees memory.
+
+In the last phase of the algorithm before the next iteration starts. The algorithm determines which food sources have been abandoned by the bees. A food source in the algorithm can be abandoned if for a certain number of iterations the food source has not improved, meaning its nectar amount has not increased. When a food source is abandoned the employed bee that occupied the particular food source transitions to a scout bee.
+
+A scout bee aims to replace the abandoned food source with a new food source. In algorithm~\ref{alg:ABC} this occurs on line 18 -- 22. The scout bee uses equation~\ref{eq:scoutGenerate} to generate a new food source. The scout bee then transitions to an employed bee and occupies the newly generated solution. The newly generated food source will now also be evaluated to determine its nectar amount like the rest of the employed bees do at the start of the next iteration.
 
 Karaboga was not the first to base an algorithm on the above foraging behaviour. In the literature other bee foraging inspired algorithms have been developed such as the BeeHive Algorithm, Bee Colony Optimisation (BCO) and Bee Swarm Optimization (BSO) \cite{BCO,HybridABCClustering,ABCNumericalOptimization}. 
 
 The BeeHive algorithm is based on the dance communication used inside the colony of bees. In BCO solutions are randomly generated and assigned to bees\cite{HybridABCClustering,ABCNumericalOptimization}. The solutions are then progressively modified using certain strategies. Finally BSO solutions are iteratively constructed by forager (worker) bees and the best solution is communicated to the rest of the colony by performing a dance\cite{HybridABCClustering,ABCNumericalOptimization}. All of the above mentioned algorithms were developed to be primarily used on combinatorial problems \cite{ABCCompareStudy}.
 
-Another bee algorithm is the Virtual Bee Algorithm (VBA) which, like the previous algorithms and is also based on the foraging behaviour of bees, but it differs in the sense that it isn't designed for combinatorial problems \cite{ABCNumericalOptimization}. Instead, VBA is designed for numerical function optimization \cite{ABCNumericalOptimization}. In VBA bees would move around in the search space communicating to each other any target nectar food sources that were found \cite{ABCNumericalOptimization}.
+Another bee algorithm is the Virtual Bee Algorithm (VBA) which, like the previous algorithms, is also based on the foraging behaviour of bees, but it differs in the sense that it isn't designed for combinatorial problems \cite{ABCNumericalOptimization}. Instead, VBA is designed for numerical function optimization \cite{ABCNumericalOptimization}. In VBA bees would move around in the search space communicating to each other any target nectar food sources that were found \cite{ABCNumericalOptimization}.
 
 Karaboga developed the ABC algorithm based on the previous research done on bee colony optimization and the above algorithms. The ABC algorithm is designed to be a multi-variable optimisation algorithm and has to date been applied to the Job Scheduling Problem, Clustering \cite{HybridABCClustering}, Neural Network training and Reconfiguration of Distribution Networks \cite{ABCReconfigDistro}. Due to the nature of the algorithm being similar to that of the ACO, we can expect the ABC algorithm to be applied to a whole host of problems present in the literature.
 
 In this sub section we gave a brief overview of the Artificial Bee Colony Algorithm. We discussed the real bee behaviour the algorithm tries to recreate and  gave other algorithms that are also based on the same process. Finally, we defined the primary design goal of the algorithm and presented some of the problem on which the algorithm has been applied.
 
 In the next sub section, we will discuss some of the core characteristics of the algorithm.
-\subsection{BEE algorithm characteristics}
+\subsection{ABC algorithm characteristics}
 In this subsection we will discuss the characteristics of the ABC algorithm that define the algorithm and make it unique. We will start of by first explaining how food sources are handled in the algorithm. We will then discuss how information is communicated to the colony. Finally, we will finish off this sub section with a more precise discussion on how foraging in modelled and used in the algorithm.
 \subsubsection{Food Sources}
+\label{sec:foodsources}
 As discussed in the overview, food sources represent solutions to the problem the ABC algorithm is being applied to. When the algorithm starts, there are no defined food sources for the bees to evaluate and report on. Therefore, initially a finite amount of food sources are randomly generated. Since each food source needs an employed bee to evaluate the nectar amount of the source, the parameter that defines the amount of food sources also defines the amount of employed bees.
 
-Employed bees evaluate these food sources by determining their nectar amount. The nectar amount is directly related to the fitness value calculated using a domain specific cost function. After the amount if determined the employed bee advertises the food source to the colony by performing the waggle dance. 
+Employed bees evaluate these food sources by determining their nectar amount. The nectar amount is directly related to the fitness value calculated using a domain specific cost function. After the amount if determined the employed bee advertises the food source to the colony by performing the waggle dance. In algorithm~\ref{alg:ABC} line 4--9 is where the nectar amount of a particular solution is calculated.
 
 Onlooker bees bear witness to a number of dances from a variety of employed bees. The onlooker bees therefore need to select a food source that is the most attractive while maintaining some diversity in the pool of solutions. Thus, an onlooker bee selects a food source based on a probability function which is formulated in equation (\ref{eq:beeProbability})\cite{ABCCompareStudy}:
 \begin{equation}
@@ -326,7 +412,10 @@ p_i = \frac{{fit}_i}{\sum^{SN}_{n=1}{fit}_n}
 
 The parameter $p_i$ is the $i$th food source under consideration by the onlooker bee. As discussed above, the ${fit}_i$ parameter represents the value of the cost function and is directly related to the nectar amount of food source $i$. The parameter SN is the maximum amount of food source and hence the maximum employed and/or onlooker bees \cite{ABCCompareStudy}.
 
+In algorithm~\ref{alg:ACO} the waggle dance can be seen being applied line 11 where the probability of all the employed bees solutions are calculated using equation~\ref{eq:beeProbability}. From line 12--16 the onlooker bees evaluate the solutions of the employed bees based on the probability $p_i$ that was calculated. $P_i$ can be seen as the rating of the waggle dance that was performed by the employeed bee.
+
 \subsubsection{Employed and Onlooker Bees}
+\label{sec:employonlookerbees}
 As outlined in the overview, when recruited onlooker bees reach the advertised food source that is stored in memory, they do not occupy the same food source. Instead, the bees explore the immediate neighbourhood of the food source that communicated to them. The onlooker bees seek to find a food source that improves on the previous one. Equation (\ref{eq:beeGenerate}) is used by the bees to generate new food sources in the neighbourhood of a food source $x_i$.
 \begin{equation}
 \label{eq:beeGenerate}
@@ -361,17 +450,25 @@ In research done by G\'{o}mez-Iglesias et. al \cite{ABCFusionGrid} an extension 
 \item {Cub bees} explore the solution space relative to a good solution found by a Rover through randomly changing configuration parameters. 
 \end{itemize}
 By using two different scout bees a good balance is achieved when searching the solution space in the beginning where diversity if preferred and late in the algorithm where intensification is preferred \cite{ABCFusionGrid}.
-\subsection{BEE algorithm on the FAP}
-The BEE algorithm and all its variants are relatively new. The algorithm has for now only been applied to a select few problems such as the Traveling Salesman Problem.
+\subsection{ABC algorithm on the FAP}
+The ABC algorithm and all its variants are relatively new. The algorithm has for now only been applied to a select few problems such as the Traveling Salesman Problem.
 
-As of yet, no research has been done to apply the BEE algorithm to the FAP. Therefore a possible avenue of future work would be to apply one of the BEE algorithm variants to the FAP.
+As of yet, no research has been done to apply the ABC algorithm to the FAP. After critically evaluating the basic ABC algorithm presented listed in algorithm~\ref{alg:ABC} page~\pageref{alg:ABC} the follinwg obstacles can be indentified if one were to apply the algorithm on the FAP.
+\paragraph{Food source representation}
+Each food source can either represent a frequency plan or each food source can be a particular cell and a collective of food sources represent a frequency plan. If each food source is a frequency plan the algorithm will require a fair amount of memory since as onlooker bees select it, they will start search for neighboring solutions. These neighboring solutions are \emph{also} frequency plan. Where as with each food source being a cell would require less memory. The problem with the food source as a cell approach is that the bees would then single out one cell as the optimum since they do not know all food sources collectively represent a plan and each cell is actually unique.
+\paragraph{Scout bee generation}
+When a food source is abandoned a scout bee needs to generate a new food source to take its place. In particular with the FAP, the new generated solution cannot be completely random. The scout bee needs to incorporate knowledge already gained by the colony operating on different food sources. Otherwise, a completely random solution might not be even near lucrative enough for the rest of the bee colony to consider as it contains now knowledge gained by the algorithm.
+\paragraph{Knowledge sharing}
+As a food source gets more popular due to its high nectar amount indicating a good fitness, more onlooker bees will select it to search in its neighborhood for slighty better solutions. Therefore, the bees are disregarding previous gained knowledge gained while searching for neighboring sources on \emph{other} food sources. If a food source represents a complete frequency plan, a previous food source a bee operated on might have had one or more cells that were assigned their optimal frequencies, but due to the larger majority of the cells not being optimized, these \emph{good} cells are overshadowed. Thus due to the \emph{bad} cells overshadowing the good cells, the food source gets a low nectar amount indicating a bad fitness and therefore the bees might abandon the food source and those optimal cells are lost.
 
-In the next section a discussion will be presented on the Particle Swarm Optimization algorithm.
+The above obstacles present real relevant challenges which would require new techniques to be developed. As the algorithm has not been applied to a wide variety of problems and together with the above obstacles, it is difficult to gauge if the ABC is well suited to be applied. In future, when the algorithm has been applied to a more wide set of problems and has mutured in the variety of approaches to problems one can revisit the algorithm and attempt on the FAP.
+
+In this section a discussion was presented on the various obstacles one would encounter when applying the ABC class of algorithms on the FAP. This section concludes the discussion on the ABC algorithm. In the next section a discussion will be presented on the Particle Swarm Optimization algorithm.
 \section{Particle Swarm Optimization (PSO)}
 \begin{algorithm}
 \caption{Basic Global Particle Swarm Optimization Algorithm}
 \label{alg:PSO}
-	\begin{algorithmic}
+	\begin{algorithmic}[1]
 		\STATE Initialize $s_n$ swarm
 		\WHILE{Stopping condition not met}
 			\FOR{each particle $p_i \leftarrow 0$ in $s_n$}
@@ -530,7 +627,28 @@ This method works by first generated a list of calls, called a \emph{call list} 
 
 The method then iterates over the calls in the list and assigns the lowest possible frequencies to the calls without violating interference constraints\cite{EgyptFAPPSO}. The authors note that the specific frequency that is assigned to a particular call depends heavily on the order the calls are in the list\cite{EgyptFAPPSO}.
 
+As can be observed from the above discussion, the PSO has been successfully applied to the FAP. The particular variant of the FAP was the MS-FAP and also the authors PSO is tasked with minimizing constraint violations.
 
+With the success of the PSO on the MS-FAP, for this dissertation the PSO algorithm was selected as the primary means by which to address the FAP. In addition to the successful application of the PSO to the FAP other factors also influenced the final decision to utilize the PSO instead of another algorithm.
+
+The PSO algorithm is short and elegant. As discussed in the overview of the PSO, the algorithm utilizes the "flying" approach to search the problem space. With this approach one point progressively move towards another. Using this appraoch, the algorithm able to adaquately explore the problem space much more thoroughly.
+
+The algorithm also has good ratainment of knowledge. Not only does each particle keep personal history (with pbest) but the swarm as a whole keeps a history of the best particle with (with gbest). Thus, with regard to FAP, it is possible that even though a particle might be in a overall bad position, it might have some small bit of good knowledge being overshadowed by bad knowledge. Through the history retainment the good information is more likely to be shared or kept slightly longer in the algorithms knowledge.
+
+For this dissertation the PSO will applied to the FS-FAP and thus the appraoch as used in by the authors in the above literature cannot be used. FS-FAP is concerned with interference generated and there are some constraints which cannot be broken, where the MS-FAP the performance measure is explicityly the amount of constraints violated.
+
+The PSO algorithm might be short and elegant, but applying it the FS-FAP requires various new techniques in response to the following questions
+\begin{itemize}
+\item How to best represent a particle as a frequency plan ?
+\item How to ``fly'' one frequency plan to another ?
+\item How to avoid particles using forbidden frequencies when they fly towards a particlar plan ?
+\end{itemize}
+
+The above questions are only the preliminary questions and are in fact problem that must be addressed for a successful application of the PSO to the FAP. In chapter~\ref{chpt:psoapplicationFAP} a disucussion will be presented on how these problems were solved as well as how other problems were solved that were not anticipated.
+
+In this section a discussion was presented which discussed literature that utilized the PSO on the FAP. Futhermore, it was formally stated that the PSO would be the primary algorithm in this dissertation to be applied to the FAP.
+
+This section concludes the discussion on the PSO as well as the Swarm Intelligence chapter. In the following section a summary is presented on this chapter.
 \section{Summary}
 In this chapter a discussion was given on three swarm intelligence algorithms. The first section presented a discussion on the Ant Colony Optimization Algorithm.
 
