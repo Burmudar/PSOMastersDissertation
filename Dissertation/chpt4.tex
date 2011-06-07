@@ -15,7 +15,7 @@ Some of the most algorithms that are classified as being part of the collective 
 \item Simulated Annealing
 \item Genetic Algorithm
 \end{itemize}
-The above mentioned algorithms are not the only algorithms to form part of this sub-domain, but they are the algorithms that have received the most attention in the literature and generally produce good results \cite{SweepMeta}.
+The above mentioned algorithms are not the only algorithms to form part of this sub-domain, but they are the algorithms that have received the most attention in the literature and generally produce good results\cite{SweepMeta}.
 
 The main focus for this chapter will be to discuss each of the above listed algorithms in detail. Before each of the algorithms are discussed, a section will be presented that gives a brief overview on the various characteristics that meta-heuristic algorithms exhibit. 
 
@@ -85,7 +85,6 @@ In the next section of this chapter a discussion will be presented on the Tabu S
 			\IF{Move to $z_i$ is Tabu}
 				\IF{$z_i$ meets Aspiration Criterion}
 					\STATE $x_i \leftarrow z_i$
-					\STATE continue to next iteration
 				\ENDIF
 			\ELSE
 				\STATE Add $x_i$ to Tabu List
@@ -107,8 +106,8 @@ In the next section of this chapter a discussion will be presented on the Tabu S
 	\label{fig:TSAlgorithmFlowChart}
 	\end{center}
 \end{figure}
-\subsection{Overview}
-\label{sec:TSOverview}
+\subsection{Introduction}
+\label{sec:TSIntroduction}
 Tabu Search (TS) was first proposed by Glover as a new searching technique to help algorithms avoid getting  stuck in local optima present in combinatorial and optimization problems \cite{TabuRCAProblem}. Since Glover introduced the algorithm in the 1980's, Tabu Search has been applied to a wide range of problems such as the Vehicle Routing Problem\cite{TabuVechicleRoutingWithTimeWindows}, Frequency assignment problem\cite{TabuMontemanniSmith}, Capacitated-Lot Sizing Problem\cite{TabuCarryOver}, Nurse Scheduling\cite{TabuNurse} and the Resource Constrained Assignment Problem\cite{TabuRCAProblem}. 
 
 Even though the problems mentioned differ by a large margin, the algorithm has been relatively successful in most of optimization problems it has been applied to. If we observe the results presented in the following research \cite{TabuCarryOver,TabuSingleMachineScheduling,TabuVechicleRoutingWithTimeWindows,TabuBiddingStrats,TabuCrewSchedulingProblem,ReactiveTabuVHR,TabuRCAProblem,TabuCSP,TabuMontemanniSmith,tabuglobalplanning3g} we can deduce that Tabu Search has on average obtained the best results compared to previous attempts with other algorithms. 
@@ -123,8 +122,40 @@ General search algorithms like Hill-climbing, Random-restart\footnote{Random-res
 
 In actual fact the solution that was found, is the best solution in the \emph{local} search space but not in the \emph{global} search space\cite{CompuIntelligenceIntro,AIModernApproach}. Therefore an important characteristic that algorithms being applied on optimisation problems need to posses is breaking out of local optima\cite{CompuIntelligenceIntro,AIModernApproach}.
 
-In the next section a discussion will be presented on what characteristics the tabu search algorithm posses which sets it apart from other optimisation algorithms.
+In this section the TS algorithm introduced. Various characteristics and concepts that brought about the formation of the TS algorithm as well as what makes it unique was mentioned. In attempt to better understand the algorithm in the next section a discussion will be presented on the flow of the TS algorithm.
+\subsection{Flow of the algorithm}
+In this section as discussion will be presented on the general flow of the TS algorithm using algorithm~\ref{alg:TS} as reference point.
+
+Before the algorithm can actually start searching it first needs to initialize various parameters. These parameters include but is not limited to, the Tabu List size, the Aspiration criterion and the starting solution. The initalization can be observed to occur from line 1 - 2.
+
+Once all the various parameters that is needed by the algorithm has been initialized the algorithm is ready to enter the actual search phase, which ranges from line 3 -- 21. 
+
+The search phase starts of by first generating possible solutions that neighbor the current solution $x_i$ as can be observed on line 4. Generating neighboring solutions is a critical process in the TS algorithm as it is the means the algorithm is able to move from one possible solution to the next in the search space. Neighborhood search will be discussed in detail in section~\ref{sec:TScharacteristics}.
+
+After all the solutions that neighbor the current possible solution have been generated, the algorithm needs to decide which of the possible neighbors is the most lucrative. The algorithm therefore determines the fitness of each neighbor $y_i$ by applying a fitness function $f(y_i)$. 
+
+Once all the neighbors have been evaluated, the algorithm selects the best neighbor who not only has the best fitness out of all the generated neighbors but also has a better fitness than the current solution held by the algorithm. The best neighbor selection can be seen to occur on line 6.
+
+The algorithm has now determined a possible neighbor $z_i$ to move towards and thus before moving on to the next iteration, first needs to perform a series of checks that will aid the algorithm in the search process.
+
+The first check that needs to be performed is whether the neighbor $z_i$ is in the Tabu List and occurs on line 7. A solution is only in the Tabu list if the algorithm has in previous iteration had the particular solution as its current solution. Tabu lists will be discussed in section~\ref{sec:TScharacteristics}.
+
+If the neighbor $z_i$ is in the Tabu List, then another check is performed where the aspiration criteria is calculted as can be seen to occur on line 8 -- 10. The aspiration criteria determines whether the algorithm can make neighbor $z_i$ its current solution once more even though it is tabu. 
+
+If the aspiration criteria has been met, the algorithm makes neighbor $z_i$ its current solution $x_i$. More will be discussed on the aspiration criteria in section~\ref{sec:TScharacteristics}.
+
+When a solution is not in the Tabu list it can possibly mean that it is the first time the algorithm has encountered the solution, or the solution has been previously encountered but has been removed from the Tabu list. A solution can be removed from the Tabu list, once it has been tabu for a certain amoutn of iterations. More will be said on how the tabu list is updated in the next section.
+
+In the algorithm, if a neighbor $z_i$ is found not to be in the Tabu list, the algorithm then adds the current held solution $x_i$ to the Tabu list. The current solution is added to prohiit future movements to the same solution in an attempt to avoid cycling of solutions. After $x_i$ has been added to the tabu list, the algorithm makes $z_i$ the current solution $x_i$. This process can be observed from line 12 -- 14.
+
+Before the algorithm continues to the next iteration, it performs one last final check. The purpose of this check, is to determine whether the algorithm is repeating solutions. As can be observed from line 15 -- 19, the algorithm calculats whether the new selected solution has been repeated for a certain amount of iterations. 
+
+If the solution has been indeed been repeated for a predetermined amount of iterations, the algorithm activates its diversification strategy otherwise, the algorithm intensifies its search. In the next section~\ref{sec:TScharacteristics} a sub section will be presented on these two strategies.
+
+A general overview of the TS algorithm has now been given as well as a brief explanation on the flow of the algorithm. During the discussion of the flow of the algorithm various characteristics that make the TS algorithm unique like Tabu List and aspiration critertion was mention. In the next section these characteristics will be discussed in much more detail.
+
 \subsection{Important Tabu Search characteristics}
+\label{sec:TScharacteristics}
 In this section various characteristics that are important to the tabu search (TS) algorithm will be discussed. The first characteristic that will be discussed is exactly how the initial starting solution is iteratively improved upon by the TS algorithm. After initial solution generation a discussion will be presented on research done with regard to different neighbourhood strategies for TS. One of the most important features of TS will be discussed in the memory structures section. Finally, this section on tabu search characteristics will conclude with a section that discusses the two search phases present in TS.
 
 \subsubsection{Initial Solution Generation}
@@ -197,7 +228,7 @@ In this section a discussion was presented on the various characteristics that e
 
 In the following section, a overview will be presented of literature that used the TS algorithm on the frequency assignment problem.
 \subsection{Tabu Search on the FAP}
-As discussed, the TS algorithm is an optimization algorithm and has been applied to a wide variety of optimization problems (see page \pageref{sec:TSOverview}). In the literature the TS algorithm has also achieved relatively good results.
+As discussed, the TS algorithm is an optimization algorithm and has been applied to a wide variety of optimization problems (see page \pageref{sec:TSIntroduction}). In the literature the TS algorithm has also achieved relatively good results.
 
 In a study conducted by Robert Montemanni and Derek Smith \cite{TabuMontemanniSmith} the TS algorithm is used on the FS-FAP problem. Since the tabu search algorithm is generic, the authors had to make some alterations to the algorithm to suite their needs as well as to make the algorithm more efficient exploring in the FAP solution space.
 
@@ -208,7 +239,6 @@ The authors developed a technique called Heuristic Manipulation Technique (HMT).
 The HMT then uses the identified characteristics to add \emph{additional} constraints to the problem\cite{TabuMontemanniSmith}. By adding constraints, the search space reduced which therefore makes it easier for the algorithm to find a optimal solution as there are less solutions to consider.But by reducing the search space, other near optimal solutions which might be far better are excluded\cite{TabuMontemanniSmith}. It is for this reason, that the authors opted not to add the constraints permanently. Instead the constraints are replaced by other constraints\cite{TabuMontemanniSmith}.
 
 The authors applied their TS algorithm together with HMT on the COST 259 family of benchmarks. Specifically the Siemens 1, Siemens 2, Siemens 3 and Siemens 4 problems.  The results will now be presented.
-
 \begin{table}
 \centering
 	\begin{tabular}{| c | c | c |}
@@ -219,9 +249,16 @@ The authors applied their TS algorithm together with HMT on the COST 259 family 
 		Siemens 3 & 6.6496 & 5.19 \\ \hline
 		Siemens 4 & 110.9725 & 81.89 \\ \hline
 	\end{tabular}
-\caption{TS on Cost 259 Benchmark}
 \end{table}
 As can be observed from the above results obtained by the authors, the TS algorithm with HMT produces results that rank very favourably against other algorithms also applied to the COST 259.
+
+When critically evaluating the TS algorithm with regard to applying it to the FAP, the following disadvantages can be identified.
+\paragraph{Search based on a single solution}
+The Tabu search algorithm at any moment in time only searches in the vicinity of \emph{one} current solution for possible neighbors which might be the current solution for the next iteration. FAP problems typically have huge search spaces due to their NP-Hard nature. Therefore, only searching for possible lucrative neighbors from only potential solution seems to be terrible inefficient. A better strategy, would be to use the notion of population based algorithms and have multiple solutions from which lucrative neighbors are searched from.
+\paragraph{Neighborhood generation}
+The Tabu search algorithm, defines no set process for generating a neighboring solution given a starting solution. Generating neighbors from a solution is a critical process in the TS algorithm, for it is the only means by which the algorithm considers other solutions i.e. it is the mechanism by which the algorithm searches. Generating a new neighbor can be as simple as changing only one value from the current solution or it can be very complex and incorporate other algorithms together with mathematic formulas. Regardless of the complexity of the neighbor generation that is used, care must be taken to ensure that the algorithm is able to produce a wide diversity of neighbors and also is able to intensify on the most optimal solution.
+\paragraph{Tabu lifetime}
+The TS algorithm, only operates on a single solution at a time and at most only considers one potential neighbor as its next possible current solution. Therefore, a difficult choice needs to be made as to how long a solution stays Tabu. In the FAP, a solution might be entered into the Tabu list early on the algorithm search process. A large majority of the neighbors of this solution is vastly superior solutions compared to any of the current solutions produced by the algorithm. Due to the solution with these neighbors being in the Tabu list, these neighbors won't be reconsidered until much later on when the solution is removed from the list. The only other option is if the aspiration criterion is met, which is another parameter which needs to by fine tuned. A high aspiration criterion and the algorithm might be too eager to just select any solution even though its Tabu. A low aspiration critertion and the algorithm will be to strict in selecting a tabu solution.
 
 In this section a literature review was presented on the TS algorithm being applied to the same problem this dissertation addresses. In the next section a discussion will be presented on the Simulated Annealing algorithm.
 \section{Simulated Annealing}
@@ -249,8 +286,8 @@ In this section a literature review was presented on the TS algorithm being appl
 	\label{fig:SimulatedAnnealingFlowChart}
 	\end{center}
 \end{figure}
-\subsection{Overview}
-\label{sec:SAOverview}
+\subsection{Introduction}
+\label{sec:SAIntroduction}
 Simulated Annealing (SA) is a heuristic search technique proposed in the 80's by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgical as Annealing \cite{CurveFittingSA,SASingleMultiObj,TempCyclingSA,ChaosSA}. Kirkpatrick was the first to use the simulated annealing to solve optimisations problems but the basic algorithm structure was defined in by Metropolis et. al. in 1953 \cite{CurveFittingSA,VeryFastSAImageEnchancement}
 
 Annealing is the natural process of crystallization when a solid is heated to a high temperature and then systematically cooled to a lower temperature to reach a crystallized form \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}. This crystallized form of the solid is known the be the global minimum of the solids internal energy state. 
@@ -282,10 +319,23 @@ At a high annealing temperature the probability that the algorithm will select a
 
 The SA algorithm is also very popular due to the basic structure of the algorithm being generic\cite{VariousCoolingSA}. As with the TS algorithm, the standard SA algorithm does not define a set neighbourhood generation mechanism, instead it is up to the algorithm designer to implement a suitable generation mechanism which will allow the algorithm to adequately explore the problem space\cite{VariousCoolingSA}. 
 
-Therefore, applying the algorithm to other problems is relatively trivial since only small changes are required. These changes usually need to be applied to the \emph{Neighbourhood selection} scheme and the \emph{Cooling Schedule}\cite{VariousCoolingSA,DormRoomSA}. Both of these concepts will be discussed in the next sub section.
+Therefore, applying the algorithm to other problems requires slight changes. These changes usually need to be applied to the \emph{Neighbourhood selection} scheme and the \emph{Cooling Schedule}\cite{VariousCoolingSA,DormRoomSA}. Both of these concepts will be discussed in the next sub section.
 
 In this sub section we gave a brief overview of the Simulated Annealing (SA) algorithm. We briefly discussed what the algorithm is based on and how the algorithm goes about searching the solution space. We also introduced some concepts like move probability selection and annealing temperature, which forms part of the core the algorithm. In the next section we will explain some of the concepts we've touched upon in this section as well as more advanced concepts that makes the algorithm unique.
 
+\subsection{Flow of the algorithm}
+In an attempt to better understand how the SA algorithm operates, a general discussion on the flow of the algorithm will now be given using algorithm~\ref{alg:SA} as reference point.
+
+From line 1 -- 3, the SA algorithm is initialized. The most important step here is setting the starting temperature for the annealing process to start on. As discussed in the introduction, the temperature of the annealing process plays a critical role in the potential solution selection process.
+
+After the algorithm has been initialized the search phase of the algorithm starts which ranges from line 4 -- 10. Like the TS algorithm, the SA algorithm stars of the search phase by generating a number of neighbors to the current solution held by the algorithm as can be observed on line 5.
+
+Before selecting a neighbor the algorithm first needs to evaluate the generated neighbors. The algorithm evaluates each neighbor by applying a fitness function $f(y_i)$ in order to determine its fitness.
+Once all the fitness of the generated neighbors have been determined, the algortithm uses equation~\ref{eq:probability} to calculate the probability of selecting a particular neighbor for all the generated neighbors as well. The probability caculation can be observed to occur on line Â. The algorithm then selects the neighbor with the highest probability to be current solution as observed on line 9. 
+
+Before the algorithm advances to the next iteration the temperature needs to be lowered. The temperature is a critical variable as it has a role in the probability equation and therefore can effect solution selection. The temperature is not simply lowered with a subtraction operation, but rather, it is lowered according to a particular cooling schedule. The temperature can be observed to be lowered on line 10.
+
+The general search flow of the SA algorithm has now been explained. In the next section, characteristics that were only mention in the introduction section and in this section will be discussed in much more detail.
 \subsection{Important Simulated Annealing characteristics}
 In this section four brief discussions will be presented on the characteristics of the Simulated Annealing Algorithm that make the algorithm unique. The first discussion will be on one of the most important defining characteristic, namely the cooling schedule. 
 
@@ -349,7 +399,7 @@ In research done by Tseung and Lin \cite{CurveFittingSA} an initial solution isn
 \subsubsection{Algorithm efficiency}
 The algorithm is also efficient with regards to CPU cycles when compared to the Genetic Algorithm because it only has to evaluate a certain number of moves each iteration, instead of a evaluating a whole population each iteration. Unlike Tabu Search the basic SA algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that solution will cycling. Hence the number of iterations spent at a temperature, the longer the algorithm spends at a certain temperature and therefore the higher the probability is that solutions will cycle.
 \subsection{Simulated Annealing on the FAP}
-The SA algorithm, as with the TS algorithm, has achieved relatively good results in other optimization problems as mentioned in section \ref{sec:SAOverview}. Due to its success on other NP-Complete optimization problems, the SA algorithm has also been applied to the FAP as well.
+The SA algorithm, as with the TS algorithm, has achieved relatively good results in other optimization problems as mentioned in section \ref{sec:SAIntroduction}. Due to its success on other NP-Complete optimization problems, the SA algorithm has also been applied to the FAP as well.
 
 In the literature presented by Carlo Mannino and Gianpaolo Oriolo\cite{SolvingSuperIntervalGraphs} the SA algorithm is applied to the FAP. The authors utilized \emph{dynamic programming} together with the SA algorithm to alter the SA algorithm in such a way, to better explore the FAP solution domain.
 
@@ -358,7 +408,13 @@ Dynamic programming is a computer science technique that is usually applied to p
 Utilizing the dynamic programming, the authors decompose the FAP problem into smaller interval graphs. The authors are able to do this since the FAP is similar to the graph problem, which means a FAP problem can be modelled as a graph\cite{ProblemDecompMIFAP}. The smaller interval graphs are graphs of vertices that are closely related and form a clique\cite{ProblemDecompMIFAP}.
 
 The resulting SA algorithm was benchmarked on the COST 259 siemens benchmark instances. The results will now be presented. Note that at the time the authors did the benchmark the best results obtained for the siemens problem were different than the latest results.
-
+\paragraph{Cooling Schedule}
+Depending on the cooling schedule selected the algorithm might converge too quick. As discussed the cooling schedule reduces the temperature and the temperature plays a large part in the determination of whether a particular solution will be moved to or not in an iteration. Thus early on the algorithm will explore a lot more and later on exploite more. In the FAP, the algorithm must not only be able to explore and exploite but also, be able to return to an exploration phase if need be.
+With the SA algorithm, as the temperature gets colder the algorithm exploites more and therefore won't easily move to a worse of solution. In the FAP, it might be desireable to later on rather move a worse off solution, as the particular current solution is a local minima and yields bad neighbors as potential next solutions. With the cooling schedule it is simply not possible, unless the temperature and schedule is reset. Resetting the temperature and schedule is not ideal, since the algorithm has keeps no history and might risk making the same faults as before the reset,
+\paragraph{Neighborhood generation}
+The SA algorithm as with the TS algorithm has no set process that defines how neighbors should be generated. As discussed, neighborhood generation is the primary means by which the SA algorithm moves about the search pace in search of a optimal solution. Therefore applying the SA algorithm would require a custom neighborhood generation scheme, which would be difficult to control as the algorithm keeps no history and also doesn't really expose the temperature for use with neighbor generation. This control and history as the FAP search space is huge and a desireble quality would be to know if the algorithm is moving towards an area which has already been explored.
+\paragraph{Single solution based search}
+The SA algorithm is similar to the TS algorithm in a sense that it, only searches from one solution per iteration. It searches by generating neighbors around the current solution of the algorithm. The FAP search space is huge and hence it would be more efficient to have multiple current solutions from which neighbors are generated. This enables the algorithm to much more efficiently explore the search space at the expense of more computational resources.
 \begin{table}
 \centering
 	\begin{tabular}{| c | c | c | c |}
@@ -405,7 +461,7 @@ The resulting SA algorithm was benchmarked on the COST 259 siemens benchmark ins
 	\label{fig:GeneticAlgorithmFlowChart}
 	\end{center}
 \end{figure}
-\subsection{Overview}
+\subsection{Introduction}
 Genetic Algorithm (GA) is a stochastic search method which is based on the natural process of genetic evolution and the Darwinian concept of ``survival of the fittest'' \cite{DistributedHierarchicalGA,AcceleratingGA,AdaptiveSAGA,FamilyGA}. GA was initially developed for adaptive systems by Holland but has then, been widely used in the optimization field of study due to its effective exploration of the solution space as well as its relative success in multi-dimensional problems\cite{ParallelGASA,DistributedHierarchicalGA,FamilyGA}. 
 
 The wide use of the GA algorithm can also be attributed to its generic algorithm structure as well as the ease of implementation of the algorithm \cite{FamilyGA,AdaptiveSAGA}. GA are application dependant and thus the designer needs to tailor the algorithm to his needs to obtain good results \cite{AcceleratingGA}.
@@ -440,6 +496,28 @@ Some sequential search algorithms require that the objective function be differe
 
 In this section we gave a overview of the Genetic Algorithm. We introduced the core concepts on which the algorithm is based upon as well as defined how the algorithm searches for solutions in a given domain. In the next section we will provide the pseudo code for the basic algorithmic structure as well as a flow diagram of the search procedure.
 
+\subsection{Flow of the algorithm}
+Most of the core concepts of the genetic algorithm have been introduced in the previous section. To better understand the algorithm, a general overview of the algorithm will now be presented using algorithm~\ref{alg:GA} as reference point.
+
+The GA algorithm is a population based algorithm and therefore needs to initialize its population. Each individual of the population represents a potential solution. Population initialization occurs on line 1 in algorithm~\ref{alg:GA}.
+
+Before the algorithm can start \emph{evolving} its population, it first needs to determine each individual in the populations fitness. The fitness of an invidual is calculated using a fitness function $f(i)$.
+
+Since the initial population has been evaluated, the algorithm is now in state to start its searching process which starts at line 3 and ends at line 17.
+
+The first part of the search process that is performed by the algorithm is to select a certain subset of the population. Typically this subset is the individuals of the population who have the highest fitness values. High fitness individuals are preferred as the fitness is a indication of good genes, which is to say, the solution the individual represents is of a high quality. This subset selection can be observed to occur on line 4.
+
+All the individuals that are not in the subset are removed from the population. Once the subset selection has been completed, the algorithm is ready to enter the reproduction phase that ranges from line 6 -- 15.
+
+The first step in the reproduction phase, is where various individuals of the subset are mated together to produce a new offspring individual. Mating occurs through the use of the crossover operator. The purpose of the crossover operator is to take certain characteristics of the two mating individuals and combine them to form a new individual referred to as the offspring. Generation of new individuals with the crossover operator can be observed from line 7 -- 8
+
+The second step of the reproduction phase is where mutation occurs. For each of the offspring generated by the crossover a mutation probability is calculated. If the calculated probaility for a particular offspring is high enough, the algorithm enters the mutation phase. In the mutation phase, the offspring is mutated, which is to say, the solution represented by the individual is altered slighty to be different. Mutation can be seen to occur on line 9 -- 10.
+
+Regardless whether offspring has been mutated or not, the resulting offspring is added to the new population. The reproduction phase continually loops, until the new population equals the size of the initail starting population. Once the new population has reached the sufficient size, the algorithm moves on to its next iteration.
+
+The algorithm continually generates and evaluates new population until a predetermined stopping criterion has been met. Once the criterion has been met, the algorithm selects the individual with the highest fitness in the current population as its most optimal solution.
+
+In section a general overview of genetic algorithm flow was presented. In the next section various characteristics that make up the genetic algorithm and have up and till now only been mentioned will be explained in much more detail.
 \subsection{Important Genetic Algorithm characteristics}
 In this section an overview on characteristics which make the GA search procedure unique will be presented. The first discussion will be on the initial population generation. Furthermore, for each operator namely, selection, mutation and elitism operators a brief overview will be given.
 
@@ -528,12 +606,21 @@ The results the authors obtained will now be represented.
 	\end{tabular}
 \caption{GA on Cost 259 Benchmark}
 \end{table}
-%
+
+By critically evaluating the genetic algorithm if it would be applied to the FAP, the following disadvantages can be identified.
+
+\paragraph{Diversity}
+The GA algorithm continually operates on a set population that was randomly initialized in the beginning of the algorithm. The algorithm hence only has these set of generated genes in the initialized population to therefore evolve successive populations from.
+If one does not regard mutation, the GA algorithm is a process by which the optimal combination of the starting genes are found. Thus, the GA algorithm purifies the starting population genes in an attempt to find those individual genes, which if combined into a single individual, will produce an optimal individual i.e solution. Therefore, the genetic algorithm is very much reliant on the quality of the random generator used. Hence, the probability of the algorithm finding a particular desireable gene that is exibited by the starting population is directly related to the rate of mutation, as mutation is the only means by which more diversity gets introduced in the GA algorithm.
+\paragraph{Crossover}
+The Crossover operation in the GA algorithm is the only means by which successive populations are generated and can therefore be regard as the primary means by which the algorithm performs its search. As the crossover is defined in the standard algorihtm, certain parts of both parents are copied and combined to form a new individual. With regard to the FAP, if a each individual represents a frequency plan, the crossover operation would copy certain cells from the two parent plans. This is not desireble, since a single channel within a cell can generate large interference that overshadows the rest of the channels which generate low interference in the cell. Thus, for the GA to generate high quality solutions on the FAP, the algorihtm would be better off utilizing a crossover operation which works on individual channels assigned rather than cells. Crossover operation is also a memory and computational expensive operation since individuals need to be constantly created and values need to be copied to these new individuals from the respective parents.
+\paragraph{Mutation}
+Mutation is the primary means by which more diversity is introduced in the GA population. Typically the mutation value is set to a low probability due to mutation actually \emph{modifying} individuals and not introducing \emph{new} individuals. Therefore, there is a possiblity that a mutation might alter a excellent solution in such a way, that the solution is suddenly one of the worst solutions. With regard to the FAP, the low probability of mutation is not desirable, as the FAP search space is huge and therefore requires constant diversity to be introduced to accurately explore the FAP search space. A possible good mutation, would be one that is slighty more intelligent than the standard mutation operator which is just randomly modifies a selected individual. An intelligent mutation, would be one that takes into account the recent history of the individual as well as the history of the population and based on the gather historic knowledge alter the individual.
 \section {Summary}
 In this chapter a presentation was given meta-heuristic algorithms. A definition was given on what it means for an algorithm to be classified as being of a meta-heuristic nature and also what characteristic these algorithms must exhibit.
 
 Three meta-heuristic algorithms were discussed in this chapter. For each algorithm as flow chart was presented which visually depicts the general flow of the algorithm along with a discussion on how the algorithm works as well as the various characteristic that make the algorihm unique.
 
-For each algorithm, a brief overview of literature using the particular algorithm on the FAP was also discussed.
+For each algorithm, a brief overview of literature using the particular algorithm was given as well as a series of brief discussions on some of the disadvantages or challenges that will be faced when applying the particular algorithm on the FAP.
 
-The first algorithm discussed was the Tabu search algorithm and the second algorithm was the simulated annealing algorithm. The chapter concluded with a dicussion on the Genentic algorithm. 
+The first algorithm discussed was the Tabu search algorithm and the second algorithm was the simulated annealing algorithm. The chapter concluded with a dicussion on the Genentic algorithm. In the next chapter a disuccsion will be given on a class of algorithm which is relatively new to optimization research, namely the Swarm Intelligence class of algorithms.

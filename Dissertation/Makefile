@@ -5,3 +5,6 @@ complete:
 	pdflatex dissertation.tex
 all:
 	pdflatex dissertation.tex
+clean:
+	rm *.aux
+	rm *.lo*
