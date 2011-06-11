@@ -1,10 +1,5 @@
-complete:
-	pdflatex dissertation.tex
-	bibtex dissertation
-	pdflatex dissertation.tex
-	pdflatex dissertation.tex
 all:
-	pdflatex dissertation.tex
-clean:
-	rm *.aux
-	rm *.lo*
+	pdflatex --shell-escape dissertation.tex
+	bibtex dissertation
+	pdflatex  --shell-escape dissertation.tex
+	pdflatex  --shell-escape dissertation.tex

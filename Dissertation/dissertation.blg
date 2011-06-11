@@ -9,53 +9,55 @@ A level-1 auxiliary file: chpt6.aux
 A level-1 auxiliary file: chpt7.aux
 A level-1 auxiliary file: chpt8.aux
 A level-1 auxiliary file: chpt9.aux
+A level-1 auxiliary file: apdxA.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
 Warning--I didn't find a database entry for "MobileWirelessCommunicationss"
 Warning--I didn't find a database entry for "AdreasPaper"
 Warning--I didn't find a database entry for "Karen200"
 Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "http://www.it.lut.fi/ip/evo/functions/node12.html"
 Warning--there's a number but no volume in FAPInCell
 Warning--can't use both author and editor fields in IntroMathProgramming
-You've used 129 entries,
+You've used 139 entries,
             2118 wiz_defined-function locations,
-            1354 strings with 29834 characters,
-and the built_in function-call counts, 48118 in all, are:
-= -- 4854
-> -- 1930
+            1407 strings with 31145 characters,
+and the built_in function-call counts, 51360 in all, are:
+= -- 5186
+> -- 2074
 < -- 50
-+ -- 797
-- -- 628
-* -- 3323
-:= -- 7547
-add.period$ -- 407
-call.type$ -- 129
-change.case$ -- 689
++ -- 855
+- -- 674
+* -- 3563
+:= -- 8094
+add.period$ -- 436
+call.type$ -- 139
+change.case$ -- 743
 chr.to.int$ -- 0
-cite$ -- 131
-duplicate$ -- 1942
-empty$ -- 3930
-format.name$ -- 628
-if$ -- 10470
+cite$ -- 141
+duplicate$ -- 2045
+empty$ -- 4182
+format.name$ -- 674
+if$ -- 11128
 int.to.chr$ -- 0
-int.to.str$ -- 129
-missing$ -- 138
-newline$ -- 649
-num.names$ -- 258
-pop$ -- 731
+int.to.str$ -- 139
+missing$ -- 146
+newline$ -- 698
+num.names$ -- 278
+pop$ -- 772
 preamble$ -- 1
-purify$ -- 572
+purify$ -- 615
 quote$ -- 0
-skip$ -- 1467
+skip$ -- 1542
 stack$ -- 0
-substring$ -- 3590
-swap$ -- 561
+substring$ -- 3856
+swap$ -- 570
 text.length$ -- 50
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 482
+type$ -- 522
 warning$ -- 2
-while$ -- 449
-width$ -- 132
-write$ -- 1452
-(There were 6 warnings)
+while$ -- 484
+width$ -- 142
+write$ -- 1559
+(There were 7 warnings)

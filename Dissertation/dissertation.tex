@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{book}
 \usepackage{ujthesis,enumerate,amssymb,amsmath,algorithm,algorithmic}
-\usepackage{cite,graphicx,tikz,xcolor}
+\usepackage{cite,graphicx,tikz,xcolor,appendix,hyperref,minted}
 \usetikzlibrary{plothandlers}
 \usetikzlibrary{positioning}
 \usetikzlibrary{decorations.pathreplacing}
@@ -22,12 +22,14 @@
 \supervisorName{Dr. G.B. O'Reilly}
 \submissionDate{June 2011}
 \begin{document}
+\pagenumbering{roman}
 \makecover
 \tableofcontents
 \listoffigures
 \listofalgorithms
 \listoftables
 \part{Background}
+\pagenumbering{arabic}
 \include{chpt1}%Introduction
 \include{chpt2}%GSM Cellular Networks
 \include{chpt3}%Frequency Assignment Problem
@@ -38,6 +40,10 @@
 \include{chpt7}%Applying the PSO to the FAP
 \include{chpt8}%Results
 \include{chpt9}%Conclusion
+\appendix
+\appendixpage
+\addappheadtotoc
+\include{apdxA}
 \bibliography{ReferenceDB}
 \bibliographystyle{plain}
 \end{document}

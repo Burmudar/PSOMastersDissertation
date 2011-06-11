@@ -49,6 +49,25 @@
   timestamp = {2009.05.23}
 }
 
+@ARTICLE{ChaoticBCA,
+  author = {Alatas, Bilal},
+  title = {Chaotic bee colony algorithms for global numerical optimization},
+  journal = {Expert Syst. Appl.},
+  year = {2010},
+  volume = {37},
+  pages = {5682--5687},
+  month = {August},
+  acmid = {1786855},
+  address = {Tarrytown, NY, USA},
+  doi = {http://dx.doi.org/10.1016/j.eswa.2010.02.042},
+  issn = {0957-4174},
+  issue = {8},
+  keywords = {Bee colony algorithm, Chaos, Global numerical optimization},
+  numpages = {6},
+  publisher = {Pergamon Press, Inc.},
+  url = {http://dx.doi.org/10.1016/j.eswa.2010.02.042}
+}
+
 @ARTICLE{HetergeneousGA,
   author = {Alba, E. and Luna, F. and Nebro, A. J. and Troya, J. M.},
   title = {Parallel heterogeneous genetic algorithms for continuous optimization},
@@ -234,6 +253,17 @@
   owner = {william},
   timestamp = {2010.06.14},
   url = {http://www.springerlink.com/content/1J8061123NH3533H}
+}
+
+@ARTICLE{TSGlobalOptimization,
+  author = {Rachid Chelouah and Patrick Siarry},
+  title = {Tabu Search applied to global optimization},
+  journal = {European Journal of Operational Research},
+  year = {2000},
+  volume = {123},
+  pages = {256--270},
+  doi = {10.1016/S0377-2217(99)00255-6},
+  masid = {3834425}
 }
 
 @ARTICLE{SiteFAPWLAN,
@@ -540,6 +570,24 @@
   timestamp = {2010.03.25}
 }
 
+@INBOOK{stigmergicoptimization,
+  chapter = {1},
+  pages = {1--24},
+  title = {Stigmergic optimization: inspiration, technologies and perspectives},
+  publisher = {Springer Berlin / Heidelberg},
+  year = {2006},
+  author = {Grosan, C. and Abraham, A.},
+  volume = {31},
+  series = {Studies in Computational Intelligence},
+  citeulike-article-id = {3225425},
+  citeulike-linkout-0 = {http://dx.doi.org/10.1007/978-3-540-34690-6\_1},
+  doi = {10.1007/978-3-540-34690-6\_1},
+  keywords = {aco, pso},
+  posted-at = {2008-09-11 14:01:02},
+  priority = {2},
+  url = {http://dx.doi.org/10.1007/978-3-540-34690-6\_1}
+}
+
 @ARTICLE{AcceleratingGA,
   author = {H\"{a}m\"{a}l\"{a}inen, Timo and Klapuri, Harri and Saarinen, Jukka
 	and Ojala, Pekka and Kaski, Kimmo},
@@ -759,6 +807,26 @@
   url = {http://www.sciencedirect.com/science/article/B6TY8-4W211Y3-1/2/f92b8a34ede7a7e7a24cb2b0834e7c33}
 }
 
+@ARTICLE{PerfABC,
+  author = {Karaboga, D. and Basturk, B.},
+  title = {On the performance of artificial bee colony (ABC) algorithm},
+  journal = {Appl. Soft Comput.},
+  year = {2008},
+  volume = {8},
+  pages = {687--697},
+  month = {January},
+  acmid = {1290658},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  doi = {http://dx.doi.org/10.1016/j.asoc.2007.05.007},
+  issn = {1568-4946},
+  issue = {1},
+  keywords = {ABC, Bee colony algorithm, DE, EA, Numerical optimization, PSO, Swarm
+	intelligence},
+  numpages = {11},
+  publisher = {Elsevier Science Publishers B. V.},
+  url = {http://dx.doi.org/10.1016/j.asoc.2007.05.007}
+}
+
 @ARTICLE{ABCNumericalOptimization,
   author = {Karaboga, Dervis and Basturk, Bahriye},
   title = {A powerful and efficient algorithm for numerical function optimization:
@@ -773,6 +841,49 @@
   doi = {http://dx.doi.org/10.1007/s10898-007-9149-x},
   issn = {0925-5001},
   publisher = {Kluwer Academic Publishers}
+}
+
+@ARTICLE{numericalABC,
+  author = {Karaboga, Dervis and Basturk, Bahriye},
+  title = {A powerful and efficient algorithm for numerical function optimization:
+	artificial bee colony (ABC) algorithm},
+  journal = {J. of Global Optimization},
+  year = {2007},
+  volume = {39},
+  pages = {459--471},
+  month = {November},
+  acmid = {1296021},
+  address = {Hingham, MA, USA},
+  doi = {10.1007/s10898-007-9149-x},
+  issn = {0925-5001},
+  issue = {3},
+  keywords = {Artificial bee colony, Genetic algorithm, Numerical function optimization,
+	Particle swarm inspired evolutionary algorithm, Particle swarm optimization,
+	Swarm intelligence},
+  numpages = {13},
+  publisher = {Kluwer Academic Publishers},
+  url = {http://portal.acm.org/citation.cfm?id=1295970.1296021}
+}
+
+@ARTICLE{ContinACSTS,
+  author = {Karimi, Akbar and Nobahari, Hadi and Siarry, Patrick},
+  title = {Continuous ant colony system and tabu search algorithms hybridized
+	for global minimization of continuous multi-minima functions},
+  journal = {Comput. Optim. Appl.},
+  year = {2010},
+  volume = {45},
+  pages = {639--661},
+  month = {April},
+  acmid = {1743512},
+  address = {Norwell, MA, USA},
+  doi = {http://dx.doi.org/10.1007/s10589-008-9176-7},
+  issn = {0926-6003},
+  issue = {3},
+  keywords = {Ant colony optimization, Continuous optimization, Global optimization,
+	Hybrid meta-heuristics, Tabu search},
+  numpages = {23},
+  publisher = {Kluwer Academic Publishers},
+  url = {http://dx.doi.org/10.1007/s10589-008-9176-7}
 }
 
 @INPROCEEDINGS{TempCyclingSA,
@@ -1021,6 +1132,15 @@
   author = {Michel Mouly, Marie-Bernadette Pautet},
   owner = {william},
   timestamp = {2009.07.22}
+}
+
+@MISC{TestFunctions,
+  author = {M. Molga and C. Smutnicki},
+  title = {Test functions for optimization needs},
+  year = {2005},
+  owner = {william},
+  timestamp = {2011.06.12},
+  url = {http://www.zsd.ict.pwr.wroc.pl/files/docs/functions.pdf}
 }
 
 @INPROCEEDINGS{adaptPSO,
@@ -1341,6 +1461,13 @@
   url = {http://www.sciencedirect.com/science/article/B6V0V-3VSNGMY-1C/2/2fddf7337e38ddc5458bc22e8cf56e2a}
 }
 
+@TECHREPORT{ARPSO,
+  author = {J. Riget and J.S. Vesterstr¿m},
+  title = {A Diversity-Guided Particle Swarm Optimizer - the ARPSO},
+  institution = {Aarhus Universitet},
+  year = {2002}
+}
+
 @ARTICLE{MSFAP,
   author = {Angelos N. Rouskas and Michael G. Kazantzakis and Miltiades E. Anagnostou},
   title = {Minimizing of Frequency Assignment Span in Cellular Networks},
@@ -1595,6 +1722,21 @@
   location = {The Netherlands}
 }
 
+@ARTICLE{TSGlobalOptContinFunc,
+  author = {Y. S. Teh and G. P. Rangaiah},
+  title = {Tabu search for global optimization of continuous functions with
+	application to phase equilibrium calculations},
+  journal = {Computers \& Chemical Engineering},
+  year = {2003},
+  volume = {27},
+  pages = {1665 - 1679},
+  number = {11},
+  doi = {DOI: 10.1016/S0098-1354(03)00134-0},
+  issn = {0098-1354},
+  keywords = {Global optimization},
+  url = {http://www.sciencedirect.com/science/article/pii/S0098135403001340}
+}
+
 @INPROCEEDINGS{BCO,
   author = {Teodorovic, Dusan and Lucic, Panta and Markovic, Goran and Orco,
 	Mauro Dell'},
@@ -1717,6 +1859,26 @@
   publisher = {ACM}
 }
 
+@ARTICLE{devparallelgasa,
+  author = {Wang, Z. G. and Wong, Y. S. and Rahman, M.},
+  title = {Development of a parallel optimization method based on genetic simulated
+	annealing algorithm},
+  journal = {Parallel Comput.},
+  year = {2005},
+  volume = {31},
+  pages = {839--857},
+  month = {August},
+  acmid = {1746311},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  doi = {http://dx.doi.org/10.1016/j.parco.2005.03.006},
+  issn = {0167-8191},
+  issue = {8-9},
+  keywords = {Genetic algorithm, Parallel genetic algorithm, Simulated annealing},
+  numpages = {19},
+  publisher = {Elsevier Science Publishers B. V.},
+  url = {http://dx.doi.org/10.1016/j.parco.2005.03.006}
+}
+
 @ARTICLE{ParallelGASA,
   author = {Wang, Z. G. and Wong, Y. S. and Rahman, M.},
   title = {Development of a parallel optimization method based on genetic simulated
@@ -1778,6 +1940,25 @@
   doi = {http://doi.acm.org/10.1145/1389095.1389253},
   isbn = {978-1-60558-130-9},
   location = {Atlanta, GA, USA}
+}
+
+@ARTICLE{evalevoalgo,
+  author = {Whitley, Darrell and Rana, Soraya and Dzubera, John and Mathias,
+	Keith E.},
+  title = {Evaluating evolutionary algorithms},
+  journal = {Artif. Intell.},
+  year = {1996},
+  volume = {85},
+  pages = {245--276},
+  month = {August},
+  acmid = {241103},
+  address = {Essex, UK},
+  doi = {10.1016/0004-3702(95)00124-7},
+  issn = {0004-3702},
+  issue = {1-2},
+  numpages = {32},
+  publisher = {Elsevier Science Publishers Ltd.},
+  url = {http://portal.acm.org/citation.cfm?id=241085.241103}
 }
 
 @INPROCEEDINGS{PSOSoftTesting,

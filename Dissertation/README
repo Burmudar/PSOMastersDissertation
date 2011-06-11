@@ -1,24 +1,17 @@
-This directory contains four .sty files that are mutually compatible,
-but (mostly) independent:
+minted -- highlighted source code for LaTeX
 
-cite.sty       Compressed, sorted lists of numerical citations: [8,11-16]
-               with many options for controlling the formatting.
+minted is a package that facilitates expressive syntax highlighting in LaTeX
+using the powerful Pygments library. The package also provides options to
+customize the highlighted source code output using fancyvrb.
 
-overcite.sty   like \usepackage[superscript]{cite}
+See the documentation (minted.pdf) for examples and instructions of installation
+and usage.
 
-drftcite.sty   Print the tags instead of the numbers for \cite and \bibitem.
+This work may be distributed and/or modified under the conditions of the LaTeX
+Project Public License, either version 1.3 of this license or (at your option)
+any later version.
+Additionally, the project may be distributed under the terms of the new BSD
+license.
 
-chapterbib.sty Do multiple bibliographies--one for each \include file.
-
-The documentation is included as plain text after the definitions in 
-each file (below \endinput).  It can be read online or printed directly, 
-but don't try to typeset it with LaTeX!
-
-They are all released under a very simple permissive license in
-the MIT/BSD style:  They may be freely used, transmitted, reproduced, 
-or modified provided that [the copyright and permission] notice is 
-left intact.
-
-
-
-Donald Arseneau                         asnd@triumf.ca
+For suggestions and bug reports, please go to the project's hosting site at
+http://minted.googlecode.com.

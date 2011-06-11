@@ -12,6 +12,11 @@ Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
 \newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
   December 2004.
 
+\bibitem{ChaoticABC}
+Bilal Alatas.
+\newblock Chaotic bee colony algorithms for global numerical optimization.
+\newblock {\em Expert Syst. Appl.}, 37:5682--5687, August 2010.
+
 \bibitem{HetergeneousGA}
 E.~Alba, F.~Luna, A.~J. Nebro, and J.~M. Troya.
 \newblock Parallel heterogeneous genetic algorithms for continuous
@@ -91,6 +96,11 @@ A.~Chawla, S.~Mukherjee, and B.~Karthikeyan.
 \newblock Characterization of human passive muscles for impact loads using
   genetic algorithm and inverse finite element methods.
 \newblock {\em Biomechanics and Modeling in Mechanobiology}, 8(1):67--76, 2009.
+
+\bibitem{TSGlobalOptimization}
+Rachid Chelouah and Patrick Siarry.
+\newblock Tabu search applied to global optimization.
+\newblock {\em European Journal of Operational Research}, 123:256--270, 2000.
 
 \bibitem{BeeJobShop}
 Chin~Soon Chong, Appa~Iyer Sivakumar, Malcolm Yoke~Hean Low, and Kheng~Leng
@@ -311,6 +321,11 @@ Vijay Kalivarapu, Jung-Leng Foo, and Eliot Winer.
 \newblock {\em Structural and Multidisciplinary Optimization}, 37:415 -- 427,
   2009.
 
+\bibitem{PerfABC}
+D.~Karaboga and B.~Basturk.
+\newblock On the performance of artificial bee colony (abc) algorithm.
+\newblock {\em Appl. Soft Comput.}, 8:687--697, January 2008.
+
 \bibitem{ABCCompareStudy}
 Dervis Karaboga and Bahriye Akay.
 \newblock A comparative study of artificial bee colony algorithm.
@@ -321,6 +336,18 @@ Dervis Karaboga and Bahriye Basturk.
 \newblock A powerful and efficient algorithm for numerical function
   optimization: artificial bee colony (abc) algorithm.
 \newblock {\em J. of Global Optimization}, 39(3):459--471, 2007.
+
+\bibitem{numericalABC}
+Dervis Karaboga and Bahriye Basturk.
+\newblock A powerful and efficient algorithm for numerical function
+  optimization: artificial bee colony (abc) algorithm.
+\newblock {\em J. of Global Optimization}, 39:459--471, November 2007.
+
+\bibitem{ContinACSTS}
+Akbar Karimi, Hadi Nobahari, and Patrick Siarry.
+\newblock Continuous ant colony system and tabu search algorithms hybridized
+  for global minimization of continuous multi-minima functions.
+\newblock {\em Comput. Optim. Appl.}, 45:639--661, April 2010.
 
 \bibitem{AdaptiveSAGA}
 Il~kwon Jeong and Ju~jang Lee.
@@ -442,6 +469,10 @@ Qi~Ming-yao, Miao Li-xin, Zhang Le, and Xu~Hua-yu.
 \newblock In {\em Management Science and Engineering, 2008. ICMSE 2008. 15th
   Annual Conference Proceedings., International Conference on}, pages 1648
   --1653, 10-12 2008.
+
+\bibitem{TestFunctions}
+M.~Molga and C.~Smutnicki.
+\newblock Test functions for optimization needs, 2005.
 
 \bibitem{adaptPSO}
 Christopher~K. Monson and Kevin~D. Seppi.
@@ -571,6 +602,11 @@ D.~J. Reid.
 \newblock Genetic algorithms in constrained optimization.
 \newblock {\em Mathematical and Computer Modelling}, 23(5):87 -- 111, 1996.
 
+\bibitem{ARPSO}
+J.~Riget and J.S. Vesterstr¿m.
+\newblock A diversity-guided particle swarm optimizer - the arpso.
+\newblock Technical report, Aarhus Universitet, 2002.
+
 \bibitem{MSFAP}
 Angelos~N. Rouskas, Michael~G. Kazantzakis, and Miltiades~E. Anagnostou.
 \newblock Minimizing of frequency assignment span in cellular networks.
@@ -676,6 +712,12 @@ Ashish Sureka and Peter~R. Wurman.
   conference on Autonomous agents and multiagent systems}, pages 1023--1029,
   New York, NY, USA, 2005. ACM.
 
+\bibitem{TSGlobalOptContinFunc}
+Y.~S. Teh and G.~P. Rangaiah.
+\newblock Tabu search for global optimization of continuous functions with
+  application to phase equilibrium calculations.
+\newblock {\em Computers \& Chemical Engineering}, 27(11):1665 -- 1679, 2003.
+
 \bibitem{BCO}
 Dusan Teodorovic, Panta Lucic, Goran Markovic, and Mauro~Dell' Orco.
 \newblock Bee colony optimization: Principles and applications.
@@ -733,6 +775,12 @@ Z.~G. Wang, Y.~S. Wong, and M.~Rahman.
   simulated annealing algorithm.
 \newblock {\em Parallel Comput.}, 31(8+9):839--857, 2005.
 
+\bibitem{devparallelgasa}
+Z.~G. Wang, Y.~S. Wong, and M.~Rahman.
+\newblock Development of a parallel optimization method based on genetic
+  simulated annealing algorithm.
+\newblock {\em Parallel Comput.}, 31:839--857, August 2005.
+
 \bibitem{ReactiveTabuVHR}
 N.~A. Wassan.
 \newblock A reactive tabu search for the vehicle routing problem.
@@ -753,6 +801,11 @@ Dennis Weyland.
 \newblock In {\em GECCO '08: Proceedings of the 10th annual conference on
   Genetic and evolutionary computation}, pages 803--810, New York, NY, USA,
   2008. ACM.
+
+\bibitem{evalevoalgo}
+Darrell Whitley, Soraya Rana, John Dzubera, and Keith~E. Mathias.
+\newblock Evaluating evolutionary algorithms.
+\newblock {\em Artif. Intell.}, 85:245--276, August 1996.
 
 \bibitem{PSOSoftTesting}
 Andreas Windisch, Stefan Wappler, and Joachim Wegener.
