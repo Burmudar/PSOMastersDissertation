@@ -20,7 +20,7 @@
 \contentsline {paragraph}{Network Management Centre}{17}{section*.12}
 \contentsline {section}{\numberline {2.4}GSM Interfaces}{17}{section.2.4}
 \contentsline {section}{\numberline {2.5}GSM Channels}{18}{section.2.5}
-\contentsline {section}{\numberline {2.6}Handover}{21}{section.2.6}
+\contentsline {section}{\numberline {2.6}Handover}{22}{section.2.6}
 \contentsline {section}{\numberline {2.7}Summary}{25}{section.2.7}
 \contentsline {chapter}{\numberline {3}The Frequency Assignment Problem}{27}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{27}{section.3.1}
@@ -95,110 +95,110 @@
 \contentsline {section}{\numberline {5.1}Introduction}{91}{section.5.1}
 \contentsline {section}{\numberline {5.2}Stigmergy}{94}{section.5.2}
 \contentsline {section}{\numberline {5.3}Ant Colony Optimization (ACO)}{95}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Overview}{95}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.1}Introduction}{95}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Flow of the algorithm}{100}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}ACO characteristics}{100}{subsection.5.3.3}
-\contentsline {subsubsection}{Pheromones trail}{100}{section*.40}
-\contentsline {subsubsection}{State transition rules}{102}{section*.41}
+\contentsline {subsection}{\numberline {5.3.3}ACO characteristics}{101}{subsection.5.3.3}
+\contentsline {subsubsection}{Pheromones trail}{101}{section*.40}
+\contentsline {subsubsection}{State transition rules}{103}{section*.41}
 \contentsline {subsubsection}{Pheromone update}{104}{section*.42}
-\contentsline {subsubsection}{Pheromone evaporation}{105}{section*.43}
-\contentsline {subsection}{\numberline {5.3.4}ACO on the FAP}{106}{subsection.5.3.4}
-\contentsline {paragraph}{Memory Usage}{107}{section*.44}
-\contentsline {paragraph}{Building a solution}{107}{section*.45}
+\contentsline {subsubsection}{Pheromone evaporation}{106}{section*.43}
+\contentsline {subsection}{\numberline {5.3.4}ACO on the FAP}{107}{subsection.5.3.4}
+\contentsline {paragraph}{Memory Usage}{108}{section*.44}
+\contentsline {paragraph}{Building a solution}{108}{section*.45}
 \contentsline {section}{\numberline {5.4}Artificial Bee Colony Algorithm}{109}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Overview}{109}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Flow of the algorithm}{114}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}ABC algorithm characteristics}{115}{subsection.5.4.3}
-\contentsline {subsubsection}{Food Sources}{115}{section*.46}
-\contentsline {subsubsection}{Employed and Onlooker Bees}{116}{section*.47}
-\contentsline {subsubsection}{Scout bee}{118}{section*.48}
-\contentsline {subsection}{\numberline {5.4.4}ABC algorithm on the FAP}{119}{subsection.5.4.4}
-\contentsline {paragraph}{Food source representation}{119}{section*.49}
-\contentsline {paragraph}{Scout bee generation}{119}{section*.50}
-\contentsline {paragraph}{Knowledge sharing}{119}{section*.51}
-\contentsline {section}{\numberline {5.5}Particle Swarm Optimization (PSO)}{120}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Overview}{120}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Flow of the algorithm}{124}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}PSO characteristics}{126}{subsection.5.5.3}
-\contentsline {subsubsection}{Swarm Size}{126}{section*.52}
-\contentsline {subsubsection}{Particle Velocity}{127}{section*.53}
-\contentsline {subsubsection}{Inertia Weight}{129}{section*.54}
-\contentsline {subsection}{\numberline {5.5.4}PSO on the FAP}{131}{subsection.5.5.4}
-\contentsline {section}{\numberline {5.6}Summary}{133}{section.5.6}
-\contentsline {part}{II\hspace {1em}Implementation}{135}{part.2}
-\contentsline {chapter}{\numberline {6}PSO on benchmark functions}{137}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{137}{section.6.1}
-\contentsline {section}{\numberline {6.2}Test Functions}{139}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}DeJong F1 Function}{140}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Shekel's Foxhole}{140}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Rastrigin}{141}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Schwefel}{141}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Griewank}{142}{subsection.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}Salomon}{142}{subsection.6.2.6}
-\contentsline {subsection}{\numberline {6.2.7}Ackley}{142}{subsection.6.2.7}
-\contentsline {subsection}{\numberline {6.2.8}Six-Hump Camel Back}{143}{subsection.6.2.8}
-\contentsline {subsection}{\numberline {6.2.9}Shubert}{143}{subsection.6.2.9}
-\contentsline {subsection}{\numberline {6.2.10}Himmelblau}{143}{subsection.6.2.10}
-\contentsline {subsection}{\numberline {6.2.11}Rosenbrock Valley}{144}{subsection.6.2.11}
-\contentsline {subsection}{\numberline {6.2.12}Dropwave}{144}{subsection.6.2.12}
-\contentsline {subsection}{\numberline {6.2.13}Easom}{144}{subsection.6.2.13}
-\contentsline {subsection}{\numberline {6.2.14}Branins}{145}{subsection.6.2.14}
-\contentsline {subsection}{\numberline {6.2.15}Michalewicz}{145}{subsection.6.2.15}
-\contentsline {subsection}{\numberline {6.2.16}Goldstein}{146}{subsection.6.2.16}
-\contentsline {section}{\numberline {6.3}Results}{146}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Iterations}{147}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Diversity}{148}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Accuracy}{149}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}Applying the PSO to the FAP}{151}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{151}{section.7.1}
-\contentsline {section}{\numberline {7.2}A Position in the Frequency Planning domain}{152}{section.7.2}
-\contentsline {section}{\numberline {7.3}The Fitness Function}{154}{section.7.3}
-\contentsline {section}{\numberline {7.4}Velocity Function for Frequency Planning}{155}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Movement in the Frequency Planning domain}{156}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Keeping frequencies bounded}{157}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Using indices instead of frequencies}{158}{subsection.7.4.3}
-\contentsline {section}{\numberline {7.5}Building a Global Best}{159}{section.7.5}
-\contentsline {section}{\numberline {7.6}Keeping History}{161}{section.7.6}
-\contentsline {section}{\numberline {7.7}Summary}{163}{section.7.7}
-\contentsline {chapter}{\numberline {8}Results}{165}{chapter.8}
-\contentsline {section}{\numberline {8.1}Introduction}{165}{section.8.1}
-\contentsline {chapter}{\numberline {9}Conclusion}{167}{chapter.9}
-\contentsline {section}{\numberline {9.1}Introduction}{167}{section.9.1}
-\contentsline {chapter}{\numberline {A}Plotting functions in 3D}{171}{appendix.A}
-\contentsline {section}{\numberline {A.1}Introduction}{171}{section.A.1}
-\contentsline {section}{\numberline {A.2}Code}{171}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}DeJongF1 Code}{171}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Shekel's Foxhole Code}{172}{subsection.A.2.2}
-\contentsline {subsection}{\numberline {A.2.3}Rastrigin Code}{173}{subsection.A.2.3}
-\contentsline {subsection}{\numberline {A.2.4}Schwefel Code}{174}{subsection.A.2.4}
-\contentsline {subsection}{\numberline {A.2.5}Griewank Code}{174}{subsection.A.2.5}
-\contentsline {subsection}{\numberline {A.2.6}Salomon Code}{175}{subsection.A.2.6}
-\contentsline {subsection}{\numberline {A.2.7}Ackley Code}{176}{subsection.A.2.7}
-\contentsline {subsection}{\numberline {A.2.8}Six-Hump Camel Back Code}{177}{subsection.A.2.8}
-\contentsline {subsection}{\numberline {A.2.9}Shubert Code}{177}{subsection.A.2.9}
-\contentsline {subsection}{\numberline {A.2.10}Himmelblau Code}{178}{subsection.A.2.10}
-\contentsline {subsection}{\numberline {A.2.11}Rosenbrock Valley Code}{179}{subsection.A.2.11}
-\contentsline {subsection}{\numberline {A.2.12}Dropwave Code}{179}{subsection.A.2.12}
-\contentsline {subsection}{\numberline {A.2.13}Easom Code}{180}{subsection.A.2.13}
-\contentsline {subsection}{\numberline {A.2.14}Branins Code}{181}{subsection.A.2.14}
-\contentsline {subsection}{\numberline {A.2.15}Michalewicz Code}{182}{subsection.A.2.15}
-\contentsline {subsection}{\numberline {A.2.16}Goldstein Code}{182}{subsection.A.2.16}
-\contentsline {section}{\numberline {A.3}Graphs}{183}{section.A.3}
-\contentsline {subsection}{\numberline {A.3.1}DeJong's First Function}{184}{subsection.A.3.1}
-\contentsline {subsection}{\numberline {A.3.2}Shekel's Foxhole Function}{184}{subsection.A.3.2}
-\contentsline {subsection}{\numberline {A.3.3}Rastrigin Function}{185}{subsection.A.3.3}
-\contentsline {subsection}{\numberline {A.3.4}Schwefel Function}{185}{subsection.A.3.4}
-\contentsline {subsection}{\numberline {A.3.5}Griewank Function}{186}{subsection.A.3.5}
-\contentsline {subsection}{\numberline {A.3.6}Salomon Function}{186}{subsection.A.3.6}
-\contentsline {subsection}{\numberline {A.3.7}Ackley}{187}{subsection.A.3.7}
-\contentsline {subsection}{\numberline {A.3.8}Six-Hump Camel Back Function}{187}{subsection.A.3.8}
-\contentsline {subsection}{\numberline {A.3.9}Shubert Function}{188}{subsection.A.3.9}
-\contentsline {subsection}{\numberline {A.3.10}Himmelblau Function}{188}{subsection.A.3.10}
-\contentsline {subsection}{\numberline {A.3.11}Rosenbrock Valley Function}{189}{subsection.A.3.11}
-\contentsline {subsection}{\numberline {A.3.12}Dropwave Function}{189}{subsection.A.3.12}
-\contentsline {subsection}{\numberline {A.3.13}Easom Function}{190}{subsection.A.3.13}
-\contentsline {subsection}{\numberline {A.3.14}Branin Function}{190}{subsection.A.3.14}
-\contentsline {subsection}{\numberline {A.3.15}Michalewicz Function}{191}{subsection.A.3.15}
-\contentsline {subsection}{\numberline {A.3.16}Goldstein Function}{191}{subsection.A.3.16}
-\contentsline {chapter}{Appendices}{171}{section*.55}
-\contentsline {chapter}{Bibliography}{193}{section*.57}
+\contentsline {subsection}{\numberline {5.4.1}Introduction}{112}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Flow of the algorithm}{115}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}ABC algorithm characteristics}{117}{subsection.5.4.3}
+\contentsline {subsubsection}{Food Sources}{117}{section*.46}
+\contentsline {subsubsection}{Employed and Onlooker Bees}{118}{section*.47}
+\contentsline {subsubsection}{Scout bee}{119}{section*.48}
+\contentsline {subsection}{\numberline {5.4.4}ABC algorithm on the FAP}{120}{subsection.5.4.4}
+\contentsline {paragraph}{Food source representation}{120}{section*.49}
+\contentsline {paragraph}{Scout bee generation}{120}{section*.50}
+\contentsline {paragraph}{Knowledge sharing}{121}{section*.51}
+\contentsline {section}{\numberline {5.5}Particle Swarm Optimization (PSO)}{121}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Introduction}{121}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Flow of the algorithm}{125}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}PSO characteristics}{127}{subsection.5.5.3}
+\contentsline {subsubsection}{Swarm Size}{127}{section*.52}
+\contentsline {subsubsection}{Particle Velocity}{128}{section*.53}
+\contentsline {subsubsection}{Inertia Weight}{131}{section*.54}
+\contentsline {subsection}{\numberline {5.5.4}PSO on the FAP}{133}{subsection.5.5.4}
+\contentsline {section}{\numberline {5.6}Summary}{135}{section.5.6}
+\contentsline {part}{II\hspace {1em}Implementation}{137}{part.2}
+\contentsline {chapter}{\numberline {6}PSO on benchmark functions}{139}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{139}{section.6.1}
+\contentsline {section}{\numberline {6.2}Test Functions}{141}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}DeJong F1 Function}{142}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Shekel's Foxhole}{142}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Rastrigin}{143}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Schwefel}{143}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Griewank}{144}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Salomon}{144}{subsection.6.2.6}
+\contentsline {subsection}{\numberline {6.2.7}Ackley}{144}{subsection.6.2.7}
+\contentsline {subsection}{\numberline {6.2.8}Six-Hump Camel Back}{145}{subsection.6.2.8}
+\contentsline {subsection}{\numberline {6.2.9}Shubert}{145}{subsection.6.2.9}
+\contentsline {subsection}{\numberline {6.2.10}Himmelblau}{145}{subsection.6.2.10}
+\contentsline {subsection}{\numberline {6.2.11}Rosenbrock Valley}{146}{subsection.6.2.11}
+\contentsline {subsection}{\numberline {6.2.12}Dropwave}{146}{subsection.6.2.12}
+\contentsline {subsection}{\numberline {6.2.13}Easom}{146}{subsection.6.2.13}
+\contentsline {subsection}{\numberline {6.2.14}Branins}{147}{subsection.6.2.14}
+\contentsline {subsection}{\numberline {6.2.15}Michalewicz}{147}{subsection.6.2.15}
+\contentsline {subsection}{\numberline {6.2.16}Goldstein}{148}{subsection.6.2.16}
+\contentsline {section}{\numberline {6.3}Results}{148}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Iterations}{149}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Diversity}{150}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Accuracy}{151}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7}Applying the PSO to the FAP}{153}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{153}{section.7.1}
+\contentsline {section}{\numberline {7.2}A Position in the Frequency Planning domain}{155}{section.7.2}
+\contentsline {section}{\numberline {7.3}The Fitness Function}{158}{section.7.3}
+\contentsline {section}{\numberline {7.4}Velocity Function for Frequency Planning}{159}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Movement in the Frequency Planning domain}{160}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Keeping frequencies bounded}{166}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Using indices instead of frequencies}{169}{subsection.7.4.3}
+\contentsline {section}{\numberline {7.5}Building a Global Best}{175}{section.7.5}
+\contentsline {section}{\numberline {7.6}Keeping History}{180}{section.7.6}
+\contentsline {section}{\numberline {7.7}Summary}{184}{section.7.7}
+\contentsline {chapter}{\numberline {8}Results}{185}{chapter.8}
+\contentsline {section}{\numberline {8.1}Introduction}{185}{section.8.1}
+\contentsline {chapter}{\numberline {9}Conclusion}{187}{chapter.9}
+\contentsline {section}{\numberline {9.1}Introduction}{187}{section.9.1}
+\contentsline {chapter}{\numberline {A}Plotting functions in 3D}{191}{appendix.A}
+\contentsline {section}{\numberline {A.1}Introduction}{191}{section.A.1}
+\contentsline {section}{\numberline {A.2}Code}{191}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}DeJongF1 Code}{191}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Shekel's Foxhole Code}{192}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.3}Rastrigin Code}{193}{subsection.A.2.3}
+\contentsline {subsection}{\numberline {A.2.4}Schwefel Code}{194}{subsection.A.2.4}
+\contentsline {subsection}{\numberline {A.2.5}Griewank Code}{194}{subsection.A.2.5}
+\contentsline {subsection}{\numberline {A.2.6}Salomon Code}{195}{subsection.A.2.6}
+\contentsline {subsection}{\numberline {A.2.7}Ackley Code}{196}{subsection.A.2.7}
+\contentsline {subsection}{\numberline {A.2.8}Six-Hump Camel Back Code}{197}{subsection.A.2.8}
+\contentsline {subsection}{\numberline {A.2.9}Shubert Code}{197}{subsection.A.2.9}
+\contentsline {subsection}{\numberline {A.2.10}Himmelblau Code}{198}{subsection.A.2.10}
+\contentsline {subsection}{\numberline {A.2.11}Rosenbrock Valley Code}{199}{subsection.A.2.11}
+\contentsline {subsection}{\numberline {A.2.12}Dropwave Code}{199}{subsection.A.2.12}
+\contentsline {subsection}{\numberline {A.2.13}Easom Code}{200}{subsection.A.2.13}
+\contentsline {subsection}{\numberline {A.2.14}Branins Code}{201}{subsection.A.2.14}
+\contentsline {subsection}{\numberline {A.2.15}Michalewicz Code}{202}{subsection.A.2.15}
+\contentsline {subsection}{\numberline {A.2.16}Goldstein Code}{202}{subsection.A.2.16}
+\contentsline {section}{\numberline {A.3}Graphs}{203}{section.A.3}
+\contentsline {subsection}{\numberline {A.3.1}DeJong's First Function}{204}{subsection.A.3.1}
+\contentsline {subsection}{\numberline {A.3.2}Shekel's Foxhole Function}{204}{subsection.A.3.2}
+\contentsline {subsection}{\numberline {A.3.3}Rastrigin Function}{205}{subsection.A.3.3}
+\contentsline {subsection}{\numberline {A.3.4}Schwefel Function}{205}{subsection.A.3.4}
+\contentsline {subsection}{\numberline {A.3.5}Griewank Function}{206}{subsection.A.3.5}
+\contentsline {subsection}{\numberline {A.3.6}Salomon Function}{206}{subsection.A.3.6}
+\contentsline {subsection}{\numberline {A.3.7}Ackley}{207}{subsection.A.3.7}
+\contentsline {subsection}{\numberline {A.3.8}Six-Hump Camel Back Function}{207}{subsection.A.3.8}
+\contentsline {subsection}{\numberline {A.3.9}Shubert Function}{208}{subsection.A.3.9}
+\contentsline {subsection}{\numberline {A.3.10}Himmelblau Function}{208}{subsection.A.3.10}
+\contentsline {subsection}{\numberline {A.3.11}Rosenbrock Valley Function}{209}{subsection.A.3.11}
+\contentsline {subsection}{\numberline {A.3.12}Dropwave Function}{209}{subsection.A.3.12}
+\contentsline {subsection}{\numberline {A.3.13}Easom Function}{210}{subsection.A.3.13}
+\contentsline {subsection}{\numberline {A.3.14}Branin Function}{210}{subsection.A.3.14}
+\contentsline {subsection}{\numberline {A.3.15}Michalewicz Function}{211}{subsection.A.3.15}
+\contentsline {subsection}{\numberline {A.3.16}Goldstein Function}{211}{subsection.A.3.16}
+\contentsline {chapter}{Appendices}{191}{section*.55}
+\contentsline {chapter}{Bibliography}{213}{section*.57}

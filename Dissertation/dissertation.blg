@@ -16,48 +16,49 @@ Warning--I didn't find a database entry for "MobileWirelessCommunicationss"
 Warning--I didn't find a database entry for "AdreasPaper"
 Warning--I didn't find a database entry for "Karen200"
 Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "AntQAO"
 Warning--I didn't find a database entry for "http://www.it.lut.fi/ip/evo/functions/node12.html"
 Warning--there's a number but no volume in FAPInCell
 Warning--can't use both author and editor fields in IntroMathProgramming
-You've used 139 entries,
+You've used 147 entries,
             2118 wiz_defined-function locations,
-            1407 strings with 31145 characters,
-and the built_in function-call counts, 51360 in all, are:
-= -- 5186
-> -- 2074
-< -- 50
-+ -- 855
-- -- 674
-* -- 3563
-:= -- 8094
-add.period$ -- 436
-call.type$ -- 139
-change.case$ -- 743
+            1458 strings with 32949 characters,
+and the built_in function-call counts, 54726 in all, are:
+= -- 5530
+> -- 2202
+< -- 55
++ -- 909
+- -- 716
+* -- 3790
+:= -- 8597
+add.period$ -- 463
+call.type$ -- 147
+change.case$ -- 787
 chr.to.int$ -- 0
-cite$ -- 141
-duplicate$ -- 2045
-empty$ -- 4182
-format.name$ -- 674
-if$ -- 11128
+cite$ -- 149
+duplicate$ -- 2188
+empty$ -- 4458
+format.name$ -- 716
+if$ -- 11883
 int.to.chr$ -- 0
-int.to.str$ -- 139
-missing$ -- 146
-newline$ -- 698
-num.names$ -- 278
-pop$ -- 772
+int.to.str$ -- 147
+missing$ -- 155
+newline$ -- 739
+num.names$ -- 294
+pop$ -- 821
 preamble$ -- 1
-purify$ -- 615
+purify$ -- 652
 quote$ -- 0
-skip$ -- 1542
+skip$ -- 1659
 stack$ -- 0
-substring$ -- 3856
-swap$ -- 570
-text.length$ -- 50
+substring$ -- 4119
+swap$ -- 623
+text.length$ -- 55
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 522
+type$ -- 552
 warning$ -- 2
-while$ -- 484
-width$ -- 142
-write$ -- 1559
-(There were 7 warnings)
+while$ -- 513
+width$ -- 150
+write$ -- 1654
+(There were 8 warnings)

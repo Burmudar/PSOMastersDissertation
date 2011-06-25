@@ -47,6 +47,13 @@ I.~Badarudin, A.B.M. Sultan, M.N. Sulaiman, A.~Mamat, and M.T.M. Mohamed.
 \newblock In {\em Data Mining and Optimization, 2009. DMO '09. 2nd Conference
   on}, pages 28 --31, 27-28 2009.
 
+\bibitem{SAElectricPower}
+Hua Bai and Bo~Zhao.
+\newblock A survey on application of swarm intelligence computation to electric
+  power system.
+\newblock In {\em Intelligent Control and Automation, 2006. WCICA 2006. The
+  Sixth World Congress on}, volume~2, pages 7587 --7591, 0-0 2006.
+
 \bibitem{ABCImageEnhancement}
 T.R. Benala, S.D. Jampala, S.H. Villa, and B.~Konathala.
 \newblock A novel approach to image edge enhancement using artificial bee
@@ -102,6 +109,13 @@ Rachid Chelouah and Patrick Siarry.
 \newblock Tabu search applied to global optimization.
 \newblock {\em European Journal of Operational Research}, 123:256--270, 2000.
 
+\bibitem{ACOFlowShop}
+Ruey-Maw Chen, Shih-Tang Lo, Chung-Lun Wu, and Tsung-Hung Lin.
+\newblock An effective ant colony optimization-based algorithm for flow shop
+  scheduling.
+\newblock In {\em Soft Computing in Industrial Applications, 2008. SMCia '08.
+  IEEE Conference on}, pages 101 --106, june 2008.
+
 \bibitem{BeeJobShop}
 Chin~Soon Chong, Appa~Iyer Sivakumar, Malcolm Yoke~Hean Low, and Kheng~Leng
   Gay.
@@ -121,6 +135,15 @@ Agnieszka Debudaj-Grabysz and Zbigniew~J. Czech.
 \newblock In {\em PPAM'07: Proceedings of the 7th international conference on
   Parallel processing and applied mathematics}, pages 189--198, Berlin,
   Heidelberg, 2008. Springer-Verlag.
+
+\bibitem{SIOPDenby}
+B.~Denby and S.~Le HŽgarat-Mascle.
+\newblock Swarm intelligence in optimisation problems.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  502(2-3):364 -- 368, 2003.
+\newblock Proceedings of the VIII International Workshop on Advanced Computing
+  and Analysis Techniques in Physics Research.
 
 \bibitem{ACOSurvey}
 Marco Dorigo and Christian Blum.
@@ -223,6 +246,11 @@ Antonio G\'{o}mez-Iglesias, Miguel~A. Vega-Rodr\'{\i}guez, Francisco
   Parallel, Distributed and Network-based Processing}, pages 508--512,
   Washington, DC, USA, 2010. IEEE Computer Society.
 
+\bibitem{DataStructuresJava}
+Michael~T. Goodrich.
+\newblock {\em Data Structures and Algorithms in Java}.
+\newblock John Wiley \& Sons, 2005.
+
 \bibitem{TabuCarryOver}
 Mohan Gopalakrishnan, Ke~Ding, Jean-Marie Bourjolly, and Srimathy Mohan.
 \newblock A tabu-search heuristic for the capacitated lot-sizing problem with
@@ -265,6 +293,13 @@ Alan Herz, David Schindl, and Nicolas Zufferey.
   assignment problem with polarization constraints.
 \newblock {\em 4OR: A Quarterly Journal of Operations Research}, 3:139--161,
   2005.
+
+\bibitem{ACOSingleMachine}
+O.~Holthaus and C.~Rajendran.
+\newblock A fast ant-colony algorithm for single-machine scheduling to minimize
+  the sum of weighted tardiness of jobs.
+\newblock {\em The Journal of the Operational Research Society}, 56(8):pp.
+  947--953, 2005.
 
 \bibitem{FAPWeb}
 http://fap.zib.de/.
@@ -363,6 +398,12 @@ Sergio Ledesma, Miguel Torres, Donato Hern{{\'a}}ndez, Gabriel Avi{{\~n}}a, and
   learning.
 \newblock In {\em MICAI 2007: Advances in Artificial Intelligence}, pages
   161--171, 2007.
+
+\bibitem{WeaponTargetACO}
+Zne-Jung Lee, Chou-Yuan Lee, and Shun-Feng Su.
+\newblock An immunity-based ant colony optimization algorithm for solving
+  weapon-target assignment problem.
+\newblock {\em Applied Soft Computing}, 2(1):39 -- 47, 2002.
 
 \bibitem{PSOAttractRepulse}
 K.~Lenin and M.R. Mohan.
@@ -769,6 +810,13 @@ Roger~L. Wainwright.
   combinatorial optimization problems.
 \newblock {\em SIGICE Bull.}, 19(3):30--36, 1994.
 
+\bibitem{GangWangACO}
+Gang Wang, Wenrui Gong, Brian DeRenzi, and Ryan Kastner.
+\newblock Design space exploration using time and resource duality with the ant
+  colony optimization.
+\newblock In {\em Proceedings of the 43rd annual Design Automation Conference},
+  DAC '06, pages 451--454, New York, NY, USA, 2006. ACM.
+
 \bibitem{ParallelGASA}
 Z.~G. Wang, Y.~S. Wong, and M.~Rahman.
 \newblock Development of a parallel optimization method based on genetic
@@ -862,5 +910,12 @@ L.~Zhang, S.~Guo, Y.~Zhu, and A.~Lim.
   materials.
 \newblock In {\em SAC '05: Proceedings of the 2005 ACM symposium on Applied
   computing}, pages 940--946, New York, NY, USA, 2005. ACM.
+
+\bibitem{ACOImageThreshold}
+Xin Zhao, Myung-Eun Lee, and Soo-Hyung Kim.
+\newblock Improved image thresholding using ant colony optimization algorithm.
+\newblock In {\em Proceedings of the 2008 International Conference on Advanced
+  Language Processing and Web Information Technology}, pages 210--215,
+  Washington, DC, USA, 2008. IEEE Computer Society.
 
 \end{thebibliography}

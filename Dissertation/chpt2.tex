@@ -210,8 +210,9 @@ In this section a brief overview of the most critical interfaces used by all the
 \label{sec:interfacech}
 GSM defines a series of logical channels, which are used for communication over these interfaces. A distinction needs to be made between channels and frequencies. As discussed earlier, a network is licensed a certain section of the wireless spectrum for use for commercial communication. This piece of spectrum is referred to as bandwidth and is measured in Hz, therefore $W$ Hz, where $W$ denotes the allocated bandwidth\cite{FundamentalsWirelessCommunication}.
 
-This bandwidth W is then divided into N smaller chunks of bandwidth called narrowband chunks. Each N narrowband chunk is a channel and has a width of $W/N$ Hz\cite{FundamentalsWirelessCommunication}. This channel of $W/N$ Hz width is also referred to as a frequency.
-The terms channel and frequency can therefore be used interchangeably. In this dissertation the authors will use the term channel.
+This bandwidth W is then divided into N smaller chunks of bandwidth called narrowband chunks. Each N narrowband chunk is a channel and has a width of $W/N$ Hz\cite{FundamentalsWirelessCommunication}. This channel of $W/N$ Hz width is also referred to as a frequency.\label{def:channel}
+
+The terms channel and frequency can therefore be used interchangeably. In this dissertation the term channel will be used.
 
 Using TDMA the GSM system is able to provide additional transmission capacity by dividing the channel into eight equal time slots \cite{wirelesstelcoMullet}. 
 \begin{figure}[h]
