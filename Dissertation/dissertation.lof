@@ -1,0 +1,42 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces GSM Architecture}}{13}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Cells with BTS's}}{16}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Cell Sectorization}}{17}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces TDMA Frame and Logical channels \cite {wirelesstelcoMullet}}}{24}{figure.2.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Co-Channel interference}}{37}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Adjacent Channel interference}}{38}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Frequency Separation}}{39}{figure.3.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flow Chart for Tabu Search Algorithm}}{60}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flow Chart for Simulated Annealing Algorithm}}{72}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Flow Chart for Genetic Algorithm}}{82}{figure.4.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flow Chart for ACO Algorithm}}{101}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The Ant bridge experiment \cite {AntsAndStigmergy}}}{102}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Flow Chart for the BEE Algorithm}}{115}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Flow Chart for PSO Algorithm}}{126}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Visual particle velocity update \cite {SOSwarm,FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch}}}{133}{figure.5.5}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The Structure of a Frequency Plan}}{160}{figure.7.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces DeJong's First Function}}{218}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Shekel's Foxhole Function}}{218}{figure.A.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces The Function}}{219}{figure.A.3}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Schwefel Function}}{219}{figure.A.4}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Griewank Function}}{220}{figure.A.5}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Salomon Function}}{220}{figure.A.6}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Ackley Function}}{221}{figure.A.7}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Six-Hump Camel Back Function}}{221}{figure.A.8}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Shubert Function}}{222}{figure.A.9}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Himmelblau Function}}{222}{figure.A.10}
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Rosenbrock Valley Function}}{223}{figure.A.11}
+\contentsline {figure}{\numberline {A.12}{\ignorespaces Dropwave Function}}{223}{figure.A.12}
+\contentsline {figure}{\numberline {A.13}{\ignorespaces Easom Function}}{224}{figure.A.13}
+\contentsline {figure}{\numberline {A.14}{\ignorespaces Branin Function}}{224}{figure.A.14}
+\contentsline {figure}{\numberline {A.15}{\ignorespaces Michalewicz Function}}{225}{figure.A.15}
+\contentsline {figure}{\numberline {A.16}{\ignorespaces THe Goldstein Function}}{225}{figure.A.16}

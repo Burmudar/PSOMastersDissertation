@@ -1,0 +1,171 @@
+\BOOKMARK [0][-]{section*.3}{List of Figures}{}
+\BOOKMARK [0][-]{section*.6}{List of Tables}{}
+\BOOKMARK [-1][-]{part.1}{I Background}{}
+\BOOKMARK [0][-]{chapter.1}{Introduction}{part.1}
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Chapter breakdown}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.2.1}{Part I - Background}{section.1.2}
+\BOOKMARK [2][-]{subsection.1.2.2}{Part II - Implementation}{section.1.2}
+\BOOKMARK [0][-]{chapter.2}{Cellular Technology}{part.1}
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{GSM Networks}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{A Brief History of GSM Networks}{section.2.2}
+\BOOKMARK [1][-]{section.2.3}{Topology of a GSM Network}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.3.1}{Base Station Subsystem \(BSS\)}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.2}{Mobile Switching Centre \(MSC\)}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.3}{Network Databases}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.4}{GSM Network Management entities}{section.2.3}
+\BOOKMARK [1][-]{section.2.4}{GSM Interfaces}{chapter.2}
+\BOOKMARK [1][-]{section.2.5}{GSM Channels}{chapter.2}
+\BOOKMARK [1][-]{section.2.6}{Handover}{chapter.2}
+\BOOKMARK [1][-]{section.2.7}{Summary}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{The Frequency Assignment Problem}{part.1}
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{NP-Complete}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Frequency Assignment Types}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Fixed Frequency/Channel Assignment \(FFA/FCA\)}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Dynamic Frequency/Channel Assignment \(DFA/DCA\)}{section.3.3}
+\BOOKMARK [1][-]{section.3.4}{Interference}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{Frequency Assignment Problem types}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.5.1}{Minimum Order FAP}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.2}{Minimum Span FAP}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.3}{Minimum Interference FAP}{section.3.5}
+\BOOKMARK [1][-]{section.3.6}{Fixed Spectrum MI-FAP Mathematical Formulation}{chapter.3}
+\BOOKMARK [1][-]{section.3.7}{FAP Benchmarks}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.7.1}{Philedelphia Benchmark}{section.3.7}
+\BOOKMARK [2][-]{subsection.3.7.2}{CELAR}{section.3.7}
+\BOOKMARK [2][-]{subsection.3.7.3}{COST 256}{section.3.7}
+\BOOKMARK [1][-]{section.3.8}{FAP in the industry}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.8.1}{Satellite communication}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.2}{Wireless mesh networks and WLANs}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.3}{Military field communication}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.4}{Television and Radio Broadcasting}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.5}{Cellular Communication}{section.3.8}
+\BOOKMARK [1][-]{section.3.9}{Summary}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{Meta-heuristic Algorithms}{part.1}
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Characteristics of Meta-heuristics}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{Tabu Search}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{Introduction}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{Flow of the algorithm}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{Important Tabu Search characteristics}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.4}{Tabu Search on the FAP}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{Simulated Annealing}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Introduction}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Flow of the algorithm}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.3}{Important Simulated Annealing characteristics}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.4}{Simulated Annealing on the FAP}{section.4.4}
+\BOOKMARK [1][-]{section.4.5}{Genetic Algorithm}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.5.1}{Introduction}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.2}{Flow of the algorithm}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.3}{Important Genetic Algorithm characteristics}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.4}{Genetic Algorithm on the FAP}{section.4.5}
+\BOOKMARK [1][-]{section.4.6}{Summary}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{Swarm Intelligence}{part.1}
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{Stigmergy}{chapter.5}
+\BOOKMARK [1][-]{section.5.3}{Ant Colony Optimization \(ACO\)}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.3.1}{Introduction}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.2}{Flow of the algorithm}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.3}{ACO characteristics}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.4}{ACO on the FAP}{section.5.3}
+\BOOKMARK [1][-]{section.5.4}{Artificial Bee Colony Algorithm}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.4.1}{Introduction}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.2}{Flow of the algorithm}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.3}{ABC algorithm characteristics}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.4}{ABC algorithm on the FAP}{section.5.4}
+\BOOKMARK [1][-]{section.5.5}{Particle Swarm Optimization \(PSO\)}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.5.1}{Introduction}{section.5.5}
+\BOOKMARK [2][-]{subsection.5.5.2}{Flow of the algorithm}{section.5.5}
+\BOOKMARK [2][-]{subsection.5.5.3}{PSO characteristics}{section.5.5}
+\BOOKMARK [2][-]{subsection.5.5.4}{PSO on the FAP}{section.5.5}
+\BOOKMARK [1][-]{section.5.6}{Summary}{chapter.5}
+\BOOKMARK [-1][-]{part.2}{II Implementation}{}
+\BOOKMARK [0][-]{chapter.6}{PSO on benchmark functions}{part.2}
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Test Functions}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.2.1}{DeJong F1 Function}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.2}{Shekel's Foxhole}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.3}{Rastrigin}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.4}{Schwefel}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.5}{Griewank}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.6}{Salomon}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.7}{Ackley}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.8}{Six-Hump Camel Back}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.9}{Shubert}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.10}{Himmelblau}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.11}{Rosenbrock Valley}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.12}{Dropwave}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.13}{Easom}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.14}{Branins}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.15}{Michalewicz}{section.6.2}
+\BOOKMARK [2][-]{subsection.6.2.16}{Goldstein}{section.6.2}
+\BOOKMARK [1][-]{section.6.3}{Results}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.3.1}{Fina values}{section.6.3}
+\BOOKMARK [2][-]{subsection.6.3.2}{Diversity}{section.6.3}
+\BOOKMARK [2][-]{subsection.6.3.3}{Accuracy}{section.6.3}
+\BOOKMARK [0][-]{chapter.7}{Applying the PSO to the FAP}{part.2}
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}
+\BOOKMARK [1][-]{section.7.2}{A Position in the Frequency Planning domain}{chapter.7}
+\BOOKMARK [1][-]{section.7.3}{The Fitness Function}{chapter.7}
+\BOOKMARK [1][-]{section.7.4}{Velocity Function for Frequency Planning}{chapter.7}
+\BOOKMARK [2][-]{subsection.7.4.1}{Movement in the Frequency Planning domain}{section.7.4}
+\BOOKMARK [2][-]{subsection.7.4.2}{Keeping frequencies bounded}{section.7.4}
+\BOOKMARK [2][-]{subsection.7.4.3}{Using indices instead of frequencies}{section.7.4}
+\BOOKMARK [1][-]{section.7.5}{Building a Global Best}{chapter.7}
+\BOOKMARK [1][-]{section.7.6}{Keeping History}{chapter.7}
+\BOOKMARK [1][-]{section.7.7}{Summary}{chapter.7}
+\BOOKMARK [0][-]{chapter.8}{Results}{part.2}
+\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}
+\BOOKMARK [1][-]{section.8.2}{PSO Cost259 Siemens Results}{chapter.8}
+\BOOKMARK [2][-]{subsection.8.2.1}{Siemens 1}{section.8.2}
+\BOOKMARK [2][-]{subsection.8.2.2}{Siemens 2}{section.8.2}
+\BOOKMARK [2][-]{subsection.8.2.3}{Siemens 3}{section.8.2}
+\BOOKMARK [2][-]{subsection.8.2.4}{Siemens 4}{section.8.2}
+\BOOKMARK [1][-]{section.8.3}{The performance of the PSO}{chapter.8}
+\BOOKMARK [2][-]{subsection.8.3.1}{Velocity method 1 vs method 2}{section.8.3}
+\BOOKMARK [2][-]{subsection.8.3.2}{Different global schemes}{section.8.3}
+\BOOKMARK [2][-]{subsection.8.3.3}{Population size}{section.8.3}
+\BOOKMARK [1][-]{section.8.4}{Summary}{chapter.8}
+\BOOKMARK [0][-]{chapter.9}{Conclusion}{part.2}
+\BOOKMARK [1][-]{section.9.1}{Introduction}{chapter.9}
+\BOOKMARK [2][-]{subsection.9.1.1}{The conclusion}{section.9.1}
+\BOOKMARK [1][-]{section.9.2}{Future work}{chapter.9}
+\BOOKMARK [0][-]{section*.64}{Appendices}{part.2}
+\BOOKMARK [0][-]{appendix.A}{Plotting functions in 3D}{part.2}
+\BOOKMARK [1][-]{section.A.1}{Introduction}{appendix.A}
+\BOOKMARK [1][-]{section.A.2}{Code}{appendix.A}
+\BOOKMARK [2][-]{subsection.A.2.1}{DeJongF1 Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.2}{Shekel's Foxhole Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.3}{Rastrigin Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.4}{Schwefel Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.5}{Griewank Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.6}{Salomon Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.7}{Ackley Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.8}{Six-Hump Camel Back Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.9}{Shubert Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.10}{Himmelblau Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.11}{Rosenbrock Valley Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.12}{Dropwave Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.13}{Easom Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.14}{Branins Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.15}{Michalewicz Code}{section.A.2}
+\BOOKMARK [2][-]{subsection.A.2.16}{Goldstein Code}{section.A.2}
+\BOOKMARK [1][-]{section.A.3}{Graphs}{appendix.A}
+\BOOKMARK [2][-]{subsection.A.3.1}{DeJong's First Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.2}{Shekel's Foxhole Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.3}{Rastrigin Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.4}{Schwefel Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.5}{Griewank Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.6}{Salomon Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.7}{Ackley}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.8}{Six-Hump Camel Back Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.9}{Shubert Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.10}{Himmelblau Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.11}{Rosenbrock Valley Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.12}{Dropwave Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.13}{Easom Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.14}{Branin Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.15}{Michalewicz Function}{section.A.3}
+\BOOKMARK [2][-]{subsection.A.3.16}{Goldstein Function}{section.A.3}
+\BOOKMARK [0][-]{section*.66}{Bibliography}{part.2}
