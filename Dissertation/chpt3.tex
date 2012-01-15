@@ -1,9 +1,9 @@
 \chapter{The Frequency Assignment Problem}
 \label{chpt:fap}
 \section{Introduction}
-The Frequency Assignment Problem (FAP)\footnote{Also known as Automatic Frequency Planning (AFP) or Channel Assignment Problem (CAP)\cite{ACOvsEA}} is a generalisation of the graph-colouring problem and is subsequently an NP-Complete problem\cite{FAPRAMColouring}. The FAP is a NP-Complete problem due to fact that one only has a finite amount of frequencies which can be assigned to antennae/transceivers (TRX's), where the amount of transceivers to be assigned frequencies greatly out weigh the amount of available frequencies\cite{FAPRAMColouring}.
+The Frequency Assignment Problem (FAP)\footnote{Also known as Automatic Frequency Planning (AFP) or Channel Assignment Problem (CAP)\cite{ACOvsEA}} is a generalisation of the graph-colouring problem and is subsequently an NP-Complete problem\cite{FAPRAMColouring}. The FAP is a NP-Complete problem due to fact that one only has a finite amount of frequencies which can be assigned to antennae/transceivers (TRX's), where the amount of transceivers to be assigned frequencies greatly out weighs the amount of available frequencies\cite{FAPRAMColouring}. A more thorough definition of what it means for a problem to be NP-Complete will be presented in section~\ref{sec:NPComplete}.
 
-In wireless communication a big concern is a notion known as interference which will be discussed in detail in section \ref{sec:Interference}. Essentially for the FAP the primary concern is to develop an approximate plan on assigning frequencies in such a way that interference is kept to a minimum. 
+In wireless communication a huge concern is a notion known as interference which occurs when frequencies used for communication are close to each other in the frequency spectrum\cite{Karen2004}. Interference and its effects will be discussed in detail in section \ref{sec:Interference}. Essentially for the FAP the primary concern is to develop an approximate plan on assigning frequencies in such a way that interference is kept to a minimum. 
 
 Using exact algorithms to find a solution is not practical since the time to find a solution will be polynomial. Generally Meta heuristic algorithms are used to find optimal solutions to NP-Complete problems\cite{ACOvsEA}. We will discuss Meta heuristic algorithms that are generally used to find solutions for NP-Complete problems in Chapter 4. A definition on what it means for a problem to be NP-Complete will be given in section \ref{sec:NPComplete}. 
 
@@ -11,17 +11,18 @@ A wireless cellular operator is not allowed to just operate on any frequency. A 
 
 Usually a licensed piece of spectrum contains a series of consecutive frequencies as well as gaps. Where the gap frequencies are barred from being used by any device within the network. These frequencies are barred from use as they may have been allocated already to another operator for use \cite{FAPInCell}. By barring frequencies, a scenario is avoided where the different networks equipment interfere with their respective operations \cite{FAPInCell}
 
-Due to the whole spectrum not being available to network operators and only a subset is for commercial communication as per the frequencies allocated to them, networks opt to reuse their frequencies\cite{FAPInCell}. The networks do this to maximise the use of their allocated frequencies and to minimise their licensing fees, since if the network needs more frequencies, it needs to be licensed\cite{FAPRAMColouring}.
+Due to the whole spectrum not being available to network operators and only a subset is available for commercial communication as per the frequencies allocated to them, networks opt to reuse their frequencies\cite{FAPInCell}. The networks do this to maximise the use of their allocated frequencies and to minimise their licensing fees, since if the network needs more frequencies, it needs to be licensed\cite{FAPRAMColouring}.
 
-It is not always possible for simply allocate more frequencies to a network even if the network pays the associated fees. The whole commercial spectrum could have already have been licensed to various different entities. Hence, licensed frequencies are a very valuable and scarce commodity \cite{FAPRAMColouring,FAPInCell,Eisenblatter,Karen2004}.
+It is not always possible to simply allocate more frequencies to a network even if the network pays the associated fees. The whole commercial spectrum could have already have been licensed to various different entities. Hence, licensed frequencies are a very valuable and scarce commodity \cite{FAPRAMColouring,FAPInCell,Eisenblatter,Karen2004}.
 
-As will be discussed in section \ref{sec:interference} when frequencies start getting reused the probability that interference will occur on the communication link increases. Interference is a very important factor for networks to consider and keep to a minimum as it influences the quality of the communication occurring on the network.
+As will be discussed in section \ref{sec:Interference} when frequencies start getting reused the probability that interference will occur on the communication link increases. Interference is a very important factor for networks to consider and keep to a minimum as it influences the quality of the communication occurring on the network.
 
 
-In this section we gave a brief introduction as to what the Frequency Assignment Problem is and why it occurs as well as why it is a problem. In the next section an overview of what it means when a problem is NP-Complete will be presented.
+In this section a brief introduction as to what the Frequency Assignment Problem is was discussed. A reason was given for why the problem occurs as well as why it is a problem. In the next section an overview of what it means when a problem is NP-Complete will be presented.
+
 \section{NP-Complete}
 \label{sec:NPComplete}
-The term NP stems from the field known as complexity analyses. Algorithms are typically measured for their worst running time using On notation. The field of complexity analyses is more interested in measuring complexity of a problem than the running time of an algorithm\cite{AIModernApproach}.
+The term NP stems from the field known as complexity analyses. Algorithms are typically measured for their worst running time using $O(n)$ notation. The field of complexity analyses is more interested in measuring complexity of a problem than the running time of an algorithm\cite{AIModernApproach}.
 
 The field of complexity analyses makes a keen distinction between problems that can be solved by algorithms in polynomial time and problems that cannot be solved in polynomial time using any available algorithm\cite{AIModernApproach}. Polynomial time refers to a timespan that is reasonably feasible like for instance 8 hours or 1 day.
 
@@ -36,6 +37,7 @@ There is another range of NP problems that are a subset of NP problems, which ar
 The Frequency Assignment Problem (FAP) is one such problem, which has been proven to be within this difficult class of problems known as NP-Complete \cite{MontemanniThesis,Eisenblatter,Karen2004,AndreasPaper,FixedFAPPSO}.
 
 In this section a discussion was given on NP and NP-Complete problems. A definition was given on what it means for a problem to be classified as being in the NP range of problems. In the next section a discussion will be presented on the two different frequency allocation schemes that exist within the FAP problem domain.
+
 \section{Frequency Assignment Types}
 \label{sec:FreqAssignmentTypes}
 In this section a discussion will be presented on the different methods that exist to allocate frequencies to cells in a cellular network. Furthermore the method that relates to the specific FAP variant this dissertation is concentrated on will be stated and discussed.
@@ -52,7 +54,7 @@ A discussion on each of the above assignment schemes will be presented in the fo
 \subsection{Fixed Frequency/Channel Assignment (FFA/FCA)}
 Fixed Frequency/Channel Assignment (FFA/FCA) is the process of permanently assigning frequencies to cells (cellular towers). The frequencies assigned are fixed and cannot be changed immediately changed while the network is active , since the frequencies assigned to the cell form part of a delicate frequency plan designed to keep interference on communication links to a minimum \cite{PrinciplesMobileCommunication}. 
 
-If a channel assigned to a specific cell is suddenly changed, the cell might start interfering with neighbouring cells communication links. Hence, if the cell is sectored\footnote{link to discussion of sectorization of cells in chapter 2}, the cell can interfere with a minimum of three and up to a maximum of six neighbouring cells\cite{PrinciplesMobileCommunication}.
+When the channel used by a particular cell for communication is suddenly changed, the cell might start interfering with neighbouring cells communication links, if the assigned channels of the the neighbouring cells are close to each other on the frequency spectrum. Hence, if the cell is sectored\footnote{Sectorization of cells is discussed in chapter 2, section \ref{def:cellsector}}, the cell can interfere with a minimum of three and up to a maximum of six neighbouring cells\cite{PrinciplesMobileCommunication}.
 
 When a FCA plan is created, cells are assigned frequencies based on the estimated traffic that cell will be expected to handle during peak network usage. FCA is ideally suited for macro cellular networks since the nature of the traffic encountered in such networks has the characteristic of being homogeneous, stationary and predictable \cite{PrinciplesMobileCommunication}. Cellular networks can be classified as being in the macro cellular group of wireless networks.
 
@@ -60,21 +62,21 @@ With FCA networks are able to permanently allocate a certain subset of frequenci
 
 In situations where the nature of the traffic is neither homogeneous nor stationary using the FCA allocation scheme is not feasible as its use of available frequencies is grossly inefficient \cite{PrinciplesMobileCommunication}. With FCA, if there is a new call or hand off in a cell where all the permanently assigned frequencies are in use, the call will be blocked, even if adjacent cells have available frequencies, which can be used to handle the call\cite{PrinciplesMobileCommunication}.
 
-In this sub section we described what FCA is, in which networks it is typically used and also outlined where its use is not feasible. In the next sub section an overview of the DCA allocation scheme will be presented.
+In this sub section a description of what FCA is, in which networks it is typically used and also an outlined was presented as to  where its use is not feasible. In the next sub section an overview of the DCA allocation scheme will be presented.
 \subsection{Dynamic Frequency/Channel Assignment (DFA/DCA)}
 Dynamic Frequency/Channel Assignment (DFA/DCA) is a channel allocation scheme where frequencies assigned to cells are not permanent but rather assigned to cells as the need arises\cite{PrinciplesMobileCommunication}. Therefore all the frequencies licenses by a particular network, is available to each and every cell to establish a communication link as long as the channel does not violate the co-channel reuse constraint \cite{PrinciplesMobileCommunication}. 
 
 The co-channel reuse constraint must be adhered to otherwise; the amount of interference occurring on the communication link will be too much. This constraint forms part of the electromagnetic constraints, which is described in section \ref{sec:Interference}
 
-The DCA allocation scheme is ideally suited for micro cellular wireless networks since the traffic on these networks have the characteristic of being immensely unpredictable as traffic demand varies constantly\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunicationss}.
+The DCA allocation scheme is ideally suited for micro cellular wireless networks since the traffic on these networks have the characteristic of being immensely unpredictable as traffic demand varies constantly\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunications}.
 
-As the name dictates, micro cellular wireless networks have much smaller cell sizes than macro cellular networks. Thus a cell in a micro cellular network must handle a lot more hand off traffic than a cell in a macro cellular network, since a MS with an active connection is much more likely to move out of the coverage area of a micro cell than a macro cell \cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunicationss}.
+As the name dictates, micro cellular wireless networks have much smaller cell sizes than macro cellular networks. Thus a cell in a micro cellular network must handle a lot more hand off traffic than a cell in a macro cellular network, since a MS with an active connection is much more likely to move out of the coverage area of a micro cell than a macro cell \cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunications}.
 
-Since a micro cellular network has increased hand off traffic compared to a macro cellular network, a DCA scheme must be fast with the allocation of frequencies to requesting cells that must handle the hand offs\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunicationss}.
+Since a micro cellular network has increased hand off traffic compared to a macro cellular network, a DCA scheme must be fast with the allocation of frequencies to requesting cells that must handle the hand offs\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunications}.
 
-DCA is much more efficient than FCA when the amount of mobile traffic on the network is relatively low. On the other hand, when the network is under heavy mobile traffic load, the FCA scheme outperforms the DCA scheme, since the DCA usually allocates frequencies to cells in an inefficient arrangement that might the amount of interference encountered on the network\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunicationss}.
+DCA is much more efficient than FCA when the amount of mobile traffic on the network is relatively low. On the other hand, when the network is under heavy mobile traffic load, the FCA scheme outperforms the DCA scheme, since the DCA usually allocates frequencies to cells in an inefficient arrangement that might the amount of interference encountered on the network\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunications}.
 
-Finally DCA has the inherent requirement that it requires a great deal more computational power that FCA, since the frequencies need to be selected and allocated with great speed otherwise the cell requesting a channel won't be able to handle the call and therefore block the call or drop the call\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunicationss}.
+Finally DCA has the inherent requirement that it requires a great deal more computational power that FCA, since the frequencies need to be selected and allocated with great speed otherwise the cell requesting a channel won't be able to handle the call and therefore block the call or drop the call\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunications}.
 
 Most researchers have concentrated on solving the FFA using heuristic approaches like neural networks, local search techniques and more recently meta heuristic approaches which include genetic algorithms, simulated annealing, ant colony optimisation and particle swarm optimisation.
 
@@ -82,7 +84,7 @@ In this sub section an overview of the DCA allocation scheme was presented. An o
 
 \section{Interference}
 \label{sec:Interference}
-This section discussion will focus on Interference. A description will be given of what interference is and why it is important for cellular networks as well as an overview will be given of when interference occurs.
+The discussion in this section will focus on Interference. A description will be given of what interference is and why it is important for cellular networks. An overview will also be given of when interference occurs.
 
 Interference can be defined as any unwanted signal that is received along with a signal of interest. The unwanted signal is said to \emph{interfere} with the original signal and as a consequence degrades the original signal quality with unwanted information\cite{WirelessDigitalCommunications}.
 
@@ -102,9 +104,9 @@ Interference usually occurs when two or more entities communicate independently 
 	\caption{Adjacent Channel interference}
 	\end{centering}
 \end{figure}
-Interference that occurs when two signals operate on the same channel can bee seen in figure \ref{fig:sameinterference} and interference that occurs as a consequence of two signals operating on adjacent frequencies can be seen in figure \ref{fig:adjacentinterference}.
+Interference that occurs when two signals operate on the same channel can be seen in figure \ref{fig:sameinterference} and interference that occurs as a consequence of two signals operating on adjacent frequencies can be seen in figure \ref{fig:adjacentinterference}.
 
-The impact interference will have on entity, that has established a connection and that operates on the same channel or adjacent channel as another entity, decreases as the geographic distance between them increases\cite{WirelessCommunications,WirelessDigitalCommunications,Eisenblatter,InterferenceOrientatedFAP}. Therefore, to minimise the impact interference will have on communication links a \emph{separation} is defined\cite{WirelessCommunications,WirelessDigitalCommunications,Eisenblatter,InterferenceOrientatedFAP}. More specifically this separation is known as the channel reuse or frequency reuse distance within wireless networks\cite{WirelessCommunications,WirelessDigitalCommunications,Eisenblatter,InterferenceOrientatedFAP}.
+The impact interference will have on an entity, that has established a connection and that operates on the same channel or adjacent channel as another entity, decreases as the geographic distance between them increases\cite{WirelessCommunications,WirelessDigitalCommunications,Eisenblatter,InterferenceOrientatedFAP}. Therefore, to minimise the impact interference will have on communication links a \emph{separation} is defined\cite{WirelessCommunications,WirelessDigitalCommunications,Eisenblatter,InterferenceOrientatedFAP}. More specifically this separation is known as the channel reuse or frequency reuse distance within wireless networks\cite{WirelessCommunications,WirelessDigitalCommunications,Eisenblatter,InterferenceOrientatedFAP}.
 
 \begin{figure}[t!]
 	\begin{centering}
@@ -120,7 +122,7 @@ The separation can be visually depicted as in figure \ref{fig:seperationgraph} w
 
 As discussed earlier, cellular networks are forced to reuse their licensed frequencies multiples times to keep cost to a minimum. Therefore, the design of a cellular network is limited to the defined separation distance between cells as it defines the size cells will be in the network. Smaller cells can lead to a larger separation distance compared to when cells are larger\cite{WirelessCommunications,WirelessDigitalCommunications,Eisenblatter,InterferenceOrientatedFAP}.
 
-Cellular networks use the amount of interference on their networks as qualitative measure for their QoS. A network with high interference would experience a lot of dropped connections/calls, which occurs when the interference is too high to sustain a connection or call for communication; consequently their QoS degrades as interference increases\cite{WirelessCommunications,WirelessDigitalCommunications}.
+Cellular networks use the amount of interference on their networks as qualitative measure for their Quality of Service (QoS). A network with high interference would experience a lot of dropped connections/calls, which occurs when the interference is too high to sustain a connection or call for communication; consequently their QoS degrades as interference increases\cite{WirelessCommunications,WirelessDigitalCommunications}.
 
 Even though interference can cause a call or connection to be lost i.e. dropped, there are other situations where a call can be dropped due to other factors. For instance, a call can be dropped when a handover procedure occurs between two cells and the one cell receiving the call is at full utilization of its allocated frequencies\cite{GSMSysEngin,WirelessCommunications,WirelessDigitalCommunications}.
 
@@ -131,7 +133,7 @@ The SIR equation is actually based on the signal-to-interference-plus-noise powe
 A formulation of the SINR and SIR will now be presented.
 
 \begin{align}s 
-	SINR &= \frac{P_r}{N_0B + P_I}\\
+	SINR &= \frac{P_r}{N_0 + P_I}\\
 	SIR &= \frac{P_r}{P_I}
 \end{align}
 Where $P_r$ is the power of the received signal and $P_I$ is the power associated with interference from within a cell (intra cell interference) and interference from outside a cell (inter cell interference)\cite{WirelessCommunications}.
@@ -154,9 +156,9 @@ Primarily Interference occurs when the Electromagnetic constraints are violated,
 
 The electromagnetic constraints defined above are applicable in any wireless network. With regard to mobile telecommunication networks, such as cellular networks, there are additional constraints that are imposed due to technological requirements, availability, location and size of area with unacceptable interference \cite{Karen2004,Eisenblatter,AndreasPaper}. These constraints are defined as the following:
 \begin{description}
-\item[Co-Site] --- If cell \emph{i} and cell {j} are located at the same site, then their allocated channel ranges must differ by a certain distance in the frequency domain. This distance is known as the reuse distance \cite{FixedFAPPSO,EgyptFAPPSO,Karen2004,AdreasPaper}. Where cell {i} and cell{j} serve different sectors.
-\item[Co-Cell] --- Channels used on the same antennae of a cell must differ by a certain number which is typically set to 3 but can be any number larger than 0 the network operator deems necessary to avoid unwanted interference\cite{Karen200,Eisenblatter,AndreasPaper}.
-\item[Handover] --- This constraint imposes that frequencies must differ by a predefined margin i.e. 2 or 3 when one cell hands over a call to another cell. If this constraint is violated a mobile subscriber will experience a dropped call since the handover between cells fails\cite{Karen200,Eisenblatter,AndreasPaper}.
+\item[Co-Site] --- If cell \emph{i} and cell {j} are located at the same site, then their allocated channel ranges must differ by a certain distance in the frequency domain. This distance is known as the reuse distance \cite{FixedFAPPSO,EgyptFAPPSO,Karen2004,AndreasPaper}. Where cell {i} and cell{j} serve different sectors. In the benchmarks which are discussed in section~\ref{sec:FAPBenchmarks} this distance is also referred to as the \emph{seperation variable}. 
+\item[Co-Cell] --- Channels used on the same antennae of a cell must differ by a certain number which is typically set to 3 but can be any number larger than 0 the network operator deems necessary to avoid unwanted interference\cite{Karen2004,Eisenblatter,AndreasPaper}.
+\item[Handover] --- This constraint imposes that frequencies must differ by a predefined margin i.e. 2 or 3 when one cell hands over a call to another cell. If this constraint is violated a mobile subscriber will experience a dropped call since the handover between cells fails\cite{Karen2004,Eisenblatter,AndreasPaper}.
 \end{description}
 
 Within the licenses of wireless networks there are two hard-constraints set forth which forbid networks from using certain frequencies. Where hard-constraints means that under no circumstance are these constraints allowed to be violated.
@@ -165,42 +167,42 @@ The first set of hard-constraint frequencies are known as \emph{Globally blocked
 
 The second set of hard-constraint frequencies are known as \emph{Locally blocked channels}. These channels are only not allowed at certain geographic areas but are free for use at any other area\cite{Eisenblatter,Karen2004,InterferenceOrientatedFAP}. A typical area where certain frequencies will be forbidden to be used is near a country border\cite{Eisenblatter,Karen2004,InterferenceOrientatedFAP}. The locally blocked frequencies are most likely in use by another network resident to the bordered country.
 
-In this section we described what interference is and what the consequences are of too much interference in a network. We also laid out under which circumstances interference can occur in a wireless network. In the next section and overview will be given the various different sub problems that exist in the FAP problem domain.
+In this section a description of what interference is and what the consequences are of too much interference occurs in a network was presented. This section further elaborated under which circumstances interference can occur in a wireless network. In the next section and overview will be given the various different sub problems that exist in the FAP problem domain.
 
 \section{Frequency Assignment Problem types}
 \label{sec:FAPVariants}
 In this section a brief discussion will be presented on each of the various problem variants that exist for the FAP. The discussion will start on one of the first and oldest problems in the FAP problem domain. This section will conclude with a final discussion on the particular variant of FAP that this dissertation will concentrate on.
 \subsection{Minimum Order FAP}
-The Minimum Order FAP (MO-FAP) was the first FAP that emerged in the 70's. The MO-FAP is concerned with assigning frequencies to transmitters while interference is minimized as well as minimizing the amount of different frequencies that are used. 
+The Minimum Order FAP (MO-FAP) was the first FAP that emerged in the 70's. The MO-FAP is concerned with assigning frequencies to transmitters while interference is minimized as well as minimizing the amount of different frequencies that are used\cite{Karen2004,MontemanniThesis}. 
 
 In MO-FAP channel re-use is prioritised and the usage of a channel has a certain cost associated with it. The reason for this is because when the wireless network industry started out, operator's were billed according to the amount of different frequencies they used. In the beginning frequencies weren't cheap since they were sold per unit \cite{Karen2004,MontemanniThesis}. 
 
-Over the years as the law governing the wireless spectrum changed and new technology as well standards emerged, thus MO-FAP has lost its relevancy. Companies aren't billed according to the different frequencies they use, but they purchase licenses from a regulatory body. This license usually stipulates what channel band the network is allowed to use.
+Over the years as the law governing the wireless spectrum changed and new technology as well standards emerged, thus MO-FAP has lost its relevancy\cite{Karen2004,MontemanniThesis}. Companies aren't billed according to the different frequencies they use, but they purchase licenses from a regulatory body\cite{Karen2004,MontemanniThesis}. This license usually stipulates what channel band the network is allowed to use.
 
-In some instances a certain band of frequencies is put up for auction by a regulatory body, to which interested parties can bid to own the specified spectrum. Due to the shift in how frequencies are allocated to network, neither the regulatory bodies nor the network operators care about the amount of different frequencies are used. Thus MO-FAP has lost its relevancy in the modern wireless industry.
+In some instances a certain band of frequencies is put up for auction by a regulatory body, to which interested parties can bid to own the specified spectrum\cite{Karen2004,MontemanniThesis}. Due to the shift in how frequencies are allocated to network, neither the regulatory bodies nor the network operators care about the amount of different frequencies are used\cite{Karen2004,MontemanniThesis}. Thus MO-FAP has lost its relevancy in the modern wireless industry.
 \subsection{Minimum Span FAP}
-The Minimum Span FAP (MS-FAP) is a problem that is very relevant today, especially when network operators want to deploy a new network in a region. The MS-FAP is concerned with keeping the interference below a certain level during assignment as well as minimizing the span. The interference threshold used is specified by the network designer as the minimum allowable interference on the network.
+The Minimum Span FAP (MS-FAP) is a problem that is very relevant today, especially when network operators want to deploy a new network in a region\cite{Karen2004}. The MS-FAP is concerned with keeping the interference below a certain level during assignment as well as minimizing the span. The interference threshold used is specified by the network designer as the minimum allowable interference on the network\cite{Karen2004,MontemanniThesis,MSFAP}.
 
-The span is defined as an interval on the frequency domain. This interval is calculated by taking the difference of the maximum and minimum frequencies used during assignment. With the span value, network operators are able to request certain frequency bands and know their network will be able to operate at suitable interference levels \cite{Karen2004,MontemanniThesis,MSFAP}.
+The span is defined as an interval on the frequency domain. This interval is calculated by taking the difference of the maximum and minimum frequencies used during assignment\cite{Karen2004,MontemanniThesis,MSFAP}. With the span value, network operators are able to request certain frequency bands and know their network will be able to operate at suitable interference levels \cite{Karen2004,MontemanniThesis,MSFAP}.
 
 The MS-FAP and MO-FAP are two very similar problems, the only difference is that MO-FAP focuses on minimizing different frequencies and MS-FAP focuses on minimizing the interval of frequencies used during assignment \cite{Karen2004}. The Philadelphia benchmark is usually used to gauge how good the algorithm performs.
 \subsection{Minimum Interference FAP}
 The Minimum Interference FAP (MI-FAP) or Fixed Spectrum FAP (FS-FAP) is typically encountered after the network operator has obtained a frequency band from a regulatory body. Other problems use matrices to forbid certain frequencies from being with certain transmitter \cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}. 
 
-Unlike previous discussed problems, in MI-FAP any available channel in the allocated band may be used even though it produces interference. The other problems are concerned with the frequencies used, even though they might be violating some constraints that incur a huge amount of interference. The interference value doesn't play a large role in their respective objective functions. In MI-FAP the objective is to minimize the total amount of interference on the network. It is important to note that this amount of interference might not necessarily be zero \cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}.
+Unlike previous discussed problems, in MI-FAP any available channel in the allocated band may be used even though it produces interference. The other problems are concerned with the frequencies used, even though they might be violating some constraints that incur a huge amount of interference\cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}. The interference value doesn't play a large role in their respective objective functions\cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}. In MI-FAP the objective is to minimize the total amount of interference on the network. It is important to note that this amount of interference might not necessarily be zero \cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}.
 
 The MI-FAP is the most encountered problem currently in cellular networks, since there is more operating networks than new networks being designed in the cellular industry today. This particular problem for form the focus for this dissertation. 
 
 Since MI-FAP is very close to real world instance problems, authors tend to use real world instances or benchmarks that resemble real world instance to test the quality and efficiency of their algorithms \cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}. We'll benchmark the quality and efficiency of our solution with the COST 259 benchmark which is discussed in section \ref{sec:FAPBenchmarks}.
 
-In this section we laid out the different types of Frequency Assignment Problems there are in the literature. We also gave a brief discussion on some of the literature found on the individual problems. Finally we formally stated on which one of the frequency assignment problems we will be concentrating on, namely the Fixed Spectrum Minimum Interference Frequency Assignment Problem (MI-FAP). 
+In this section the different Frequency Assignments Problems that exist in the literate were laid out. For each FAP problem presented a brief discussion was presented about the literature that exists for that particular problem. Finally in this section the problem variant this dissertation will focus on was formally stated, namely the Fixed Spectrum Minimum Interference Frequency Assignment Problem (MI-FAP). 
 
-In the next section we will give a Mathematical definition for the Fixed Spectrum MI-FAP that will form the bases for the objective/cost function that we are going to minimize to find an optimal frequency plan.
+In the following section a formal mathematical definition for the Fixed Spectrum MI-FAP will be presented. The definition is important as it will form the base for the objective/cost function that the algorithm presented in this dissertation will use.
 \section{Fixed Spectrum MI-FAP Mathematical Formulation}
 \label{sec:FAPMathDef}
-In this section we will give a Mathematical definition of the Frequency Assignment Problem that will form the core of the algorithm discussed in this dissertation will optimize. We'll start of by denoting the symbols we will use and then we will give the Mathematical definition of the cost function we will minimize.
+A Mathematical definition of the Frequency Assignment Problem is presented in this section. The mathematical defintion will be used by the algorithm discussed in this dissertation to evaluate the amount of interference generated frequeny plans exhibit. This section will start of where the symbols that are used in the mathematical definition is denoted and briefly discussed.
 
-The Frequency Assignment Problem can be represented as a graph colouring problem hence it is known to be NP-Complete. Before we can formally define the Frequency Assignment Problem we first need to introduce some symbol definitions.
+The Frequency Assignment Problem can be represented as a graph colouring problem hence it is known to be NP-Complete. Before mathematical defintion can be formally defined for the Frequency Assignment Problem, some symbols and their respective definitions need to be introduced.
 
 \begin{align}
 	G &= (V,E) \label{E:setG}\\
@@ -212,21 +214,21 @@ The Frequency Assignment Problem can be represented as a graph colouring problem
 	d_{ij} &< |f(i) - f(j)|, \forall ij \in \mathbb{N},i \neq j \label{E:interference}
 \end{align}
 
-Let $G$ (see~\ref{E:setG}) be a weighted undirected graph, where $V$ (see~\ref{E:setV}) is a set of vertices. Each $v \in V(G)$ represents a transmitter in the frequency assignment problem. 
+Let $G$ (see equation~\ref{E:setG}) be a weighted undirected graph, where $V$ (see equation~\ref{E:setV}) is a set of vertices. Each $v \in V(G)$ represents a transmitter in the frequency assignment problem. 
 
-$E$ (see~\ref{E:setE}) is a set of edges. An edge consists of two vertices $v_i$ and $v_j$ that are joined because there exists a constraint on the frequencies that can be assigned between the two vertices or transmitters. Each edge has two associated labels $d_{ij}$ and $p_{ij}$ \cite{FAPOrientationModel,TabuMontemanniSmith}. 
+$E$ (see equation~\ref{E:setE}) is a set of edges. An edge consists of two vertices $v_i$ and $v_j$ that are joined because there exists a constraint on the frequencies that can be assigned between the two vertices or transmitters. Each edge has two associated labels $d_{ij}$ and $p_{ij}$ \cite{FAPOrientationModel,TabuMontemanniSmith}. 
 
-The label $d_{ij}$ that is part of the set $D$ (see~\ref{E:setD}) denotes the maximum separation that is required to exist between frequencies assigned to two transmitters $v_i$ and $v_j$. Using $f(i)$ to denote the frequency assigned to $i$, we can determine using equation \ref{E:interference} if the interference involving the transmitters $v_i$ and $v_j$ is acceptable\cite{FAPOrientationModel,TabuMontemanniSmith}
+The label $d_{ij}$ that is part of the set $D$ (see equation~\ref{E:setD}) denotes the maximum separation that is required to exist between frequencies assigned to two transmitters $v_i$ and $v_j$. Using $f(i)$ to denote the frequency assigned to $i$. Using equation~\ref{E:interferece} the amount of interference that is generated between transmitters $v_i$ and $v_j$ can be determined. By evaluating the amount of interferene generated it can be decided whether the interference lies within an acceptable range, which is predetermined by a network operator\cite{FAPOrientationModel,TabuMontemanniSmith}
 
-The other label, $p_{ij}$, forms part of the set $P$ (see~\ref{E:setP}) which is referred to as the Interference Matrix\footnote{Discussed in section \ref{sec:Interference} page \pageref{sec:Interference}}. Each label $p_{ij}$ contains two values which represents interference\footnote{Interference values can be zero in some cases}:
+The other label, $p_{ij}$, forms part of the set $P$ (see equation~\ref{E:setP}) which is referred to as the Interference Matrix\footnote{Discussed in section \ref{sec:Interference} page \pageref{sec:Interference}}. Each label $p_{ij}$ contains two values which represents interference\footnote{Interference values can be zero in some cases}:
 \begin{itemize}
 \item $\bar{p_{i0}}$ represents the value for co-channel interference \cite{FAPOrientationModel,TabuMontemanniSmith}. 
 \item $\overset{=}{p_{i1}}$ represents the value for adjacent channel interference\cite{FAPOrientationModel,TabuMontemanniSmith}.
 \end{itemize}
 
-Lastly we have the set $F$ (see~\ref{E:setF}) that denotes a set of consecutive frequencies for every transmitter in $V$\cite{FAPOrientationModel,TabuMontemanniSmith}.
+Finally the set $F$ (see equation~\ref{E:setF}) that denotes a set of consecutive frequencies for every transmitter in $V$\cite{FAPOrientationModel,TabuMontemanniSmith}.
 
-Formally the Fixed Spectrum Frequency Assignment Problem (FS-FAP) can now be defined as a 5-tuple \(FS-FAP = \{V,E,D,P,F\}\) with a required mapping of \(f: V \rightarrow F\)\cite{TabuMontemanniSmith}. The objective of the FS-FAP is to find an assignment of frequencies to transmitters that minimize the sum of total interference (see ~\ref{E:costFunction}).
+Formally the Fixed Spectrum Frequency Assignment Problem (FS-FAP) can now be defined as a 5-tuple \(FS-FAP = \{V,E,D,P,F\}\) with a required mapping of \(f: V \rightarrow F\)\cite{TabuMontemanniSmith}. The objective of the FS-FAP is to find an assignment of frequencies to transmitters that minimize the sum of total interference (see equation~\ref{E:costFunction}).
 
 \begin{align} 
  c(p_i) &= 
@@ -239,10 +241,10 @@ Formally the Fixed Spectrum Frequency Assignment Problem (FS-FAP) can now be def
  Total Interference &= \sum^\mathbb{P}_{i = 0}c(p_i),p \in P 
 \end{align}
 
-In this section we Mathematically defined the Frequency Assignment Problem using the symbols we defined. In the next section we will give a brief discussion on the different Frequency Assignment Benchmark Problems that exist and also define the benchmark we will be using in our implementation.
+In this section a formal mathematical definition for the Frequency Assignment Problem on which this dissertation will focus on was given using the symbols that were defined. In the following section a brief discussion on the different Frequency Assignment Benchmark Problems that exist will be provided as well as define the benchmark with which the algorithm developed in this dissertation will be evaluated against.
 \section{FAP Benchmarks}
 \label{sec:FAPBenchmarks}
-In this sections will discuss some of the most used benchmarks in the FAP domain. We will start of with the first benchmark that was introduced in the 70s and end of with a discussion on the benchmark we will be using to test our implementation.
+In this section a discussion is presented on some of the most used benchmarks in the FAP domain. The first benchmark that is presented was introduced in the 70's. This section will conclude with a discussion on the benchmarks this dissertation will use to evaluate the effectiveness of the algorithm that developed.
 \subsection{Philedelphia Benchmark}
 The Philedelphia benchmarks are derived from an instance that was introduced in 1973 by Anderson. Each instance is a hexagonal grid of cells that overlaps the area of interest. At the centre of each cell there is a transmitter. Past approaches used these hexagonal systems to model modern cellular networks \cite{Karen2004,ExactMIFAP}.
 
@@ -256,15 +258,16 @@ All the CELAR instances have the constraint that the difference between frequenc
 
 These instances were initially not available to the general public as it was contained to be within the CALMA project. In 2001 the CELAR launched the International ROADEF challenge, were certain instances from the CALMA project were made available for the research teams taking part in the challenge. The instances made available had been modified to take polarizations and controlled relaxations of certain EMC constraints \cite{LowerPolarFAP}.
 \subsection{COST 256}
+\label{sec:COST259}
 The COST (COoperation européene dans le domaine de la recherche Scientifique et Technique) 259 is a set of real world GSM instances made available by die European Union. The instances are publicly available and can  be downloaded for free at http://fap.zib.de/ (FAP Web 2011). The website also contains the most recent results obtained by researchers using these instances\cite{Karen2004,Eisenblatter}.
 
-The instances are fairly difficult due to the large amount of transmitters (900 - 4000) that need to be assigned frequencies, with a relatively small amount spectrum of frequencies. The main important characteristic of this benchmark is that is resembles real world GSM network data, which is why we the authors have selected this as the primary benchmark we will be concentrating on \cite{Karen2004,FAPWeb}.
+The instances are fairly difficult due to the large amount of transmitters (900 - 4000) that need to be assigned frequencies, with a relatively small amount spectrum of frequencies. The main important characteristic of this benchmark is that is resembles real world GSM network data. Due to this benchmarks real world applicability, it was selected as the main benchmark to evaluate the algorithm presented in this dissertation.
 
-More specifically we will concentrate on a small subset of the instances that are available, namely Siemens1, Siemens2, Siemens3 and Siemens4. In the paper by Montemanni and Smith \cite{TabuMontemanniSmith} the same subset of problems is used and to date their algorithm has produced some of the best results. %Check if this is the right paper
+More specifically this dissertation will concentrate on a small subset of the instances that are available, namely Siemens1, Siemens2, Siemens3 and Siemens4. In the paper by Montemanni and Smith \cite{TabuMontemanniSmith} the same subset of problems is used and to date their algorithm has produced some of the best results. %Check if this is the right paper
 
 The characteristics of each instance will now be discussed.
 \subsubsection{Siemens1}
-The Siemens 1 instance resembles a GSM network that follows the GSM900 standard. This particular network has been allocated a spectrum set of frequencies $F = {16,90}$ which are allowed to be assigned to cells. 
+The Siemens 1 instance resembles a GSM network that follows the GSM900 standard. This particular network has been allocated a spectrum set of frequencies $F = {16-90}$ which are allowed to be assigned to cells. 
 
 Not all 74 frequencies are available to be used by the network. The allocated frequency block is split into two blocks. The allocated frequencies are split into two because according to the problem instance frequencies ranging from 36 to 67 are globally blocked, thus frequencies ranging from 16  - 35 and 68 - 90 are available for assignment.
 
@@ -287,7 +290,7 @@ In this section a discussion was presented on the various benchmark functions th
 In the next section a general overview will be given on the different industries where the FAP is encountered.
 \section{FAP in the industry}
 \label{sec:FAPIndustry}
-In this section we will list some of the industries where the FAP is encountered. We provide a brief overview how the problem differs compared to other industries. We will also give some references to literature where the FAP and the particular domain are discussed. 
+In this section a list some of the industries where the FAP is encountered will be presented. For each industry listed a brief overview how the problem differs compared to other industries is presented. 
 
 \subsection{Satellite communication}
 The FAP in the Satellite communication domain occurs with respect to the ground terminals that transmit and receive signals via a satellite. One would assume that the problem includes the satellite, but the problem is only concerned with the frequencies that the ground terminals use. It is interesting to note that the ground terminals can be a base station or a handheld device (e.g. GPS or Satellite phone).
@@ -308,34 +311,34 @@ Typical approaches allocating frequencies include using DCA and FCA\footnote{Dis
 The FAP in Wireless Mesh networks and WLANs differ to the standard problem in that it introduces an extra constraint. Channels assigned to links on a node cannot be more than the available interfaces on that particular node. This constraint is known as the \emph{interface constraint} \cite{MultiradioMeshNetworks}. Another aspect to consider is the placement of access points (AP) in the network, which is similar to the problem cellular networks face with regard to base station placement \cite{Karen2004}.
 
 \subsection{Military field communication}
-In a Military context the FAP is a very difficult problem to be solved due to its dynamic nature. During deployment connections need to be established rapidly between nodes with not guarantee that the nodes would stay static at locations. Usually nodes are military field phones can be any transceiver device \cite{CALMA,DynamicFAP}. 
+In a Military context the FAP is a very difficult problem to be solved due to its dynamic nature. During deployment connections need to be established rapidly between nodes which do guarantee that the nodes would stay static at locations. Usually nodes are military field phones can be any transceiver device \cite{CALMA,DynamicFAP}. 
 
 Due to the nature of the problem the DCA scheme is used to allocate frequencies to nodes. The Military FAP differs due to the property that any of the nodes are mobile and can move at any moment to a new location, potentially interfering with another connection\cite{CALMA,DynamicFAP}. Two frequencies need to be assigned to each connection that is established, one for each direction of communication. These allocated frequencies must also differ by a certain distance in the frequency domain to prohibit alternating directions of communication interfering\cite{CALMA,DynamicFAP}.
 
 A lot of literature can be found on Military field communication. This is due to two organizations CELAR\footnote{Centre Electronique de L'Armement} and EUCLID\footnote{European Cooperation on the Long Term Defense} making data available to various research groups and allowing them to develop algorithms for frequency assignment \cite{CALMA,DynamicFAP}. 
 
 \subsection{Television and Radio Broadcasting}
-The FAP encountered in broadcasting very much resembles the problem domain found in Cellular networks. The only notable difference is the required distance allocated frequencies must differ in the frequency domain is larger in broadcasting than in cellular networks \cite{Karen2004}.
+The FAP encountered in broadcasting very much resembles the problem domain found in cellular networks. The only notable difference is the required distance allocated frequencies must differ in the frequency domain is larger in broadcasting than in cellular networks \cite{Karen2004}.
 
-Since the problem resembles the problem found in Cellular networks, there are few articles that specifically discuss frequency assignment in broadcasting as a main topic. Research that specifically discusses FAP in broadcasting is presented by Idoumghar and Schott \cite{RadioFAP}. The authors present a distributed hybrid genetic algorithm and a cooperative distributed tabu search algorithm. They compare these algorithms with their sequential counterparts of their algorithms and with an ANTS algorithm. The benchmark instances they used were provided by the TDF-C2R Broadcasting and Wireless research centre.
+Since the problem resembles the problem found in cellular networks, there are few articles that specifically discuss frequency assignment in broadcasting as a main topic. Research that specifically discusses FAP in broadcasting is presented by Idoumghar and Schott \cite{RadioFAP}. The authors present a distributed hybrid genetic algorithm and a cooperative distributed tabu search algorithm. They compare these algorithms with their sequential counterparts of their algorithms and with an ANTS algorithm. The benchmark instances they used were provided by the TDF-C2R Broadcasting and Wireless research centre.
 \subsection{Cellular Communication}
-Cellular communication\footnote{An overview of a Cellular Communication technology called GSM is presented in Chapter 2.} can be considered the main driving force with regard to research in the Frequency Assignment domain. As new standards are developed and used in 3G networks, in general a frequency assignment problem still needs to be solved. Since these newer technologies still use GSM as their backbone architecture as discussed in section \ref{UMTSGSMBackbone} on page \pageref{UMTSGSMBackbone}.
+Cellular communication\footnote{An overview of a cellular Communication technology called GSM is presented in Chapter 2.} can be considered the main driving force with regard to research in the Frequency Assignment domain. As new standards are developed and used in 3G networks, in general a frequency assignment problem still needs to be solved. Since these newer technologies still use GSM as their backbone architecture as discussed in section \ref{UMTSGSMBackbone} on page \pageref{UMTSGSMBackbone}.
 
 There is a wealth of research that concentrate on the FAP within cellular networks. This is because cellular networks are used by millions of people around the world and as such presents an interesting notion to produce better results. Since viable solutions have the possibility to impact millions of people. As such, most of the literature concentrates on this domain and one can find a lot of research in the literature presenting viable algorithms that produce real world solutions \cite{Eisenblatter}. 
 
-Because the problem is NP-Hard most presented algorithms are either of the meta heuristic type or more recently of the swarm intelligence type. Both of these algorithmic types are discussed in Chapter 4 and 5 respectively.
+Because the FAP problem is NP-Hard most presented algorithms are either of the meta heuristic type or more recently of the swarm intelligence type. Both of these algorithmic types are discussed in Chapter 4 and 5 respectively.
 
 In this section a discussion was presented on the different industries in which the Frequency Assignment Problem is encountered and also a brief description was given on how the problems differ with regard to what constraint each problem domain imposes on the frequencies for the particular industry. 
 Brief references were given to some literature where the FAP is discussed with regard to the particular domain. In the next section a brief description will be given of the different types of techniques that are used when frequencies are assigned.
 \section{Summary}
-In this chapter has discussion was presented on the problem this dissertation will be based upon. The problem was defined as being the Frequency Assignment Problem (FAP). A brief discussion was given on the problem where the problem was categorized as being part of the set of NP-Complete problems. The NP-Complete nature of the problem is an important concept to understand which is why a section describes what NP-Complete means was presented.
+In this chapter discussion was presented on the problem this dissertation will be based upon. The problem was defined as being the Frequency Assignment Problem (FAP). A brief discussion was given on the problem where the problem was categorized as being part of the set of NP-Complete problems. The NP-Complete nature of the problem is an important concept to understand which is why a section describes what NP-Complete means was presented.
 
 Within the frequency assignment problem domain there exists two different techniques when assigning frequencies. The two different techniques was discussed in section \ref{sec:FreqAssignmentTypes}. 
 
 An important concept that needs to be understood to understand why the frequency assignment problem exists is the concept of interference. An in depth discussion on interference was presented in section \ref{sec:Interference}.
 
-The frequency assignment problem is not just one problem but consists of various sub problems that have different goals for the resulting frequency plan. Some problems are concerned with the amount of frequencies used, other are more concerned with the amount of interference that is generated on the network because of the assignment. Section \ref{sec:FAPVariants} is where each sub problem is discussed. 
+The frequency assignment problem is not just one problem but consists of various sub problems that have different goals for the resulting frequency plan. Some problems are concerned with the amount of frequencies used, other are more concerned with the amount of interference that is generated on the network because of the assignment.
 
-In this section about the various FAP sub problems, a formal definition was given on what sub problem this dissertation will be concentrating on, namely, the MI-FAP.
+The various FAP sub problems were outlined and discussed in section~\ref{sec:FAPVariants}.
 
-In section \ref{sec:FAPMathDef} a formal mathematical definition is presented on the MI-FAP.  Finally, the chapter concludes with an overview on the various benchmarks problems which are used to test the viability of frequency assignment algorithms.
+A formal mathematical definition on the MI-FAP was also presented. Finally, the chapter concluded with an overview on the various benchmarks problems which are used to test the viability of frequency assignment algorithms.

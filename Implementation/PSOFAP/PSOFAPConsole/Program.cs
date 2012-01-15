@@ -16,10 +16,8 @@ namespace PSOFAPConsole
         {
             Thread t1 = new Thread((ThreadStart)delegate
             {
-                FAPModelFactory modelFactory = new FAPModelFactory();
-                FAPPSOFactory factory = new FAPPSOFactory(modelFactory.CreateSiemens1Model(),500);
-                PSOAlgorithm<ICell[]> algo1 = factory.CreateIndexMovementBasedWithGlobalBestCellBuilder(3.52, 1.41); ;//factory.CreateIndexBasedFAPPSOWithGlobalBestCellBuilder(3.52, 1.41);
-                algo1.Start();
+                BenchRunner benchmarkRunner = new BenchRunner();
+                benchmarkRunner.StartBenchmark();
             });           
             t1.Start();
         }

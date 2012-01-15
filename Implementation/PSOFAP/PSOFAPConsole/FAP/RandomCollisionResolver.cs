@@ -13,9 +13,14 @@ namespace PSOFAPConsole.FAP
 
         public override void ResolveCollisions(FrequencyHandler freqHandler)
         {
+            if (hasLBC(freqHandler))
+            {
+                ResolveLBCCollisions(freqHandler);
+            }
             if (freqHandler is FrequencyHandlerWithTabu)
             {
                 FrequencyHandlerWithTabu frequencyHandler = freqHandler as FrequencyHandlerWithTabu;
+
                 foreach (TRXTabu tabu in frequencyHandler.TabuList)
                 {
                     var collisions = FindCollisionsForTabuItem(frequencyHandler, tabu);
@@ -27,6 +32,34 @@ namespace PSOFAPConsole.FAP
                 return;
 
             
+        }
+
+        private bool hasLBC(FrequencyHandler freqHandler)
+        {
+            return freqHandler.GetParentCell().HasLocallyBlockedChannels();
+        }
+
+        private void ResolveLBCCollisions(FrequencyHandler freqHandler)
+        {
+            Random r = new Random();
+            int count = 0;
+            for (int i = 0; i < freqHandler.Length; i++)
+            {
+                int channelValue = Channels[freqHandler[i]];
+                if (freqHandler.GetParentCell().LocallyBlocked.Contains(channelValue))
+                {
+                    freqHandler[i] = r.Next(0, Channels.Length);
+                    count++;
+                    if (count <= 10)
+                    {
+                        i--;
+                    }
+                }
+                else
+                {
+                    count = 0;
+                }
+            }
         }
 
         private static IEnumerable<int> FindCollisionsForTabuItem(FrequencyHandlerWithTabu frequencyHandler, TRXTabu tabu)
@@ -82,6 +115,5 @@ namespace PSOFAPConsole.FAP
             return uniqueIndex;
         }
     }
-
     
 }

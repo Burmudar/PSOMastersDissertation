@@ -44,6 +44,14 @@ namespace PSOFAPConsole.FAPPSO
             return globalBest;
 
         }
-        
+
+
+
+
+
+        public string GetConstructionMethodName()
+        {
+            return BuildGBest.Method.Name;
+        }
     }
 }

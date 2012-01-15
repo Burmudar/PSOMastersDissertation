@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using PSOFAPConsole.FAP.Interfaces;
 
 namespace PSOFAPConsole.FAP
 {
@@ -31,6 +32,11 @@ namespace PSOFAPConsole.FAP
                 TRX trx = (TRX)frequencies[i].Clone();
                 parentCell.Frequencies[i] = trx;
             }
+        }
+
+        public ICell GetParentCell()
+        {
+            return parentCell;
         }
 
         public TRX[] GetFrequencyArray()

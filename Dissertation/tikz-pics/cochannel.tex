@@ -1,11 +1,11 @@
 \begin{tikzpicture}[]
 	%\draw[step=.5cm,gray,very thin] (-0.5,-0.5) grid(10,5);
-	\draw(-0.5,0) -- (10,0);
-	\draw(0,-0.5) -- (0,5);
+	\draw[->](-0.5,0) to node[below=0.25cm]{\tiny{f (Mhz)}} (10,0);
+	\draw[->](0,-0.5) to node[left=0.25cm] {\tiny{Power (dB)}} (0,5);
 	\draw[pattern=vertical lines,thick] (0,0) parabola bend(3,4) (6,0);
 	\draw[pattern=horizontal lines,thick] (0,0) parabola bend(3,2) (6,0);
 	\draw[-] (0,2) -- (7,2);
 	\draw[-] (0,4) -- (7,4);
-	\draw[<->,thick] (6.5,2) to node[right=0.25cm]{Interfering frequency} (6.5,4);
-	\draw[->,thick] (6.5,0) -- (6.5,2);
+	\draw[<->,thick] (6.5,2) to node[right=0.25cm]{\tiny{Wanted frequency}} (6.5,4);
+	\draw[->,thick] (6.5,0) to node[right=0.25cm]{\tiny{Interfering Frequency}} (6.5,2);
 \end{tikzpicture}

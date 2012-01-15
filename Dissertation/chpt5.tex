@@ -9,7 +9,7 @@ The research field of Artificial Intelligence stands a lot to gain by studying t
 
 The research field of swarm intelligence is an approach more concerned with the underlying processes and behaviour patterns when multiple agents (insects, animals) come together and perform a task as one collective entity\cite{DLearning,AIModernApproach,ChaoticSwarmIntel,BeeJobShop}.  This study of animals or insects in groups has already contributed to Artificial Intelligence as a whole \cite{ChaoticSwarmIntel,BeeJobShop}. Each individual in the swarm might not be able to solve the problem on his own, but by interacting with other individuals and performing primitive actions, the individual can contribute to solving the problem as a whole entity \cite{BeeJobShop}. 
 
-New algorithms that incorporate the lessons learned from the study of the collective intelligence are now being used and form part of the Meta-heuristic algorithm group. A discussion on some of the more popular meta-heuristic algorithms was presented in chapter~\ref{ch:metaheuristic} (see page~\pageref{ch:metaheuristic}).
+New algorithms that incorporate the lessons learned from the study of the collective intelligence are now being used and form part of the Meta-heuristic algorithm group. A discussion on some of the more popular meta-heuristic algorithms was presented in chapter~\ref{chpt:heuristic} (see page~\pageref{chpt:heuristic}).
 
 Swarm intelligence algorithms are also meta-heuristic algorithms, with the distinction being made that swarm intelligence algorithms use multiple agents as a collective entity of knowledge to search the problem space\cite{SwarmArt,ChaoticSwarmIntel,BeeJobShop,CompuIntelligenceIntro,FundamentalSwarm}.
 
@@ -290,7 +290,7 @@ When analysing the basic ACO algorithm~\ref{alg:ACO} one can identify the follow
 \paragraph{Memory Usage}
 The algorithm requires a fair amount of memory. The memory is used to keep track of each permutation of a particular cell and its allocated frequencies until the pheromone that links to the cell has decayed enough to be discarded. As an ant moves from one cell to another cell, it might not select the previous cell (due to probability) to move to, but rather generate an entire new cell to move towards. This newly generated cell would then be linked to the previous cell, and therefore the algorithm needs to keep track of the pheromone on that link until it has completely been decayed away. The algorithm needs to keep track of these pheromones on the links even if the new link to the generated cell is not even close to optimal and has very high interference.
 \paragraph{Building a solution}
-As discussed in section~\ref{ACOverview} the ACO \emph{builds} an optimal solution. Therefore, early decisions made by the ants still influence the plan later for better or for worse. A good decision might seem to be good early on, but later the algorithm might be better of with a slightly worse decision. In the FAP, a cell can have multiple interfering cells, but a particular ant only knows about the one link between two cells and not about the other interfering cells. Thus an ant, will find the optimal path on the first interfering link between two cells, which is to say, optimize the channels allocated to these cells so that interference is low. The first interfering link is now optimized, and subsequent ants will now reinforce this channel allocation since the interference is low. When the ants later on reach the other cells that also interfere with the first cell that has been optimized, the ants will have difficulty changing the assignments that has already been made, since the pheromone representing that assignment is too strong to disregard.
+As discussed in section~\ref{sec:ACOverview} the ACO \emph{builds} an optimal solution. Therefore, early decisions made by the ants still influence the plan later for better or for worse. A good decision might seem to be good early on, but later the algorithm might be better of with a slightly worse decision. In the FAP, a cell can have multiple interfering cells, but a particular ant only knows about the one link between two cells and not about the other interfering cells. Thus an ant, will find the optimal path on the first interfering link between two cells, which is to say, optimize the channels allocated to these cells so that interference is low. The first interfering link is now optimized, and subsequent ants will now reinforce this channel allocation since the interference is low. When the ants later on reach the other cells that also interfere with the first cell that has been optimized, the ants will have difficulty changing the assignments that has already been made, since the pheromone representing that assignment is too strong to disregard.
 
 The above disadvantages have only been identified by critically evaluating the algorithm as a possible point of interest to produce an optimal solution for the FAP for this dissertation. Even with these disadvantages the ACO has achieved success in producing high quality optimal solutions for the FAP.
 
@@ -357,7 +357,7 @@ The Artificial Bee Colony (ABC) algorithm is the youngest algorithm discussed in
 
 In a bee colony there are a numerous number of bees, each with a specific role that performs certain actions for the colony. There are bees that protect the queen, maintain the colony, scout for resources and finally bees that gather food i.e the worker bees. The most important bees for foraging are those that scout and gather food\cite{ABCCompareStudy}. 
 
-The scout bees are sent out and as their role implies, they are responsible for exploring the surroundings of the hive to find suitable food sources\cite{ABCCompareStudy}. If a scout bee has found a food source, then it needs to return to the colony to share the information with the worker bees\cite{ABCCompareStudy}. When the bee enters the colony it needs to communicate to the other bees by using some form of stigmergy (see section~\ref{sec:stigmergy} page~\pageref{def:stigmergy})\cite{ABCCompareStudy}.
+The scout bees are sent out and as their role implies, they are responsible for exploring the surroundings of the hive to find suitable food sources\cite{ABCCompareStudy}. If a scout bee has found a food source, then it needs to return to the colony to share the information with the worker bees\cite{ABCCompareStudy}. When the bee enters the colony it needs to communicate to the other bees by using some form of stigmergy (see section~\ref{sec:stigmergy} page~\pageref{sec:stigmergy})\cite{ABCCompareStudy}.
 
 The scout bee accomplishes this communication by performing a dance known as the \emph{waggle dance} in the colony for all the bees to see\cite{ABCCompareStudy}. This isn't a dance like in the traditional sense, since through certain movements the bee is able to communicate a variety of characteristics about the food source that include\cite{ABCCompareStudy}:
 \begin{itemize}
@@ -519,7 +519,7 @@ In this section a discussion was presented on the various obstacles one would en
 \label{sec:psointro}
 Particle Swarm Optimization (PSO) is a self-adaptive, population-based stochastic search technique that was developed by Kennedy and Ebenhart in 1995 \cite{PSOGABreeding,PSOGABreeding}. The basic model of the algorithm is based on simulations done to recreate the natural behaviour of a flock of birds \cite{PSOSoftTesting}.
 
-In the early stages of the particle swarm development, simulations were developed to closely model the stigmergy (see page \pageref{def:stigmergy}) exhibited when a flock of birds cohesively move as one and is able to suddenly change direction in a unpredictable graceful manner only to regroup as one observed entity \cite{PSOHybridJobShop}. 
+In the early stages of the particle swarm development, simulations were developed to closely model the stigmergy (see page \pageref{sec:stigmergy}) exhibited when a flock of birds cohesively move as one and is able to suddenly change direction in a unpredictable graceful manner only to regroup as one observed entity \cite{PSOHybridJobShop}. 
 
 As the ``leading'' bird of the flock changes his movements the information is shared to the all birds that are in the immediate neighbourhood of the leading bird. As the information is shared locally among the birds, each bird modifies his own movement to that of the leading birds movement\cite{PSOHybridJobShop}. 
 
@@ -608,14 +608,13 @@ where $v_i(t+1)$ is the new velocity of a particle $i$ for the next time step $t
 
 The variables $\phi_1$ and $\phi_2$ are random numbers in the range $[0,1]$. The current position of a particle in the solution space at time step $t$ is represented by parameter $x_i(t)$\cite{FundamentalSwarm,CompuIntelligenceIntro}. After the new velocity is calculated the position of the particle is updated for time step $t+1$ using equation (\ref{eq:positionupdate}) \cite{FundamentalSwarm,CompuIntelligenceIntro}. The velocity update can be visually depicted as shown in figure \ref{fig:particleVelocityUpdate}. 
 \begin{figure}[h]
-	\centering
-	\setlength \fboxsep{0pt}
-	\setlength \fboxrule{0.5pt}
-	\fbox{\includegraphics[width=4.0in,height=2.0in]{./pictures/captainplaceholder.png}}
+	\begin{centering}
+	\input{tikz-pics/particletrajectory.tex}
 	\caption{Visual particle velocity update \cite{SOSwarm,FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch}}
 	%A Particle Swarm Algorithm for Symbols Detection in Wideband Spatial Multiplexing Systems --- Particle movement diagram
 
 	\label{fig:particleVelocityUpdate}
+	\end{centering}
 \end{figure}
 
 As discussed in the PSO algorithm overview pbest is the best position the particle has occupied since the start of the algorithm. In the literature there are two defined methods of determining gbest. The most common method used is where gbest is the best position obtained by a particle in the swarm since the start of the algorithm. Thus long term knowledge dictates the best position found which favours exploitation \cite{CompuIntelligenceIntro,FundamentalSwarm}.
@@ -649,7 +648,7 @@ v_i(t+1) = wv_i(t) + c_1\phi_{1}(t)[pbest - x_i(t)] + c_2\phi_{2}(t)[gbest - x_i
 \end{equation}
 The addition of inertia ($w$ in equation (\ref{eq:inertia}) to the general velocity update equation is simple and elegant which is why it has been adapted to a wide variety of PSO algorithms. The inertia value allows one to control the amount of control the social and cognitive components have with regard to velocity updates \cite{FundamentalSwarm}. 
 
-For values of $w$ that are greater than 1, a large amount of momentum is preserved as the particles velocity are updated and hence, the particle explores more \cite{FundamentalSwarm}. When $w < 1$, each time the particle updates it velocity is loses a certain amount of momentum, hence, the particle seems to slow down allowing it to exploit the current solution space in finer detail \cite{FundamentalSwarm}.
+sec values of $w$ that are greater than 1, a large amount of momentum is preserved as the particles velocity are updated and hence, the particle explores more \cite{FundamentalSwarm}. When $w < 1$, each time the particle updates it velocity is loses a certain amount of momentum, hence, the particle seems to slow down allowing it to exploit the current solution space in finer detail \cite{FundamentalSwarm}.
 
 Even though inertia was developed to remove the use of velocity clamping, it did not entirely achieve its goal. For values of $w$ that are greater than 1, the particle keeps a lot of momentum and accelerates even more. Therefore, as the particle accelerates its step size through the solution space gets larger and larger, increasing the probability that it will miss a good solution. This disadvantage is only applicable for algorithms that keep the inertia value static \cite{CompuIntelligenceIntro,FundamentalSwarm}.
 

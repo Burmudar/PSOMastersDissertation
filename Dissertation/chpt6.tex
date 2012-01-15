@@ -1,17 +1,17 @@
 \chapter{PSO on benchmark functions}
 \label{chpt:benchmark}
 \section{Introduction}
-In this section a discussion will be presented on a series of optimisation benchmark functions. First a formulation of all the benchmark functions will be given. In the second section all the benchmark funcions will be plotted on a 3d graph. Finally this chapter will conclude with a presentation of the results obtained by the PSO algorithm.
+In this section a discussion will be presented on a series of optimisation benchmark functions. First a formulation of all the benchmark functions will be given. In the second section all the benchmark functions will be plotted on a 3d graph. Finally this chapter will conclude with a presentation of the results obtained by the PSO algorithm.
 
-The functions vary from being relatively easy to optimize, to functions that contain lots of local minima and a slightly concealed global minmima. In total fourteen benchmark functions will be formulated and benchmarked againts.
+The functions vary from being relatively easy to optimize, to functions that contain lots of local minima and a slightly concealed global minima. In total fourteen benchmark functions will be formulated and benchmarked againts.
 
 If one observed the following research \cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}. Various optimisation algorithms are benchmarked such as Genetic Algorithm, Artificial Bee Colony algorithm, Tabu Search and Simulated Annealing. In the presented research the algorithms are benchmarked using numerical optimization functions.
 
-Numerical optimization functions are good candidates to test optimisation algorithms as with a few slight changes the function operates in more dimensions or can have more or less optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}. Being able to alter these functions is a desirable traite as it enables one to accurately benchmark an algorithm, not only with regard to how the algorithm coupes with increased dimensionality but also in the algorithms accuracy in locating optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}.
+Numerical optimization functions are good candidates to test optimisation algorithms as with a few slight changes the function operates in more dimensions or can have more or less optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}. Being able to alter these functions is a desirable trait as it enables one to accurately benchmark an algorithm, not only with regard to how the algorithm coupes with increased dimensionality but also in the algorithms accuracy in locating optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}.
 
-The reason why these functions have variate amount of local and global optima, it to test various factors on how good the algorithm is that is being applied on the function. The factors that are tested are\cite{CompuIntelligenceIntro,FundamentalSwarm}:
+The reason why these functions have variable amount of local and global optima, it to test various factors on how good the algorithm is that is being applied on the function. The factors that are tested are\cite{CompuIntelligenceIntro,FundamentalSwarm}:
 \begin{itemize}
-\item Rate of convergeance
+\item Rate of convergence
 \item Exploration
 \item Exploitation
 \item Diversity
@@ -19,9 +19,9 @@ The reason why these functions have variate amount of local and global optima, i
 \item Information sharing
 \end{itemize}
 
-As discussed previously the numerical functions have predetermined optima, which means researchers are able to produce statistical information on how the algorithm performs. For instance, researchers will not be able to measure accurately the performance of the algorithm on a NP-Complete problem\cite{CompuIntelligenceIntro,FundamentalSwarm}. Yes, they can compare results with what other algorithms have produced, but cannot with absolute certain say or measure the algorithm convergence,diversity etc on NP-Complete problems as their problem spaces are huge\cite{evalevoalgo}. 
+As discussed previously the numerical functions have predetermined optima, which means researchers are able to produce statistical information on how the algorithm performs. For instance, researchers will not be able to measure accurately the performance of the algorithm on a NP-Complete problem\cite{CompuIntelligenceIntro,FundamentalSwarm}. Yes, they can compare results with what other algorithms have produced, but cannot with absolute certain say or measure the algorithm convergence, diversity etc. on NP-Complete problems as their problem spaces are huge\cite{evalevoalgo}. 
 
-With these benchmark functions, the optima has been mathematically calculated and their position is known within the problem space\cite{evalevoalgo}. Thus, researchers can now with surity measure the convergence rate, diversity and compare it with other algorithms, since the domain the algorithms operate it is not as specific as a NP-Complete problem\cite{evalevoalgo}. Rather, the domain is mathematical and deterministic and therefore allows easy comparison\cite{evalevoalgo}.
+With these benchmark functions, the optima have been mathematically calculated and their position is known within the problem space\cite{evalevoalgo}. Thus, researchers can now with surety measure the convergence rate, diversity and compare it with other algorithms, since the domain the algorithms operate it is not as specific as a NP-Complete problem\cite{evalevoalgo}. Rather, the domain is mathematical and deterministic and therefore allows easy comparison\cite{evalevoalgo}.
 
 In this dissertation, two PSO algorithm were developed specifically to measure the performance of the PSO algorithm and also to better understand the various underlying dynamics of the algorithm.
 
@@ -29,15 +29,15 @@ The first PSO that was developed was just the standard PSO algorithm with no con
 
 Both of these algorithms have been applied to all fourteen benchmarks that are presented in the chapter and will be compared (where applicable) to other optimisation algorithms that have also been applied to the same benchmark problems. The comparison between these algorithms will be presented in section~\ref{sec:benchResults}.
 
-In the next section, all the benchmarks that will be used for testing the PSO algorithms will be formulated. For the interested reader, 3D graphs along with the python code that generated the graphs is presented in the appendix. This chapter will conclude with a section on the results of the PSO algorithms that were developed being applied to the presented benchmarked as well as compared with other results that have been obtained by other algorithms and presented in the literature.
+In the next section, all the benchmarks that will be used for testing the PSO algorithms will be formulated. For the interested reader, 3D graphs along with the python code that generated the graphs are presented in the appendix. This chapter will conclude with a section on the results of the PSO algorithms that were developed being applied to the presented benchmarked as well as compared with other results that have been obtained by other algorithms and presented in the literature.
 \section{Test Functions}
-In this section all the test functions on which the two developed PSO algorithms will be benchmarked against will be presented. For each test function that is presented a mathematical formulation will be given and the global optimum will be explicitly stated. In addition to the formulation and global optimum, each function will also be classified whether it is a unimodal or modal function as well as whether it is seperable or non-seperable. Each of these classifications will now be explained.
+In this section all the test functions on which the two developed PSO algorithms will be benchmarked against will be presented. For each test function that is presented a mathematical formulation will be given and the global optimum will be explicitly stated. In addition to the formulation and global optimum, each function will also be classified whether it is a unimodal or modal function as well as whether it is separable or non-separable. Each of these classifications will now be explained.
 
 \begin{description}
 \item{\textbf{Unimodal}} --- A particular problem is classified as being unimodal when there is only clear solution. With only one clear solution, it means there is only one global optimum point in the solution space\cite{evalevoalgo,numericalABC,FundamentalSwarm,CompuIntelligenceIntro}.
 \item{\textbf{Multimodal}} --- A problem is multimodal when it has more than one defined solution. Thus, the particular problem space contains multiple global optima\cite{evalevoalgo,numericalABC,FundamentalSwarm,CompuIntelligenceIntro}.
-\item{\textbf{Seperable}} --- Functions that are classified as being separable have the characteristic when the function can be written as a series of summations of just one variable\cite{numericalABC}. This quality makes the function easier to solve as the algorithm has only one variable to be concerend about\cite{evalevoalgo,numericalABC}. Seperable functions also have the inherent quality of being scalable, meaning they can be easily be adapted to higher dimensions\cite{evalevoalgo,numericalABC}.
-\item{\textbf{Non-seperable}} --- Functions classifed as non-separable cannot be rewritten into a series of summation functions as the variables used in the functions have the characterisitc of being interrelated\cite{evalevoalgo,numericalABC}. The interrelation of the variables makes non-seperable functions more difficult than separable functions to solve since the algorithm has more interdependant variables to be concerned with\cite{evalevoalgo,numericalABC}.
+\item{\textbf{Separable}} --- Functions that are classified as being separable have the characteristic when the function can be written as a series of summations of just one variable\cite{numericalABC}. This quality makes the function easier to solve as the algorithm has only one variable to be concerned about\cite{evalevoalgo,numericalABC}. Separable functions also have the inherent quality of being scalable, meaning they can be easily be adapted to higher dimensions\cite{evalevoalgo,numericalABC}.
+\item{\textbf{Non-separable}} --- Functions classifiied as non-separable cannot be rewritten into a series of summation functions as the variables used in the functions have the characteristic of being interrelated\cite{evalevoalgo,numericalABC}. The interrelation of the variables makes non-separable functions more difficult than separable functions to solve since the algorithm has more interdependent variables to be concerned with\cite{evalevoalgo,numericalABC}.
 \end{description}
 
 The De Jong test functions (F1, Shekel's Foxhole) are not considered to be the gold standard of testing optimisation algorithms\cite{evalevoalgo}. The only reason for their extensive use in the literature is due to the functions being the first to be developed and applied to test an optimisation algorithm i.e. Genetic Algorithm\cite{devparallelgasa,evalevoalgo}.
@@ -64,7 +64,7 @@ Problems that have deceptive search spaces tests how good the algorithm is resis
 \label{eq:DeJongF1}
 	f(x) = \sum_{i=1}^n x^2_i, -5.12 \leq x_i \geq 5.12, i \in \mathbb{N}
 \end{equation}
-The DeJong F1 Function has the following global minium when $f(x) = 0, x(i) = 0, i:n$ where $n$ is the amount of dimensions\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,ContinACSTS,TestFunctions}. In the literature the function is classified as being unimodal and seperable\cite{ABCCompareStudy,TestFunctions}. 
+The DeJong F1 Function has the following global minimum when $f(x) = 0, x(i) = 0, i:n$ where $n$ is the amount of dimensions\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,ContinACSTS,TestFunctions}. In the literature the function is classified as being unimodal and separable\cite{ABCCompareStudy,TestFunctions}. 
 \subsection{Shekel's Foxhole}
 \begin{align}
 \label{eq:shekel}
@@ -77,7 +77,7 @@ The DeJong F1 Function has the following global minium when $f(x) = 0, x(i) = 0,
 \end{align}
 the variables $x_1$ and $x_2$ are usually restricted to the square represented by $-65.356 \leq x_1 \leq 65.357, -65.357 \leq x_2 \leq 65.356$\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}. The global optimum is when $f(x_1,x_2) = 0, \{x_1,x_2\} = \{-32,-32\}$\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}.
 
-The matrix controls the holes that appear in the search space. The interested reader is directed to the 3D graph rendering of this function presented in the appendix on page~\pageref{fig:ShekelGraph} for a visual representation. In the literature the function is classified being multimodal and seperable\cite{adaptPSO,ABCCompareStudy,TestFunctions}.
+The matrix controls the holes that appear in the search space. The interested reader is directed to the 3D graph rendering of this function presented in the appendix on page~\pageref{fig:ShekelGraph} for a visual representation. In the literature the function is classified being multimodal and separable\cite{adaptPSO,ABCCompareStudy,TestFunctions}.
 \subsection{Rastrigin}
 \begin{equation}
 	f(x) = 10n + \sum_{i=1}^n [x_i^2 - 10\cos(2 \pi x_i)],\, i \in \mathbb{N}
@@ -89,21 +89,21 @@ Rastrigins function is based on DeJong's first function equation~\ref{eq:DeJongF
 \begin{equation}
 	f(x) = 418.9829n - \sum^n_{i=1} [x_i\sin{\sqrt{|x_i|}}], \qquad i \in \mathbb{N}
 \end{equation}
-The variable $x_i$ is restricted to be in the hybercube $-500 \leq x_i \leq 500, i = 1,\ldots,n$\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,DistributedHierarchicalGA,TestFunctions}. The global optimum for the function is $f(x) = 0$ when $x_i = 420.9687$\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,DistributedHierarchicalGA,TestFunctions}. 
+The variable $x_i$ is restricted to be in the hypercube $-500 \leq x_i \leq 500, i = 1,\ldots,n$\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,DistributedHierarchicalGA,TestFunctions}. The global optimum for the function is $f(x) = 0$ when $x_i = 420.9687$\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,DistributedHierarchicalGA,TestFunctions}. 
 
-If one observes the 3D rendering of the schwefel function problem space on page~\pageref{fig:SchwefelGraph}, one can see that the search space contains a great number of peaks which might be local optima. The function also has the characteristic of having a second best optima far from the global optima which many algorithms get trapped in\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,DistributedHierarchicalGA,TestFunctions}. In the literature the function is classifed as being multimodal and separable\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,TestFunctions}.
+If one observes the 3D rendering of the schwefel function problem space on page~\pageref{fig:SchwefelGraph}, one can see that the search space contains a great number of peaks which might be local optima. The function also has the characteristic of having a second best optima far from the global optima which many algorithms get trapped in\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,DistributedHierarchicalGA,TestFunctions}. In the literature the function is classified as being multimodal and separable\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,TestFunctions}.
 \subsection{Griewank}
 \begin{equation}
 	f(x) = \sum^n_{i=1} \frac{x^2_i}{4000} - \prod^n_{i=1}\cos{(\frac{x_i}{\sqrt{i}})} + 1, \qquad i \in \mathbb{N}
 \end{equation}
 The variable $x_i$ is bounded to within the hypercube $ -600 \leq x_i \leq 600 $\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,ContinACSTS,TestFunctions}. The global optimum of the function is when $f(x) =0$ which occurs when $ x_i = 0, i = 1, \dots, n $\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,ContinACSTS,TestFunctions}.
 
-As with the schwefel function, the Griewank function also has a great number of peaks and valleys which many algorithm get trapped in. A particular quality of the griewank function is at low dimensions, the function is quite difficult to solve, whereas it has been shown that at higher dimensions the function becomes much easier due to there being less peaks and vallyes to nagivate in the search space\cite{evalevoalgo,ABCCompareStudy,numericalABC,PerfABC,TestFunctions}. In the literature the function is classified as being multimodal and non-separable\cite{adaptPSO,ABCCompareStudy,numericalABC,ChaoticABC,PerfABC,TestFunctions}.
+As with the schwefel function, the Griewank function also has a great number of peaks and valleys which many algorithm get trapped in. A particular quality of the griewank function is at low dimensions, the function is quite difficult to solve, whereas it has been shown that at higher dimensions the function becomes much easier due to there being less peaks and valleys to navigate in the search space\cite{evalevoalgo,ABCCompareStudy,numericalABC,PerfABC,TestFunctions}. In the literature the function is classified as being multimodal and non-separable\cite{adaptPSO,ABCCompareStudy,numericalABC,ChaoticABC,PerfABC,TestFunctions}.
 \subsection{Salomon}
 \begin{equation}
 	f(x) = -\cos{(2\pi\sum_{i=1}^n\sqrt{x_i^2})} + 0.1 \sqrt{\sum_{i=1}^n x_i^2} + 1, \quad i \in \mathbb{N}
 \end{equation}
-Unlike the previous functions discussed in this section, the Salomon function imposes no constraint on the $x_i$ variable. The global optimum is when $f(x) = 0$ and $x_i = 0$ where $i = 1,\ldots,n$. This particular function seems to have been applied as benchmarking function yet, as no literature can be found. Nontheless, the function is indeed a numerical optimisation function that is classified as being multimodal and non-separable\cite{http://www.it.lut.fi/ip/evo/functions/node12.html}.
+Unlike the previous functions discussed in this section, the Salomon function imposes no constraint on the $x_i$ variable. The global optimum is when $f(x) = 0$ and $x_i = 0$ where $i = 1,\ldots,n$. This particular function seems to have been applied as benchmarking function yet, as no literature can be found. Nonetheless, the function is indeed a numerical optimisation function that is classified as being multimodal and non-separable\cite{http://www.it.lut.fi/ip/evo/functions/node12.html}.
 \subsection{Ackley}
 \begin{equation}
 	f(x) = -20e^{-0.2\sqrt{\frac{1}{2}\sum_{i=1}^n x_i^2}} - e^{\frac{1}{2}\sum_{i=1}^n\cos{2\pi x_i}} + 20 + e^1, \qquad i \in \mathbb{N}
@@ -148,7 +148,7 @@ The rosenbrock search space has a curving valley which leads forces algorithms t
 \begin{equation}
 	f(x) = -\frac{1 + \cos{(12\sqrt{x_1^2 + x_2^2})}}{\frac{1}{2}(x_1^2 + x_2^2) + 2}
 \end{equation}
-The variables $x_1$ and $x_2$ are restricted to be within the following bounds $-5.12 \leq x_i \leq 5.12$\cite{TestFunctions}. The landscape of this function resembles that of a droplet falling into a pool of water, as can be observed from the 3D graph presnted in the appendix on page~\pageref{fig:DropwaveGraph}. Due to its ``wave'' nature, the function has various local minima and only a single optima which is when $f(x_1,x_2) = 0$. The function is classified being multimodal and non-separable\cite{TestFunctions}.
+The variables $x_1$ and $x_2$ are restricted to be within the following bounds $-5.12 \leq x_i \leq 5.12$\cite{TestFunctions}. The landscape of this function resembles that of a droplet falling into a pool of water, as can be observed from the 3D graph presented in the appendix on page~\pageref{fig:DropwaveGraph}. Due to its ``wave'' nature, the function has various local minima and only a single optima which is when $f(x_1,x_2) = 0$. The function is classified being multimodal and non-separable\cite{TestFunctions}.
 \subsection{Easom}
 \begin{equation}
 	f(x_1,x_2) = -\cos(x_1)\cos(x_2)e^{(-(x_1 - \pi)^2 - (x_2 - \pi)^2)}
@@ -178,7 +178,7 @@ The literature classifies this function as being multimodal and separable\cite{A
 \begin{equation}
 	f(x) = -\sum_{i=1}^n\sin{(x_i)}[\sin{(\frac{(1 - x_i^2)}{\pi})}]^{2m}, \qquad i,m \in \mathbb{N}
 \end{equation}
-The variable $x_i$ is usually constricted to the following defined boundary $0 \leq x_i \leq \pi, i = 1,\ldots,n$\cite{ABCCompareStudy,TestFunctions}. The parameter $m$ defines the steepness of the valleys in the function. The function has two approximated global minima's which are difficult to locate since their size in comparison to the rest of the search space is relatively small\cite{ABCCompareStudy,TestFunctions}.
+The variable $x_i$ is usually constricted to the following defined boundary $0 \leq x_i \leq \pi, i = 1,\ldots,n$\cite{ABCCompareStudy,TestFunctions}. The parameter $m$ defines the steepness of the valleys in the function. The function has two approximated global minima's that are difficult to locate since their size in comparison to the rest of the search space is relatively small\cite{ABCCompareStudy,TestFunctions}.
 %http://www.geatbx.com/docu/fcnindex-01.html#P216_11735
 \begin{enumerate}
 \item $f(x) = -4.687,\: n = 5$
@@ -194,7 +194,7 @@ In the literature the function is classified as being multimodal and separable\c
 \end{align}
 The variables $x_1$ and $x_2$ are subject to the following boundary constraints $-2 \leq x_1 \leq 2, -2 \leq x_2 \leq 2$\cite{ABCCompareStudy,TSGlobalOptimization,TSGlobalOptContinFunc,ContinACSTS,TestFunctions}. The function has only one global minimum four local optima\cite{ABCCompareStudy,TSGlobalOptimization}. The global optimum is when $f(x_1,x_2) = 3$ and is obtainable when $x_1 = 0$ and $x_2 = -1$\cite{ABCCompareStudy,TSGlobalOptimization,TSGlobalOptContinFunc,ContinACSTS,TestFunctions}.
 
-The literature classifies this function as being multimodal and non-seperable\cite{ABCCompareStudy}.
+The literature classifies this function as being multimodal and non-separable\cite{ABCCompareStudy}.
 
 \section{Results}
 \label{sec:benchResults}
@@ -210,32 +210,31 @@ The algorithms will be compared with the following criteria on each benchmark.
 \begin{itemize}
 \item The number of iterations the algorithm took to find the global optimum
 \item The accuracy of the algorithm, which means if the algorithm has indeed located the optimum or if not, how far off is the algorithm.
-\item The PSO is a population based algorithm, thus diversity is important. Diversity will be measured and compared on each benchmark function.
+\item The PSO is a population-based algorithm, thus diversity is important. Diversity will be measured and compared on each benchmark function.
 \end{itemize}
-For each of the above criteria a subsection will be preseted. Where possible the results obtained will be compared to other algorithms that have been applied to similar test functions.
+For each of the above criteria a subsection will be presented. Where possible the results obtained will be compared to other algorithms that have been applied to similar test functions.
 
-\subsection{Iterations}
+\subsection{Fina values}
 \begin{center}
 	\begin{tabular}{| c | c | c | c | c | c |}
 	\hline
 	Function & PSO & PSO* & GA & TS & ABC\\  \hline
-	Name & VALUES & VALUES & VALUES\cite{} & -- & --\\ \hline
-	DeJong F1 & -- & -- & -- & -- & --\\ \hline
-	Shekel's Foxhole & -- & -- & -- & -- & --\\ \hline
-	Rastrigin & -- & -- & -- & -- & --\\ \hline
-	Schwefel & -- & -- & -- & -- & --\\ \hline
-	Griewank & -- & -- & -- & -- & --\\ \hline
-	Salomon & -- & -- & -- & -- & --\\ \hline
-	Ackley & -- & -- & -- & -- & --\\ \hline
-	Six-Hump CamelBack & -- & -- & -- & -- & --\\ \hline
-	Shubert & -- & -- & -- & -- & --\\ \hline
-	Himmelblau & -- & -- & -- & -- & --\\ \hline
-	RosenbrockValley & -- & -- & -- & -- & --\\ \hline
-	Dropwave & -- & -- & -- & -- & --\\ \hline
-	Easom & -- & -- & -- & -- & --\\ \hline
-	Branins & -- & -- & -- & -- & --\\ \hline
-	Michalewicz & -- & -- & -- & -- & --\\ \hline
-	Goldstein & -- & -- & -- & -- & --\\ \hline
+	DeJong F1 & 0 & -- & -- & -- & --\\ \hline
+	Shekel's Foxhole & 0 & -- & -- & -- & --\\ \hline
+	Rastrigin & 0.74622 & -- & N/A & N/A & N/A\\ \hline
+	Schwefel & -1.19069e+43 & -- & N/A & N/A & N/A\\ \hline
+	Griewank & 1.00003 & -- & N/A & N/A & N/A\\ \hline
+	Salomon & -0.460561 & -- & -- & -- & --\\ \hline
+	Ackley & -4.5901 & -- & N/A & N/A & N/A\\ \hline
+	Six-Hump camelback & -1.03163 & -- & -- & -- & --\\ \hline
+	Shubert & -186.731 & -- & -- & -- & --\\ \hline
+	Himmelblau & 1.02103 & -- & -- & -- & --\\ \hline
+	RosenbrockValley & 1.81101e-08 & -- & -- & -- & --\\ \hline
+	Dropwave & 4.59843e-15 & -- & -- & -- & --\\ \hline
+	Easom & -1 & -- & -- & -- & --\\ \hline
+	Branins & 1.22875 & -- & N/A & N/A & N/A\\ \hline
+	Michalewicz & -2.40391 & -- & -- & -- & --\\ \hline
+	Goldstein & infinity & -- & -- & -- & --\\ \hline
 	\end{tabular}
 \end{center}
 \subsection{Diversity}
@@ -243,7 +242,6 @@ For each of the above criteria a subsection will be preseted. Where possible the
 	\begin{tabular}{| c | c | c | c | c | c |}
 	\hline
 	Function & PSO & PSO* & GA & TS & ABC\\  \hline
-	Name & VALUES & VALUES & VALUES\cite{} & -- & --\\ \hline
 	DeJong F1 & -- & -- & -- & -- & --\\ \hline
 	Shekel's Foxhole & -- & -- & -- & -- & --\\ \hline
 	Rastrigin & -- & -- & -- & -- & --\\ \hline
@@ -251,7 +249,7 @@ For each of the above criteria a subsection will be preseted. Where possible the
 	Griewank & -- & -- & -- & -- & --\\ \hline
 	Salomon & -- & -- & -- & -- & --\\ \hline
 	Ackley & -- & -- & -- & -- & --\\ \hline
-	Six-Hump CamelBack & -- & -- & -- & -- & --\\ \hline
+	Six-Hump camelback & -- & -- & -- & -- & --\\ \hline
 	Shubert & -- & -- & -- & -- & --\\ \hline
 	Himmelblau & -- & -- & -- & -- & --\\ \hline
 	RosenbrockValley & -- & -- & -- & -- & --\\ \hline
@@ -267,7 +265,6 @@ For each of the above criteria a subsection will be preseted. Where possible the
 	\begin{tabular}{| c | c | c | c | c | c |}
 	\hline
 	Function & PSO & PSO* & GA & TS & ABC\\  \hline
-	Name & VALUES & VALUES & VALUES\cite{} & -- & --\\ \hline
 	DeJong F1 & -- & -- & -- & -- & --\\ \hline
 	Shekel's Foxhole & -- & -- & -- & -- & --\\ \hline
 	Rastrigin & -- & -- & -- & -- & --\\ \hline
@@ -275,7 +272,7 @@ For each of the above criteria a subsection will be preseted. Where possible the
 	Griewank & -- & -- & -- & -- & --\\ \hline
 	Salomon & -- & -- & -- & -- & --\\ \hline
 	Ackley & -- & -- & -- & -- & --\\ \hline
-	Six-Hump CamelBack & -- & -- & -- & -- & --\\ \hline
+	Six-Hump camelback & -- & -- & -- & -- & --\\ \hline
 	Shubert & -- & -- & -- & -- & --\\ \hline
 	Himmelblau & -- & -- & -- & -- & --\\ \hline
 	RosenbrockValley & -- & -- & -- & -- & --\\ \hline

@@ -12,53 +12,50 @@ A level-1 auxiliary file: chpt9.aux
 A level-1 auxiliary file: apdxA.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
-Warning--I didn't find a database entry for "MobileWirelessCommunicationss"
-Warning--I didn't find a database entry for "AdreasPaper"
-Warning--I didn't find a database entry for "Karen200"
 Warning--I didn't find a database entry for ""
 Warning--I didn't find a database entry for "AntQAO"
 Warning--I didn't find a database entry for "http://www.it.lut.fi/ip/evo/functions/node12.html"
 Warning--there's a number but no volume in FAPInCell
 Warning--can't use both author and editor fields in IntroMathProgramming
-You've used 147 entries,
+You've used 146 entries,
             2118 wiz_defined-function locations,
-            1458 strings with 32949 characters,
-and the built_in function-call counts, 54726 in all, are:
-= -- 5530
-> -- 2202
+            1448 strings with 32816 characters,
+and the built_in function-call counts, 54529 in all, are:
+= -- 5513
+> -- 2195
 < -- 55
-+ -- 909
-- -- 716
-* -- 3790
-:= -- 8597
-add.period$ -- 463
-call.type$ -- 147
-change.case$ -- 787
++ -- 906
+- -- 714
+* -- 3784
+:= -- 8565
+add.period$ -- 461
+call.type$ -- 146
+change.case$ -- 783
 chr.to.int$ -- 0
-cite$ -- 149
-duplicate$ -- 2188
-empty$ -- 4458
-format.name$ -- 716
-if$ -- 11883
+cite$ -- 148
+duplicate$ -- 2181
+empty$ -- 4436
+format.name$ -- 714
+if$ -- 11840
 int.to.chr$ -- 0
-int.to.str$ -- 147
+int.to.str$ -- 146
 missing$ -- 155
-newline$ -- 739
-num.names$ -- 294
-pop$ -- 821
+newline$ -- 735
+num.names$ -- 292
+pop$ -- 812
 preamble$ -- 1
-purify$ -- 652
+purify$ -- 649
 quote$ -- 0
-skip$ -- 1659
+skip$ -- 1651
 stack$ -- 0
-substring$ -- 4119
-swap$ -- 623
+substring$ -- 4114
+swap$ -- 622
 text.length$ -- 55
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 552
+type$ -- 548
 warning$ -- 2
-while$ -- 513
-width$ -- 150
-write$ -- 1654
-(There were 8 warnings)
+while$ -- 511
+width$ -- 149
+write$ -- 1646
+(There were 5 warnings)

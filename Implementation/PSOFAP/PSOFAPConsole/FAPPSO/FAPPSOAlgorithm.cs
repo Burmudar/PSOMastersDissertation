@@ -17,6 +17,7 @@ namespace PSOFAPConsole.FAPPSO
     using PositionGenCellArray = IPositionGenerator<ICell[]>;
     using GlobalBestSelector = IGlobalBestSelector<Particle<ICell[]>>;
     using System.Threading.Tasks;
+    using System.IO;
 
     public class FAPPSOAlgorithm : PSOAlgorithm<ICell[]>
     {
@@ -28,9 +29,11 @@ namespace PSOFAPConsole.FAPPSO
         public PositionGenCellArray Generator { get; set; }
         public GlobalBestSelector Selector { get; set; }
         private ICellIntegrityChecker cellIntegrityChecker;
+        public String BenchName { get; set; }
 
-        public FAPPSOAlgorithm(int population,FitnessFuncCellArray evalFunction, ParticleMoveFunction moveFunction, PositionGenCellArray positionGenerator, ICellIntegrityChecker checker,GlobalBestSelector selector)
+        public FAPPSOAlgorithm(string benchName,int population,FitnessFuncCellArray evalFunction, ParticleMoveFunction moveFunction, PositionGenCellArray positionGenerator, ICellIntegrityChecker checker,GlobalBestSelector selector)
         {
+            BenchName = benchName;
             Particles = new List<ParticleCellArray>();
             Population = population;
             EvaluationFunction = evalFunction;
@@ -38,6 +41,9 @@ namespace PSOFAPConsole.FAPPSO
             Generator = positionGenerator;
             cellIntegrityChecker = checker;
             Selector = selector;
+            BenchName += "("+moveFunction.GetType().Name+")";
+            BenchName += "("+selector.GetConstructionMethodName()+")";
+            Console.WriteLine(BenchName);
             Initialize();
         }
 
@@ -58,13 +64,28 @@ namespace PSOFAPConsole.FAPPSO
 
         public void Start()
         {
+            DateTime start = DateTime.Now;
+            String filename = "Bench-"+BenchName+"("+Population+")-" + start.ToLongDateString() + " " + start.ToLongTimeString().Replace(':','-') +"#" + this.GetHashCode() +".csv";
+            StreamWriter swriter = new StreamWriter(new FileStream(filename, FileMode.CreateNew));
             for (int i = 0; i < 10000; i++)
             {
                 Parallel.ForEach(Particles, EvaluateParticle);
                 UpdateGlobalBest();
                 UpdateSwarmMovement();
-                Console.WriteLine("Iteration: {0} Hashcode: {1} Fitness: {2}", i, this.GetHashCode(), GlobalBest.Fitness);
+                swriter.WriteLine("{0},{1}", i, GlobalBest.Fitness);
+                TimeSpan timespan = DateTime.Now - start;
+                int duration = timespan.Duration().Minutes;
+                if ( duration >= 15)
+                {
+                    Console.WriteLine(filename + " is at iteration " + i + " after "+duration+" mins");
+                }
+                if (duration >= 15 && i >= 20)
+                {
+                    Console.WriteLine(filename + " -- finished -- 15 Minute mark and iteration is greater 20 -- fitness:" + GlobalBest.Fitness + " with " + cellIntegrityChecker.CountViolations(GlobalBest.Position) + " violations");
+                    break;
+                }
             }
+            swriter.Close();
         }
 
         private void UpdateGlobalBest()

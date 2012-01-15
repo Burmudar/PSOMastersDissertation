@@ -1,2 +1,31 @@
 \chapter{Conclusion}
+\label{chpt:conclusion}
 \section{Introduction}
+The focus of this dissertation was to apply the PSO algorithm to the FAP. In current research no PSO algorithm to date has been presented that has been applied to the FS-FAP using interference as performance measurement. In this chapter such an algorithm is presented and in chapter~\ref{chpt:psoapplicationFAP} the innovation and new techniques to make it possible for the PSO to operate in the FS-FAP domain is discussed.
+
+\subsection{The conclusion}
+In chapter~\ref{chpt:psoapplicationFAP} new velocity methods were created and discussed to enable the PSO swarm to move around in the problem space. To futher improve the performance of the PSO addition techniques were developed.
+
+The additional techniques that were developed are mainly concerned with how the Gbest for the swarm is selected. The algorithms that represent these methods and techniques were also presented in the chapter. Not all the techniques used in the FAP PSO were entirely new, some techniques that were used can be easily identified like the use of Tabu lists. Other techniques are a bit more difficult to identify. The building of the gbest actually borrows a concept used by ants in the ACO algorithm to build solutions. 
+
+The FAP PSO algorithm uses random collision resolution when a particle position is already in the tabu list. The random collision resolution works by randomly selecting a new channel until it is found not to be tabu. This procedure is very similar to the mutation operation used by the GA algorithm.
+
+In chapter~\ref{chpt:results} the results of the FAP PSO algorithm applied to the COST 259 siemens benchmark were presented and discussed. By critical evaluating the results one can conclude that the best performing PSO variant is the particular algorithm using the first developed velocity method and utilizes cells to build the global best. The results achieved by this variant of the algorithm greatly outweight the other algorithms, but when compared to the best achieved in the literature the algorithm still has a great deal to go.
+
+Being so far off the best achieved results in the literature is not surprising, as applying the PSO to the FS-FAP and on the COST259 benchmark is a first. Nonetheless in this dissertation is has been shown that it is indeed viable to apply the PSO on the FS-FAP, and with more research it is possible that the PSO algorithm might be able to either come near the best presented results or actually improve upon it.
+
+\section{Future work}
+As discussed various techniques have been developed for the FAP PSO. With most of the techniques the aim was to stay true to the standard PSO algorithm. THe next step is the hybridise the FAP PSO algorithm. A good candidate for hybridisation would be the GA as the algorithm naturally ``purify'' results finding the right genes that make up a good possible solution.
+
+In the PSO a good entry point for the GA to by incorporated would be two fold. The first point would be to take a certain global best selected with the standard procedure and then to mate it with successive global bests, with the offspring global best being a best for a future iteration. With this method the PSO is able to use history of the algorithm since the start.
+
+The second method takes a swarm of a certain iteration and then mates all the particles with each other for a certain amount of iterations. This method can be seen as a means to clean the swarm of ineffcient genes and could serve as a intensification phase for the algorithm.
+
+Another point of interest is to disregard the PSO and rahter try and produce a ABC algorithm on the FS-FAP, as discussed the ABC algorithm was not chosen for this dissertation since it is new and hasn't been applied to a wide variety of problems. 
+
+By using some of the techniques developed in this dissertation like for instance the selection schemes, a viable ABC algorithm could be developed. The ABC algorithm is not that specific as to how new solutions are generated as with the PSO which relies on vector mathematics, which allows an algorithm designer considerable more freedom.
+
+
+
+
+

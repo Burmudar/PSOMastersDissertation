@@ -8,5 +8,6 @@ namespace PSOFAPConsole.PSO.Interfaces
     public interface IGlobalBestSelector<T>
     {
         T FindGlobalBest(List<T> population);
+        String GetConstructionMethodName();
     }
 }

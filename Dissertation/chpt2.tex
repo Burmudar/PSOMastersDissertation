@@ -15,7 +15,7 @@ When a task needs to be automated an algorithm needs to be developed to tell the
 
 Since the FAP is proven to be NP-Complete problem, thus using an algorithm that tries to brute force a solution is futile as no solution can be found in a reasonable time frame in chapter~\ref{chpt:fap} NP-Complete problem will defined as well as a overview of the FAP. Hence, algorithms based on heuristic techniques are utilized in an attempt to either solve the FAP or come close to a solution. Heuristic Algorithms will be discussed in Chapter 4.
 
-In this chapter we start by discussing GSM as well as a brief history of GSM. The topology of GSM is then explained before moving onto the problems in that are present GSM network. One of the major problems being the FAP.
+In this chapter an overview of GSM networks as well as a brief history of GSM will be discussed. A discussion on the topology of GSM will then follow. This chapter will conclude with a discussion on the problems in that are present a GSM network, namely the Frequency Assignment Problem (FAP).
 
 \section{GSM Networks}
 The General System for Mobile Communications (GSM) is a system for multi-service cellular communication that is capable of providing voice as well as data services\cite{Karen2004,Eisenblatter,GSMArchitectureProtocolsServices,GSM92,wirelesstelcoMullet}. Most cellular networks in operation are GSM based\cite{Karen2004,Eisenblatter,GSMArchitectureProtocolsServices,GSM92,wirelesstelcoMullet}. The primary service that GSM caters for is voice communication, but other data services such as Short Message Service (SMS), Multimedia Message Service (MMS) and Internet connectivity services such as \emph{general packet radio system} (GPRS), \emph{enhanced data rate for global evolution} (EDGE) and \emph{high speed circuit switched data} (HSCSD) are becoming more important\cite{GSMArchitectureProtocolsServices,Eisenblatter}.
@@ -24,7 +24,7 @@ GSM is one of the most widely used radio communications technologies, which is w
 
 \subsection{A Brief History of GSM Networks}
 \label{sec:gsmhistory}
-In the early 1981 a group known as the Groupe Speciale Mobile (GSM) was established to develop a Europe wide radio communication system using the reserved 900 MHz band\footnote{In 1990 the United Kingdom requested that 1800MHz band be added to the scope of the GSM standard group. This variant of the GSM specification became known as the \emph{Digital Cellular System 1800} (DCS1800) \cite{GSM92,Karen2004}.}.
+In the early 1981 a group known as the Groupe Speciale Mobile (GSM) was established to develop a Europe wide radio communication system using the reserved 900 MHz band\footnote{In 1990 the United Kingdom requested that 1800MHz band be added to the scope of the GSM standard group. This variant of the GSM specification became known as the \emph{Digital Cellular System 1800} (DCS1800) \cite{GSM92,Karen2004}.}\cite{GSM92,Karen2004}.
 
 At the start of the GSM specification in the early 1980's it was initially thought that the system would be analogue based, but this soon changed with the \emph{integrated service digital network} (ISDN) specification nearing completion. As such the GSM specification started following much of the same design principles and access protocols that ISDN exhibited\cite{Karen2004,GSM92,GSMArchitectureProtocolsServices}.
 
@@ -34,9 +34,9 @@ The primary benefit that one can deduce from the use of ISDN over slower analogu
 
 Before the switch to digital transmission was finalized the GSM first wanted to evaluate the spectral efficiency of analogue and digital based transmission\cite{Karen2004,GSM92,GSMArchitectureProtocolsServices}. Spectral efficiency plays an important part in wireless communication since the radio spectrum is a limited resource and whichever transmission technology is used, the utilization of the spectrum should be maximised\cite{Karen2004,GSM92,GSMArchitectureProtocolsServices}. 
 
-Maximum utilisation is an important problem that will discussed in detail in later sections of this chapter. After an evaluation of spectral efficiency it was finalized that the GSM system would be digital based using \emph{time division multiple access} (TDMA) \cite{GSM92,GSMSysEngin,Eisenblatter}.
+Maximum utilisation is an important problem that will be discussed in detail in later sections of this chapter. After an evaluation of spectral efficiency it was finalized that the GSM system would be digitally based using \emph{time division multiple access} (TDMA) \cite{GSM92,GSMSysEngin,Eisenblatter}.
 
-By the early 1990’s GSM became an evolving standard and the first GSM based network was demonstrated in 1991\footnote{Near the end of 1991 the GSM group was renamed to \emph{Speciale Mobile Group} (SMG) to eliminate confusion with the standard and the group}\cite{Karen2004,GSM92,GSMArchitectureProtocolsServices,Eisenblatter}. The following year a number of GSM networks were operating in Europe due to mobile terminals / equipment capable of operating on the networks becoming more widely available to the general public\cite{Karen2004,GSM92,GSMArchitectureProtocolsServices,Eisenblatter}. In the same year an operator in Australia became the first non-European operator to implement a GSM based network\cite{Eisenblatter}.
+By the early 1990’s GSM became an evolving standard and the first GSM based network was demonstrated in 1991\footnote{Near the end of 1991 the GSM group was renamed to \emph{Speciale Mobile Group} (SMG) to eliminate confusion with the standard and the group}\cite{Karen2004,GSM92,GSMArchitectureProtocolsServices,Eisenblatter}. The following year a number of GSM networks were operating in Europe due to mobile terminals and equipment capable of operating on the networks becoming more widely available to the general public\cite{Karen2004,GSM92,GSMArchitectureProtocolsServices,Eisenblatter}. In the same year an operator in Australia became the first non-European operator to implement a GSM based network\cite{Eisenblatter}.
 
 The collective subscriber base of GSM networks surpassed the million-subscriber mark in 1993. Due to this phenomenal growth in GSM network use, numerous extensions were made to the GSM specification. 
 Some of the extensions that were made are the following\cite{Karen2004,GSM92,GSMArchitectureProtocolsServices,Eisenblatter}:
@@ -61,7 +61,7 @@ The actual signal to noise ratio at a receiver is dependent on a number of facto
 \item Shape of the surrounding environment
 \item Direction of the transmission
 \end{itemize}
-Even taking these factors into account the calculation of the signal to noise ratio at a transceiver is not trivial. For a more in depth discussion on the calculation the reader is directed at the survey by \cite{Karen2004}.
+Even taking these factors into account the calculation of the signal to noise ratio at a transceiver is not trivial. The calculation of the signal to noise ratio as well as its impact on mobile radio frequencies will be discussed in chapter~\ref{chpt:fap} section~\ref{sec:Interference}.
 
 As the GSM standard matured as a cellular technology, industry experts already began specification of the next generation of cellular networks, which would in time, replace the GSM cellular system. 
 
@@ -93,12 +93,12 @@ In this section a brief overview of the history of the GSM Network specification
 A GSM networks consists of a variety of different subsystems to realise the goal of establishing a radio communication link between two parties. The hierarchy of systems and their respective connections to each other is illustrated in figure \ref{fig:GSMArchitecture}. Each subsystem will now be discussed.
 \subsubsection{Mobile Station (MS)}
 A Mobile station (MS) as it is defined in the GSM specification refers to any mobile device that is capable of making and receiving calls on a GSM network.  The MS is the main gateway 
-for a user to gain access to the GSM network \cite{Eisenblatter,GSMArchitectureProtocolsServices}. Typical devices that fall under the category of MS are Cellular Phones, Smart Phones and POS devices. The MS has two features that play an important role throughout the GSM Network, namely:
+for a user to gain access to the GSM network \cite{Eisenblatter,GSMArchitectureProtocolsServices}. Typical devices that fall under the category of MS are Cellular Phones, Smart Phones and Point of Sale (POS) devices. The MS has two features that play an important role throughout the GSM Network, namely:
 \begin{description}
 \item[Subscriber Identification Module (SIM)] --- Usually inserted into a mobile devices. The SIM contains the \emph{international mobile subscriber identity} (IMSI) and is used throughout the network for authentication as well as being a key part in providing encrypted transmissions \cite{Eisenblatter}.
 \item[International Mobile Equipment Identity(IMEI)] --- Used to identify mobile station equipment. Primarily used in the denial of service to equipment that has been blacklisted\footnote{Equipment can be blacklisted for a variety of reasons e.g. theft} and tries to gain access to the network \cite{Eisenblatter}.
 \end{description}
-The MS has the capability to change the transmission power it uses from its base value to a maximum value of 20 mW. The change in transmission power is automatically set to the lowest level by the base transceiver station (BTS) to ensure reliable communication after evaluating the signal strength as measured by the MS \cite{GSMSysEngin,GSMArchitectureProtocolsServices}. The power adjustment also minimizes cochannel interference because the transmitted signal is less powerful therefore less likely to interfere with other signals\cite{GSMSysEngin}.
+The MS has the capability to change the transmission power it uses from its base value to a maximum value of 20mW. The change in transmission power is automatically set to the lowest level by the base transceiver station (BTS) to ensure reliable communication after evaluating the signal strength as measured by the MS \cite{GSMSysEngin,GSMArchitectureProtocolsServices}. The power adjustment also minimizes cochannel interference because the transmitted signal is less powerful therefore less likely to interfere with other signals\cite{GSMSysEngin}.
 
 \subsection{Base Station Subsystem (BSS)}
 
@@ -118,7 +118,7 @@ By making the size of cells smaller, the network operator is required to invest 
 Fortunately all the extra infrastructure investment by the operator can be greatly scaled down if cells are divided into sectors\label{def:cellsector}. Each sector performs the exact same function as a traditional cell and is therefore regard to also be a cell just smaller in size and not omni-directional \cite{GSMArchitectureProtocolsServices,GSM92,GSMSysEngin}. 
 
 A cell is divided into 3 to 6 service sectors and each sector is allocated an antenna/transceiver \cite{GSMSysEngin}. Depending on how many sectors are at a cell, the operating angle of the antennae needs to be adjusted accordingly to ensure 360 degree service. If there is only one sector an omni-directional antenna is used, otherwise the antennae operating angle are adjusted to $\frac{360\,^{\circ}}{n}$ where ${n}$ is the amount of antennae \cite{Eisenblatter}.
-\begin{figure}[h]
+\begin{figure}[t!]
 	\begin{centering}
 		\input{tikz-pics/GSMCell.tex}
 		\caption{Cells with BTS's}
@@ -126,7 +126,17 @@ A cell is divided into 3 to 6 service sectors and each sector is allocated an an
 	\end{centering}
 \end{figure}
 
-By dividing the cell into sectors the amount of co-channel interference that would occur in a cell is greatly reduced \cite{GSMArchitectureProtocolsServices}. For instance, if a cell using an omni-directional transceiver is assigned 6 channels. If the cell were to be divided into 3 sectors, where the sectors antennae are $120^\circ$ apart, the amount of interfering co-channels shrink from 6 to 2 and from 6 to 1 in the case that the cell is divided into 6 sectors \cite{GSMSysEngin,GSM92,GSMArchitectureProtocolsServices}.
+By dividing the cell into sectors the amount of co-channel interference that would occur in a cell is greatly reduced \cite{GSMArchitectureProtocolsServices}. It is important to note that the reduction of co-channel interference is only applicable when the angle of the anttenaue by which transmission occurs is restricted\cite{GSMArchitectureProtocolsServices}.
+
+For instance, if a cell using an omni-directional transceiver is assigned 6 channels. If the cell were to be divided into 3 sectors, where the sectors antennae are $120^\circ$ apart, the amount of interfering co-channels shrink from 6 to 2 and from 6 to 1 in the case that the cell is divided into 6 sectors \cite{GSMSysEngin,GSM92,GSMArchitectureProtocolsServices}.
+
+\begin{figure}[t!]
+	\begin{centering}
+	\includegraphics[scale=0.75]{tikz-pics/cellsector.pdf}
+	\label{fig:cellsector}
+	\caption[Cell Sectorization]{A cell that has been divided into sectors is illustrated. It can be observed that the center cell has been sectorized into 6 distinct sectors using directional tranceivers. With the a traceiver servicing each sector it can be seen in the figure that the tranceiver will interfere only one cell.}
+	\end{centering}
+\end{figure}
 
 Each sector operates one or more elementary transceivers called TRX’s. The amount of TRX’s per sector is determined by the expected peak traffic demand that the cell must be able to handle. Each TRX can handle 7 to 8 communication links or calls in parallel except the first TRX, which handles fewer calls than normal due to it being responsible for transmitting cell organisation and protocol information \cite{Eisenblatter}. TRX’s are able to handle 7-8 calls in parallel due to the use of \emph{frequency division multiplexing} (FDM) and \emph{time division multiplexing} (TDM) schemes. 
 
@@ -157,7 +167,7 @@ A requirement for being able to communicate with other network elements such as 
 A typical scenario where this operation proves vital is when a mobile subscriber makes a call to a subscriber on a PSTN. The connection bit rate needs to be changed at the MSC from a wireless connection bitrate to a bitrate suitable for transmission over a PSTN.
 
 \subsection{Network Databases}
-The HLR, AUC (Authentication Centre) and EIR (Equipment Identity Register) are the 3 'back-end' databases, which stores and provides information for the rest of the GSM Network. We will now briefly discuss what the purpose of each database is and its core functions.
+The HLR, AUC (Authentication Centre) and EIR (Equipment Identity Register) are the three 'back-end' databases, which stores and provides information for the rest of the GSM Network. In this subsection each one of the databases that form part of the 'back-end' will be briefly discussed as well as a description will be given of the core functions that each database performs in the network.
 
 \paragraph{Home Location Register (HLR)}
 The HLR is a database that permanently stores information pertaining to a given set of subscribers. The HLR needs to store a wide range of subscriber parameters because it is the reference source for anything GSM subscriber related in the network. 
@@ -174,7 +184,7 @@ Each mobile that is registered in the HLR database needs to be authenticated and
 \paragraph{Equipment Identity Register (EIR)}
 The EIR is a database that stores the IMEI numbers of all registered mobile equipment that has accessed the network. Only information about the mobile equipment is stored, nothing about the subscriber or call is stored in the database.
 
-Typically there is only one EIR database per network and interfaces to the various HLR database contained in the network. The IMEI's are grouped into 3 categories: \emph{White List}, \emph{Black List} and the \emph{Gray List}. The White list contains only the IMEI numbers of valid MS's; the Black List stores the IMEI numbers of equipment that has been reported stolen and the Gray List stores the IMEI numbers of equipment that has some fault (faulty software, wrong make of equipment).
+Typically there is only one EIR database per network and interfaces to the various HLR database contained in the network. The IMEI's are grouped into three categories: \emph{White List}, \emph{Black List} and the \emph{Gray List}. The White list contains only the IMEI numbers of valid MS's; the Black List stores the IMEI numbers of equipment that has been reported stolen and the Gray List stores the IMEI numbers of equipment that has some fault (faulty software, wrong make of equipment).
 
 \subsection{GSM Network Management entities}
 In a GSM network most of the elements that form part of and make the network function are often distributed in a wide geographical area to provide the best network coverage for the customer. 
@@ -183,7 +193,7 @@ For a network to function properly and efficiently network engineers need to be 
 
 The one system is called the Operations and Management centre which is responsible for centralized regional and local operational and maintenance activities. The other system called the Network Management System unlike the OMC provides global and centralized management for operations and maintenance of the network supposed by the OMCs \cite{GSMSysEngin}.
 
-We will discuss the OMC and NMC in a bit more detail where we'll define the most critical functions they perform.
+In the following sections a more indepth discussion on the critical functions the OMC and NMC perform will be presented.
 
 \paragraph{Operational and Management Centre}
 The OMC is capable of communicating with GSM entities using two protocols namely SS7 and X.25. The SS7 protocol is usually used when the OMC is communicating within the GSM network over short and medium distances. The X.25 protocol is used for large external data transfers. All communication where the OMC is involved typically occurs over fixed line networks and/or leased lines. The OMC is usually used for day to day operation of a network \cite{GSMSysEngin}.
@@ -224,13 +234,13 @@ Using TDMA the GSM system is able to provide additional transmission capacity by
 \end{figure}
 As can be observed from figure \ref{fig:GSMChannels} each TDMA frame has a series of consecutive timeslots. Each timeslot can be used for both uplink and downlink transmission. A GSM \emph{channel} is a logical channel and refers to a single timeslot within a TDMA frame \cite{wirelesstelcoMullet,GSMArchitectureProtocolsServices}.
 
-The GSM system is hence able to use the same physical frequency in eight different timeslots without interference as these \emph{logical} channels are used at different times. Therefore using TDMA the available channels than can be used for communication in GSM is increased eight fold \cite{wirelesstelcoMullet}.
+The GSM system is hence able to use the same physical frequency in eight different timeslots without interference as these \emph{logical} channels are used at different times. Therefore using TDMA the available channels that can be used for communication in GSM is increased eight fold \cite{wirelesstelcoMullet}.
 
 Frequencies are assigned to the uplink and downlink portion of the connection with a certain duplex separation in the frequency band \footnote{Separation is usually 45 MHz} to avoid interference between uplink and downlink. There are two types of channels, traffic channels and control channels. Traffic channels (TCHs) primary purpose is to enable communication of user speech and data and therefore carry no control information \cite{GSMArchitectureProtocolsServices}.
 
 A TCH is assigned to a MS device when the device requests that it needs to communicate with another device either with speech or data. When a MS is done with the TCH the allocated TCH is reclaimed for use by other MS devices on the network. This request by the MS device occurs using over the control channels \cite{GSMArchitectureProtocolsServices}.
 
-Control channels are much more active used in a GSM network since it is the primary means by which control and management of the network occurs \cite{GSMArchitectureProtocolsServices}. These channels are used even when the MS has no active connection and is hence in idle mode. This constant activity on the control channels is to keep the network update with information such as the position of the MS (location updating) and signal strength \cite{GSMArchitectureProtocolsServices,GSMSysEngin,Eisenblatter}. 
+Control channels are much more actively used in a GSM network since it is the primary means by which control and management of the network occurs \cite{GSMArchitectureProtocolsServices}. These channels are used even when the MS has no active connection and is hence in idle mode. This constant activity on the control channels is to keep the network update with information such as the position of the MS (location updating) and signal strength \cite{GSMArchitectureProtocolsServices,GSMSysEngin,Eisenblatter}. 
 
 The control channels are divided into three main channel groups namely Broadcast Channel (BCH), Common Control Channel (CCCH) and Dedicated Control Channel (DCCH) \cite{GSMArchitectureProtocolsServices}. Each of these channel groups contains furthermore channels that aid in the control and management of the network. Each group along with the associated channels shall now be briefly discussed.
 
@@ -258,12 +268,12 @@ The last group of signalling channels are referred to as Dedicated/Associated Co
 
 Finally, one last channel is defined named the Cell Broadcast Channel (CBCH), which shares the same physical channel that the SDCCH uses. On this channel messages of the Short Message Service Cell Broadcast are broadcasted \cite{GSMArchitectureProtocolsServices}.
 
-We have now explained the \emph{logical} channels used for communication between a MS and BSS/MSC. These three groups of channels collectively enable the GSM network to facilitate wireless communication, a very important function for a telecommunication network. In the next section, we will discuss how the network still enables a MS to be connection and makes calls while it is moving around geographically within.
+In this section a section an overview was given on how \emph{logical} channels used for communication between a MS and BSS/MSC. These three groups of channels collectively enable the GSM network to facilitate wireless communication, a very important function for a telecommunication network. In the following section a discussion will be presented on how the network is able to keep a connection to a MS alive and allow the MS to make calls while the device is moving around geographically within the network.
 \section{Handover}
 \label{sec:handover}
 In this section a discussion will be given describing the process GSM network entities go through when a handover needs to occur. The Handover process in a GSM network is initiated when a MS with an active call moves outside the coverage area of a cell, BSS or MSC \cite{GSMArchitectureProtocolsServices,wirelesstelcoMullet,Eisenblatter}. Besides the MS moving outside the coverage area, a handover might also be initiated because of measurements indicating bad channel quality\cite{GSMArchitectureProtocolsServices}. 
 
-Various information needs to be migrated across and shared between the entities to ensure a smooth handover, which results in the MS active call not suddenly ending. It is just not the GSM architecture entities that need to continuously share information but also the MS. An MS is required to continuously observe and measure signal strength of up to 6 neighbouring cells. The MS does this by monitoring the BCCH\cite{GSMArchitectureProtocolsServices,wirelesstelcoMullet}. This information is of course relayed to the MSC and BTS as it plays a critical role in the decision process as to which entity will be the best in taking over the administration of the active call\cite{GSMArchitectureProtocolsServices,wirelesstelcoMullet}.
+Various information needs to be migrated across and shared between the entities to ensure a smooth handover, which results in the MS active call not suddenly ending. It is just not the GSM architecture entities that need to continuously share information but also the MS. The MS is required to continuously observe and measure signal strength of up to 6 neighbouring cells. The MS does this by monitoring the BCCH\cite{GSMArchitectureProtocolsServices,wirelesstelcoMullet}. This information is of course relayed to the MSC and BTS as it plays a critical role in the decision process as to which entity will be the best in taking over the administration of the active call\cite{GSMArchitectureProtocolsServices,wirelesstelcoMullet}.
 
 A MS can in some cases receive the same BCCH from different cells, which are most likely neighbours \cite{GSMArchitectureProtocolsServices}. This problem of duplicate BCCH from different cells can be attributed to the frequency reuse in the cellular network as well as due to the smaller sector cells forming clusters and therefore overlapping coverage area \cite{GSMArchitectureProtocolsServices}. As discussed in section \ref{def:cellsector} page \pageref{def:cellsector}, cells are typically divided into sectors, which lessen the problem of co-channel interference. This division into sectors can cause clustering of cells and overlapping of coverage area.
 
@@ -296,7 +306,7 @@ The new MSC informs the old MSC of the new connection details. The old MSC trans
 The BSC in turn informs the new MSC, who in turn informs the old MSC that the handover was successful. The MSC then instructs the BSC to ensure the old connection resources are relinquished by the BTS.
 \end{description}
 
-In this section a discussion was presented on the process the GSM network follows as a MS device moves around geographically in the network to keep a active call on the MS active and not get disconnected. An outline was on what effect this has on channel selected as well as the different handover procedures. In the next section a summary of this chapter will be presented. 
+In this section a discussion was presented on the process the GSM network follows as a MS device moves around geographically in the network to keep a active call on the MS active and not get disconnected. An outline was given on what effect this has on channel selected as well as the different handover procedures. In the next section a summary of this chapter will be presented. 
 \section{Summary}
 In this chapter a broad discussion was given on modern cellular technology specifically the GSM cellular network technology. A brief history on how GSM was developed to be the most widely used cellular technology in use today was presented in section \ref{sec:gsmhistory}. A discussion on the various GSM architecture entities followed the history on GSM. In the GSM architecture a overview of all the entities present in a modern GSM network was presented.
 

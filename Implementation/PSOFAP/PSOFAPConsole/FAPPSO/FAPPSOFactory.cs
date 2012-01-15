@@ -17,80 +17,84 @@ namespace PSOFAPConsole.FAPPSO
 
     public class FAPPSOFactory
     {
-        private FAPModel model;
-        private int population;
 
-        public FAPPSOFactory(FAPModel model,int pop)
+
+        public FAPPSOFactory()
         {
-            this.model = model;
-            population = pop;
         }
 
-        public PSOAlgorithm<ICell[]> CreateFrequencyValueBased(double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateFrequencyValueBased(int Population,FAPModel Model,double localCoefficient, double globalCoefficient)
         {
-            PositionGenCellArray generator = new FrequencyPositionGenerator(model);
-            FitnessFuncCellArray evalFunction = new FAPCostFunction(model);
-            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(model, model.GeneralInformation.Spectrum[0], model.GeneralInformation.Spectrum[1],
-                 localCoefficient, globalCoefficient, CreateCollisionResolver());
-            ICellIntegrityChecker checker = new GBCViolationChecker(model.GeneralInformation.GloballyBlockedChannels);
-            return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker,GBestFactory.GetStandardSelector());
+            PositionGenCellArray generator = new FrequencyPositionGenerator(Model);
+            FitnessFuncCellArray evalFunction = new FAPCostFunction(Model);
+            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(Model, Model.GeneralInformation.Spectrum[0], Model.GeneralInformation.Spectrum[1],
+                 localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
+            ICellIntegrityChecker checker = new GBCViolationChecker(Model.GeneralInformation.GloballyBlockedChannels);
+            String benchName = Model.GeneralInformation.ScenarioID;
+            return new FAPPSOAlgorithm(benchName,Population, evalFunction, moveFunction, generator, checker,GBestFactory.GetStandardSelector());
         }
 
-        public PSOAlgorithm<ICell[]> CreateFrequencyIndexBased(double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateFrequencyIndexBased(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
         {
-            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
-            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(model, 0, model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver());
-            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
-            return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector());
+            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(Model);
+            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(Model);
+            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(Model, 0, Model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
+            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
+            String benchName = Model.GeneralInformation.ScenarioID;
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector());
         }
 
-        public PSOAlgorithm<ICell[]> CreateIndexMovementBased(double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateIndexMovementBased(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
         {
-            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
-            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(model, localCoefficient,globalCoefficient,CreateCollisionResolver());
-            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
-            return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector());
+            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(Model);
+            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(Model);
+            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
+            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
+            String benchName = Model.GeneralInformation.ScenarioID;
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector());
         }
 
-        public PSOAlgorithm<ICell[]> CreateIndexBasedFAPPSOWithGlobalBestCellBuilder(double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateIndexBasedFAPPSOWithGlobalBestCellBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
         {
-            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
-            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(model,0, model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver());
-            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
-            return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
+            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(Model);
+            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(Model);
+            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(Model, 0, Model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
+            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
+            String benchName = Model.GeneralInformation.ScenarioID;
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
         }
 
-        public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestCellBuilder(double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestCellBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
         {
-            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
-            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(model,localCoefficient,globalCoefficient, CreateCollisionResolver());
-            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
-            return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
+            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(Model);
+            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(Model);
+            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
+            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
+            String benchName = Model.GeneralInformation.ScenarioID;
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
         }
 
-        public PSOAlgorithm<ICell[]> CreateIndexBasedFAPPSOWithGlobalBestTRXBuilder(double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateIndexBasedFAPPSOWithGlobalBestTRXBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
         {
-            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
-            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(model, 0, model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver());
-            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
-            return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
+            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(Model);
+            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(Model);
+            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(Model, 0, Model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
+            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
+            String benchName = Model.GeneralInformation.ScenarioID;
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestTRXBuilderSelector());
         }
 
-        public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestTRXBuilder(double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestTRXBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
         {
-            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(model);
-            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(model);
-            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(model, localCoefficient,globalCoefficient,CreateCollisionResolver());
-            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(model);
-            return new FAPPSOAlgorithm(population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
+            PositionGenCellArray generator = new FrequencyIndexPositionGenerator(Model);
+            FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(Model);
+            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient,globalCoefficient,CreateCollisionResolver(Model));
+            ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
+            String benchName = Model.GeneralInformation.ScenarioID;
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestTRXBuilderSelector());
         }
 
-        protected AbstractCollisionResolver CreateCollisionResolver()
+        protected AbstractCollisionResolver CreateCollisionResolver(FAPModel model)
         {
             return new RandomCollisionResolver(model.Channels);
         }
