@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.15)  15 JAN 2012 13:18
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.15)  22 JAN 2012 00:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -691,33 +691,33 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [3] [4] [5] [6] [7])
+) [3] [4] [5] [6] [7]
+[8])
 \tf@toc=\write7
 \openout7 = `dissertation.toc'.
 
+ [9] [10
 
-[8] (./dissertation.lof [9
-
-])
+] (./dissertation.lof [11])
 \tf@lof=\write8
 \openout8 = `dissertation.lof'.
 
- [10] (./dissertation.loa)
+ [12] (./dissertation.loa)
 \tf@loa=\write9
 \openout9 = `dissertation.loa'.
 
- [11
+ [13
 
-] [12
+] [14
 
 ]
 (./dissertation.lot)
 \tf@lot=\write10
 \openout10 = `dissertation.lot'.
 
- [13] [14
+ [15] [16
 
-] [15] [16]
+] [17] [18]
 \openout2 = `chpt1.aux'.
 
  (./chpt1.tex
@@ -725,27 +725,28 @@ Chapter 1.
 [1
 
 
-] [2] [3] [4]) [5]
-\openout2 = `chpt2.aux'.
-
- (./chpt2.tex [6
-
-
-
-]
-Chapter 2.
-[7] [8] [9]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 44.
+] [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
- [10] [11]
-(./tikz-pics/GSMArchitecture.tex)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+ [3] [4] [5])
+[6]
+\openout2 = `chpt2.aux'.
+
+ (./chpt2.tex
+Chapter 2.
+[7
+
+
+
+] [8] [9]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [10] [11] (./tikz-pics/GSMArchitecture.tex)
 Overfull \hbox (19.77644pt too wide) in paragraph at lines 80--86
  [][] 
  []
@@ -759,7 +760,7 @@ Overfull \hbox (4.12582pt too wide) in paragraph at lines 98--99
 
 pdfTeX warning: pdflatex (file ./tikz-pics/cellsector.pdf): PDF inclusion: foun
 d PDF version <1.5>, but at most version <1.4> allowed
-<tikz-pics/cellsector.pdf, id=1337, 438.89949pt x 444.51431pt>
+<tikz-pics/cellsector.pdf, id=1380, 438.89949pt x 444.51431pt>
 File: tikz-pics/cellsector.pdf Graphic file (type pdf)
 
 <use tikz-pics/cellsector.pdf>
@@ -860,7 +861,7 @@ put line 77.
 
 pdfTeX warning: pdflatex (file ./pictures/TabuSearch.pdf): PDF inclusion: found
  PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/TabuSearch.pdf, id=2028, 722.7pt x 542.025pt>
+<./pictures/TabuSearch.pdf, id=2071, 722.7pt x 542.025pt>
 File: ./pictures/TabuSearch.pdf Graphic file (type pdf)
 
 <use ./pictures/TabuSearch.pdf>
@@ -882,7 +883,7 @@ Underfull \vbox (badness 5939) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./pictures/SimulatedAnnealing.pdf): PDF inclusio
 n: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/SimulatedAnnealing.pdf, id=2348, 722.7pt x 542.025pt>
+<./pictures/SimulatedAnnealing.pdf, id=2391, 722.7pt x 542.025pt>
 File: ./pictures/SimulatedAnnealing.pdf Graphic file (type pdf)
 
 <use ./pictures/SimulatedAnnealing.pdf>
@@ -900,7 +901,7 @@ e-quires slight changes.
 
 pdfTeX warning: pdflatex (file ./pictures/GeneticAlgorithm.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/GeneticAlgorithm.pdf, id=2613, 722.7pt x 542.025pt>
+<./pictures/GeneticAlgorithm.pdf, id=2657, 722.7pt x 542.025pt>
 File: ./pictures/GeneticAlgorithm.pdf Graphic file (type pdf)
 
 <use ./pictures/GeneticAlgorithm.pdf>
@@ -943,7 +944,7 @@ Missing character: There is no ù in font cmr10!
 
 pdfTeX warning: pdflatex (file ./pictures/AntColonyOptimization.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/AntColonyOptimization.pdf, id=3108, 722.7pt x 542.025pt>
+<./pictures/AntColonyOptimization.pdf, id=3152, 722.7pt x 542.025pt>
 File: ./pictures/AntColonyOptimization.pdf Graphic file (type pdf)
 
 <use ./pictures/AntColonyOptimization.pdf>
@@ -951,7 +952,7 @@ Overfull \hbox (8.1491pt too wide) in paragraph at lines 113--114
  [] 
  []
 
-<./pictures/antBridgeExperiment.png, id=3114, 498.86375pt x 240.9pt>
+<./pictures/antBridgeExperiment.png, id=3158, 498.86375pt x 240.9pt>
 File: ./pictures/antBridgeExperiment.png Graphic file (type png)
 
 <use ./pictures/antBridgeExperiment.png> [99] [100] [101 <./pictures/AntColonyO
@@ -994,7 +995,7 @@ Underfull \vbox (badness 2865) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./pictures/BeeAlgorithm.pdf): PDF inclusion: fou
 nd PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/BeeAlgorithm.pdf, id=3539, 722.7pt x 542.025pt>
+<./pictures/BeeAlgorithm.pdf, id=3582, 722.7pt x 542.025pt>
 File: ./pictures/BeeAlgorithm.pdf Graphic file (type pdf)
 
 <use ./pictures/BeeAlgorithm.pdf>
@@ -1013,7 +1014,7 @@ LaTeX Warning: Citation `' on page 122 undefined on input line 448.
 
 pdfTeX warning: pdflatex (file ./pictures/ParticleSwarmOptimization.pdf): PDF i
 nclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/ParticleSwarmOptimization.pdf, id=3903, 722.7pt x 542.025pt>
+<./pictures/ParticleSwarmOptimization.pdf, id=3946, 722.7pt x 542.025pt>
 File: ./pictures/ParticleSwarmOptimization.pdf Graphic file (type pdf)
 
 <use ./pictures/ParticleSwarmOptimization.pdf>
@@ -1065,7 +1066,7 @@ Chapter 7.
 LaTeX Warning: Reference `chpt:swarmintelligence' on page 158 undefined on inpu
 t line 30.
 
-[158] [159] <./pictures/fapPlanDiagram.pdf, id=4586, 338.86601pt x 207.174pt>
+[158] [159] <./pictures/fapPlanDiagram.pdf, id=4629, 338.86601pt x 207.174pt>
 File: ./pictures/fapPlanDiagram.pdf Graphic file (type pdf)
 
 <use ./pictures/fapPlanDiagram.pdf> [160 <./pictures/fapPlanDiagram.pdf>]
@@ -1113,10 +1114,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 9.
-[199] [200]) [201] [202
+[199] [200] [201] [202] [203] [204]) [205] [206
 
 
-] [203] [204]
+] [207] [208]
 \openout2 = `apdxA.aux'.
 
  (./apdxA.tex
@@ -1127,7 +1128,7 @@ ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/dejongf1.py)...executed.
 (./dissertation.out.pyg
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <6> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2.
- [205
+ [209
 
 
 ])
@@ -1137,7 +1138,7 @@ runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/shekelsfoxhole.py)...exe
 cuted.
 
- (./dissertation.out.pyg [206])
+ (./dissertation.out.pyg [210])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
@@ -1145,7 +1146,7 @@ ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/rastrigin.py)...executed
 .
 
 
-(./dissertation.out.pyg [207])
+(./dissertation.out.pyg [211])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
@@ -1157,19 +1158,19 @@ runsystem(rm dissertation.out.pyg)...executed.
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/Griewank.py)...executed.
 
- (./dissertation.out.pyg [208])
+ (./dissertation.out.pyg [212])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/Salomon.py)...executed.
 
- (./dissertation.out.pyg [209])
+ (./dissertation.out.pyg [213])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/Ackley.py)...executed.
 
- (./dissertation.out.pyg [210])
+ (./dissertation.out.pyg [214])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
@@ -1182,14 +1183,14 @@ runsystem(rm dissertation.out.pyg)...executed.
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/Shubert.py)...executed.
 
- (./dissertation.out.pyg [211])
+ (./dissertation.out.pyg [215])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/Himmelblau.py)...execute
 d.
 
- (./dissertation.out.pyg [212])
+ (./dissertation.out.pyg [216])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
@@ -1202,20 +1203,20 @@ runsystem(rm dissertation.out.pyg)...executed.
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/Dropwave.py)...executed.
 
- (./dissertation.out.pyg [213])
+ (./dissertation.out.pyg [217])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/Easom.py)...executed.
 
 
-(./dissertation.out.pyg [214])
+(./dissertation.out.pyg [218])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/Branin.py)...executed.
 
- (./dissertation.out.pyg [215])
+ (./dissertation.out.pyg [219])
 runsystem(rm dissertation.out.pyg)...executed.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
@@ -1230,92 +1231,92 @@ runsystem(pygmentize -l python -f latex -F tokenmerge             -P "verboptio
 ns= ,fontsize=\tiny " -o dissertation.out.pyg ./Graphs/Goldstein.py)...executed
 .
 
- (./dissertation.out.pyg [216])
+ (./dissertation.out.pyg [220])
 runsystem(rm dissertation.out.pyg)...executed.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [217]
-<./Graphs/DeJongF1.pdf, id=5095, 578.16pt x 433.62pt>
+ [221]
+<./Graphs/DeJongF1.pdf, id=5164, 578.16pt x 433.62pt>
 File: ./Graphs/DeJongF1.pdf Graphic file (type pdf)
 
 <use ./Graphs/DeJongF1.pdf>
-<./Graphs/Shekel.pdf, id=5096, 578.16pt x 433.62pt>
+<./Graphs/Shekel.pdf, id=5165, 578.16pt x 433.62pt>
 File: ./Graphs/Shekel.pdf Graphic file (type pdf)
  <use ./Graphs/Shekel.pdf>
-<./Graphs/Rastrigin.pdf, id=5097, 578.16pt x 433.62pt>
+<./Graphs/Rastrigin.pdf, id=5166, 578.16pt x 433.62pt>
 File: ./Graphs/Rastrigin.pdf Graphic file (type pdf)
 
-<use ./Graphs/Rastrigin.pdf> [218 <./Graphs/DeJongF1.pdf> <./Graphs/Shekel.pdf>
-] <./Graphs/Schwefel.pdf, id=5129, 578.16pt x 433.62pt>
+<use ./Graphs/Rastrigin.pdf> [222 <./Graphs/DeJongF1.pdf> <./Graphs/Shekel.pdf>
+] <./Graphs/Schwefel.pdf, id=5198, 578.16pt x 433.62pt>
 File: ./Graphs/Schwefel.pdf Graphic file (type pdf)
 
 <use ./Graphs/Schwefel.pdf>
-<./Graphs/Griewank_-50_+50.pdf, id=5130, 578.16pt x 433.62pt>
+<./Graphs/Griewank_-50_+50.pdf, id=5199, 578.16pt x 433.62pt>
 File: ./Graphs/Griewank_-50_+50.pdf Graphic file (type pdf)
 
-<use ./Graphs/Griewank_-50_+50.pdf> [219 <./Graphs/Rastrigin.pdf> <./Graphs/Sch
-wefel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=5164, 578.16pt x 433.62pt>
+<use ./Graphs/Griewank_-50_+50.pdf> [223 <./Graphs/Rastrigin.pdf> <./Graphs/Sch
+wefel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=5233, 578.16pt x 433.62pt>
 File: ./Graphs/Salomon_-10_+10.pdf Graphic file (type pdf)
 
 <use ./Graphs/Salomon_-10_+10.pdf>
-<./Graphs/Ackley.pdf, id=5165, 578.16pt x 433.62pt>
+<./Graphs/Ackley.pdf, id=5234, 578.16pt x 433.62pt>
 File: ./Graphs/Ackley.pdf Graphic file (type pdf)
  <use ./Graphs/Ackley.pdf>
-[220 <./Graphs/Griewank_-50_+50.pdf> <./Graphs/Salomon_-10_+10.pdf>]
-<./Graphs/Camel.pdf, id=5199, 578.16pt x 433.62pt>
+[224 <./Graphs/Griewank_-50_+50.pdf> <./Graphs/Salomon_-10_+10.pdf>]
+<./Graphs/Camel.pdf, id=5268, 578.16pt x 433.62pt>
 File: ./Graphs/Camel.pdf Graphic file (type pdf)
  <use ./Graphs/Camel.pdf>
-<./Graphs/Shubert.pdf, id=5200, 578.16pt x 433.62pt>
+<./Graphs/Shubert.pdf, id=5269, 578.16pt x 433.62pt>
 File: ./Graphs/Shubert.pdf Graphic file (type pdf)
 
-<use ./Graphs/Shubert.pdf> [221 <./Graphs/Ackley.pdf> <./Graphs/Camel.pdf>]
-<./Graphs/Himmelblau.pdf, id=5234, 578.16pt x 433.62pt>
+<use ./Graphs/Shubert.pdf> [225 <./Graphs/Ackley.pdf> <./Graphs/Camel.pdf>]
+<./Graphs/Himmelblau.pdf, id=5303, 578.16pt x 433.62pt>
 File: ./Graphs/Himmelblau.pdf Graphic file (type pdf)
 
 <use ./Graphs/Himmelblau.pdf>
-<./Graphs/Rosenbrock.pdf, id=5235, 578.16pt x 433.62pt>
+<./Graphs/Rosenbrock.pdf, id=5304, 578.16pt x 433.62pt>
 File: ./Graphs/Rosenbrock.pdf Graphic file (type pdf)
 
-<use ./Graphs/Rosenbrock.pdf> [222 <./Graphs/Shubert.pdf> <./Graphs/Himmelblau.
-pdf>] <./Graphs/Dropwave.pdf, id=5270, 578.16pt x 433.62pt>
+<use ./Graphs/Rosenbrock.pdf> [226 <./Graphs/Shubert.pdf> <./Graphs/Himmelblau.
+pdf>] <./Graphs/Dropwave.pdf, id=5339, 578.16pt x 433.62pt>
 File: ./Graphs/Dropwave.pdf Graphic file (type pdf)
 
 <use ./Graphs/Dropwave.pdf>
-<./Graphs/Easom_-100_+100.pdf, id=5271, 578.16pt x 433.62pt>
+<./Graphs/Easom_-100_+100.pdf, id=5340, 578.16pt x 433.62pt>
 File: ./Graphs/Easom_-100_+100.pdf Graphic file (type pdf)
 
-<use ./Graphs/Easom_-100_+100.pdf> [223 <./Graphs/Rosenbrock.pdf> <./Graphs/Dro
-pwave.pdf>] <./Graphs/Branin.pdf, id=5307, 578.16pt x 433.62pt>
+<use ./Graphs/Easom_-100_+100.pdf> [227 <./Graphs/Rosenbrock.pdf> <./Graphs/Dro
+pwave.pdf>] <./Graphs/Branin.pdf, id=5376, 578.16pt x 433.62pt>
 File: ./Graphs/Branin.pdf Graphic file (type pdf)
 
 <use ./Graphs/Branin.pdf>
-<./Graphs/Michalewicz.pdf, id=5308, 578.16pt x 433.62pt>
+<./Graphs/Michalewicz.pdf, id=5377, 578.16pt x 433.62pt>
 File: ./Graphs/Michalewicz.pdf Graphic file (type pdf)
 
-<use ./Graphs/Michalewicz.pdf> [224 <./Graphs/Easom_-100_+100.pdf> <./Graphs/Br
-anin.pdf>] <./Graphs/Goldstein.pdf, id=5345, 578.16pt x 433.62pt>
+<use ./Graphs/Michalewicz.pdf> [228 <./Graphs/Easom_-100_+100.pdf> <./Graphs/Br
+anin.pdf>] <./Graphs/Goldstein.pdf, id=5414, 578.16pt x 433.62pt>
 File: ./Graphs/Goldstein.pdf Graphic file (type pdf)
 
-<use ./Graphs/Goldstein.pdf>) [225 <./Graphs/Michalewicz.pdf> <./Graphs/Goldste
-in.pdf>] (./dissertation.bbl [226
+<use ./Graphs/Goldstein.pdf>) [229 <./Graphs/Michalewicz.pdf> <./Graphs/Goldste
+in.pdf>] (./dissertation.bbl [230
 
 
-] [227] [228]
+] [231] [232]
 Missing character: There is no é in font cmr10!
- [229]
+ [233]
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no à in font cmr10!
- [230]
+ [234]
 Underfull \hbox (badness 4060) in paragraph at lines 241--248
 []\OT1/cmr/m/n/10.95 Antonio G^^Somez-Iglesias, Miguel A. Vega-Rodr^^S^^Pguez, 
 Fran-cisco
  []
 
-[231] [232] [233] [234] [235] [236] [237]
+[235] [236] [237] [238] [239] [240] [241]
 Missing character: There is no ø in font cmr10!
- [238] [239] [240] [241]) [242]
+ [242] [243] [244] [245]) [246]
 (./dissertation.aux (./chpt1.aux) (./chpt2.aux) (./chpt3.aux) (./chpt4.aux)
 (./chpt5.aux) (./chpt6.aux) (./chpt7.aux) (./chpt8.aux) (./chpt9.aux)
 (./apdxA.aux))
@@ -1324,10 +1325,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18417 strings out of 495061
- 331679 string characters out of 1182620
- 407636 words of memory out of 3000000
- 20023 multiletter control sequences out of 15000+50000
+ 18446 strings out of 495061
+ 332027 string characters out of 1182620
+ 407637 words of memory out of 3000000
+ 20030 multiletter control sequences out of 15000+50000
  14588 words of font info for 55 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  56i,19n,63p,1142b,844s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1351,9 +1352,9 @@ msfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
 cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dissertation.pdf (258 pages, 17133895 bytes).
+Output written on dissertation.pdf (264 pages, 17153889 bytes).
 PDF statistics:
- 5747 PDF objects out of 6186 (max. 8388607)
- 1040 named destinations out of 1200 (max. 500000)
- 1524 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5820 PDF objects out of 6186 (max. 8388607)
+ 1062 named destinations out of 1200 (max. 500000)
+ 1580 words of extra memory for PDF output out of 10000 (max. 10000000)
 

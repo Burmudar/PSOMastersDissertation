@@ -1,8 +1,52 @@
 \chapter{Conclusion}
 \label{chpt:conclusion}
 \section{Introduction}
-The focus of this dissertation was to apply the PSO algorithm to the FAP. In current research no PSO algorithm to date has been presented that has been applied to the FS-FAP using interference as performance measurement. In this chapter such an algorithm is presented and in chapter~\ref{chpt:psoapplicationFAP} the innovation and new techniques to make it possible for the PSO to operate in the FS-FAP domain is discussed.
+The aim of this dissertation was to develop a modern arificial intelligence optimisation algorithm which would be applied on a problem in the cellular technology domain. In the second part of the this dissertation such an algorithm was presented. Namely, an algorithm was developed based on the stantdard PSO algorithm which was then applied to operate on the FAP. 
 
+In current research no similar PSO algorithm to date has been presented that has been applied to the FS-FAP using interference as performance measurement. In this dissertation such an algorithm is presented and in chapter~\ref{chpt:psoapplicationFAP} the innovation and new techniques that made it possible for an algorithm based on the PSO to operate in the FS-FAP domain was discussed.
+
+\section{Research Questions}
+At the start of the dissertation a series of research questions were outlined. These questions were identified and served as a roadmap to understand the problem domain as well as have enough background information on optimisation algorithmic techniques to allow innovation.
+
+Six questions were identified in total. Each original questions will now be listed together with a short discussion on how the question was answered and to which chapter it is related to.
+\begin{itemize}
+\item \textbf{Question 1} --- \emph{What cellular technology is, how it got developed and what improvements have been made since its initial development ?} This question was answered in chapter 2 where a discussion was present on not only the history of cellular technology is provided as well as a brief discussion on improvements that have been made since the inception of cellular networks.
+\item \textbf{Question 2} --- \emph{What is the architecture behind a modern cellular network and how do the various hardware entities within a network communicate with each other as well as how is a communicational link established between two users of the network ?}  The dicussion concerned with answered this question was presented in chapter 2 where the architecture of a modern day cellular network is outliend and disucced in depth. Each entity used by the network to facilitate communication is identified and discussed in detail.
+\item \textbf{Question 3} --- \emph{What exactly is the frequency problem and how does it affect modern wireless communication ? } This question was answered in chapter 3, where the general problem of the frequency assignment problem is presented as well as what exactly happens in a cellular network for this problem to occur.
+\item \textbf{Question 4} --- What variants of the frequency problem exist and which are most applicable to cellular networks ? The various variants that currently exist in the problem domain are listed in chapter 3 together with their respetive history and what domain they affect. Each variant was also briefly discussed and the particular variant this disseratation concentrated on was formally stated. 
+\item \textbf{Question 5} --- What are the most popular optimisation algorithms and what characteristics make them unique ? This question is answered across two chapters namely chapter 4 and 5. In these chapters the most propular and modern optimisation algorithms are discussed and evaluated.
+\item \textbf{Question 6} --- With algorithms that achieved success in their respective optimisation problems, what particular technique is used by the algorithms that allowed it to achieve better performance ? Chapter 4 and 5 that discuss modern optimisation algorithm also answer this question since each presented algorithm is evaluated. With the evaluation of a particular algorithm a brief discussion was presented on what exactly makes the algorithm unique.
+\end{itemize}
+
+\section{Research Objective}
+As stated in the introduction, the objective of this dissertation is to determine whether it is viable and possible to apply a modern day swarm based algorithm in an attempt to be applied to the frequency assignment problem. 
+
+The question therefore is, did this dissertation achieve its research objective ? The answer is yes. A algorithm based on the swarm algorithm PSO was presented that operated on the Frequency Assignment Problem. The only part still left to be presented is to dicuss the viability of applying this algorithm in modern cellular networks.
+
+Before the viability analysis is presented the chapter breakdown presented in the introduction will be revisted in the next section.
+
+\section{Chapter breakdown revisted}
+In this chapter, the chapter breakdown presented in the introduction will be presented once more but with a summary of what exactly was discussed in that particular chapter.
+\subsection{Part I - Background}
+\subsubsection{Chapter 1}
+This chapter is provides an introduction to the presented dissertation as well as providing a broad overview of the topics the dissertation will discuss. The chapter also provides a general outline of the chapters that will be presented in the dissertation.
+\subsubsection{Chapter 2}
+This chapter is concerned with providing information on how a mordern cellular network functions. Within this chapter a brief history is presented on how cellular network technology was developed. The chapter also provides a overview on the architecture of a cellular network discussing each part of the network intended purpose and function to facilitate wireless communication.
+\subsubsection{Chapter 3}
+This chapter presents the problem that the dissertation will address namely the Frequency Assignement Problem. The chapter provides a discussion on why the problem exists, what causes the problem to exist in the first place and what it means for a problem to be NP-Complete. Furthermore the chapter also discuss the various variants of the problem and how they differ depending on the wireless domain that is being considered. Finally the chapter also provides a formal definition of the problem which is later utilised by the algorithm developed in this dissertation.
+\subsubsection{Chapter 4}
+This chapter marks the beginning of a discussion on various optimisation algortihms in this dissertation. The algorithms presented in this chapter were chosen due to their wide spread usage as well as success on NP-Complete problems. The chapter discusses each algorithm in depth providing an outline of the core features that make the algorith unique as well as discussing each core feature in depth. For each algorithm the chapter also presents an analysis on related work of the particular algorithm being applied to the Frequency Assignment Problem. 
+\subsubsection{Chapter 5}
+This chapter is concerned with providing algorithms that are new in the research domain of optimisation algorithms. Where as the algorithms presented in chapter 4 are fairly old and have been applied to a wide variety of problems. Algorithms in this chapter are relatively new in the optimisation domain and have not been applied to nearly the same amount of problems as the algorithms in chapter 4. In this chapter swarm algorithms are presented and the algorithms have the particular characteristic that they are based generally on processes observed in nature. Each algorithm presented is discussed in depth with their core characteristics outlined and discussed. Furthermore for each algorithm a analysis is presented if the algorithm were to be applied to the Frequency Assignment Problem. Finally in this chapter it is also formally stated what algorithm this dissertation will apply to the Frequency Assignment Problem.
+\subsection{Part II - Implementation}
+\subsubsection{Chapter 6}
+In this chapter various optimisation problems are presented. The problems presented were chosen due to their usage in the literature to test other optimisation algorithms. The problems are used to test two variants of the Particle Swarm Optimisation algorithm. The tests were done not only to determine the general viability of the algorithm but also to understand the algorithm beter. The chapter also presents the results obtained from applying the algorithms on the test problems together with a discussion on the performance obtained by the algorithms.
+\subsubsection{Chapter 7}
+This chapter is concerned with providing a discussion of the algorithm developed to be applied on the Frequency Assignment Problem. Within this chapter an outline is given as the process in developing a specialised particle swarm algorithm for the frequency algorithm. Each specialised technique developed is presented and discussed in depth as to why the technique is needed as well as why is it used by the algorithm.
+\subsubsection{Chapter 8}
+This chapter is concerned with providing the results of the algorithm developed and presented in chapter 7 after applying the algorithm to a specialised set of benchmark problems for Frequency Assignment Algorithms. The particular selected benchmark problems are discussed in chapter 2.
+\subsubsection{Chapter 9}
+This chapter is concerned with providing a conclusion to this dissertation. In this chapter it is determined whether the research goal was reached as well as whether there are any future work to improve the presented algorithm.
 \subsection{The conclusion}
 In chapter~\ref{chpt:psoapplicationFAP} new velocity methods were created and discussed to enable the PSO swarm to move around in the problem space. To futher improve the performance of the PSO addition techniques were developed.
 
