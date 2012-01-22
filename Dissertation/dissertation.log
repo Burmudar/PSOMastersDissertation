@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.15)  22 JAN 2012 00:10
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.10.15)  22 JAN 2012 21:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -760,7 +760,7 @@ Overfull \hbox (4.12582pt too wide) in paragraph at lines 98--99
 
 pdfTeX warning: pdflatex (file ./tikz-pics/cellsector.pdf): PDF inclusion: foun
 d PDF version <1.5>, but at most version <1.4> allowed
-<tikz-pics/cellsector.pdf, id=1380, 438.89949pt x 444.51431pt>
+<tikz-pics/cellsector.pdf, id=1385, 438.89949pt x 444.51431pt>
 File: tikz-pics/cellsector.pdf Graphic file (type pdf)
 
 <use tikz-pics/cellsector.pdf>
@@ -861,7 +861,7 @@ put line 77.
 
 pdfTeX warning: pdflatex (file ./pictures/TabuSearch.pdf): PDF inclusion: found
  PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/TabuSearch.pdf, id=2071, 722.7pt x 542.025pt>
+<./pictures/TabuSearch.pdf, id=2076, 722.7pt x 542.025pt>
 File: ./pictures/TabuSearch.pdf Graphic file (type pdf)
 
 <use ./pictures/TabuSearch.pdf>
@@ -883,7 +883,7 @@ Underfull \vbox (badness 5939) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./pictures/SimulatedAnnealing.pdf): PDF inclusio
 n: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/SimulatedAnnealing.pdf, id=2391, 722.7pt x 542.025pt>
+<./pictures/SimulatedAnnealing.pdf, id=2396, 722.7pt x 542.025pt>
 File: ./pictures/SimulatedAnnealing.pdf Graphic file (type pdf)
 
 <use ./pictures/SimulatedAnnealing.pdf>
@@ -901,7 +901,7 @@ e-quires slight changes.
 
 pdfTeX warning: pdflatex (file ./pictures/GeneticAlgorithm.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/GeneticAlgorithm.pdf, id=2657, 722.7pt x 542.025pt>
+<./pictures/GeneticAlgorithm.pdf, id=2662, 722.7pt x 542.025pt>
 File: ./pictures/GeneticAlgorithm.pdf Graphic file (type pdf)
 
 <use ./pictures/GeneticAlgorithm.pdf>
@@ -944,7 +944,7 @@ Missing character: There is no ù in font cmr10!
 
 pdfTeX warning: pdflatex (file ./pictures/AntColonyOptimization.pdf): PDF inclu
 sion: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/AntColonyOptimization.pdf, id=3152, 722.7pt x 542.025pt>
+<./pictures/AntColonyOptimization.pdf, id=3157, 722.7pt x 542.025pt>
 File: ./pictures/AntColonyOptimization.pdf Graphic file (type pdf)
 
 <use ./pictures/AntColonyOptimization.pdf>
@@ -952,7 +952,7 @@ Overfull \hbox (8.1491pt too wide) in paragraph at lines 113--114
  [] 
  []
 
-<./pictures/antBridgeExperiment.png, id=3158, 498.86375pt x 240.9pt>
+<./pictures/antBridgeExperiment.png, id=3163, 498.86375pt x 240.9pt>
 File: ./pictures/antBridgeExperiment.png Graphic file (type png)
 
 <use ./pictures/antBridgeExperiment.png> [99] [100] [101 <./pictures/AntColonyO
@@ -995,7 +995,7 @@ Underfull \vbox (badness 2865) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./pictures/BeeAlgorithm.pdf): PDF inclusion: fou
 nd PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/BeeAlgorithm.pdf, id=3582, 722.7pt x 542.025pt>
+<./pictures/BeeAlgorithm.pdf, id=3587, 722.7pt x 542.025pt>
 File: ./pictures/BeeAlgorithm.pdf Graphic file (type pdf)
 
 <use ./pictures/BeeAlgorithm.pdf>
@@ -1014,7 +1014,7 @@ LaTeX Warning: Citation `' on page 122 undefined on input line 448.
 
 pdfTeX warning: pdflatex (file ./pictures/ParticleSwarmOptimization.pdf): PDF i
 nclusion: found PDF version <1.5>, but at most version <1.4> allowed
-<./pictures/ParticleSwarmOptimization.pdf, id=3946, 722.7pt x 542.025pt>
+<./pictures/ParticleSwarmOptimization.pdf, id=3951, 722.7pt x 542.025pt>
 File: ./pictures/ParticleSwarmOptimization.pdf Graphic file (type pdf)
 
 <use ./pictures/ParticleSwarmOptimization.pdf>
@@ -1066,7 +1066,7 @@ Chapter 7.
 LaTeX Warning: Reference `chpt:swarmintelligence' on page 158 undefined on inpu
 t line 30.
 
-[158] [159] <./pictures/fapPlanDiagram.pdf, id=4629, 338.86601pt x 207.174pt>
+[158] [159] <./pictures/fapPlanDiagram.pdf, id=4634, 338.86601pt x 207.174pt>
 File: ./pictures/fapPlanDiagram.pdf Graphic file (type pdf)
 
 <use ./pictures/fapPlanDiagram.pdf> [160 <./pictures/fapPlanDiagram.pdf>]
@@ -1089,7 +1089,7 @@ Overfull \hbox (38.57494pt too wide) in paragraph at lines 338--339
  []
 
 [174] [175] [176] [177] [178] [179] [180] [181] [182] [183] [184] [185]
-[186]) [187] [188]
+[186] [187]) [188]
 \openout2 = `chpt8.aux'.
 
  (./chpt8.tex
@@ -1114,10 +1114,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 9.
-[199] [200] [201] [202] [203] [204]) [205] [206
+[199] [200] [201] [202] [203] [204] [205]) [206] [207
 
 
-] [207] [208]
+] [208]
 \openout2 = `apdxA.aux'.
 
  (./apdxA.tex
@@ -1238,65 +1238,65 @@ runsystem(rm dissertation.out.pyg)...executed.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [221]
-<./Graphs/DeJongF1.pdf, id=5164, 578.16pt x 433.62pt>
+<./Graphs/DeJongF1.pdf, id=5175, 578.16pt x 433.62pt>
 File: ./Graphs/DeJongF1.pdf Graphic file (type pdf)
 
 <use ./Graphs/DeJongF1.pdf>
-<./Graphs/Shekel.pdf, id=5165, 578.16pt x 433.62pt>
+<./Graphs/Shekel.pdf, id=5176, 578.16pt x 433.62pt>
 File: ./Graphs/Shekel.pdf Graphic file (type pdf)
  <use ./Graphs/Shekel.pdf>
-<./Graphs/Rastrigin.pdf, id=5166, 578.16pt x 433.62pt>
+<./Graphs/Rastrigin.pdf, id=5177, 578.16pt x 433.62pt>
 File: ./Graphs/Rastrigin.pdf Graphic file (type pdf)
 
 <use ./Graphs/Rastrigin.pdf> [222 <./Graphs/DeJongF1.pdf> <./Graphs/Shekel.pdf>
-] <./Graphs/Schwefel.pdf, id=5198, 578.16pt x 433.62pt>
+] <./Graphs/Schwefel.pdf, id=5209, 578.16pt x 433.62pt>
 File: ./Graphs/Schwefel.pdf Graphic file (type pdf)
 
 <use ./Graphs/Schwefel.pdf>
-<./Graphs/Griewank_-50_+50.pdf, id=5199, 578.16pt x 433.62pt>
+<./Graphs/Griewank_-50_+50.pdf, id=5210, 578.16pt x 433.62pt>
 File: ./Graphs/Griewank_-50_+50.pdf Graphic file (type pdf)
 
 <use ./Graphs/Griewank_-50_+50.pdf> [223 <./Graphs/Rastrigin.pdf> <./Graphs/Sch
-wefel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=5233, 578.16pt x 433.62pt>
+wefel.pdf>] <./Graphs/Salomon_-10_+10.pdf, id=5244, 578.16pt x 433.62pt>
 File: ./Graphs/Salomon_-10_+10.pdf Graphic file (type pdf)
 
 <use ./Graphs/Salomon_-10_+10.pdf>
-<./Graphs/Ackley.pdf, id=5234, 578.16pt x 433.62pt>
+<./Graphs/Ackley.pdf, id=5245, 578.16pt x 433.62pt>
 File: ./Graphs/Ackley.pdf Graphic file (type pdf)
  <use ./Graphs/Ackley.pdf>
 [224 <./Graphs/Griewank_-50_+50.pdf> <./Graphs/Salomon_-10_+10.pdf>]
-<./Graphs/Camel.pdf, id=5268, 578.16pt x 433.62pt>
+<./Graphs/Camel.pdf, id=5279, 578.16pt x 433.62pt>
 File: ./Graphs/Camel.pdf Graphic file (type pdf)
  <use ./Graphs/Camel.pdf>
-<./Graphs/Shubert.pdf, id=5269, 578.16pt x 433.62pt>
+<./Graphs/Shubert.pdf, id=5280, 578.16pt x 433.62pt>
 File: ./Graphs/Shubert.pdf Graphic file (type pdf)
 
 <use ./Graphs/Shubert.pdf> [225 <./Graphs/Ackley.pdf> <./Graphs/Camel.pdf>]
-<./Graphs/Himmelblau.pdf, id=5303, 578.16pt x 433.62pt>
+<./Graphs/Himmelblau.pdf, id=5314, 578.16pt x 433.62pt>
 File: ./Graphs/Himmelblau.pdf Graphic file (type pdf)
 
 <use ./Graphs/Himmelblau.pdf>
-<./Graphs/Rosenbrock.pdf, id=5304, 578.16pt x 433.62pt>
+<./Graphs/Rosenbrock.pdf, id=5315, 578.16pt x 433.62pt>
 File: ./Graphs/Rosenbrock.pdf Graphic file (type pdf)
 
 <use ./Graphs/Rosenbrock.pdf> [226 <./Graphs/Shubert.pdf> <./Graphs/Himmelblau.
-pdf>] <./Graphs/Dropwave.pdf, id=5339, 578.16pt x 433.62pt>
+pdf>] <./Graphs/Dropwave.pdf, id=5350, 578.16pt x 433.62pt>
 File: ./Graphs/Dropwave.pdf Graphic file (type pdf)
 
 <use ./Graphs/Dropwave.pdf>
-<./Graphs/Easom_-100_+100.pdf, id=5340, 578.16pt x 433.62pt>
+<./Graphs/Easom_-100_+100.pdf, id=5351, 578.16pt x 433.62pt>
 File: ./Graphs/Easom_-100_+100.pdf Graphic file (type pdf)
 
 <use ./Graphs/Easom_-100_+100.pdf> [227 <./Graphs/Rosenbrock.pdf> <./Graphs/Dro
-pwave.pdf>] <./Graphs/Branin.pdf, id=5376, 578.16pt x 433.62pt>
+pwave.pdf>] <./Graphs/Branin.pdf, id=5387, 578.16pt x 433.62pt>
 File: ./Graphs/Branin.pdf Graphic file (type pdf)
 
 <use ./Graphs/Branin.pdf>
-<./Graphs/Michalewicz.pdf, id=5377, 578.16pt x 433.62pt>
+<./Graphs/Michalewicz.pdf, id=5388, 578.16pt x 433.62pt>
 File: ./Graphs/Michalewicz.pdf Graphic file (type pdf)
 
 <use ./Graphs/Michalewicz.pdf> [228 <./Graphs/Easom_-100_+100.pdf> <./Graphs/Br
-anin.pdf>] <./Graphs/Goldstein.pdf, id=5414, 578.16pt x 433.62pt>
+anin.pdf>] <./Graphs/Goldstein.pdf, id=5425, 578.16pt x 433.62pt>
 File: ./Graphs/Goldstein.pdf Graphic file (type pdf)
 
 <use ./Graphs/Goldstein.pdf>) [229 <./Graphs/Michalewicz.pdf> <./Graphs/Goldste
@@ -1325,10 +1325,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18446 strings out of 495061
- 332027 string characters out of 1182620
- 407637 words of memory out of 3000000
- 20030 multiletter control sequences out of 15000+50000
+ 18448 strings out of 495061
+ 332051 string characters out of 1182620
+ 407639 words of memory out of 3000000
+ 20031 multiletter control sequences out of 15000+50000
  14588 words of font info for 55 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  56i,19n,63p,1142b,844s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1352,9 +1352,9 @@ msfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
 cmti9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on dissertation.pdf (264 pages, 17153889 bytes).
+Output written on dissertation.pdf (264 pages, 17158833 bytes).
 PDF statistics:
- 5820 PDF objects out of 6186 (max. 8388607)
- 1062 named destinations out of 1200 (max. 500000)
- 1580 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5832 PDF objects out of 6186 (max. 8388607)
+ 1063 named destinations out of 1200 (max. 500000)
+ 1588 words of extra memory for PDF output out of 10000 (max. 10000000)
 

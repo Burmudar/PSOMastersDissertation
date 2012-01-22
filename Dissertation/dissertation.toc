@@ -163,6 +163,7 @@
 \contentsline {subsection}{\numberline {6.3.1}Fina values}{153}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Diversity}{154}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Accuracy}{155}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Summary}{155}{section.6.4}
 \contentsline {chapter}{\numberline {7}Applying the PSO to the FAP}{157}{chapter.7}
 \contentsline {section}{\numberline {7.1}Introduction}{157}{section.7.1}
 \contentsline {section}{\numberline {7.2}A Position in the Frequency Planning domain}{159}{section.7.2}
@@ -195,15 +196,15 @@
 \contentsline {subsubsection}{Chapter 1}{201}{section*.64}
 \contentsline {subsubsection}{Chapter 2}{201}{section*.65}
 \contentsline {subsubsection}{Chapter 3}{202}{section*.66}
-\contentsline {subsubsection}{Chapter 4}{202}{section*.67}
-\contentsline {subsubsection}{Chapter 5}{202}{section*.68}
+\contentsline {subsubsection}{Chapter 4}{203}{section*.67}
+\contentsline {subsubsection}{Chapter 5}{203}{section*.68}
 \contentsline {subsection}{\numberline {9.4.2}Part II - Implementation}{203}{subsection.9.4.2}
 \contentsline {subsubsection}{Chapter 6}{203}{section*.69}
-\contentsline {subsubsection}{Chapter 7}{203}{section*.70}
-\contentsline {subsubsection}{Chapter 8}{203}{section*.71}
-\contentsline {subsubsection}{Chapter 9}{203}{section*.72}
-\contentsline {subsection}{\numberline {9.4.3}The conclusion}{203}{subsection.9.4.3}
-\contentsline {section}{\numberline {9.5}Future work}{204}{section.9.5}
+\contentsline {subsubsection}{Chapter 7}{204}{section*.70}
+\contentsline {subsubsection}{Chapter 8}{204}{section*.71}
+\contentsline {subsubsection}{Chapter 9}{204}{section*.72}
+\contentsline {subsection}{\numberline {9.4.3}The conclusion}{204}{subsection.9.4.3}
+\contentsline {section}{\numberline {9.5}Future work}{205}{section.9.5}
 \contentsline {chapter}{\numberline {A}Plotting functions in 3D}{209}{appendix.A}
 \contentsline {section}{\numberline {A.1}Introduction}{209}{section.A.1}
 \contentsline {section}{\numberline {A.2}Code}{209}{section.A.2}
