@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99c (TeX Live 2009)
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: chpt1.aux
 A level-1 auxiliary file: chpt2.aux
@@ -13,49 +13,47 @@ A level-1 auxiliary file: apdxA.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
 Warning--I didn't find a database entry for ""
-Warning--I didn't find a database entry for "AntQAO"
-Warning--I didn't find a database entry for "http://www.it.lut.fi/ip/evo/functions/node12.html"
 Warning--there's a number but no volume in FAPInCell
 Warning--can't use both author and editor fields in IntroMathProgramming
-You've used 146 entries,
+You've used 147 entries,
             2118 wiz_defined-function locations,
-            1448 strings with 32816 characters,
-and the built_in function-call counts, 54529 in all, are:
-= -- 5513
-> -- 2195
+            1448 strings with 32910 characters,
+and the built_in function-call counts, 54722 in all, are:
+= -- 5529
+> -- 2202
 < -- 55
-+ -- 906
-- -- 714
-* -- 3784
-:= -- 8565
-add.period$ -- 461
-call.type$ -- 146
-change.case$ -- 783
++ -- 909
+- -- 716
+* -- 3789
+:= -- 8596
+add.period$ -- 463
+call.type$ -- 147
+change.case$ -- 787
 chr.to.int$ -- 0
-cite$ -- 148
-duplicate$ -- 2181
-empty$ -- 4436
-format.name$ -- 714
-if$ -- 11840
+cite$ -- 149
+duplicate$ -- 2188
+empty$ -- 4458
+format.name$ -- 716
+if$ -- 11882
 int.to.chr$ -- 0
-int.to.str$ -- 146
+int.to.str$ -- 147
 missing$ -- 155
-newline$ -- 735
-num.names$ -- 292
-pop$ -- 812
+newline$ -- 739
+num.names$ -- 294
+pop$ -- 820
 preamble$ -- 1
-purify$ -- 649
+purify$ -- 652
 quote$ -- 0
-skip$ -- 1651
+skip$ -- 1661
 stack$ -- 0
-substring$ -- 4114
-swap$ -- 622
+substring$ -- 4119
+swap$ -- 623
 text.length$ -- 55
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 548
+type$ -- 552
 warning$ -- 2
-while$ -- 511
-width$ -- 149
-write$ -- 1646
-(There were 5 warnings)
+while$ -- 513
+width$ -- 150
+write$ -- 1653
+(There were 3 warnings)

@@ -34,7 +34,7 @@
 \BOOKMARK [2][-]{subsection.3.5.3}{Minimum Interference FAP}{section.3.5}
 \BOOKMARK [1][-]{section.3.6}{Fixed Spectrum MI-FAP Mathematical Formulation}{chapter.3}
 \BOOKMARK [1][-]{section.3.7}{FAP Benchmarks}{chapter.3}
-\BOOKMARK [2][-]{subsection.3.7.1}{Philedelphia Benchmark}{section.3.7}
+\BOOKMARK [2][-]{subsection.3.7.1}{Philadelphia Benchmark}{section.3.7}
 \BOOKMARK [2][-]{subsection.3.7.2}{CELAR}{section.3.7}
 \BOOKMARK [2][-]{subsection.3.7.3}{COST 256}{section.3.7}
 \BOOKMARK [1][-]{section.3.8}{FAP in the industry}{chapter.3}
@@ -133,12 +133,12 @@
 \BOOKMARK [1][-]{section.9.1}{Introduction}{chapter.9}
 \BOOKMARK [1][-]{section.9.2}{Research Questions}{chapter.9}
 \BOOKMARK [1][-]{section.9.3}{Research Objective}{chapter.9}
-\BOOKMARK [1][-]{section.9.4}{Chapter breakdown revisted}{chapter.9}
+\BOOKMARK [1][-]{section.9.4}{Chapter breakdown revisited}{chapter.9}
 \BOOKMARK [2][-]{subsection.9.4.1}{Part I - Background}{section.9.4}
 \BOOKMARK [2][-]{subsection.9.4.2}{Part II - Implementation}{section.9.4}
 \BOOKMARK [2][-]{subsection.9.4.3}{The conclusion}{section.9.4}
 \BOOKMARK [1][-]{section.9.5}{Future work}{chapter.9}
-\BOOKMARK [0][-]{section*.73}{Appendices}{part.2}
+\BOOKMARK [0][-]{section*.72}{Appendices}{part.2}
 \BOOKMARK [0][-]{appendix.A}{Plotting functions in 3D}{part.2}
 \BOOKMARK [1][-]{section.A.1}{Introduction}{appendix.A}
 \BOOKMARK [1][-]{section.A.2}{Code}{appendix.A}
@@ -175,4 +175,4 @@
 \BOOKMARK [2][-]{subsection.A.3.14}{Branin Function}{section.A.3}
 \BOOKMARK [2][-]{subsection.A.3.15}{Michalewicz Function}{section.A.3}
 \BOOKMARK [2][-]{subsection.A.3.16}{Goldstein Function}{section.A.3}
-\BOOKMARK [0][-]{section*.75}{Bibliography}{part.2}
+\BOOKMARK [0][-]{section*.74}{Bibliography}{part.2}

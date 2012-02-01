@@ -3,9 +3,9 @@
 \section{Introduction}
 Particle Swarm Optimization (PSO) as discussed in the overview (see page \pageref{sec:PSO}) is an algorithm that is largely based on the flying behaviour exhibited by a flock of flying birds. Which is why the core of the algorithm is based upon vector math, with new positions and velocities being calculated after each iteration of the algorithm. Thus, a D-dimensional vector represents each particle position and is then simulated flying through the D-dimensional space using the velocity equation (section~\ref{sec:particleVelocity} see page~\pageref{eq:velocityupdate}).
 
-The performance of the Global PSO is benchmarked and outline in the previous chapter. As can be observed from the results presented in the previous chapter, the PSO algorithm produces favourable results on most of the problems it is applied to. Failing to locate the optimum on only a select few problems. 
+The performance of the Global PSO is benchmarked and outline in the previous chapter. As can be observed from the results presented in the previous chapter, the PSO algorithm produces favourable results on most of the problems it is applied to. Failing to locate the optimum on only a select few problems (see section~\ref{sec:benchResults} of chapter\ref{chpt:benchmark}. 
 
-Most of the problems to which PSO has been applied to, date have been problems where the position of particles have a constant D-dimensional space, which is to formally state \emph{the dimensionality of a particle position in its entirety, is constant}.
+Most of the problems to which PSO has been applied to, date have been problems where the position of particles have a constant D-dimensional space, which is to formally state \emph{the dimensionality of a particle position in its entirety, is constant}. Therefore, each particle has a position which is defined in a set dimension like 2D where a position is represent at $x$ and $y$ coordinate pairs.
 
 This constant dimensionality introduces a intriguing problem if you want to apply the PSO to an inherent multi-dimension problem like the Frequency Assignment Problem (FAP). In this chapter a discussion will be provided on how the PSO was applied to the FAP.
 
@@ -27,7 +27,7 @@ the movement of particles through the Frequency planning domain. After the posit
 
 Arguably the most important part of the swarm is how the velocity of a particle is calculated and then moving it to a new position in the problem space. The velocity update is important, as it is the primary means by which the algorithm searches problem space.
 
-As was discussed in chapter~\ref{chpt:swarmintelligence} section~\ref{sec:psoonfap} applying the PSO on the FAP introduces a variety of challenges. One of the challenges that were listed is how exactly does one ``fly'' as frequency plan towards another frequency plan. This is an important question that needs to be addressed as the PSO algorithms has no way of searching the problem space by any other means.
+As was discussed in chapter~\ref{chpt:swarm} section~\ref{sec:psoonfap} applying the PSO on the FAP introduces a variety of challenges. One of the challenges that were listed is how exactly does one ``fly'' as frequency plan towards another frequency plan. This is an important question that needs to be addressed as the PSO algorithms has no way of searching the problem space by any other means.
 
 To be able to allow the PSO to operate in the FAP space custom velocity functions had to be developed to enable the particles of the swarm to move. A discussion on the various velocity functions that were developed will also be presented in section~\ref{sec:velocityFAP}. 
 
@@ -62,17 +62,17 @@ Based on the amount of traffic a cell needs to handle the amount of transceivers
 	\label{fig:fapPlan}
 \end{figure}
 ~
-As can be seen in figure \ref{fig:fapPlan} a cellular network can have any amount ($N$ in the figure) of cells to attain the desired coverage over the geographical landscape. In the Cost259 benchmarks problems the cellular networks have a large amount of cells that range in numbers from 500 to >1000. 
+As can be seen in figure \ref{fig:fapPlan} a cellular network can have any amount ($N$ in the figure) of cells to attain the desired coverage over the geographical landscape. In the Cost259 benchmarks problems the cellular networks have a large amount of cells that range in numbers from 500 to numbers greater than 1000. 
 
-The most important part of the plan is the actual transceivers within each cell. In figure~\ref{fig:fapPlan} it can clearly be seen, how the amount of transceivers (TRXs) vary from one cell to the next. $F(i)$ is a channel at position $i$ from the available usable spectrum. 
+The most important part of the plan is the actual transceivers within each cell. In figure~\ref{fig:fapPlan} it can be clearly seen, how the amount of transceivers (TRXs) vary from one cell to the next. $F(i)$ is a channel at position $i$ from the available usable spectrum. 
 
 Based on the structure of the plan depicted in figure \ref{fig:fapPlan} there is no concept of which cell interferes with which other cell and if their is indeed interference, how much is inferred as a result. All this information isn't part of the plan. Instead this information, for purpose of this dissertation is supplied by the Cost259 benchmark. 
 
 The interference information is referred to as the interference matrix. A definition of the structure of an interference matrix is given in chapter~\ref{chpt:fap} section~\ref{sec:Interference}. A discussed in the structure definition of an interference matrix each entry references two cells entries Cell A and Cell B. Along with the entry the amount of interference that occurs when Cell B interferes with Cell A is also listed\footnote{Interference occurs based on the electromagnetic constraints as defined in chapter}.
 
-A Frequency Plan is a possible solution to the Frequency Assignment Problem. Therefore in the PSO that was developed each Particle's position in the solution space is represented by a frequency plan. As illustrated in figure~\ref{fig:fapPlan} a frequency plan is just series of cells, where each cell as a set of transceivers. Thus in the PSO algorithm a plan is actually represented as an array of cells. This enables the algorithm to access particular cells in a plan by index as can be observed in listed algorithms~\ref{alg:velocityMethod1,alg:velocityMethod2}. 
+A frequency plan is a possible solution to the frequency assignment problem. Therefore in the PSO that was developed each particle's position in the solution space is represented by a frequency plan. As illustrated in figure~\ref{fig:fapPlan} a frequency plan is just a series of cells, where each cell has a set of transceivers. Thus in the PSO algorithm a plan is actually represented as an array of cells. This enables the algorithm to access particular cells in a plan by index as can be observed in listed algorithms~\ref{alg:velocitymethod1} and ~\ref{alg:velocitymethod2}. 
 
-Before the particles can actually start to move around in the FAP space, they first need to be assigned positions. In the developed PSO listed in algorithm~\ref{alg:FAPPSO} line 1 the first operation the algorithm executes is to initialize all the particles in the swarm. A particle position in the algorithm is initialized by assigning it a random position. Thus a frequency plan (representing a position) is randomly generated by the algorithm.
+Before the particles can actually start to move around in the FAP space, they first need to be assigned positions. In the developed PSO listed in algorithm~\ref{alg:FAPPSO} line 1 the first operation that the algorithm executes is to initialize all the particles in the swarm. A particle position in the algorithm is initialized by assigning it a random position. Thus a frequency plan (representing a position) is randomly generated by the algorithm.
 
 The position is purely random in regard that the only considerations that are made by the position generator are that valid channels are assigned to transceivers installed at cells. Thus the generator does not check whether a channel has already been assigned in the current cell or any other considerations. The intended purpose of the generator is just to place a particle in the problem space, not the premature start the optimization process.
 
@@ -80,7 +80,7 @@ Since particles are now able to occupy positions in the FAP space the PSO algori
 
 In this section a description was given of what the PSO will use as position in the frequency-planning domain. An outline was given on the general structure of what a frequency plan is as well as a definition on how the interference values are retrieved when two cells interfere. In the next section a definition will be given on the fitness function that determines the desirability of a particular particles position or rather the frequency plan its position represents.
 \section{The Fitness Function}
-In this section a discussion will provided on the fitness function that utilised in all the PSO's that were developed. The fitness function rates the desirability of a particular particles position in the problem space.
+In this section a discussion will provided on the fitness function that was utilised in all the PSO's that were developed. The fitness function rates the desirability of a particular particles position in the problem space.
 
 As discussed in the previous section, the Cost259 benchmark problems provide an interference matrix that lists the total amount of interference that occurs when a pair of cells interferes. As outlined in the structure definition (see chapter~\ref{chpt:fap} section~\ref{sec:Interference}) each entry in the interference matrix defines a pair of cells that are said to interfere along with two additional values. The first value is referred to as Co-channel interference and is the total amount of interference that will occur on the communication link when the allocated channel of one transceiver is equal to a transceiver in the other cell that is listed in the interference matrix. 
 
@@ -92,7 +92,39 @@ Since a particle position is defined as a frequency plan a procedure is needed t
 
 The evaluation procedure goes through each pair of cells defined in the interference matrix where it looks up both cells in the frequency plan. The second cell is said to interfere with the first cell. Therefore each transceiver in the first cell is checked with all the transceivers of the other cell. Depending on whether the frequencies differ from each other, the fitness procedure adds either the co-channel or the adjacent channel interference to a summing variable. This procedure is mathematically defined in chapter 3 see page \pageref{E:costFunction} for the formal equation and the listed algorithm~\ref{alg:fapcost} is the pseudo code of the implement equation used by the PSO. 
 
-As can be seen in algorithm~\ref{alg:fapcost} not all interference values are added to the total amount of interference variable. The Cost259 benchmarks define a Minimum Tolerable interference variable. Which means that if a given interference value is either equal or less than this defined value the interference generated is minute and can be disregarded as it won't have a noticeable impact on the communication link.
+\begin{algorithm}
+\caption{FAP cost function}
+\label{alg:fapcost}
+	\begin{algorithmic}[1]
+	\REQUIRE normalCell
+	\REQUIRE interferingCe;;
+	\STATE $totalInterference \leftarrow $0
+	\FOR{Each TRX $trx_i$ in interferingCell}
+		\FOR{Each TRX $trx_j$ in normalCell}
+			\STATE $interference \leftarrow 0$
+			\STATE $difference \leftarrow$ $|trx_i - trx_j|$
+			\IF{difference is 0}
+				\IF{coChannelInterference $\leq$ minInterferenceThershold}
+					\STATE $interference \leftarrow interference + 0$
+				\ELSE
+					\STATE $interference \leftarrow interference + coChannelInterference$
+				\ENDIF
+			\ELSE
+				\IF{difference is 1}
+					\IF{adjChannelInterference $\leq$ minInterferenceThershold}
+						\STATE $interference \leftarrow interference + 0$
+					\ELSE
+						\STATE $interference \leftarrow interference + adjChannelInterference$
+					\ENDIF
+				\ENDIF
+			\ENDIF
+			\STATE $totalInterference \leftarrow totalInterference + interference$
+		\ENDFOR
+	\ENDFOR
+	\end{algorithmic}
+\end{algorithm}
+
+As can be seen in algorithm~\ref{alg:fapcost} not all interference values are added to the total amount of interference variable. The Cost259 benchmarks define a minimum tolerable interference variable. Which means that if a given interference value is either equal or less than this defined value the interference generated is negligible and can be disregarded as it won't have a noticeable impact on the communication link.
 
 In this section an outline of the fitness function the PSO will use to rate the fitness of positions that particles occupy in the solution space after each iteration. In the next section a definition will be given on how particles are moved from one iteration to the next using frequency plans as positions in the solution space.
 \section{Velocity Function for Frequency Planning}

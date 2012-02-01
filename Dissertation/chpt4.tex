@@ -1,7 +1,7 @@
 \chapter{Meta-heuristic Algorithms}
 \label{chpt:heuristic}
 \section{Introduction}
-Meta-heuristics is a sub domain of the artificial intelligence domain. It evolved out of a need for more efficient search techniques with regard to hard problems. 
+Meta-heuristics is a sub domain of the artificial intelligence domain\cite{AIModernApproach}. It evolved out of a need for more efficient search techniques with regard to hard problems. 
 
 Meta-heuristics forms part of a collective body of algorithms that use heuristics to search a particular domain's problem space, for the most optimal solution adhering to certain hard and soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic}. 
 
@@ -9,7 +9,7 @@ A hard constraint is defined as a certain condition an algorithm or potential so
 
 An optimal solution would therefore be any solution that violates no hard constraints and violates none or a minimum number of soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}.
 
-Some of the most algorithms that are classified as being part of the collective body of algorithms known as meta-heuristic algorithms are:
+Some of the most famous algorithms that are classified as being part of the collective body of algorithms known as meta-heuristic algorithms are:
 \begin{itemize}
 \item Tabu Search
 \item Simulated Annealing
@@ -22,7 +22,7 @@ The main focus for this chapter will be to discuss each of the above listed algo
 Following the discussion on the characteristics there will be three sections that will discuss the above mentioned algorithms along with a brief literature study for each algorithm. 
 
 \section{Characteristics of Meta-heuristics}
-NP-Complete\footnote{A discussion of NP-Complete problems is presented in section \ref{sec:NPComplete} page \pageref{sec:NPComplete}} problems have been proven to not be solvable in polynomial time by traditional search methods such as A* search, Breath First Search and Depth-First Search. 
+NP-Complete\footnote{A discussion of NP-Complete problems is presented in section \ref{sec:NPComplete} page \pageref{sec:NPComplete}} problems have been proven to not be solvable in polynomial time by traditional search methods such as A* search, Breath First Search and Depth-First Search\cite{AIModernApproach}. 
 
 These traditional search algorithms are concerned with the path taken from a starting solution to a final solution. Hence, the algorithms test each and every possible solution and store any alternatives in memory since a final solution constitutes the path taken from a start node to a final node \cite{AIModernApproach}.
 
@@ -46,7 +46,7 @@ In the literature algorithms are generally classified as being of the meta-heuri
 \begin{itemize}
 	\item Uses randomization
 	\item Uses a local search
-	\item Algorithm is stochastic
+	\item Algorithm is stochastic\footnote{Exhibits behaviour that is non-deterministic.}
 \end{itemize}
 
 Meta-heuristic Algorithms do not search the solution space statically by testing and evaluating every possible permutation in the solution space, as it is inefficient and a normal path based algorithm can be used instead\cite{MetaAgricultural}.
@@ -74,7 +74,7 @@ In the next section of this chapter a discussion will be presented on the Tabu S
 \section{Tabu Search}
 \label{sec:tabusearch}
 \begin{algorithm}
-\caption{Basic Tabu Search Algorithm}
+\caption{Basic Tabu Search Algorithm\cite{TabuRCAProblem,TabuMontemanniSmith}}
 \label{alg:TS}
 	\begin{algorithmic}[1]
 		\STATE Initialize parameters
@@ -111,7 +111,7 @@ In the next section of this chapter a discussion will be presented on the Tabu S
 \label{sec:TSIntroduction}
 Tabu Search (TS) was first proposed by Glover as a new searching technique to help algorithms avoid getting  stuck in local optima present in combinatorial and optimization problems \cite{TabuRCAProblem}. Since Glover introduced the algorithm in the 1980's, Tabu Search has been applied to a wide range of problems such as the Vehicle Routing Problem\cite{TabuVechicleRoutingWithTimeWindows}, Frequency assignment problem\cite{TabuMontemanniSmith}, Capacitated-Lot Sizing Problem\cite{TabuCarryOver}, Nurse Scheduling\cite{TabuNurse} and the Resource Constrained Assignment Problem\cite{TabuRCAProblem}. 
 
-Even though the problems mentioned differ by a large margin, the algorithm has been relatively successful in most of optimization problems it has been applied to. If we observe the results presented in the following research \cite{TabuCarryOver,TabuSingleMachineScheduling,TabuVechicleRoutingWithTimeWindows,TabuBiddingStrats,TabuCrewSchedulingProblem,ReactiveTabuVHR,TabuRCAProblem,TabuCSP,TabuMontemanniSmith,tabuglobalplanning3g} we can deduce that Tabu Search has on average obtained the best results compared to previous attempts with other algorithms. 
+Even though the problems mentioned differ by a large margin, the algorithm has been relatively successful in most of optimization problems it has been applied to. If one observes the results presented in the following research \cite{TabuCarryOver,TabuSingleMachineScheduling,TabuVechicleRoutingWithTimeWindows,TabuBiddingStrats,TabuCrewSchedulingProblem,ReactiveTabuVHR,TabuRCAProblem,TabuCSP,TabuMontemanniSmith,tabuglobalplanning3g} it can deduced that Tabu Search has on average obtained the best results compared to previous attempts with other algorithms. 
 
 Tabu search resembles in its most basic form the Hill-climbing search algorithm\cite{TabuBiddingStrats}. The Hill-climbing search algorithm starts from an initial solution and then iteratively moves from the current solution to a neighbouring solution\cite{AIModernApproach}. Each neighbour is rated based on its attractiveness as a possible optimal solution the algorithm is being applied to\cite{AIModernApproach}. 
 
@@ -125,7 +125,7 @@ In actual fact the solution that was found, is the best solution in the \emph{lo
 
 In this section the TS algorithm introduced. Various characteristics and concepts that brought about the formation of the TS algorithm as well as what makes it unique was mentioned. In attempt to better understand the algorithm in the next section a discussion will be presented on the flow of the TS algorithm.
 \subsection{Flow of the algorithm}
-In this section as discussion will be presented on the general flow of the TS algorithm using algorithm~\ref{alg:TS} as reference point.
+In this section a discussion will be presented on the general flow of the TS algorithm using algorithm~\ref{alg:TS} as reference point.
 
 Before the algorithm can actually start searching it first needs to initialize various parameters. These parameters include but are not limited to, the Tabu List size, the Aspiration criterion and the starting solution. The initialization can be observed to occur from line 1 - 2.
 
@@ -255,7 +255,7 @@ As can be observed from the above results obtained by the authors, the TS algori
 
 When critically evaluating the TS algorithm with regard to applying it to the FAP, the following disadvantages can be identified.
 \paragraph{Search based on a single solution}
-The Tabu search algorithm at any moment in time only searches in the vicinity of \emph{one} current solution for possible neighbours that might be the current solution for the next iteration. FAP problems typically have huge search spaces due to their NP-Hard nature. Therefore, only searching for possible lucrative neighbours from only potential solution seems to be terrible inefficient. A better strategy would be to use the notion of population based algorithms and have multiple solutions from which lucrative neighbours are searched.
+The Tabu search algorithm at any moment in time only searches in the vicinity of \emph{one} current solution for possible neighbours that might be the current solution for the next iteration. FAP problems typically have huge search spaces due to their NP-Hard\footnote{NP-Hard problems are the most difficult NP-Complete problems to solve\cite{AIModernApproach}}nature. Therefore, only searching for possible lucrative neighbours from only potential solution seems to be terrible inefficient. A better strategy would be to use the notion of population based algorithms and have multiple solutions from which lucrative neighbours are searched.
 \paragraph{Neighbourhood generation}
 The Tabu search algorithm, defines no set process for generating a neighbouring solution given a starting solution. Generating neighbours from a solution is a critical process in the TS algorithm, for it is the only means by which the algorithm considers other solutions i.e. it is the mechanism by which the algorithm searches. Generating a new neighbour can be as simple as changing only one value from the current solution or it can be very complex and incorporate other algorithms together with mathematics formulas. Regardless of the complexity of the neighbour generation that is used, care must be taken to ensure that the algorithm is able to produce a wide diversity of neighbours and also is able to intensify on the most optimal solution.
 \paragraph{Tabu lifetime}
@@ -265,7 +265,7 @@ In this section a literature review was presented on the TS algorithm being appl
 \section{Simulated Annealing}
 \label{sec:simulatedannealing}
 \begin{algorithm}
-\caption{Basic Simulated Annealing Algorithm}
+\caption{Basic Simulated Annealing Algorithm\cite{VeryFastSAImageEnchancement,ChaosSA}}
 \label{alg:SA}
 	\begin{algorithmic}[1]
 		\STATE Initialize parameters
@@ -323,7 +323,7 @@ The SA algorithm is also very popular due to the basic structure of the algorith
 
 Therefore, applying the algorithm to other problems requires slight changes. These changes usually need to be applied to the \emph{Neighbourhood selection} scheme and the \emph{Cooling Schedule}\cite{VariousCoolingSA,DormRoomSA}. Both of these concepts will be discussed in the next sub section.
 
-In this sub section we gave a brief overview of the Simulated Annealing (SA) algorithm. We briefly discussed what the algorithm is based on and how the algorithm goes about searching the solution space. We also introduced some concepts like move probability selection and annealing temperature, which forms part of the core the algorithm. In the next section we will explain some of the concepts we've touched upon in this section as well as more advanced concepts that makes the algorithm unique.
+In this sub section a brief overview of the Simulated Annealing (SA) algorithm was given. The section briefly discussed what the algorithm is based on and how the algorithm goes about searching the solution space. An introduction of some concepts like move probability selection and annealing temperature, which forms part of the core the algorithm was also given. In the next section a discussion will be presented that will explain some of the concepts that were introduced in this section as well as more advanced concepts that makes the algorithm unique.
 
 \subsection{Flow of the algorithm}
 In an attempt to better understand how the SA algorithm operates, a general discussion on the flow of the algorithm will now be given using algorithm~\ref{alg:SA} as reference point.
@@ -431,7 +431,7 @@ The SA algorithm is similar to the TS algorithm in a sense that it, only searche
 \end{table}
 \section{Genetic Algorithm}
 \begin{algorithm}
-\caption{Basic Genetic Algorithm Algorithm}
+\caption{Basic Genetic Algorithm Algorithm\cite{FamilyGA,AdaptiveSAGA,DistributedHierarchicalGA,SelfAdaptiveGA}}
 \label{alg:GA}
 	\begin{algorithmic}[1]
 		\STATE $pop_n\leftarrow$Initialize population
@@ -626,3 +626,19 @@ Three meta-heuristic algorithms were discussed in this chapter. For each algorit
 For each algorithm, a brief overview of literature using the particular algorithm was given as well as a series of brief discussions on some of the disadvantages or challenges that will be faced when applying the particular algorithm on the FAP.
 
 The first algorithm discussed was the Tabu search algorithm and the second algorithm was the simulated annealing algorithm. The chapter concluded with a discussion on the Genetic algorithm. In the next chapter a discussion will be given on a class of algorithm that is relatively new to optimization research, namely the Swarm Intelligence class of algorithms.
+
+In the table below, the algorithms discussed in this chapter and their performance on the Cost 259 set of benchmarks have been summarised.\\
+\begin{table}[h]
+\label{tbl:summaryMetaTable}
+\begin{center}
+	\begin{tabular}{| c | c | c | c | c |}
+	\hline
+	Problem instance & TS & SA & GA & Cost 259 \\ \hline
+	Siemens 1 & 2.7692 & 23.00 & 2.60 & 2.20 \\ \hline
+	Siemens 2 & 14.9360 & 14.75 & 16.34 & 14.280 \\ \hline
+	Siemens 3 & 6.6496 & 52.55 & 6.37 & 5.19 \\ \hline
+	Siemens 4 & 110.9725 & 80.80 & 84.08 & 81.89 \\ \hline
+	\end{tabular}
+\caption{Summary of algorithm performance on the Cost 259 benchmark}
+\end{center}
+\end{table}
