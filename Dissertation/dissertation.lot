@@ -2,14 +2,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces SA on Cost 259 Benchmark}}{80}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces GA on Cost 259 Benchmark}}{92}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Summary of algorithm performance on the Cost 259 benchmark}}{94}{table.4.3}
+\contentsline {table}{\numberline {4.1}{\ignorespaces SA on Cost 259 Benchmark}}{82}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces GA on Cost 259 Benchmark}}{94}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Summary of algorithm performance on the Cost 259 benchmark}}{96}{table.4.3}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces ACO and ACO* on custom GSM FAP benchmark\cite {ACOvsEA}}}{113}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces ACO and ACO* on custom GSM FAP benchmark\cite {ACOvsEA}}}{115}{table.5.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Final fitness values}}{155}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Diversity values}}{158}{table.6.2}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Final fitness values}}{157}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Diversity values}}{160}{table.6.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

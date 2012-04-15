@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99c (TeX Live 2009)
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: chpt1.aux
 A level-1 auxiliary file: chpt2.aux
@@ -12,12 +12,12 @@ A level-1 auxiliary file: chpt9.aux
 A level-1 auxiliary file: apdxA.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
-Warning--I didn't find a database entry for ""
+Warning--I didn't find a database entry for "AdaptiveGA"
 Warning--there's a number but no volume in FAPInCell
 Warning--can't use both author and editor fields in IntroMathProgramming
 You've used 147 entries,
             2118 wiz_defined-function locations,
-            1448 strings with 32910 characters,
+            1450 strings with 32930 characters,
 and the built_in function-call counts, 54722 in all, are:
 = -- 5529
 > -- 2202

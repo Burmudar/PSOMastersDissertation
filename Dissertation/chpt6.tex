@@ -1,15 +1,15 @@
 \chapter{PSO on benchmark functions}
 \label{chpt:benchmark}
 \section{Introduction}
-In this section a discussion will be presented on a series of optimisation benchmark functions. First a formulation of all the benchmark functions will be given with a short classification on each of the pres. Finally this chapter will conclude with a presentation of the results obtained by the PSO algorithm.
+In this section a discussion will be presented on a series of optimisation benchmark functions. First a formulation of all the benchmark functions will be given with a short classification on each. Finally this chapter will conclude with a presentation of the results obtained by the PSO algorithm.
 
 The functions vary from being relatively easy to optimize, to functions that contain lots of local minima and a slightly concealed global minima. In total fourteen benchmark functions will be formulated and benchmarked against.
 
 If the following research \cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm} is studied. Various optimisation algorithms are benchmarked such as Genetic Algorithm, Artificial Bee Colony algorithm, Tabu Search and Simulated Annealing. In the presented research the algorithms are benchmarked using numerical optimization functions.
 
-Numerical optimization functions are good candidates to test optimisation algorithms as with a few slight changes the function operates in more dimensions or can have more or less optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}. Being able to alter these functions is a desirable trait as it enables one to accurately benchmark an algorithm, not only with regard to how the algorithm handles the increased dimensionality but also in the algorithms accuracy in locating optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}.
+Numerical optimization functions are good candidates to test optimisation algorithms as with a few slight changes the function operates in more dimensions or can have more or less optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}. Being able to alter these functions is a desirable trait as it enables one to accurately benchmark an algorithm, not only with regard to how the algorithm handles the increased dimensionality, but also in the algorithms accuracy in locating optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}.
 
-The reason why these functions have variable amount of local and global optima, it to test various factors on how good the algorithm is that is being applied on the function. The factors that are tested are\cite{CompuIntelligenceIntro,FundamentalSwarm}:
+The reason why these functions have variable amounts of local and global optima, is to test various factors on how good the algorithm is that is being applied on the function. The factors that are tested are\cite{CompuIntelligenceIntro,FundamentalSwarm}:
 \begin{itemize}
 \item Rate of convergence
 \item Exploration
@@ -27,15 +27,15 @@ In this dissertation, two PSO algorithm were developed specifically to measure t
 
 The first PSO that was developed was just the standard PSO algorithm with no constriction coefficient or inertia weight. The second PSO algorithm differed to the standard algorithm in the sense that it utilizes the notion of inertia to move particles. 
 
-Both of these algorithms have been applied to all sixteen benchmarks that are presented in the chapter and will be compared each other so that it can be asssed what benefit adding inertia weight adds to the algoritm performance. The comparison between these algorithms will be presented in section~\ref{sec:benchResults}.
+Both of these algorithms have been applied to all sixteen benchmarks that are presented in the chapter and will be compared to each other so that it can be asked what benefit adding inertia weight adds to the algoritm performance. The comparison between these algorithms will be presented in section~\ref{sec:benchResults}.
 
 In the next section, all the benchmarks that will be used for testing the PSO algorithms will be formulated. For the interested reader, 3D graphs along with the python code that generated the graphs are presented in the appendix. This chapter will conclude with a section on the results of the PSO algorithms that were developed being applied to the presented benchmarked as well as compared with other results that have been obtained by other algorithms and presented in the literature.
 \section{Test Functions}
-In this section all the test functions on which the two developed PSO algorithms will be benchmarked against will be presented. For each test function that is presented a mathematical formulation will be given and the global optimum will be explicitly stated. In addition to the formulation and global optimum, each function will also be classified whether it is a unimodal or modal function as well as whether it is separable or non-separable. Each of these classifications will now be explained.
+In this section all the test functions on which the two developed PSO algorithms will be benchmarked against will be presented. For each test function that is presented a mathematical formulation will be given and the global optimum will be explicitly stated. In addition to the formulation and global optimum, each function will also be classified, whether it is a unimodal or modal function as well as whether it is separable or non-separable. Each of these classifications will now be explained.
 
 \begin{description}
-\item{\textbf{Unimodal}} --- A particular problem is classified as being unimodal when there is only clear solution. With only one clear solution, it means there is only one global optimum point in the solution space\cite{evalevoalgo,numericalABC,FundamentalSwarm,CompuIntelligenceIntro}.
-\item{\textbf{Multi-modal}} --- A problem is multi-modal when it has more than one defined solution. Thus, the particular problem space contains multiple global optima\cite{evalevoalgo,numericalABC,FundamentalSwarm,CompuIntelligenceIntro}.
+\item{\textbf{Unimodal}} --- A particular problem is classified as being unimodal when there is only one clear solution. With only one clear solution, it means there is only one global optimum point in the solution space\cite{evalevoalgo,numericalABC,FundamentalSwarm,CompuIntelligenceIntro}.
+\item{\textbf{Multi-modal}} --- A problem is multi-modal when it has more than one defined solution, thus the particular problem space contains multiple global optima\cite{evalevoalgo,numericalABC,FundamentalSwarm,CompuIntelligenceIntro}.
 \item{\textbf{Separable}} --- Functions that are classified as being separable have the characteristic when the function can be written as a series of summations of just one variable\cite{numericalABC}. This quality makes the function easier to solve as the algorithm has only one variable to be concerned about\cite{evalevoalgo,numericalABC}. Separable functions also have the inherent quality of being scalable, meaning they can be easily be adapted to higher dimensions\cite{evalevoalgo,numericalABC}.
 \item{\textbf{Non-separable}} --- Functions classifiied as non-separable cannot be rewritten into a series of summation functions as the variables used in the functions have the characteristic of being interrelated\cite{evalevoalgo,numericalABC}. The interrelation of the variables makes non-separable functions more difficult than separable functions to solve since the algorithm has more interdependent variables to be concerned with\cite{evalevoalgo,numericalABC}.
 \end{description}
@@ -44,7 +44,7 @@ The De Jong test functions (F1, Shekel's Foxhole) are not considered to be the g
 
 Since the inception of the De Jong test functions, additional functions have been developed which make it more difficult for an optimisation algorithm to locate the optimum\cite{evalevoalgo}. These functions are more difficult in the sense, as they have multiple local optima, which does in actual fact leads the algorithm astray which is to say the problem space is deceptive\cite{CompuIntelligenceIntro,FundamentalSwarm,evalevoalgo}. 
 
-Problems that have deceptive search spaces tests how good the algorithm is resistant to Hill-climbing\footnote{continously selecting what seems to be better moves, but in reality its moving towards a local optima peak} and hence how efficient the algorithm is in exploring the entire search space\cite{evalevoalgo}.
+Problems that have deceptive search spaces tests how good the algorithm is resistant to Hill-climbing\footnote{continously selecting what seems to be better moves, but in reality its moving towards a local optima peak}, hence how efficient the algorithm is in exploring the entire search space\cite{evalevoalgo}.
 %\textbf{Development of a parallel optimization method based on genetic simulated annealing algorithm}\\
 %\textbf{Adaptive Diversity in PSO}\\
 %\textbf{A hybrid intelligent genetic algorithm}\\
@@ -106,7 +106,7 @@ A graph of this equation is presented in section~\ref{fig:SchwefelGraph} page \p
 \end{equation}
 The variable $x_i$ is bounded to within the hypercube $ -600 \leq x_i \leq 600 $\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,ContinACSTS,TestFunctions}. The global optimum of the function is when $f(x) =0$ which occurs when $ x_i = 0, i = 1, \dots, n $\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,ContinACSTS,TestFunctions}.
 
-As with the schwefel function, the Griewank function also has a great number of peaks and valleys which many algorithm get trapped in. A particular quality of the griewank function is at low dimensions, the function is quite difficult to solve, whereas it has been shown that at higher dimensions the function becomes much easier due to there being less peaks and valleys to navigate in the search space\cite{evalevoalgo,ABCCompareStudy,numericalABC,PerfABC,TestFunctions}. In the literature the function is classified as being multi-modal and non-separable\cite{adaptPSO,ABCCompareStudy,numericalABC,ChaoticABC,PerfABC,TestFunctions}.
+As with the schwefel function, the Griewank function also has a great number of peaks and valleys which many algorithm get trapped in. A particular quality of the griewank function is at low dimensions, the function is quite difficult to solve, where as it has been shown that at higher dimensions the function becomes much easier due to there being less peaks and valleys to navigate in the search space\cite{evalevoalgo,ABCCompareStudy,numericalABC,PerfABC,TestFunctions}. In the literature the function is classified as being multi-modal and non-separable\cite{adaptPSO,ABCCompareStudy,numericalABC,ChaoticABC,PerfABC,TestFunctions}.
 
 A graph of this equation is presented in section~\ref{fig:GriewankGraph} page \pageref{fig:GriewankGraph}.
 \subsection{Salomon}
@@ -140,7 +140,7 @@ A graph of this equation is presented in section~\ref{fig:CamelGraph} page \page
 \end{equation}
 The search domain is constrained to $-10 \leq x_i \leq 10, i = 1,2, \ldots, n$\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}. The global optimum which is when $f(x_i) = -186.7309$\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}. 
 
-As can be observed from the 3D graph presented in the appendix on page~\pageref{fig:ShubertGraph} the landscape of the Shubert function contains various peaks and slopes. Thus, the function is classified as being multi-modal and non-separable\cite{ABCCompareStudy,TestFunctions}.
+As can be observed from the 3D graph presented in the appendix on page~\pageref{fig:ShubertGraph} the landscape of the Shubert function contains various peaks and slopes, thus the function is classified as being multi-modal and non-separable\cite{ABCCompareStudy,TestFunctions}.
 
 A graph of this equation is presented in section~\ref{fig:ShubertGraph} page \pageref{fig:ShubertGraph}.
 \subsection{Himmelblau}
@@ -163,7 +163,7 @@ A graph of this equation is presented in section~\ref{fig:HimmelblaueGraph} page
 \end{equation}
 The variable $x_i$ is bounded to with the following constraint $ -2.048 \leq x_i \leq 2.048 $\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,TSGlobalOptContinFunc,HybridIntelliGA}. The global optimum is when $f(x) = 0$ and is obtained when $x_i = 1, i = 1,\ldots,n$\cite{numericalABC,ABCCompareStudy,ARPSO,TSGlobalOptContinFunc,HybridIntelliGA}.
 
-The rosenbrock search space has a curving valley which leads forces algorithms to coupe with the changing direction of the landscape\cite{numericalABC,ABCCompareStudy,ChaoticABC,PerfABC,HybridIntelliGA}. If the algorithm does not adapt to the changing direction it will fail in locating the global optimum. The function is classified as being multi-modal and non-separable\cite{numericalABC,ABCCompareStudy,ChaoticABC,PerfABC,HybridIntelliGA}.
+The rosenbrock search space has a curving valley which leads forces algorithms to cope with the changing direction of the landscape\cite{numericalABC,ABCCompareStudy,ChaoticABC,PerfABC,HybridIntelliGA}. If the algorithm does not adapt to the changing direction it will fail in locating the global optimum. The function is classified as being multi-modal and non-separable\cite{numericalABC,ABCCompareStudy,ChaoticABC,PerfABC,HybridIntelliGA}.
 
 A graph of this equation is presented in section~\ref{fig:Rosenbrock} page \pageref{fig:Rosenbrock}.
 \subsection{Dropwave}
@@ -231,7 +231,7 @@ A graph of this equation is presented in section~\ref{fig:GoldsteinGraph} page \
 
 \section{Results}
 \label{sec:benchResults}
-In the previous section sixteen benchmark functions were mathematically defined, where applicable comments were given on the search space. For each function the following was explicitly stated:
+In the previous section sixteen benchmark functions were mathematically defined, where applicable, comments were given on the search space. For each function the following was explicitly stated:
 \begin{itemize}
 \item The global optimum and where it is located.
 \item Whether the function is unimodal or multi-modal.
@@ -246,7 +246,7 @@ The algorithms will be compared with the following criteria on each benchmark.
 \end{itemize}
 For all the results presented the algorithm was applied to the various test functions for 1000 iterations. The limit on the number of iterations the algorithms operated on the problems was chosen as it was observed through various tests that the algorithms are not able to find any measurable improved solutions after the 600th iteration. The additional 400 iterations were given as a buffer period in case the algorithm was indeed able to obtain a better result.
 
-Thus the following results are the final resulting values the algorithms obtained after operating on the given problem for 1000 iterations. The algorithms were written in C++ and were executed on the following configuration
+The following results are the final resulting values the algorithms obtained after operating on the given problem for 1000 iterations. The algorithms were written in C++ and were executed on the following configuration
 \begin{itemize}
 \item Intel Q9700 operating at the manufactured speed of 3.167 Ghz
 \item 4 Gigabyte of DDR2 RAM
@@ -255,7 +255,7 @@ Thus the following results are the final resulting values the algorithms obtaine
 
 The results obtained will now be discussed. First, the actual final fitness values obtained by the algorithms will be discussed followed by a section discussing the diversity of the particle swarm as measured at the very last iteration of each algorithm. In each table presented the column denoted with the heading ``PSO'' refers to the results obtained with the standard PSO algorithm. The column denoted with the heading ``PSO*'' refers to the results obtained with the PSO algorithm that uses inertia with particle movement. 
 
-The inertia value utilised by the PSO* algorithm was set to 0.5 for these test as it was found that 0.5 obtains the best results. It must also be noted that any number smaller than e-08 is regarded as zero as the number is very close to zero and can be regarded as such. For accuracy the results presented has been left as is.
+The inertia value utilised by the PSO* algorithm was set to 0.5 for these test as it was found that 0.5 obtains the best results. It must also be noted that any number smaller than e-08 is regarded as zero as the number is very close to zero and can be regarded as such. For accuracy the results presented have been left as is.
 \subsection{Final values}
 \begin{table}[h]
 \label{tbl:fitnessValues}
@@ -293,9 +293,9 @@ In table~\ref{tbl:fitnessValues} it can be observed that the standard PSO algori
 \item Rosenbrock Valley
 \item Dropwave
 \end{enumerate}
-In all the other benchmark functions the standard algorithm clearly gets stuck in local optima, where the optima is located extremely close the global optima in the search landscape. One can observe from the 3D graph renderings presented in Appendix~ref{chpt:apxA} that some of the functions exhibits a search landscape that contains a lot of hills visually. These hills can also be interpreted as local optima and a specifically designed to exist within the search landscape for optimisation algorithms to get stuck on.
+In all the other benchmark functions the standard algorithm clearly gets stuck in local optima, where the optima is located extremely close to the global optima in the search landscape. One can observe from the 3D graph renderings presented in Appendix~\ref{chpt:apxA} that some of the functions exhibit a search landscape that contains a lot of hills visually. These hills can also be interpreted as local optima and are specifically designed to exist within the search landscape for optimisation algorithms to get stuck on.
 
-If one looks at the amount of benchmark functions the algorithm was applied to and the number of test functions successfully solved the performance of the algorithm seems quite sub par. Statistically the standard PSO algorithm developed has a relatively success rate of 43.75\%.
+If one looks at the number of benchmark functions the algorithm was applied to and the number of test functions successfully solved, the performance of the algorithm seems quite sub par. Statistically the standard PSO algorithm developed has a relatively success rate of 43.75\%.
 
 This success rate of the standard algorithm is improved when one compares the algorithm to the PSO algorithm that uses inertia. Indeed, the PSO algorithm solves the following functions:
 \begin{enumerate}
@@ -309,14 +309,14 @@ This success rate of the standard algorithm is improved when one compares the al
 \item Dropwave
 \item Branins
 \end{enumerate}
-The PSO* algorithm solves two additional benchmark functions than the standard PSO algorithm. It must also be noted that for the following functions the PSO* also obtained better and thus much closer to the global optimum results:
+The PSO* algorithm solves two additional benchmark functions than the standard PSO algorithm. It must also be noted that, for the following functions, the PSO* also obtained better and thus much closer to the global optimum results:
 \begin{enumerate}
 \item Schwefel
 \item Griewank
 \end{enumerate}
-The observed reason why the PSO* algorithm is able to solve more test functions and get closer to the global optimum is due inertia. With inertia, the particles of the swarm search the are is resides in much more thoroughly. With the standard algorithm due to how the algorithm does not clamp the velocity of particle, the velocity of particles quickly becomes huge. With a high velocity on a particle the particle now longer takes systematic small steps towards another particle, rather the particle takes huge strides in the search space skipping entire regions. It is for this reason two variations exist on the PSO algorithm. One that uses velocity clamping and one that uses inertia. The inertia variant was selected due to the ease of implementing the alteration on the algorithm as well as the success the variant of the algorithm has achieved in the current literature.
+The observed reason why the PSO* algorithm is able to solve more test functions and get closer to the global optimum is due inertia. With inertia, the particles of the swarm search the landscape much more thoroughly. Due to how the algorithm does not clamp the velocity of particle, the velocity of particles quickly becomes huge. With a high velocity on a particle the particle no longer takes systematic small steps towards another particle, rather the particle takes huge strides in the search space skipping entire regions. It is for this reason two variations exist on the PSO algorithm: One that uses velocity clamping and one that uses inertia. The inertia variant was selected due to the ease of implementing the alteration on the algorithm as well as the success the variant of the algorithm has achieved in the current literature.
 
-It is interesting to note that both algorithms completely fail with regard to finding a solution in the search landscape depicted by the Goldstein function. This can be attributed to the particular landscape of the function is very misleading and one can see by looking at the 3D graph rendering of the function (see page~\pageref{fig:GoldsteinGraph}) that the global optimum (bottom left corner) is surrounded by steep hills. These hills are steep and leads the PSO algorithms astray in their search for the global optimum.
+It is interesting to note that both algorithms completely fail with regard to finding a solution in the search landscape depicted by the Goldstein function. This can be attributed to the particular landscape of the function being very misleading and one can see by looking at the 3D graph rendering of the function (see page~\pageref{fig:GoldsteinGraph}) that the global optimum (bottom left corner) is surrounded by steep hills. These hills are steep and lead the PSO algorithms astray in their search for the global optimum.
 
 In this section the final fitness values obtained by both benchmark PSO algorithm that were developed were discussed. In the next section a discussion will be presented on the measure diversity amongst particles of both algorithm swarms.
 \subsection{Diversity}
@@ -346,13 +346,13 @@ In this section the final fitness values obtained by both benchmark PSO algorith
 \end{center}
 \caption{Diversity values}
 \end{table}
-Diversity as measured in table~\ref{tbl:diversityValues} is the average difference of the fitness value each particle has obtained in the swarm. By observing the values obtained it becomes evident as to why the PSO* algorithm with inertia in general performs better than the standard PSO algorithm. The difference in particles fitness values are extremely low compared to their equivalent values in the standard PSO algorithm. This means that inertia lets the swarm be much more cohesive and thus particles are much closer to each other in the search landscape. Being closer to each other allows the swarm to search the landscape much more thoroughly.
+Diversity as measured in table~\ref{tbl:diversityValues} is the average difference of the fitness value each particle has obtained in the swarm. By observing the values obtained it becomes evident as to why the PSO* algorithm with inertia in general performs better than the standard PSO algorithm. The difference in particles fitness values are extremely low compared to their equivalent values in the standard PSO algorithm. This means that inertia lets the swarm to be much more cohesive and thus particles are much closer to each other in the search landscape. Being closer to each other allows the swarm to search the landscape much more thoroughly.
 
 The diversity values can also be interpreted as the rate of exploration. The standard PSO algorithm clearly has a high exploration rate. Another interpretation is that diversity can also depict the exploitation that the algorithm performs, which means that the PSO* has a high exploitation rate due to particles being much more cohesive with regard to their search.
 
-It must also be noted the inertia value of the PSO* algorithm allows one to control the rate of exploration and exploitation of the swarm. For these benchmarks a conservative 0.5 was chosen. A 0.5 inertia value achieves a good balance between exploration and exploitation where a value of 1.0 means full exploration. Thus with a 1.0 inertia value the PSO* algorithm is equivalent to the standard PSO algorithm.
+It must also be noted the inertia value of the PSO* algorithm allows one to control the rate of exploration and exploitation of the swarm. For these benchmarks a conservative 0.5 was chosen. A 0.5 inertia value achieves a good balance between exploration and exploitation where a value of 1.0 means full exploration, thus with a 1.0 inertia value the PSO* algorithm is equivalent to the standard PSO algorithm.
 
-Therefore, since the PSO algorithm with the inertia value not allow achieves better results than its standard counterpart but also exposes a parameter which controls the behaviour of the algorithm it becomes clear the particular PSO algorithm that will be used for this dissertation, must be the algorithm that uses inertia.
+Since the PSO algorithm with the inertia value not only achieves better results than its standard counterpart, but also exposes a parameter which controls the behaviour of the algorithm it becomes clear the particular PSO algorithm that will be used for this dissertation, must be the algorithm that uses inertia.
 \section{Summary}
 In this chapter a series of mathematical optimisation problems were presented. Each problem was mathematically formulated as well as categorised as to whether the particular problem is multi-modal and separable.
 

@@ -19,17 +19,17 @@
 \degree{Magister Scientiae}
 \field{Information Technology}
 \faculty{Faculty of Science}
-\supervisorName{Dr. G.B. O'Reilly}
+\supervisorName{Dr G.B. O'Reilly}
 \submissionDate{June 2011}
 \begin{document}
-\pagenumbering{roman}
+\frontmatter
 \makecover
 \tableofcontents
 \listoffigures
 \listofalgorithms
 \listoftables
+\mainmatter
 \part{Background}
-\pagenumbering{arabic}
 \include{chpt1}%Introduction
 \include{chpt2}%GSM Cellular Networks
 \include{chpt3}%Frequency Assignment Problem
@@ -44,6 +44,7 @@
 \appendixpage
 \addappheadtotoc
 \include{apdxA}
+\backmatter
 \bibliography{ReferenceDB}
 \bibliographystyle{plain}
 \end{document}

@@ -7,7 +7,7 @@ In wireless communication a huge concern is a notion known as interference which
 
 Using exact algorithms to find a solution is not practical since the time to find a solution will be polynomial. Generally Meta heuristic algorithms are used to find optimal solutions to NP-Complete problems\cite{ACOvsEA}. In the chapter titled \emph{Meta-heuristic algorithms}, a discussion will be presented on algorithms that are generally used to find solutions for NP-Complete problems. A definition on what it means for a problem to be NP-Complete will be given in section \ref{sec:NPComplete}. 
 
-A wireless cellular operator is not allowed to just operate on any frequency. A governing body license a certain piece of the available wireless spectrum to the operator for use in their network\cite{FAPRAMColouring}. These frequencies that need to be licensed for use are known as \emph{commercial} frequencies and are very scarce as it is immensely expensive to license these frequencies\cite{FAPRAMColouring}. 
+A wireless cellular operator is not allowed to just operate on any frequency. A governing body license a certain piece of the available wireless spectrum, to the operator for use in their network\cite{FAPRAMColouring}. These frequencies that need to be licensed for use are known as \emph{commercial} frequencies and are very scarce as it is immensely expensive to license these frequencies\cite{FAPRAMColouring}. 
 
 Usually a licensed piece of spectrum contains a series of consecutive frequencies as well as gaps. Where the gap frequencies are barred from being used by any device within the network. These frequencies are barred from use as they may have been allocated already to another operator for use \cite{FAPInCell}. By barring frequencies, a scenario is avoided where the different networks equipment interfere with their respective operations \cite{FAPInCell}
 
@@ -76,11 +76,11 @@ Since a micro cellular network has increased hand off traffic compared to a macr
 
 DCA is much more efficient than FCA when the amount of mobile traffic on the network is relatively low. On the other hand, when the network is under heavy mobile traffic load, the FCA scheme outperforms the DCA scheme, since the DCA usually allocates frequencies to cells in an inefficient arrangement that might the amount of interference encountered on the network\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunications}.
 
-Finally DCA has the inherent requirement that it requires a great deal more computational power that FCA, since the frequencies need to be selected and allocated with great speed otherwise the cell requesting a channel won't be able to handle the call and therefore block the call or drop the call\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunications}.
+Finally DCA has the inherent requirement that it requires a great deal more computational power than that of FCA, since the frequencies need to be selected and allocated with great speed otherwise the cell requesting a channel won't be able to handle the call and therefore block the call or drop the call\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunications}.
 
 Most researchers have concentrated on solving the FFA using heuristic approaches like neural networks, local search techniques and more recently meta heuristic approaches which include genetic algorithms, simulated annealing, ant colony optimisation and particle swarm optimisation.
 
-In this sub section an overview of the DCA allocation scheme was presented. An outline was given on what the DCA scheme entails, what its advantages as well as disadvantages is. This concludes the discussion on the different allocation schemes that is used in modern cellular networks. In the next section a discussion will be presented on the different industries where FAP is encountered.
+In this sub section an overview of the DCA allocation scheme was presented. An outline was given on what the DCA scheme entails, what its advantages as well as disadvantages are. This concludes the discussion on the different allocation schemes that is used in modern cellular networks. In the next section a discussion will be presented on the different industries where FAP is encountered.
 
 \section{Interference}
 \label{sec:Interference}
@@ -191,7 +191,7 @@ The Minimum Interference FAP (MI-FAP) or Fixed Spectrum FAP (FS-FAP) is typicall
 
 Unlike previous discussed problems, in MI-FAP any available channel in the allocated band may be used even though it produces interference. The other problems are concerned with the frequencies used, even though they might be violating some constraints that incur a huge amount of interference\cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}. The interference value doesn't play a large role in their respective objective functions\cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}. In MI-FAP the objective is to minimize the total amount of interference on the network. It is important to note that this amount of interference might not necessarily be zero \cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}.
 
-The MI-FAP is the most encountered problem currently in cellular networks, since there is more operating networks than new networks being designed in the cellular industry today. This particular problem will form the focus of this dissertation. 
+The MI-FAP is the most encountered problem currently in cellular networks, since there are more operating networks than new networks being designed in the cellular industry today. This particular problem will form the focus of this dissertation. 
 
 Since MI-FAP is very close to real world instance problems, authors tend to use real world instances or benchmarks that resemble real world instance to test the quality and efficiency of their algorithms \cite{Karen2004,Eisenblatter,MontemanniThesis,MultipleBinaryFAP}. The quality and efficiency of the solution presented in this dissertation will be benchmarked with the COST 259 benchmark which is discussed in section \ref{sec:FAPBenchmarks}.
 
@@ -200,7 +200,7 @@ In this section the different Frequency Assignments Problems that exist in the l
 In the following section a formal mathematical definition for the Fixed Spectrum MI-FAP will be presented. The definition is important as it will form the base for the objective/cost function that the algorithm presented in this dissertation will use.
 \section{Fixed Spectrum MI-FAP Mathematical Formulation}
 \label{sec:FAPMathDef}
-A Mathematical definition of the Frequency Assignment Problem is presented in this section. The mathematical definition will be used by the algorithm discussed in this dissertation to evaluate the amount of interference generated frequency plans exhibit. This section will start of where the symbols that are used in the mathematical definition is denoted and briefly discussed.
+A Mathematical definition of the Frequency Assignment Problem is presented in this section. The mathematical definition will be used by the algorithm discussed in this dissertation to evaluate the amount of interference generated frequency plans exhibit. This section will start off where the symbols that are used in the mathematical definition is denoted and briefly discussed.
 
 The Frequency Assignment Problem can be represented as a graph colouring problem hence it is known to be NP-Complete. Before mathematical definition can be formally defined for the Frequency Assignment Problem, some symbols and their respective definitions need to be introduced.
 
@@ -248,7 +248,7 @@ In this section a discussion is presented on some of the most used benchmarks in
 \subsection{Philadelphia Benchmark}
 The Philadelphia benchmarks are derived from an instance that was introduced in 1973 by Anderson. Each instance is a hexagonal grid of cells that overlaps the area of interest. At the centre of each cell there is a transmitter. Past approaches used these hexagonal systems to model modern cellular networks \cite{Karen2004,ExactMIFAP}.
 
-In this benchmark interference is measured by a co-channel reuse distance. This distance stipulates that the difference of the frequencies  assigned to two cells be must greater or equal to a certain value $d$. A channel cannot be assigned to a cell if it violates this minimum distance \cite{Karen2004,ExactMIFAP}.
+In this benchmark interference is measured by a co-channel reuse distance. This distance stipulates that the difference of the frequencies  assigned to two cells must be greater or equal to a certain value $d$. A channel cannot be assigned to a cell if it violates this minimum distance \cite{Karen2004,ExactMIFAP}.
 
 These benchmarks are typically used to test algorithms developed for MS-FAP, since there is no concept of cost or penalty for interference incurred by violating constraints.
 \subsection{CELAR}
@@ -256,12 +256,12 @@ In 1994 EUCLID introduced a project called CALMA, which was a combined effort by
 
 All the CELAR instances have the constraint that the difference between frequencies assigned to interfering radio links must be greater that a certain predefined distance in the frequency domain. This is a soft constraint and may be violated. Another constraint in the CELAR instances is that each pair of parallel links must differ by an exact predefined distance. This constraint is a hard constraint and may not be violated \cite{DynamicFAP}.
 
-These instances were initially not available to the general public as it was contained to be within the CALMA project. In 2001 the CELAR launched the International ROADEF challenge, were certain instances from the CALMA project were made available for the research teams taking part in the challenge. The instances made available had been modified to take polarizations and controlled relaxations of certain EMC constraints \cite{LowerPolarFAP}.
+These instances were initially not available to the general public as they were contained to be within the CALMA project. In 2001 the CELAR launched the International ROADEF challenge, where certain instances from the CALMA project were made available for the research teams taking part in the challenge. The instances made available had been modified to take polarizations and controlled relaxations of certain EMC constraints \cite{LowerPolarFAP}.
 \subsection{COST 256}
 \label{sec:COST259}
 The COST (COoperation européene dans le domaine de la recherche Scientifique et Technique) 259 is a set of real world GSM instances made available by die European Union. The instances are publicly available and can  be downloaded for free at http://fap.zib.de/ (FAP Web 2011). The website also contains the most recent results obtained by researchers using these instances\cite{Karen2004,Eisenblatter}.
 
-The instances are fairly difficult due to the large amount of transmitters (900 - 4000) that need to be assigned frequencies, with a relatively small amount spectrum of frequencies. The most important characteristic of these benchmarks is that they resembles real world GSM network data. Due to this benchmarks real world applicability, they were selected as the main benchmarks to evaluate the algorithm presented in this dissertation.
+The instances are fairly difficult due to the large amount of transmitters (900 - 4000) that need to be assigned frequencies, with a relatively small amount spectrum of frequencies. The most important characteristic of these benchmarks are that they resemble real world GSM network data. Due to these benchmarks real world applicability, they were selected as the main benchmarks to evaluate the algorithm presented in this dissertation.
 
 More specifically this dissertation will concentrate on a small subset of the instances that are available, namely Siemens1, Siemens2, Siemens3 and Siemens4. In the paper by Montemanni and Smith \cite{TabuMontemanniSmith} the same subset of problems are used and to date their algorithm has produced some of the best results. The characteristics of each instance will now be discussed.
 \subsubsection{Siemens1}
@@ -288,7 +288,7 @@ In this section a discussion was presented on the various benchmark functions th
 In the next section a general overview will be given on the different industries where the FAP is encountered.
 \section{FAP in the industry}
 \label{sec:FAPIndustry}
-In this section a list some of the industries where the FAP is encountered will be presented. For each industry listed a brief overview how the problem differs compared to other industries is presented. 
+In this section a list some of the industries where the FAP is encountered will be presented. For each industry listed, a brief overview how the problem differs compared to other industries is presented. 
 
 \subsection{Satellite communication}
 The FAP in the Satellite communication domain occurs with respect to the ground terminals that transmit and receive signals via a satellite. One would assume that the problem includes the satellite, but the problem is only concerned with the frequencies that the ground terminals use. It is interesting to note that the ground terminals can be a base station or a handheld device (e.g. GPS or Satellite phone).
