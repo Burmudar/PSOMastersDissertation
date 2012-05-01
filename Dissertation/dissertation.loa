@@ -1,22 +1,22 @@
-\contentsline {algorithm}{\numberline {1}{\ignorespaces Basic Tabu Search Algorithm\cite {TabuRCAProblem,TabuMontemanniSmith}}}{61}{algorithm.1}
-\contentsline {algorithm}{\numberline {2}{\ignorespaces Basic Simulated Annealing Algorithm\cite {VeryFastSAImageEnchancement,ChaosSA}}}{73}{algorithm.2}
-\contentsline {algorithm}{\numberline {3}{\ignorespaces Basic Genetic Algorithm Algorithm\cite {FamilyGA,AdaptiveSAGA,DistributedHierarchicalGA,SelfAdaptiveGA}}}{83}{algorithm.3}
-\contentsline {algorithm}{\numberline {4}{\ignorespaces Basic Ant Colony Optimization Algorithm\nobreakspace {}\cite {CompuIntelligenceIntro}}}{102}{algorithm.4}
-\contentsline {algorithm}{\numberline {5}{\ignorespaces Basic Artificial Bee Colony Algorithm\cite {ABCCompareStudy}}}{116}{algorithm.5}
-\contentsline {algorithm}{\numberline {6}{\ignorespaces Basic Global Particle Swarm Optimization Algorithm\cite {CompuIntelligenceIntro}}}{129}{algorithm.6}
-\contentsline {algorithm}{\numberline {7}{\ignorespaces The FAP PSO algorithm}}{167}{algorithm.7}
-\contentsline {algorithm}{\numberline {8}{\ignorespaces FAP cost function}}{170}{algorithm.8}
-\contentsline {algorithm}{\numberline {9}{\ignorespaces Velocity method 1}}{174}{algorithm.9}
-\contentsline {algorithm}{\numberline {10}{\ignorespaces Subtract one position from another}}{174}{algorithm.10}
-\contentsline {algorithm}{\numberline {11}{\ignorespaces Multiply position with a value (Method 1)}}{176}{algorithm.11}
-\contentsline {algorithm}{\numberline {12}{\ignorespaces Add one position to another (Method 1)}}{177}{algorithm.12}
-\contentsline {algorithm}{\numberline {13}{\ignorespaces BoundValue method}}{178}{algorithm.13}
-\contentsline {algorithm}{\numberline {14}{\ignorespaces Velocity method 2}}{182}{algorithm.14}
-\contentsline {algorithm}{\numberline {15}{\ignorespaces MoveIndices}}{183}{algorithm.15}
-\contentsline {algorithm}{\numberline {16}{\ignorespaces ApplyVelocity}}{184}{algorithm.16}
-\contentsline {algorithm}{\numberline {17}{\ignorespaces CalculateIndexVelocity}}{184}{algorithm.17}
-\contentsline {algorithm}{\numberline {18}{\ignorespaces Standard Gbest selection in FAP PSO}}{186}{algorithm.18}
-\contentsline {algorithm}{\numberline {19}{\ignorespaces Building Global Best with Cells}}{188}{algorithm.19}
-\contentsline {algorithm}{\numberline {20}{\ignorespaces Building Global Best with transceivers}}{189}{algorithm.20}
-\contentsline {algorithm}{\numberline {21}{\ignorespaces SanitizePosition}}{192}{algorithm.21}
-\contentsline {algorithm}{\numberline {22}{\ignorespaces ResolveCollision}}{193}{algorithm.22}
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Basic Tabu Search Algorithm\cite {TabuRCAProblem,TabuMontemanniSmith}}}{59}{algorithm.1}
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Basic Simulated Annealing Algorithm\cite {VeryFastSAImageEnchancement,ChaosSA}}}{72}{algorithm.2}
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Basic Genetic Algorithm Algorithm\cite {FamilyGA,AdaptiveSAGA,DistributedHierarchicalGA,SelfAdaptiveGA}}}{80}{algorithm.3}
+\contentsline {algorithm}{\numberline {4}{\ignorespaces Basic Ant Colony Optimization Algorithm\nobreakspace {}\cite {CompuIntelligenceIntro}}}{100}{algorithm.4}
+\contentsline {algorithm}{\numberline {5}{\ignorespaces Basic Artificial Bee Colony Algorithm\cite {ABCCompareStudy}}}{114}{algorithm.5}
+\contentsline {algorithm}{\numberline {6}{\ignorespaces Basic Global Particle Swarm Optimization Algorithm\cite {CompuIntelligenceIntro}}}{127}{algorithm.6}
+\contentsline {algorithm}{\numberline {7}{\ignorespaces The FAP PSO algorithm}}{165}{algorithm.7}
+\contentsline {algorithm}{\numberline {8}{\ignorespaces FAP cost function}}{168}{algorithm.8}
+\contentsline {algorithm}{\numberline {9}{\ignorespaces Velocity method 1}}{172}{algorithm.9}
+\contentsline {algorithm}{\numberline {10}{\ignorespaces Subtract one position from another}}{172}{algorithm.10}
+\contentsline {algorithm}{\numberline {11}{\ignorespaces Multiply position with a value (Method 1)}}{174}{algorithm.11}
+\contentsline {algorithm}{\numberline {12}{\ignorespaces Add one position to another (Method 1)}}{175}{algorithm.12}
+\contentsline {algorithm}{\numberline {13}{\ignorespaces BoundValue method}}{176}{algorithm.13}
+\contentsline {algorithm}{\numberline {14}{\ignorespaces Velocity method 2}}{180}{algorithm.14}
+\contentsline {algorithm}{\numberline {15}{\ignorespaces MoveIndices}}{181}{algorithm.15}
+\contentsline {algorithm}{\numberline {16}{\ignorespaces ApplyVelocity}}{182}{algorithm.16}
+\contentsline {algorithm}{\numberline {17}{\ignorespaces CalculateIndexVelocity}}{182}{algorithm.17}
+\contentsline {algorithm}{\numberline {18}{\ignorespaces Standard Gbest selection in FAP PSO}}{184}{algorithm.18}
+\contentsline {algorithm}{\numberline {19}{\ignorespaces Building Global Best with Cells}}{186}{algorithm.19}
+\contentsline {algorithm}{\numberline {20}{\ignorespaces Building Global Best with transceivers}}{187}{algorithm.20}
+\contentsline {algorithm}{\numberline {21}{\ignorespaces SanitizePosition}}{190}{algorithm.21}
+\contentsline {algorithm}{\numberline {22}{\ignorespaces ResolveCollision}}{191}{algorithm.22}

@@ -1,75 +1,71 @@
-\chapter{Meta-heuristic Algorithms}
+\chapter{Metaheuristic Algorithms}
 \label{chpt:heuristic}
 \section{Introduction}
-Meta-heuristics is a sub domain of the artificial intelligence domain\cite{AIModernApproach}. It evolved out of a need for more efficient search techniques with regard to hard problems. 
+Metaheuristics is a subdomain of the artificial intelligence domain\cite{AIModernApproach}. It evolved out of a need for more efficient search techniques with regard to hard problems. 
 
-Meta-heuristics forms part of a collective body of algorithms that use heuristics to search a particular domain's problem space, for the most optimal solution adhering to certain hard and soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic}. 
+Metaheuristics forms part of a collective body of algorithms that use heuristics to search a particular domain's problem space for the most optimal solution adhering to certain hard and soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic}. 
 
 A hard constraint is defined as a certain condition an algorithm or potential solution is not allowed to violate\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}. A soft constraint is allowed to be violated but there is some sort of penalty or cost involved which is imposed onto the potential solution, which lowers its desirability\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}. 
 
-An optimal solution would therefore be any solution that violates no hard constraints and violates none or a minimum number of soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}.
+An optimal solution would therefore be any solution that violates no hard constraints and violates no or a minimum number of soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}.
 
-Some of the most famous algorithms that are classified as being part of the collective body of algorithms known as meta-heuristic algorithms are:
+Some of the most famous algorithms that are classified as being part of the collective body of algorithms known as metaheuristic algorithms are:
 \begin{itemize}
-\item Tabu Search
-\item Simulated Annealing
-\item Genetic Algorithm
+\item Tabu search
+\item Simulated annealing
+\item Genetic algorithm
 \end{itemize}
-The above mentioned algorithms are not the only algorithms to form part of this sub-domain, but they are the algorithms that have received the most attention in the literature and generally produce good results\cite{SweepMeta}.
+The above-mentioned algorithms are not the only algorithms to form part of this subdomain, but they are the algorithms that have received the most attention in the literature and generally produce good results\cite{SweepMeta}.
 
-The main focus of this chapter will be to discuss each of the above listed algorithms in detail. Before each of the algorithms are discussed, a section will be presented that gives a brief overview on the various characteristics that meta-heuristic algorithms exhibit. 
+The main focus of this chapter will be each of the above algorithms. Before each of the algorithms is discussed, a brief overview is given of the various characteristics that metaheuristic algorithms exhibit. 
 
-Following the discussion on the characteristics there will be three sections that will discuss the above mentioned algorithms along with a brief literature study for each algorithm. 
-
-\section{Characteristics of Meta-heuristics}
-NP-Complete\footnote{A discussion of NP-Complete problems is presented in section \ref{sec:NPComplete} page \pageref{sec:NPComplete}} problems have been proven to not be solvable in polynomial time by traditional search methods such as A* search, Breath First Search and Depth-First Search\cite{AIModernApproach}. 
+\section{Characteristics of Metaheuristics}
+NP-Complete\footnote{A discussion of NP-Complete problems is appears in section \ref{sec:NPComplete}} problems have been proven to not be solvable in polynomial time by traditional search methods such as A* search, Breath First Search and Depth-First Search\cite{AIModernApproach}. 
 
 These traditional search algorithms are concerned with the path taken from a starting solution to a final solution. Hence, the algorithms test each and every possible solution and store any alternatives in memory since a final solution constitutes the path taken from a start node to a final node \cite{AIModernApproach}.
 
-It is not always viable to test each and every possible solution in a given problem search space, especially in NP-Complete problems since their search spaces are usually huge or infinite which is why traditional algorithms are not able to produce optimal solutions in polynomial time\cite{AIModernApproach}.
+It is not always viable to test every possible solution in a given problem search space, especially in NP-Complete problems, since their search spaces are usually huge or infinite. This is why traditional algorithms are not able to produce optimal solutions in polynomial time\cite{AIModernApproach}.
 
-With NP-Complete problems, the path taken from an initial possible solution to a final optimal solution is irrelevant \cite{AIModernApproach}. Only the final optimal solution is needed. Algorithms that disregard the path taken to a solution and only care about the final solution are classified as being \emph{Local search} algorithms\cite{AIModernApproach}.
+With NP-Complete problems, the path taken from an initial possible solution to a final optimal solution is irrelevant \cite{AIModernApproach}. Only the final optimal solution is needed. Algorithms that disregard the path taken to a solution and that only care about the final solution are classified as \emph{local search} algorithms\cite{AIModernApproach}.
 
-Local search algorithms tend to use a small amount of memory since the algorithm is only concerned with the current state and only moves to a neighbouring state when searching for a potential solution. This makes Local search algorithms a good fit for optimization problems as a optimized solution is just a solution which constitutes to the current best state found by the algorithm \cite{AIModernApproach,NonlinearGlobalTabu}. 
+Local search algorithms tend to use a small amount of memory since the algorithm is only concerned with the current state and only moves to a neighbouring state when searching for a potential solution. This makes local search algorithms a good fit for optimisation problems as an optimised solution is just a solution which constitutes to the current best state found by the algorithm \cite{AIModernApproach,NonlinearGlobalTabu}. 
 
-At its most basic form, a local search algorithm is just an algorithm that moves form one state to another. How it generates neighbouring states to move to and how why it moves to a certain state as well as how it moves towards that state, makes the local search algorithm unique \cite{AIModernApproach,CompuIntelligenceIntro,NonlinearGlobalTabu}.
+In its most basic form, a local search algorithm is just an algorithm that moves from one state to another. How it generates neighbouring states to move to and how and why it moves to a certain state makes the local search algorithm unique \cite{AIModernApproach,CompuIntelligenceIntro,NonlinearGlobalTabu}.
 
-Meta-heuristic algorithms are considered to be \emph{general-purpose} algorithms and can thus be applied to a wide variety of optimization problems with only small modifications that need to made to the algorithm model\cite{MetaGraph}.
+Metaheuristic algorithms are considered to be \emph{general-purpose} algorithms and can thus be applied to a wide variety of optimisation problems with only small modifications that need to made to the algorithm model\cite{MetaGraph}.
 
-As can be gathered from the name, a meta-heuristic algorithm uses some sort of heuristic. A heuristic at its most basic form is a decision rule. Algorithms use heuristics to make decisions by applying the heuristic to the data the algorithm is currently working on\cite{AIModernApproach,NatureInspiredMetaHeuristic}.
+As can be gathered from the name, a metaheuristic algorithm uses some sort of heuristic. A heuristic in its most basic form is a decision rule. Algorithms use heuristics to make decisions by applying the heuristic to the data the algorithm is currently working on\cite{AIModernApproach,NatureInspiredMetaHeuristic}.
 
-A heuristic is able to dictate what an algorithm must do for its next iteration by evaluating the current internal state of the algorithm  i.e. should it move to a different point in the solution space, generate new data, or select the current data as the most optimal solution\cite{AIModernApproach,NatureInspiredMetaHeuristic}.
+A heuristic is able to dictate what an algorithm must do for its next iteration by evaluating the current internal state of the algorithm, i.e. whether it should move to a different point in the solution space, generate new data, or select the current data as the most optimal solution\cite{AIModernApproach,NatureInspiredMetaHeuristic}.
 
-A Meta-heuristic differs slightly from a normal heuristic. In general the ``meta'' means \emph{beyond} or \emph{higher level}\cite{AIModernApproach,NatureInspiredMetaHeuristic}. A meta-heuristic therefore refers to a heuristic that is more complex with regard to the decisions it is able to make compared to a standard heuristic\cite{AIModernApproach,NatureInspiredMetaHeuristic}.
+A metaheuristic differs slightly from a normal heuristic. In general ``meta'' means \emph{beyond} or \emph{higher level}\cite{AIModernApproach,NatureInspiredMetaHeuristic}. A metaheuristic therefore refers to a heuristic that is more complex with regard to the decisions it is able to make compared with a standard heuristic\cite{AIModernApproach,NatureInspiredMetaHeuristic}.
 
 In the literature algorithms are generally classified as being of the meta-heuristic variant when they satisfy the following criteria\cite{AIModernApproach,NatureInspiredMetaHeuristic}:
 \begin{itemize}
-	\item Uses randomization
-	\item Uses a local search
-	\item Algorithm is stochastic\footnote{Exhibits behaviour that is non-deterministic.}
+	\item Use randomisation
+	\item Use a local search
+	\item Are stochastic\footnote{Exhibit behaviour that is non-deterministic.}
 \end{itemize}
 
-Meta-heuristic Algorithms do not search the solution space statically by testing and evaluating every possible permutation in the solution space, as it is inefficient and a normal path based algorithm can be used instead\cite{MetaAgricultural}.
+Metaheuristic algorithms do not search the solution space statically by testing and evaluating every possible permutation in the solution space. This is inefficient and a normal path-based algorithm can be used instead\cite{MetaAgricultural}.
 
-Meta-heuristic algorithms make use of certain strategies and heuristics (specific to the problem domain) to search the solution space intelligently through trail and error \cite{MetaAgricultural}. Intelligent searching is accomplished by combining the local search strategy along with a heuristic\cite{NatureInspiredMetaHeuristic,AIModernApproach,CompuIntelligenceIntro}. 
+Metaheuristic algorithms make use of certain strategies and heuristics (specific to the problem domain) to search the solution space intelligently through trial and error \cite{MetaAgricultural}. Intelligent searching is accomplished by combining the local search strategy along with a heuristic\cite{NatureInspiredMetaHeuristic,AIModernApproach,CompuIntelligenceIntro}. 
 
 These algorithms iteratively move through the solution space, using a heuristic to guide the search to move to more desirable regions in the solution space where there is a high probability of obtaining high quality candidate solutions \cite{TabuMontemanniSmith,SweepMeta}.
 
-Meta-heuristic based search methods are not guaranteed to find the most optimal solutions in the solution space, instead these methods are usually used to find near-optimal solutions. Thus most algorithmic development in the meta-heuristic domain focus developing new techniques that will increase the probability that a good solution will be obtained in difficult combinatorial problems \cite{MetaAgricultural}.
+Metaheuristic-based search methods are not guaranteed to find the most optimal solutions in the solution space; instead these methods are usually used to find near-optimal solutions. Thus most algorithmic development in the metaheuristic domain focuses on developing new techniques that will increase the probability that a good solution will be obtained in difficult combinatorial problems \cite{MetaAgricultural}.
 
-Similarly, Meta-heuristics are not guaranteed to find suitable solutions or perform well in each problem domain it is applied to. The quality of the solution and performance of the meta-heuristic is very much dependant upon on the expertise of the algorithm designer \cite{AutoComplexMeta}. 
+Similarly, metaheuristics is not guaranteed to find suitable solutions or perform well in each problem domain it is applied to. The quality of the solution and performance of the metaheuristic is very much dependent upon on the expertise of the algorithm designer \cite{AutoComplexMeta}. 
 
-The standard meta-heuristic algorithms will not take advantage of specific domain knowledge as the algorithm is designed to be general purpose. Therefore for the algorithm to exploit the search domain the algorithm designer needs to embed domain specific knowledge\cite{AutoComplexMeta,AIModernApproach}. Otherwise the algorithm will search the solution space generally and will produce relatively poor results\cite{AutoComplexMeta,AIModernApproach}.
+The standard metaheuristic algorithm will not take advantage of specific domain knowledge as the algorithm is designed to be general purpose. Therefore for the algorithm to exploit the search domain the algorithm designer needs to embed domain-specific knowledge\cite{AutoComplexMeta,AIModernApproach}. Otherwise the algorithm will search the solution space generally and will produce relatively poor results\cite{AutoComplexMeta,AIModernApproach}.
 
-Although heuristics play a key role in the performance of meta-heuristic algorithms, it is not the only factor that has an impact on performance and results. Algorithms also use techniques and concepts from other system paradigms like multi-agent systems\cite{Self-AdaptiveMeta}. 
+Although heuristics plays a key role in the performance of metaheuristic algorithms, it is not the only factor that has an impact on performance and results. Algorithms also use techniques and concepts from other system paradigms like multi-agent systems\cite{Self-AdaptiveMeta}. 
 
-In multi-agent systems, multiple agents have to communicate with each other and the system as a whole has to perform some sort of autonomous self-organization\cite{Self-AdaptiveMeta}.
+In multi-agent systems, multiple agents have to communicate with each other and the system as a whole has to perform some sort of autonomous self-organisation\cite{Self-AdaptiveMeta}.
 
-This social and self-organization concepts enable these systems to be distributed, robust and flexible. Which is why in meta-heuristic algorithms that are population-based, hybrid and/or distributed these same concepts are used to better exploit the solution space\cite{Self-AdaptiveMeta}.
+These social and self-organisation concepts enable these systems to be distributed, robust and flexible. This is why in metaheuristic algorithms that are population-based, hybrid and/or distributed, these same concepts are used to better exploit the solution space\cite{Self-AdaptiveMeta}.
 
-In this section the characteristics of meta-heuristics that sets these algorithms apart from the conventional algorithms used on difficult problems was introduced. A general overview was given on how solutions are obtained as well as the quality of solutions. This section concluded with a brief discussion on why for each problem domain the algorithm used, must be changed to fit the domain. 
-
-In the next section of this chapter a discussion will be presented on the Tabu Search algorithm.
+In this section the characteristics of metaheuristics that set these algorithms apart from the conventional algorithms used on difficult problems was introduced. In the next section of this chapter the tabu search algorithm is discussed.
 
 \section{Tabu Search}
 \label{sec:tabusearch}
@@ -103,163 +99,160 @@ In the next section of this chapter a discussion will be presented on the Tabu S
 \begin{figure}[p!]
 	\begin{center}
 	\fbox{\includegraphics[width=5.0in,height=6.5in]{./pictures/TabuSearch.pdf}}
-	\caption{Flow Chart for Tabu Search Algorithm}
+	\caption{Flow chart for tabu search algorithm}
 	\label{fig:TSAlgorithmFlowChart}
 	\end{center}
 \end{figure}
 \subsection{Introduction}
 \label{sec:TSIntroduction}
-Tabu Search (TS) was first proposed by Glover as a new searching technique to help algorithms avoid getting  stuck in local optima present in combinatorial and optimization problems \cite{TabuRCAProblem}. Since Glover introduced the algorithm in the 1980's, Tabu Search has been applied to a wide range of problems such as the Vehicle Routing Problem\cite{TabuVechicleRoutingWithTimeWindows}, Frequency assignment problem\cite{TabuMontemanniSmith}, Capacitated-Lot Sizing Problem\cite{TabuCarryOver}, Nurse Scheduling\cite{TabuNurse} and the Resource Constrained Assignment Problem\cite{TabuRCAProblem}. 
+Tabu search (TS) was first proposed by Glover as a new searching technique to help algorithms avoid getting trapped in local optima in combinatorial and optimisation problems \cite{TabuRCAProblem}. Since Glover introduced the algorithm in the 1980s, tabu search has been applied to a wide range of problems such as the vehicle routing problem\cite{TabuVechicleRoutingWithTimeWindows}, FAP\cite{TabuMontemanniSmith}, capacitated-lot sizing problem\cite{TabuCarryOver}, Nurse Scheduling\cite{TabuNurse} and the Resource Constrained Assignment Problem\cite{TabuRCAProblem}. 
 
-Even though the problems mentioned differ by a large margin, the algorithm has been relatively successful in most of optimization problems it has been applied to. If one observes the results presented in the following research \cite{TabuCarryOver,TabuSingleMachineScheduling,TabuVechicleRoutingWithTimeWindows,TabuBiddingStrats,TabuCrewSchedulingProblem,ReactiveTabuVHR,TabuRCAProblem,TabuCSP,TabuMontemanniSmith,tabuglobalplanning3g} it can deduced that Tabu Search has on average obtained the best results compared to previous attempts with other algorithms. 
+Even though the problems mentioned differ by a large margin, the algorithm has been relatively successful in most optimisation problems it has been applied to. If one observes the results obtained in research \cite{TabuCarryOver,TabuSingleMachineScheduling,TabuVechicleRoutingWithTimeWindows,TabuBiddingStrats,TabuCrewSchedulingProblem,ReactiveTabuVHR,TabuRCAProblem,TabuCSP,TabuMontemanniSmith,tabuglobalplanning3g}, it can be deduced that tabu search has on average obtained the best results compared with previous attempts with other algorithms. 
 
-Tabu search resembles in its most basic form the Hill-climbing search algorithm\cite{TabuBiddingStrats}. The Hill-climbing search algorithm starts from an initial solution and then iteratively moves from the current solution to a neighbouring solution\cite{AIModernApproach}. Each neighbour is rated based on its attractiveness as a possible optimal solution the algorithm is being applied to\cite{AIModernApproach}. 
+Tabu search (TS) resembles in its most basic form the hill-climbing search algorithm\cite{TabuBiddingStrats}. The hill-climbing search algorithm starts from an initial solution and then iteratively moves from the current solution to a neighbouring solution\cite{AIModernApproach}. Each neighbour is rated based on its attractiveness as a possible optimal solution that the algorithm is being applied to\cite{AIModernApproach}. 
 
-The Hill-climbing algorithm moves to the neighbour with the highest rating without considering whether the neighbour might lead the algorithm astray, to a position where the neighbours are in fact \emph{worse} than previously encountered possible solutions\cite{AIModernApproach}. 
+The hill-climbing algorithm moves to the neighbour with the highest rating without considering whether the neighbour might lead the algorithm astray, to a position where the neighbours are in fact \emph{worse} than previously encountered possible solutions\cite{AIModernApproach}. 
 
-The Tabu search algorithm addresses this short coming of the hill-climbing by introducing the concept of memory\cite{TabuBiddingStrats}. Where the memory of the algorithm is actually a history of previous solutions the algorithm has moved to in its searching of the problem space for a solution\cite{TabuBiddingStrats}. 
+The TS algorithm addresses this shortcoming by introducing the concept of memory\cite{TabuBiddingStrats}. The memory of the algorithm is actually a history of previous solutions that the algorithm has moved to in its search for the problem space for a solution\cite{TabuBiddingStrats}. 
 
-General search algorithms like Hill-climbing, Random-restart\footnote{Random-restart is a search algorithm where once a certain trend of repeated moves are noticed, the algorithm restarts by generating a new initial solution to start from and then continues its search process from that generated solution\cite{AIModernApproach}.} or Scatter search tend to get stuck on local optima \cite{AIModernApproach}. The local optima might be a very attractive solution and thus general search algorithms will not move to better solutions since according the algorithms built in strategy it has found the best solution. 
+General search algorithms like hill-climbing, random-restart\footnote{Random-restart is a search algorithm where once a certain trend of repeated moves is noticed, the algorithm restarts by generating a new initial solution to start from and then continues its search process from that generated solution\cite{AIModernApproach}.} or scatter search tend to get trapped in local optima \cite{AIModernApproach}. The local optima might be a very attractive solution and thus general search algorithms will not move to better solutions since, according to the algorithm's built-in strategy, it has found the best solution. 
 
-In actual fact the solution that was found, is the best solution in the \emph{local} search space, but not in the \emph{global} search space\cite{CompuIntelligenceIntro,AIModernApproach}, therefore an important characteristic that algorithms being applied on optimisation problems need to posess, is breaking out of local optima\cite{CompuIntelligenceIntro,AIModernApproach}.
+In actual fact the solution that was found is the best solution in the \emph{local} search space, but not in the \emph{global} search space\cite{CompuIntelligenceIntro,AIModernApproach}. Therefore an important characteristic of algorithms being applied to optimisation problems is breaking out of local optima\cite{CompuIntelligenceIntro,AIModernApproach}.
 
-In this section the TS algorithm was introduced. Various characteristics and concepts that brought about the formation of the TS algorithm as well as what makes it unique were mentioned. In attempt to better understand the algorithm in the next section a discussion will be presented on the flow of the TS algorithm.
+In an attempt to better understand the algorithm, the flow of the TS algorithm is set out below.
 \subsection{Flow of the algorithm}
-In this section a discussion will be presented on the general flow of the TS algorithm using algorithm~\ref{alg:TS} as reference point.
+The general flow of the TS algorithm is described using algorithm~\ref{alg:TS} as a reference point.
 
-Before the algorithm can actually start searching it first needs to initialize various parameters. These parameters include but are not limited to, the Tabu List size, the Aspiration criterion and the starting solution. The initialization can be observed to occur from line 1 - 2.
+Before the algorithm can actually start searching, it first needs to initialise various parameters. These parameters include, but are not limited to, the tabu list size, the aspiration criterion and the starting solution. The initialisation can be observed to occur from lines 1 - 2.
 
-Once all the various parameters that are needed by the algorithm have been initialized the algorithm is ready to enter the actual search phase, which ranges from line 3 -- 21. 
+Once all the various parameters that are needed by the algorithm have been initialised, the algorithm is ready to enter the actual search phase, which ranges from lines 3 -- 21. 
 
-The search phase starts off by first generating possible solutions that neighbour the current solution $x_i$ as can be observed on line 4. Generating neighbouring solutions is a critical process in the TS algorithm as it is the means by which the algorithm is able to move from one possible solution to the next in the search space. Neighbourhood search will be discussed in detail in section~\ref{sec:TScharacteristics}.
+The search phase starts off by first generating possible solutions that neighbour the current solution $x_i$ as can be observed in line 4. Generating neighbouring solutions are a critical process in the TS algorithm as tehy are the means by which the algorithm is able to move from one possible solution to the next in the search space. Neighbourhood search will be discussed in detail in section~\ref{sec:TScharacteristics}.
 
 After all the solutions that neighbour the current possible solution have been generated, the algorithm needs to decide which of the possible neighbours is the most lucrative. The algorithm therefore determines the fitness of each neighbour $y_i$ by applying a fitness function $f(y_i)$. 
 
-Once all the neighbours have been evaluated, the algorithm selects the best neighbour who, not only has the best fitness out of all the generated neighbours, but also has a better fitness than the current solution held by the algorithm. The best neighbour selection can be seen to occur on line 6.
+Once all the neighbours have been evaluated, the algorithm selects the best neighbour that not only has the best fitness out of all the generated neighbours, but also has a better fitness than the current solution held by the algorithm. The best neighbour selection can be seen to occur in line 6.
 
-The algorithm has now determined a possible neighbour $z_i$ to move towards and thus before moving on to the next iteration, first needs to perform a series of checks that will aid the algorithm in the search process.
+The algorithm has now determined a possible neighbour $z_i$ to move towards. Before moving on to the next iteration, it first needs to perform a series of checks that will aid it in the search process.
 
-The first check that needs to be performed is whether the neighbour $z_i$ is in the Tabu List and occurs on line 7. A solution is only in the Tabu list if the algorithm has in previous iteration had the particular solution as its current solution. Tabu lists will be discussed in section~\ref{sec:TScharacteristics}.
+The first check that needs to be performed is whether the neighbour $z_i$ is in the tabu list and this occurs in line 7. A solution is only in the tabu list if the algorithm has in a previous iteration had the particular solution as its current solution. Tabu lists will be discussed in section~\ref{sec:TScharacteristics}.
 
-If the neighbour $z_i$ is in the Tabu List, then another check is performed where the aspiration criterion is calculated as can be seen to occur on lines 8 -- 10. The aspiration criterion determines whether the algorithm can make neighbour $z_i$ its current solution once more even though it is tabu. 
+If the neighbour $z_i$ is in the tabu list, then another check is performed where the aspiration criterion is calculated as can be seen in lines 8 -- 10. The aspiration criterion determines whether the algorithm can make neighbour $z_i$ its current solution once more even though it is tabu. 
 
 If the aspiration criterion has been met, the algorithm makes neighbour $z_i$ its current solution $x_i$. More will be discussed on the aspiration criteria in section~\ref{sec:TScharacteristics}.
 
-When a solution is not in the Tabu list it can possibly mean that it is the first time the algorithm has encountered the solution, or the solution has been previously encountered, but has been removed from the Tabu list. A solution can be removed from the Tabu list, once it has been tabu for a certain amount of iterations. More will be said on how the tabu list is updated in the next section.
+When a solution is not in the tabu list, it could possibly mean that it is the first time the algorithm has encountered the solution, or the solution has been previously encountered, but has been removed from the tabu list. A solution can be removed from the tabu list once it has been tabu for a certain number of iterations. More will be said on how the tabu list is updated in the next section.
 
-In the algorithm, if a neighbour $z_i$ is found not to be in the Tabu list, the algorithm then adds the current held solution $x_i$ to the Tabu list. The current solution is added to prohibit future movements to the same solution in an attempt to avoid cycling of solutions. After $x_i$ has been added to the tabu list, the algorithm makes $z_i$ the current solution $x_i$. This process can be observed from line 12 -- 14.
+In the algorithm, if a neighbour $z_i$ is found not to be in the tabu list, the algorithm then adds the currently held solution $x_i$ to the tabu list. The current solution is added to prohibit future movements to the same solution in an attempt to avoid cycling of solutions. After $x_i$ has been added to the tabu list, the algorithm makes $z_i$ the current solution $x_i$. This process can be observed from lines 12 -- 14.
 
-Before the algorithm continues to the next iteration, it performs one last final check. The purpose of this check is to determine whether the algorithm is repeating solutions. As can be observed from line 15 -- 19, the algorithm calculates whether the new selected solution has been repeated for a certain amount of iterations. 
+Before the algorithm continues to the next iteration, it performs one last final check. The purpose of this check is to determine whether the algorithm is repeating solutions. As can be observed from lines 15 -- 19, the algorithm calculates whether the new selected solution has been repeated for a certain number of iterations. 
 
-If the solution has indeed been repeated for a predetermined amount of iterations, the algorithm activates its diversification strategy, otherwise the algorithm intensifies its search. In the next section~\ref{sec:TScharacteristics} a sub section will be presented on these two strategies.
+If the solution has indeed been repeated for a predetermined number of iterations, the algorithm activates its diversification strategy or intensifies its search. These two strategies are discussed later.
 
-A general overview of the TS algorithm has now been given as well as a brief explanation on the flow of the algorithm. During the discussion of the flow of the algorithm various characteristics that make the TS algorithm unique like Tabu List and aspiration criterion was mentioned. In the next section these characteristics will be discussed in much more detail.
-
-\subsection{Important Tabu Search characteristics}
+\subsection{Important Tabu Search Characteristics}
 \label{sec:TScharacteristics}
-In this section various characteristics that are important to the tabu search (TS) algorithm will be discussed. The first characteristic that will be discussed is exactly how the TS algorithm iteratively improves upon the initial start solution. After initial solution generation a discussion will be presented on research done with regard to different neighbourhood strategies for TS. One of the most important features of TS will be discussed in the memory structures section. Finally, this section on tabu search characteristics will conclude with a section that discusses the two search phases present in TS.
+Various characteristics are important to the TS algorithm. The first characteristic is exactly how the TS algorithm iteratively improves upon the initial start solution.
 
 \subsubsection{Initial Solution Generation}
 The core feature of the TS algorithm is to sequentially improve an initial solution \cite{TSHazardous}. An initial possible solution is a point in the problem space where the TS algorithm will \emph{start} exploring in search of a more optimal solution \cite{AIModernApproach,TSHazardous}.
 
 An important consideration one has to make is how initial solutions are generated for the TS algorithm to start on\cite{AIModernApproach,TSHazardous}.
 
-Random initial solutions might seem to be a good starting point, but by introducing randomization it becomes hard to control the quality of the end solution\cite{TSHazardous}. Hence the generation of starting solutions must be controlled to limit the infeasibility of potential solutions \cite{TSHazardous}. 
+Random initial solutions might seem to be a good starting point, but by introducing randomisation it becomes hard to control the quality of the end solution\cite{TSHazardous}. Hence the generation of starting solutions must be controlled to limit the infeasibility of potential solutions \cite{TSHazardous}. 
 
-Control of the randomly generation solutions can be achieved by simply constraining the random solution generator to only generate initial starting points in a bounded subset of the entire search space. For example: instead of letting the random initial starting point be any number between positive infinity and negative infinity, the random number generator is constraint to only generate numbers between 5 and -5.
+Control of the randomly generation solutions can be achieved by simply constraining the random solution generator to only generate initial starting points in a bounded subset of the entire search space. For example: instead of letting the random initial starting point be any number between positive infinity and negative infinity, the random number generator is constrained to only generate numbers between 5 and -5.
 
-\subsubsection{Neighbourhood search}
-Tabu Search uses a neighbourhood local search process to explore the solution space. There is no set process of how neighbourhood candidate solutions are selected. Depending on the problem the TS is applied different neighbourhood solution selection strategies are needed. The overall quality of the solution produced by TS is also dependent on the neighbourhood search strategy used \cite{TSHazardous}. 
+\subsubsection{Neighbourhood Search}
+TS uses a neighbourhood local search process to explore the solution space. There is no set process of how neighbourhood candidate solutions are selected. Depending on the problem to which the TS is applied, different neighbourhood solution selection strategies are needed. The overall quality of the solution produced by TS is also dependent on the neighbourhood search strategy used \cite{TSHazardous}. 
 
-As can be observed from the TS flow figure \ref{fig:TSAlgorithmFlowChart} the neighbourhood search phase is the first operation performed after the algorithm has been initialized, which is to say the algorithm has generated an initial starting solution from which the exploration process can start.
+As can be observed from the TS flow chart in figure \ref{fig:TSAlgorithmFlowChart} the neighbourhood search phase is the first operation performed after the algorithm has been initialised, which is to say the algorithm has generated an initial starting solution from which the exploration process can start.
 
-The neighbourhood search phase is the primary means for the TS algorithm to search the solution space for an optimal solution. It is within this phase, where new possible solutions must be presented for the TS heuristic to allow the algorithm to decide to which solution it must move next.
+The neighbourhood search phase is the primary means for the TS algorithm to search the solution space for an optimal solution. It is within this phase that new possible solutions must be presented for the TS heuristic to allow the algorithm to decide to which solution it must move next.
 
-The new possible solutions that are generated, are called neighbouring solutions, hence the TS algorithm always moves to a neighbouring solution. When the TS algorithm moves to a neighbouring solution, the current solution is replaced with the neighbouring solution. Therefore, in the next iteration, neighbours for the new solution need to be generated.
+The new possible solutions that are generated are called neighbouring solutions; hence the TS algorithm always moves to a neighbouring solution. When the TS algorithm moves to a neighbouring solution, the current solution is replaced by the neighbouring solution. Therefore, in the next iteration, neighbours for the new solution need to be generated.
 
 Generation of new neighbours can range from a simple increment option to a complex operation that incorporates additional intelligence by means of a more heuristic approach to generate new neighbours.
 
-The TS algorithm isn't limited to just one neighbourhood search strategy. In the paper by Gopalakrishnan et al.\cite{TabuCarryOver} five neighbourhood move strategies are developed and are used interchangeably, in some cases a strategy is used three times in a row due to stagnation in the search space. 
+The TS algorithm is not limited to just one neighbourhood search strategy. In the paper by Gopalakrishnan et al.\cite{TabuCarryOver} five neighbourhood move strategies are developed and are used interchangeably; in some cases a strategy is used three times in a row due to stagnation in the search space. 
 
-Stagnation occurs when the algorithm does not move to a better solution; instead it opts to stay on the current solution, as no neighbouring solution is better than the current solution. However to combat this stagnation, the authors opted to use all the move strategies 15 percent of the time, and the last four moves strategies for 85 percent of the time when generating neighbourhood solutions.
+Stagnation occurs when the algorithm does not move to a better solution; instead it opts to stay on the current solution, as no neighbouring solution is better than the current one. However, to combat this stagnation, the authors opted to use all the move strategies 15 per cent of the time, and the last four move strategies for 85 per cent of the time when generating neighbourhood solutions.
 
-Other neighbourhood strategies developed is one developed by N. A. Wassan \cite{ReactiveTabuVHR}. In the author's paper a neighbourhood selection strategy is used that exchanges route nodes from initial vehicle routes for the Vehicle Routing Problem. This route exchange enables the TS algorithm to search much more broadly due to the constant supply of different solutions. 
+Other neighbourhood strategies developed is that by N. A. Wassan \cite{ReactiveTabuVHR}. In that author's paper a neighbourhood selection strategy is used that exchanges route nodes from initial vehicle routes for the vehicle routing problem. This route exchange enables the TS algorithm to search much more broadly due to the constant supply of different solutions. 
 
-Since initial solutions are constantly modified it enables the TS procedure to be a very fined grained process, because often a small changes in a potential solution can have a big impact on the overall proposed solution by the TS algorithm.
+Since initial solutions are constantly modified, it enables the TS procedure to be a very fined-grained process, because often a small change in a potential solution can have a big impact on the overall proposed solution by the TS algorithm.
 
-In the research done by Zhang et. al \cite{TSHazardous} an interesting neighbourhood selection scheme called \emph{dynamic penalty} is discussed. When the algorithm moves onto an infeasible solution a penalty is imposed. By dynamically changing the penalty that is imposed the ``feasibility'' of solutions produced is influenced. 
+In the research done by Zhang et. al.\cite{TSHazardous} an interesting neighbourhood selection scheme called \emph{dynamic penalty} is developed. When the algorithm moves onto an infeasible solution a penalty is imposed. By dynamically changing the penalty that is imposed the ``feasibility'' of solutions produced is influenced. 
 
-Therefore, when and if the algorithm continually produces infeasible solutions, the penalty imposed is increased as to guide to algorithm to produce more feasible solutions. Finally, in the case when the algorithm is stuck on local optima, the penalty is reduced, which allows the algorithm to consider moving onto infeasible solutions thus escaping local optima.
+Therefore, if and when the algorithm continually produces infeasible solutions, the penalty imposed is increased to guide the algorithm to produce more feasible solutions. Finally, when the algorithm gets trapped at local optima, the penalty is reduced, which allows the algorithm to consider moving onto infeasible solutions thus escaping local optima.
 
-Considering all the research done to develop new neighbourhood selection strategies that improve Tabu Search to search the solution space more efficiently and produce better faster solutions, Tabu Search still has some draw-backs, especially with problems that have very large solution spaces \cite{EvoParallelTabu}.
+Considering all the research done to develop new neighbourhood selection strategies that improve TS to search the solution space more efficiently and produce better, faster solutions, TS still has some drawbacks, especially with problems that have very large solution spaces \cite{EvoParallelTabu}.
 
-Tabu Search is an iterative algorithm, executing a set of operation sequentially until a stopping criterion is met as can be seen in the flow-diagram presented earlier. At each iteration the algorithm has to determine feasibility of the immediate neighbourhood candidate solutions \cite{EvoParallelTabu,TabuVechicleRoutingWithTimeWindows}. 
+TS is an iterative algorithm, executing a set of operations sequentially until a stopping criterion is met as can be seen in the flow diagram. At each iteration the algorithm has to determine feasibility of the immediate neighbourhood candidate solutions \cite{EvoParallelTabu,TabuVechicleRoutingWithTimeWindows}. 
 
-Therefore each candidate must be evaluated by some function, which may be a costly operation in terms of computational cycles as well as in terms of time, hence this constant evaluation can drastically reduce the overall performance of the algorithm, since it is spending more time calculating feasibility than actually searching the solution space \cite{EvoParallelTabu,TabuVechicleRoutingWithTimeWindows}.
+Therefore each candidate must be evaluated by some function, which may be a costly operation in terms of computational cycles as well as in terms of time. This constant evaluation can drastically reduce the overall performance of the algorithm, since it is spending more time calculating feasibility than actually searching the solution space \cite{EvoParallelTabu,TabuVechicleRoutingWithTimeWindows}.
 
-\subsubsection{Memory structures of Tabu Search}
-The Hill-climbing and Random-restart algorithms are able to break out of local minima, but there is nothing stopping these algorithms from avoiding the local optima with their second or n-pass in the search space. Tabu Search addresses the short coming of these algorithms by incorporating an important concept the notion of memory.
+\subsubsection{Memory Structures of Tabu Search}
+The hill-climbing and random-restart algorithms are able to break out of local minima, but there is nothing stopping these algorithms from avoiding the local optima with their second or n-pass in the search space. TS addresses the shortcoming of these algorithms by incorporating an important concept: the notion of memory.
 
-In its most basic form Tabu Search keeps a local memory of all its recent best moves, and puts them into a \emph{Tabu List} that has a predefined size. In the literature the Tabu list is also referred to as the \emph{Tabu tenure} \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. The algorithm is not allowed to move to any solution that is in the Tabu list unless a solution that is \emph{Tabu} is better than any current moves available in the immediate search neighbourhood \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. The process of overriding a solutions Tabu status in the Tabu tenure is called the \emph{aspiration criterion} \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. With the use of the Tabu tenure and the aspiration criterion, the algorithm is able to avoid cycling, local optima as well as searching in a too narrow region \cite{TabuSingleMachineScheduling,CircuitTabu}.
+In its most basic form TS keeps a local memory of all its recent best moves, and puts them into a \emph{tabu list} that has a predefined size. In the literature the Tabu list is also referred to as the \emph{tabu tenure} \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. The algorithm is not allowed to move to any solution that is in the tabu list unless a solution that is \emph{tabu} is better than any current moves available in the immediate search neighbourhood \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. The process of overriding a solution's tabu status in the tabu tenure is called the \emph{aspiration criterion} \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. With the use of the tabu tenure and the aspiration criterion, the algorithm is able to avoid cycling, local optima as well as searching in a too narrow region \cite{TabuSingleMachineScheduling,CircuitTabu}.
 
-Research done by Ashish Sureka and Peter R. Wurman makes an important distinction with regard to the memory scheme that is used in the TS algorithm. Two memory schemes are discussed; \emph{explicit} memory and \emph{attribute-based memory} \cite{TabuBiddingStrats,TabuFormGames}. Between the two memory schemes the explicit memory scheme is the most used in the literature \cite{TabuVechicleRoutingWithTimeWindows}.
+Research done by Ashish Sureka and Peter R. Wurman makes an important distinction with regard to the memory scheme that is used in the TS algorithm. Two memory schemes are discussed: \emph{explicit memory} and \emph{attribute-based memory} \cite{TabuBiddingStrats,TabuFormGames}. Of the two memory schemes the explicit memory scheme is the most used in the literature \cite{TabuVechicleRoutingWithTimeWindows}.
 
-With explicit memory the algorithm stores a complete solution in the Tabu tenure, hence the algorithm is prohibited to move to that position in the solution for as long as the solution is in the Tabu tenure\cite{TabuBiddingStrats,TabuFormGames}. With attribute-based memory the algorithm stores the \emph{operation} the is used to move from the previous solution, to the current solution\cite{TabuBiddingStrats,TabuFormGames}, therefore with attribute-based memory the Tabu tenure intended function is changed from prohibiting certain solutions already encountered, to rather prohibit making changes to the current solution that would lead to solutions already present in the Tabu tenure \cite{TabuBiddingStrats,TabuFormGames}.
+With explicit memory the algorithm stores a complete solution in the tabu tenure; hence the algorithm is prohibited from moving to that position in the solution for as long as the solution is in the Tabu tenure\cite{TabuBiddingStrats,TabuFormGames}. With attribute-based memory the algorithm stores the \emph{operation} used to move from the previous solution to the current solution\cite{TabuBiddingStrats,TabuFormGames}. Therefore with attribute-based memory the tabu tenure intended function is changed from prohibiting certain solutions already encountered to rather prohibiting making changes to the current solution that would lead to solutions already present in the tabu tenure \cite{TabuBiddingStrats,TabuFormGames}.
 
-In research conducted by D.M. Jaeggi and G.T. Parks and T. Kipouros and P.J. Clarkson \cite{MultiObjTabu}, the authors add two additional memory structures called \emph{Medium Term Memory} (MTM) and \emph{Long Term Memory} (LTM) besides the standard \emph{Short Term Memory} (STM), typically referred to as the Tabu List \cite{MultiObjTabu}. Each additional structure remembers a different set of solutions for use by the diversification and intensification phases in the algorithm. These two phases will be discussed in the next section.
+In research conducted by D. M. Jaeggi, G.T. Parks, T. Kipouros and P. J. Clarkson \cite{MultiObjTabu}, the authors add two additional memory structures called \emph{medium term memory} (MTM) and \emph{long term memory} (LTM) besides the standard \emph{short term memory} (STM), typically referred to as the tabu List \cite{MultiObjTabu}. Each additional structure remembers a different set of solutions for use by the diversification and intensification phases in the algorithm.
 
-STM purpose is similar to the traditional Tabu list, to store the most recent solutions produced by the algorithm. MTM is designed to remember optimal or near optimal solutions. These solutions are therefore used later in the intensification phase. Finally, the LTM structure stores all the regions that the algorithm has already explored and is thus used in the diversification phase of the algorithm \cite{MultiObjTabu}.
+STM is similar to the traditional tabu list: to store the most recent solutions produced by the algorithm. MTM is designed to remember optimal or near-optimal solutions. These solutions are therefore used later in the intensification phase. Finally, the LTM structure stores all the regions that the algorithm has already explored and is thus used in the diversification phase of the algorithm \cite{MultiObjTabu}.
 
-\subsubsection{Search phases}
-As Tabu Search searches through the solution space, it goes through two cycles of search phases called \emph{diversification} and \emph{intensification} \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
+\subsubsection{Search Phases}
+As TS searches through the solution space, it goes through two cycles of search phases called \emph{diversification} and \emph{intensification} \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
 
-The diversification phase in the TS algorithm is the phase where the algorithm is directed to areas in the solution space that hasn't been explored yet. The algorithm usually applies diversification as mechanisms monitoring the memory, notice that solutions being produced are being repeated \cite{ReactiveTabuVHR,SelfControllingReactiveTabu}. 
+The diversification phase in the TS algorithm is the phase where the algorithm is directed to areas in the solution space that has not yet been explored. The algorithm usually applies diversification as mechanisms monitoring the memory; note that solutions being produced are being repeated \cite{ReactiveTabuVHR,SelfControllingReactiveTabu}. 
 
-In Research done by Fescioglu-Unver and Kokar \cite{SelfControllingReactiveTabu} a strategy is presented that consists of two components namely the \emph{Observer} and the \emph{Diversifier}. The goal of the Observer is to continually monitor the best solution obtained by the algorithm whether it violates the \emph{stagnation period}. The stagnation period is defined as the amount of iterations where the current best obtained solution hasn't changed \cite{SelfControllingReactiveTabu}. 
+Fescioglu-Unver and Kokar \cite{SelfControllingReactiveTabu} researched a strategy is presented that consists of two components namely the \emph{observer} and the \emph{diversifier}. The goal of the observer is to continually monitor the best solution obtained by the algorithm as to whether it violates the \emph{stagnation period}. The stagnation period is defined as the number of iterations where the current best obtained solution has not changed \cite{SelfControllingReactiveTabu}. 
 
-As soon as the algorithm exceeds the stagnation period the Observer component activates and transfers the necessary information needed by the Diversifier component. The Diversifier component dynamically changes the size of the Tabu tenure based on the information the Observer gathered. The diversifier mainly targets older moves to diversify, but for short burst of time it would decrease the Tabu list size to a very small value in an attempt to combine new and old moves \cite{SelfControllingReactiveTabu}.
+As soon as the algorithm exceeds the stagnation period the observer component activates and transfers the necessary information needed by the diversifier component. The diversifier component dynamically changes the size of the tabu tenure based on the information the observer gathered. The diversifier mainly targets older moves to diversify, but for short bursts of time it decreases the tabu list size to a very small value in an attempt to combine new and old moves \cite{SelfControllingReactiveTabu}.
 
-The specific mechanism used to define a new position where the algorithm can continue search, should ideally select areas in the solution space that have not been explored yet. Therefore, the diversification phase typically makes extensive use of the knowledge present in the long term memory structures as an indication to what areas of the solution space have been previously explored and which areas have not \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
+The specific mechanism used to define a new position where the algorithm can continue to search, should ideally select areas in the solution space that have not been explored yet. Therefore, the diversification phase typically makes extensive use of the knowledge present in the long-term memory structures as an indication of what areas of the solution space have been previously explored and which areas have not \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
 
-Intensification is usually the first phase of the Tabu Search algorithm, since it is responsible to build up a history in memory for which the diversification phase can act upon. Fescioglu-Unver and Kokar also presented an intensification strategy based on control theory in their research \cite{SelfControllingReactiveTabu}. The authors identified the repetition length as a critical value for their intensification strategy to be based upon. The repetition length is a control measure that defines how many times a solution may be repeated.
+Intensification is usually the first phase of the TS algorithm, since it is responsible for building up a history in memory on which the diversification phase can act. Fescioglu-Unver and Kokar also present an intensification strategy based on control theory in their research \cite{SelfControllingReactiveTabu}. The authors identify repetition length as a critical value for their intensification strategy to be based upon. The repetition length is a control measure that defines how many times a solution may be repeated.
 
-In this section a discussion was presented on the various characteristics that enable the TS algorithm to produce near optimal solutions. For each core characteristic a general overview was given on its operation and how it relates to the TS flow diagram.
-
-In the following section, an overview will be presented of literature that used the TS algorithm on the frequency assignment problem.
+In the following section, an overview will be presented of literature that used the TS algorithm on the FAP.
 \subsection{Tabu Search on the FAP}
-As discussed, the TS algorithm is an optimization algorithm and has been applied to a wide variety of optimization problems (see page \pageref{sec:TSIntroduction}). In the literature the TS algorithm has also achieved relatively good results.
+As discussed, the TS algorithm is an optimisation algorithm and has been applied to a wide variety of optimisation problems (see page \pageref{sec:TSIntroduction}). In the literature the TS algorithm has also achieved relatively good results.
 
-In a study conducted by Robert Montemanni and Derek Smith \cite{TabuMontemanniSmith} the TS algorithm is used on the FS-FAP problem. Since the tabu search algorithm is generic, the authors had to make some alterations to the algorithm to suite their needs as well as to make the algorithm more efficient exploring in the FAP solution space.
+In a study conducted by Robert Montemanni and Derek Smith \cite{TabuMontemanniSmith} the TS algorithm is used on the FS-FAP. Since the TS algorithm is generic, the authors had to make some alterations to the algorithm to suit their needs as well as to make the algorithm more efficient in exploring in the FAP solution space.
 
-The TS algorithm used by the authors is the Multi-start tabu search algorithm, which randomly starts on different initial solutions \cite{TabuMontemanniSmith}.
+The TS algorithm used by the authors is the multistart TS algorithm, which randomly starts on different initial solutions \cite{TabuMontemanniSmith}.
 
-The authors developed a technique called Heuristic Manipulation Technique (HMT). HMT first monitors an underlying heuristic being used on the problem by the algorithm\cite{TabuMontemanniSmith}. It then identifies certain characteristic good solutions exhibit. In the FAP, it is transmitters that get assigned different frequencies which results in an overall lower interference value\cite{TabuMontemanniSmith}.
+The authors developed a technique called heuristic manipulation technique (HMT). HMT first monitors an underlying heuristic being used on the problem by the algorithm\cite{TabuMontemanniSmith}. It then identifies certain characteristics that good solutions exhibit. In the FAP, it is transmitters that are assigned different frequencies which results in an overall lower interference value\cite{TabuMontemanniSmith}.
 
-The HMT then uses the identified characteristics to add \emph{additional} constraints to the problem\cite{TabuMontemanniSmith}. By adding constraints, the search space reduced which therefore makes it easier for the algorithm to find an optimal solution, as there are fewer solutions to consider, but by reducing the search space, other near optimal solutions which might be far better are excluded\cite{TabuMontemanniSmith}. It is for this reason that the authors opted not to add the constraints permanently, instead the constraints are replaced by other constraints\cite{TabuMontemanniSmith}.
+The HMT then uses the identified characteristics to add \emph{additional} constraints to the problem\cite{TabuMontemanniSmith}. By adding constraints, the search space is reduced, which therefore makes it easier for the algorithm to find an optimal solution, as there are fewer solutions to consider. However, by reducing the search space, other near-optimal solutions which might be far better are excluded\cite{TabuMontemanniSmith}. It is for this reason that the authors opted not to add the constraints permanently, instead the constraints are replaced by other constraints\cite{TabuMontemanniSmith}.
 
-The authors applied their TS algorithm together with HMT on the COST 259 family of benchmarks, specifically the Siemens 1, Siemens 2, Siemens 3 and Siemens 4 problems.  The results will now be presented.
+The authors applied their TS algorithm together with HMT to the COST 259 family of benchmarks, specifically the Siemens1, Siemens2, Siemens3 and Siemens4 problems.
 \begin{table}
 \centering
 	\begin{tabular}{| c | c | c |}
 		\hline
-		Problem instance & TS with HMT & Best Cost 259 \\ \hline
-		Siemens 1 & 2.7692 & 2.200 \\ \hline
-		Siemens 2 & 14.9360 & 14.280 \\ \hline
-		Siemens 3 & 6.6496 & 5.19 \\ \hline
-		Siemens 4 & 110.9725 & 81.89 \\ \hline
+		Problem instance & TS with HMT & Best COST 259 \\ \hline
+		Siemens1 & 2.7692 & 2.200 \\ \hline
+		Siemens2 & 14.9360 & 14.280 \\ \hline
+		Siemens3 & 6.6496 & 5.19 \\ \hline
+		Siemens4 & 110.9725 & 81.89 \\ \hline
 	\end{tabular}
+\caption{Results of applying TS with HMT on COST 259}
 \end{table}
-As can be observed from the above results obtained by the authors, the TS algorithm with HMT produces results that rank very favourably against other algorithms also applied to the COST 259.
+As can be observed from the results obtained by the authors, the TS algorithm with HMT produces results that rank very favourably against other algorithms also applied to the COST 259.
 
 When critically evaluating the TS algorithm with regard to applying it to the FAP, the following disadvantages can be identified:
 \paragraph{Search based on a single solution}
-The Tabu search algorithm at any moment in time only searches in the vicinity of \emph{one} current solution for possible neighbours that might be the current solution for the next iteration. FAP problems typically have huge search spaces due to their NP-Hard\footnote{NP-Hard problems are the most difficult NP-Complete problems to solve\cite{AIModernApproach}}nature. Therefore, only searching for possible lucrative neighbours from only potential solution seems to be terrible inefficient. A better strategy would be to use the notion of population based algorithms and have multiple solutions from which lucrative neighbours are searched.
+--- The TS algorithm at any moment in time only searches in the vicinity of \emph{one} current solution for possible neighbours that might be the current solution for the next iteration. FAPs typically have huge search spaces due to their NP-Hard nature. Therefore, only searching for possible lucrative neighbours from only potential solutions seems to be terribly inefficient. A better strategy would be to use the notion of population-based algorithms and have multiple solutions from which lucrative neighbours are searched.
 \paragraph{Neighbourhood generation}
-The Tabu search algorithm, defines no set process for generating a neighbouring solution given a starting solution. Generating neighbours from a solution is a critical process in the TS algorithm, for it is the only means by which the algorithm considers other solutions i.e. it is the mechanism by which the algorithm searches. Generating a new neighbour can be as simple as changing only one value from the current solution or it can be very complex and incorporate other algorithms together with mathematics formulas. Regardless of the complexity of the neighbour generation that is used, care must be taken to ensure that the algorithm is able to produce a wide diversity of neighbours and is also able to intensify on the most optimal solution.
+--- The TS algorithm defines no set process for generating a neighbouring solution given a starting solution. Generating neighbours from a solution is a critical process in the TS algorithm, for it is the only means by which the algorithm considers other solutions, i.e. it is the mechanism by which the algorithm searches. Generating a new neighbour can be as simple as changing only one value from the current solution or it can be very complex and incorporate other algorithms together with mathematics formulae. Regardless of the complexity of the neighbour generation that is used, care must be taken to ensure that the algorithm is able to produce a wide diversity of neighbours and is also able to intensify on the most optimal solution.
 \paragraph{Tabu lifetime}
-The TS algorithm, only operates on a single solution at a time and at most only considers one potential neighbour as its next possible current solution, therefore a difficult choice needs to be made as to how long a solution stays Tabu. In the FAP a solution might be entered into the Tabu list early on the search process of the algorithm. A large majority of the neighbours of this solution are vastly superior solutions compared to any of the current solutions produced by the algorithm. Due to the solution with these neighbours being in the Tabu list, these neighbours won't be reconsidered until much later when the solution is removed from the list. The only other option is if the aspiration criterion is met, which is another parameter which needs to by fine tuned. A high aspiration criterion and the algorithm might be too eager to just select any solution even though it's Tabu. A low aspiration criterion and the algorithm will be too strict in selecting a tabu solution.
+--- The TS algorithm only operates on a single solution at a time and at most only considers one potential neighbour as its next possible current solution. Therefore a difficult choice needs to be made as to how long a solution stays tabu. In the FAP a solution might be entered into the tabu list early in the search process of the algorithm. A large majority of the neighbours of this solution are vastly superior solutions compared with any of the current solutions produced by the algorithm. Due to the solution with these neighbours being in the tabu list, these neighbours will not be reconsidered until much later when the solution is removed from the list. The only other option is if the aspiration criterion is met, which is another parameter which needs to be fine-tuned. A high aspiration criterion and the algorithm might be too eager to select just any solution even though it is Tabu. A low aspiration criterion and the algorithm will be too strict in selecting a tabu solution.
 
-In this section a literature review was presented on the TS algorithm being applied to the same problem this dissertation addresses. In the next section a discussion will be presented on the Simulated Annealing algorithm.
+In the next section the simulated annealing algorithm is discussed.
 \section{Simulated Annealing}
 \label{sec:simulatedannealing}
 \begin{algorithm}
@@ -282,21 +275,21 @@ In this section a literature review was presented on the TS algorithm being appl
 \begin{figure}[htbp!]
 	\begin{center}
 	\fbox{\includegraphics[width=5.0in,height=5.5in]{./pictures/SimulatedAnnealing.pdf}}
-	\caption{Flow Chart for Simulated Annealing Algorithm}
+	\caption{Flow chart for simulated annealing algorithm}
 	\label{fig:SimulatedAnnealingFlowChart}
 	\end{center}
 \end{figure}
 \subsection{Introduction}
 \label{sec:SAIntroduction}
-Simulated Annealing (SA) is a heuristic search technique proposed in the 80's by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgical as Annealing \cite{CurveFittingSA,SASingleMultiObj,TempCyclingSA,ChaosSA}. Kirkpatrick was the first to use the simulated annealing to solve optimisations problems but the basic algorithm structure was defined in by Metropolis et. al. in 1953 \cite{CurveFittingSA,VeryFastSAImageEnchancement}
+Simulated annealing (SA) is a heuristic search technique proposed in the 1980s by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgy as annealing \cite{CurveFittingSA,SASingleMultiObj,TempCyclingSA,ChaosSA}. Kirkpatrick was the first to use SA to solve optimisations problems but the basic algorithm structure was defined by Metropolis et al. in 1953 \cite{CurveFittingSA,VeryFastSAImageEnchancement}.
 
-Annealing is the natural process of crystallization when a solid is heated to a high temperature and then systematically cooled to a lower temperature to reach a crystallized form \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}. This crystallized form of the solid is known to be the global minimum of the solids internal energy state. 
+Annealing is the natural process of crystallisation when a solid is heated to a high temperature and then systematically cooled to a lower temperature to reach a crystallised form \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}. This crystallised form of the solid is known to be the global minimum of the solid's internal energy state. 
 
-When the solid is rapidly cooled from a high temperature, the molecules have no time to reach a thermodynamic equilibrium stage \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}, therefore the molecules of the solid have high energy and the resultant structure has no real crystalline form, thus the solid energy is at a local minima \cite{CurveFittingSA,NewSAs,MobileRobotSA}. When the solid is slowly cooled in a controlled manner, the molecules are able to reach a thermal equilibrium at each temperature \cite{ChaosSA,CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}.
+When the solid is rapidly cooled from a high temperature, the molecules have no time to reach a thermodynamic equilibrium stage \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}. Therefore the molecules of the solid have high energy and the resultant structure has no real crystalline form; thus the solid energy is at a local minimum\cite{CurveFittingSA,NewSAs,MobileRobotSA}. When the solid is slowly cooled in a controlled manner, the molecules are able to reach a thermal equilibrium at each temperature \cite{ChaosSA,CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}.
 
 In the algorithm the energy state is the \emph{cost function} that needs to be minimised, and the molecules are the \emph{variables}, which represent the solutions, and thus their state needs to be optimised to reach the desired energy state.
 
-The following equation is the standard probability function that is used to determine when an uphill move performed by the algorithm. This function is known in the literature as the \emph{Metropolis Criterion}. 
+The following equation is the standard probability function that is used to determine when an uphill move is performed by the algorithm. This function is known in the literature as the \emph{metropolis criterion}. 
 \begin{equation}
 \label{eq:saprobability}
 	M_{AC} =
@@ -307,39 +300,36 @@ The following equation is the standard probability function that is used to dete
 \end{equation}
 The function $f$ is the objective function or a function that determines the state of a given position in solution space\cite{EcoEquilSA}. The parameter $T_k$ is the temperature of the algorithm at iteration $k$ \cite{EcoEquilSA}. Finally, $\Delta E$ is the change in ``energy'' between two solutions $x$ and $y$ \cite{EcoEquilSA}.
 
-The main purpose of the SA algorithm (like most optimization algorithms) is to minimize or maximise the cost function \cite{SASingleMultiObj}. This cost function typically evaluates a solution desirability compared to other solutions in the immediate \emph{neighbourhood} of the algorithms current position \cite{TheoPraticalSA}. 
+The main purpose of the SA algorithm (like most optimisation algorithms) is to minimise or maximise the cost function \cite{SASingleMultiObj}. This cost function typically evaluates a solution desirability compared with other solutions in the immediate \emph{neighbourhood} of the algorithm's current position \cite{TheoPraticalSA}. 
 
-The immediate neighbourhood of solutions are generated based on some heuristic implemented by the algorithm designer\cite{AIModernApproach}. This heuristic, as with the TS algorithm, can be simple or complex. The neighbourhood generated is the first step right after the starting solution has been generated by the algorithm as can be observed from figure \ref{fig:SimulatedAnnealingFlowChart}.
+The immediate neighbourhood of solutions is generated based on some heuristic implemented by the algorithm designer\cite{AIModernApproach}. This heuristic, as with the TS algorithm, can be simple or complex. The neighbourhood generated is the first step right after the starting solution has been generated by the algorithm, as can be observed from figure \ref{fig:SimulatedAnnealingFlowChart}.
 
 Typically a neighbouring solution is only selected as the new best state if its desirability ranks higher than the current solution. When the algorithm moves to a better solution from the previous solution, the move is typically referred in the literature as a \emph{downhill} move \cite{CurveFittingSA}.
 
-The best state isn't always selected, in some case the algorithm is also able to move to solutions that are worse than the current solution. A worse solution is only selected based on some probability, which is controlled by the \emph{annealing temperature} of the algorithm \cite{TheoPraticalSA}. 
+The best state is not always selected; in some cases the algorithm is also able to move to solutions that are worse than the current solution. A worse solution is only selected based on some probability which is controlled by the \emph{annealing temperature} of the algorithm \cite{TheoPraticalSA}. 
 
-At a high annealing temperature the probability that the algorithm will select a bad solution is very good. As the annealing temperature decreases so does the probability that a bad solution will be selected \cite{CurveFittingSA}. When the algorithm moves to a worse solution, the move is typically in the literature referred to as an \emph{uphill} move \cite{CurveFittingSA}. Uphill moves allow the algorithm to break out of local minima and can lead the algorithm down a different path, which may ultimately result in obtaining the global optimum \cite{SASingleMultiObj}. 
+At a high annealing temperature the probability that the algorithm will select a bad solution is very good. As the annealing temperature decreases so does the probability that a bad solution will be selected \cite{CurveFittingSA}. When the algorithm moves to a worse solution, the move is typically referred to in the literature as an \emph{uphill} move \cite{CurveFittingSA}. Uphill moves allow the algorithm to break out of local minima and can lead the algorithm down a different path, which may ultimately result in obtaining the global optimum \cite{SASingleMultiObj}. 
 
-The SA algorithm is also very popular due to the basic structure of the algorithm being generic\cite{VariousCoolingSA}. As with the TS algorithm, the standard SA algorithm does not define a set neighbourhood generation mechanism, instead it is up to the algorithm designer to implement a suitable generation mechanism that will allow the algorithm to adequately explore the problem space\cite{VariousCoolingSA}. 
+The SA algorithm is also very popular due to its basic structure being generic\cite{VariousCoolingSA}. As with the TS algorithm, the standard SA algorithm does not define a set neighbourhood generation mechanism; instead it is up to the algorithm designer to implement a suitable generation mechanism that will allow the algorithm to adequately explore the problem space\cite{VariousCoolingSA}. 
 
-Applying the algorithm to other problems requires slight changes. These changes usually need to be applied to the \emph{Neighbourhood selection} scheme and the \emph{Cooling Schedule}\cite{VariousCoolingSA,DormRoomSA}. Both of these concepts will be discussed in the next sub section.
+Applying the algorithm to other problems requires slight changes. These changes usually need to be applied to the \emph{neighbourhood selection} scheme and the \emph{cooling schedule}\cite{VariousCoolingSA,DormRoomSA}. Both of these concepts will be discussed below.
 
-In this sub section a brief overview of the Simulated Annealing (SA) algorithm was given. The section briefly discussed what the algorithm is based on and how the algorithm goes about searching the solution space. An introduction of some concepts like move probability selection and annealing temperature, which forms part of the core the algorithm was also given. In the next section a discussion will be presented that will explain some of the concepts that were introduced in this section as well as more advanced concepts that make the algorithm unique.
+\subsection{Flow of the Algorithm}
+In an attempt to better understand how the SA algorithm operates, a general discussion on the flow of the algorithm will now be given using algorithm~\ref{alg:SA} as a reference point.
 
-\subsection{Flow of the algorithm}
-In an attempt to better understand how the SA algorithm operates, a general discussion on the flow of the algorithm will now be given using algorithm~\ref{alg:SA} as reference point.
+From lines 1 -- 3, the SA algorithm is initialised. The most important step here is setting the starting temperature for the annealing process to start. As mentioned in the introduction, the temperature of the annealing process plays a critical role in the potential solution selection process.
 
-From line 1 -- 3, the SA algorithm is initialized. The most important step here is setting the starting temperature for the annealing process to start on. As discussed in the introduction, the temperature of the annealing process plays a critical role in the potential solution selection process.
+After the algorithm has been initialised the search phase of the algorithm starts which ranges from lines 4 -- 10. Like the TS algorithm, the SA algorithm starts the search phase by generating a number of neighbours to the current solution held by the algorithm as can be observed in line 5.
 
-After the algorithm has been initialized the search phase of the algorithm starts which ranges from line 4 -- 10. Like the TS algorithm, the SA algorithm stars of the search phase by generating a number of neighbours to the current solution held by the algorithm as can be observed on line 5.
+Before selecting a neighbour the algorithm first needs to evaluate the generated neighbours. It evaluates each neighbour by applying a fitness function $f(y_i)$ in order to determine its fitness.
+Once the fitness of all the generated neighbours has been determined, the algorithm uses equation~\ref{eq:saprobability} to calculate the probability of selecting a particular neighbour for all the generated neighbours as well. The probability calculation can be observed to occur in line 7. The algorithm then selects the neighbour with the highest probability to be the current solution, as observed in line 9. 
 
-Before selecting a neighbour the algorithm first needs to evaluate the generated neighbours. The algorithm evaluates each neighbour by applying a fitness function $f(y_i)$ in order to determine its fitness.
-Once all the fitness of the generated neighbours have been determined, the algorithm uses equation~\ref{eq:saprobability} to calculate the probability of selecting a particular neighbour for all the generated neighbours as well. The probability calculation can be observed to occur on line 7. The algorithm then selects the neighbour with the highest probability to be the current solution as observed on line 9. 
+Before the algorithm advances to the next iteration the temperature needs to be lowered. The temperature is a critical variable as it has a role in the probability equation and therefore can affect solution selection. The temperature is not simply lowered with a subtraction operation, but rather according to a particular cooling schedule. In the algorithm the process of lowering the temperature occurs in line 10.
 
-Before the algorithm advances to the next iteration the temperature needs to be lowered. The temperature is a critical variable as it has a role in the probability equation and therefore can effect solution selection. The temperature is not simply lowered with a subtraction operation, but rather lowered according to a particular cooling schedule. In the algorithm on line 10, the process of lowering the temperature occurs.
+The characteristics that were briefly mentioned in the introduction section will now be discussed in more detail.
+\subsection{Important Simulated Annealing Characteristics}
+There are four characteristics of the SA algorithm that make the algorithm unique. One of the most important is the cooling schedule. 
 
-The general search flow of the SA algorithm has now been explained. In the next section, characteristics that were only mentioned in the introduction section will be discussed in much more detail.
-\subsection{Important Simulated Annealing characteristics}
-In this section four brief discussions will be presented on the characteristics of the Simulated Annealing Algorithm that make the algorithm unique. The first discussion will be on one of the most important defining characteristic, namely the cooling schedule. 
-
-Furthermore a discussion is presented on the importance of the initial temperature generation and what impact it has on the overall algorithm. Finally, this section will be concluded with an overview on the efficiency of the algorithm.
 %\subsubsection{Markov Chain}
 %The SA Algorithm is typically modelled by using Markov chains due to each Markov chain represents a set of trials that the algorithm has executed at the same temperature. 
 
@@ -353,79 +343,79 @@ Furthermore a discussion is presented on the importance of the initial temperatu
 %\end{itemize}
 %According to the proof presented in \emph{Image enhancement using very fast simulated reannealing}\cite{ClusterSA}, if the SA algorithm designer can uphold the above properties, the algorithm is able to find the global optimum. Even though the algorithm will eventually find the global optimum, the algorithm is known to take a very long time to do so.
 \subsubsection{Cooling Schedule}
-The Cooling Schedule / Annealing Schedule is the most defining characteristic of the SA algorithm. It is the procedure where the natural annealing process is mimicked. The temperature of the SA algorithm is a control parameter that defines how much the algorithm moves around in the solution space.
+The cooling schedule/annealing Schedule is the most defining characteristic of the SA algorithm. It is the procedure where the natural annealing process is mimicked. The temperature of the SA algorithm is a control parameter that defines how much the algorithm moves around in the solution space.
 
-As can be observed from the figure \ref{fig:SimulatedAnnealingFlowChart} after each iteration, whether the algorithm has selected a new best solution or not, the temperature is reduced by a certain amount. This amount is determined by the cooling schedule.
+As can be observed from figure \ref{fig:SimulatedAnnealingFlowChart}, after each iteration, whether the algorithm has selected a new best solution or not, the temperature is reduced by a certain amount. This amount is determined by the cooling schedule.
 
-In general, when the SA algorithm temperature has a very high value most solutions that are produced from the neighbourhood are accepted \cite{ClusterSA}. Thus the algorithm moves freely in the solution space with little constraints. As the temperature decreases the probability that the algorithm will select a bad or just any solution, gets lower. When the temperature is very low, the SA algorithm is similar to a greedy algorithm in a sense that it only accepts downhill movements\cite{ClusterSA}.
+In general, when the SA algorithm temperature has a very high value most solutions that are produced from the neighbourhood are accepted \cite{ClusterSA}. Thus the algorithm moves freely in the solution space with little constraint. As the temperature decreases, the probability that the algorithm will select a bad or just any solution decreases. When the temperature is very low, the SA algorithm is similar to a greedy algorithm in the sense that it only accepts downhill movements\cite{ClusterSA}.
 
-In the literature there are three annealing schedules in common use namely \emph{the logarithmic schedule}, the \emph{geometric schedule} and the \emph{Cauchy schedule}\cite{VeryFastSAImageEnchancement,SASingleMultiObj}. 
+In the literature there are three annealing schedules in common use, namely \emph{the logarithmic schedule}, the \emph{geometric schedule} and the \emph{Cauchy schedule}\cite{VeryFastSAImageEnchancement,SASingleMultiObj}. 
 
-The standard and most common used schedule is commonly known as the logarithmic schedule and is based on Boltzmann annealing \cite{VeryFastSAImageEnchancement}. The main disadvantage of this schedule is that is slow due to its logarithmic nature \cite{VeryFastSAImageEnchancement}. It also requires moves to be generated from a Gaussian distribution inorder for it to be able to reach the global minimum\cite{SASingleMultiObj}. The logarithmic annealing function has the following form:
+The standard and most commonly used schedule is known as the logarithmic schedule and is based on Boltzmann annealing \cite{VeryFastSAImageEnchancement}. The main disadvantage of this schedule is that is slow due to its logarithmic nature \cite{VeryFastSAImageEnchancement}. It also requires moves to be generated from a Gaussian distribution for it to be able to reach the global minimum\cite{SASingleMultiObj}. The logarithmic annealing function has the following form:
 \begin{equation}
 \label{eq:logcooling}
 	T_k = \frac{T_0}{ln(k)},\text{where k is the iteration value}\\
 \end{equation}
 Where $T_k$ is the temperature at iteration $k$.
 
-The Cauchy schedule is faster than the logarithmic schedule. Similar to the logarithmic, this schedule also has a movement requirement. Moves must be generated from a Cauchy distribution for the algorithm to be able to reach the global minimum \cite{SASingleMultiObj,VeryFastSAImageEnchancement}. The Cauchy schedule is also typically referred to as Fast annealing\cite{VeryFastSAImageEnchancement}. The schedule has the following form:
+The Cauchy schedule is faster than the logarithmic schedule. Similar to the logarithmic, this schedule also has a movement requirement. Moves must be generated from a Cauchy distribution for the algorithm to be able to reach the global minimum \cite{SASingleMultiObj,VeryFastSAImageEnchancement}. The Cauchy schedule is also typically referred to as fast annealing\cite{VeryFastSAImageEnchancement}. The schedule has the following form:
 \begin{equation}
 \label{eq:cauchycooling}
 	T_k = \frac{T_0}{k}
 \end{equation}
 
-Finally, the fastest annealing schedule is known as the geometric or exponential annealing schedule \cite{SASingleMultiObj}. This schedule introduces the concept of \emph{re-annealing}. Re-annealing is a procedure by which all SA temperatures are rescaled \cite{VeryFastSAImageEnchancement}. This schedule has no move generation requirement to reach the global minimum, since there is no regious proof in the literature to prove it \cite{SASingleMultiObj}. The geometric schedule has the following form:
+Finally, the fastest annealing schedule is known as the geometric or exponential annealing schedule \cite{SASingleMultiObj}. This schedule introduces the concept of \emph{re-annealing}. Re-annealing is a procedure by which all SA temperatures are rescaled \cite{VeryFastSAImageEnchancement}. This schedule has no move generation requirement to reach the global minimum, since there is no regorous proof in the literature \cite{SASingleMultiObj}. The geometric schedule has the following form:
 \begin{equation}
 \label{eq:geocooling}
 	T(k)=T_0exp(-C_k),\text{where C is a constant}
 \end{equation}
-\subsubsection{Initial temperature}
-The initial temperature is a very important parameter to define in the SA algorithm, since it defines a point from which the cooling schedule will start. Therefore, depending on what the initial value of the temperature is the final result that the algorithm will produce can be influenced\cite{SALongestCommon,VariousCoolingSA,AutoConfigSA}.
+\subsubsection{Initial Temperature}
+The initial temperature is a very important parameter to define in the SA algorithm, since it defines a point from which the cooling schedule will start. Therefore, depending on what the initial value of the temperature, is the final result that the algorithm will produce can be influenced\cite{SALongestCommon,VariousCoolingSA,AutoConfigSA}.
 
-When the initial temperature is set to a very high value the algorithm takes a long time to reach a result. On the other hand if the initial temperature is set to a very low temperature the algorithm might converge too quickly and thus produce a result which may be the local minima\cite{SALongestCommon,VariousCoolingSA,AutoConfigSA}.
+When the initial temperature is set to a very high value, the algorithm takes a long time to reach a result. On the other hand, if the initial temperature is set to a very low temperature, the algorithm might converge too quickly and thus produce a result which may be the local minima\cite{SALongestCommon,VariousCoolingSA,AutoConfigSA}.
 
 The initial temperature together with the cooling factor allows the algorithm designer to define the time window for the algorithm to escape local minima, as well as the rate of convergence to an optimum solution\cite{SALongestCommon,VariousCoolingSA}.
 
-A low initial temperature together with a small cooling factor makes the time window for the algorithm to leave a local optimum very small\cite{SALongestCommon}. With a high initial temperature and cooling factor value that is almost 1, the time window for the algorithm to leave the local optimum is much larger \cite{SALongestCommon}. 
+A low initial temperature together with a low cooling factor makes the time window for the algorithm to leave a local optimum very small\cite{SALongestCommon}. With a high initial temperature and cooling factor value that is almost 1, the time window for the algorithm to leave the local optimum is much larger \cite{SALongestCommon}. 
 
-When the algorithm is near a global optimum, a low initial temperature and low cooling factor will allow the algorithm to reach the optimum faster in the solution space. In contrast, if a high temperature and a very low cooling factor is used the algorithm will take longer to reach the optimum even though it is near the global optimum\cite{SALongestCommon}.
+When the algorithm is near a global optimum, a low initial temperature and low cooling factor will allow the algorithm to reach the optimum faster in the solution space. In contrast, if a high temperature and a very low cooling factor are used, the algorithm will take longer to reach the optimum even though it is near the global optimum\cite{SALongestCommon}.
 
-\subsubsection{Move generation}
+\subsubsection{Move Generation}
 Most of the research done on the SA algorithm focuses on the annealing schedule and not so much on the move/solution/neighbourhood generation. Typically an initial solution is generated and then small changes are made to the solution to represent a new solution. The solution is said to be perturbed to the next solution.
 
-Move generation is the phase where neighbouring solutions to the current solution are generated. It is the ideal section for an algorithm designer to embed domain specific knowledge, to generate attractive solutions, which the algorithm can consider moving to.
+Move generation is the phase where neighbouring solutions to the current solution are generated. It is the ideal section for an algorithm designer to embed domain-specific knowledge, to generate attractive solutions, which the algorithm can consider moving to.
 
-In research done by Tseung and Lin \cite{CurveFittingSA} an initial solution isn't modified, but a move generation technique known as \emph{Pattern} search is used. Pattern search has two forms of movement namely the exploratory move and the patter move. The exploratory move continually changes the certain variables of a solution \cite{CurveFittingSA}. This is done so that it can rapidly find and identify a ``downhill'' move. The Pattern move uses the information gathered by the exploratory move to move towards the minimum of the function \cite{CurveFittingSA}.
-\subsubsection{Algorithm efficiency}
-The algorithm is also efficient with regards to CPU cycles when compared to the Genetic Algorithm because it only has to evaluate a certain number of moves each iteration, instead of a evaluating a whole population each iteration. Unlike Tabu Search the basic SA algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that solution will cycling. The more number of iterations spent at a temperature, the longer the algorithm spends at a certain temperature and therefore the higher the probability is that solutions will cycle.
+In research done by Tseung and Lin \cite{CurveFittingSA} an initial solution is not modified, but a move generation technique known as \emph{pattern} search is used. Pattern search has two forms of movement, namely the exploratory move and the patten move. The exploratory move continually changes the certain variables of a solution \cite{CurveFittingSA}. This is done so that the technique can rapidly find and identify a ``downhill'' move. The pattern move uses the information gathered by the exploratory move to move towards the minimum of the function \cite{CurveFittingSA}.
+\subsubsection{Algorithm Efficiency}
+The algorithm is also efficient with regard to CPU cycles when compared with the genetic algorithm because it only has to evaluate a certain number of moves each iteration, instead of a whole population each iteration. Unlike TS, the basic SA algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that the solution will cycle. The more iterations spent at a temperature, the longer the algorithm spends at a certain temperature and therefore the higher the probability that solutions will cycle.
 \subsection{Simulated Annealing on the FAP}
-The SA algorithm, as with the TS algorithm, has achieved relatively good results in other optimization problems as mentioned in section \ref{sec:SAIntroduction}. Due to its success on other NP-Complete optimization problems, the SA algorithm has also been applied to the FAP as well.
+The SA algorithm, as with the TS algorithm, has achieved relatively good results in other optimisation problems, as mentioned in section \ref{sec:SAIntroduction}. Due to its success on other NP-Complete optimisation problems, the SA algorithm has also been applied to the FAP as well.
 
-In the literature presented by Carlo Mannino and Gianpaolo Oriolo\cite{SolvingSuperIntervalGraphs} the SA algorithm is applied to the FAP. The authors utilized \emph{dynamic programming} together with the SA algorithm to alter the SA algorithm in such a way, to better explore the FAP solution domain.
+In literature by Carlo Mannino and Gianpaolo Oriolo\cite{SolvingSuperIntervalGraphs} the SA algorithm is applied to the FAP. The authors utilise \emph{dynamic programming} together with the SA algorithm to alter the SA algorithm in such a way as to better explore the FAP solution domain.
 
-Dynamic programming is a computer science technique that is usually applied to problems with big search spaces and thus makes it difficult to solve\cite{AIModernApproach}. The technique decomposes the problem into smaller problems that are easier to solve since the smaller problems have smaller solutions spaces to explore \cite{AIModernApproach,IntroMathProgramming}.
+Dynamic programming is a computer science technique that is usually applied to problems with big search spaces that are therefore difficult to solve\cite{AIModernApproach}. The technique decomposes the problem into smaller problems that are easier to solve since the smaller problems have smaller solution spaces to explore \cite{AIModernApproach,IntroMathProgramming}.
 
-Utilizing the dynamic programming, the authors decompose the FAP problem into smaller interval graphs. The authors are able to do this since the FAP is similar to the graph problem, which means a FAP problem can be modelled as a graph\cite{ProblemDecompMIFAP}. The smaller interval graphs are graphs of vertices that are closely related and form a clique\cite{ProblemDecompMIFAP}.
+Utilising dynamic programming, the authors decompose the FAP into smaller interval graphs. They are able to do this since the FAP is similar to the graph problem, which means an FAP can be modelled as a graph\cite{ProblemDecompMIFAP}. The smaller interval graphs are graphs of vertices that are closely related and form a clique\cite{ProblemDecompMIFAP}.
 
-The resulting SA algorithm was benchmarked on the COST 259 siemens benchmark instances. The results will now be presented. Note that at the time the authors did the benchmark the best results obtained for the siemens problem were different from the latest results.
+The resulting SA algorithm was benchmarked on the COST 259 Siemens benchmark instances. The results will now be presented. Note that at the time the above authors did the benchmark the best results obtained for the siemens problem were different from the latest results.
 \paragraph{Cooling Schedule}
-Depending on the cooling schedule selected the algorithm might converge too quickly. As discussed the cooling schedule reduces the temperature and the temperature plays a large part in the determination of whether a particular solution will be moved to or not in an iteration. Thus early on the algorithm will explore a lot more and later on exploit more. In the FAP, the algorithm must not only be able to explore and exploit but also, be able to return to an exploration phase if need be.
-With the SA algorithm, as the temperature gets colder the algorithm exploits more and therefore won't easily move to a worse of solution. In the FAP, it might be desirable to later on rather move a worse off solution, as the particular current solution is a local minima and yields bad neighbours as potential next solutions. With the cooling schedule it is simply not possible, unless the temperature and schedule is reset. Resetting the temperature and schedule is not ideal, since the algorithm has keeps no history and might risk making the same faults as before the reset,
+--- Depending on the cooling schedule selected, the algorithm might converge too quickly. As discussed previously the cooling schedule reduces the temperature and the temperature plays a large part in the determination of whether a particular solution will be moved to or not in an iteration. Thus early on the algorithm will explore a lot more and later on will exploit more. In the FAP, the algorithm must not only be able to explore and exploit, but also be able to return to an exploration phase if need be.
+As the temperature gets colder the SA algorithm exploits more and therefore will not easily move to a worse off solution. In the FAP, it might be desirable to rather move a worse off solution later on, as the particular current solution is a local minimum and yields bad neighbours as potential next solutions. With the cooling schedule this is simply not possible, unless the temperature and schedule are reset. Resetting the temperature and schedule is not ideal, since the algorithm keeps no history and might risk making the same faults as before the reset.
 \paragraph{Neighbourhood generation}
-The SA algorithm as with the TS algorithm has no set process that defines how neighbours should be generated. As discussed, neighbourhood generation is the primary means by which the SA algorithm moves about the search pace in search of an optimal solution. Therefore applying the SA algorithm would require a custom neighbourhood generation scheme, which would be difficult to control as the algorithm keeps no history and also doesn't really expose the temperature for use with neighbour generation. This control and history as the FAP search space is huge and a desirable quality would be to know if the algorithm is moving towards an area that has already been explored.
+--- The SA algorithm, as with the TS algorithm, has no set process that defines how neighbours should be generated. As discussed, neighbourhood generation is the primary means by which the SA algorithm moves about the search space in search of an optimal solution. Therefore applying the SA algorithm would require a custom neighbourhood generation scheme, which would be difficult to control as the algorithm keeps no history and also does not really expose the temperature for use with neighbour generation. This control and history, as the FAP search space, is huge and a desirable quality would be to know if the algorithm is moving towards an area that has already been explored.
 \paragraph{Single solution based search}
-The SA algorithm is similar to the TS algorithm in a sense that it only searches from one solution per iteration. It searches by generating neighbours around the current solution of the algorithm. The FAP search space is huge hence it would be more efficient to have multiple current solutions from which neighbours are generated. This enables the algorithm to much more efficiently explore the search space at the expense of more computational resources.
+--- The SA algorithm is similar to the TS algorithm in the sense that it only searches from one solution per iteration. It searches by generating neighbours around the current solution of the algorithm. The FAP search space is huge; hence it would be more efficient to have multiple current solutions from which neighbours are generated. This enables the algorithm to explore the search space much more efficiently at the expense of more computational resources.
 \begin{table}
 \centering
 	\begin{tabular}{| c | c | c | c |}
 	\hline
-	Problem instance & SA & Cost 259 (old) & Cost 259 (new) \\ \hline
-	Siemens 1 & 22.96 & 23.00 & 2.200\\ \hline
-	Siemens 2 & 14.72 & 14.75 & 14.280\\ \hline
-	Siemens 3 & 52.43 & 52.55 & 5.19\\ \hline
-	Siemens 4 & 80.96 & 80.80 & 81.89\\ \hline
+	Problem instance & SA & COST 259 (old) & COST 259 (new) \\ \hline
+	Siemens1 & 22.96 & 23.00 & 2.200\\ \hline
+	Siemens2 & 14.72 & 14.75 & 14.280\\ \hline
+	Siemens3 & 52.43 & 52.55 & 5.19\\ \hline
+	Siemens4 & 80.96 & 80.80 & 81.89\\ \hline
 	\end{tabular}
-\caption{SA on Cost 259 Benchmark}
+\caption{SA on COST 259 Benchmark}
 \end{table}
 \section{Genetic Algorithm}
 \begin{algorithm}
