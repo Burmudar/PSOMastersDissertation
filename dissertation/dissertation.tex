@@ -1,0 +1,51 @@
+\documentclass[11pt,a4paper]{book}
+\usepackage{ujthesis,float,enumerate,amssymb,amsmath,algorithm,algpseudocode}
+\usepackage{cite,graphicx,tikz,xcolor,appendix,hyperref,minted}
+\usetikzlibrary{plothandlers}
+\usetikzlibrary{positioning}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{patterns}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.symbols}
+\usetikzlibrary{shapes.misc}
+\raggedbottom
+\usepackage[nottoc]{tocbibind}
+\linespread{1.2}
+\dissertation
+\coverFont{\large}
+\setlength{\parskip}{0.5ex plus0.5ex minus0.2ex}
+\setlength{\spaceLength}{7mm}
+\approvedtitle{Optimising the Frequency Assignment Problem utilizing Particle Swarm Optimisation}
+\student{William Bezuidenhout}
+\degree{Magister Scientiae}
+\field{Information Technology}
+\faculty{Faculty of Science}
+\supervisorName{Dr G.B. O'Reilly}
+\submissionDate{May 2012}
+\begin{document}
+\frontmatter
+\makecover
+\tableofcontents
+\listoffigures
+\listofalgorithms
+\listoftables
+\mainmatter
+\part{Background}
+\include{chpt1}%Introduction
+\include{chpt2}%GSM Cellular Networks
+\include{chpt3}%Frequency Assignment Problem
+\include{chpt4}%Metaheuristics algorithms
+\include{chpt5}%Swarm Intelligence
+\part{Implementation}
+%\include{chpt6}%PSO on benchmark functions
+\include{chpt7}%Applying the PSO to the FAP
+\include{chpt8}%Results
+\include{chpt9}%Conclusion
+%\appendix
+%\appendixpage
+%\addappheadtotoc
+%\include{apdxA}
+\backmatter
+\bibliography{ReferenceDB}
+\bibliographystyle{plain}
+\end{document}

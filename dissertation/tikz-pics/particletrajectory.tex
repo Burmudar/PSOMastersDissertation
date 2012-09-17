@@ -1,0 +1,21 @@
+\begin{tikzpicture}[]
+	%\draw[step=.5cm,gray,very thin] (-0.5,-0.5) grid(10,5);
+	\draw[->](-3,-3) -- (3,-3);%bottom left horizontal axis
+	\node (timestep) at (0,-3.5) {\tiny{Time step t}};
+	\draw[->](-3,-3) -- (-3,3);
+	\draw[->](4,-3) -- (10,-3);%bottom right horizontal axis
+	\node (timesteptplus1) at (7,-3.5) {\tiny{Time step t+1}};
+	\draw[->](4,-3) -- (4,3);
+	%points in left graph
+	\draw (-1,-1.5) circle (3pt);%cannot [radius=2pt] as that is v2.10 and not v2.00
+	\path (-0.25,-1.75) coordinate (xrightarrow);
+	\path (-2.00,-0.75) coordinate (xleftarrow);
+	\draw[->] (-1,-1.5) -- (xrightarrow);
+	\draw[->] (-1,-1.5) -- (xleftarrow);
+	\draw (1,-2.15) circle (3pt);
+	\draw (-1.50,2.5) circle (3pt);
+	\draw (-1.75,0.5) circle (3pt);
+	\path (-1.25,0.5) coordinate (socialcomp);
+	\draw[->] (-1,-1.5) -- (-1.75,0.5);
+	\draw[->,dashed] (-1,-1.5) -- (socialcomp);
+\end{tikzpicture}

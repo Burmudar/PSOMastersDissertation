@@ -1,0 +1,55 @@
+\begin{theindex}
+
+  \item DCS1800, \hyperpage{11}
+  \item Digital Cellular System 1800, \see{DCS1800}{11}
+
+  \indexspace
+
+  \item EDGE, \hyperpage{10}
+  \item enhanced data rate for global evolution, \see{EDGE}{10}
+
+  \indexspace
+
+  \item FAP, \hyperpage{9, 10}
+  \item frequency assignment problem, \see{FAP}{9}, \hyperpage{10}
+
+  \indexspace
+
+  \item general packet radio system, \see {GPRS}{10}
+  \item General System for Mobile Communications, \see{GSM}{10}
+  \item GPRS, \hyperpage{10}
+  \item Groupe Speciale Mobile, \see{GSM}{11}
+  \item GSM, \hyperpage{10--14}, \hyperpage{16, 17}, \hyperpage{20--26}, 
+		\hyperpage{28, 29}, \hyperpage{31, 32}
+
+  \indexspace
+
+  \item Heuristic algorithms, \hyperpage{10}
+  \item high speed circuit switched data, \see{HSCSD}{10}
+  \item HSCSD, \hyperpage{10}
+
+  \indexspace
+
+  \item integrated service digital network, \see{ISDN}{11}
+  \item ISDN, \hyperpage{11}
+
+  \indexspace
+
+  \item MMS, \hyperpage{10}
+  \item Multimedia Message Service, \see{MMS}{10}
+
+  \indexspace
+
+  \item NP-Complete, \hyperpage{10}
+
+  \indexspace
+
+  \item Short Message Service, \see{SMS}{10}
+  \item SMS, \hyperpage{10}
+
+  \indexspace
+
+  \item TDMA, \hyperpage{11}
+  \item time division multiple access, \see{TDMA}{11}
+
+\end{theindex}

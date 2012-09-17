@@ -1,0 +1,96 @@
+New Page					Description								Old page
+--------	-------------------------------------------------		--------
+57			Removed "famous". Removed "generally".					55
+59			Removed A* search. Added explanation on uninformed		56
+			search methods.
+58			Added section on Search spaces and States
+60			Removed randomisation. Reworded stochastic point to		57
+			included non-deterministic.
+59			Added definition of solution space to Search space 
+			states sections.
+62			Added reference to Glover								61
+62			Removed "relatively"									61
+62			Changed decuded to inferred								61
+62			Changed lucrative to rewarding							61
+65			Removed "faster"										66
+68			Not adding forward reference to paralisation as other	66
+			examiner doesn't like it
+67			Changed "all the regions" to "solutions"				67
+67			"as soon as the algorithm" to "as the current solution"	68
+67			Expanded definition of repitition length and stagnation	68
+			period.
+71			Defined units of table									69
+71 3rd par	Removed "which therefore makes it easier"				69
+73			Added paragraph explaining uphill and downhill moves	73
+73 - 77		Fixed equations by adding constraints					73 - 76
+76			Changed minima to minimum								76
+76			Removed mentioning of "dynamic programming"				78
+79			Moved table, reworded sentence under table to indicate  78
+			best obtained results differ.
+80			Remove discussion about difficulty of control with		79
+			neighbour generation. Added sentence to describe ideal
+			custom neighbourhood generation scheme
+81			Removed figure											81
+86			Added reference to algorithm all through flow disc.		84
+87			Added sentence explaining population size and that		85
+			var n represents that. Changed sufficient size sentence
+			to use n variable.
+
+Second report
+-------------
+New Page					Description								Old page
+--------	-------------------------------------------------		--------
+64 1st par	Added to the start of the section two paragraphs		65
+			notifying the reader the the discussion that 
+			follows makes certain assumptions.
+65	3th par Changed "In the author" to "Wassan used"				65
+68 2nd par	Changed through entire dissertation "gets" to			65
+			becomes.
+70	5th par Fixed sentence structure								67 last par
+71			Removed "relatively good results"						68 1st par of section 4.3.4
+68			Moved table to just after it is first referenced		69
+71			Removed "instead the constraints are replaced by other  69
+			constraints."
+71			Added paragraph to explain values in table				69
+72 			Fixed sentence											69 par  above 4.4 5th sentence.
+78			Algorithm 2 - Changed criteria to criterion				72
+74	5th par	Removed "basic structure being generic" sentence"		73 bottom of page
+75 5th par	Added sentence stating that the cooling schedule		75
+			is advantageous because of diversify and intensify
+76 1st par	Fixed Flow from 2nd part of sentence to 1st				76 2nd par 5th line
+77 3rd par	Added sentence describing higher initial temp to be		76 4th par
+			favourable wrt exploration
+77	2nd par	Changed "to generate solutions" to "which will allow 	77 3rd par
+			the algorithm to generate better solutions"
+79	5th par Last line before section. Changed will cycle to may		77 last line
+			cycle
+79			Fixed flow from result discussion to critique			78
+80			Removed figure, moved algorithm to flow discussion		80-81
+80			Rewrote introduction to reduce repetitiveness and
+			improve flow
+81			Added paragraph explaining chromosome representation	82 lines 4-5
+			wrt to encoding problem parameters
+81			Changed iteration to generation							82 6th par
+81			Added paragraph explaining fittest selection			83 1st par
+82			Removed paragraph about "Some sequential algorithms"	84 1st par
+82 - 87		Reduced repetitiveness									Section 4.5.3
+82 4.6.2	Changed introduction paragraph
+86			Removed pargraph about branch-and-bound					82 2nd par
+83			Rewrote selection section to use selection pressure		82 4th par
+			instead of strict policy
+84			Rewrote crossover section. Removed paragraph about		87 4th par
+			suboptiminal regions.
+			New crossover section addresses all points listed of 
+			examiner from 109 - 113.
+85			Rewrote mutation operator to make discussion clearer	88
+86			Removed Elitist operator discussion						89 4th par
+86			Removed mentioning of memory intensiveness				90 2nd par
+89			Removed other cases discussion and problems				Section 4.5.4 1st par
+89			Removed subgraph discussion								Section 4.5.4 last par
+89			Added sentence to diversity								91
+
+
+
+
+
+

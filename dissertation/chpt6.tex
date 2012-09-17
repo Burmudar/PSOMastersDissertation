@@ -1,0 +1,355 @@
+\chapter{PSO on Benchmark Functions}
+\label{chpt:benchmark}
+\section{Introduction}
+This chapter deals with a series of optimisation benchmark functions. First all the benchmark functions are formulated and briefly classified. Finally this chapter will conclude with a presentation of the results obtained by the PSO algorithm.
+
+The functions vary from being relatively easy to optimise, to functions that contain numerous local minima and slightly concealed global minima. In total 16 benchmark functions are formulated and benchmarked.
+
+Various optimisation algorithms are benchmarked such as GA, ABC algorithm, TS and SA\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}. The algorithms were benchmarked using numerical optimisation functions.
+
+Numerical optimisation functions are good candidates to test optimisation algorithms as, with a few slight changes, the function operates in more dimensions or can have more or less optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}. Being able to alter these functions is a desirable trait as it enables one to accurately benchmark an algorithm, not only with regard to how the algorithm handles the increased dimensionality, but also in the algorithm's accuracy in locating optima\cite{devparallelgasa,CompuIntelligenceIntro,FundamentalSwarm}.
+
+The reason why these functions have variable numbers of local and global optima, is to test various factors on how good the algorithm is that is being applied to the function. The factors that are tested are\cite{CompuIntelligenceIntro,FundamentalSwarm}:
+\begin{itemize}
+\item Rate of convergence
+\item Exploration
+\item Exploitation
+\item Diversity
+\item Breaking out of local minima
+\item Information sharing
+\end{itemize}
+
+As discussed previously, the numerical functions have predetermined optima, which means researchers are able to produce statistical information on how the algorithm performs. For instance, researchers will not be able to measure accurately the performance of the algorithm on an NP-Complete problem\cite{CompuIntelligenceIntro,FundamentalSwarm}. They can of course compare results with what other algorithms have produced, but cannot with absolute certainty say or measure the algorithm convergence, diversity etc. on NP-Complete problems as their problem spaces are huge\cite{evalevoalgo}. 
+
+With these benchmark functions, the optima have been mathematically calculated and their position is known within the problem space\cite{evalevoalgo}. Thus, researchers can now with certainty measure the convergence rate and diversity and compare them with other algorithms, since the domain in which the algorithms operate it is not as specific as an NP-Complete problem\cite{evalevoalgo}. Rather, the domain is mathematical and deterministic and therefore allows easy comparison\cite{evalevoalgo}.
+
+In this current study, two PSO algorithms were developed specifically to measure the performance of the PSO algorithm and also to better understand the various underlying dynamics of the algorithm.
+
+The first PSO that was developed was the standard PSO algorithm with no constriction coefficient or inertia weight. The second PSO algorithm differed in that it utilises the notion of inertia to move particles. 
+
+Both of these algorithms have been applied to all 16 benchmarks that are presented in the chapter and will be compared with each other to determine the benefit of adding inertia weight to the algorithm performance. The comparison of these algorithms appears in section~\ref{sec:benchResults}.
+
+In the next section, all the benchmarks that were used for testing the PSO algorithms are formulated. For the interested reader, 3D graphs along with the python code that generated the graphs appear in the appendix. This chapter will conclude with the results of the PSO algorithms that were applied to the benchmarks and comparisons with other results that have been obtained by other algorithms.
+\section{Test Functions}
+For each test function a mathematical formulation is given and the global optimum is explicitly stated. In addition, each function is also classified as a unimodal or multimodal function, separable or non-separable, as explained below.
+
+\begin{description}
+\item{\textbf{Unimodal}} --- A particular problem is classified as being unimodal when there is only one clear solution. With only one clear solution, it means there is only one global optimum point in the solution space\cite{evalevoalgo,numericalABC,FundamentalSwarm,CompuIntelligenceIntro}.
+\item{\textbf{Multimodal}} --- A problem is multimodal when it has more than one defined solution; thus the particular problem space contains multiple global optima\cite{evalevoalgo,numericalABC,FundamentalSwarm,CompuIntelligenceIntro}.
+\item{\textbf{Separable}} --- These functions can be written as a series of summations of just one variable\cite{numericalABC}. This quality makes the function easier to solve as the algorithm has only one variable to be concerned about\cite{evalevoalgo,numericalABC}. Separable functions also have the inherent quality of being scalable, meaning that they can easily be adapted to higher dimensions\cite{evalevoalgo,numericalABC}.
+\item{\textbf{Non-separable}} --- Functions classified as non-separable cannot be rewritten into a series of summation functions, as the variables used in the functions have the characteristic of being interrelated\cite{evalevoalgo,numericalABC}. The interrelation of the variables makes non-separable functions more difficult to solve than separable functions since the algorithm has more interdependent variables to be concerned about\cite{evalevoalgo,numericalABC}.
+\end{description}
+
+The DeJong test functions (F1, Shekel's Foxhole) are not considered to be the gold standard of testing optimisation algorithms\cite{evalevoalgo}. The only reason for their extensive use in the literature is that they were the first to be developed and applied to test an optimisation algorithm, i.e. GA\cite{devparallelgasa,evalevoalgo}.
+
+Since the inception of the De Jong test functions, additional functions have been developed which make it more difficult for an optimisation algorithm to locate the optimum\cite{evalevoalgo}. These functions are more difficult because they have multiple local optima, which does in actual fact leads the algorithm astray, i.e. the problem space is deceptive\cite{CompuIntelligenceIntro,FundamentalSwarm,evalevoalgo}. 
+
+Problems that have deceptive search spaces test how well the algorithm is resistant to hill-climbing\footnote{Continously selecting what seems to be better moves, but in reality  moving towards a local optima peak}, and hence how efficient the algorithm is in exploring the entire search space\cite{evalevoalgo}.
+%\textbf{Development of a parallel optimization method based on genetic simulated annealing algorithm}\\
+%\textbf{Adaptive Diversity in PSO}\\
+%\textbf{A hybrid intelligent genetic algorithm}\\
+%\textbf{A Diversity-Guided Particle Swarm Optimizer – the ARPSO}\\
+%\textbf{A distributed hierarchical genetic algorithm for efficient optimization and pattern matching}\\
+%\textbf{Tabu search for global optimization of continuous functions with application to phase equilibrium calculations}\\
+%\textbf{Tabu Search applied to global optimization}\\
+%\textbf{On the performance of artificial bee colony (ABC) algorithm}\\
+%\textbf{Improving solution characteristics of particle swarm optimization using digital pheromones}\\
+%\textbf{Continuous ant colony system and tabu search algorithms hybridized for global minimization of continuous multi-minima functions}\\
+%\textbf{Chaotic bee colony algorithms for global numerical optimization}\\
+%\textbf{A powerful and efficient algorithm for numerical function optimization: artificial bee colony (ABC) algorithm}\\
+%\textbf{A New Quantum Behaved Particle Swarm Optimization}\\
+%\textbf{A comparative study of Artificial Bee Colony algorithm}\\
+\subsection{DeJong F1 Function}
+\begin{equation}
+\label{eq:DeJongF1}
+	f(x) = \sum_{i=1}^n x^2_i, -5.12 \leq x_i \geq 5.12, i \in \mathbb{N}
+\end{equation}
+The DeJong F1 function has the following global minimum when $f(x) = 0, x(i) = 0, i:n$ where $n$ is the number of dimensions\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,ContinACSTS,TestFunctions}. In the literature the function is classified as being unimodal and separable\cite{ABCCompareStudy,TestFunctions}. 
+
+A graph of this equation is presented in the appendix, section~\ref{fig:DeJongF1Graph}, page \pageref{fig:DeJongF1Graph}.
+\subsection{Shekel's Foxhole}
+\begin{align}
+\label{eq:shekel}
+	f(x_1,x_2) &= \{0.002 + \sum^{25}_{j=1} [j + (x_1 - a_{1j})^6 + (x_2 - a_{2j})^6]^{-1}\}^{-1}\\
+\intertext{where}
+	a &= \begin{pmatrix} \nonumber
+			-32 & -16 & 0 & 16 & 32 & -32 & ... & 0 & 16 & 32 \\
+			-32 & -32 & -32 & -32 & -32 & -16 & ... & 32 & 32 & 32 \\
+		 \end{pmatrix}
+\end{align}
+the variables $x_1$ and $x_2$ are usually restricted to the square represented by $-65.356 \leq x_1 \leq 65.357, -65.357 \leq x_2 \leq 65.356$\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}. The global optimum is when $f(x_1,x_2) = 0, \{x_1,x_2\} = \{-32,-32\}$\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}.
+
+The matrix controls the holes that appear in the search space. The interested reader is directed to the 3D graph rendering of this function in the appendix, section~\ref{fig:ShekelGraph} on page~\pageref{fig:ShekelGraph}. In the literature the function is classified being multimodal and separable\cite{adaptPSO,ABCCompareStudy,TestFunctions}.
+
+\subsection{Rastrigin}
+\begin{equation}
+	f(x) = 10n + \sum_{i=1}^n [x_i^2 - 10\cos(2 \pi x_i)],\, i \in \mathbb{N}
+\end{equation}
+The values of the variable $x_i$ are bounded by the hypercube $-5.12 \leq x_i \leq 5.12$\cite{adaptPSO,ABCCompareStudy,numericalABC,ARPSO,PerfABC,HybridIntelliGA,TestFunctions}. The global optimum for the function is when $f(x_i) = 0,\, x_i = 0, \, i = 1,\dots,n$\cite{adaptPSO,ABCCompareStudy,numericalABC,HybridIntelliGA,TestFunctions}.
+
+Rastrigin's function is based on DeJong's first function equation~\ref{eq:DeJongF1}, adding a cosine term, which in turns alters the problem space by introducing many local minima\cite{numericalABC,PerfABC,HybridIntelliGA,TestFunctions}. In the literature the function is classified being multimodal and separable\cite{adaptPSO,ABCCompareStudy,numericalABC,ARPSO,ChaoticABC,PerfABC,HybridIntelliGA,TestFunctions}.
+
+A graph of this equation is presented in section~\ref{fig:RastriginGraph} page \pageref{fig:RastriginGraph}.
+\subsection{Schwefel}
+\begin{equation}
+	f(x) = 418.9829n - \sum^n_{i=1} [x_i\sin{\sqrt{|x_i|}}], \qquad i \in \mathbb{N}
+\end{equation}
+The variable $x_i$ is restricted to be in the hypercube $-500 \leq x_i \leq 500, i = 1,\ldots,n$\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,DistributedHierarchicalGA,TestFunctions}. The global optimum for the function is $f(x) = 0$ when $x_i = 420.9687$\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,DistributedHierarchicalGA,TestFunctions}. 
+
+If one observes the 3D rendering of the Schwefel function problem space in the appendix, section~\ref{fig:SchwefelGraph} on page~\pageref{fig:SchwefelGraph}, one can see that the search space contains a great number of peaks which might be local optima. The function also has the characteristic of having a second best optimum far from the global optima in which many algorithms became trapped \cite{ABCCompareStudy,numericalABC,HybridIntelliGA,DistributedHierarchicalGA,TestFunctions}. In the literature the function is classified as being multimodal and separable\cite{ABCCompareStudy,numericalABC,HybridIntelliGA,TestFunctions}.
+
+\subsection{Griewank}
+\begin{equation}
+	f(x) = \sum^n_{i=1} \frac{x^2_i}{4000} - \prod^n_{i=1}\cos{(\frac{x_i}{\sqrt{i}})} + 1, \qquad i \in \mathbb{N}
+\end{equation}
+The variable $x_i$ is bounded to within the hypercube $ -600 \leq x_i \leq 600 $\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,ContinACSTS,TestFunctions}. The global optimum of the function is when $f(x) =0$, which occurs when $ x_i = 0, i = 1, \dots, n $\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,ContinACSTS,TestFunctions}.
+
+As with the Schwefel function, the Griewank function also has a great number of peaks and valleys in which many algorithm become trapped. A particular quality of the Griewank function is that at low dimensions, the function is quite difficult to solve. It has been shown that at higher dimensions the function becomes much easier due to there being fewer peaks and valleys to navigate in the search space\cite{evalevoalgo,ABCCompareStudy,numericalABC,PerfABC,TestFunctions}. In the literature the function is classified as being multimodal and non-separable\cite{adaptPSO,ABCCompareStudy,numericalABC,ChaoticABC,PerfABC,TestFunctions}.
+
+A graph of this equation is presented in the appendix in section~\ref{fig:GriewankGraph} page \pageref{fig:GriewankGraph}.
+\subsection{Salomon}
+\begin{equation}
+	f(x) = -\cos{(2\pi\sum_{i=1}^n\sqrt{x_i^2})} + 0.1 \sqrt{\sum_{i=1}^n x_i^2} + 1, \quad i \in \mathbb{N}
+\end{equation}
+Unlike the previous functions discussed in this section, the Salomon function imposes no constraint on the $x_i$ variable. The global optimum is when $f(x) = 0$ and $x_i = 0$ where $i = 1,\ldots,n$. This particular function does not seem to have been applied as a benchmarking function yet, as no literature can be found. Nonetheless, the function is indeed a numerical optimisation function that is classified as being multimodal and non-separable\cite{salamonwebsite}.
+
+A graph of this equation is presented in the appendix in section~\ref{fig:SalomonGraph} page \pageref{fig:SalomonGraph}.
+\subsection{Ackley}
+\begin{equation}
+	f(x) = -20e^{-0.2\sqrt{\frac{1}{2}\sum_{i=1}^n x_i^2}} - e^{\frac{1}{2}\sum_{i=1}^n\cos{2\pi x_i}} + 20 + e^1, \qquad i \in \mathbb{N}
+\end{equation}
+The variable $x_i$ is restricted to the hypercube represented by $-32.768 \leq x_i \leq 32.768$\cite{numericalABC,ABCCompareStudy,ARPSO,TestFunctions}. The global minimum is when $f(x) = 0$ and is obtainable for $x_i = 0, i = 1,\ldots,n$\cite{numericalABC,ABCCompareStudy,ARPSO,TestFunctions}.
+
+As can be observed from the mathematical formulation of the function, the function utilises an exponential term. By using the exponential term the problem space contains numerous local optima which require an algorithm to search much wider to avoid getting trapped. The literature classifies this function as being multimodal and non-separable\cite{adaptPSO,ABCCompareStudy,numericalABC,TestFunctions}.
+
+A graph of this equation is presented in the appendix in section~\ref{fig:AckleyGraph} page \pageref{fig:AckleyGraph}.
+\subsection{Six-hump Camel Back}
+\begin{equation}
+	f(x_1,x_2) = (4 - 2.1x_1^2 + x_1^{\frac{4}{3}})x_1^2 + (x_1x_2) + (-4 + 4x_2^2)x_2^2
+\end{equation}
+The variables $x_1$ and $x_2$ are subject to the following boundary constraints: $-3 \leq x_1 \leq 3$ and $-2 \leq x_2 \leq 2$\cite{DistributedHierarchicalGA,TestFunctions}. The global minimum is when $f(x_1,x_2) = -1.0316$ and is obtained when $x_1 = -0.0898$ and $x_2 = 0.7126$ or when  $x_1 = 0.0898$ and $x_2 = 0.7126$\cite{DistributedHierarchicalGA,TestFunctions}. 
+
+True to its name the function has six peaks, four of which are local minima and two of which are global minima as has already been defined. The literature classifies this function as being multimodal and non-separable\cite{ABCCompareStudy,TestFunctions}.
+
+A graph of this equation is presented in the appendix in section~\ref{fig:CamelGraph} page \pageref{fig:CamelGraph}.
+\subsection{Shubert}
+\begin{equation}
+	f(x_1,x_2) = -\sum_{i = 1}^5 (i\cos{(i +1)x_1 + 1})\sum_{i=1}^5 (i\cos{(i+1)x_2 + 1})
+\end{equation}
+The search domain is constrained to $-10 \leq x_i \leq 10, i = 1,2, \ldots, n$\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}. The global optimum is when $f(x_i) = -186.7309$\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}. 
+
+As can be observed from the 3D graph in the appendix, section~\ref{fig:ShubertGraph} on page~\pageref{fig:ShubertGraph} the landscape of the Shubert function contains various peaks and slopes. Therefore the function is classified as being multimodal and non-separable\cite{ABCCompareStudy,TestFunctions}.
+
+\subsection{Himmelblau}
+\begin{equation}
+	f(x_1,x_2) = (x_1^2 + x_2 - 11)^2 + (x_1 + x_2^2 - 7)^2
+\end{equation}
+The variables $x_1,x_2$ are constrained to be within the hypercube represented by $-6 \leq x_1 \leq 6, -6 \leq x_2 \leq 6$\cite{TestFunctions,ABCCompareStudy}. The Himmelblau function contains no local optima, but on the contrary, it has 4 global optima when $f(x_i) = 0$ which can be obtained at the following points\cite{TestFunctions,ABCCompareStudy}:
+\begin{itemize}
+\item $(x_1,x_2) = (-3.779310,-3.283185)$
+\item $(x_1,x_2) = (-2.805118,3.131312)$
+\item $(x_1,x_2) = (3,2)$
+\item $(x_1,x_2) = (3.584428,-1.848126)$
+\end{itemize}
+The literature classifies the function as being multimodal and non-separable\cite{TestFunctions,ABCCompareStudy}.
+
+A graph of this equation is presented in the appendix in section~\ref{fig:HimmelblaueGraph} page \pageref{fig:HimmelblaueGraph}.
+\subsection{Rosenbrock Valley}
+\begin{equation}
+	f(x) = \sum_{i=1}^{n-1}[100(x_{i+1} - x_i^2)^2 + (1-x_i)^2
+\end{equation}
+The variable $x_i$ is bounded to the following constraint $ -2.048 \leq x_i \leq 2.048 $\cite{numericalABC,ABCCompareStudy,ARPSO,PerfABC,TSGlobalOptContinFunc,HybridIntelliGA}. The global optimum is when $f(x) = 0$ and is obtained when $x_i = 1, i = 1,\ldots,n$\cite{numericalABC,ABCCompareStudy,ARPSO,TSGlobalOptContinFunc,HybridIntelliGA}.
+
+The Rosenbrock search space has a curving valley which forces algorithms to cope with the changing direction of the landscape\cite{numericalABC,ABCCompareStudy,ChaoticABC,PerfABC,HybridIntelliGA}. If the algorithm does not adapt to the changing direction it will fail in locating the global optimum. The function is classified as being multi-modal and non-separable\cite{numericalABC,ABCCompareStudy,ChaoticABC,PerfABC,HybridIntelliGA}.
+
+A graph of this equation is presented in the appendix in section~\ref{fig:Rosenbrock} page \pageref{fig:Rosenbrock}.
+\subsection{Dropwave}
+\begin{equation}
+	f(x) = -\frac{1 + \cos{(12\sqrt{x_1^2 + x_2^2})}}{\frac{1}{2}(x_1^2 + x_2^2) + 2}
+\end{equation}
+The variables $x_1$ and $x_2$ are restricted to be within the following bounds: $-5.12 \leq x_i \leq 5.12$\cite{TestFunctions}. The landscape of this function resembles that of a droplet falling into a pool of water, as can be observed from the 3D graph presented in the appendix in section~\ref{fig:DropwaveGraph} on page~\pageref{fig:DropwaveGraph}. Due to its ``wave'' nature, the function has various local minima and only a single optimum which is when $f(x_1,x_2) = 0$. The function is classified being multimodal and non-separable\cite{TestFunctions}.
+
+\subsection{Easom}
+\begin{equation}
+	f(x_1,x_2) = -\cos(x_1)\cos(x_2)e^{(-(x_1 - \pi)^2 - (x_2 - \pi)^2)}
+\end{equation}
+The variables $x_1$ and $x_2$ are restricted to be within the hypercube represented by $-100 \leq x_1 \leq 100, -100 \leq x_2 \leq 100$\cite{TSGlobalOptContinFunc,ContinACSTS,TestFunctions}. The global minimum is when $f(x_1,x_2) = -1$ and is obtainable if $(x_1,x_2) = (\pi,\pi)$\cite{TSGlobalOptContinFunc,ContinACSTS,TestFunctions}. 
+
+The Easom function has a deceptive global minimum as it is very close to other local minima\cite{ABCCompareStudy,TSGlobalOptimization}. As can be observed from the 3D graph of the function in the appendix in section~\ref{fig:EasomGraph} on page~\pageref{fig:EasomGraph}, the search space is a flat with the global minima clearly visible. Flat search spaces are difficult to navigate by algorithms as the surrounding area gives no indication whether the algorithm is on the right track or not. The function is classified as being multimodal and non-separable in the literature \cite{ABCCompareStudy,TSGlobalOptimization,TSGlobalOptContinFunc}.
+
+\subsection{Branins}
+\begin{align}
+	f(x_1,x_2) &= a(x_2 - bx_1^2 + cx_1 - d)^2 + e(1-f)\cos{x_1} + e \\
+\intertext{where}
+	a &= 1\nonumber\\
+	b &= \frac{5.1}{4\pi^2}\nonumber\\
+	c &= \frac{5}{\pi}\nonumber\\
+	d &= 6\nonumber\\
+	e &= 10\nonumber\\
+	f &= \frac{1}{8\pi}\nonumber
+\end{align}
+The variables $x_1$ and $x_2$ are subject to the following boundary constraints: $-5\leq x_1 \leq 10, 0 \leq x_2 \leq 10$\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}. The global optimum is when $f(x_1,x_2) = 0.397887$ and is obtainable when $x_1$ and $x_2$ have the following values\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}:
+\begin{enumerate}
+\item $x_1 = -\pi,\:x_2=12.275$
+\item $x_1 = \pi,\:x_2=2.275$
+\item $x_1 = 9.42478,\:x_2=2.475$
+\end{enumerate}
+The literature classifies this function as being multimodal and separable\cite{ABCCompareStudy,TSGlobalOptimization,ContinACSTS,TestFunctions}.
+
+A graph of this equation is presented in the appendix in section~\ref{fig:BraninGraph} page \pageref{fig:BraninGraph}.
+\subsection{Michalewicz}
+\begin{equation}
+	f(x) = -\sum_{i=1}^n\sin{(x_i)}[\sin{(\frac{(1 - x_i^2)}{\pi})}]^{2m}, \qquad i,m \in \mathbb{N}
+\end{equation}
+The variable $x_i$ is usually constricted to the following defined boundary: $0 \leq x_i \leq \pi, i = 1,\ldots,n$\cite{ABCCompareStudy,TestFunctions}. The parameter $m$ defines the steepness of the valleys in the function. The function has two approximated global minima that are difficult to locate since their size in comparison with the rest of the search space is relatively small\cite{ABCCompareStudy,TestFunctions}.
+
+%http://www.geatbx.com/docu/fcnindex-01.html#P216_11735
+\begin{enumerate}
+\item $f(x) = -4.687,\: n = 5$
+\item $f(x) = -9.66,\: n = 10$
+\end{enumerate}
+In the literature the function is classified as being multimodal and separable\cite{ABCCompareStudy}.
+
+A graph of this equation is presented in the appendix in section~\ref{fig:MichalewiczGraph} page \pageref{fig:MichalewiczGraph}.
+\subsection{Goldstein}
+\begin{align}
+	f(x_1,x_2) &= (1 + (x_1 + x_2 + 1)^2)\nonumber\\
+			   &=*(19-14x_1+3x_1^2 -14x_2 + 6x_1x_2 + 3x_2^2)\nonumber\\
+			   &=*(30 + (2x_1 -3x_2)^2\nonumber\\
+			   &=*(18 - 32x_1 + 12x_1^2 +48x_2 -36x_1x_2 + 27x_2)\nonumber
+\end{align}
+The variables $x_1$ and $x_2$ are subject to the following boundary constraints: $-2 \leq x_1 \leq 2, -2 \leq x_2 \leq 2$\cite{ABCCompareStudy,TSGlobalOptimization,TSGlobalOptContinFunc,ContinACSTS,TestFunctions}. The function has only one global minimum and four local optima\cite{ABCCompareStudy,TSGlobalOptimization}. The global optimum is when $f(x_1,x_2) = 3$ and is obtainable when $x_1 = 0$ and $x_2 = -1$\cite{ABCCompareStudy,TSGlobalOptimization,TSGlobalOptContinFunc,ContinACSTS,TestFunctions}.
+
+The literature classifies this function as being multimodal and non-separable\cite{ABCCompareStudy}.
+
+A graph of this equation is presented in the appendix in section~\ref{fig:GoldsteinGraph} page \pageref{fig:GoldsteinGraph}.
+
+\section{Results}
+\label{sec:benchResults}
+In the previous section 16 benchmark functions were mathematically defined and, where applicable, comments were given on the search space. For each function the following was explicitly stated:
+\begin{itemize}
+\item The global optimum and where it is located
+\item Whether the function is unimodal or multimodal
+\item Whether the function is non-separable or separable
+\end{itemize}
+In this section the results are given of how the two PSO algorithms that were developed performed on each of the benchmark functions. 
+
+The algorithms will be compared with the following criteria for each benchmark:
+\begin{itemize}
+\item The number of iterations the algorithm took to find the global optimum
+\item The PSO is a population-based algorithm, thus diversity is important. Diversity will be measured and compared for each benchmark function.
+\end{itemize}
+For all the results the algorithm was applied to the various test functions for 1 000 iterations. The limit on the number of iterations was chosen as it was observed through various tests that the algorithms were not able to find any measurable improved solutions after the 600th iteration. The additional 400 iterations were given as a buffer period in case the algorithm was indeed able to obtain a better result.
+
+The following are the final resulting values the algorithms obtained after operating on the given problem for 1 000 iterations. The algorithms were written in C++ and were executed on the following configuration
+\begin{itemize}
+\item Intel Q9700 operating at the manufactured speed of 3.167 GHz
+\item 4 gigabyte of DDR2 RAM
+\item Ubuntu 11.04, gcc-4.2, compiled with -O3 optimisation
+\end{itemize}
+
+First, the actual final fitness values obtained by the algorithms will be discussed, followed by the diversity of the particle swarm as measured at the very last iteration of each algorithm. In each table the column with the heading ``PSO'' refers to the results obtained with the standard PSO algorithm. The column with the heading ``PSO*'' refers to the results obtained with the PSO algorithm that uses inertia with particle movement. 
+
+The inertia value utilised by the PSO* algorithm was set to 0.5 for these tests as it was found that 0.5 obtained the best results. It must also be noted that any number smaller than e-08 is regarded as zero as the number is very close to zero and can be regarded as such. For accuracy the results presented have been left as is.
+\subsection{Final values}
+\begin{table}[h]
+\label{tbl:fitnessValues}
+\begin{center}
+	\begin{tabular}{| c | c | c |}
+	\hline
+	Function & PSO & PSO*\\  \hline
+	DeJong F1 & 0 & 0 \\ \hline
+	Shekel's Foxhole & 0 & 0 \\ \hline
+	Rastrigin & 0.74622  & 0.74622\\ \hline
+	Schwefel & -1.19069e+43  & -908.013\\ \hline
+	Griewank & 1.00003 & 1 \\ \hline
+	Salomon & -0.460561 & -0.80003 \\ \hline
+	Ackley & -4.5901 & -4.5901 \\ \hline
+	Six-hump Camel back & -1.03163 & -1.03163 \\ \hline
+	Shubert & -186.731 & -186.731 \\ \hline
+	Himmelblau & 1.02103 & 0 \\ \hline
+	Rosenbrock Valley & 1.81101e-08 & 0 \\ \hline
+	Dropwave & 4.59843e-15 & 0 \\ \hline
+	Easom & -1 & -1 \\ \hline
+	Branins & 1.22875 & 0.397887 \\ \hline
+	Michalewicz & -2.40391 & -2.40391 \\ \hline
+	Goldstein & infinity  & infinity\\ \hline
+	\end{tabular}
+\end{center}
+\caption{Final fitness values}
+\end{table}
+In table 6.1 it can be observed that the standard PSO algorithm found the global optimum for the following benchmark functions:
+\begin{enumerate}
+\item DeJong F1 
+\item Shekel's Foxhole
+\item Six-hump Camel Back
+\item Shubert
+\item Easom
+\item Rosenbrock Valley
+\item Dropwave
+\end{enumerate}
+In all the other benchmark functions the standard algorithm clearly become trapped in local optima, where the optima were located extremely close to the global optima in the search landscape. One can observe from the 3D graph renderings presented in the appendix that some of the functions exhibited a search landscape that contained a lot of hills visually. These hills can also be interpreted as local optima and were specifically designed to exist within the search landscape to trap optimisation algorithms.
+
+If one looks at the number of benchmark functions the algorithm was applied to and the number of test functions successfully solved, the performance of the algorithm seems quite below par. Statistically the standard PSO algorithm developed has a relative success rate of 43.75\%.
+
+This success rate of the standard algorithm is improved when one compares the algorithm with the PSO algorithm that uses inertia. Indeed, the PSO algorithm solves the following functions:
+\begin{enumerate}
+\item DeJong F1 
+\item Shekel's Foxhole
+\item Six-hump Camel Back
+\item Shubert
+\item Easom
+\item Himmelblau
+\item Rosenbrock Valley
+\item Dropwave
+\item Branins
+\end{enumerate}
+The PSO* algorithm solved two more benchmark functions than the standard PSO algorithm. It must also be noted that, for the following functions, the PSO* also obtained better results, which were thus much closer to the global optimum results:
+\begin{enumerate}
+\item Schwefel
+\item Griewank
+\end{enumerate}
+The observed reason why the PSO* algorithm was able to solve more test functions and get closer to the global optimum is inertia. With inertia, the particles of the swarm search the landscape much more thoroughly. Because the algorithm does not clamp the velocity of particles, the velocity of particles quickly becomes huge. With a high velocity on a particle the particle no longer takes systematic small steps towards another particle; rather the particle takes huge strides in the search space skipping entire regions. It is for this reason that two variations exist in the PSO algorithm: One that uses velocity clamping and one that uses inertia. The inertia variant was selected due to the ease of implementing the alteration on the algorithm as well as the success the variant of the algorithm has achieved in the current literature.
+
+It is interesting to note that both algorithms completely failed to find a solution in the search landscape depicted by the Goldstein function. This can be attributed to the particular landscape of the function being very misleading and one can see by looking at the 3D graph rendering of the function (see page~\pageref{fig:GoldsteinGraph} in the appendix) that the global optimum (bottom-left corner) is surrounded by steep hills. These hills lead the PSO algorithms astray in their search for the global optimum.
+
+\subsection{Diversity}
+\begin{table}[h]
+\label{tbl:diversityValues}
+\begin{center}
+	\begin{tabular}{| c | c | c |}
+	\hline
+	Function & PSO & PSO*\\  \hline
+	DeJong F1 & 2.10378 & 1.41E-14 \\ \hline
+	Shekel's Foxhole & 31.2242 & 8.68362 \\ \hline
+	Rastrigin & 1.84952 & 0.33564 \\ \hline
+	Schwefel & 7.80E+41  & 145.668\\ \hline
+	Griewank & 262.908 & 0.000438 \\ \hline
+	Salomon & 28973.4  & 8.06003\\ \hline
+	Ackley & 14.6277  & 0.783741\\ \hline
+	Six-hump Camelback & 1.26021  & 0.041858\\ \hline
+	Shubert & 2.55078  & 0.245377\\ \hline
+	Himmelblau & 71723.80 & 16.0674\\ \hline
+	Rosenbrock Valley & 2.09851  & 0.20354\\ \hline
+	Dropwave & 17.336 & 0.533049\\ \hline
+	Easom & 98.6724 & 3.90901\\ \hline
+	Branins & 31445.8 & 271.076\\ \hline
+	Michalewicz & 1.01585 & 1.25E-09\\ \hline
+	Goldstein & 5.61E37 & 2.19E+36\\ \hline
+	\end{tabular}
+\end{center}
+\caption{Diversity values}
+\end{table}
+Diversity as measured in table 6.2 is the average difference in the fitness value each particle has obtained in the swarm. By observing the values obtained it becomes evident as to why the PSO* algorithm with inertia in general performed better than the standard PSO algorithm. The difference in particle' fitness values is extremely low compared to their equivalent values in the standard PSO algorithm. This means that inertia lets the swarm be much more cohesive and thus particles are much closer to each other in the search landscape. Being closer to each other allows the swarm to search the landscape much more thoroughly.
+
+The diversity values can also be interpreted as the rate of exploration. The standard PSO algorithm clearly has a high exploration rate. Another interpretation is that diversity can also depict the exploitation that the algorithm performs, which means that the PSO* has a high exploitation rate due to particles being much more cohesive with regard to their search.
+
+It must also be noted the inertia value of the PSO* algorithm allows one to control the rate of exploration and exploitation of the swarm. For these benchmarks a conservative 0.5 was chosen. A 0.5 inertia value achieves a good balance between exploration and exploitation where a value of 1.0 means full exploration. Thus with a 1.0 inertia value the PSO* algorithm is equivalent to the standard PSO algorithm.
+
+Since the PSO algorithm with the inertia value not only achieved better results than its standard counterpart, but also exposed a parameter which controls the behaviour of the algorithm it becomes clear the particular PSO algorithm to be used for this research had to be the algorithm that uses inertia.
+\section{Summary}
+In this chapter a series of mathematical optimisation problems were presented. Each problem was mathematically formulated as well as categorised as multimodal or unimodal and separable or non-separable.
+
+To get a better idea of how the PSO algorithm operates and performs, two PSO algorithms were developed. The first PSO algorithm uses the standard velocity equation with no alterations. The second PSO algorithm uses the notion of inertia with regard to velocity calculation.
+
+The algorithms were tested on all the mathematical problems outlined at the start of this chapter. The chapter concluded with the results obtained by the algorithms.

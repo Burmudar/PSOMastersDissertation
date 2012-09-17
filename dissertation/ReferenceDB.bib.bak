@@ -1,0 +1,2278 @@
+% This file was created with JabRef 2.6.
+% Encoding: MacRoman
+
+@INPROCEEDINGS{TabuVechicleRoutingWithTimeWindows,
+  author = {Qi Ming-yao and Miao Li-xin and Zhang Le and Xu Hua-yu},
+  title = {A new Tabu Search heuristic algorithm for the Vehicle Routing Problem
+	with Time Windows},
+  booktitle = {Management Science and Engineering, 2008. ICMSE 2008. 15th Annual
+	Conference Proceedings., International Conference on},
+  year = {2008},
+  pages = {1648 -1653},
+  month = {10-12},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/ICMSE.2008.4669126},
+  doi = {10.1109/ICMSE.2008.4669126},
+  keywords = {NP-hard problem;Tabu search heuristic algorithm;genetic algorithm;self-adaptive
+	Tabu list;time windows;vehicle routing problem;computational complexity;genetic
+	algorithms;search problems;transportation;}
+}
+
+@MISC{salamonwebsite,
+  author = {LAPPEENRANTA UNIVERSITY OF TECHNOLOGY: EVOLUATIONARY COMPUTATION
+	PAGES (Accessed 2011/06/09)},
+  title = {http://www.it.lut.fi/ip/evo/functions/node12.html},
+  owner = {william},
+  timestamp = {2012.01.29}
+}
+
+@ARTICLE{CALMA,
+  author = {Karen Aardal and Cor Hurkens and Jan Karel Lenstra and Sergey Tiourine},
+  title = {Algorithm for Radio Link Frequency Assignment: The Calma Project},
+  journal = {Operations Research},
+  year = {2002},
+  volume = {50},
+  pages = {968-980},
+  number = {6},
+  month = {Nov - Dec},
+  bdsk-url-1 = {http://www.jstor.org/stable/3088617},
+  owner = {william},
+  timestamp = {2010.03.24},
+  url = {http://www.jstor.org/stable/3088617}
+}
+
+@ARTICLE{Karen2004,
+  author = {Karen I. Aardal and Stan P. M. van Hoesel and Arie M. C. A. Koster
+	and Carlo Mannino and Antonio Sassano},
+  title = {Models and solution techniques for frequency assignment problems},
+  journal = {4OR: A Quarterly Journal of Operations Research},
+  year = {2004},
+  volume = {1},
+  pages = {261-317},
+  number = {4},
+  month = {December},
+  bdsk-url-1 = {http://dx.doi.org/10.1007/s10288-003-0022-6},
+  doi = {10.1007/s10288-003-0022-6},
+  file = {:/media/BAGGY_PANTS/Masters/Research/Read/FAP/Models and solution techniques for frequency assignment problems.PDF:PDF},
+  owner = {william},
+  timestamp = {2009.05.23}
+}
+
+@ARTICLE{ChaoticABC,
+  author = {Alatas, Bilal},
+  title = {Chaotic bee colony algorithms for global numerical optimization},
+  journal = {Expert Syst. Appl.},
+  year = {2010},
+  volume = {37},
+  pages = {5682--5687},
+  month = {August},
+  acmid = {1786855},
+  address = {Tarrytown, NY, USA},
+  doi = {http://dx.doi.org/10.1016/j.eswa.2010.02.042},
+  issn = {0957-4174},
+  issue = {8},
+  keywords = {Bee colony algorithm, Chaos, Global numerical optimization},
+  numpages = {6},
+  publisher = {Pergamon Press, Inc.},
+  url = {http://dx.doi.org/10.1016/j.eswa.2010.02.042}
+}
+
+@ARTICLE{HetergeneousGA,
+  author = {Alba, E. and Luna, F. and Nebro, A. J. and Troya, J. M.},
+  title = {Parallel heterogeneous genetic algorithms for continuous optimization},
+  journal = {Parallel Comput.},
+  year = {2004},
+  volume = {30},
+  pages = {699--719},
+  number = {5-6},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/j.parco.2003.12.011},
+  doi = {http://dx.doi.org/10.1016/j.parco.2003.12.011},
+  issn = {0167-8191},
+  publisher = {Elsevier Science Publishers B. V.}
+}
+
+@ARTICLE{ConstantTempSA,
+  author = {Mahmoud H. Alrefaei and Sigr{{\'u}}n Andrad{{\'o}}ttir},
+  title = {A Simulated Annealing Algorithm with Constant Temperature for Discrete
+	Stochastic Optimization},
+  journal = {Management Science},
+  year = {1999},
+  volume = {45},
+  pages = {748-764},
+  bdsk-url-1 = {http://www.jstor.org/stable/2634729},
+  owner = {william},
+  timestamp = {2010.06.08},
+  url = {http://www.jstor.org/stable/2634729}
+}
+
+@ARTICLE{AndersonPhiladelphia,
+  author = {L. G. Anderson},
+  title = {A Simulation Study of some Dynamic Channel Assignment Algorithms
+	in a High Capacity Mobile Telecommunications System},
+  journal = {IEEE Transactions on Communications},
+  year = {1973},
+  volume = {21},
+  pages = {1294--1301},
+  language = {English}
+}
+
+@INPROCEEDINGS{CircuitTabu,
+  author = {Areibi, S. and Vannelli, A.},
+  title = {Circuit partitioning using a tabu search approach},
+  booktitle = {Circuits and Systems, 1993., ISCAS '93, 1993 IEEE International Symposium
+	on},
+  year = {1993},
+  pages = {1643 -1645},
+  month = {3-6}
+}
+
+@ARTICLE{EvoParallelTabu,
+  author = {A. Augugliaro and L. Dusonchet and E. R. Sanseverino},
+  title = {An Evolutionary Parallel Tabu Search approach for distribution systems
+	reinforcement planning},
+  journal = {Advanced Engineering Informatics},
+  year = {2002},
+  volume = {16},
+  pages = {205 - 215},
+  number = {3},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6X1X-48FGVN3-4/2/eebd726f7be4bdf20f2ea1cf7f4b946f},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/S1474-0346(02)00012-5},
+  doi = {DOI: 10.1016/S1474-0346(02)00012-5},
+  issn = {1474-0346},
+  keywords = {Combinatorial optimisation},
+  url = {http://www.sciencedirect.com/science/article/B6X1X-48FGVN3-4/2/eebd726f7be4bdf20f2ea1cf7f4b946f}
+}
+
+@INPROCEEDINGS{MetaAgricultural,
+  author = {Badarudin, I. and Sultan, A.B.M. and Sulaiman, M.N. and Mamat, A.
+	and Mohamed, M.T.M.},
+  title = {Metaheuristic approaches for optimizing agricultural land areas},
+  booktitle = {Data Mining and Optimization, 2009. DMO '09. 2nd Conference on},
+  year = {2009},
+  pages = {28 -31},
+  month = {27-28},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/DMO.2009.5341914},
+  doi = {10.1109/DMO.2009.5341914},
+  keywords = {agricultural land area optimization;agricultural land use planning;metaheuristic
+	approach;resource allocation;single objective optimization problem;agriculture;land
+	use planning;optimisation;resource allocation;}
+}
+
+@INPROCEEDINGS{SAElectricPower,
+  author = {Hua Bai and Bo Zhao},
+  title = {A Survey on Application of Swarm Intelligence Computation to Electric
+	Power System},
+  booktitle = {Intelligent Control and Automation, 2006. WCICA 2006. The Sixth World
+	Congress on},
+  year = {2006},
+  volume = {2},
+  pages = {7587 -7591},
+  month = {0-0 },
+  doi = {10.1109/WCICA.2006.1713441},
+  keywords = {ant colony optimization;artificial intelligence;capacitor placement;economic
+	dispatch;electric power system;generation expansion planning;optimal
+	design;particle swarm optimization;population-based immune algorithm;reactive
+	power optimization dispatch;short-term load forecasting;swarm intelligence
+	computation;artificial life;load forecasting;particle swarm optimisation;power
+	engineering computing;power generation planning;power system economics;reactive
+	power;}
+}
+
+@INPROCEEDINGS{ABCImageEnhancement,
+  author = {Benala, T.R. and Jampala, S.D. and Villa, S.H. and Konathala, B.},
+  title = {A novel approach to image edge enhancement using Artificial Bee Colony
+	optimization algorithm for hybridized smoothening filters},
+  booktitle = {Nature Biologically Inspired Computing, 2009. NaBIC 2009. World Congress
+	on},
+  year = {2009},
+  pages = {1071 -1076},
+  month = {9-11},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/NABIC.2009.5393866},
+  doi = {10.1109/NABIC.2009.5393866},
+  keywords = {artificial bee colony optimization algorithm;feature extraction;hybridized
+	smoothening filters;image classification;image edge enhancement;image
+	edge quality;image generation;image processing techniques;image transmission;information
+	retrieval;medical images;satellite images;unbiased optimization technique;unbiased
+	stochastic sampling;image enhancement;information retrieval;optimisation;smoothing
+	methods;}
+}
+
+@ARTICLE{AntIntroTrends,
+  author = {Christian Blum},
+  title = {Ant colony optimization: Introduction and recent trends},
+  journal = {Physics of Life Reviews},
+  year = {2005},
+  volume = {2},
+  pages = {353 - 373},
+  number = {4},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B75DC-4HM7S2N-1/2/b515e1932596d4416a1c8bec13dadab0},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.plrev.2005.10.001},
+  doi = {DOI: 10.1016/j.plrev.2005.10.001},
+  issn = {1571-0645},
+  keywords = {Ant colony optimization},
+  url = {http://www.sciencedirect.com/science/article/B75DC-4HM7S2N-1/2/b515e1932596d4416a1c8bec13dadab0}
+}
+
+@INBOOK{DLearning,
+  chapter = {D-Learning: what learning in dogs tells us about building characters
+	that learn what they ought to learn},
+  pages = {37--67},
+  title = {Exploring Artificial Intelligence in the New Millenium},
+  publisher = {Morgan Kaufmann Publishers Inc.},
+  year = {2003},
+  author = {Blumberg, Bruce M.},
+  address = {San Francisco, CA, USA},
+  book = {Exploring artificial intelligence in the new millennium},
+  isbn = {1-55860-811-7}
+}
+
+@ARTICLE{FAPinCell,
+  author = {R. Bornd{\"o}rfer and A. Eisenbl{\"a}tter and M. Gr{\"o}tschel and
+	A. Martin},
+  title = {Frequency assignment in cellular phone networks},
+  journal = {Annals of Operations Research},
+  year = {1998},
+  pages = {73-93},
+  number = {76},
+  date-added = {2011-04-19 15:20:13 +0200},
+  date-modified = {2011-04-19 15:22:37 +0200}
+}
+
+@TECHREPORT{FAPOrientationModel,
+  author = {Ralf Bornd{\"o}rfer and Andreas Eisenbl{\"a}tter and Martin Gr{\"o}tschel
+	and Alexander Martin},
+  title = {The Orientation Model for Frequency Assignment Problems},
+  institution = {Konrad-Zuse-Zentrum Berlin},
+  year = {1998},
+  bdsk-url-1 = {http://www.zib.de/Publications/Reports/TR-98-01.pdf},
+  bdsk-url-2 = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.134.1823},
+  citeseerurl = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.134.1823},
+  url = {http://www.zib.de/Publications/Reports/TR-98-01.pdf}
+}
+
+@INPROCEEDINGS{SwarmArt,
+  author = {Boyd, Jeffrey E. and Hushlak, Gerald and Jacob, Christian J.},
+  title = {SwarmArt: interactive art from swarm intelligence},
+  booktitle = {MULTIMEDIA '04: Proceedings of the 12th annual ACM international
+	conference on Multimedia},
+  year = {2004},
+  pages = {628--635},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1027527.1027674},
+  doi = {http://doi.acm.org/10.1145/1027527.1027674},
+  isbn = {1-58113-893-8},
+  location = {New York, NY, USA}
+}
+
+@ARTICLE{TabuCrewSchedulingProblem,
+  author = {L. Cavique and C. Rego and I. Themido},
+  title = {Subgraph Ejection Chains and Tabu Search for the Crew Scheduling
+	Problem},
+  journal = {The Journal of the Operational Research Society},
+  year = {1999},
+  volume = {50},
+  pages = {608-616},
+  owner = {william},
+  timestamp = {2010.05.22}
+}
+
+@ARTICLE{HumanPassiveGA,
+  author = {A. Chawla and S. Mukherjee and B. Karthikeyan},
+  title = {Characterization of human passive muscles for impact loads using
+	genetic algorithm and inverse finite element methods},
+  journal = {Biomechanics and Modeling in Mechanobiology},
+  year = {2009},
+  volume = {8},
+  pages = {67--76},
+  number = {1},
+  bdsk-url-1 = {http://www.springerlink.com/content/1J8061123NH3533H},
+  bdsk-url-2 = {http://dx.doi.org/10.1007/s10237-008-0121-6},
+  doi = {10.1007/s10237-008-0121-6},
+  owner = {william},
+  timestamp = {2010.06.14},
+  url = {http://www.springerlink.com/content/1J8061123NH3533H}
+}
+
+@ARTICLE{TSGlobalOptimization,
+  author = {Rachid Chelouah and Patrick Siarry},
+  title = {Tabu Search applied to global optimization},
+  journal = {European Journal of Operational Research},
+  year = {2000},
+  volume = {123},
+  pages = {256--270},
+  doi = {10.1016/S0377-2217(99)00255-6},
+  masid = {3834425}
+}
+
+@ARTICLE{SiteFAPWLAN,
+  author = {Jeremy K. Chen and Gustavo de Veciana and Theodore S. Rappaport},
+  title = {Site-Specific Knowledge and Interference Measurement for Improving
+	Frequency Allocatoins in Wireless Networks},
+  journal = {IEEE Transactions on Vehicular Technology},
+  year = {2009},
+  volume = {58},
+  pages = {2366-2376},
+  owner = {william},
+  timestamp = {2010.03.24}
+}
+
+@INPROCEEDINGS{ACOFlowShop,
+  author = {Ruey-Maw Chen and Shih-Tang Lo and Chung-Lun Wu and Tsung-Hung Lin},
+  title = {An effective ant colony optimization-based algorithm for flow shop
+	scheduling},
+  booktitle = {Soft Computing in Industrial Applications, 2008. SMCia '08. IEEE
+	Conference on},
+  year = {2008},
+  pages = {101 -106},
+  month = {june},
+  doi = {10.1109/SMCIA.2008.5045943},
+  keywords = {NP-hard sequencing scheduling problem;ant foraging behavior;combinatorial
+	optimization problem;flow shop scheduling problem;local search ant
+	colony optimization algorithm;meta-heuristic algorithm;probability;random
+	order state transition rule;combinatorial mathematics;flow shop scheduling;optimisation;probability;random
+	processes;search problems;}
+}
+
+@INPROCEEDINGS{BeeJobShop,
+  author = {Chong, Chin Soon and Sivakumar, Appa Iyer and Low, Malcolm Yoke Hean
+	and Gay, Kheng Leng},
+  title = {A bee colony optimization algorithm to job shop scheduling},
+  booktitle = {WSC '06: Proceedings of the 38th conference on Winter simulation},
+  year = {2006},
+  pages = {1954--1961},
+  publisher = {Winter Simulation Conference},
+  isbn = {1-4244-0501-7},
+  location = {Monterey, California}
+}
+
+@INPROCEEDINGS{ProblemDecompMIFAP,
+  author = {Colombo, G. and Allen, S.M.},
+  title = {Problem decomposition for minimum interference frequency assignment},
+  booktitle = {Evolutionary Computation, 2007. CEC 2007. IEEE Congress on},
+  year = {2007},
+  pages = {3492 -3499},
+  month = {sept.},
+  doi = {10.1109/CEC.2007.4424925},
+  keywords = {genetic algorithms;meta-heuristics;minimum interference frequency
+	assignment;problem decomposition approach;frequency allocation;genetic
+	algorithms;radiofrequency interference;}
+}
+
+@INPROCEEDINGS{TheoPraticalSA,
+  author = {Debudaj-Grabysz, Agnieszka and Czech, Zbigniew J.},
+  title = {Theoretical and practical issues of parallel simulated annealing},
+  booktitle = {PPAM'07: Proceedings of the 7th international conference on Parallel
+	processing and applied mathematics},
+  year = {2008},
+  pages = {189--198},
+  address = {Berlin, Heidelberg},
+  publisher = {Springer-Verlag},
+  isbn = {3-540-68105-1, 978-3-540-68105-2},
+  location = {Gdansk, Poland}
+}
+
+@ARTICLE{SIOPDenby,
+  author = {B. Denby and S. Le HŽgarat-Mascle},
+  title = {Swarm intelligence in optimisation problems},
+  journal = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators,
+	Spectrometers, Detectors and Associated Equipment},
+  year = {2003},
+  volume = {502},
+  pages = {364 - 368},
+  number = {2-3},
+  note = {Proceedings of the VIII International Workshop on Advanced Computing
+	and Analysis Techniques in Physics Research},
+  doi = {DOI: 10.1016/S0168-9002(03)00444-3},
+  issn = {0168-9002},
+  keywords = {Telecommunications},
+  url = {http://www.sciencedirect.com/science/article/pii/S0168900203004443}
+}
+
+@ARTICLE{ACOSurvey,
+  author = {Marco Dorigo and Christian Blum},
+  title = {Ant colony optimization theory: A survey},
+  journal = {Theoretical Computer Science},
+  year = {2005},
+  volume = {344},
+  pages = {243 - 278},
+  number = {2-3},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6V1G-4GSJTVN-2/2/2c61a7f14dd9850df1982ca35800c0d9},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.tcs.2005.05.020},
+  doi = {DOI: 10.1016/j.tcs.2005.05.020},
+  issn = {0304-3975},
+  keywords = {Ant colony optimization},
+  url = {http://www.sciencedirect.com/science/article/B6V1G-4GSJTVN-2/2/2c61a7f14dd9850df1982ca35800c0d9}
+}
+
+@ARTICLE{AntSurvey,
+  author = {Marco Dorigo and Christian Blum},
+  title = {Ant colony optimization theory: A survey},
+  journal = {Theoretical Computer Science},
+  year = {2005},
+  volume = {344},
+  pages = {243 - 278},
+  number = {2-3},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6V1G-4GSJTVN-2/2/2c61a7f14dd9850df1982ca35800c0d9},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.tcs.2005.05.020},
+  doi = {DOI: 10.1016/j.tcs.2005.05.020},
+  issn = {0304-3975},
+  keywords = {Ant colony optimization},
+  url = {http://www.sciencedirect.com/science/article/B6V1G-4GSJTVN-2/2/2c61a7f14dd9850df1982ca35800c0d9}
+}
+
+@ARTICLE{AntsAndStigmergy,
+  author = {Dorigo, Marco and Bonabeau, Eric and Theraulaz, Guy},
+  title = {Ant algorithms and stigmergy},
+  journal = {Future Gener. Comput. Syst.},
+  year = {2000},
+  volume = {16},
+  pages = {851--871},
+  number = {9},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  issn = {0167-739X},
+  publisher = {Elsevier Science Publishers B. V.}
+}
+
+@ARTICLE{TabuNurse,
+  author = {Dowsland, K A and Thompson, J M},
+  title = {Solving a nurse scheduling problem with knapsacks, networks and tabu
+	search},
+  journal = {J Oper Res Soc},
+  year = {2000},
+  volume = {51},
+  pages = {825--833},
+  number = {7},
+  month = {07},
+  bdsk-url-1 = {http://dx.doi.org/10.1057/palgrave.jors.2600970},
+  date = {2000/07/06/print},
+  date-added = {2011-05-05 10:14:16 +0200},
+  date-modified = {2011-05-05 10:14:16 +0200},
+  day = {06},
+  isbn = {0160-5682},
+  publisher = {Operational Research Society},
+  ty = {JOUR},
+  url = {http://dx.doi.org/10.1057/palgrave.jors.2600970}
+}
+
+@ARTICLE{DynamicFAP,
+  author = {Audrey Dupont and Andrea Carneiro Linhares and Christian Artigues
+	and Dominique Feillet and Philippe and Michel Vasquez},
+  title = {The Dynamic Frequency assignment problem},
+  journal = {European Journal of Operational Research},
+  year = {2009},
+  volume = {195},
+  pages = {75-88},
+  owner = {william},
+  timestamp = {2010.03.24}
+}
+
+@TECHREPORT{AndreasPaper,
+  author = {Andreas Eisenbl{\"a}tter},
+  title = {Assigning Frequencies in GSM Networks},
+  institution = {Konrad-Zuse-Zentrum f{\"u}r Informationstechnik Berlin (ZIB)},
+  year = {2001},
+  owner = {william},
+  timestamp = {2010.02.14}
+}
+
+@PHDTHESIS{Eisenblatter,
+  author = {Andreas Eisenbl{\"a}tter},
+  title = {Frequency Assignment in {GSM} Networks: {M}odels, Heuristics, and
+	Lower Bounds},
+  school = {Technische Universit{\"a}t Berlin},
+  year = {2001},
+  address = {Berlin, Germany},
+  bdsk-url-1 = {http://www.zib.de/bib/diss/},
+  file = {:/media/BAGGY_PANTS/Masters Research/Research/FAP Research/eisenblaetter-diss.pdf:PDF},
+  owner = {william},
+  timestamp = {2009.07.13},
+  url = {http://www.zib.de/bib/diss/}
+}
+
+@TECHREPORT{FAPRAMColouring,
+  author = {A. Eisenbl{\"a}tter and M. Gr{\"o}tschel and A. Martin},
+  title = {Frequency Planning and Rammifications of Colouring},
+  institution = {Konrad-Zuse-Zentrum fu Ìˆr Informationstechnik Berlin},
+  year = {2000},
+  date-added = {2011-04-22 10:50:52 +0200},
+  date-modified = {2011-04-22 11:00:26 +0200}
+}
+
+@CONFERENCE{EgyptFAPPSO,
+  author = {Elkamchouchi, H.M. and Elragal, H.M. and Makar, M.A.},
+  title = {Channel Assignment for Cellular Radio Using Particle Swarm Optimization},
+  booktitle = {Radio Science Conference, 2006. NRSC 2006. Proceedings of the Twenty
+	Third National},
+  year = {2006},
+  volume = {0},
+  pages = {1 -9},
+  month = {14-16},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/NRSC.2006.386364},
+  doi = {10.1109/NRSC.2006.386364},
+  keywords = {FEA strategy;NP-complete problem;PSO;benchmark problem;cellular radio
+	network;channel assignment;frequency exhaustive assignment;particle
+	swarm optimization;real number problem;cellular radio;channel allocation;frequency
+	allocation;particle swarm optimisation;}
+}
+
+@BOOK{CompuIntelligenceIntro,
+  title = {Computational Intelligence: An Introduction},
+  publisher = {Wiley Publishing},
+  year = {2007},
+  author = {Engelbrecht, Andries P.},
+  isbn = {0470035617}
+}
+
+@BOOK{FundamentalSwarm,
+  title = {Fundamentals of Computational Swarm Intelligence},
+  publisher = {John Wiley \& Sons},
+  year = {2006},
+  author = {Engelbrecht, Andries P.},
+  isbn = {0470091916}
+}
+
+@BOOK{WirelessDigitalCommunications,
+  title = {Wireless Digital Communications: Modulation \& Spread Sprectrum Applications},
+  publisher = {Prentice Hall},
+  year = {1995},
+  author = {Dr. Kamilo Feher},
+  owner = {william},
+  timestamp = {2011.04.25}
+}
+
+@INPROCEEDINGS{SelfControllingReactiveTabu,
+  author = {Fescioglu-Unver, N. and Kokar, M.M.},
+  title = {Application of Self Controlling Software Approach to Reactive Tabu
+	Search},
+  booktitle = {Self-Adaptive and Self-Organizing Systems, 2008. SASO '08. Second
+	IEEE International Conference on},
+  year = {2008},
+  pages = {297 -305},
+  month = {20-24},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/SASO.2008.16},
+  doi = {10.1109/SASO.2008.16},
+  keywords = {heuristic search;quadratic assignment problem;reactive tabu search;self
+	controlling software;heuristic programming;search problems;software
+	engineering;}
+}
+
+@INPROCEEDINGS{ABCFusionGrid,
+  author = {G\'{o}mez-Iglesias, Antonio and Vega-Rodr\'{\i}guez, Miguel A. and
+	Castej\'{o}n, Francisco and C\'{a}rdenas-Montes, Miguel and Morales-Ramos,
+	Enrique},
+  title = {Artificial Bee Colony Inspired Algorithm Applied to Fusion Research
+	in a Grid Computing Environment},
+  booktitle = {PDP '10: Proceedings of the 2010 18th Euromicro Conference on Parallel,
+	Distributed and Network-based Processing},
+  year = {2010},
+  pages = {508--512},
+  address = {Washington, DC, USA},
+  publisher = {IEEE Computer Society},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/PDP.2010.50},
+  doi = {http://dx.doi.org/10.1109/PDP.2010.50},
+  isbn = {978-0-7695-3939-3}
+}
+
+@ARTICLE{AntQAP,
+  author = {L. M. Gambardella and {{\'E}}D Taillard and M. Dorigo},
+  title = {Ant Colonies for the Quadratic Assignment Problem},
+  journal = {The Journal of the Operational Research Society},
+  year = {1999},
+  volume = {50},
+  pages = {167--176},
+  number = {2},
+  month = {Feb},
+  bdsk-url-1 = {http://www.jstor.org/stable/3010565},
+  owner = {william},
+  timestamp = {2010.06.20},
+  url = {http://www.jstor.org/stable/3010565}
+}
+
+@ARTICLE{DistributedHierarchicalGA,
+  author = {Garai, Gautam and Chaudhuri, B. B.},
+  title = {A distributed hierarchical genetic algorithm for efficient optimization
+	and pattern matching},
+  journal = {Pattern Recogn.},
+  year = {2007},
+  volume = {40},
+  pages = {212--228},
+  number = {1},
+  address = {New York, NY, USA},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/j.patcog.2006.04.023},
+  doi = {http://dx.doi.org/10.1016/j.patcog.2006.04.023},
+  issn = {0031-3203},
+  publisher = {Elsevier Science Inc.}
+}
+
+@ARTICLE{Glover89,
+  author = {Fred Glover},
+  title = {Tabu Search - Part I},
+  journal = {INFORMS Journal on Computing},
+  year = {1989},
+  volume = {1},
+  pages = {190-206},
+  number = {3},
+  bibsource = {DBLP, http://dblp.uni-trier.de},
+  ee = {http://dx.doi.org/10.1287/ijoc.1.3.190}
+}
+
+@BOOK{WirelessCommunications,
+  title = {Wireless Communications},
+  publisher = {Cambridge University Press},
+  year = {2005},
+  author = {Andrea Goldsmith},
+  owner = {william},
+  timestamp = {2011.04.25}
+}
+
+@BOOK{DataStructuresJava,
+  title = {Data Structures and Algorithms in Java},
+  publisher = {John Wiley \& Sons},
+  year = {2005},
+  author = {Goodrich, Michael T.},
+  isbn = {0471738840}
+}
+
+@ARTICLE{TabuCarryOver,
+  author = {Gopalakrishnan, Mohan and Ding, Ke and Bourjolly, Jean-Marie and
+	Mohan, Srimathy},
+  title = {A Tabu-Search Heuristic for the Capacitated Lot-Sizing Problem with
+	Set-up Carryover},
+  journal = {Manage. Sci.},
+  year = {2001},
+  volume = {47},
+  pages = {851--863},
+  number = {6},
+  address = {Institute for Operations Research and the Management Sciences (INFORMS),
+	Linthicum, Maryland, USA},
+  bdsk-url-1 = {http://dx.doi.org/10.1287/mnsc.47.6.851.9813},
+  doi = {http://dx.doi.org/10.1287/mnsc.47.6.851.9813},
+  issn = {0025-1909},
+  publisher = {INFORMS}
+}
+
+@ARTICLE{MultipleBinaryFAP,
+  author = {J.S Graham and R. Montemanni and J. N J. Moon and D. H. Smith},
+  title = {Frequency Assignment. multiple interference and binary constraints},
+  journal = {Wireless Networking},
+  year = {2008},
+  volume = {14},
+  pages = {449-464},
+  owner = {william},
+  timestamp = {2010.03.25}
+}
+
+@INBOOK{stigmergicoptimization,
+  chapter = {1},
+  pages = {1--24},
+  title = {Stigmergic optimization: inspiration, technologies and perspectives},
+  publisher = {Springer Berlin / Heidelberg},
+  year = {2006},
+  author = {Grosan, C. and Abraham, A.},
+  volume = {31},
+  series = {Studies in Computational Intelligence},
+  citeulike-article-id = {3225425},
+  citeulike-linkout-0 = {http://dx.doi.org/10.1007/978-3-540-34690-6\_1},
+  doi = {10.1007/978-3-540-34690-6\_1},
+  keywords = {aco, pso},
+  posted-at = {2008-09-11 14:01:02},
+  priority = {2},
+  url = {http://dx.doi.org/10.1007/978-3-540-34690-6\_1}
+}
+
+@ARTICLE{AcceleratingGA,
+  author = {H\"{a}m\"{a}l\"{a}inen, Timo and Klapuri, Harri and Saarinen, Jukka
+	and Ojala, Pekka and Kaski, Kimmo},
+  title = {Accelerating genetic algorithm computation in tree shaped parallel
+	computer},
+  journal = {J. Syst. Archit.},
+  year = {1996},
+  volume = {42},
+  pages = {19--36},
+  number = {1},
+  address = {New York, NY, USA},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/1383-7621(96)00009-4},
+  doi = {http://dx.doi.org/10.1016/1383-7621(96)00009-4},
+  issn = {1383-7621},
+  publisher = {Elsevier North-Holland, Inc.}
+}
+
+@ARTICLE{AntSwarmClustering,
+  author = {Julia Handl and Bernd Meyer},
+  title = {Ant-based and swarm-based clustering},
+  journal = {Swarm Intelligence},
+  year = {2007},
+  volume = {1},
+  pages = {95-113},
+  number = {2},
+  month = {December},
+  bdsk-url-1 = {http://www.springerlink.com/content/24512VW0LM80110Q},
+  bdsk-url-2 = {http://dx.doi.org/10.1007/s11721-007-0008-7},
+  doi = {10.1007/s11721-007-0008-7},
+  owner = {william},
+  timestamp = {2010.06.17},
+  url = {http://www.springerlink.com/content/24512VW0LM80110Q}
+}
+
+@ARTICLE{NonlinearGlobalTabu,
+  author = {{Abdel-rahman} Hedar and Masao Fukushima},
+  title = {Tabu Search directed by direct search methods for Nonlinear Global
+	Optimization},
+  journal = {European Journal of Operational Research},
+  year = {2006},
+  volume = {170},
+  pages = {329--349}
+}
+
+@ARTICLE{LowerPolarFAP,
+  author = {Alan Herz and David Schindl and Nicolas Zufferey},
+  title = {Lower bounding and tabu search procedures for the frequency assignment
+	problem with polarization constraints},
+  journal = {4OR: A Quarterly Journal of Operations Research},
+  year = {2005},
+  volume = {3},
+  pages = {139-161},
+  owner = {william},
+  timestamp = {2010.03.25}
+}
+
+@ARTICLE{ACOSingleMachine,
+  author = {Holthaus, O. and Rajendran, C.},
+  title = {A Fast Ant-Colony Algorithm for Single-Machine Scheduling to Minimize
+	the Sum of Weighted Tardiness of Jobs},
+  journal = {The Journal of the Operational Research Society},
+  year = {2005},
+  volume = {56},
+  pages = {pp. 947-953},
+  number = {8},
+  copyright = {Copyright © 2005 Operational Research Society},
+  issn = {01605682},
+  jstor_articletype = {research-article},
+  jstor_formatteddate = {Aug., 2005},
+  language = {English},
+  publisher = {Palgrave Macmillan Journals on behalf of the Operational Research
+	Society},
+  url = {http://www.jstor.org/stable/4102066}
+}
+
+@INPROCEEDINGS{SDMASatelite,
+  author = {Houssin, L. and Artigues, C. and Corbel, E.},
+  title = {Frequency allocation problem in a SDMA satellite communication system},
+  booktitle = {Computers Industrial Engineering, 2009. CIE 2009. International Conference
+	on},
+  year = {2009},
+  pages = {1599 -1604},
+  month = {6-9},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/ICCIE.2009.5223821},
+  doi = {10.1109/ICCIE.2009.5223821},
+  keywords = {FDMA;SDMA;TDMA;adaptive beamforming;communication channels;cumulative
+	interference constraints;dynamic beamforming;frequency allocation
+	problem;greedy allocation algorithms;integer linear programming;link
+	budget;radio resource sharing;resource allocation;satellite communication
+	system;terrestrial communication standards;array signal processing;frequency
+	allocation;greedy algorithms;linear programming;satellite communication;space
+	division multiple access;telecommunication channels;}
+}
+
+@MISC{FAPWeb,
+  author = {http://fap.zib.de/},
+  title = {FAP Web},
+  year = {2010},
+  owner = {william},
+  timestamp = {2010.03.25}
+}
+
+@ARTICLE{RealParameterGASA,
+  author = {Hwang, Shun-Fa and He, Rong-Song},
+  title = {Improving real-parameter genetic algorithm with simulated annealing
+	for engineering problems},
+  journal = {Adv. Eng. Softw.},
+  year = {2006},
+  volume = {37},
+  pages = {406--418},
+  number = {6},
+  address = {Oxford, UK, UK},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/j.advengsoft.2005.08.002},
+  doi = {http://dx.doi.org/10.1016/j.advengsoft.2005.08.002},
+  issn = {0965-9978},
+  publisher = {Elsevier Science Ltd.}
+}
+
+@ARTICLE{RadioFAP,
+  author = {Lhassane Idoumghar and Ren{{\'e}} Schott},
+  title = {Two Distributed Algorithms for the Frequency Assignment Problem in
+	the Field of Radio Broadcasting},
+  journal = {IEEE Transactions on Broadcasting},
+  year = {2009},
+  volume = {55},
+  pages = {223-229},
+  owner = {william},
+  timestamp = {2010.03.24}
+}
+
+@BOOK{GSMArchitectureProtocolsServices,
+  title = {GSM - Architecture, Protocols and Services},
+  publisher = {Wiley Publishing},
+  year = {2009},
+  author = {J. Ebersp{\"a}cher, H.-J. V{\"o}gel, C. Bettstetter and C. Hartmann},
+  edition = {Third},
+  owner = {william},
+  timestamp = {2011.04.05}
+}
+
+@ARTICLE{MultiObjTabu,
+  author = {D.M. Jaeggi and G.T. Parks and T. Kipouros and P.J. Clarkson},
+  title = {The development of a multi-objective Tabu Search algorithm for continuous
+	optimisation problems},
+  journal = {European Journal of Operational Research},
+  year = {2008},
+  volume = {185},
+  pages = {1192 - 1212},
+  number = {3},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6VCT-4M69JKG-6/2/f853818e3dbbb9b390c6b14de1d808bb},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.ejor.2006.06.048},
+  doi = {DOI: 10.1016/j.ejor.2006.06.048},
+  issn = {0377-2217},
+  keywords = {Tabu Search},
+  url = {http://www.sciencedirect.com/science/article/B6VCT-4M69JKG-6/2/f853818e3dbbb9b390c6b14de1d808bb}
+}
+
+@ARTICLE{HybridIntelliGA,
+  author = {A.A. Javadi and R. Farmani and T.P. Tan},
+  title = {A hybrid intelligent genetic algorithm},
+  journal = {Advanced Engineering Informatics},
+  year = {2005},
+  volume = {19},
+  pages = {255 - 262},
+  number = {4},
+  note = {Computing in Civil Engineering},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6X1X-4HCDTH9-2/2/cbf83cd94e09e329f40fa7f8b93825b8},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.aei.2005.07.003},
+  doi = {DOI: 10.1016/j.aei.2005.07.003},
+  issn = {1474-0346},
+  keywords = {Genetic algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6X1X-4HCDTH9-2/2/cbf83cd94e09e329f40fa7f8b93825b8}
+}
+
+@ARTICLE{AdaptiveSAGA,
+  author = {Il-kwon Jeong and Ju-jang Lee},
+  title = {Adaptive simulated annealing genetic algorithm for system identification},
+  journal = {Engineering Applications of Artificial Intelligence},
+  year = {1996},
+  volume = {9},
+  pages = {523 - 532},
+  number = {5},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6V2M-3WC4CC5-5/2/7a00b8f29ed3dc1da0dd7d196dccf2e0},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/0952-1976(96)00049-8},
+  doi = {DOI: 10.1016/0952-1976(96)00049-8},
+  issn = {0952-1976},
+  keywords = {Genetic algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6V2M-3WC4CC5-5/2/7a00b8f29ed3dc1da0dd7d196dccf2e0}
+}
+
+@INPROCEEDINGS{TabuParameterization,
+  author = {Jovanoski, I. and Chorbev, I. and Mihajlov, D. and Dimitrovski, I.},
+  title = {Tabu Search Parameterization and Implementation in a Constraint Programming
+	Library},
+  booktitle = {EUROCON, 2007. The International Conference on Computer as a Tool},
+  year = {2007},
+  pages = {459 -464},
+  month = {9-12},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/EURCON.2007.4400499},
+  doi = {10.1109/EURCON.2007.4400499},
+  keywords = {C# based multithreaded Tabu search parameterization;constraint programming
+	library;constraint satisfaction problem;constraint solving engine;memory
+	structure;metaheuristic search procedure;traveling salesman problem;constraint
+	handling;data structures;mathematics computing;multi-threading;object-oriented
+	programming;search problems;software libraries;travelling salesman
+	problems;}
+}
+
+@ARTICLE{PSOPheromones,
+  author = {Vijay Kalivarapu and Jung-Leng Foo and Eliot Winer},
+  title = {Improving solution characteristics of particle swarm optimization
+	using digital pheromones},
+  journal = {Structural and Multidisciplinary Optimization},
+  year = {2009},
+  volume = {37},
+  pages = {415 -- 427},
+  bdsk-url-1 = {http://dx.doi.org/10.1007/s00158-008-0240-9},
+  doi = {10.1007/s00158-008-0240-9},
+  owner = {william},
+  timestamp = {2010.06.29}
+}
+
+@ARTICLE{ABCCompareStudy,
+  author = {Dervis Karaboga and Bahriye Akay},
+  title = {A comparative study of Artificial Bee Colony algorithm},
+  journal = {Applied Mathematics and Computation},
+  year = {2009},
+  volume = {214},
+  pages = {108 - 132},
+  number = {1},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6TY8-4W211Y3-1/2/f92b8a34ede7a7e7a24cb2b0834e7c33},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.amc.2009.03.090},
+  doi = {DOI: 10.1016/j.amc.2009.03.090},
+  issn = {0096-3003},
+  keywords = {Swarm intelligence},
+  url = {http://www.sciencedirect.com/science/article/B6TY8-4W211Y3-1/2/f92b8a34ede7a7e7a24cb2b0834e7c33}
+}
+
+@ARTICLE{PerfABC,
+  author = {Karaboga, D. and Basturk, B.},
+  title = {On the performance of artificial bee colony (ABC) algorithm},
+  journal = {Appl. Soft Comput.},
+  year = {2008},
+  volume = {8},
+  pages = {687--697},
+  month = {January},
+  acmid = {1290658},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  doi = {http://dx.doi.org/10.1016/j.asoc.2007.05.007},
+  issn = {1568-4946},
+  issue = {1},
+  keywords = {ABC, Bee colony algorithm, DE, EA, Numerical optimization, PSO, Swarm
+	intelligence},
+  numpages = {11},
+  publisher = {Elsevier Science Publishers B. V.},
+  url = {http://dx.doi.org/10.1016/j.asoc.2007.05.007}
+}
+
+@ARTICLE{ABCNumericalOptimization,
+  author = {Karaboga, Dervis and Basturk, Bahriye},
+  title = {A powerful and efficient algorithm for numerical function optimization:
+	artificial bee colony (ABC) algorithm},
+  journal = {J. of Global Optimization},
+  year = {2007},
+  volume = {39},
+  pages = {459--471},
+  number = {3},
+  address = {Hingham, MA, USA},
+  bdsk-url-1 = {http://dx.doi.org/10.1007/s10898-007-9149-x},
+  doi = {http://dx.doi.org/10.1007/s10898-007-9149-x},
+  issn = {0925-5001},
+  publisher = {Kluwer Academic Publishers}
+}
+
+@ARTICLE{numericalABC,
+  author = {Karaboga, Dervis and Basturk, Bahriye},
+  title = {A powerful and efficient algorithm for numerical function optimization:
+	artificial bee colony (ABC) algorithm},
+  journal = {J. of Global Optimization},
+  year = {2007},
+  volume = {39},
+  pages = {459--471},
+  month = {November},
+  acmid = {1296021},
+  address = {Hingham, MA, USA},
+  doi = {10.1007/s10898-007-9149-x},
+  issn = {0925-5001},
+  issue = {3},
+  keywords = {Artificial bee colony, Genetic algorithm, Numerical function optimization,
+	Particle swarm inspired evolutionary algorithm, Particle swarm optimization,
+	Swarm intelligence},
+  numpages = {13},
+  publisher = {Kluwer Academic Publishers},
+  url = {http://portal.acm.org/citation.cfm?id=1295970.1296021}
+}
+
+@ARTICLE{ContinACSTS,
+  author = {Karimi, Akbar and Nobahari, Hadi and Siarry, Patrick},
+  title = {Continuous ant colony system and tabu search algorithms hybridized
+	for global minimization of continuous multi-minima functions},
+  journal = {Comput. Optim. Appl.},
+  year = {2010},
+  volume = {45},
+  pages = {639--661},
+  month = {April},
+  acmid = {1743512},
+  address = {Norwell, MA, USA},
+  doi = {http://dx.doi.org/10.1007/s10589-008-9176-7},
+  issn = {0926-6003},
+  issue = {3},
+  keywords = {Ant colony optimization, Continuous optimization, Global optimization,
+	Hybrid meta-heuristics, Tabu search},
+  numpages = {23},
+  publisher = {Kluwer Academic Publishers},
+  url = {http://dx.doi.org/10.1007/s10589-008-9176-7}
+}
+
+@INPROCEEDINGS{TempCyclingSA,
+  author = {Sergio Ledesma and Miguel Torres and Donato Hern{{\'a}}ndez and Gabriel
+	Avi{{\~n}}a and Guadalupe Garc{{\'\i}}a},
+  title = {Temperature Cycling on Simulated Annealing for Neural Network Learning},
+  booktitle = {MICAI 2007: Advances in Artificial Intelligence},
+  year = {2007},
+  pages = {161-171},
+  bdsk-url-1 = {http://www.springerlink.com/content/H05858112434461X},
+  bdsk-url-2 = {http://dx.doi.org/10.1007/978-3-540-76631-5_16},
+  doi = {10.1007/978-3-540-76631-5_16},
+  owner = {william},
+  timestamp = {2010.06.06},
+  url = {http://www.springerlink.com/content/H05858112434461X}
+}
+
+@ARTICLE{WeaponTargetACO,
+  author = {Zne-Jung Lee and Chou-Yuan Lee and Shun-Feng Su},
+  title = {An immunity-based ant colony optimization algorithm for solving weapon-target
+	assignment problem},
+  journal = {Applied Soft Computing},
+  year = {2002},
+  volume = {2},
+  pages = {39 - 47},
+  number = {1},
+  doi = {DOI: 10.1016/S1568-4946(02)00027-3},
+  issn = {1568-4946},
+  keywords = {Ant colony optimization},
+  url = {http://www.sciencedirect.com/science/article/pii/S1568494602000273}
+}
+
+@ARTICLE{PSOAttractRepulse,
+  author = {Lenin, K. and M.R. Mohan},
+  title = {Attractive and Repulsive Particle Swarm Optimization for Reactive
+	Power Optimization},
+  journal = {Journal of Engineering and Applied Sciences},
+  year = {2006},
+  volume = {1},
+  pages = {288-292},
+  number = {4},
+  bdsk-url-1 = {http://medwelljournals.com/abstract/?doi=jeasci.2006.288.292},
+  bdsk-url-2 = {http://dx.doi.org/10.3923/jeasci.2006.288.292},
+  doi = {10.3923/jeasci.2006.288.292},
+  owner = {william},
+  timestamp = {2010.06.30},
+  url = {http://medwelljournals.com/abstract/?doi=jeasci.2006.288.292}
+}
+
+@INPROCEEDINGS{MobileRobotSA,
+  author = {Liang, Yuming and Xu, Lihong},
+  title = {Mobile robot global path planning using hybrid modified simulated
+	annealing optimization algorithm},
+  booktitle = {GEC '09: Proceedings of the first ACM/SIGEVO Summit on Genetic and
+	Evolutionary Computation},
+  year = {2009},
+  pages = {309--314},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1543834.1543876},
+  doi = {http://doi.acm.org/10.1145/1543834.1543876},
+  isbn = {978-1-60558-326-6},
+  location = {Shanghai, China}
+}
+
+@INPROCEEDINGS{ABCReconfigDistro,
+  author = {Nguyen Tung Linh and Nguyen Quynh Anh},
+  title = {Application Artificial Bee Colony Algorithm (ABC) for Reconfiguring
+	Distribution Network},
+  booktitle = {Computer Modeling and Simulation, 2010. ICCMS '10. Second International
+	Conference on},
+  year = {2010},
+  volume = {1},
+  pages = {102 -106},
+  month = {22-24},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/ICCMS.2010.306},
+  doi = {10.1109/ICCMS.2010.306},
+  keywords = {artificial bee colony algorithm;distribution system loss minimization
+	problem;power loss reduction;power systems;reconfiguring distribution
+	network;sectionalizing switch;distribution networks;minimisation;power
+	system management;}
+}
+
+@ARTICLE{ChaoticSwarmIntel,
+  author = {Hongbo Liu and Ajith Abraham and Maurice Clerc},
+  title = {Chaotic dynamic characteristics in swarm intelligence},
+  journal = {Applied Soft Computing},
+  year = {2007},
+  volume = {7},
+  pages = {1019 - 1026},
+  number = {3},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6W86-4MBCJGH-1/2/9d94238915c2fbf9ea3b01f3b9f12bbf},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.asoc.2006.10.006},
+  doi = {DOI: 10.1016/j.asoc.2006.10.006},
+  issn = {1568-4946},
+  keywords = {Swarm intelligence},
+  url = {http://www.sciencedirect.com/science/article/B6W86-4MBCJGH-1/2/9d94238915c2fbf9ea3b01f3b9f12bbf}
+}
+
+@ARTICLE{MISatelite,
+  author = {Wen Liu and Haixiang Shi and Lipo Wang},
+  title = {Minimizing Interference in Satellite Communications Using Chaotic
+	Neural Networks},
+  journal = {Natural Computation, 2007. ICNC 2007. Third International Conference
+	on},
+  year = {2007},
+  volume = {2},
+  pages = {441 -444},
+  month = {aug.},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/ICNC.2007.473},
+  doi = {10.1109/ICNC.2007.473},
+  keywords = {cochannel interference;frequency assignment problem;minimizing interference;satellite
+	communications;satellite systems;transiently chaotic neural networks;chaotic
+	communication;cochannel interference;inference mechanisms;neural
+	nets;satellite communication;telecommunication computing;}
+}
+
+@INPROCEEDINGS{ACOvsEA,
+  author = {Luna, Francisco and Blum, Christian and Alba, Enrique and Nebro,
+	Antonio J.},
+  title = {ACO vs EAs for solving a real-world frequency assignment problem
+	in GSM networks},
+  booktitle = {GECCO '07: Proceedings of the 9th annual conference on Genetic and
+	evolutionary computation},
+  year = {2007},
+  pages = {94--101},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1276958.1276972},
+  doi = {http://doi.acm.org/10.1145/1276958.1276972},
+  file = {:/media/BAGGY_PANTS/Masters Research/Research/Read/FAP/ACO vs EAs for solving a real-world frequency assignment problem in GSM networks.pdf:PDF},
+  isbn = {978-1-59593-697-4},
+  location = {London, England}
+}
+
+@INPROCEEDINGS{MetaGraph,
+  author = {Mahmoudzadeh, H. and Eshghi, K.},
+  title = {A Metaheuristic Approach to the Graceful Labeling Problem of Graphs},
+  booktitle = {Swarm Intelligence Symposium, 2007. SIS 2007. IEEE},
+  year = {2007},
+  pages = {84 -91},
+  month = {1-5},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/SIS.2007.368030},
+  doi = {10.1109/SIS.2007.368030},
+  keywords = {ant colony optimization;graceful labeling problem;graphs;metaheuristic
+	approach;graph theory;optimisation;}
+}
+
+@INPROCEEDINGS{ClusterSA,
+  author = {Mallela, S. and Grover, L.K.},
+  title = {Clustering based simulated annealing for standard cell placement},
+  booktitle = {Design Automation Conference, 1988. Proceedings., 25th ACM/IEEE},
+  year = {1988},
+  pages = {312 -317},
+  month = {12-15},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/DAC.1988.14776},
+  doi = {10.1109/DAC.1988.14776},
+  keywords = {CPU time;LTX2 VLSI layout system;clustering based simulated annealing;interconnections;optimisation
+	technique;simulated annealing;standard cell placement;wire length;annealing;circuit
+	layout CAD;digital simulation;electrical engineering computing;integrated
+	circuit technology;optimisation;}
+}
+
+@TECHREPORT{ExactMIFAP,
+  author = {Vittoria Maniezzo and Roberto Montemanni},
+  title = {An Exact Algorithm for the Min-Interference Frequency Assignment
+	Problem},
+  institution = {Department of Computer Science, University of Bologna},
+  year = {2000},
+  bdsk-url-1 = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.3898},
+  citeseerurl = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.43.3898},
+  owner = {william},
+  timestamp = {2010.03.25}
+}
+
+@TECHREPORT{SolvingSuperIntervalGraphs,
+  author = {Carlo Mannino and Gianpaolo Oriolo},
+  title = {Solving Stability Problems on a Superclass of Interval Graphs},
+  institution = {Centro Vito Volterra},
+  year = {2002},
+  owner = {william},
+  timestamp = {2011.05.09}
+}
+
+@INPROCEEDINGS{HybridABCClustering,
+  author = {Marinakis, Y. and Marinaki, M. and Matsatsinis, N.},
+  title = {A hybrid discrete Artificial Bee Colony - GRASP algorithm for clustering},
+  booktitle = {Computers Industrial Engineering, 2009. CIE 2009. International Conference
+	on},
+  year = {2009},
+  pages = {548 -553},
+  month = {6-9},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/ICCIE.2009.5223810},
+  doi = {10.1109/ICCIE.2009.5223810},
+  keywords = {GRASP algorithm;UCI Machine Learning Repository;ant colony optimization;artificial
+	bee colony optimization algorithm;clustering;feature selection problem;genetic
+	algorithm;greedy randomized adaptive search procedure;honey bees
+	mating optimization algorithm;hybrid discrete artificial bee colony;particle
+	swarm optimization;tabu search;genetic algorithms;greedy algorithms;particle
+	swarm optimisation;pattern clustering;search problems;}
+}
+
+@BOOK{GSMSysEngin,
+  title = {GSM System Engineering},
+  publisher = {Arteh House, Inc},
+  year = {1997},
+  author = {Asha Mehrotra},
+  owner = {william},
+  timestamp = {2009.08.08}
+}
+
+@INPROCEEDINGS{Self-AdaptiveMeta,
+  author = {Meignan, David and Cr\'{e}put, Jean-Charles and Koukam, Abderrafiaa},
+  title = {A cooperative and self-adaptive metaheuristic for the facility location
+	problem},
+  booktitle = {GECCO '09: Proceedings of the 11th Annual conference on Genetic and
+	evolutionary computation},
+  year = {2009},
+  pages = {317--324},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1569901.1569946},
+  doi = {http://doi.acm.org/10.1145/1569901.1569946},
+  isbn = {978-1-60558-325-9},
+  location = {Montreal, Qu\'{e}bec, Canada}
+}
+
+@INPROCEEDINGS{SweepMeta,
+  author = {Mejtsky, George Jiri},
+  title = {The improved sweep metaheuristic for simulation optimization and
+	application to job shop scheduling},
+  booktitle = {WSC '08: Proceedings of the 40th Conference on Winter Simulation},
+  year = {2008},
+  pages = {731--739},
+  publisher = {Winter Simulation Conference},
+  isbn = {978-1-4244-2708-6},
+  location = {Miami, Florida}
+}
+
+@INPROCEEDINGS{NewSAs,
+  author = {Mendonca, P.R.S. and Caloba, L.P.},
+  title = {New simulated annealing algorithms},
+  booktitle = {Circuits and Systems, 1997. ISCAS '97., Proceedings of 1997 IEEE
+	International Symposium on},
+  year = {1997},
+  volume = {3},
+  pages = {1668 -1671 vol.3},
+  month = {9-12},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/ISCAS.1997.621454},
+  doi = {10.1109/ISCAS.1997.621454},
+  keywords = {D-dimensional density probability functions;adaptive algorithm;cooling
+	schedule;global minima points;initial convergence speed;nFSA;simulated
+	annealing algorithms;convergence of numerical methods;probability;simulated
+	annealing;}
+}
+
+@BOOK{GSM92,
+  title = {The GSM System for Mobile Communications},
+  publisher = {Cell \& Sys},
+  year = {1992},
+  author = {Michel Mouly, Marie-Bernadette Pautet},
+  owner = {william},
+  timestamp = {2009.07.22}
+}
+
+@MISC{TestFunctions,
+  author = {M. Molga and C. Smutnicki},
+  title = {Test functions for optimization needs},
+  year = {2005},
+  owner = {william},
+  timestamp = {2011.06.12},
+  url = {http://www.zsd.ict.pwr.wroc.pl/files/docs/functions.pdf}
+}
+
+@INPROCEEDINGS{adaptPSO,
+  author = {Monson,, Christopher K. and Seppi,, Kevin D.},
+  title = {Adaptive diversity in PSO},
+  booktitle = {GECCO '06: Proceedings of the 8th annual conference on Genetic and
+	evolutionary computation},
+  year = {2006},
+  pages = {59--66},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://0-doi.acm.org.ujlink.uj.ac.za:80/10.1145/1143997.1144006},
+  doi = {http://0-doi.acm.org.ujlink.uj.ac.za:80/10.1145/1143997.1144006},
+  file = {:/media/BAGGY_PANTS/Masters/Research/Read/Adaptive Diversity in PSO.pdf:PDF},
+  isbn = {1-59593-186-4},
+  location = {Seattle, Washington, USA}
+}
+
+@PHDTHESIS{MontemanniThesis,
+  author = {Montemanni, Roberto},
+  title = {Upper and Lower bounds for the fixed spectrum frequency assignment
+	problem},
+  school = {School of Tecnology, University of Glamorgan},
+  year = {2001},
+  owner = {william},
+  timestamp = {2010.03.24}
+}
+
+@ARTICLE{TabuMontemanniSmith,
+  author = {Montemanni, Roberto and Smith, Derek H.},
+  title = {Heuristic manipulation, tabu search and frequency assignment},
+  journal = {Comput. Oper. Res.},
+  year = {2008},
+  volume = {37},
+  pages = {543--551},
+  number = {3},
+  address = {Oxford, UK, UK},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/j.cor.2008.08.006},
+  doi = {http://dx.doi.org/10.1016/j.cor.2008.08.006},
+  issn = {0305-0548},
+  publisher = {Elsevier Science Ltd.}
+}
+
+@INPROCEEDINGS{PSOPESO,
+  author = {Mu\, {n}oz Zavala, Angel E. and Aguirre, Arturo Hern\'{a}ndez and
+	Villa Diharce, Enrique R.},
+  title = {Constrained optimization via particle evolutionary swarm optimization
+	algorithm (PESO)},
+  booktitle = {GECCO '05: Proceedings of the 2005 conference on Genetic and evolutionary
+	computation},
+  year = {2005},
+  pages = {209--216},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1068009.1068041},
+  doi = {http://doi.acm.org/10.1145/1068009.1068041},
+  isbn = {1-59593-010-8},
+  location = {Washington DC, USA}
+}
+
+@BOOK{wirelesstelcoMullet,
+  title = {Wireless telecommunications systems and networks},
+  publisher = {Thomsan Delmar Learning},
+  year = {2006},
+  author = {Garry Mullet},
+  owner = {william},
+  timestamp = {2009.09.20}
+}
+
+@ARTICLE{CombinedBranchBoundGA,
+  author = {Amit Nagar and Sunderesh S. Heragu and Jorge Haddock},
+  title = {A combined branch-and-bound and genetic algorithm based approach
+	for a flowshop scheduling problem},
+  journal = {Annals of Operations Research},
+  year = {1996},
+  volume = {63},
+  pages = {397--414},
+  number = {3},
+  month = {June},
+  bdsk-url-1 = {http://www.springerlink.com/content/TQH4417L16381R67},
+  bdsk-url-2 = {http://dx.doi.org/10.1007/BF02125405},
+  doi = {10.1007/BF02125405},
+  owner = {william},
+  timestamp = {2010.06.14},
+  url = {http://www.springerlink.com/content/TQH4417L16381R67}
+}
+
+@INPROCEEDINGS{VeryFastSAImageEnchancement,
+  author = {Natrajan, B. and Rosen, B.E.},
+  title = {Image enhancement using very fast simulated reannealing},
+  booktitle = {Image Analysis and Interpretation, 1996., Proceedings of the IEEE
+	Southwest Symposium on},
+  year = {1996},
+  pages = {230 -235},
+  month = {8-9},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/IAI.1996.493758},
+  doi = {10.1109/IAI.1996.493758},
+  keywords = {Cauchy annealing algorithm;VFSR algorithm;convergence;image enhancement;noise
+	corrupted image;piecewise constant image enhancement;random greedy
+	algorithm;random greedy search algorithm;very fast simulated reannealing;image
+	enhancement;noise;piecewise constant techniques;search problems;simulated
+	annealing;}
+}
+
+@INPROCEEDINGS{ChaosSA,
+  author = {Lin Ni and Hong-Ying Zheng},
+  title = {An Unsupervised Intrusion Detection Method Combined Clustering with
+	Chaos Simulated Annealing},
+  booktitle = {Machine Learning and Cybernetics, 2007 International Conference on},
+  year = {2007},
+  volume = {6},
+  pages = {3217 -3222},
+  month = {19-22},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/ICMLC.2007.4370702},
+  doi = {10.1109/ICMLC.2007.4370702},
+  keywords = {chaos simulated annealing algorithm;computer networks security; hardware
+	failures;malicious attacks; near-optimal partitioning clustering;
+	optimization technique;software flaws;tentative probing; unsupervised
+	clustering intrusion detection method;chaos;computer networks;pattern
+	clustering; security of data;simulated annealing;telecommunication
+	security;}
+}
+
+@ARTICLE{TabuCSP,
+  author = {Koji Nonobe and Toshihide Ibaraki},
+  title = {A tabu search approach to the constraint satisfaction problem as
+	a general problem solver},
+  journal = {European Journal of Operational Research},
+  year = {1998},
+  volume = {106},
+  pages = {599 - 623},
+  number = {2-3},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6VCT-3V7B1NM-V/2/a49ab58d0eff599cf403127692efbd88},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/S0377-2217(97)00294-4},
+  doi = {DOI: 10.1016/S0377-2217(97)00294-4},
+  issn = {0377-2217},
+  keywords = {Combinatorial problems},
+  url = {http://www.sciencedirect.com/science/article/B6VCT-3V7B1NM-V/2/a49ab58d0eff599cf403127692efbd88}
+}
+
+@ARTICLE{TabuSingleMachineScheduling,
+  author = {E. Nowicki and S. Zdrzalka},
+  title = {Single Machine Scheduling with Major and Minor Setup Times - A Tabu
+	Search Approach},
+  journal = {The Journal of the Operational Research Society},
+  year = {1996},
+  volume = {47},
+  pages = {1054-1064},
+  owner = {william},
+  timestamp = {2010.05.22}
+}
+
+@ARTICLE{SOSwarm,
+  author = {O\&\#x2019;Neill, Michael and Brabazon, Anthony},
+  title = {Self-organising swarm (SOSwarm)},
+  journal = {Soft Comput.},
+  year = {2008},
+  volume = {12},
+  pages = {1073--1080},
+  number = {11},
+  address = {Berlin, Heidelberg},
+  bdsk-url-1 = {http://dx.doi.org/10.1007/s00500-007-0274-8},
+  doi = {http://dx.doi.org/10.1007/s00500-007-0274-8},
+  issn = {1432-7643},
+  publisher = {Springer-Verlag}
+}
+
+@ARTICLE{DynamicPenaltyGA,
+  author = {W. Paszkowicz},
+  title = {Properties of a genetic algorithm equipped with a dynamic penalty
+	function},
+  journal = {Computational Materials Science},
+  year = {2009},
+  volume = {45},
+  pages = {77 - 83},
+  number = {1},
+  note = {Selected papers from the E-MRS 2007 Fall Meeting Symposium G: Genetic
+	Algorithms in Materials Science and Engineering - GAMS-2007},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6TWM-4TBVPR9-1/2/a28c3e406810322628ed4caca0cff120},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.commatsci.2008.04.033},
+  doi = {DOI: 10.1016/j.commatsci.2008.04.033},
+  issn = {0927-0256},
+  keywords = {Genetic algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6TWM-4TBVPR9-1/2/a28c3e406810322628ed4caca0cff120}
+}
+
+@BOOK{GSMSecurInTeleNetwork,
+  title = {Security for Telecommunications Networks},
+  publisher = {Springer US},
+  year = {2008},
+  author = {Patrick Traynor, Patrick McDaniel, Thomas La Porta},
+  volume = {40},
+  series = {Advances in Information Security},
+  bdsk-url-1 = {http://dx.doi.org/10.1007/978-0-387-72442-3},
+  doi = {10.1007/978-0-387-72442-3},
+  owner = {william},
+  timestamp = {2009.08.16}
+}
+
+@INPROCEEDINGS{PatternDetectionGA,
+  author = {Pedro Pereira and Fernando Silva and Nuno A. Fonseca},
+  title = {BIORED - A Genetic Algorithm for Pattern Detection in Biosequences},
+  booktitle = {2nd International Workshop on Practical Applications of Computational
+	Biology and Bioinformatics (IWPACBB 2008)},
+  year = {2009},
+  pages = {156--165},
+  bdsk-url-1 = {http://www.springerlink.com/content/63677255251356N3},
+  bdsk-url-2 = {http://dx.doi.org/10.1007/978-3-540-85861-4_19},
+  doi = {10.1007/978-3-540-85861-4_19},
+  owner = {william},
+  timestamp = {2010.06.15},
+  url = {http://www.springerlink.com/content/63677255251356N3}
+}
+
+@ARTICLE{GATSP,
+  author = {Jean-Yves Potvin},
+  title = {Genetic algorithms for the traveling salesman problem},
+  journal = {Annals of Operations Research},
+  year = {1996},
+  volume = {63},
+  pages = {337--370},
+  bdsk-url-1 = {http://www.springerlink.com/content/J13214073H2808K0},
+  bdsk-url-2 = {http://dx.doi.org/10.1007/BF02125403},
+  doi = {10.1007/BF02125403},
+  owner = {william},
+  timestamp = {2010.06.14},
+  url = {http://www.springerlink.com/content/J13214073H2808K0}
+}
+
+@ARTICLE{VariousCoolingSA,
+  author = {Nilesh B. Prajapati and Rupal R. Agravat and Mosin I. Hasan},
+  title = {Comparative Study of Various Cooling Schedules for Location Area
+	Planning in Cellular Networks Using Simulated Annealing},
+  journal = {Networks \& Communications, International Conference on},
+  year = {2009},
+  volume = {0},
+  pages = {146-150},
+  address = {Los Alamitos, CA, USA},
+  bdsk-url-1 = {http://doi.ieeecomputersociety.org/10.1109/NetCoM.2009.60},
+  doi = {http://doi.ieeecomputersociety.org/10.1109/NetCoM.2009.60},
+  isbn = {978-0-7695-3924-9},
+  publisher = {IEEE Computer Society}
+}
+
+@ARTICLE{TabuRCAProblem,
+  author = {Abraham P. Punnen and Y. P. Aneja},
+  title = {A Tabu Search Algorithm for the Resource-Constrained Assignment Problem},
+  journal = {The Journal of the Operational Research Society},
+  year = {1995},
+  volume = {46},
+  pages = {214-220},
+  number = {2},
+  month = {Feb},
+  bdsk-url-1 = {http://www.jstor.org/stable/2583990},
+  owner = {william},
+  timestamp = {2010.05.21},
+  url = {http://www.jstor.org/stable/2583990}
+}
+
+@ARTICLE{PSOSelfHierarch,
+  author = {Ratnaweera, A. and Halgamuge, S.K. and Watson, H.C.},
+  title = {Self-organizing hierarchical particle swarm optimizer with time-varying
+	acceleration coefficients},
+  journal = {Evolutionary Computation, IEEE Transactions on},
+  year = {2004},
+  volume = {8},
+  pages = {240 - 255},
+  number = {3},
+  month = {june},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/TEVC.2004.826071},
+  doi = {10.1109/TEVC.2004.826071},
+  issn = {1089-778X},
+  keywords = {internal combustion spark ignition engines; parameter automation strategy;
+	parameter estimation; self-organizing hierarchical particle swarm
+	optimizer; time-varying acceleration coefficients; time-varying inertia
+	weight factor; optimisation; parameter estimation;}
+}
+
+@BOOK{IntroToGSM,
+  title = {An Introduction to GSM},
+  publisher = {Artech House Publishers},
+  year = {1995},
+  author = {Siegmund M. Redl and Matthia K. Weber and Malcolm W. Oliphant},
+  owner = {william},
+  timestamp = {2011.04.25}
+}
+
+@ARTICLE{RandomNumberGA,
+  author = {Andrea Reese},
+  title = {Random number generators in genetic algorithms for unconstrained
+	and constrained optimization},
+  journal = {Nonlinear Analysis: Theory, Methods \& Applications},
+  year = {2009},
+  volume = {71},
+  pages = {e679 - e692},
+  number = {12},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6V0Y-4TYR04X-6/2/b26a68c944f89dfb979a908d50596160},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.na.2008.11.084},
+  doi = {DOI: 10.1016/j.na.2008.11.084},
+  issn = {0362-546X},
+  keywords = {Genetic algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6V0Y-4TYR04X-6/2/b26a68c944f89dfb979a908d50596160}
+}
+
+@ARTICLE{ConstrainedGA,
+  author = {D. J. Reid},
+  title = {Genetic algorithms in constrained optimization},
+  journal = {Mathematical and Computer Modelling},
+  year = {1996},
+  volume = {23},
+  pages = {87 - 111},
+  number = {5},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6V0V-3VSNGMY-1C/2/2fddf7337e38ddc5458bc22e8cf56e2a},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/0895-7177(96)00014-3},
+  doi = {DOI: 10.1016/0895-7177(96)00014-3},
+  issn = {0895-7177},
+  keywords = {Discrete optimization},
+  url = {http://www.sciencedirect.com/science/article/B6V0V-3VSNGMY-1C/2/2fddf7337e38ddc5458bc22e8cf56e2a}
+}
+
+@TECHREPORT{ARPSO,
+  author = {J. Riget and J.S. Vesterstr¿m},
+  title = {A Diversity-Guided Particle Swarm Optimizer - the ARPSO},
+  institution = {Aarhus Universitet},
+  year = {2002}
+}
+
+@ARTICLE{MSFAP,
+  author = {Angelos N. Rouskas and Michael G. Kazantzakis and Miltiades E. Anagnostou},
+  title = {Minimizing of Frequency Assignment Span in Cellular Networks},
+  journal = {IEEE Transactions on Vehicular Technology},
+  year = {1999},
+  volume = {48},
+  pages = {873-882},
+  owner = {william},
+  timestamp = {2010.03.25}
+}
+
+@BOOK{AIModernApproach,
+  title = {Artificial Intelligence A Modern Approach},
+  publisher = {Prentice Hall},
+  year = {2003},
+  author = {Stuart Russel and Peter Norvig},
+  edition = {Second},
+  owner = {william},
+  timestamp = {2011.04.18}
+}
+
+@ARTICLE{InterferenceOrientatedFAP,
+  author = {S. Kotrotsos, G. Kotsakis, P. Demestichas E. Tzifa and V. Demesticha},
+  title = {Forumlation and Computationally Efficient Algirithms for an Interference-Orientated
+	Version of the Frequency Assignment Problem},
+  journal = {Wireless Personal Communications},
+  year = {2001},
+  volume = {18},
+  pages = {289-317},
+  owner = {william},
+  timestamp = {2010.02.14}
+}
+
+@ARTICLE{CoactiveFuzzyGA,
+  author = {Mohsen Saemi and Morteza Ahmadi},
+  title = {Integration of genetic algorithm and a coactive neuro-fuzzy inference
+	system for permeability prediction from well logs data},
+  journal = {Transport in Porous Media},
+  year = {2008},
+  volume = {71},
+  pages = {273--288},
+  number = {3},
+  month = {February},
+  bdsk-url-1 = {http://www.springerlink.com/content/920L650THG321227},
+  bdsk-url-2 = {http://dx.doi.org/10.1007/s11242-007-9125-4},
+  doi = {10.1007/s11242-007-9125-4},
+  owner = {william},
+  timestamp = {2010.06.15},
+  url = {http://www.springerlink.com/content/920L650THG321227}
+}
+
+@ARTICLE{EfficientEvoChannelManagement,
+  author = {Sandalidis, H.G. and Stavroulakis, P.P. and Rodriguez-Tellez, J.},
+  title = {An efficient evolutionary algorithm for channel resource management
+	in cellular mobile systems},
+  journal = {Evolutionary Computation, IEEE Transactions on},
+  year = {1998},
+  volume = {2},
+  pages = {125 -137},
+  number = {4},
+  month = {nov},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/4235.738972},
+  doi = {10.1109/4235.738972},
+  issn = {1089-778X},
+  keywords = {borrowing channel assignment;cellular mobile systems;channel allocation;channel
+	resource management;combinatorial evolution strategy;combinatorial
+	optimization problems;dynamic channel assignment;efficient heuristic
+	technique;evolutionary algorithm;fidelity;hybrid channel assignment;quality
+	of service;spectrum management demands;cellular radio;channel allocation;combinatorial
+	mathematics;evolutionary computation;quality of service;telecommunication
+	computing;telecommunication congestion control;}
+}
+
+@BOOK{MobileWirelessCommunications,
+  title = {Mobile Wireless Communications},
+  publisher = {Cambridge University Press},
+  year = {2005},
+  author = {Mischa Schwartz},
+  owner = {william},
+  timestamp = {2011.04.25}
+}
+
+@INPROCEEDINGS{PSOGABreeding,
+  author = {Settles, Matthew and Soule, Terence},
+  title = {Breeding swarms: a GA/PSO hybrid},
+  booktitle = {GECCO '05: Proceedings of the 2005 conference on Genetic and evolutionary
+	computation},
+  year = {2005},
+  pages = {161--168},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1068009.1068035},
+  doi = {http://doi.acm.org/10.1145/1068009.1068035},
+  isbn = {1-59593-010-8},
+  location = {Washington DC, USA}
+}
+
+@ARTICLE{MultiPopGA,
+  author = {Siarry, Patrick and P\'{e}trowski, Alain and Bessaou, Mourad},
+  title = {A multipopulation genetic algorithm aimed at multimodal optimization},
+  journal = {Adv. Eng. Softw.},
+  year = {2002},
+  volume = {33},
+  pages = {207--213},
+  number = {4},
+  address = {Oxford, UK, UK},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/S0965-9978(02)00010-8},
+  doi = {http://dx.doi.org/10.1016/S0965-9978(02)00010-8},
+  issn = {0965-9978},
+  publisher = {Elsevier Science Ltd.}
+}
+
+@ARTICLE{ABCLeafConstrained,
+  author = {Alok Singh},
+  title = {An artificial bee colony algorithm for the leaf-constrained minimum
+	spanning tree problem},
+  journal = {Applied Soft Computing},
+  year = {2009},
+  volume = {9},
+  pages = {625 - 631},
+  number = {2},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6W86-4TDC093-1/2/c00d080ad03f406be3509ed6493a1072},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.asoc.2008.09.001},
+  doi = {DOI: 10.1016/j.asoc.2008.09.001},
+  issn = {1568-4946},
+  keywords = {Artificial bee colony algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6W86-4TDC093-1/2/c00d080ad03f406be3509ed6493a1072}
+}
+
+@INPROCEEDINGS{AutoConfigSA,
+  author = {Slagle, J. R. and Bose, A. and Busalacchi, P. and Wee, C.},
+  title = {Enhanced simulated annealing for automatic reconfiguration of multiprocessors
+	in space},
+  booktitle = {IEA/AIE '89: Proceedings of the 2nd international conference on Industrial
+	and engineering applications of artificial intelligence and expert
+	systems},
+  year = {1989},
+  pages = {401--408},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://0-doi.acm.org.ujlink.uj.ac.za/10.1145/66617.66666},
+  doi = {http://0-doi.acm.org.ujlink.uj.ac.za/10.1145/66617.66666},
+  isbn = {0-89791-320-5},
+  location = {Tullahoma, Tennessee, United States}
+}
+
+@ARTICLE{SelfAdaptiveDataMiningGA,
+  author = {K.G. Srinivasa and K.R. Venugopal and L.M. Patnaik},
+  title = {A self-adaptive migration model genetic algorithm for data mining
+	applications},
+  journal = {Information Sciences},
+  year = {2007},
+  volume = {177},
+  pages = {4295 - 4313},
+  number = {20},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6V0C-4NRK4MJ-2/2/4c5a899878376bb8cf5f7df30370ae9f},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.ins.2007.05.008},
+  doi = {DOI: 10.1016/j.ins.2007.05.008},
+  issn = {0020-0255},
+  keywords = {Adaptive genetic algorithms},
+  url = {http://www.sciencedirect.com/science/article/B6V0C-4NRK4MJ-2/2/4c5a899878376bb8cf5f7df30370ae9f}
+}
+
+@ARTICLE{tabuglobalplanning3g,
+  author = {St-Hilaire, Marc and Chamberland, Steven and Pierre, Samuel},
+  title = {A tabu search algorithm for the global planning problem of third
+	generation mobile networks},
+  journal = {Comput. Electr. Eng.},
+  year = {2008},
+  volume = {34},
+  pages = {470--487},
+  number = {6},
+  address = {Tarrytown, NY, USA},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/j.compeleceng.2008.02.001},
+  doi = {http://dx.doi.org/10.1016/j.compeleceng.2008.02.001},
+  issn = {0045-7906},
+  publisher = {Pergamon Press, Inc.}
+}
+
+@BOOK{PrinciplesMobileCommunication,
+  title = {Principles of Mobile Communication},
+  publisher = {Kluwer Academic Publishers},
+  year = {1996},
+  author = {Gordon L. Stu\"{u}ber},
+  owner = {william},
+  timestamp = {2011.04.25}
+}
+
+@ARTICLE{MultiradioMeshNetworks,
+  author = {Anand Prabhu Subramanian and Himanshu Gupta and Samir R. Das and
+	Jing Cao},
+  title = {Minimum Interference Channel Assignment Multiradio Wireless Mesh
+	Networks},
+  journal = {IEEE Transactions on Mobile Computing},
+  year = {2008},
+  volume = {7},
+  pages = {1459-1473},
+  number = {7},
+  month = {December},
+  owner = {william},
+  timestamp = {2010.03.24}
+}
+
+@ARTICLE{SASingleMultiObj,
+  author = {Suman, B. and Kumar, P.},
+  title = {A Survey of Simulated Annealing as a Tool for Single and Multiobjective
+	Optimization},
+  journal = {The Journal of the Operational Research Society},
+  year = {2006},
+  volume = {57},
+  pages = {1143--1160},
+  number = {10},
+  bdsk-url-1 = {http://www.jstor.org/stable/4102365},
+  copyright = {Copyright {\^A}{\copyright} 2006 Operational Research Society},
+  issn = {01605682},
+  jstor_articletype = {primary_article},
+  jstor_formatteddate = {Oct., 2006},
+  publisher = {Palgrave Macmillan Journals on behalf of the Operational Research
+	Society},
+  url = {http://www.jstor.org/stable/4102365}
+}
+
+@INPROCEEDINGS{TabuBiddingStrats,
+  author = {Sureka, Ashish and Wurman, Peter R.},
+  title = {Applying metaheuristic techniques to search the space of bidding
+	strategies in combinatorial auctions},
+  booktitle = {GECCO '05: Proceedings of the 2005 conference on Genetic and evolutionary
+	computation},
+  year = {2005},
+  pages = {2097--2103},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1068009.1068356},
+  doi = {http://doi.acm.org/10.1145/1068009.1068356},
+  isbn = {1-59593-010-8},
+  location = {Washington DC, USA}
+}
+
+@INPROCEEDINGS{TabuFormGames,
+  author = {Sureka, Ashish and Wurman, Peter R.},
+  title = {Using tabu best-response search to find pure strategy nash equilibria
+	in normal form games},
+  booktitle = {AAMAS '05: Proceedings of the fourth international joint conference
+	on Autonomous agents and multiagent systems},
+  year = {2005},
+  pages = {1023--1029},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1082473.1082628},
+  doi = {http://doi.acm.org/10.1145/1082473.1082628},
+  isbn = {1-59593-093-0},
+  location = {The Netherlands}
+}
+
+@ARTICLE{TSGlobalOptContinFunc,
+  author = {Y. S. Teh and G. P. Rangaiah},
+  title = {Tabu search for global optimization of continuous functions with
+	application to phase equilibrium calculations},
+  journal = {Computers \& Chemical Engineering},
+  year = {2003},
+  volume = {27},
+  pages = {1665 - 1679},
+  number = {11},
+  doi = {DOI: 10.1016/S0098-1354(03)00134-0},
+  issn = {0098-1354},
+  keywords = {Global optimization},
+  url = {http://www.sciencedirect.com/science/article/pii/S0098135403001340}
+}
+
+@INPROCEEDINGS{BCO,
+  author = {Teodorovic, Dusan and Lucic, Panta and Markovic, Goran and Orco,
+	Mauro Dell'},
+  title = {Bee Colony Optimization: Principles and Applications},
+  booktitle = {Neural Network Applications in Electrical Engineering, 2006. NEUREL
+	2006. 8th Seminar on},
+  year = {2006},
+  pages = {151 -156},
+  month = {25-27},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/NEUREL.2006.341200},
+  doi = {10.1109/NEUREL.2006.341200},
+  keywords = {approximate reasoning;bee colony optimization;combinatorial optimization
+	problem;fuzzy logic;combinatorial mathematics;fuzzy logic;optimisation;uncertainty
+	handling;}
+}
+
+@ARTICLE{PSOHybridUnitCommit,
+  author = {Ting, T.O. and Rao, M.V.C. and Loo, C.K.},
+  title = {A novel approach for unit commitment problem via an effective hybrid
+	particle swarm optimization},
+  journal = {Power Systems, IEEE Transactions on},
+  year = {2006},
+  volume = {21},
+  pages = {411 - 418},
+  number = {1},
+  month = {feb.},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/TPWRS.2005.860907},
+  doi = {10.1109/TPWRS.2005.860907},
+  issn = {0885-8950},
+  keywords = {binary particle swarm optimisation; electronic load dispatch; generator
+	scheduling; hybrid particle swarm optimisation; real coded particle
+	swarm optimisation; unit commitment; particle swarm optimisation;
+	power generation dispatch; power generation scheduling;}
+}
+
+@INPROCEEDINGS{ACOLargeProblem,
+  author = {Tiwari, Raj Gaurang and Husain, Mohd. and Gupta, Sandeep and Srivastava,
+	Arun Pratap},
+  title = {A new ant colony optimization meta-heuristic algorithm to tackle
+	large optimization problem},
+  booktitle = {COMPUTE '10: Proceedings of the Third Annual ACM Bangalore Conference},
+  year = {2010},
+  pages = {1--4},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1754288.1754316},
+  doi = {http://doi.acm.org/10.1145/1754288.1754316},
+  isbn = {978-1-4503-0001-8},
+  location = {Bangalore, India}
+}
+
+@ARTICLE{SelfAdaptiveGA,
+  author = {To\u{g}an, Vedat and Dalo\u{g}lu, Ay\c{s}e T.},
+  title = {An improved genetic algorithm with initial population strategy and
+	self-adaptive member grouping},
+  journal = {Comput. Struct.},
+  year = {2008},
+  volume = {86},
+  pages = {1204--1218},
+  number = {11-12},
+  address = {Elmsford, NY, USA},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/j.compstruc.2007.11.006},
+  doi = {http://dx.doi.org/10.1016/j.compstruc.2007.11.006},
+  issn = {0045-7949},
+  publisher = {Pergamon Press, Inc.}
+}
+
+@INPROCEEDINGS{DormRoomSA,
+  author = {Nguyen Thanh Trung and Duong Tuan Anh},
+  title = {Comparing Three Improved Variants of Simulated Annealing for Optimizing
+	Dorm Room Assignments},
+  booktitle = {Computing and Communication Technologies, 2009. RIVF '09. International
+	Conference on},
+  year = {2009},
+  pages = {1 -5},
+  month = {13-17},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/RIVF.2009.5174631},
+  doi = {10.1109/RIVF.2009.5174631},
+  keywords = {dorm room assignment problem;informed simulated annealing;simulated
+	annealing with nonmonotonic reheating;very fast simulated reannealing;operations
+	research;resource allocation;simulated annealing;}
+}
+
+@BOOK{FundamentalsWirelessCommunication,
+  title = {Fundamentals of Wireless Communication},
+  publisher = {Cambridge University Press},
+  year = {2005},
+  author = {David Tse and Pramod Viswanath},
+  owner = {william},
+  timestamp = {2011.04.25}
+}
+
+@ARTICLE{CurveFittingSA,
+  author = {Hsien-Yu Tseng and Chang-Ching Lin},
+  title = {A simulated annealing approach for curve fitting in automated manufacturing
+	systems},
+  journal = {Journal of Manufacturing Technology Management},
+  year = {2007},
+  volume = {18},
+  pages = {202 - 216},
+  bdsk-url-1 = {http://dx.doi.org/10.1108/17410380710722908},
+  doi = {10.1108/17410380710722908},
+  owner = {william},
+  timestamp = {2010.06.07}
+}
+
+@ARTICLE{FamilyGA,
+  author = {Wainwright, Roger L.},
+  title = {A family of genetic algorithm packages on a workstation for solving
+	combinatorial optimization problems},
+  journal = {SIGICE Bull.},
+  year = {1994},
+  volume = {19},
+  pages = {30--36},
+  number = {3},
+  address = {New York, NY, USA},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/182063.182071},
+  doi = {http://doi.acm.org/10.1145/182063.182071},
+  issn = {0893-2875},
+  publisher = {ACM}
+}
+
+@INPROCEEDINGS{GangWangACO,
+  author = {Wang, Gang and Gong, Wenrui and DeRenzi, Brian and Kastner, Ryan},
+  title = {Design space exploration using time and resource duality with the
+	ant colony optimization},
+  booktitle = {Proceedings of the 43rd annual Design Automation Conference},
+  year = {2006},
+  series = {DAC '06},
+  pages = {451--454},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  acmid = {1147028},
+  doi = {http://doi.acm.org/10.1145/1146909.1147028},
+  isbn = {1-59593-381-6},
+  keywords = {MAX-MIN ant system, ant colony optimization, design space exploration,
+	instruction scheduling algorithms},
+  location = {San Francisco, CA, USA},
+  numpages = {4},
+  url = {http://doi.acm.org/10.1145/1146909.1147028}
+}
+
+@ARTICLE{devparallelgasa,
+  author = {Wang, Z. G. and Wong, Y. S. and Rahman, M.},
+  title = {Development of a parallel optimization method based on genetic simulated
+	annealing algorithm},
+  journal = {Parallel Comput.},
+  year = {2005},
+  volume = {31},
+  pages = {839--857},
+  month = {August},
+  acmid = {1746311},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  doi = {http://dx.doi.org/10.1016/j.parco.2005.03.006},
+  issn = {0167-8191},
+  issue = {8-9},
+  keywords = {Genetic algorithm, Parallel genetic algorithm, Simulated annealing},
+  numpages = {19},
+  publisher = {Elsevier Science Publishers B. V.},
+  url = {http://dx.doi.org/10.1016/j.parco.2005.03.006}
+}
+
+@ARTICLE{ParallelGASA,
+  author = {Wang, Z. G. and Wong, Y. S. and Rahman, M.},
+  title = {Development of a parallel optimization method based on genetic simulated
+	annealing algorithm},
+  journal = {Parallel Comput.},
+  year = {2005},
+  volume = {31},
+  pages = {839--857},
+  number = {8+9},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/j.parco.2005.03.006},
+  doi = {http://dx.doi.org/10.1016/j.parco.2005.03.006},
+  issn = {0167-8191},
+  publisher = {Elsevier Science Publishers B. V.}
+}
+
+@ARTICLE{ReactiveTabuVHR,
+  author = {N. A. Wassan},
+  title = {A Reactive Tabu Search for the Vehicle Routing Problem},
+  journal = {The Journal of the Operation Research Society},
+  year = {2006},
+  volume = {57},
+  pages = {111-116},
+  number = {1},
+  month = {Jan},
+  bdsk-url-1 = {http://www.jstor.org/stable/4102341},
+  owner = {william},
+  timestamp = {2010.05.20},
+  url = {http://www.jstor.org/stable/4102341}
+}
+
+@INCOLLECTION{GeostatisticalGA,
+  author = {Xian-Huan Wen and Tina Yu and Seong Lee},
+  title = {Coupling Sequential-Self calibration and Genetic Algorithms to Integrate
+	Production Data in Geostatistical Reservoir Modeling},
+  booktitle = {Geostatistics Banff 2004},
+  publisher = {Springer Netherlands},
+  year = {2005},
+  volume = {14},
+  series = {Quantitative Geology and Geostatistics},
+  pages = {691-701},
+  bdsk-url-1 = {http://dx.doi.org/10.1007/978-1-4020-3610-1},
+  doi = {10.1007/978-1-4020-3610-1},
+  owner = {william},
+  timestamp = {2010.06.14}
+}
+
+@INPROCEEDINGS{SALongestCommon,
+  author = {Weyland, Dennis},
+  title = {Simulated annealing, its parameter settings and the longest common
+	subsequence problem},
+  booktitle = {GECCO '08: Proceedings of the 10th annual conference on Genetic and
+	evolutionary computation},
+  year = {2008},
+  pages = {803--810},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1389095.1389253},
+  doi = {http://doi.acm.org/10.1145/1389095.1389253},
+  isbn = {978-1-60558-130-9},
+  location = {Atlanta, GA, USA}
+}
+
+@ARTICLE{evalevoalgo,
+  author = {Whitley, Darrell and Rana, Soraya and Dzubera, John and Mathias,
+	Keith E.},
+  title = {Evaluating evolutionary algorithms},
+  journal = {Artif. Intell.},
+  year = {1996},
+  volume = {85},
+  pages = {245--276},
+  month = {August},
+  acmid = {241103},
+  address = {Essex, UK},
+  doi = {10.1016/0004-3702(95)00124-7},
+  issn = {0004-3702},
+  issue = {1-2},
+  numpages = {32},
+  publisher = {Elsevier Science Publishers Ltd.},
+  url = {http://portal.acm.org/citation.cfm?id=241085.241103}
+}
+
+@INPROCEEDINGS{PSOSoftTesting,
+  author = {Windisch, Andreas and Wappler, Stefan and Wegener, Joachim},
+  title = {Applying particle swarm optimization to software testing},
+  booktitle = {GECCO '07: Proceedings of the 9th annual conference on Genetic and
+	evolutionary computation},
+  year = {2007},
+  pages = {1121--1128},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1276958.1277178},
+  doi = {http://doi.acm.org/10.1145/1276958.1277178},
+  isbn = {978-1-59593-697-4},
+  location = {London, England}
+}
+
+@BOOK{IntroMathProgramming,
+  title = {Introduction to Mathematical Programming},
+  publisher = {Thomson Learning},
+  year = {2003},
+  editor = {Curt Himrichs},
+  author = {Wayne L. Winston and Munirpallam Venkataramanan},
+  owner = {william},
+  timestamp = {2011.05.09}
+}
+
+@ARTICLE{EcoEquilSA,
+  author = {Lihua Wu and Yuyun Wang},
+  title = {An Introduction to Simulated Annealing Algorithms for the Computation
+	of Economic Equilibrium},
+  journal = {Computational Economics},
+  year = {1998},
+  volume = {12},
+  pages = {151-169},
+  bdsk-url-1 = {http://www.springerlink.com/content/H06676133573LL87},
+  bdsk-url-2 = {http://dx.doi.org/10.1023/A:1008685129185},
+  doi = {10.1023/A:1008685129185},
+  owner = {william},
+  timestamp = {2010.06.08},
+  url = {http://www.springerlink.com/content/H06676133573LL87}
+}
+
+@ARTICLE{PSOHybridJoBShop,
+  author = {Wei-jun Xia and Zhi-ming Wu},
+  title = {A hybrid particle swarm optimization approach for the job-shop scheduling
+	problem},
+  journal = {The International Journal of Advanced Manufacturing Technology},
+  year = {2006},
+  volume = {29},
+  pages = {360-366},
+  number = {3},
+  month = {June},
+  bdsk-url-1 = {http://www.springerlink.com/content/P72245132T727581},
+  bdsk-url-2 = {http://dx.doi.org/10.1007/s00170-005-2513-4},
+  doi = {10.1007/s00170-005-2513-4},
+  owner = {william},
+  timestamp = {2010.06.28},
+  url = {http://www.springerlink.com/content/P72245132T727581}
+}
+
+@INPROCEEDINGS{AutoComplexMeta,
+  author = {Yiliang Xu and Meng Hiot Lim and Yew-Soon Ong},
+  title = {Automatic configuration of metaheuristic algorithms for complex combinatorial
+	optimization problems},
+  booktitle = {Evolutionary Computation, 2008. CEC 2008. (IEEE World Congress on
+	Computational Intelligence). IEEE Congress on},
+  year = {2008},
+  pages = {2380 -2387},
+  month = {1-6},
+  bdsk-url-1 = {http://dx.doi.org/10.1109/CEC.2008.4631116},
+  doi = {10.1109/CEC.2008.4631116},
+  keywords = {automatic configuration engine for metaheuristics;complex combinatorial
+	optimization problem;evolutionary learning algorithm;evolutionary
+	methodology;left variation-right property tree structure;metaheuristic
+	algorithms;quadratic assignment problem;user-defined satisfaction
+	function;computational complexity;evolutionary computation;learning
+	(artificial intelligence);optimisation;trees (mathematics);}
+}
+
+@ARTICLE{ImpACOComplex,
+  author = {Yang, Jingan and Zhuang, Yanbin},
+  title = {An improved ant colony optimization algorithm for solving a complex
+	combinatorial optimization problem},
+  journal = {Appl. Soft Comput.},
+  year = {2010},
+  volume = {10},
+  pages = {653--660},
+  number = {2},
+  address = {Amsterdam, The Netherlands, The Netherlands},
+  bdsk-url-1 = {http://dx.doi.org/10.1016/j.asoc.2009.08.040},
+  doi = {http://dx.doi.org/10.1016/j.asoc.2009.08.040},
+  issn = {1568-4946},
+  publisher = {Elsevier Science Publishers B. V.}
+}
+
+@BOOK{NatureInspiredMetaHeuristic,
+  title = {Nature-Inspired Metaheuristic Algorithms},
+  publisher = {Luniver Press},
+  year = {2008},
+  author = {Yang, Xin-She},
+  isbn = {1905986106, 9781905986101}
+}
+
+@INPROCEEDINGS{FixedFAPPSO,
+  author = {Yangyang Zhang, Dominic C O'Brien},
+  title = {Fixed Channel Assignment in Cellular Radio Networks Using Particle
+	Swarm Optimization},
+  booktitle = {Proceedings of the Internation Symposium of Industrial Electronics},
+  year = {2005},
+  month = {June},
+  owner = {william},
+  timestamp = {2010.02.14}
+}
+
+@ARTICLE{HybridBaldwinGA,
+  author = {Quan Yuan and Feng Qian and Wenli Du},
+  title = {A hybrid genetic algorithm with the Baldwin effect},
+  journal = {Information Sciences},
+  year = {2010},
+  volume = {180},
+  pages = {640 - 652},
+  number = {5},
+  bdsk-url-1 = {http://www.sciencedirect.com/science/article/B6V0C-4XNW48V-7/2/3bef1e377d8206396153946177df8477},
+  bdsk-url-2 = {http://dx.doi.org/10.1016/j.ins.2009.11.015},
+  doi = {DOI: 10.1016/j.ins.2009.11.015},
+  issn = {0020-0255},
+  keywords = {Hybrid genetic algorithm},
+  url = {http://www.sciencedirect.com/science/article/B6V0C-4XNW48V-7/2/3bef1e377d8206396153946177df8477}
+}
+
+@INPROCEEDINGS{TSHazardous,
+  author = {Zhang, L. and Guo, S. and Zhu, Y. and Lim, A.},
+  title = {A tabu search algorithm for the safe transportation of hazardous
+	materials},
+  booktitle = {SAC '05: Proceedings of the 2005 ACM symposium on Applied computing},
+  year = {2005},
+  pages = {940--946},
+  address = {New York, NY, USA},
+  publisher = {ACM},
+  bdsk-url-1 = {http://doi.acm.org/10.1145/1066677.1066893},
+  doi = {http://doi.acm.org/10.1145/1066677.1066893},
+  isbn = {1-58113-964-0},
+  location = {Santa Fe, New Mexico}
+}
+
+@INPROCEEDINGS{ACOImageThreshold,
+  author = {Zhao, Xin and Lee, Myung-Eun and Kim, Soo-Hyung},
+  title = {Improved Image Thresholding Using Ant Colony Optimization Algorithm},
+  booktitle = {Proceedings of the 2008 International Conference on Advanced Language
+	Processing and Web Information Technology},
+  year = {2008},
+  pages = {210--215},
+  address = {Washington, DC, USA},
+  publisher = {IEEE Computer Society},
+  acmid = {1441524},
+  doi = {10.1109/ALPIT.2008.105},
+  isbn = {978-0-7695-3273-8},
+  numpages = {6},
+  url = {http://0-portal.acm.org.ujlink.uj.ac.za/citation.cfm?id=1441420.1441524}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+

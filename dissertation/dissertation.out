@@ -1,0 +1,118 @@
+\BOOKMARK [0][-]{section*.3}{List of Figures}{}
+\BOOKMARK [0][-]{section*.6}{List of Tables}{}
+\BOOKMARK [-1][-]{part.1}{I Background}{}
+\BOOKMARK [0][-]{chapter.1}{Introduction}{part.1}
+\BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{Research Questions and Objective}{chapter.1}
+\BOOKMARK [1][-]{section.1.3}{Chapter Breakdown}{chapter.1}
+\BOOKMARK [2][-]{subsection.1.3.1}{Part I - Background}{section.1.3}
+\BOOKMARK [2][-]{subsection.1.3.2}{Part II - Implementation}{section.1.3}
+\BOOKMARK [0][-]{chapter.2}{Cellular Communication Technology}{part.1}
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}
+\BOOKMARK [1][-]{section.2.2}{GSM Networks}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.2.1}{A Brief History of GSM Networks}{section.2.2}
+\BOOKMARK [1][-]{section.2.3}{Topology of a GSM Network}{chapter.2}
+\BOOKMARK [2][-]{subsection.2.3.1}{Base Station Subsystem}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.2}{Mobile Switching Centre}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.3}{Network databases}{section.2.3}
+\BOOKMARK [2][-]{subsection.2.3.4}{GSM Network Management Entities}{section.2.3}
+\BOOKMARK [1][-]{section.2.4}{GSM Interfaces}{chapter.2}
+\BOOKMARK [1][-]{section.2.5}{GSM Channels}{chapter.2}
+\BOOKMARK [1][-]{section.2.6}{Handover}{chapter.2}
+\BOOKMARK [1][-]{section.2.7}{Summary}{chapter.2}
+\BOOKMARK [0][-]{chapter.3}{The Frequency Assignment Problem}{part.1}
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{NP-Complete}{chapter.3}
+\BOOKMARK [1][-]{section.3.3}{Frequency Allocation Types}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.3.1}{Fixed Frequency/Channel Assignment \(FFA/FCA\)}{section.3.3}
+\BOOKMARK [2][-]{subsection.3.3.2}{Dynamic Frequency/Channel Assignment \(DFA/DCA\)}{section.3.3}
+\BOOKMARK [1][-]{section.3.4}{Interference}{chapter.3}
+\BOOKMARK [1][-]{section.3.5}{Frequency Assignment Problem types}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.5.1}{Minimum Order FAP}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.2}{Minimum Span FAP}{section.3.5}
+\BOOKMARK [2][-]{subsection.3.5.3}{Minimum Interference FAP}{section.3.5}
+\BOOKMARK [1][-]{section.3.6}{FS MI-FAP Mathematical Formulation}{chapter.3}
+\BOOKMARK [1][-]{section.3.7}{FAP Benchmarks}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.7.1}{Philadelphia Benchmarks}{section.3.7}
+\BOOKMARK [2][-]{subsection.3.7.2}{CELAR}{section.3.7}
+\BOOKMARK [2][-]{subsection.3.7.3}{COST 259}{section.3.7}
+\BOOKMARK [1][-]{section.3.8}{FAP in the Industry}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.8.1}{Satellite Communication}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.2}{Wireless Mesh Networks and Wireless Local Area Networks \(WLANs\)}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.3}{Military Field Communication}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.4}{Television and Radio Broadcasting}{section.3.8}
+\BOOKMARK [2][-]{subsection.3.8.5}{Cellular Communication}{section.3.8}
+\BOOKMARK [1][-]{section.3.9}{Summary}{chapter.3}
+\BOOKMARK [0][-]{chapter.4}{Metaheuristic Algorithms}{part.1}
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Search Spaces and States}{chapter.4}
+\BOOKMARK [1][-]{section.4.3}{Metaheuristics Algorithms}{chapter.4}
+\BOOKMARK [1][-]{section.4.4}{Tabu Search}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Introduction}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Important Tabu Search Characteristics}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.3}{Flow of the algorithm}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.4}{Tabu Search on the FAP}{section.4.4}
+\BOOKMARK [1][-]{section.4.5}{Simulated Annealing}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.5.1}{Introduction}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.2}{Important Simulated Annealing Characteristics}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.3}{Flow of the Algorithm}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.4}{Simulated Annealing on the FAP}{section.4.5}
+\BOOKMARK [1][-]{section.4.6}{Genetic Algorithm}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.6.1}{Introduction}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.2}{Important Genetic Algorithm Characteristics}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.3}{Flow of the Algorithm}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.4}{Genetic Algorithm on the FAP}{section.4.6}
+\BOOKMARK [1][-]{section.4.7}{Summary}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{Swarm Intelligence}{part.1}
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{Stigmergy}{chapter.5}
+\BOOKMARK [1][-]{section.5.3}{Ant Colony Optimisation \(ACO\)}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.3.1}{Introduction}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.2}{ACO Characteristics}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.3}{Flow of the Algorithm}{section.5.3}
+\BOOKMARK [2][-]{subsection.5.3.4}{ACO on the FAP}{section.5.3}
+\BOOKMARK [1][-]{section.5.4}{Artificial Bee Colony \(ABC\) Algorithm}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.4.1}{Introduction}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.2}{ABC Algorithm Characteristics}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.3}{ABC algorithm on the FAP}{section.5.4}
+\BOOKMARK [2][-]{subsection.5.4.4}{Flow of the Algorithm}{section.5.4}
+\BOOKMARK [1][-]{section.5.5}{Particle Swarm Optimisation \(PSO\)}{chapter.5}
+\BOOKMARK [2][-]{subsection.5.5.1}{Introduction}{section.5.5}
+\BOOKMARK [2][-]{subsection.5.5.2}{PSO Characteristics}{section.5.5}
+\BOOKMARK [2][-]{subsection.5.5.3}{Flow of the Algorithm}{section.5.5}
+\BOOKMARK [2][-]{subsection.5.5.4}{PSO on the FAP}{section.5.5}
+\BOOKMARK [1][-]{section.5.6}{Summary}{chapter.5}
+\BOOKMARK [-1][-]{part.2}{II Implementation}{}
+\BOOKMARK [0][-]{chapter.6}{Applying the PSO to the FAP}{part.2}
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}
+\BOOKMARK [1][-]{section.6.2}{Position in the Frequency Planning Domain}{chapter.6}
+\BOOKMARK [1][-]{section.6.3}{The Fitness Function}{chapter.6}
+\BOOKMARK [1][-]{section.6.4}{Velocity Function for Frequency Planning}{chapter.6}
+\BOOKMARK [2][-]{subsection.6.4.1}{Movement in the Frequency Planning Domain}{section.6.4}
+\BOOKMARK [2][-]{subsection.6.4.2}{Keeping Frequencies Bounded}{section.6.4}
+\BOOKMARK [2][-]{subsection.6.4.3}{Using Indices instead of Frequencies}{section.6.4}
+\BOOKMARK [1][-]{section.6.5}{Building a Global Best}{chapter.6}
+\BOOKMARK [1][-]{section.6.6}{Keeping History}{chapter.6}
+\BOOKMARK [1][-]{section.6.7}{Summary}{chapter.6}
+\BOOKMARK [0][-]{chapter.7}{Results}{part.2}
+\BOOKMARK [1][-]{section.7.1}{Introduction}{chapter.7}
+\BOOKMARK [1][-]{section.7.2}{PSO COST 259 Siemens Results}{chapter.7}
+\BOOKMARK [2][-]{subsection.7.2.1}{Siemens1}{section.7.2}
+\BOOKMARK [2][-]{subsection.7.2.2}{Siemens2}{section.7.2}
+\BOOKMARK [2][-]{subsection.7.2.3}{Siemens3}{section.7.2}
+\BOOKMARK [2][-]{subsection.7.2.4}{Siemens 4}{section.7.2}
+\BOOKMARK [1][-]{section.7.3}{The Performance of the PSO}{chapter.7}
+\BOOKMARK [2][-]{subsection.7.3.1}{Velocity Method 1 vs Method 2}{section.7.3}
+\BOOKMARK [2][-]{subsection.7.3.2}{Different Global Schemes}{section.7.3}
+\BOOKMARK [2][-]{subsection.7.3.3}{Population Size}{section.7.3}
+\BOOKMARK [1][-]{section.7.4}{Summary}{chapter.7}
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{part.2}
+\BOOKMARK [1][-]{section.8.1}{Introduction}{chapter.8}
+\BOOKMARK [1][-]{section.8.2}{Research Questions}{chapter.8}
+\BOOKMARK [1][-]{section.8.3}{Research Objective}{chapter.8}
+\BOOKMARK [1][-]{section.8.4}{Chapter Breakdown Revisited}{chapter.8}
+\BOOKMARK [2][-]{subsection.8.4.1}{Part I - Background}{section.8.4}
+\BOOKMARK [2][-]{subsection.8.4.2}{Part II - Implementation}{section.8.4}
+\BOOKMARK [2][-]{subsection.8.4.3}{The Conclusion}{section.8.4}
+\BOOKMARK [1][-]{section.8.5}{Future Work}{chapter.8}
+\BOOKMARK [0][-]{section*.72}{Bibliography}{part.2}

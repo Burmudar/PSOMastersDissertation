@@ -1,0 +1,59 @@
+First Exam Report
+-----------------
+Page			Description													New Page
+----			-----------													--------
+9				Changed chapter heading										9
+9				Reworded sentence and added reference						9
+9				Removed last sentence of 1st Paragraph 						9
+9				Removed references											9
+10				Removed paragraph mentioning NP-Complete					10
+10 last par     Sentence already present to explain rational				10/11
+11 4th par 		Removed Paragraph 											11
+11 4th par      Removed paragraph that mentions info removal				11
+13				changed UMTS can be considered to is considered				13
+13				Refered reader to WCDMA extra reading						14
+14 				Removed mention of orthogonal codes							14
+14 End			Fixed conclusion of discussion								14
+15 Figure 2.1   Added references 											15
+16				Reworded to not use base value in Sentence 					16
+16				Added sentence of ref to co-channel interference			16
+16				Fixed GSM Phase 2+ 											16
+16				Added ref to where interfaces are discussed					17
+17				Italised first mention of service areas						17
+17				Removed footnote											17
+19				Added reference to 2.3 Figure 								19
+				Added that dissertation is not focused on electro-waves		18
+21				Added forward references 									21
+21				Not fixed -AUC needs to be added to diagram					21
+22				Not fixed - Network Managemens entities must be Added 		22
+23				Fixed folling sections to paragraphs						23
+23				Changd network nodes to network components					24
+24				Added sentence to explain administrative area 				25
+25				Removed mentioning of frequency ... only used channel 		26
+26				Removed "certain" added 45 Mhz for clarity					26
+26				Fixed acronym usage of BCH									27
+26				Defined CCH 												27
+27				Added extra sentences to explain paging						27
+30				Added explanation of error bit ratio 						30
+32				Fixed flow to next chapter									32
+
+Second Exam Report
+------------------
+  9 			Made the sentence less general								9
+  9 			Fixed flow													9
+9 4th par		Entities are countable										10
+10				Tenses seem to be fine										10
+10 3rd par		Removed paragraph											10
+10 3rd par		Utilised by whom - Paragraph removed						10
+11 2.2.1 		Fixed GSM acronym usage
+13 2nd par		All acronyms are defined, some just not italised			13
+13				Reworded "no planning"										13/14
+14				GPRS has already been defined on page 10, same with sms etc	10
+19				Removed caption explanation.								19
+20				2.3.2 Removed acronym from heading							20
+25 4th par      Moved figure to show right after paragraph that refers to it 26
+27 2nd last par Fixed singular vs plural									27
+28 3rd last par Unable to see what is wrong with the sentence				32
+
+
+
