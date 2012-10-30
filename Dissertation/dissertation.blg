@@ -1,59 +1,56 @@
-This is BibTeX, Version 0.99c (TeX Live 2009)
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: chpt1.aux
 A level-1 auxiliary file: chpt2.aux
 A level-1 auxiliary file: chpt3.aux
 A level-1 auxiliary file: chpt4.aux
 A level-1 auxiliary file: chpt5.aux
-A level-1 auxiliary file: chpt6.aux
 A level-1 auxiliary file: chpt7.aux
 A level-1 auxiliary file: chpt8.aux
 A level-1 auxiliary file: chpt9.aux
-A level-1 auxiliary file: apdxA.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
-Warning--I didn't find a database entry for "AdaptiveGA"
 Warning--there's a number but no volume in FAPInCell
-Warning--can't use both author and editor fields in IntroMathProgramming
-You've used 147 entries,
+You've used 136 entries,
             2118 wiz_defined-function locations,
-            1450 strings with 32930 characters,
-and the built_in function-call counts, 54722 in all, are:
-= -- 5529
-> -- 2202
-< -- 55
-+ -- 909
-- -- 716
-* -- 3789
-:= -- 8596
-add.period$ -- 463
-call.type$ -- 147
-change.case$ -- 787
+            1393 strings with 30875 characters,
+and the built_in function-call counts, 50901 in all, are:
+= -- 5133
+> -- 2031
+< -- 54
++ -- 841
+- -- 660
+* -- 3516
+:= -- 7971
+add.period$ -- 429
+call.type$ -- 136
+change.case$ -- 724
 chr.to.int$ -- 0
-cite$ -- 149
-duplicate$ -- 2188
-empty$ -- 4458
-format.name$ -- 716
-if$ -- 11882
+cite$ -- 137
+duplicate$ -- 2056
+empty$ -- 4164
+format.name$ -- 660
+if$ -- 11084
 int.to.chr$ -- 0
-int.to.str$ -- 147
-missing$ -- 155
-newline$ -- 739
-num.names$ -- 294
-pop$ -- 820
+int.to.str$ -- 136
+missing$ -- 146
+newline$ -- 684
+num.names$ -- 274
+pop$ -- 768
 preamble$ -- 1
-purify$ -- 652
+purify$ -- 601
 quote$ -- 0
-skip$ -- 1661
+skip$ -- 1558
 stack$ -- 0
-substring$ -- 4119
-swap$ -- 623
-text.length$ -- 55
+substring$ -- 3832
+swap$ -- 599
+text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 552
-warning$ -- 2
-while$ -- 513
-width$ -- 150
-write$ -- 1653
-(There were 3 warnings)
+type$ -- 508
+warning$ -- 1
+while$ -- 473
+width$ -- 139
+write$ -- 1531
+(There was 1 warning)

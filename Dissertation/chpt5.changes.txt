@@ -1,0 +1,84 @@
+Second examiners report
+-----------------------
+Item NR.									Description							New Page
+--------									-----------							--------
+  126 --	Fixed spelling mistakes													93
+  127 --	Changed its to "an agent"												93
+  128 --	Rephrased par															93
+  129 --	Rephrased par															93
+  130 --	Added addtional algorithms												95
+  131 --	Rephrased par. Moved to 2nd par on page 94								94
+  132 --	Fixed flow, move to 2nd par on page 94									94
+  133 --	Removed mentioning of entity. Moved to 2nd par on page 94				94
+  134 --	Removed informal part. See 2nd par on page 94							94
+  135 --	Added explanation about knowledge to 2nd & 3rd par on page 94			94
+  136 --	Added "of random events"												94
+  137 --	Fixed flow on page														94 & 95
+  138 --	Rephrased paragraph moved to last par on 94								94
+  139 --	Clarified "this" 3rd par												95
+  140 --	Changed small to simple throughout chapter								94
+  141 --	3rd par elaborates on multiple fronts									95
+  142 --	3rd par clarifies "its"													95
+  143 --	Entire section describes information being shared/stored				93
+  144 --	Rewrote and shuffled these paragraphs to better the flow				93
+  145 --	Added aditional discussions making is less PSO centric
+  146 --	Changed paragraph to be more technical									97
+  147 --	Fixed figure reference													98
+  148 --	Added par to explain extended bridge exp								97
+  149 --	can't find what must be fixed
+  150 --	Moved algorithm 														106
+  151 --	Fixed																	99
+  152 --	Added statement															99
+  153 --	Added clarification to what algorithm is referred to					99
+  154 --	Changed entire section to be more critical								99
+  155 --	Moved to 106. Added statement that AS is the algorithm referred to		106
+  156 --	Added statement to introduction of ACO									99
+  157 --	Added explanation to introduction 										99
+  158 --	Fixed																	108
+  159 --	Introduction was rewritten to make Pheromone trail less repetitive		100
+  			. Also modifed pheromone section to make it less reptitive
+  160 --	Added flow																103
+  161 --	Rephrased paragraph														103
+  162 --	Fixed																	104
+  163 --	Added additional paragraphs to make section less repetitive				105
+  164 --	Fixed																	105
+  165 --	Fixed																	105
+  166 --	Moved Pheromone evapuration	to page 102									102
+  167 --	Added authors															103
+  168 --	Added in introduction													97
+  169 --	Reference to be added in second phase of corrections
+  170 --	Rephrased sentence														111
+  171 --	Fixed																	111
+  172 --	To be added in second phase of corrections
+  173 --	Fixed																	113
+  174 --	Rephrased sentence														118
+  175 --	Shortened sentences														120
+  176 --	Added statement															130
+  177 --	Added reason for referring reader										121
+  178 --	Changed flies to move													121 & 122
+  179 --	Added assumption statement 												130
+  180 --	Changed section names added Neighborhood topology discussion			123 - 130
+  181 --	removed sentence														123
+  182 --	Removed paragraph														132
+  183 --	To be addressed in second phase of corrections by expanding chpt3		
+  184 --	Changed heading															135
+
+First examiners Report
+----------------------
+Item NR.									Description							New Page
+--------									-----------							--------
+   1  --	Rephrased and moved par to page 101 second last par						101
+   2  --	Moved statement to firs par of section									103
+   3  --	Removed footnote														104
+   4  --	Rate of evapuration is now discussed earlier 							105
+   5  --	Fixed																	105
+   6  --	Added "in the literature" to make it more clear							110
+   7  --	Added sentence explaining that a global optimum food source isn't left	116
+   8  --	Fixed notation															116
+   9  --	Added that the critique is in theory and not based on actual impl.		119
+   10 --	Added secrion on neighbourhood topologies								124
+   11 --	Velocity discussion moved to "Movement of Particles" section			125
+   12 --	Fixed notation															116
+   13 --	Moved to chpt 1
+   14 --	Dont know what the exmainer means										
+   15 --	Moved to chpt 1

@@ -1,6 +1,6 @@
 \documentclass[11pt,a4paper]{book}
-\usepackage{ujthesis,enumerate,amssymb,amsmath,algorithm,algorithmic}
-\usepackage{cite,graphicx,tikz,xcolor,appendix,hyperref,minted}
+\usepackage{ujthesis,float,enumerate,amssymb,amsmath,algorithm,algpseudocode}
+\usepackage{cite,graphicx,tikz,xcolor,appendix,hyperref}
 \usetikzlibrary{plothandlers}
 \usetikzlibrary{positioning}
 \usetikzlibrary{decorations.pathreplacing}
@@ -8,19 +8,20 @@
 \usetikzlibrary{shapes.geometric}
 \usetikzlibrary{shapes.symbols}
 \usetikzlibrary{shapes.misc}
+\raggedbottom
 \usepackage[nottoc]{tocbibind}
 \linespread{1.2}
 \dissertation
 \coverFont{\large}
 \setlength{\parskip}{0.5ex plus0.5ex minus0.2ex}
 \setlength{\spaceLength}{7mm}
-\approvedtitle{Particle Swarms and the Frequency Assignment Problem}
+\approvedtitle{Optimising the Frequency Assignment Problem utilizing Particle Swarm Optimisation}
 \student{William Bezuidenhout}
 \degree{Magister Scientiae}
 \field{Information Technology}
 \faculty{Faculty of Science}
 \supervisorName{Dr G.B. O'Reilly}
-\submissionDate{June 2011}
+\submissionDate{May 2012}
 \begin{document}
 \frontmatter
 \makecover
@@ -29,21 +30,21 @@
 \listofalgorithms
 \listoftables
 \mainmatter
-\part{Background}
+\part{Background on the problem domain and influential algorithms}
 \include{chpt1}%Introduction
 \include{chpt2}%GSM Cellular Networks
 \include{chpt3}%Frequency Assignment Problem
 \include{chpt4}%Metaheuristics algorithms
 \include{chpt5}%Swarm Intelligence
-\part{Implementation}
-\include{chpt6}%PSO on benchmark functions
+\part{Discussion and results of implementing a PSO algorithm on the FAP}
+%\include{chpt6}%PSO on benchmark functions
 \include{chpt7}%Applying the PSO to the FAP
 \include{chpt8}%Results
 \include{chpt9}%Conclusion
-\appendix
-\appendixpage
-\addappheadtotoc
-\include{apdxA}
+%\appendix
+%\appendixpage
+%\addappheadtotoc
+%\include{apdxA}
 \backmatter
 \bibliography{ReferenceDB}
 \bibliographystyle{plain}

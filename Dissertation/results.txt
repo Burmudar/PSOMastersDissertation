@@ -1,0 +1,47 @@
+siemens 3 pop 20 Method 1
+-------------------------
+Standard			135.078
+Build with Cells	50.543
+Build with TRXs		141.538
+
+siemens 3 pop 20 Method 2
+-------------------------
+Standard			1104.006
+Build with Cells	415.866
+Build with TRXs		460.403
+
+siemens 4 pop 20 Method 1
+-------------------------
+Standard			528.162
+Build with Cells	287.665
+Build with TRXs		555.445
+
+siemens 4 pop 20 Method 2
+-------------------------
+Standard			2300.40
+Build with Cells	1091.827
+Build with TRXs		2966.514
+
+siemens 3 pop 50 Method 1
+-------------------------
+Standard			138.418
+Build with Cells	51.300
+Build with TRXs		144.444
+
+siemens 3 pop 50 Method 2
+-------------------------
+Standard			910.020
+Build with Cells	329.412
+Build with TRXs		358.508
+
+siemens 4 pop 50 Method 1
+-------------------------
+Standard			542.143
+Build with Cells	283.473
+Build with TRXs		557.154
+
+siemens 4 pop 50 Method 2
+-------------------------
+Standard			2197.760
+Build with Cells	1014.373
+Build with TRXs		1182.665

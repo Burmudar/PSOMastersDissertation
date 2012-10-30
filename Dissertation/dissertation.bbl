@@ -1,10 +1,5 @@
 \begin{thebibliography}{100}
 
-\bibitem{salamonwebsite}
-LAPPEENRANTA UNIVERSITY OF TECHNOLOGY: EVOLUATIONARY COMPUTATION
-  PAGES~(Accessed 2011/06/09).
-\newblock http://www.it.lut.fi/ip/evo/functions/node12.html.
-
 \bibitem{CALMA}
 Karen Aardal, Cor Hurkens, Jan~Karel Lenstra, and Sergey Tiourine.
 \newblock Algorithm for radio link frequency assignment: The calma project.
@@ -16,11 +11,6 @@ Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
 \newblock Models and solution techniques for frequency assignment problems.
 \newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
   December 2004.
-
-\bibitem{ChaoticABC}
-Bilal Alatas.
-\newblock Chaotic bee colony algorithms for global numerical optimization.
-\newblock {\em Expert Syst. Appl.}, 37:5682--5687, August 2010.
 
 \bibitem{HetergeneousGA}
 E.~Alba, F.~Luna, A.~J. Nebro, and J.~M. Troya.
@@ -34,11 +24,23 @@ Mahmoud~H. Alrefaei and Sigr{{\'u}}n Andrad{{\'o}}ttir.
   discrete stochastic optimization.
 \newblock {\em Management Science}, 45:748--764, 1999.
 
+\bibitem{AndersonPhiladelphia}
+L.~G. Anderson.
+\newblock A simulation study of some dynamic channel assignment algorithms in a
+  high capacity mobile telecommunications system.
+\newblock {\em IEEE Transactions on Communications}, 21:1294--1301, 1973.
+
 \bibitem{CircuitTabu}
 S.~Areibi and A.~Vannelli.
 \newblock Circuit partitioning using a tabu search approach.
 \newblock In {\em Circuits and Systems, 1993., ISCAS '93, 1993 IEEE
   International Symposium on}, pages 1643 --1645, 3-6 1993.
+
+\bibitem{GANonConvex}
+M.B. Aryanezhad and Mohammad Hemati.
+\newblock A new genetic algorithm for solving nonconvex nonlinear programming
+  problems.
+\newblock {\em Applied Mathematics and Computation}, 199(1):186 -- 194, 2008.
 
 \bibitem{EvoParallelTabu}
 A.~Augugliaro, L.~Dusonchet, and E.~R. Sanseverino.
@@ -108,11 +110,6 @@ A.~Chawla, S.~Mukherjee, and B.~Karthikeyan.
 \newblock Characterization of human passive muscles for impact loads using
   genetic algorithm and inverse finite element methods.
 \newblock {\em Biomechanics and Modeling in Mechanobiology}, 8(1):67--76, 2009.
-
-\bibitem{TSGlobalOptimization}
-Rachid Chelouah and Patrick Siarry.
-\newblock Tabu search applied to global optimization.
-\newblock {\em European Journal of Operational Research}, 123:256--270, 2000.
 
 \bibitem{ACOFlowShop}
 Ruey-Maw Chen, Shih-Tang Lo, Chung-Lun Wu, and Tsung-Hung Lin.
@@ -237,6 +234,11 @@ Gautam Garai and B.~B. Chaudhuri.
   optimization and pattern matching.
 \newblock {\em Pattern Recogn.}, 40(1):212--228, 2007.
 
+\bibitem{Glover89}
+Fred Glover.
+\newblock Tabu search - part i.
+\newblock {\em INFORMS Journal on Computing}, 1(3):190--206, 1989.
+
 \bibitem{WirelessCommunications}
 Andrea Goldsmith.
 \newblock {\em Wireless Communications}.
@@ -306,11 +308,9 @@ O.~Holthaus and C.~Rajendran.
 \newblock {\em The Journal of the Operational Research Society}, 56(8):pp.
   947--953, 2005.
 
-\bibitem{RealParameterGASA}
-Shun-Fa Hwang and Rong-Song He.
-\newblock Improving real-parameter genetic algorithm with simulated annealing
-  for engineering problems.
-\newblock {\em Adv. Eng. Softw.}, 37(6):406--418, 2006.
+\bibitem{FAPWeb}
+http://fap.zib.de/.
+\newblock Fap web, 2010.
 
 \bibitem{RadioFAP}
 Lhassane Idoumghar and Ren{{\'e}} Schott.
@@ -357,11 +357,6 @@ Vijay Kalivarapu, Jung-Leng Foo, and Eliot Winer.
 \newblock {\em Structural and Multidisciplinary Optimization}, 37:415 -- 427,
   2009.
 
-\bibitem{PerfABC}
-D.~Karaboga and B.~Basturk.
-\newblock On the performance of artificial bee colony (abc) algorithm.
-\newblock {\em Appl. Soft Comput.}, 8:687--697, January 2008.
-
 \bibitem{ABCCompareStudy}
 Dervis Karaboga and Bahriye Akay.
 \newblock A comparative study of artificial bee colony algorithm.
@@ -372,18 +367,6 @@ Dervis Karaboga and Bahriye Basturk.
 \newblock A powerful and efficient algorithm for numerical function
   optimization: artificial bee colony (abc) algorithm.
 \newblock {\em J. of Global Optimization}, 39(3):459--471, 2007.
-
-\bibitem{numericalABC}
-Dervis Karaboga and Bahriye Basturk.
-\newblock A powerful and efficient algorithm for numerical function
-  optimization: artificial bee colony (abc) algorithm.
-\newblock {\em J. of Global Optimization}, 39:459--471, November 2007.
-
-\bibitem{ContinACSTS}
-Akbar Karimi, Hadi Nobahari, and Patrick Siarry.
-\newblock Continuous ant colony system and tabu search algorithms hybridized
-  for global minimization of continuous multi-minima functions.
-\newblock {\em Comput. Optim. Appl.}, 45:639--661, April 2010.
 
 \bibitem{AdaptiveSAGA}
 Il~kwon Jeong and Ju~jang Lee.
@@ -512,10 +495,6 @@ Qi~Ming-yao, Miao Li-xin, Zhang Le, and Xu~Hua-yu.
   Annual Conference Proceedings., International Conference on}, pages 1648
   --1653, 10-12 2008.
 
-\bibitem{TestFunctions}
-M.~Molga and C.~Smutnicki.
-\newblock Test functions for optimization needs, 2005.
-
 \bibitem{adaptPSO}
 Christopher~K. Monson and Kevin~D. Seppi.
 \newblock Adaptive diversity in pso.
@@ -533,14 +512,6 @@ Roberto Montemanni.
 Roberto Montemanni and Derek~H. Smith.
 \newblock Heuristic manipulation, tabu search and frequency assignment.
 \newblock {\em Comput. Oper. Res.}, 37(3):543--551, 2008.
-
-\bibitem{PSOPESO}
-Angel~E. Mu\, {n}oz~Zavala, Arturo~Hern\'{a}ndez Aguirre, and Enrique~R.
-  Villa~Diharce.
-\newblock Constrained optimization via particle evolutionary swarm optimization
-  algorithm (peso).
-\newblock In {\em GECCO '05: Proceedings of the 2005 conference on Genetic and
-  evolutionary computation}, pages 209--216, New York, NY, USA, 2005. ACM.
 
 \bibitem{wirelesstelcoMullet}
 Garry Mullet.
@@ -580,18 +551,17 @@ E.~Nowicki and S.~Zdrzalka.
 \newblock {\em The Journal of the Operational Research Society}, 47:1054--1064,
   1996.
 
+\bibitem{HandbookofMH}
+Sigurdur {\'O}lafsson.
+\newblock Chapter 21 metaheuristics.
+\newblock In Shane~G. Henderson and Barry~L. Nelson, editors, {\em Simulation},
+  volume~13 of {\em Handbooks in Operations Research and Management Science},
+  pages 633 -- 654. Elsevier, 2006.
+
 \bibitem{SOSwarm}
 Michael O\&\#x2019;Neill and Anthony Brabazon.
 \newblock Self-organising swarm (soswarm).
 \newblock {\em Soft Comput.}, 12(11):1073--1080, 2008.
-
-\bibitem{DynamicPenaltyGA}
-W.~Paszkowicz.
-\newblock Properties of a genetic algorithm equipped with a dynamic penalty
-  function.
-\newblock {\em Computational Materials Science}, 45(1):77 -- 83, 2009.
-\newblock Selected papers from the E-MRS 2007 Fall Meeting Symposium G: Genetic
-  Algorithms in Materials Science and Engineering - GAMS-2007.
 
 \bibitem{GSMSecurInTeleNetwork}
 Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
@@ -644,11 +614,6 @@ D.~J. Reid.
 \newblock Genetic algorithms in constrained optimization.
 \newblock {\em Mathematical and Computer Modelling}, 23(5):87 -- 111, 1996.
 
-\bibitem{ARPSO}
-J.~Riget and J.S. Vesterstr¿m.
-\newblock A diversity-guided particle swarm optimizer - the arpso.
-\newblock Technical report, Aarhus Universitet, 2002.
-
 \bibitem{MSFAP}
 Angelos~N. Rouskas, Michael~G. Kazantzakis, and Miltiades~E. Anagnostou.
 \newblock Minimizing of frequency assignment span in cellular networks.
@@ -670,13 +635,6 @@ Mohsen Saemi and Morteza Ahmadi.
 \newblock Integration of genetic algorithm and a coactive neuro-fuzzy inference
   system for permeability prediction from well logs data.
 \newblock {\em Transport in Porous Media}, 71(3):273--288, February 2008.
-
-\bibitem{EfficientEvoChannelManagement}
-H.G. Sandalidis, P.P. Stavroulakis, and J.~Rodriguez-Tellez.
-\newblock An efficient evolutionary algorithm for channel resource management
-  in cellular mobile systems.
-\newblock {\em Evolutionary Computation, IEEE Transactions on}, 2(4):125 --137,
-  nov 1998.
 
 \bibitem{MobileWirelessCommunications}
 Mischa Schwartz.
@@ -754,11 +712,10 @@ Ashish Sureka and Peter~R. Wurman.
   conference on Autonomous agents and multiagent systems}, pages 1023--1029,
   New York, NY, USA, 2005. ACM.
 
-\bibitem{TSGlobalOptContinFunc}
-Y.~S. Teh and G.~P. Rangaiah.
-\newblock Tabu search for global optimization of continuous functions with
-  application to phase equilibrium calculations.
-\newblock {\em Computers \& Chemical Engineering}, 27(11):1665 -- 1679, 2003.
+\bibitem{SIPowerInNums}
+Peter Tarasewich and Patrick~R. McMullen.
+\newblock Swarm intelligence: power in numbers.
+\newblock {\em Commun. ACM}, 45(8):62--67, August 2002.
 
 \bibitem{BCO}
 Dusan Teodorovic, Panta Lucic, Goran Markovic, and Mauro~Dell' Orco.
@@ -786,13 +743,6 @@ Vedat To\u{g}an and Ay\c{s}e~T. Dalo\u{g}lu.
   self-adaptive member grouping.
 \newblock {\em Comput. Struct.}, 86(11-12):1204--1218, 2008.
 
-\bibitem{DormRoomSA}
-Nguyen~Thanh Trung and Duong~Tuan Anh.
-\newblock Comparing three improved variants of simulated annealing for
-  optimizing dorm room assignments.
-\newblock In {\em Computing and Communication Technologies, 2009. RIVF '09.
-  International Conference on}, pages 1 --5, 13-17 2009.
-
 \bibitem{FundamentalsWirelessCommunication}
 David Tse and Pramod Viswanath.
 \newblock {\em Fundamentals of Wireless Communication}.
@@ -811,24 +761,16 @@ Roger~L. Wainwright.
   combinatorial optimization problems.
 \newblock {\em SIGICE Bull.}, 19(3):30--36, 1994.
 
-\bibitem{GangWangACO}
-Gang Wang, Wenrui Gong, Brian DeRenzi, and Ryan Kastner.
-\newblock Design space exploration using time and resource duality with the ant
-  colony optimization.
-\newblock In {\em Proceedings of the 43rd annual Design Automation Conference},
-  DAC '06, pages 451--454, New York, NY, USA, 2006. ACM.
+\bibitem{4GWirelessVid}
+Haohong Wang, Lisimachos Kondi, Ajay Luthra, and Song Ci.
+\newblock {\em 4G Wireless Video Communications}.
+\newblock Wiley Publishing, 2009.
 
 \bibitem{ParallelGASA}
 Z.~G. Wang, Y.~S. Wong, and M.~Rahman.
 \newblock Development of a parallel optimization method based on genetic
   simulated annealing algorithm.
 \newblock {\em Parallel Comput.}, 31(8+9):839--857, 2005.
-
-\bibitem{devparallelgasa}
-Z.~G. Wang, Y.~S. Wong, and M.~Rahman.
-\newblock Development of a parallel optimization method based on genetic
-  simulated annealing algorithm.
-\newblock {\em Parallel Comput.}, 31:839--857, August 2005.
 
 \bibitem{ReactiveTabuVHR}
 N.~A. Wassan.
@@ -851,22 +793,12 @@ Dennis Weyland.
   Genetic and evolutionary computation}, pages 803--810, New York, NY, USA,
   2008. ACM.
 
-\bibitem{evalevoalgo}
-Darrell Whitley, Soraya Rana, John Dzubera, and Keith~E. Mathias.
-\newblock Evaluating evolutionary algorithms.
-\newblock {\em Artif. Intell.}, 85:245--276, August 1996.
-
 \bibitem{PSOSoftTesting}
 Andreas Windisch, Stefan Wappler, and Joachim Wegener.
 \newblock Applying particle swarm optimization to software testing.
 \newblock In {\em GECCO '07: Proceedings of the 9th annual conference on
   Genetic and evolutionary computation}, pages 1121--1128, New York, NY, USA,
   2007. ACM.
-
-\bibitem{IntroMathProgramming}
-Wayne~L. Winston and Munirpallam Venkataramanan.
-\newblock {\em Introduction to Mathematical Programming}.
-\newblock Thomson Learning, 2003.
 
 \bibitem{EcoEquilSA}
 Lihua Wu and Yuyun Wang.
