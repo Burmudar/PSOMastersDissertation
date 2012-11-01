@@ -308,6 +308,10 @@ O.~Holthaus and C.~Rajendran.
 \newblock {\em The Journal of the Operational Research Society}, 56(8):pp.
   947--953, 2005.
 
+\bibitem{FAPWeb}
+http://fap.zib.de/.
+\newblock Fap web, 2010.
+
 \bibitem{RadioFAP}
 Lhassane Idoumghar and Ren{{\'e}} Schott.
 \newblock Two distributed algorithms for the frequency assignment problem in
@@ -509,14 +513,6 @@ Roberto Montemanni and Derek~H. Smith.
 \newblock Heuristic manipulation, tabu search and frequency assignment.
 \newblock {\em Comput. Oper. Res.}, 37(3):543--551, 2008.
 
-\bibitem{PSOPESO}
-Angel~E. Mu\, {n}oz~Zavala, Arturo~Hern\'{a}ndez Aguirre, and Enrique~R.
-  Villa~Diharce.
-\newblock Constrained optimization via particle evolutionary swarm optimization
-  algorithm (peso).
-\newblock In {\em GECCO '05: Proceedings of the 2005 conference on Genetic and
-  evolutionary computation}, pages 209--216, New York, NY, USA, 2005. ACM.
-
 \bibitem{wirelesstelcoMullet}
 Garry Mullet.
 \newblock {\em Wireless telecommunications systems and networks}.
@@ -554,6 +550,13 @@ E.~Nowicki and S.~Zdrzalka.
   search approach.
 \newblock {\em The Journal of the Operational Research Society}, 47:1054--1064,
   1996.
+
+\bibitem{HandbookofMH}
+Sigurdur {\'O}lafsson.
+\newblock Chapter 21 metaheuristics.
+\newblock In Shane~G. Henderson and Barry~L. Nelson, editors, {\em Simulation},
+  volume~13 of {\em Handbooks in Operations Research and Management Science},
+  pages 633 -- 654. Elsevier, 2006.
 
 \bibitem{SOSwarm}
 Michael O\&\#x2019;Neill and Anthony Brabazon.
@@ -709,6 +712,11 @@ Ashish Sureka and Peter~R. Wurman.
   conference on Autonomous agents and multiagent systems}, pages 1023--1029,
   New York, NY, USA, 2005. ACM.
 
+\bibitem{SIPowerInNums}
+Peter Tarasewich and Patrick~R. McMullen.
+\newblock Swarm intelligence: power in numbers.
+\newblock {\em Commun. ACM}, 45(8):62--67, August 2002.
+
 \bibitem{BCO}
 Dusan Teodorovic, Panta Lucic, Goran Markovic, and Mauro~Dell' Orco.
 \newblock Bee colony optimization: Principles and applications.
@@ -753,12 +761,10 @@ Roger~L. Wainwright.
   combinatorial optimization problems.
 \newblock {\em SIGICE Bull.}, 19(3):30--36, 1994.
 
-\bibitem{GangWangACO}
-Gang Wang, Wenrui Gong, Brian DeRenzi, and Ryan Kastner.
-\newblock Design space exploration using time and resource duality with the ant
-  colony optimization.
-\newblock In {\em Proceedings of the 43rd annual Design Automation Conference},
-  DAC '06, pages 451--454, New York, NY, USA, 2006. ACM.
+\bibitem{4GWirelessVid}
+Haohong Wang, Lisimachos Kondi, Ajay Luthra, and Song Ci.
+\newblock {\em 4G Wireless Video Communications}.
+\newblock Wiley Publishing, 2009.
 
 \bibitem{ParallelGASA}
 Z.~G. Wang, Y.~S. Wong, and M.~Rahman.

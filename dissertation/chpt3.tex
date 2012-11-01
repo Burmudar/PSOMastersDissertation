@@ -1,11 +1,11 @@
 \chapter{The Frequency Assignment Problem}
 \label{chpt:fap}
 \section{Introduction}
-The frequency asignment problem (FAP)\footnote{Also known as automatic frequency planning (AFP) or channel assignment problem (CAP)\cite{ACOvsEA}} is a generalisation of the graph-colouring problem and is consequently an NP-Complete problem\cite{FAPRAMColouring}. The FAP is an NP-Complete problem due to fact that only a finite number of frequencies can be assigned to antennae/transceivers (TRXs), where the number of transceivers to be assigned frequencies greatly outweighs the number of available frequencies\cite{FAPRAMColouring}. A more thorough definition of what it means for a problem to be NP-Complete will be given in section~\ref{sec:NPComplete}.
+The frequency asignment problem (FAP)\footnote{Also known as automatic frequency planning (AFP) or channel assignment problem (CAP)\cite{ACOvsEA}} is a generalisation of the graph-colouring problem and is consequently an NP-Complete problem\cite{FAPRAMColouring}. The FAP is an NP-Complete problem due to fact that only a finite number of frequencies can be assigned to antennae/transceivers (TRXs), where the number of transceivers to be assigned frequencies greatly outweighs the number of available frequencies\cite{FAPRAMColouring}. A more thorough definition of what it means for a problem to be NP-Complete is given in section~\ref{sec:NPComplete}.
 
-In wireless communication a huge concern is interference which occurs when frequencies used for communication are close to each other in the frequency spectrum\cite{Karen2004}. Interference and its effects will be discussed in detail in section \ref{sec:Interference}. Essentially for the FAP the primary concern is to develop an approximate plan on assigning frequencies in such a way that interference is kept to a minimum. 
+In wireless communication a huge concern is interference which occurs when frequencies used for communication are close to each other in the frequency spectrum\cite{Karen2004}. Interference and its effects is discussed in detail in section \ref{sec:Interference}. Essentially for the FAP the primary concern is to develop an approximate plan on assigning frequencies in such a way that interference is kept to a minimum. 
 
-Using exact algorithms to find a solution is not practical since the time to find a solution will be polynomial. Generally metaheuristic algorithms are used to find optimal solutions to NP-Complete problems\cite{ACOvsEA}. In the chapter~\ref{chpt:heuristic}, a discussion will be presented on algorithms that are generally used to find solutions to NP-Complete problems. 
+Using exact algorithms to find a solution is not practical since the time to find a solution is polynomial. Generally metaheuristic algorithms are used to find optimal solutions to NP-Complete problems\cite{ACOvsEA}. In the chapter~\ref{chpt:heuristic}, a discussion is presented on algorithms that are generally used to find solutions to NP-Complete problems. 
 
 As discussed in chapter~\ref{chpt:celltech} network operators are licensed a range of frequencies from the available spectrum. A licensed piece of spectrum contains a series of consecutive frequencies as well as gaps. Gap frequencies are barred from being used by any device within the network as they may have already been allocated to another operator for use \cite{FAPInCell}. By barring frequencies, a scenario is avoided where the different networks' equipment interferes with their respective operations\cite{FAPInCell}.
 
@@ -13,7 +13,7 @@ Due to the whole spectrum not being available to network operators and only a su
 
 It is not always possible to simply allocate more frequencies to a network even if the network pays the associated fees. The whole commercial spectrum may already have been licensed to various entities. Hence, licensed frequencies are a very valuable and scarce commodity \cite{FAPRAMColouring,FAPInCell}.
 
-As will be discussed in section \ref{sec:Interference}, when frequencies are reused the probability that interference will occur on the communication link increases. Interference is a very important factor for networks to consider and keep to a minimum as it influences the quality of the communication occurring on the network.
+As is discussed in section \ref{sec:Interference}, when frequencies are reused the probability that interference will occur on the communication link increases. Interference is a very important factor for networks to consider and keep to a minimum as it influences the quality of the communication occurring on the network.
 
 In the next section an overview of what it means when a problem is NP-Complete is given.
 
@@ -31,11 +31,30 @@ Another range of problems consists mostly of problems that cannot be solved in p
 
 There is another range of NP problems that are a subset of NP problems, which are referred to as the ``most extreme'' problems within NP.  These problems are collectively known as NP-Complete problems and are the most difficult problems to determine feasible solutions for in the NP problem range\cite{AIModernApproach}. The FAP is one such problem \cite{AndreasPaper,FixedFAPPSO}.
 
+\section{Constraint Handling mechanisms}
+\label{sec:chm}
+Not only the FAP an NP-Complete problem but it is also a constraint problem. Constraint problem restrict the search space of possible solutions with boundaries. These boundaries are reffered to as constraints. The FAP domain has specific constraints defined for each of the different individual problems. Before the various ways in which frequencies can be allocated is discussed a brief discussion needs to be presented on constraint handling mechanisms.
+
+Constraints define the boundaries of the search space. Solutions found to be violating the constraints are considered to be outside of the search space. Various methods exist how to treat solutions found to be outside of the defined search space. These methods are known to be \emph{constraint handling mechanisms} and is discussed below.
+
+In research done by Engelbrecht\cite{CompuIntelligenceIntro} the following constraint handling mechanisms are presented.
+\begin{itemize}
+\item{\textbf{Reject infeasible solutions}} --- Solutions that violate the defined constraints are not even considered and rejected.
+\item{\textbf{Penalty function methods}} --- Modifies the objective funciton to add a penalty that is enforced if a solution violates constraints. By adding a penalty the infeasible solutions are discouraged.
+\item{\textbf{Convert the constrained problem to an unconstrained problem}} --- By solving the unconstrained problem better solutions can be found although not guaranteed.
+\item{\textbf{Preserving feasibility methods}} --- Candidate solutions are initialised in the search space and satisfy all constraints. These solutions are continuously moved or transformed with specialised operators who ensure that the solutions continue to satisfy all the constraints. The operators ensure that all solutions stay with in the bounded search space.
+\item{\textbf{Pareto ranking methods}} --- Solutions are ranked based on the severity of their constraint violations.
+\item{\textbf{Repair methods}} --- Operators are used to transform solutions that violate constraints to solutions that adhere to all the constraints and are thus feasible solutions.
+\end{itemize}
+
+Constraint handling methods need to be used when solving constrained problems like the FAP. Without these methods, the search for solutions are undirected and solutions that cannot be used are presented as most optimal. Reference to these methods will be made where applicable.
+
+In the next section 2 methods are discussion that define how frequencies are allocated.
 \section{Frequency Allocation Types}
 \label{sec:FreqAssignmentTypes}
-In this section the different methods used to allocate frequencies to cells in a cellular network are discussed. Furthermore the method that relates to the specific FAP variant in this dissertation will be described.
+In this section the different methods used to allocate frequencies to cells in a cellular network are discussed. Furthermore the method that relates to the specific FAP variant in this dissertation is described.
 
-Within the FAP domain there are different types of FAP, which have emerged over the years as the domain of wireless communications matured and technological requirements changed. These FAP variants will be discussed in section \ref{sec:FAPVariants}.
+Within the FAP domain there are different types of FAP, which have emerged over the years as the domain of wireless communications matured and technological requirements changed. These FAP variants is discussed in section \ref{sec:FAPVariants}.
 
 There are a variety of FAPs in the wireless communication domain but each individual problem can be classified into one of the following two categories based on the way frequencies are assigned to cells:
 \begin{itemize}
@@ -72,7 +91,7 @@ DCA is much more efficient than FCA when the amount of mobile traffic on the net
 Finally DCA inherently requires a great deal more computational power than FCA, since the frequencies need to be selected and allocated with great speed, otherwise the cell requesting a channel will not be able to handle the call and will therefore block the call or drop the call\cite{PrinciplesMobileCommunication,WirelessCommunications,MobileWirelessCommunications}.
 
 
-This concludes the discussion on the different allocation schemes used in modern cellular networks. In the next section a description will be given of what interference is and why it is important for cellular networks. An overview will also be given of when interference occurs.
+This concludes the discussion on the different allocation schemes used in modern cellular networks. In the next section a description is given of what interference is and why it is important for cellular networks. An overview will also be given of when interference occurs.
 
 \section{Interference}
 \label{sec:Interference}
@@ -157,11 +176,12 @@ The first set of hard constraint frequencies is known as \emph{globally blocked 
 
 The second set of hard constraint frequencies is known as \emph{locally blocked channels}. These channels are not allowed at certain geographic areas but are free for use at any other area\cite{InterferenceOrientatedFAP}. A typical area where certain frequencies will be forbidden to be used is near a country border\cite{InterferenceOrientatedFAP}. The locally blocked frequencies are most likely in use by another network resident to the bordered country.
 
-In this section a description was given of what interference is and what the consequences are of too much interference in a network. This section further elaborated on the circumstances in which interference can occur in a wireless network. In the next section an overview will be given of the various different subproblems in the FAP domain.
+In this section a description was given of what interference is and what the consequences are of too much interference in a network. This section further elaborated on the circumstances in which interference can occur in a wireless network. In the next section an overview is given of the various different subproblems in the FAP domain.
+
 
 \section{Frequency Assignment Problem types}
 \label{sec:FAPVariants}
-In this section each of the problem variants for the FAP will be discussed, starting with one of the first and oldest problems in the FAP domain. This section will conclude with a discussion on the particular variant of FAP focussed on in this research.
+In this section each of the problem variants for the FAP is discussed, starting with one of the first and oldest problems in the FAP domain. This section will conclude with a discussion on the particular variant of FAP focussed on in this research.
 \subsection{Minimum Order FAP}
 The Minimum Order FAP (MO-FAP) was the first FAP that emerged in the 1970s. The MO-FAP is concerned with assigning frequencies to transmitters while interference is minimised as well as minimising the number of different frequencies that are used\cite{Karen2004}. 
 
@@ -183,12 +203,13 @@ Unlike the previous problems, in MI-FAP any available channel in the allocated b
 
 The MI-FAP is the problem currently most encountered in cellular networks, since there are more operating networks than new networks being designed in the cellular industry today. This particular problem forms the focus of this research. 
 
-Since MI-FAP is very close to real-world instance problems, authors tend to use real-world instances or benchmarks to test the quality and efficiency of their algorithms \cite{Eisenblatter,MontemanniThesis}. The quality and efficiency of the solution in this research will be benchmarked against the COST 259 benchmark ,which is discussed in section \ref{sec:FAPBenchmarks}.
+Since MI-FAP is very close to real-world instance problems, authors tend to use real-world instances or benchmarks to test the quality and efficiency of their algorithms \cite{Eisenblatter,MontemanniThesis}. The quality and efficiency of the solution in this research is benchmarked against the COST 259 benchmark ,which is discussed in section \ref{sec:FAPBenchmarks}.
 
-In the following section a formal mathematical definition for the fixed spectrum MI-FAP will be set out. The definition is important as it forms the basis for the objective/cost function that the algorithm in this research uses.
+In the following section a formal mathematical definition for the fixed spectrum MI-FAP is set out. The definition is important as it forms the basis for the objective/cost function that the algorithm in this research uses.
+ 
 \section{FS MI-FAP Mathematical Formulation}
 \label{sec:FAPMathDef}
-A Mathematical definition of the FAP is given in this section. The mathematical definition will be used by the algorithm discussed in this dissertation to evaluate the amount of interference that generated frequency plans exhibit.
+A Mathematical definition of the FAP is given in this section. The mathematical definition is used by the algorithm discussed in this dissertation to evaluate the amount of interference that generated frequency plans exhibit.
 
 The FAP can be represented as a graph colouring problem and is known to be NP-Complete. Before a mathematical definition can be formally given for the FAP, some symbols and their respective definitions need to be introduced.
 
@@ -230,7 +251,7 @@ Formally the FS---FAP can now be defined as a 5-tuple FS-FAP $= (V,E,D,P,F)$ wit
  Total Interference &= \sum^{|P|}_{i = 0}c(p_i),p \in P 
 \end{align}
 
-In the following section a brief discussion on the different FAP benchmarks that exist will be provided and the benchmark against which the algorithm developed in this research will be evaluated is defined.
+In the following section a brief discussion on the different FAP benchmarks that exist is provided and the benchmark against which the algorithm developed in this research is evaluated is defined.
 \section{FAP Benchmarks}
 \label{sec:FAPBenchmarks}
 Some of the most used benchmarks in the FAP domain are now discussed. The first benchmark was introduced in the 1970s.
@@ -250,9 +271,11 @@ These instances were initially not available to the general public as they were 
 \label{sec:COST259}
 The COST (\emph{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}) 259 is a set of real-world GSM instances made available by the European Union. The instances are publicly available and can  be downloaded for free at http://fap.zib.de/ (FAP Web 2011). The website also contains the most recent results obtained by researchers using these instances\cite{Karen2004,Eisenblatter}.
 
-The instances are fairly difficult due to the large number of transmitters (900 - 4 000) that need to be assigned frequencies, with a relatively small number of spectrum of frequencies. The most important characteristic of these benchmarks are that they resemble real-world GSM network data. Due to these benchmarks' real-world applicability, they were selected as the main benchmarks to evaluate the algorithm presented in this dissertation.
+The instances are difficult due to the large number of transmitters (900 - 4 000) that need to be assigned frequencies, with a relatively small number of spectrum of frequencies. The most important characteristic of these benchmarks are that they resemble real-world GSM network data. Due to these benchmarks' real-world applicability, they were selected as the main benchmarks to evaluate the algorithm presented in this dissertation.
 
 More specifically this research concentrates on a small subset of the instances that are available, namely Siemens1, Siemens2, Siemens3 and Siemens4. In the paper by Montemanni and Smith \cite{TabuMontemanniSmith} the same subset of problems was used and to date their algorithm has produced some of the best results. The characteristics of each instance will now be discussed.
+
+As dicussed in section\ref{sec:chm} constraint handling mechanisms need to be used for problems like the FAP. Each of the Siemens benchmarks define a set of globally or locally blocked frequencies which are hard constraints. Due to this constraint one of the mechanisms that will be used in the algorithm to handle solutions violating this constraint is \emph{to reject any solutions that is found to violate this hard constraint}.
 \subsubsection{Siemens1}
 The Siemens1 instance resembles a GSM network that follows the GSM900 standard. This particular network has been allocated a spectrum set of frequencies $F = \{16,17,18,\dots,90\}$ which are allowed to be assigned to cells. 
 
@@ -272,7 +295,7 @@ The Siemens4 instance is similar to a GSM network that follows the GSM900 standa
 
 According to this problem instance this network has 276 sites and consists of 760 cells. Where each cell is said to have on average 3.66 transceivers. The Co-site separation is set to be 2 and the co-cell separation must be 3.
 
-In the next section a general overview will be given on the different industries where the FAP is encountered. The purpose of this discussion is to get a better understanding about how far reaching the problem is and the different forms the problem is encountered in.
+In the next section a general overview is given on the different industries where the FAP is encountered. The purpose of this discussion is to get a better understanding about how far reaching the problem is and the different forms the problem is encountered in.
 \section{FAP in the Industry}
 \label{sec:FAPIndustry}
 FAP isn't a pure research problem as it is a problem that occurs today and must be addressed by different role players (engineers, network operators and regulatory experts) across different industrial domains. For each industry listed, a brief overview is given of how the problem differs compared with other industries. 

@@ -1,11 +1,12 @@
-	\begin{tikzpicture}[scale=0.95]
+	\begin{tikzpicture}[scale=1.10]
 		%\draw[step=0.25cm,thin,color=gray] (-6,-8) grid (6,8);
 		%drawing of handsets
 		%left handset
 		\draw (-3.85,-6.20) circle (0.05cm);
 		\draw (-3.85,-6.75) -- (-3.85,-6.25);
-		\draw (-3.9,-8) node [below=0.15cm,right=0.005cm] {MS} rectangle (-3.15,-6.75);
+		\draw (-3.9,-8) node [below=0.85cm,right=0.005cm] {} rectangle (-3.15,-6.75);
 		\draw (-3.8,-7.4) rectangle (-3.25,-6.8);
+		\draw (-3.9,-8.25) node [below=0.85cm,right=0.005cm] {MS};
 		\foreach \x in {0.0,0.1,0.2,0.3,0.4}
 		{
 			\foreach \y in {0.0,0.1,0.2,0.3}
@@ -16,8 +17,9 @@
 		%right handset
 		\draw (3.85,-6.20) circle (0.05cm);
 		\draw (3.85,-6.75) -- (3.85,-6.25);
-		\draw (3.9,-8) node [below=0.15cm,left=0.005cm] {MS} rectangle (3.15,-6.75);
+		\draw (3.9,-8) node [below=0.85cm,left=0.005cm] {} rectangle (3.15,-6.75);
 		\draw (3.8,-7.4) rectangle (3.25,-6.8);
+		\draw (3.9,-8.25) node [below=0.85cm,left=0.005cm] {MS};
 		\foreach \x in {0.0,0.1,0.2,0.3,0.4}
 		{
 			\foreach \y in {0.0,0.1,0.2,0.3}
@@ -70,11 +72,13 @@
 		\draw (LeftMSC.east) to (MiddelMSC);
 		\draw (MiddelMSC) to (OtherNetworks);
 		%Databases
-		\node (VLRDB) at (0,6.25) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {VLR};
-		\node (EIRDB) at (-4,6.25) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {EIR};
-		\node (HLRDB) at (4,6.25) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {HLR};
+		\node (VLRDB) at (4,7.10) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {VLR};
+		\node (AUCDB) at (-4,7.10) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {AUC};
+		\node (EIRDB) at (-4,5.75) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {EIR};
+		\node (HLRDB) at (4,5.75) [cylinder,shape border rotate=90,aspect=0.45,minimum width=2cm,minimum height=1.35cm,draw] {HLR};
 		\draw[thick] (EIRDB) to [bend left=20] (MiddelMSC);
-		\draw[thick] (VLRDB) to (MiddelMSC);
-		\draw[thick] (HLRDB) to [bend right=20] (MiddelMSC);
+		\draw[thick] (VLRDB) to [bend right=20] (MiddelMSC);
+		\draw[thick] (AUCDB) to [bend left=25] (MiddelMSC);
+		\draw[thick] (HLRDB) to [bend right=25] (MiddelMSC);
 		\draw[dashed,thick,color=black] (-6,8) -- (0,8) node [anchor=north] {NSS System} -- (6,8) -- (6,5) -- (2,5) -- (2,1) -- (-2,1) -- (-2,5) -- (-6,5) -- (-6,8) -- cycle;
 	\end{tikzpicture}

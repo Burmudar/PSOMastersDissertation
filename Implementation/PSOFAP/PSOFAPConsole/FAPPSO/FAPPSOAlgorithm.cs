@@ -66,6 +66,7 @@ namespace PSOFAPConsole.FAPPSO
         {
             DateTime start = DateTime.Now;
             String filename = "Bench-"+BenchName+"("+Population+")-" + start.ToLongDateString() + " " + start.ToLongTimeString().Replace(':','-') +"#" + this.GetHashCode() +".csv";
+            Console.WriteLine("Outputting results to <{0}>", filename);
             StreamWriter swriter = new StreamWriter(new FileStream(filename, FileMode.CreateNew));
             for (int i = 0; i < 10000; i++)
             {

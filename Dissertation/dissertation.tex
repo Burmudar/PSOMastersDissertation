@@ -1,6 +1,7 @@
 \documentclass[11pt,a4paper]{book}
 \usepackage{ujthesis,float,enumerate,amssymb,amsmath,algorithm,algpseudocode}
 \usepackage{cite,graphicx,tikz,xcolor,appendix,hyperref}
+\usepackage[acronym,toc]{glossaries}
 \usetikzlibrary{plothandlers}
 \usetikzlibrary{positioning}
 \usetikzlibrary{decorations.pathreplacing}
@@ -22,6 +23,81 @@
 \faculty{Faculty of Science}
 \supervisorName{Dr G.B. O'Reilly}
 \submissionDate{May 2012}
+%glossary definitions
+\makeglossaries
+\newacronym{FAP}{FAP}{frequency assignment problem}
+\newacronym{gsm}{GSM}{general system for mobile communication}
+\newacronym{SMS}{SMS}{short message service}
+\newacronym{MMS}{MMS}{multimedia message service}
+\newacronym{GPRS}{GPRS}{general packet radio system}
+\newacronym{EDGE}{EDGE}{enhanced data global evolution}
+\newacronym{HSCSD}{HSCSD}{high speed circuit switched data}
+\newacronym{ISDN}{ISDN}{integrated service digital network}
+\newacronym{DCS1800}{DCS1800}{digital cellular system}
+\newacronym{TDMA}{TDMA}{time division multiple access}
+\newacronym{SIR}{SIR}{signal-to-noise ratio}
+\newacronym{UMTS}{UMTS}{universal mobile telecommunications system}
+\newacronym{DS-CDMA}{DS-CDMA}{direct sequence collision detection multiple access}
+\newacronym{WCDMA}{WCDMA}{wide band collision detection multiple access}
+\newacronym{CDMA}{CDMA}{code division multiple access}
+\newacronym{LTE}{LTE}{long term evolution}
+\newacronym{WIMAX}{WiMAX}{worlwide interoperability for microwave access}
+\newacronym{MS}{MS}{mobile station}
+\newacronym{POS}{POS}{[point of sale}
+\newacronym{SIM}{SIM}{subscriber identification module}
+\newacronym{IMSI}{IMSI}{international mobile subscriber identity}
+\newacronym{IMEI}{IMEI}{international mobile equipment identity}
+\newacronym{BTS}{BTS}{base tranceiver stations}
+\newacronym{MSC}{MSC}{mobile switching centre}
+\newacronym{BSS}{BSS}{base station subsystem}
+\newacronym{BSC}{BSC}{base station controller}
+\newacronym{SA}{SA}{service area}
+\newacronym{LA}{LA}{location area}
+\newacronym{TRX}{TRX}{transceiver}
+\newacronym{TDM}{TDM}{time division multiplexing}
+\newacronym{FDM}{FDM}{frequency division multiplexing}
+\newacronym{NSS}{NSS}{network switching subsystem}
+\newacronym{VLR}{VLR}{visitor location register}
+\newacronym{HLR}{HLR}{home location register}
+\newacronym{PSTN}{PSTN}{public switching telephone network}
+\newacronym{AUC}{AUC}{authentication centre}
+\newacronym{EIR}{EIR}{equipment identity register}
+\newacronym{SRES}{SRES}{signed response}
+\newacronym{OMC}{OMC}{operations and management centre}
+\newacronym{NMC}{NMC}{network management centre}
+\newacronym{LAPDm}{LAPDm}{link access protocol D channel modified}
+\newacronym{TCH}{TCH}{traffic channel}
+\newacronym{BCH}{BCH}{broadcast channel}
+\newacronym{CCCH}{CCCH}{common control channel}
+\newacronym{DCCH}{DCCH}{dedicated control channel}
+\newacronym{BCCH}{BCCH}{broadcast control channel}
+\newacronym{FCCH}{FCCH}{frequency control channel}
+\newacronym{SCH}{SCH}{sychronisation channel}
+\newacronym{RACH}{RACH}{random access channel}
+\newacronym{AGCH}{AGCH}{access grant channel}
+\newacronym{PCH}{PCH}{paging channel}
+\newacronym{NCH}{NCH}{notification channel}
+\newacronym{ACCH}{ACCH}{associated control channel}
+\newacronym{SDCCH}{SDCCH}{stand-alone dedicated control channel}
+\newacronym{SACCH}{SACCH}{slow associated control channel}
+\newacronym{FACCH}{FACCH}{fast associated control channel}
+\newacronym{CBCH}{CBCH}{cell broadcast control channel}
+\newacronym{AFP}{AFP}{automatic frequency planning}
+\newacronym{CAP}{CAP}{channel assignment problem}
+\newacronym{FFA}{FFA}{fixed frequency allocation}
+\newacronym{FCA}{FCA}{fixed channel allocation}
+\newacronym{DFA}{DFA}{dynamic frequency allocation}
+\newacronym{DCA}{DCA}{dynamic channel allocation}
+\newacronym{QoS}{QoS}{quality of service}
+\newacronym{SINR}{SINR}{signal to interference noise power ration}
+\newacronym{BER}{BER}{bit error rate}
+\newacronym{MO-FAP}{MO-FAP}{minimum-order frequency assignment problem}
+\newacronym{MS-FAP}{MS-FAP}{minimum span frequency assignment problem}
+\newacronym{MI-FAP}{MI-FAP}{minimum interference frequenc assignment problem}
+\newacronym{EUCLID}{EUCLID}{european cooperation on the long term in the defense}
+\newacronym{CELAR}{CELAR}{cenre d'electronique de l'armement}
+\newacronym{WLAN}{WLAN}{wireless local area network}
+\newacronym{AP}{AP}{access point}
 \begin{document}
 \frontmatter
 \makecover
@@ -46,6 +122,7 @@
 %\addappheadtotoc
 %\include{apdxA}
 \backmatter
+\printglossaries
 \bibliography{ReferenceDB}
 \bibliographystyle{plain}
 \end{document}
