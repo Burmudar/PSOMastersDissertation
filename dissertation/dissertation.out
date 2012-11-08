@@ -25,14 +25,14 @@
 \BOOKMARK [1][-]{section.3.2}{NP-Complete}{chapter.3}% 25
 \BOOKMARK [1][-]{section.3.3}{Constraint Handling mechanisms}{chapter.3}% 26
 \BOOKMARK [1][-]{section.3.4}{Frequency Allocation Types}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.4.1}{Fixed Frequency/Channel Assignment \(FFA/FCA\)}{section.3.4}% 28
-\BOOKMARK [2][-]{subsection.3.4.2}{Dynamic Frequency/Channel Assignment \(DFA/DCA\)}{section.3.4}% 29
+\BOOKMARK [2][-]{subsection.3.4.1}{Fixed Frequency/Channel Assignment}{section.3.4}% 28
+\BOOKMARK [2][-]{subsection.3.4.2}{Dynamic Frequency/Channel Assignment}{section.3.4}% 29
 \BOOKMARK [1][-]{section.3.5}{Interference}{chapter.3}% 30
 \BOOKMARK [1][-]{section.3.6}{Frequency Assignment Problem types}{chapter.3}% 31
-\BOOKMARK [2][-]{subsection.3.6.1}{Minimum Order FAP}{section.3.6}% 32
-\BOOKMARK [2][-]{subsection.3.6.2}{Minimum Span FAP}{section.3.6}% 33
-\BOOKMARK [2][-]{subsection.3.6.3}{Minimum Interference FAP}{section.3.6}% 34
-\BOOKMARK [1][-]{section.3.7}{FS MI-FAP Mathematical Formulation}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.6.1}{Minimum Order Frequency Assignment Problem}{section.3.6}% 32
+\BOOKMARK [2][-]{subsection.3.6.2}{Minimum Span Frequency Assignment Problem}{section.3.6}% 33
+\BOOKMARK [2][-]{subsection.3.6.3}{Minimum Interference Frequency Assignment Problem}{section.3.6}% 34
+\BOOKMARK [1][-]{section.3.7}{FS-FAP Mathematical Formulation}{chapter.3}% 35
 \BOOKMARK [1][-]{section.3.8}{FAP Benchmarks}{chapter.3}% 36
 \BOOKMARK [2][-]{subsection.3.8.1}{Philadelphia Benchmarks}{section.3.8}% 37
 \BOOKMARK [2][-]{subsection.3.8.2}{CELAR}{section.3.8}% 38

@@ -1,7 +1,7 @@
 \chapter{Metaheuristic Algorithms}
 \label{chpt:heuristic}
 \section{Introduction}
-Metaheuristics is a subdomain of the artificial intelligence domain\cite{AIModernApproach}. It evolved out of a need for more efficient search techniques with regard to hard problems. 
+Metaheuristics is a subdomain of the \gls{AI} domain\cite{AIModernApproach}. It evolved out of a need for more efficient search techniques with regard to hard problems. 
 
 Metaheuristics forms part of a collective body of algorithms that use heuristics to search a particular domain's problem space for the most optimal solution\cite{AIModernApproach,NatureInspiredMetaHeuristic}. Some problems explicitly define consrtaints to which the produced solution must adhere to. Problems that define such constraints are referred to as constraint optimisation problems\cite{FundamentalSwarm}. Problems where there are either no constraints or just a boundary constraint  defined are referred to as unconstraint problems\cite{FundamentalSwarm}.
 
@@ -15,7 +15,7 @@ The above-mentioned algorithms are not the only algorithms to form part of this 
 
 The main focus of this chapter is on each of the above algorithms. Before each of the algorithms is discussed, a brief overview is given of the various characteristics that metaheuristic algorithms exhibit. 
 
-AI search algorithms operate in search spaces, where they occupy various states while they are searching for a solution or goal state in a search space. Before these algorithms can be properly introduced, these concepts need to be discussed briefly.
+\gls{AI} search algorithms operate in search spaces, where they occupy various states while they are searching for a solution or goal state in a search space. Before these algorithms can be properly introduced, these concepts need to be discussed briefly.
 
 \section{Search Spaces and States}
 A search space is defined as a set of candidate goal states which may or may not be a solution to a problem\cite{AIModernApproach}. The candidate states are defined by the problem definition\cite{AIModernApproach}. The possible states can given by a successor function which generates new states adhering to the problem defined constraints if any\cite{AIModernApproach}. 
@@ -78,86 +78,86 @@ In this section the characteristics of metaheuristics that set these algorithms 
 \label{sec:tabusearch}
 \subsection{Introduction}
 \label{sec:TSIntroduction}
-Tabu search (TS) was first proposed by Glover\cite{Glover89} as a new searching technique to help algorithms avoid getting trapped in local optima in combinatorial and optimisation problems \cite{TabuRCAProblem}. Since Glover introduced the algorithm in the 1980s, tabu search has been applied to a wide range of problems such as the vehicle routing problem\cite{TabuVechicleRoutingWithTimeWindows}, FAP\cite{TabuMontemanniSmith}, capacitated-lot sizing problem\cite{TabuCarryOver}, Nurse Scheduling\cite{TabuNurse} and the Resource Constrained Assignment Problem\cite{TabuRCAProblem}. 
+\gls{TS} was first proposed by Glover\cite{Glover89} as a new searching technique to help algorithms avoid getting trapped in local optima in combinatorial and optimisation problems \cite{TabuRCAProblem}. Since Glover introduced the algorithm in the 1980s, tabu search has been applied to a wide range of problems such as the vehicle routing problem\cite{TabuVechicleRoutingWithTimeWindows}, \gls{FAP}\cite{TabuMontemanniSmith}, capacitated-lot sizing problem\cite{TabuCarryOver}, Nurse Scheduling\cite{TabuNurse} and the Resource Constrained Assignment Problem\cite{TabuRCAProblem}. 
 
 Even though the problems mentioned differ by a large margin, the algorithm has been successful in most optimisation problems it has been applied to. If one observes the results obtained in research \cite{TabuMontemanniSmith,tabuglobalplanning3g}, it can be inferred that tabu search has on average obtained the best results compared with previous attempts with other algorithms. 
 
-Tabu search (TS) resembles in its most basic form the hill-climbing search algorithm\cite{TabuBiddingStrats}. The hill-climbing search algorithm starts from an initial solution and then iteratively moves from the current solution to a neighbouring solution\cite{AIModernApproach}. Each neighbour is rated based on its attractiveness as a possible optimal solution that the algorithm is being applied to\cite{AIModernApproach}. 
+\gls{TS} resembles in its most basic form the hill-climbing search algorithm\cite{TabuBiddingStrats}. The hill-climbing search algorithm starts from an initial solution and then iteratively moves from the current solution to a neighbouring solution\cite{AIModernApproach}. Each neighbour is rated based on its attractiveness as a possible optimal solution that the algorithm is being applied to\cite{AIModernApproach}. 
 
 The hill-climbing algorithm moves to the neighbour with the highest rating without considering whether the neighbour might lead the algorithm astray, to a position where the neighbours are in fact \emph{worse} than previously encountered possible solutions\cite{AIModernApproach}. 
 
-The TS algorithm addresses this shortcoming by introducing the concept of memory\cite{TabuBiddingStrats}. The memory of the algorithm is actually a history of previous solutions that the algorithm has moved to in its search for the problem space for a solution\cite{TabuBiddingStrats}. 
+The \gls{TS} algorithm addresses this shortcoming by introducing the concept of memory\cite{TabuBiddingStrats}. The memory of the algorithm is actually a history of previous solutions that the algorithm has moved to in its search for the problem space for a solution\cite{TabuBiddingStrats}. 
 
 General search algorithms like hill-climbing, random-restart\footnote{Random-restart is a search algorithm where once a certain trend of repeated moves is noticed, the algorithm restarts by generating a new initial solution to start from and then continues its search process from that generated solution\cite{AIModernApproach}.} or scatter search tend to get trapped in local optima \cite{AIModernApproach}. The local optima might be a very attractive solution and thus general search algorithms will not move to better solutions since, according to the algorithm's built-in strategy, it has found the best solution. 
 
 In actual fact the solution that was found is the best solution in the \emph{local} search space, but not in the \emph{global} search space\cite{CompuIntelligenceIntro,AIModernApproach}. Therefore an important characteristic of algorithms being applied to optimisation problems is breaking out of local optima\cite{CompuIntelligenceIntro,AIModernApproach}.
 
-The next section discussed some of the characteristics that make the TS algorithm unique.
+The next section discussed some of the characteristics that make the \gls{TS} algorithm unique.
 
 \subsection{Important Tabu Search Characteristics}
 \label{sec:TScharacteristics}
-Various characteristics are important to the TS algorithm. The first characteristic is exactly how the TS algorithm iteratively improves upon the initial start solution.
+Various characteristics are important to the \gls{TS} algorithm. The first characteristic is exactly how the \gls{TS} algorithm iteratively improves upon the initial start solution.
 
 \subsubsection{Initial Solution Generation}
-The core feature of the TS algorithm is to sequentially improve an initial solution \cite{TSHazardous}. An initial possible solution is a point in the problem space where the TS algorithm will \emph{start} exploring in search of a more optimal solution \cite{AIModernApproach,TSHazardous}.
+The core feature of the \gls{TS} algorithm is to sequentially improve an initial solution \cite{TSHazardous}. An initial possible solution is a point in the problem space where the \gls{TS} algorithm will \emph{start} exploring in search of a more optimal solution \cite{AIModernApproach,TSHazardous}.
 
-An important consideration one has to make is how initial solutions are generated for the TS algorithm to start on\cite{AIModernApproach,TSHazardous}.
+An important consideration one has to make is how initial solutions are generated for the \gls{TS} algorithm to start on\cite{AIModernApproach,TSHazardous}.
 
 Random initial solutions might seem to be a good starting point, but by introducing randomisation it becomes hard to control the quality of the end solution\cite{TSHazardous}. Hence the generation of starting solutions must be controlled to limit the infeasibility of potential solutions \cite{TSHazardous}. 
 
 Control of the randomly generation solutions can be achieved by simply constraining the random solution generator to only generate initial starting points in a bounded subset of the entire search space. For example: instead of letting the random initial starting point be any number between positive infinity and negative infinity, the random number generator is constrained to only generate numbers between 5 and -5.
 
 \subsubsection{Neighbourhood Search}
-The following discussion on neighbourhood search is not meant to be an exhaustive survey on the different methods and how they differ under different problems. Instead the discussion is ment as a general overview to get an idea of neighborhood generation in the TS algorithm context. 
+The following discussion on neighbourhood search is not meant to be an exhaustive survey on the different methods and how they differ under different problems. Instead the discussion is ment as a general overview to get an idea of neighborhood generation in the \gls{TS} algorithm context. 
 
-The following neighbourhood discussion will be based on the assumption that the underlying problem the TS is applied to, has a search space with defined boundaries that is suitable for neighborhood generation.
+The following neighbourhood discussion will be based on the assumption that the underlying problem the \gls{TS} is applied to, has a search space with defined boundaries that is suitable for neighborhood generation.
 
-TS uses a neighbourhood local search process to explore the solution space. There is no set process of how neighbourhood candidate solutions are selected as it is problem dependant. The overall quality of the solution produced by TS is also dependent on the neighbourhood search strategy used \cite{TSHazardous}. 
+TS uses a neighbourhood local search process to explore the solution space. There is no set process of how neighbourhood candidate solutions are selected as it is problem dependant. The overall quality of the solution produced by \gls{TS} is also dependent on the neighbourhood search strategy used \cite{TSHazardous}. 
 
 The neighbourhood search phase is the first operation performed after the algorithm has been initialised, which is to say the algorithm has generated an initial starting solution from which the exploration process can start.
 
-The neighbourhood search phase is the primary means for the TS algorithm to search the solution space for an optimal solution. It is within this phase that new possible solutions must be presented for the TS heuristic to allow the algorithm to decide to which solution it must move next.
+The neighbourhood search phase is the primary means for the \gls{TS} algorithm to search the solution space for an optimal solution. It is within this phase that new possible solutions must be presented for the \gls{TS} heuristic to allow the algorithm to decide to which solution it must move next.
 
-The new possible solutions that are generated are called neighbouring solutions; hence the TS algorithm always moves to a neighbouring solution. When the TS algorithm moves to a neighbouring solution, the current solution is replaced by the neighbouring solution. Therefore, in the next iteration, neighbours for the new solution need to be generated.
+The new possible solutions that are generated are called neighbouring solutions; hence the \gls{TS} algorithm always moves to a neighbouring solution. When the \gls{TS} algorithm moves to a neighbouring solution, the current solution is replaced by the neighbouring solution. Therefore, in the next iteration, neighbours for the new solution need to be generated.
 
 Generation of new neighbours can range from a simple increment option to a complex operation that incorporates additional intelligence by means of a more heuristic approach to generate new neighbours.
 
-The TS algorithm is not limited to just one neighbourhood search strategy. In the paper by Gopalakrishnan et al.\cite{TabuCarryOver} five neighbourhood move strategies are developed and are used interchangeably; in some cases a strategy is used three times in a row due to stagnation in the search space. 
+The \gls{TS} algorithm is not limited to just one neighbourhood search strategy. In the paper by Gopalakrishnan et al.\cite{TabuCarryOver} five neighbourhood move strategies are developed and are used interchangeably; in some cases a strategy is used three times in a row due to stagnation in the search space. 
 
 Stagnation occurs when the algorithm does not move to a better solution; instead it opts to stay on the current solution, as no neighbouring solution is better than the current one. 
 
-Other neighbourhood strategies developed is that by N. A. Wassan \cite{ReactiveTabuVHR}. Wassan used a neighbourhood selection strategy that exchanges route nodes from initial vehicle routes for the vehicle routing problem. This route exchange enables the TS algorithm to search much more broadly due to the constant supply of different solutions. 
+Other neighbourhood strategies developed is that by N. A. Wassan \cite{ReactiveTabuVHR}. Wassan used a neighbourhood selection strategy that exchanges route nodes from initial vehicle routes for the vehicle routing problem. This route exchange enables the \gls{TS} algorithm to search much more broadly due to the constant supply of different solutions. 
 
-Since initial solutions are constantly modified, it enables the TS procedure to be a very fined-grained process, because often a small change in a potential solution can have a big impact on the overall proposed solution by the TS algorithm.
+Since initial solutions are constantly modified, it enables the \gls{TS} procedure to be a very fined-grained process, because often a small change in a potential solution can have a big impact on the overall proposed solution by the \gls{TS} algorithm.
 
 In the research done by Zhang et. al.\cite{TSHazardous} a neighbourhood selection scheme called \emph{dynamic penalty} is developed. When the algorithm moves onto an infeasible solution a penalty is imposed. By dynamically changing the penalty that is imposed the ``feasibility'' of solutions produced is influenced. 
 
 Therefore, if and when the algorithm continually produces infeasible solutions, the penalty imposed is increased to guide the algorithm to produce more feasible solutions. Finally, when the algorithm becomes trapped at local optima, the penalty is reduced, which allows the algorithm to consider moving onto infeasible solutions thus escaping local optima.
 
-Considering all the research done to develop new neighbourhood selection strategies that improve TS to search the solution space more efficiently and produce better solutions, TS still has some drawbacks, especially with problems that have very large solution spaces \cite{EvoParallelTabu}.
+Considering all the research done to develop new neighbourhood selection strategies that improve \gls{TS} to search the solution space more efficiently and produce better solutions, \gls{TS} still has some drawbacks, especially with problems that have very large solution spaces \cite{EvoParallelTabu}.
 
 TS is an iterative algorithm, executing a set of operations sequentially until a stopping criterion is met\cite{EvoParallelTabu,TabuVechicleRoutingWithTimeWindows}. At each iteration the algorithm has to determine feasibility of the immediate neighbourhood candidate solutions \cite{EvoParallelTabu,TabuVechicleRoutingWithTimeWindows}. 
 
 Therefore each candidate must be evaluated by some function, which may be a costly operation in terms of computational cycles as well as in terms of time\cite{EvoParallelTabu,TabuVechicleRoutingWithTimeWindows}. This constant evaluation can drastically reduce the overall performance of the algorithm, since it is spending more time calculating feasibility than actually searching the solution space \cite{EvoParallelTabu,TabuVechicleRoutingWithTimeWindows}. 
 
 \subsubsection{Memory Structures of Tabu Search}
-The hill-climbing and random-restart algorithms are able to break out of local minima, but there is nothing stopping these algorithms from avoiding the local optima with their second or n-pass in the search space. TS addresses the shortcoming of these algorithms by incorporating an important concept: the notion of memory.
+The hill-climbing and random-restart algorithms are able to break out of local minima, but there is nothing stopping these algorithms from avoiding the local optima with their second or n-pass in the search space. \gls{TS} addresses the shortcoming of these algorithms by incorporating an important concept: the notion of memory.
 
-In its most basic form TS keeps a local memory of all its recent best moves, and puts them into a \emph{tabu list} that has a predefined size. In the literature the Tabu list is also referred to as the \emph{tabu tenure} \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. The algorithm is not allowed to move to any solution that is in the tabu list unless a solution that is \emph{tabu} is better than any current moves available in the immediate search neighbourhood \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. The process of overriding a solution's tabu status in the tabu tenure is called the \emph{aspiration criterion} \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. With the use of the tabu tenure and the aspiration criterion, the algorithm is able to avoid cycling, local optima as well as searching in a too narrow region \cite{TabuSingleMachineScheduling,CircuitTabu}.
+In its most basic form \gls{TS} keeps a local memory of all its recent best moves, and puts them into a \emph{tabu list} that has a predefined size. In the literature the Tabu list is also referred to as the \emph{tabu tenure} \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. The algorithm is not allowed to move to any solution that is in the tabu list unless a solution that is \emph{tabu} is better than any current moves available in the immediate search neighbourhood \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. The process of overriding a solution's tabu status in the tabu tenure is called the \emph{aspiration criterion} \cite{TSHazardous,TabuCarryOver,ReactiveTabuVHR,TabuParameterization}. With the use of the tabu tenure and the aspiration criterion, the algorithm is able to avoid cycling, local optima as well as searching in a too narrow region \cite{TabuSingleMachineScheduling,CircuitTabu}.
 
-Research done by Ashish Sureka and Peter R. Wurman makes an important distinction with regard to the memory scheme that is used in the TS algorithm. Two memory schemes are discussed: \emph{explicit memory} and \emph{attribute-based memory} \cite{TabuBiddingStrats,TabuFormGames}. Of the two memory schemes the explicit memory scheme is the most used in the literature \cite{TabuVechicleRoutingWithTimeWindows}.
+Research done by Ashish Sureka and Peter R. Wurman makes an important distinction with regard to the memory scheme that is used in the \gls{TS} algorithm. Two memory schemes are discussed: \emph{explicit memory} and \emph{attribute-based memory} \cite{TabuBiddingStrats,TabuFormGames}. Of the two memory schemes the explicit memory scheme is the most used in the literature \cite{TabuVechicleRoutingWithTimeWindows}.
 
 With explicit memory the algorithm stores a complete solution in the tabu tenure; hence the algorithm is prohibited from moving to that position in the solution for as long as the solution is in the Tabu tenure\cite{TabuBiddingStrats,TabuFormGames}. With attribute-based memory the algorithm stores the \emph{operation} used to move from the previous solution to the current solution\cite{TabuBiddingStrats,TabuFormGames}. Therefore with attribute-based memory the tabu tenure intended function is changed from prohibiting certain solutions already encountered to rather prohibiting making changes to the current solution that would lead to solutions already present in the tabu tenure \cite{TabuBiddingStrats,TabuFormGames}.
 
-In research conducted by D. M. Jaeggi, G.T. Parks, T. Kipouros and P. J. Clarkson \cite{MultiObjTabu}, the authors add two additional memory structures called \emph{medium term memory} (MTM) and \emph{long term memory} (LTM) besides the standard \emph{short term memory} (STM), typically referred to as the tabu List \cite{MultiObjTabu}. Each additional structure remembers a different set of solutions for use by the diversification and intensification phases in the algorithm.
+In research conducted by D. M. Jaeggi, G.T. Parks, T. Kipouros and P. J. Clarkson \cite{MultiObjTabu}, the authors add two additional memory structures called \gls{MTM} and \gls{LTM} besides the standard \gls{STM}, typically referred to as the tabu List \cite{MultiObjTabu}. Each additional structure remembers a different set of solutions for use by the diversification and intensification phases in the algorithm.
 
-STM is similar to the traditional tabu list: to store the most recent solutions produced by the algorithm. MTM is designed to remember optimal or near-optimal solutions. These solutions are therefore used later in the intensification phase. Finally, the LTM structure stores all the solutions that the algorithm has already explored and is thus used in the diversification phase of the algorithm \cite{MultiObjTabu}.
+STM is similar to the traditional tabu list: to store the most recent solutions produced by the algorithm. \gls{MTM} is designed to remember optimal or near-optimal solutions. These solutions are therefore used later in the intensification phase. Finally, the \gls{LTM} structure stores all the solutions that the algorithm has already explored and is thus used in the diversification phase of the algorithm \cite{MultiObjTabu}.
 
 \subsubsection{Search Phases}
 \label{TSSearchPhases}
-As TS searches through the search space, it goes through two cycles of search phases called \emph{diversification} and \emph{intensification} \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
+As \gls{TS} searches through the search space, it goes through two cycles of search phases called \emph{diversification} and \emph{intensification} \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
 
-The diversification phase in the TS algorithm is the phase where the algorithm is directed to areas in the search space that has not yet been explored. The algorithm usually applies diversification as mechanisms monitoring the memory; note that solutions being produced are being repeated \cite{ReactiveTabuVHR,SelfControllingReactiveTabu}. 
+The diversification phase in the \gls{TS} algorithm is the phase where the algorithm is directed to areas in the search space that has not yet been explored. The algorithm usually applies diversification as mechanisms monitoring the memory; note that solutions being produced are being repeated \cite{ReactiveTabuVHR,SelfControllingReactiveTabu}. 
 
 Research by Fescioglu-Unver and Kokar \cite{SelfControllingReactiveTabu} provides a strategy that consists of two components namely the \emph{observer} and the \emph{diversifier}. The goal of the observer is to continually monitor the best solution obtained by the algorithm as to whether it violates the \emph{stagnation period}. The stagnation period is defined as the number of iterations where the current best obtained solution has not changed and the algorithm has not moved to a new solution\cite{SelfControllingReactiveTabu}. 
 
@@ -165,11 +165,11 @@ As soon as the current solution exceeds the stagnation period the observer compo
 
 The specific mechanism used to define a new position where the algorithm can continue to search, should ideally select areas in the search space that have not been explored yet. Therefore, the diversification phase typically makes extensive use of the knowledge present in the long-term memory structures as an indication of what areas of the search space have been previously explored and which areas have not \cite{TabuParameterization,TabuCrewSchedulingProblem,NonlinearGlobalTabu,SelfControllingReactiveTabu}.
 
-Intensification is usually the first phase of the TS algorithm, since it is responsible for building up a history in memory on which the diversification phase can act. Fescioglu-Unver and Kokar also present an intensification strategy based on control theory in their research \cite{SelfControllingReactiveTabu}. The authors identify repetition length as a critical value for their intensification strategy to be based upon. The repetition length is a control measure that defines how many times the algorithm can occupy the same solution within a span of iterations.
+Intensification is usually the first phase of the \gls{TS} algorithm, since it is responsible for building up a history in memory on which the diversification phase can act. Fescioglu-Unver and Kokar also present an intensification strategy based on control theory in their research \cite{SelfControllingReactiveTabu}. The authors identify repetition length as a critical value for their intensification strategy to be based upon. The repetition length is a control measure that defines how many times the algorithm can occupy the same solution within a span of iterations.
 
-In the following section, an overview is presented of the flow the TS algorithm along with pseudo code describing the TS algorithm.
+In the following section, an overview is presented of the flow the \gls{TS} algorithm along with pseudo code describing the \gls{TS} algorithm.
 \subsection{Flow of the algorithm}
-In this section the general flow of the TS algorithm is described using the algorithm~\ref{alg:TS} presented in pseudo code as a reference point.
+In this section the general flow of the \gls{TS} algorithm is described using the algorithm~\ref{alg:TS} presented in pseudo code as a reference point.
 \begin{algorithm}[H]
 \caption{Basic Tabu Search Algorithm\cite{TabuRCAProblem,TabuMontemanniSmith}}
 \label{alg:TS}
@@ -211,7 +211,7 @@ Before the algorithm can actually start searching, it first needs to initialise 
 
 Once all the various parameters that are needed by the algorithm have been initialised, the algorithm is ready to enter the actual search phase, which ranges from lines 3 -- 21. 
 
-The search phase starts off by first generating possible solutions that neighbour the current solution $x_i$ as can be observed in line 4. Generating neighbouring solutions are a critical process in the TS algorithm as tehy are the means by which the algorithm is able to move from one possible solution to the next in the search space.
+The search phase starts off by first generating possible solutions that neighbour the current solution $x_i$ as can be observed in line 4. Generating neighbouring solutions are a critical process in the \gls{TS} algorithm as tehy are the means by which the algorithm is able to move from one possible solution to the next in the search space.
 
 After all the solutions that neighbour the current possible solution have been generated, the algorithm needs to decide which of the possible neighbours is the most rewarding. The algorithm therefore determines the fitness of each neighbour $y_i$ by applying a fitness function $f(y_i)$. 
 
@@ -231,39 +231,39 @@ Before the algorithm continues to the next iteration, it performs one last final
 
 If the solution has indeed been repeated for a predetermined number of iterations, the algorithm activates its diversification strategy or intensifies its search.
 
-The section that follows presents an overview of the TS being applied to the FAP.
-\subsection{Tabu Search on the FAP}
-In a study conducted by Robert Montemanni and Derek Smith \cite{TabuMontemanniSmith} the TS algorithm is used on the FS-FAP. The authors had to make some alterations to the algorithm to suit their needs as well as to make the algorithm more efficient in exploring in the FAP solution space.
+The section that follows presents an overview of the \gls{TS} being applied to the \gls{FAP}.
+\subsection{Tabu Search on the \gls{FAP}}
+In a study conducted by Robert Montemanni and Derek Smith \cite{TabuMontemanniSmith} the \gls{TS} algorithm is used on the \gls{FS-FAP}. The authors had to make some alterations to the algorithm to suit their needs as well as to make the algorithm more efficient in exploring in the \gls{FAP} solution space.
 
-The TS algorithm used by the authors is the multistart TS algorithm, which randomly starts on different initial solutions \cite{TabuMontemanniSmith}.
+The \gls{TS} algorithm used by the authors is the multistart \gls{TS} algorithm, which randomly starts on different initial solutions \cite{TabuMontemanniSmith}.
 
-The authors developed a technique called heuristic manipulation technique (HMT). HMT first monitors an underlying heuristic being used on the problem by the algorithm\cite{TabuMontemanniSmith}. It then identifies certain characteristics that good solutions exhibit. In the FAP, it is transmitters that are assigned different frequencies which results in an overall lower interference value\cite{TabuMontemanniSmith}.
+The authors developed a technique called \gls{HMT}. \gls{HMT} first monitors an underlying heuristic being used on the problem by the algorithm\cite{TabuMontemanniSmith}. It then identifies certain characteristics that good solutions exhibit. In the \gls{FAP}, it is transmitters that are assigned different frequencies which results in an overall lower interference value\cite{TabuMontemanniSmith}.
 
 The HMT then uses the identified characteristics to add \emph{additional} constraints to the problem\cite{TabuMontemanniSmith}. By adding constraints, the search space is reduced. However, by reducing the search space, other near-optimal solutions which might be far better are excluded\cite{TabuMontemanniSmith}. It is for this reason that the authors opted not to add the constraints permanently.
 
-The authors applied their TS algorithm together with HMT to the COST 259 family of benchmarks, specifically the Siemens1, Siemens2, Siemens3 and Siemens4 problems. The results are presented in table~\ref{TSCOST259}. The values presented are scalar and indicate the total interference of the frequency plan. The lower the interference value is, the better the frequency plan.
+The authors applied their \gls{TS} algorithm together with HMT to the \gls{COST} 259 family of benchmarks, specifically the Siemens1, Siemens2, Siemens3 and Siemens4 problems. The results are presented in table~\ref{TSCOST259}. The values presented are scalar and indicate the total interference of the frequency plan. The lower the interference value is, the better the frequency plan.
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c |}
 		\hline
-		Problem instance & TS with HMT & Best COST 259 \\ \hline
+		Problem instance & \gls{TS} with \gls{HMT} & Best \gls{COST} 259 \\ \hline
 		Siemens1 & 2.7692 & 2.200 \\ \hline
 		Siemens2 & 14.9360 & 14.280 \\ \hline
 		Siemens3 & 6.6496 & 5.19 \\ \hline
 		Siemens4 & 110.9725 & 81.89 \\ \hline
 	\end{tabular}
-\caption{Results of applying TS with HMT on COST 259}
+\caption{Results of applying \gls{TS} with \gls{HMT} on \gls{COST} 259}
 \label{TSCOST259}
 \end{table}
-As can be observed from the results obtained by the authors, the TS algorithm with HMT produces results that rank very favourably against other algorithms also applied to the COST 259.
+As can be observed from the results obtained by the authors, the \gls{TS} algorithm with HMT produces results that rank very favourably against other algorithms also applied to the \gls{COST} 259.
 
-When critically reasoning about the TS algorithm with regard to applying it to the FAP, the following disadvantages in theory can be identified:
+When critically reasoning about the \gls{TS} algorithm with regard to applying it to the \gls{FAP}, the following disadvantages in theory can be identified:
 \paragraph{Search based on a single solution}
---- The TS algorithm at any moment in time only searches in the vicinity of \emph{one} current solution for possible neighbours that might be the current solution for the next iteration. FAPs typically have huge search spaces due to their NP-Complete nature. Therefore, only searching for possible rewarding neighbours from only potential solutions seems to be terribly inefficient. A better strategy would be to use the notion of population-based algorithms and have multiple solutions from which more rewarding neighbours are searched.
+--- The \gls{TS} algorithm at any moment in time only searches in the vicinity of \emph{one} current solution for possible neighbours that might be the current solution for the next iteration. \gls{FAP}s typically have huge search spaces due to their NP-Complete nature. Therefore, only searching for possible rewarding neighbours from only potential solutions seems to be terribly inefficient. A better strategy would be to use the notion of population-based algorithms and have multiple solutions from which more rewarding neighbours are searched.
 \paragraph{Neighbourhood generation}
---- The TS algorithm defines no set process for generating a neighbouring solution given a starting solution. Generating neighbours from a solution is a critical process in the TS algorithm, for it is the only means by which the algorithm considers other solutions, i.e. it is the mechanism by which the algorithm searches. Generating a new neighbour can be as simple as changing only one value from the current solution or it can be very complex and incorporate other algorithms together with mathematics formulae. Regardless of the complexity of the neighbour generation that is used, care must be taken to ensure that the algorithm is able to produce a wide diversity of neighbours and is also able to intensify on the most optimal solution.
+--- The \gls{TS} algorithm defines no set process for generating a neighbouring solution given a starting solution. Generating neighbours from a solution is a critical process in the \gls{TS} algorithm, for it is the only means by which the algorithm considers other solutions, i.e. it is the mechanism by which the algorithm searches. Generating a new neighbour can be as simple as changing only one value from the current solution or it can be very complex and incorporate other algorithms together with mathematics formulae. Regardless of the complexity of the neighbour generation that is used, care must be taken to ensure that the algorithm is able to produce a wide diversity of neighbours and is also able to intensify on the most optimal solution.
 \paragraph{Tabu lifetime}
---- The TS algorithm only operates on a single solution at a time and at most only considers one potential neighbour as its next possible current solution. Therefore a difficult choice needs to be made as to how long a solution stays tabu. In the FAP a solution might be entered into the tabu list early in the search process of the algorithm. A large majority of the neighbours of this solution are vastly superior solutions compared with any of the current solutions produced by the algorithm. Due to the solution with these neighbours being in the tabu list, these neighbours will not be reconsidered until much later when the solution is removed from the list. A possible option to allow the TS to reconsider the tabu solutions is to increase the aspiration criterion. Increasing the aspiration criterion does have its risks. A high aspiration criterion and the algorithm might be too eager to select just any solution even though it is Tabu. A low aspiration criterion and the algorithm will be too strict in selecting a tabu solution.
+--- The \gls{TS} algorithm only operates on a single solution at a time and at most only considers one potential neighbour as its next possible current solution. Therefore a difficult choice needs to be made as to how long a solution stays tabu. In the \gls{FAP} a solution might be entered into the tabu list early in the search process of the algorithm. A large majority of the neighbours of this solution are vastly superior solutions compared with any of the current solutions produced by the algorithm. Due to the solution with these neighbours being in the tabu list, these neighbours will not be reconsidered until much later when the solution is removed from the list. A possible option to allow the \gls{TS} to reconsider the tabu solutions is to increase the aspiration criterion. Increasing the aspiration criterion does have its risks. A high aspiration criterion and the algorithm might be too eager to select just any solution even though it is Tabu. A low aspiration criterion and the algorithm will be too strict in selecting a tabu solution.
 
 In the next section the simulated annealing algorithm is discussed.
 \section{Simulated Annealing}
@@ -271,7 +271,7 @@ In the next section the simulated annealing algorithm is discussed.
 
 \subsection{Introduction}
 \label{sec:SAIntroduction}
-Simulated annealing (SA) is a metaheuristic search technique proposed in the 1980s by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgy as annealing \cite{CurveFittingSA,SASingleMultiObj,TempCyclingSA,ChaosSA}. Kirkpatrick was the first to use SA to solve optimisations problems but the basic algorithm structure was defined by Metropolis et al. in 1953 \cite{CurveFittingSA,VeryFastSAImageEnchancement}.
+\gls{SA} is a metaheuristic search technique proposed in the 1980s by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgy as annealing \cite{CurveFittingSA,SASingleMultiObj,TempCyclingSA,ChaosSA}. Kirkpatrick was the first to use \gls{SA} to solve optimisations problems but the basic algorithm structure was defined by Metropolis et al. in 1953 \cite{CurveFittingSA,VeryFastSAImageEnchancement}.
 
 Annealing is the natural process of crystallisation when a solid is heated to a high temperature and then systematically cooled to a lower temperature to reach a crystallised form \cite{CurveFittingSA,NewSAs,MobileRobotSA,ConstantTempSA}. The crystallised form of the solid is known to be the global minimum of the solid's internal energy state. 
 
@@ -279,7 +279,7 @@ When the solid is rapidly cooled from a high temperature, the molecules have no 
 
 In the algorithm the energy state is the \emph{cost function} that needs to be minimised, and the molecules are the \emph{variables}, which represent the solutions, and thus their state needs to be optimised to reach the desired energy state.
 
-The SA algorithm is able to purposely move to a worse solution in the search space\cite{EcoEquilSA}. In the research when an algorithm moves to a worse solution it is classified as an \emph{uphill} move\cite{AIModernApproach}. Similarly, when a move is made by the algorithm which results in a better solution the move is classified as an \emph{downhill} move\cite{AIModernApproach}.
+The \gls{SA} algorithm is able to purposely move to a worse solution in the search space\cite{EcoEquilSA}. In the research when an algorithm moves to a worse solution it is classified as an \emph{uphill} move\cite{AIModernApproach}. Similarly, when a move is made by the algorithm which results in a better solution the move is classified as an \emph{downhill} move\cite{AIModernApproach}.
 
 The following equation is the standard probability function that is used to determine when an uphill move is performed by the algorithm. This function is known in the literature as the \emph{metropolis criterion}. 
 \begin{equation}
@@ -292,9 +292,9 @@ The following equation is the standard probability function that is used to dete
 \end{equation}
 The function $f$ is the objective function or a function that determines the state of a given position in solution space\cite{EcoEquilSA}. The parameter $T_k$ is the temperature of the algorithm at iteration $k$ \cite{EcoEquilSA}. Finally, $\Delta E$ is the change in ``energy'' between two solutions $x$ and $y$ \cite{EcoEquilSA}.
 
-The main purpose of the SA algorithm (like most optimisation algorithms) is to minimise or maximise the cost function \cite{SASingleMultiObj}. This cost function typically evaluates a solution desirability compared with other solutions in the immediate \emph{neighbourhood} of the algorithm's current position \cite{TheoPraticalSA}. 
+The main purpose of the \gls{SA} algorithm (like most optimisation algorithms) is to minimise or maximise the cost function \cite{SASingleMultiObj}. This cost function typically evaluates a solution desirability compared with other solutions in the immediate \emph{neighbourhood} of the algorithm's current position \cite{TheoPraticalSA}. 
 
-The immediate neighbourhood of solutions is generated based on some heuristic implemented by the algorithm designer\cite{AIModernApproach}. This heuristic, as with the TS algorithm, can be simple or complex. The neighbourhood generated is the first step right after the starting solution has been generated by the algorithm.
+The immediate neighbourhood of solutions is generated based on some heuristic implemented by the algorithm designer\cite{AIModernApproach}. This heuristic, as with the \gls{TS} algorithm, can be simple or complex. The neighbourhood generated is the first step right after the starting solution has been generated by the algorithm.
 
 Typically a neighbouring solution is only selected as the new best state if its desirability ranks higher than the current solution. When the algorithm moves to a better solution from the previous solution, the move is typically referred in the literature as a \emph{downhill} move \cite{CurveFittingSA}.
 
@@ -302,32 +302,32 @@ The best state is not always selected; in some cases the algorithm is also able 
 
 At a high annealing temperature the probability that the algorithm will select a bad solution is very good. As the annealing temperature decreases so does the probability that a bad solution will be selected \cite{CurveFittingSA}. When the algorithm moves to a worse solution, the move is typically referred to in the literature as an \emph{uphill} move \cite{CurveFittingSA}. Uphill moves allow the algorithm to break out of local minima and can lead the algorithm down a different path, which may ultimately result in obtaining the global optimum \cite{SASingleMultiObj}. 
 
-As with the TS algorithm, the standard SA algorithm does not define a set neighbourhood generation mechanism; instead it is up to the algorithm designer to implement a suitable generation mechanism that will allow the algorithm to adequately explore the search space\cite{VariousCoolingSA}. 
+As with the \gls{TS} algorithm, the standard \gls{SA} algorithm does not define a set neighbourhood generation mechanism; instead it is up to the algorithm designer to implement a suitable generation mechanism that will allow the algorithm to adequately explore the search space\cite{VariousCoolingSA}. 
 
-The following section presents a discussion on various characteristics of the SA algortihm.
+The following section presents a discussion on various characteristics of the \gls{SA} algortihm.
 \subsection{Important Simulated Annealing Characteristics}
-There are four characteristics of the SA algorithm that make the algorithm unique. One of the most important is the cooling schedule. 
+There are four characteristics of the \gls{SA} algorithm that make the algorithm unique. One of the most important is the cooling schedule. 
 
 %\subsubsection{Markov Chain}
-%The SA Algorithm is typically modelled by using Markov chains due to each Markov chain represents a set of trials that the algorithm has executed at the same temperature. 
+%The \gls{SA} Algorithm is typically modelled by using Markov chains due to each Markov chain represents a set of trials that the algorithm has executed at the same temperature. 
 
 %A Markov chain\footnote{Also known as Markov process} defines a chain of states or processes that satisfy the \emph{Markov assumption}. Which is defined as, that any state only depends on a set amount of previous states that have been encountered previously\cite{AIModernApproach}.
 %%
-%It has been proven with the use of Markov Chain theory that SA will find the global minimum in the solution space \cite{ClusterSA}. This proof is only valid when the following properties for the underlying Markov chain hold \cite{VeryFastSAImageEnchancement}:
+%It has been proven with the use of Markov Chain theory that \gls{SA} will find the global minimum in the solution space \cite{ClusterSA}. This proof is only valid when the following properties for the underlying Markov chain hold \cite{VeryFastSAImageEnchancement}:
 %\begin{itemize}
 %\item It must be irreducible
 %\item It mustn't be periodic
 %\item The detailed balance condition must hold
 %\end{itemize}
-%According to the proof presented in \emph{Image enhancement using very fast simulated reannealing}\cite{ClusterSA}, if the SA algorithm designer can uphold the above properties, the algorithm is able to find the global optimum. Even though the algorithm will eventually find the global optimum, the algorithm is known to take a very long time to do so.
+%According to the proof presented in \emph{Image enhancement using very fast simulated reannealing}\cite{ClusterSA}, if the \gls{SA} algorithm designer can uphold the above properties, the algorithm is able to find the global optimum. Even though the algorithm will eventually find the global optimum, the algorithm is known to take a very long time to do so.
 \subsubsection{Cooling Schedule}
-The cooling schedule/annealing Schedule is the most defining characteristic of the SA algorithm. It is the procedure where the natural annealing process is mimicked. The temperature of the SA algorithm is a control parameter that defines how much the algorithm moves around in the solution space.
+The cooling schedule/annealing Schedule is the most defining characteristic of the \gls{SA} algorithm. It is the procedure where the natural annealing process is mimicked. The temperature of the \gls{SA} algorithm is a control parameter that defines how much the algorithm moves around in the solution space.
 
 After each iteration, whether the algorithm has selected a new best solution or not, the temperature is reduced by a certain amount. This amount is determined by the cooling schedule.
 
-In general, when the SA algorithm temperature has a very high value most solutions that are produced from the neighbourhood are accepted \cite{ClusterSA}. Thus the algorithm moves freely in the solution space with little constraint. As the temperature decreases, the probability that the algorithm will select a bad or just any solution decreases. When the temperature is very low, the SA algorithm is similar to a greedy algorithm in the sense that it only accepts downhill movements\cite{ClusterSA}.
+In general, when the \gls{SA} algorithm temperature has a very high value most solutions that are produced from the neighbourhood are accepted \cite{ClusterSA}. Thus the algorithm moves freely in the solution space with little constraint. As the temperature decreases, the probability that the algorithm will select a bad or just any solution decreases. When the temperature is very low, the \gls{SA} algorithm is similar to a greedy algorithm in the sense that it only accepts downhill movements\cite{ClusterSA}.
 
-The cooling schedule provides the SA algorithm with the critical ability to control the rate the algorithm transitions from the diversification phase (high temperature) to the intensification phase (low temperature).
+The cooling schedule provides the \gls{SA} algorithm with the critical ability to control the rate the algorithm transitions from the diversification phase (high temperature) to the intensification phase (low temperature).
 
 In the literature there are three annealing schedules in common use, namely \emph{the logarithmic schedule}, the \emph{geometric schedule} and the \emph{Cauchy schedule}\cite{VeryFastSAImageEnchancement,SASingleMultiObj}. 
 
@@ -344,7 +344,7 @@ The Cauchy schedule is faster than the logarithmic schedule. Similar to the loga
 	T_k = \frac{T_0}{k} ~, k \neq 0
 \end{equation}
 
-Finally, the fastest annealing schedule is known as the geometric or exponential annealing schedule \cite{SASingleMultiObj}. The schedule has no move generation requirement to reach the global minimum, since there is no regorous proof in the literature \cite{SASingleMultiObj}. By using the geometric schedule the SA temperatures are rescaled which is called \emph{re-annealing}\cite{VeryFastSAImageEnchancement}.
+Finally, the fastest annealing schedule is known as the geometric or exponential annealing schedule \cite{SASingleMultiObj}. The schedule has no move generation requirement to reach the global minimum, since there is no regorous proof in the literature \cite{SASingleMultiObj}. By using the geometric schedule the \gls{SA} temperatures are rescaled which is called \emph{re-annealing}\cite{VeryFastSAImageEnchancement}.
 
 The geometric schedule has the following form:
 \begin{equation}
@@ -353,9 +353,9 @@ The geometric schedule has the following form:
 \end{equation}
 
 \subsubsection{Initial Temperature}
-The initial temperature is a very important parameter to define in the SA algorithm, since it defines a point from which the cooling schedule will start\cite{VariousCoolingSA}. Therefore, depending on what the initial value of the temperature, is the final result that the algorithm will produce can be influenced\cite{SALongestCommon,AutoConfigSA}.
+The initial temperature is a very important parameter to define in the \gls{SA} algorithm, since it defines a point from which the cooling schedule will start\cite{VariousCoolingSA}. Therefore, depending on what the initial value of the temperature, is the final result that the algorithm will produce can be influenced\cite{SALongestCommon,AutoConfigSA}.
 
-When the initial temperature is set to a very high value, the algorithm takes a long time to reach a result since the search space is being explored more\cite{SALongestCommon,VariousCoolingSA}. More exploration is favourable for SA as it lets the algorithm be less susceptible to local minimum. 
+When the initial temperature is set to a very high value, the algorithm takes a long time to reach a result since the search space is being explored more\cite{SALongestCommon,VariousCoolingSA}. More exploration is favourable for \gls{SA} as it lets the algorithm be less susceptible to local minimum. 
 
 If the initial temperature is set to a very low temperature, the algorithm might converge too quickly and thus produce a result which may be the local minimum\cite{SALongestCommon,VariousCoolingSA,AutoConfigSA}.
 
@@ -366,20 +366,20 @@ A low initial temperature together with a low cooling factor makes the time wind
 When the algorithm is near a global optimum, a low initial temperature and low cooling factor will allow the algorithm to reach the optimum faster in the solution space\cite{SALongestCommon}. In contrast, if a high temperature and a very low cooling factor are used, the algorithm will take longer to reach the optimum even though it is near the global optimum\cite{SALongestCommon}.
 
 \subsubsection{Move Generation}
-Most of the research done on the SA algorithm focuses on the annealing schedule and not so much on the move/solution/neighbourhood generation. Typically an initial solution is generated and then small changes are made to the solution to represent a new solution. The solution is said to be perturbed to the next solution.
+Most of the research done on the \gls{SA} algorithm focuses on the annealing schedule and not so much on the move/solution/neighbourhood generation. Typically an initial solution is generated and then small changes are made to the solution to represent a new solution. The solution is said to be perturbed to the next solution.
 
 Move generation is the phase where neighbouring solutions to the current solution are generated. It is the ideal section for an algorithm designer to embed domain-specific knowledge which will allow the algorithm to generate better possible solutions.
 
 In research done by Tseung and Lin \cite{CurveFittingSA} an initial solution is not modified, but a move generation technique known as \emph{pattern} search is used. Pattern search has two forms of movement, namely the exploratory move and the patten move. The exploratory move continually changes the certain variables of a solution \cite{CurveFittingSA}. This is done so that the technique can rapidly find and identify a ``downhill'' move. The pattern move uses the information gathered by the exploratory move to move towards the minimum of the function \cite{CurveFittingSA}.
 \subsubsection{Algorithm Efficiency}
-The algorithm is also efficient with regard to CPU cycles when compared with the genetic algorithm. SA only has to evaluate a certain number of moves each iteration, instead of a whole population each iteration. The genetic algorithm is discussed in section~\ref{sec:geneticalgorithm}.
+The algorithm is also efficient with regard to CPU cycles when compared with the genetic algorithm. \gls{SA} only has to evaluate a certain number of moves each iteration, instead of a whole population each iteration. The genetic algorithm is discussed in section~\ref{sec:geneticalgorithm}.
 
-Unlike TS, the basic SA algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that the solution will cycle. The more iterations spent at a temperature, the longer the algorithm spends at a certain temperature and therefore the higher the probability that solutions may cycle.
+Unlike \gls{TS}, the basic \gls{SA} algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that the solution will cycle. The more iterations spent at a temperature, the longer the algorithm spends at a certain temperature and therefore the higher the probability that solutions may cycle.
 
-In next section the flow of the SA algorithm is discussed and pseudo code for the SA algortihm is presented.
+In next section the flow of the \gls{SA} algorithm is discussed and pseudo code for the \gls{SA} algortihm is presented.
 
 \subsection{Flow of the Algorithm}
-In an attempt to better understand how the SA algorithm operates, a general discussion on the flow of the algorithm will now be given using algorithm~\ref{alg:SA} as a reference point.
+In an attempt to better understand how the \gls{SA} algorithm operates, a general discussion on the flow of the algorithm will now be given using algorithm~\ref{alg:SA} as a reference point.
 \begin{algorithm}[H]
 \caption{Basic Simulated Annealing Algorithm\cite{VeryFastSAImageEnchancement,ChaosSA}}
 \label{alg:SA}
@@ -398,81 +398,81 @@ In an attempt to better understand how the SA algorithm operates, a general disc
 	\end{algorithmic}
 \end{algorithm}
 
-From lines 1 -- 3, the SA algorithm is initialised. The most important step here is setting the starting temperature for the annealing process to start. As mentioned in the introduction, the temperature of the annealing process plays a critical role in the potential solution selection process.
+From lines 1 -- 3, the \gls{SA} algorithm is initialised. The most important step here is setting the starting temperature for the annealing process to start. As mentioned in the introduction, the temperature of the annealing process plays a critical role in the potential solution selection process.
 
-After the algorithm has been initialised the search phase of the algorithm starts which ranges from lines 4 -- 10. Like the TS algorithm, the SA algorithm starts the search phase by generating a number of neighbours to the current solution held by the algorithm as can be observed in line 5.
+After the algorithm has been initialised the search phase of the algorithm starts which ranges from lines 4 -- 10. Like the \gls{TS} algorithm, the \gls{SA} algorithm starts the search phase by generating a number of neighbours to the current solution held by the algorithm as can be observed in line 5.
 
 Before selecting a neighbour the algorithm first needs to evaluate the generated neighbours. It evaluates each neighbour by applying a fitness function $f(y_i)$ in order to determine its fitness.
 Once the fitness of all the generated neighbours has been determined, the algorithm uses equation~\ref{eq:saprobability} to calculate the probability of selecting a particular neighbour for all the generated neighbours as well. The probability calculation can be observed to occur in line 7. The algorithm then selects the neighbour with the highest probability to be the current solution, as observed in line 9. 
 
 Before the algorithm advances to the next iteration the temperature needs to be lowered. As discussed, the temperature is lowered according to a particular cooling schedule. In the algorithm the process of lowering the temperature occurs in line 10.
 
-In the section that follows a discussion is given on when SA is applied to the FAP.
-\subsection{Simulated Annealing on the FAP}
-The SA algorithm, as with the TS algorithm, has achieved good results in other optimisation problems, as mentioned in section \ref{sec:SAIntroduction}. Due to its success on other NP-Complete optimisation problems, the SA algorithm has also been applied to the FAP.
+In the section that follows a discussion is given on when \gls{SA} is applied to the \gls{FAP}.
+\subsection{Simulated Annealing on the \gls{FAP}}
+The \gls{SA} algorithm, as with the \gls{TS} algorithm, has achieved good results in other optimisation problems, as mentioned in section \ref{sec:SAIntroduction}. Due to its success on other NP-Complete optimisation problems, the \gls{SA} algorithm has also been applied to the \gls{FAP}.
 
-In literature by Carlo Mannino and Gianpaolo Oriolo\cite{SolvingSuperIntervalGraphs} the SA algorithm is applied to the FAP. The resulting SA algorithm was benchmarked on the COST 259 Siemens benchmark instances. The results obtained by the authors is presented in table~\ref{tab:SA}. Values represent the total interference generated by the frequency assignment. 
+In literature by Carlo Mannino and Gianpaolo Oriolo\cite{SolvingSuperIntervalGraphs} the \gls{SA} algorithm is applied to the \gls{FAP}. The resulting \gls{SA} algorithm was benchmarked on the \gls{COST} 259 Siemens benchmark instances. The results obtained by the authors is presented in table~\ref{tab:SA}. Values represent the total interference generated by the frequency assignment. 
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c | c |}
 	\hline
-	Problem instance & SA & COST 259 (old) & COST 259 (new) \\ \hline
+	Problem instance & \gls{SA} & \gls{COST} 259 (old) & \gls{COST} 259 (new) \\ \hline
 	Siemens1 & 22.96 & 23.00 & 2.200\\ \hline
 	Siemens2 & 14.72 & 14.75 & 14.280\\ \hline
 	Siemens3 & 52.43 & 52.55 & 5.19\\ \hline
 	Siemens4 & 80.96 & 80.80 & 81.89\\ \hline
 	\end{tabular}
-\caption{SA on COST 259 Benchmark}
+\caption{SA on \gls{COST} 259 Benchmark}
 \label{tab:SA}
 \end{table}
 Note that at the time the above results where obtained the best results obtained for the siemens problem were different from the latest results.
 
-An overview of the SA algorithm along with its unique characteristics have now been given. Utilising the knowledge that was gained from understanding how the SA algorithm operates a critical evaluation can be presented. 
+An overview of the \gls{SA} algorithm along with its unique characteristics have now been given. Utilising the knowledge that was gained from understanding how the \gls{SA} algorithm operates a critical evaluation can be presented. 
 
-In the following paragraphs, a theoretical critical evaluation is presented if the SA algorithm would be applied to the FAP.
+In the following paragraphs, a theoretical critical evaluation is presented if the \gls{SA} algorithm would be applied to the \gls{FAP}.
 
 \paragraph{Cooling Schedule}
---- Depending on the cooling schedule selected, the algorithm might converge too quickly. As discussed previously the cooling schedule reduces the temperature. The temperature plays a large part in the determination of whether a particular solution will be moved to or not in an iteration. Thus early on the algorithm will explore a lot more (diversification) and later on will exploit more (intensification). In the FAP, the algorithm must not only be able to explore and exploit, but also be able to return to an exploration phase if need be.
-As the temperature becomes colder the SA algorithm exploits more and therefore will not easily move to a worse off solution. In the FAP, it might be desirable to rather move a worse off solution later on, as the particular current solution is a local minimum and yields bad neighbours as potential next solutions. With the cooling schedule this is simply not possible, unless the temperature and schedule are reset. Resetting the temperature and schedule is not ideal, since the algorithm keeps no history and might risk making the same faults as before the reset.
+--- Depending on the cooling schedule selected, the algorithm might converge too quickly. As discussed previously the cooling schedule reduces the temperature. The temperature plays a large part in the determination of whether a particular solution will be moved to or not in an iteration. Thus early on the algorithm will explore a lot more (diversification) and later on will exploit more (intensification). In the \gls{FAP}, the algorithm must not only be able to explore and exploit, but also be able to return to an exploration phase if need be.
+As the temperature becomes colder the \gls{SA} algorithm exploits more and therefore will not easily move to a worse off solution. In the \gls{FAP}, it might be desirable to rather move a worse off solution later on, as the particular current solution is a local minimum and yields bad neighbours as potential next solutions. With the cooling schedule this is simply not possible, unless the temperature and schedule are reset. Resetting the temperature and schedule is not ideal, since the algorithm keeps no history and might risk making the same faults as before the reset.
 \paragraph{Neighbourhood generation}
---- The SA algorithm, as with the TS algorithm, has no set process that defines how neighbours should be generated. As discussed, neighbourhood generation is the primary means by which the SA algorithm moves about the search space in search of an optimal solution. Therefore applying the SA algorithm would require a custom neighbourhood generation scheme. A desireble neighbourhood generation scheme would be one that keeps track of where the algorithm has been previously. By keeping history, the algorithm will be able to avoid previously explored areas in the search space.
+--- The \gls{SA} algorithm, as with the \gls{TS} algorithm, has no set process that defines how neighbours should be generated. As discussed, neighbourhood generation is the primary means by which the \gls{SA} algorithm moves about the search space in search of an optimal solution. Therefore applying the \gls{SA} algorithm would require a custom neighbourhood generation scheme. A desireble neighbourhood generation scheme would be one that keeps track of where the algorithm has been previously. By keeping history, the algorithm will be able to avoid previously explored areas in the search space.
 \paragraph{Single solution based search}
---- The SA algorithm is similar to the TS algorithm in the sense that it only searches from one solution per iteration. It searches by generating neighbours around the current solution of the algorithm. The FAP search space is huge; hence it would be more efficient to have multiple current solutions from which neighbours are generated. This enables the algorithm to explore the search space much more efficiently at the expense of more computational resources.
+--- The \gls{SA} algorithm is similar to the \gls{TS} algorithm in the sense that it only searches from one solution per iteration. It searches by generating neighbours around the current solution of the algorithm. The \gls{FAP} search space is huge; hence it would be more efficient to have multiple current solutions from which neighbours are generated. This enables the algorithm to explore the search space much more efficiently at the expense of more computational resources.
 
 \section{Genetic Algorithm}
 \label{sec:geneticalgorithm}
 \subsection{Introduction}
-The genetic algorithm (GA) is a stochastic search method that is based on the natural process of genetic evolution and the Darwinian concept of ``survival of the fittest'' \cite{DistributedHierarchicalGA,AcceleratingGA,AdaptiveSAGA,FamilyGA}. The GA was first proposed by Fraser, but it was not till the research presented by Holland that GA's became popular\cite{CompuIntelligenceIntro}. Holland initially applied the algorithm to adaptive systems but has been widely used in the optimisation field of study due to its success on multidimensional problems\cite{ParallelGASA,DistributedHierarchicalGA,FamilyGA}. The GA developed by Holland is referred to in the literature as the Canonical GA (CGA)\cite{CompuIntelligenceIntro}.
+The genetic algorithm (GA) is a stochastic search method that is based on the natural process of genetic evolution and the Darwinian concept of ``survival of the fittest'' \cite{DistributedHierarchicalGA,AcceleratingGA,AdaptiveSAGA,FamilyGA}. The \gls{GA} was first proposed by Fraser, but it was not till the research presented by Holland that \gls{GA}'s became popular\cite{CompuIntelligenceIntro}. Holland initially applied the algorithm to adaptive systems but has been widely used in the optimisation field of study due to its success on multidimensional problems\cite{ParallelGASA,DistributedHierarchicalGA,FamilyGA}. The \gls{GA} developed by Holland is referred to in the literature as the Canonical \gls{GA} (CGA)\cite{CompuIntelligenceIntro}.
 
-The wide use of the GA can also be attributed to its generic algorithm structure as well as the ease of implementation \cite{FamilyGA,AdaptiveSAGA}. The GA defines generic operators that select, create and mutate individuals for the next population of the next generation\cite{CompuIntelligenceIntro}. It should be noted that initially the mutation operator was not a required to be part of the GA. Only after successive implementations of the GA showcased the explorative power that the mutation operator brings tot he search capability of the GA was the mutation operator considered to be important\cite{CompuIntelligenceIntro}. 
+The wide use of the \gls{GA} can also be attributed to its generic algorithm structure as well as the ease of implementation \cite{FamilyGA,AdaptiveSAGA}. The \gls{GA} defines generic operators that select, create and mutate individuals for the next population of the next generation\cite{CompuIntelligenceIntro}. It should be noted that initially the mutation operator was not a required to be part of the \gls{GA}. Only after successive implementations of the \gls{GA} showcased the explorative power that the mutation operator brings tot he search capability of the \gls{GA} was the mutation operator considered to be important\cite{CompuIntelligenceIntro}. 
 
 
-The GA search procedure involves searching the solution space through artificial evolution and natural selection\cite{FamilyGA,MultiPopGA,HybridIntelliGA}. An individual or point in the solution space is known as a \emph{chromosome} \cite{HumanPassiveGA}. An initial set of chromosomes (referred to in the research as the \emph{population}) is randomly generated to form the starting population\cite{FamilyGA,HybridIntelliGA,AcceleratingGA,MultiPopGA}. 
+The \gls{GA} search procedure involves searching the solution space through artificial evolution and natural selection\cite{FamilyGA,MultiPopGA,HybridIntelliGA}. An individual or point in the solution space is known as a \emph{chromosome} \cite{HumanPassiveGA}. An initial set of chromosomes (referred to in the research as the \emph{population}) is randomly generated to form the starting population\cite{FamilyGA,HybridIntelliGA,AcceleratingGA,MultiPopGA}. 
 
-A chromosome consists of a sequence of smaller parts called \emph{genes}\cite{CompuIntelligenceIntro}. The sequence upon which these genes appear in the chromosome determines the characteristics of an individual\cite{CompuIntelligenceIntro}. In the GA a single gene represents a single variable of a solution\cite{FamilyGA,AcceleratingGA}. A whole chromosome therefore represents a solution\cite{FamilyGA,AcceleratingGA}. Exactly how best to represent a chromosome as a solution is problem dependent\cite{CompuIntelligenceIntro}.
+A chromosome consists of a sequence of smaller parts called \emph{genes}\cite{CompuIntelligenceIntro}. The sequence upon which these genes appear in the chromosome determines the characteristics of an individual\cite{CompuIntelligenceIntro}. In the \gls{GA} a single gene represents a single variable of a solution\cite{FamilyGA,AcceleratingGA}. A whole chromosome therefore represents a solution\cite{FamilyGA,AcceleratingGA}. Exactly how best to represent a chromosome as a solution is problem dependent\cite{CompuIntelligenceIntro}.
 
-According to the evolution theory proposed by Darwin individuals of a population with the best chromosome have the best chance to survive and to reproduce\cite{CompuIntelligenceIntro}. These individuals are reffered to as the fittest individuals of the population. In a GA population each individual is ``rated'' to determine how good the solution its chromosome represents \cite{CompuIntelligenceIntro}. The rating of a chromosome is referred to as its fitness value and is also problem dependent\cite{CompuIntelligenceIntro}.
+According to the evolution theory proposed by Darwin individuals of a population with the best chromosome have the best chance to survive and to reproduce\cite{CompuIntelligenceIntro}. These individuals are reffered to as the fittest individuals of the population. In a \gls{GA} population each individual is ``rated'' to determine how good the solution its chromosome represents \cite{CompuIntelligenceIntro}. The rating of a chromosome is referred to as its fitness value and is also problem dependent\cite{CompuIntelligenceIntro}.
 
-Determining the fitness value of a chromosome is achieved by means of a \emph{fitness function}. The fitness function is a mathematical function which maps the chromosome representation to a scalar value\cite{CompuIntelligenceIntro}. An optimisation problem has a objective function which calculates how good a solution is, therefore in the GA the fitness function represents the objective function\cite{CompuIntelligenceIntro}.
+Determining the fitness value of a chromosome is achieved by means of a \emph{fitness function}. The fitness function is a mathematical function which maps the chromosome representation to a scalar value\cite{CompuIntelligenceIntro}. An optimisation problem has a objective function which calculates how good a solution is, therefore in the \gls{GA} the fitness function represents the objective function\cite{CompuIntelligenceIntro}.
 
-When the fitness of individuals in a population have been determined the GA probablisticly selects individuals for the next generation\cite{CompuIntelligenceIntro}. The selection probability is referred to as the \emph{selective pressure}\cite{CompuIntelligenceIntro}. The individuals that are selected by the operator enter the reproduction phase of the GA where offspring are created\cite{CompuIntelligenceIntro}.
+When the fitness of individuals in a population have been determined the \gls{GA} probablisticly selects individuals for the next generation\cite{CompuIntelligenceIntro}. The selection probability is referred to as the \emph{selective pressure}\cite{CompuIntelligenceIntro}. The individuals that are selected by the operator enter the reproduction phase of the \gls{GA} where offspring are created\cite{CompuIntelligenceIntro}.
 
 Offspring is created by combining parts of one or more chromosomes to form a new chromosome this procedure is called the \emph{crossover}\cite{CompuIntelligenceIntro}. The chromomsomes used in the production of the offspring is referred to as the parent chromosomes\cite{CompuIntelligenceIntro}.
 
-With regard to how offspring and parents are handled, there are two forms of the GA \cite{FamilyGA}. One form is called the \emph{generational} GA  and the other form is known as the \emph{steady-state} GA \cite{GeostatisticalGA,FamilyGA}.
+With regard to how offspring and parents are handled, there are two forms of the \gls{GA} \cite{FamilyGA}. One form is called the \emph{generational} \gls{GA}  and the other form is known as the \emph{steady-state} \gls{GA} \cite{GeostatisticalGA,FamilyGA}.
 
-With the generational GA the offspring are not immediately used in the next generation; instead they are kept in a pool until the pool reaches a required size \cite{FamilyGA}. The offspring are then used to replace the parents entirely in the next generation \cite{FamilyGA}. In the steady-state GA once offspring has been created a selection operator is applied once more. The operator selects individuals from the old population and from the offspring to form the new population for the next generation \cite{GeostatisticalGA,FamilyGA}.
+With the generational \gls{GA} the offspring are not immediately used in the next generation; instead they are kept in a pool until the pool reaches a required size \cite{FamilyGA}. The offspring are then used to replace the parents entirely in the next generation \cite{FamilyGA}. In the steady-state \gls{GA} once offspring has been created a selection operator is applied once more. The operator selects individuals from the old population and from the offspring to form the new population for the next generation \cite{GeostatisticalGA,FamilyGA}.
 
-The GA search process moves around in the search space using probabilistic rules rather than deterministic rules \cite{FamilyGA}. The probabilistic transition rules aid the algorithm to avoid local optima regions in the search space \cite{HybridIntelliGA}. Note that by even using the transition rules there is no guarantee that the GA will completely avoid local optima\cite{CompuIntelligenceIntro}.
+The \gls{GA} search process moves around in the search space using probabilistic rules rather than deterministic rules \cite{FamilyGA}. The probabilistic transition rules aid the algorithm to avoid local optima regions in the search space \cite{HybridIntelliGA}. Note that by even using the transition rules there is no guarantee that the \gls{GA} will completely avoid local optima\cite{CompuIntelligenceIntro}.
 
-The GA makes no assumptions about the search space and primarily works on the information provided by the chromosomes and the representation of solutions used\cite{CompuIntelligenceIntro,ConstrainedGA,HybridIntelliGA}. 
+The \gls{GA} makes no assumptions about the search space and primarily works on the information provided by the chromosomes and the representation of solutions used\cite{CompuIntelligenceIntro,ConstrainedGA,HybridIntelliGA}. 
 
-Unlike the SA and TS algorithms, the GA if properly initialized, starts with a number of search points that cover a wide area of the search space. Depending on the operators use. diversity can be quickly lost and the population can become homogeneous very quickly\cite{DistributedHierarchicalGA,FamilyGA,HybridIntelliGA}\label{GASearchPoints}.
+Unlike the \gls{SA} and \gls{TS} algorithms, the \gls{GA} if properly initialized, starts with a number of search points that cover a wide area of the search space. Depending on the operators use. diversity can be quickly lost and the population can become homogeneous very quickly\cite{DistributedHierarchicalGA,FamilyGA,HybridIntelliGA}\label{GASearchPoints}.
 
 As discussed earlier the defined operators consists of a selection operator, crossover operator and mutation operator\cite{SelfAdaptiveGA,MultiPopGA}. In the section that follows each operator is discussed.
 
 \subsection{Important Genetic Algorithm Characteristics}
-The various operators used by the GA makes the procedure unique and is one of its defining characteristics. The first is the characteristic to be discussed is the selection operator.
+The various operators used by the \gls{GA} makes the procedure unique and is one of its defining characteristics. The first is the characteristic to be discussed is the selection operator.
 
 \subsubsection{Selection Operator}
 The selection operator is the first operator to be applied to the population after each generation. The operator determines which individuals will be used to create offspring \cite{CoactiveFuzzyGA,CombinedBranchBoundGA,ConstrainedGA}.
@@ -483,7 +483,7 @@ By favouring high fitness individuals above low fitness individuals the operator
 
 If the search space is known to have only one optimum, then a high selection pressure is feasible\cite{ConstrainedGA}. The selection operator directs the search into a gradient-based direction that converges on a single optimum solution \cite{ConstrainedGA}. 
 
-In contrast, with a search space that is known to have multiple optima a low selection pressure is more benificial to the GA\cite{ConstrainedGA}. Low selection pressure allows the population of the GA to explore the search space more\cite{ConstrainedGA}.
+In contrast, with a search space that is known to have multiple optima a low selection pressure is more benificial to the \gls{GA}\cite{ConstrainedGA}. Low selection pressure allows the population of the \gls{GA} to explore the search space more\cite{ConstrainedGA}.
 
 The means by which the selection operator selects individuals is referred to as the selection scheme. The most widely adopted selection scheme is known as the \emph{roulette wheel} selection scheme \cite{ConstrainedGA,GeostatisticalGA,HybridBaldwinGA,CoactiveFuzzyGA}. With this scheme an individual is selected based on a probability defined by the fitness of the individual divided by the collective fitness of the population \cite{GeostatisticalGA}.
 
@@ -493,7 +493,7 @@ The interested reader is directed to the survey by Engelbrecht\cite{CompuIntelli
 
 The selection process as described below  can also be applied by the crossover operator. This process was opted to be split from the crossover operator as to provide a better overview of how the algorithm works
 
-After the offspring has been generated, a selection operator is applied again\cite{CompuIntelligenceIntro}. The purpose of this selection operator is to determine the population of the next generation\cite{CompuIntelligenceIntro}. Within this selection process replacement policies can \emph{optional} be applied\cite{CompuIntelligenceIntro}. These replacement policies define which individuals of the current population should be replaced by the newly generated offspring\cite{CompuIntelligenceIntro}. For instance, the policy can define that the entire current population should be replaced by the offspring\cite{CompuIntelligenceIntro}. Using this policy is not ideal as some generated offspring could have much worse fitness than their parents but due to the replacement the solutions represented by the good parents are lost\cite{CompuIntelligenceIntro}. Other replacement policies include replacing the worst individual in the current population with offspring on the premise that the offspring has a better fitness\cite{CompuIntelligenceIntro}. By replacing older chromosomes with better performing chromosomes in the population replacement strategy, the GA achieves an hill-climbing ability.
+After the offspring has been generated, a selection operator is applied again\cite{CompuIntelligenceIntro}. The purpose of this selection operator is to determine the population of the next generation\cite{CompuIntelligenceIntro}. Within this selection process replacement policies can \emph{optional} be applied\cite{CompuIntelligenceIntro}. These replacement policies define which individuals of the current population should be replaced by the newly generated offspring\cite{CompuIntelligenceIntro}. For instance, the policy can define that the entire current population should be replaced by the offspring\cite{CompuIntelligenceIntro}. Using this policy is not ideal as some generated offspring could have much worse fitness than their parents but due to the replacement the solutions represented by the good parents are lost\cite{CompuIntelligenceIntro}. Other replacement policies include replacing the worst individual in the current population with offspring on the premise that the offspring has a better fitness\cite{CompuIntelligenceIntro}. By replacing older chromosomes with better performing chromosomes in the population replacement strategy, the \gls{GA} achieves an hill-climbing ability.
 
 The reader that is interested in more information on different selection operators is directed to the suvery by Engelbrecht\cite{CompuIntelligenceIntro}.
 \subsubsection{Crossover Operator}
@@ -525,21 +525,21 @@ The mutation operator has no previous information on the chromosome it is mutati
 
 In a survey done by Engelbrecht\cite{CompuIntelligenceIntro} another mutation operator is discussed. Instead of mutating a small part of randomly selected chromosomes, this operator generates new offspring to be inserted back into the population. The operator randomly generates a new chromosome and then uses any of the previously discussed crossover operators (see page~\pageref{sec:crossover}).
 
-The mutation operator is not always a basic random replacement of genes operation. In research done by Il-kwon Jeong and Ju-jang Lee\cite{AdaptiveSAGA}, a mutation operator is presented that uses the SA algorithm to determine the genes that need to be replaced. The SA mutation operator generates a new chromosome from which genes are used to replace in the chromosome being mutated \cite{AdaptiveSAGA}.
+The mutation operator is not always a basic random replacement of genes operation. In research done by Il-kwon Jeong and Ju-jang Lee\cite{AdaptiveSAGA}, a mutation operator is presented that uses the \gls{SA} algorithm to determine the genes that need to be replaced. The \gls{SA} mutation operator generates a new chromosome from which genes are used to replace in the chromosome being mutated \cite{AdaptiveSAGA}.
 
 Addition mutation operators are discussed in Engelbrecht\cite{CompuIntelligenceIntro}
 \subsubsection{Initial Population Generation}
-Initial population generation is the very first activity that the GA performs. Out of this population potential mating candidates are selected based on their fitness, which indicates desirability. Generally the initial population is generated by means of randomisation \cite{SelfAdaptiveGA}. Since the algorithm searches multiple points simultaneously in the search space, it is desirable that the initial population have a wide diversity with regard to the solution it represents \cite{CombinedBranchBoundGA,DistributedHierarchicalGA}. By controlling the initial population generation we can control, to a small degree, the amount of exploration the algorithm does initially\cite{CombinedBranchBoundGA}. Therefore care must be taken in the selection of the particular randomisation scheme that will be used to generate chromosomes for individuals.
+Initial population generation is the very first activity that the \gls{GA} performs. Out of this population potential mating candidates are selected based on their fitness, which indicates desirability. Generally the initial population is generated by means of randomisation \cite{SelfAdaptiveGA}. Since the algorithm searches multiple points simultaneously in the search space, it is desirable that the initial population have a wide diversity with regard to the solution it represents \cite{CombinedBranchBoundGA,DistributedHierarchicalGA}. By controlling the initial population generation we can control, to a small degree, the amount of exploration the algorithm does initially\cite{CombinedBranchBoundGA}. Therefore care must be taken in the selection of the particular randomisation scheme that will be used to generate chromosomes for individuals.
 
-In a survey done by Andrea Reese\cite{RandomNumberGA}, two randomisation schemes were defined, namely pseudo-random number generators (PRNGs) and quasi-random number generators (QRNGs). PRNGs were found to be heavily problem dependent, improving the search efficiency in some instances and in other instances having no considerable impact. QRNGs, on the other hand, were shown to significantly improve the final solution produced by the GA as well as lower the number of generations for the solution to be obtained \cite{RandomNumberGA}.
+In a survey done by Andrea Reese\cite{RandomNumberGA}, two randomisation schemes were defined, namely  \glspl{PRNG} and \glspl{QRNG}. \glspl{PRNG} were found to be heavily problem dependent, improving the search efficiency in some instances and in other instances having no considerable impact. QRNGs, on the other hand, were shown to significantly improve the final solution produced by the \gls{GA} as well as lower the number of generations for the solution to be obtained \cite{RandomNumberGA}.
 
 \subsubsection{Algorithm Efficiency}
-The GA is a powerful, yet simple algorithm and tends to find good solutions given enough time, it does have its disadvantages. One of the major disadvantages occurs when the GA is applied to problems that have very large solution spaces. In these problems, the population size is a very sensitive parameter\cite{AdaptiveSAGA,HetergeneousGA,SelfAdaptiveDataMiningGA,PatternDetectionGA}. If the population is too small the algorithm will not have enough diversity to search and will tend to converge prematurely. 
+The \gls{GA} is a powerful, yet simple algorithm and tends to find good solutions given enough time, it does have its disadvantages. One of the major disadvantages occurs when the \gls{GA} is applied to problems that have very large solution spaces. In these problems, the population size is a very sensitive parameter\cite{AdaptiveSAGA,HetergeneousGA,SelfAdaptiveDataMiningGA,PatternDetectionGA}. If the population is too small the algorithm will not have enough diversity to search and will tend to converge prematurely. 
 
 A large population is preferred in large search spaces in order to get good chromosome diversity among individuals. Hence, the population size must be fine-tuned to achieve optimal performance in large problem spaces \cite{AdaptiveSAGA,CompuIntelligenceIntro}. Note an increase in population does not guarantee good chromomsome diversity among the population. As discussed int initial populaiton generation it is also dependant on the random generation scheme used as well. 
 
 
-In the next section the pseudo code for the GA algorithm is presented and the flow of the GA algorithm is discussed
+In the next section the pseudo code for the \gls{GA} algorithm is presented and the flow of the \gls{GA} algorithm is discussed
 \subsection{Flow of the Algorithm}
 The core concepts of the genetic algorithm were introduced in the previous section. To better understand the algorithm, a general overview of the algorithm be presented in this section using algorithm~\ref{alg:GA} as a reference point.
 \begin{algorithm}[H]
@@ -570,7 +570,7 @@ The core concepts of the genetic algorithm were introduced in the previous secti
 		\State Return best solution $x_i$
 	\end{algorithmic}
 \end{algorithm}
-The GA algorithm is a population-based algorithm and therefore needs to initialise its population. Each individual of the population represents a potential solution. Population initialisation occurs in line 1 in algorithm~\ref{alg:GA}. 
+The \gls{GA} algorithm is a population-based algorithm and therefore needs to initialise its population. Each individual of the population represents a potential solution. Population initialisation occurs in line 1 in algorithm~\ref{alg:GA}. 
 
 The amount of individuals in a population to be generated is predefined and is known as the population size. In algorithm~\ref{alg:GA} the population size is represented by the subscript $n$ in $pop_n$, where $n > 0$.
 
@@ -594,59 +594,59 @@ After the algorithm has completed the reproduction phase the algorithm selects t
 
 The algorithm continually generates a new population for each generation until a predetermined stopping criterion has been met. Once the criterion has been met, the algorithm selects the individual with the best fitness in the current population as its most optimal solution.
 
-The following section discusses literature where the GA has been applied to the FAP.
+The following section discusses literature where the \gls{GA} has been applied to the \gls{FAP}.
 
-\subsection{Genetic Algorithm on the FAP}
-Continuing the trend of the SA and TS algorithms, the GA has also been applied to a wide variety of optimisation problems and has on average obtained good results as can be observed in the following research \cite{GANonConvex,SelfAdaptiveDataMiningGA,AutoComplexMeta}. Due to the success of the GA on other difficult problems, it has therefore also been applied to the FAP.
+\subsection{Genetic Algorithm on the \gls{FAP}}
+Continuing the trend of the \gls{SA} and \gls{TS} algorithms, the \gls{GA} has also been applied to a wide variety of optimisation problems and has on average obtained good results as can be observed in the following research \cite{GANonConvex,SelfAdaptiveDataMiningGA,AutoComplexMeta}. Due to the success of the \gls{GA} on other difficult problems, it has therefore also been applied to the \gls{FAP}.
 
-Colombo and Allen\cite{ProblemDecompMIFAP} have developed a GA to be applied on the FAP. The authors decomposed the FAP into smaller subproblems. On average the solution quality is improved by using the technique but at the expense of more complex and taxing evaluations that have to be performed\cite{ProblemDecompMIFAP}. 
+Colombo and Allen\cite{ProblemDecompMIFAP} have developed a \gls{GA} to be applied on the \gls{FAP}. The authors decomposed the \gls{FAP} into smaller subproblems. On average the solution quality is improved by using the technique but at the expense of more complex and taxing evaluations that have to be performed\cite{ProblemDecompMIFAP}. 
 
-In table~\ref{tab:GA} the results obtained by authors on the COST259 benchmarks are comapred. The listed values are scalars representing the total interference generated by the frequency plan.
+In table~\ref{tab:GA} the results obtained by authors on the \gls{COST} 259 benchmarks are comapred. The listed values are scalars representing the total interference generated by the frequency plan.
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c |}
 	\hline
-	Problem instance & GA & COST 259 \\ \hline
+	Problem instance & \gls{GA} & \gls{COST} 259 \\ \hline
 	Siemens 1 & 2.60 & 2.20 \\ \hline
 	Siemens 2 & 16.34 & 14.280 \\ \hline
 	Siemens 3 & 6.37 & 5.19 \\ \hline
 	Siemens 4 & 84.08 & 81.89 \\ \hline
 	\end{tabular}
-\caption{GA on COST 259 Benchmark}
+\caption{GA on \gls{COST} 259 Benchmark}
 \label{tab:GA}
 \end{table}
 
-As per the results in table~\ref{tab:GA} the GA produces good results coming close to the best obtained results in the benchmark. By critically reasoning about the GA if it were applied to the FAP in theory, the following disadvantages can be identified:
+As per the results in table~\ref{tab:GA} the \gls{GA} produces good results coming close to the best obtained results in the benchmark. By critically reasoning about the \gls{GA} if it were applied to the \gls{FAP} in theory, the following disadvantages can be identified:
 
 \paragraph{Diversity}
---- The GA continually operates on a set population that was randomly initialised at the beginning of the algorithm. It therefore only has this set of generated genes in the initialised population to therefore evolve successive populations.
-If one disregards mutation, the GA is a process by which the optimal combinations of the starting genes are found. Thus, the GA purifies the starting population genes in an attempt to find those individual genes, which if combined into a single individual, will produce an optimal individual, i.e. solution. Therefore the GA is very reliant on the quality of the random generator used. The probability of the algorithm finding a particular desirable gene that is exhibited by the starting population is directly related to the random number generator used to initialise the population. 
+--- The \gls{GA} continually operates on a set population that was randomly initialised at the beginning of the algorithm. It therefore only has this set of generated genes in the initialised population to therefore evolve successive populations.
+If one disregards mutation, the \gls{GA} is a process by which the optimal combinations of the starting genes are found. Thus, the \gls{GA} purifies the starting population genes in an attempt to find those individual genes, which if combined into a single individual, will produce an optimal individual, i.e. solution. Therefore the \gls{GA} is very reliant on the quality of the random generator used. The probability of the algorithm finding a particular desirable gene that is exhibited by the starting population is directly related to the random number generator used to initialise the population. 
 \paragraph{Crossover}
---- The crossover operation in the GA is the only means by which successive populations are generated and can therefore be regarded as the primary means by which the algorithm performs its search. As the crossover is defined in the standard algorithm, certain parts of both parents are copied and combined to form a new individual. With regard to the FAP, if each individual represents a frequency plan, the crossover operation would copy certain cells from the two parent plans. This is not desirable, since a single channel within a cell can generate major interference which overshadows the rest of the channels that generate low interference in the cell. Thus, for the GA to generate high quality solutions on the FAP, the algorithm would be better off utilising a crossover operation which works on individual channels assigned rather than cells. Crossover operation is also a memory and computationally expensive operation since individuals need to be constantly created and values need to be copied to these new individuals from the respective parents.
+--- The crossover operation in the \gls{GA} is the only means by which successive populations are generated and can therefore be regarded as the primary means by which the algorithm performs its search. As the crossover is defined in the standard algorithm, certain parts of both parents are copied and combined to form a new individual. With regard to the \gls{FAP}, if each individual represents a frequency plan, the crossover operation would copy certain cells from the two parent plans. This is not desirable, since a single channel within a cell can generate major interference which overshadows the rest of the channels that generate low interference in the cell. Thus, for the \gls{GA} to generate high quality solutions on the \gls{FAP}, the algorithm would be better off utilising a crossover operation which works on individual channels assigned rather than cells. Crossover operation is also a memory and computationally expensive operation since individuals need to be constantly created and values need to be copied to these new individuals from the respective parents.
 \paragraph{Mutation}
---- Mutation is a means by which more diversity is introduced into the chromosomes of the invididuals.  As discussed, the mutation operator introduces new genes to existing chromosome which can lead to an excellent solution being distorted and becoming one of the worst solutions. With regard to the FAP, the low probability of mutation is not desirable, as the FAP search space is huge and therefore requires constant diversity to be introduced to accurately explore it. A possible good mutation would be one that is slightly more intelligent than the standard mutation operator, which just randomly modifies a selected individual. An intelligent mutation would be one that takes into account the recent history of the individual as well as the history of the population and, based on the collective knowledge alters or \emph{mutates} a particular individual. Another means of applying the mutation operator is to set the mutation rate proprtional to an individuals fitness. By modifying the mutation rate in this manner, mutating good individuals can be avoided.
+--- Mutation is a means by which more diversity is introduced into the chromosomes of the invididuals.  As discussed, the mutation operator introduces new genes to existing chromosome which can lead to an excellent solution being distorted and becoming one of the worst solutions. With regard to the \gls{FAP}, the low probability of mutation is not desirable, as the \gls{FAP} search space is huge and therefore requires constant diversity to be introduced to accurately explore it. A possible good mutation would be one that is slightly more intelligent than the standard mutation operator, which just randomly modifies a selected individual. An intelligent mutation would be one that takes into account the recent history of the individual as well as the history of the population and, based on the collective knowledge alters or \emph{mutates} a particular individual. Another means of applying the mutation operator is to set the mutation rate proprtional to an individuals fitness. By modifying the mutation rate in this manner, mutating good individuals can be avoided.
 \section {Summary}
 In this chapter a description was given of metaheuristic algorithms. What it means for an algorithm to be classified as being of a metaheuristic nature was explained and the characteristics these algorithms must exhibit were identified.
 
 Three metaheuristic algorithms were discussed in this chapter. For every algorithm discussed an explanation was given of how the algorithm works as well as the various characteristics that make the algorithm unique.
 
-For each algorithm, a brief overview of studies using the particular algorithm was given as well as some of the disadvantages or challenges that would be faced when applying the particular algorithm to the FAP.
+For each algorithm, a brief overview of studies using the particular algorithm was given as well as some of the disadvantages or challenges that would be faced when applying the particular algorithm to the \gls{FAP}.
 
 The first algorithm discussed was the tabu search algorithm and the second was the simulated annealing algorithm. The chapter concluded with the genetic algorithm. In the next chapter the class of algorithm that is relatively new to optimisation research, namely the swarm intelligence class of algorithms, is discussed.
 
-In the table~\ref{tab:summary1}, the algorithms discussed in this chapter and their performance on the COST 259 set of benchmarks have been summarised.
+In the table~\ref{tab:summary1}, the algorithms discussed in this chapter and their performance on the \gls{COST} 259 set of benchmarks have been summarised.
 \begin{table}[H]
 \label{tbl:summaryMetaTable}
 \begin{center}
 	\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	Problem instance & TS & SA & GA & COST 259 \\ \hline
+	Problem instance & \gls{TS} & \gls{SA} & \gls{GA} & \gls{COST} 259 \\ \hline
 	Siemens1 & 2.7692 & 23.00 & 2.60 & 2.20 \\ \hline
 	Siemens2 & 14.9360 & 14.75 & 16.34 & 14.280 \\ \hline
 	Siemens3 & 6.6496 & 52.55 & 6.37 & 5.19 \\ \hline
 	Siemens4 & 110.9725 & 80.80 & 84.08 & 81.89 \\ \hline
 	\end{tabular}
-\caption{Summary of algorithm performance on the COST 259 benchmark}
+\caption{Summary of algorithm performance on the \gls{COST} 259 benchmark}
 \label{tab:summary1}
 \end{center}
 \end{table}
