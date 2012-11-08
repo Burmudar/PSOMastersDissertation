@@ -2,12 +2,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Results of applying TS with HMT on COST 259}}{73}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces SA on COST 259 Benchmark}}{81}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces GA on COST 259 Benchmark}}{92}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Summary of algorithm performance on the COST 259 benchmark}}{94}{table.4.4}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Results of applying \gls {TS} with \gls {HMT} on \gls {COST} 259}}{73}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces SA on \gls {COST} 259 Benchmark}}{81}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces GA on \gls {COST} 259 Benchmark}}{92}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Summary of algorithm performance on the \gls {COST} 259 benchmark}}{94}{table.4.4}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces ACO and ACO* on custom GSM FAP benchmark\cite {ACOvsEA}}}{112}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces ACO and \gls {ACO}* on custom GSM \gls {FAP} benchmark\cite {ACOvsEA}}}{112}{table.5.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {7.1}{\ignorespaces Siemens1 results using velocity method 1}}{173}{table.7.1}
