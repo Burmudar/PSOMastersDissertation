@@ -530,7 +530,7 @@
 \glossaryentry{EUCLID?\glossaryentryfield{EUCLID}{\glsnamefont{EUCLID}}{EUropean Cooperation on the Long term in the Defense}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{52}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{52}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{52}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{52}
@@ -560,8 +560,8 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{57}
@@ -570,8 +570,14 @@
 \glossaryentry{MI-FAP?\glossaryentryfield{MI-FAP}{\glsnamefont{MI-FAP}}{minimum interference frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{AI?\glossaryentryfield{AI}{\glsnamefont{AI}}{artificial intelligence}{\relax }|setentrycounter[]{page}\glsnumberformat}{59}
 \glossaryentry{AI?\glossaryentryfield{AI}{\glsnamefont{AI}}{artificial intelligence}{\relax }|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{65}
@@ -580,10 +586,7 @@
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{65}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{65}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{65}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{66}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{66}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{66}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{65}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{66}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{66}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{66}
@@ -591,60 +594,59 @@
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{67}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{67}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{67}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{67}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{67}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
 \glossaryentry{MTM?\glossaryentryfield{MTM}{\glsnamefont{MTM}}{medium term memory}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
 \glossaryentry{LTM?\glossaryentryfield{LTM}{\glsnamefont{LTM}}{long term memory}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
 \glossaryentry{STM?\glossaryentryfield{STM}{\glsnamefont{STM}}{short term memory}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
-\glossaryentry{MTM?\glossaryentryfield{MTM}{\glsnamefont{MTM}}{medium term memory}{\relax }|setentrycounter[]{page}\glsnumberformat}{69}
-\glossaryentry{LTM?\glossaryentryfield{LTM}{\glsnamefont{LTM}}{long term memory}{\relax }|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{MTM?\glossaryentryfield{MTM}{\glsnamefont{MTM}}{medium term memory}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{LTM?\glossaryentryfield{LTM}{\glsnamefont{LTM}}{long term memory}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{68}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{69}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{69}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{70}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{70}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{69}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{70}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{FS-FAP?\glossaryentryfield{FS-FAP}{\glsnamefont{FS-FAP}}{fixed spectrum frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{HMT?\glossaryentryfield{HMT}{\glsnamefont{HMT}}{heuristic manipulation technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{HMT?\glossaryentryfield{HMT}{\glsnamefont{HMT}}{heuristic manipulation technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{71}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{FS-FAP?\glossaryentryfield{FS-FAP}{\glsnamefont{FS-FAP}}{fixed spectrum frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
 \glossaryentry{HMT?\glossaryentryfield{HMT}{\glsnamefont{HMT}}{heuristic manipulation technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
 \glossaryentry{HMT?\glossaryentryfield{HMT}{\glsnamefont{HMT}}{heuristic manipulation technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{72}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{HMT?\glossaryentryfield{HMT}{\glsnamefont{HMT}}{heuristic manipulation technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{HMT?\glossaryentryfield{HMT}{\glsnamefont{HMT}}{heuristic manipulation technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{74}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{73}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{74}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{75}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{75}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{75}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{76}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{76}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{75}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{76}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{76}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{76}
@@ -652,6 +654,8 @@
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{77}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{77}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{78}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{78}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{78}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{78}
@@ -660,40 +664,45 @@
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{79}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{79}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{79}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{79}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
 \glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
 \glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{82}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{83}
@@ -706,71 +715,60 @@
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{83}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{83}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{83}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{83}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{84}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{85}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{85}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{85}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{86}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{88}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{PRNG?\glossaryentryfield{PRNG}{\glsnamefont{PRNG}}{pseudo random number generator}{\relax }|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{QRNG?\glossaryentryfield{QRNG}{\glsnamefont{QRNG}}{quasi random number generator}{\relax }|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{PRNG?\glossaryentryfield{PRNG}{\glsnamefont{PRNG}}{pseudo random number generator}{\relax }|setentrycounter[]{page}\glsnumberformat}{87}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{88}
-\glossaryentry{PRNG?\glossaryentryfield{PRNG}{\glsnamefont{PRNG}}{pseudo random number generator}{\relax }|setentrycounter[]{page}\glsnumberformat}{88}
-\glossaryentry{QRNG?\glossaryentryfield{QRNG}{\glsnamefont{QRNG}}{quasi random number generator}{\relax }|setentrycounter[]{page}\glsnumberformat}{88}
-\glossaryentry{PRNG?\glossaryentryfield{PRNG}{\glsnamefont{PRNG}}{pseudo random number generator}{\relax }|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{88}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{89}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{89}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{89}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{89}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{89}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{92}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{94}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{94}
-\glossaryentry{TS?\glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }|setentrycounter[]{page}\glsnumberformat}{94}
-\glossaryentry{SA?\glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }|setentrycounter[]{page}\glsnumberformat}{94}
-\glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{94}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{94}
-\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{93}
 \glossaryentry{GA?\glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }|setentrycounter[]{page}\glsnumberformat}{95}
 \glossaryentry{ACO?\glossaryentryfield{ACO}{\glsnamefont{ACO}}{ant colony optimisation}{\relax }|setentrycounter[]{page}\glsnumberformat}{97}
 \glossaryentry{ABC?\glossaryentryfield{ABC}{\glsnamefont{ABC}}{artificial bee colony}{\relax }|setentrycounter[]{page}\glsnumberformat}{97}

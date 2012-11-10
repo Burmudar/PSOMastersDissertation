@@ -1,7 +1,7 @@
-\contentsline {algorithm}{\numberline {1}{\ignorespaces Basic Tabu Search Algorithm\cite {TabuRCAProblem,TabuMontemanniSmith}}}{70}{algorithm.1}
-\contentsline {algorithm}{\numberline {2}{\ignorespaces Basic Tabu Search Algorithm (continued) \cite {TabuRCAProblem,TabuMontemanniSmith}}}{71}{algorithm.2}
-\contentsline {algorithm}{\numberline {3}{\ignorespaces Basic Simulated Annealing Algorithm\cite {VeryFastSAImageEnchancement,ChaosSA}}}{80}{algorithm.3}
-\contentsline {algorithm}{\numberline {4}{\ignorespaces Basic Genetic Algorithm Algorithm\cite {FamilyGA,AdaptiveSAGA,DistributedHierarchicalGA,SelfAdaptiveGA}}}{90}{algorithm.4}
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Basic Tabu Search Algorithm\cite {TabuRCAProblem,TabuMontemanniSmith}}}{69}{algorithm.1}
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Basic Tabu Search Algorithm (continued) \cite {TabuRCAProblem,TabuMontemanniSmith}}}{70}{algorithm.2}
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Basic Simulated Annealing Algorithm\cite {VeryFastSAImageEnchancement,ChaosSA}}}{79}{algorithm.3}
+\contentsline {algorithm}{\numberline {4}{\ignorespaces Basic Genetic Algorithm Algorithm\cite {FamilyGA,AdaptiveSAGA,DistributedHierarchicalGA,SelfAdaptiveGA}}}{89}{algorithm.4}
 \contentsline {algorithm}{\numberline {5}{\ignorespaces Ant System Algorithm\nobreakspace {}\cite {CompuIntelligenceIntro}}}{108}{algorithm.5}
 \contentsline {algorithm}{\numberline {6}{\ignorespaces Ant System Algorithm (continued)}}{109}{algorithm.6}
 \contentsline {algorithm}{\numberline {7}{\ignorespaces Basic Artificial Bee Colony Algorithm\cite {ABCCompareStudy}}}{119}{algorithm.7}
