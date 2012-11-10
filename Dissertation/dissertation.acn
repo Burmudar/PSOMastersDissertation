@@ -154,6 +154,7 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{SMS?\glossaryentryfield{SMS}{\glsnamefont{SMS}}{short message service}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{VLR?\glossaryentryfield{VLR}{\glsnamefont{VLR}}{visitor location register}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
@@ -199,7 +200,7 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
@@ -221,9 +222,9 @@
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{TDMA?\glossaryentryfield{TDMA}{\glsnamefont{TDMA}}{time division multiple access}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
@@ -255,7 +256,7 @@
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{BCH?\glossaryentryfield{BCH}{\glsnamefont{BCH}}{broadcast channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
@@ -282,8 +283,8 @@
 \glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{RACH?\glossaryentryfield{RACH}{\glsnamefont{RACH}}{random access channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{RACH?\glossaryentryfield{RACH}{\glsnamefont{RACH}}{random access channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
@@ -317,8 +318,8 @@
 \glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{FACCH?\glossaryentryfield{FACCH}{\glsnamefont{FACCH}}{fast associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{FACCH?\glossaryentryfield{FACCH}{\glsnamefont{FACCH}}{fast associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{FACCH?\glossaryentryfield{FACCH}{\glsnamefont{FACCH}}{fast associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{CBCH?\glossaryentryfield{CBCH}{\glsnamefont{CBCH}}{cell broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{SDCCH?\glossaryentryfield{SDCCH}{\glsnamefont{SDCCH}}{stand-alone dedicated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
@@ -332,7 +333,6 @@
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{BSS?\glossaryentryfield{BSS}{\glsnamefont{BSS}}{base station subsystem}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
@@ -397,9 +397,9 @@
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
-\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
@@ -433,8 +433,6 @@
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
@@ -447,7 +445,6 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{35}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{35}
 \glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{35}
@@ -455,9 +452,9 @@
 \glossaryentry{AFP?\glossaryentryfield{AFP}{\glsnamefont{AFP}}{automatic frequency planning}{\relax }|setentrycounter[]{page}\glsnumberformat}{35}
 \glossaryentry{CAP?\glossaryentryfield{CAP}{\glsnamefont{CAP}}{channel assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{35}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{37}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{37}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{37}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{38}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{38}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{39}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{39}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{39}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{39}
@@ -466,14 +463,14 @@
 \glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{39}
 \glossaryentry{DFA?\glossaryentryfield{DFA}{\glsnamefont{DFA}}{dynamic frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{39}
 \glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{39}
-\glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{40}
 \glossaryentry{DFA?\glossaryentryfield{DFA}{\glsnamefont{DFA}}{dynamic frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{40}
-\glossaryentry{DFA?\glossaryentryfield{DFA}{\glsnamefont{DFA}}{dynamic frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{40}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{DFA?\glossaryentryfield{DFA}{\glsnamefont{DFA}}{dynamic frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{DFA?\glossaryentryfield{DFA}{\glsnamefont{DFA}}{dynamic frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{DFA?\glossaryentryfield{DFA}{\glsnamefont{DFA}}{dynamic frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{41}
@@ -483,8 +480,8 @@
 \glossaryentry{DFA?\glossaryentryfield{DFA}{\glsnamefont{DFA}}{dynamic frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{FFA?\glossaryentryfield{FFA}{\glsnamefont{FFA}}{fixed frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{41}
 \glossaryentry{QoS?\glossaryentryfield{QoS}{\glsnamefont{QoS}}{quality of service}{\relax }|setentrycounter[]{page}\glsnumberformat}{43}
-\glossaryentry{QoS?\glossaryentryfield{QoS}{\glsnamefont{QoS}}{quality of service}{\relax }|setentrycounter[]{page}\glsnumberformat}{43}
-\glossaryentry{SIR?\glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{QoS?\glossaryentryfield{QoS}{\glsnamefont{QoS}}{quality of service}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{SIR?\glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{SIR?\glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{SINR?\glossaryentryfield{SINR}{\glsnamefont{SINR}}{signal to interference noise power ration}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{SINR?\glossaryentryfield{SINR}{\glsnamefont{SINR}}{signal to interference noise power ration}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
@@ -493,27 +490,27 @@
 \glossaryentry{BER?\glossaryentryfield{BER}{\glsnamefont{BER}}{bit error rate}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{BER?\glossaryentryfield{BER}{\glsnamefont{BER}}{bit error rate}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
 \glossaryentry{BER?\glossaryentryfield{BER}{\glsnamefont{BER}}{bit error rate}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
-\glossaryentry{SIR?\glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
-\glossaryentry{BER?\glossaryentryfield{BER}{\glsnamefont{BER}}{bit error rate}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
-\glossaryentry{SIR?\glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
-\glossaryentry{SIR?\glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{SIR?\glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{BER?\glossaryentryfield{BER}{\glsnamefont{BER}}{bit error rate}{\relax }|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{SIR?\glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{SIR?\glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }|setentrycounter[]{page}\glsnumberformat}{45}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{46}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{46}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{46}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{46}
-\glossaryentry{MO-FAP?\glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{46}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{46}
-\glossaryentry{MO-FAP?\glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{46}
-\glossaryentry{MO-FAP?\glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{MO-FAP?\glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{MO-FAP?\glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{MO-FAP?\glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{MO-FAP?\glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{MS-FAP?\glossaryentryfield{MS-FAP}{\glsnamefont{MS-FAP}}{minimum span frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{MS-FAP?\glossaryentryfield{MS-FAP}{\glsnamefont{MS-FAP}}{minimum span frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{MS-FAP?\glossaryentryfield{MS-FAP}{\glsnamefont{MS-FAP}}{minimum span frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{MO-FAP?\glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{MO-FAP?\glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
-\glossaryentry{MS-FAP?\glossaryentryfield{MS-FAP}{\glsnamefont{MS-FAP}}{minimum span frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
-\glossaryentry{MI-FAP?\glossaryentryfield{MI-FAP}{\glsnamefont{MI-FAP}}{minimum interference frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
-\glossaryentry{FS-FAP?\glossaryentryfield{FS-FAP}{\glsnamefont{FS-FAP}}{fixed spectrum frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{MS-FAP?\glossaryentryfield{MS-FAP}{\glsnamefont{MS-FAP}}{minimum span frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{MI-FAP?\glossaryentryfield{MI-FAP}{\glsnamefont{MI-FAP}}{minimum interference frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{FS-FAP?\glossaryentryfield{FS-FAP}{\glsnamefont{FS-FAP}}{fixed spectrum frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{MI-FAP?\glossaryentryfield{MI-FAP}{\glsnamefont{MI-FAP}}{minimum interference frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{MI-FAP?\glossaryentryfield{MI-FAP}{\glsnamefont{MI-FAP}}{minimum interference frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{MI-FAP?\glossaryentryfield{MI-FAP}{\glsnamefont{MI-FAP}}{minimum interference frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
@@ -522,18 +519,18 @@
 \glossaryentry{MI-FAP?\glossaryentryfield{MI-FAP}{\glsnamefont{MI-FAP}}{minimum interference frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{FS-FAP?\glossaryentryfield{FS-FAP}{\glsnamefont{FS-FAP}}{fixed spectrum frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{49}
-\glossaryentry{FS-FAP?\glossaryentryfield{FS-FAP}{\glsnamefont{FS-FAP}}{fixed spectrum frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{FS-FAP?\glossaryentryfield{FS-FAP}{\glsnamefont{FS-FAP}}{fixed spectrum frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{50}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{50}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{50}
-\glossaryentry{MS-FAP?\glossaryentryfield{MS-FAP}{\glsnamefont{MS-FAP}}{minimum span frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{50}
+\glossaryentry{MS-FAP?\glossaryentryfield{MS-FAP}{\glsnamefont{MS-FAP}}{minimum span frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{EUCLID?\glossaryentryfield{EUCLID}{\glsnamefont{EUCLID}}{EUropean Cooperation on the Long term in the Defense}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{EUCLID?\glossaryentryfield{EUCLID}{\glsnamefont{EUCLID}}{EUropean Cooperation on the Long term in the Defense}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{COST?\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{52}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{52}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{52}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{52}
@@ -555,7 +552,7 @@
 \glossaryentry{DFA?\glossaryentryfield{DFA}{\glsnamefont{DFA}}{dynamic frequency allocation}{\relax }|setentrycounter[]{page}\glsnumberformat}{55}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{55}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{55}
-\glossaryentry{EUCLID?\glossaryentryfield{EUCLID}{\glsnamefont{EUCLID}}{EUropean Cooperation on the Long term in the Defense}{\relax }|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{EUCLID?\glossaryentryfield{EUCLID}{\glsnamefont{EUCLID}}{EUropean Cooperation on the Long term in the Defense}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
@@ -563,8 +560,8 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{FAP?\glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }|setentrycounter[]{page}\glsnumberformat}{57}
