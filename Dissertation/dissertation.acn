@@ -94,6 +94,7 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{LTE?\glossaryentryfield{LTE}{\glsnamefont{LTE}}{long term evolution}{\relax }|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{WiMAX?\glossaryentryfield{WIMAX}{\glsnamefont{WiMAX}}{worlwide interoperability for microwave access}{\relax }|setentrycounter[]{page}\glsnumberformat}{14}
+\glossaryentry{LTE?\glossaryentryfield{LTE}{\glsnamefont{LTE}}{long term evolution}{\relax }|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{14}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{14}
@@ -117,15 +118,14 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{BSS?\glossaryentryfield{BSS}{\glsnamefont{BSS}}{base station subsystem}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{BSS?\glossaryentryfield{BSS}{\glsnamefont{BSS}}{base station subsystem}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
-\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
 \glossaryentry{LA?\glossaryentryfield{LA}{\glsnamefont{LA}}{location area}{\relax }|setentrycounter[]{page}\glsnumberformat}{17}
@@ -133,9 +133,9 @@
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{18}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{18}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{19}
-\glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{19}
-\glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{19}
-\glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{FDM?\glossaryentryfield{FDM}{\glsnamefont{FDM}}{frequency division multiplexing}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
@@ -143,14 +143,14 @@
 \glossaryentry{TRX?\glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{NSS?\glossaryentryfield{NSS}{\glsnamefont{NSS}}{network switching subsystem}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{BSS?\glossaryentryfield{BSS}{\glsnamefont{BSS}}{base station subsystem}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{NSS?\glossaryentryfield{NSS}{\glsnamefont{NSS}}{network switching subsystem}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{BSS?\glossaryentryfield{BSS}{\glsnamefont{BSS}}{base station subsystem}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
@@ -163,9 +163,9 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{PSTN?\glossaryentryfield{PSTN}{\glsnamefont{PSTN}}{public switching telephone network}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
-\glossaryentry{PSTN?\glossaryentryfield{PSTN}{\glsnamefont{PSTN}}{public switching telephone network}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
-\glossaryentry{PSTN?\glossaryentryfield{PSTN}{\glsnamefont{PSTN}}{public switching telephone network}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{PSTN?\glossaryentryfield{PSTN}{\glsnamefont{PSTN}}{public switching telephone network}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{PSTN?\glossaryentryfield{PSTN}{\glsnamefont{PSTN}}{public switching telephone network}{\relax }|setentrycounter[]{page}\glsnumberformat}{21}
 \glossaryentry{HLR?\glossaryentryfield{HLR}{\glsnamefont{HLR}}{home location register}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
 \glossaryentry{AUC?\glossaryentryfield{AUC}{\glsnamefont{AUC}}{authentication centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
 \glossaryentry{EIR?\glossaryentryfield{EIR}{\glsnamefont{EIR}}{equipment identity register}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
@@ -175,10 +175,10 @@
 \glossaryentry{VLR?\glossaryentryfield{VLR}{\glsnamefont{VLR}}{visitor location register}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
-\glossaryentry{SRES?\glossaryentryfield{SRES}{\glsnamefont{SRES}}{signed response}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{AUC?\glossaryentryfield{AUC}{\glsnamefont{AUC}}{authentication centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{HLR?\glossaryentryfield{HLR}{\glsnamefont{HLR}}{home location register}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{HLR?\glossaryentryfield{HLR}{\glsnamefont{HLR}}{home location register}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{SRES?\glossaryentryfield{SRES}{\glsnamefont{SRES}}{signed response}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{AUC?\glossaryentryfield{AUC}{\glsnamefont{AUC}}{authentication centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{HLR?\glossaryentryfield{HLR}{\glsnamefont{HLR}}{home location register}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{HLR?\glossaryentryfield{HLR}{\glsnamefont{HLR}}{home location register}{\relax }|setentrycounter[]{page}\glsnumberformat}{22}
 \glossaryentry{EIR?\glossaryentryfield{EIR}{\glsnamefont{EIR}}{equipment identity register}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{IMEI?\glossaryentryfield{IMEI}{\glsnamefont{IMEI}}{international mobile equipment identity}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{EIR?\glossaryentryfield{EIR}{\glsnamefont{EIR}}{equipment identity register}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
@@ -192,38 +192,38 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{NMC?\glossaryentryfield{NMC}{\glsnamefont{NMC}}{network management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{NMC?\glossaryentryfield{NMC}{\glsnamefont{NMC}}{network management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{NMC?\glossaryentryfield{NMC}{\glsnamefont{NMC}}{network management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{NMC?\glossaryentryfield{NMC}{\glsnamefont{NMC}}{network management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{NMC?\glossaryentryfield{NMC}{\glsnamefont{NMC}}{network management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{NMC?\glossaryentryfield{NMC}{\glsnamefont{NMC}}{network management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{OMC?\glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{LAPDm?\glossaryentryfield{LAPDm}{\glsnamefont{LAPDm}}{link access protocol D channel modified}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{ISDN?\glossaryentryfield{ISDN}{\glsnamefont{ISDN}}{integrated service digital network}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{TDMA?\glossaryentryfield{TDMA}{\glsnamefont{TDMA}}{time division multiple access}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{LAPDm?\glossaryentryfield{LAPDm}{\glsnamefont{LAPDm}}{link access protocol D channel modified}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{ISDN?\glossaryentryfield{ISDN}{\glsnamefont{ISDN}}{integrated service digital network}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{TDMA?\glossaryentryfield{TDMA}{\glsnamefont{TDMA}}{time division multiple access}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
@@ -237,7 +237,7 @@
 \glossaryentry{BSS?\glossaryentryfield{BSS}{\glsnamefont{BSS}}{base station subsystem}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{25}
 \glossaryentry{TDMA?\glossaryentryfield{TDMA}{\glsnamefont{TDMA}}{time division multiple access}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
 \glossaryentry{TDMA?\glossaryentryfield{TDMA}{\glsnamefont{TDMA}}{time division multiple access}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
@@ -246,16 +246,16 @@
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
 \glossaryentry{TDMA?\glossaryentryfield{TDMA}{\glsnamefont{TDMA}}{time division multiple access}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
-\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{26}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{BCH?\glossaryentryfield{BCH}{\glsnamefont{BCH}}{broadcast channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
@@ -270,20 +270,20 @@
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{SCH?\glossaryentryfield{SCH}{\glsnamefont{SCH}}{sychronisation channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{TDMA?\glossaryentryfield{TDMA}{\glsnamefont{TDMA}}{time division multiple access}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{FCCH?\glossaryentryfield{FCCH}{\glsnamefont{FCCH}}{frequency control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{SCH?\glossaryentryfield{SCH}{\glsnamefont{SCH}}{sychronisation channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{BCCH?\glossaryentryfield{BCCH}{\glsnamefont{BCCH}}{broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{TDMA?\glossaryentryfield{TDMA}{\glsnamefont{TDMA}}{time division multiple access}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{FCCH?\glossaryentryfield{FCCH}{\glsnamefont{FCCH}}{frequency control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{SCH?\glossaryentryfield{SCH}{\glsnamefont{SCH}}{sychronisation channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{BCCH?\glossaryentryfield{BCCH}{\glsnamefont{BCCH}}{broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{CCCH?\glossaryentryfield{CCCH}{\glsnamefont{CCCH}}{common control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{RACH?\glossaryentryfield{RACH}{\glsnamefont{RACH}}{random access channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{RACH?\glossaryentryfield{RACH}{\glsnamefont{RACH}}{random access channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
@@ -309,16 +309,16 @@
 \glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{BSS?\glossaryentryfield{BSS}{\glsnamefont{BSS}}{base station subsystem}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{SDCCH?\glossaryentryfield{SDCCH}{\glsnamefont{SDCCH}}{stand-alone dedicated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{FACCH?\glossaryentryfield{FACCH}{\glsnamefont{FACCH}}{fast associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
-\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{SDCCH?\glossaryentryfield{SDCCH}{\glsnamefont{SDCCH}}{stand-alone dedicated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{SACCH?\glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{FACCH?\glossaryentryfield{FACCH}{\glsnamefont{FACCH}}{fast associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{TCH?\glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{28}
 \glossaryentry{FACCH?\glossaryentryfield{FACCH}{\glsnamefont{FACCH}}{fast associated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{CBCH?\glossaryentryfield{CBCH}{\glsnamefont{CBCH}}{cell broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{SDCCH?\glossaryentryfield{SDCCH}{\glsnamefont{SDCCH}}{stand-alone dedicated control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
@@ -334,24 +334,24 @@
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{BCCH?\glossaryentryfield{BCCH}{\glsnamefont{BCCH}}{broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{BCCH?\glossaryentryfield{BCCH}{\glsnamefont{BCCH}}{broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{BCCH?\glossaryentryfield{BCCH}{\glsnamefont{BCCH}}{broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{29}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{BCCH?\glossaryentryfield{BCCH}{\glsnamefont{BCCH}}{broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{BCCH?\glossaryentryfield{BCCH}{\glsnamefont{BCCH}}{broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{BCCH?\glossaryentryfield{BCCH}{\glsnamefont{BCCH}}{broadcast control channel}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
-\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
-\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{30}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
@@ -388,15 +388,15 @@
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
@@ -433,13 +433,13 @@
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{BTS?\glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{BSC?\glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
 \glossaryentry{MSC?\glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }|setentrycounter[]{page}\glsnumberformat}{32}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
-\glossaryentry{MS?\glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
-\glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
 \glossaryentry{GSM?\glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }|setentrycounter[]{page}\glsnumberformat}{33}
