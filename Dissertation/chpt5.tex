@@ -3,29 +3,29 @@
 \section{Introduction}
 The research field of artificial intelligence stands a lot to gain by the study of the inner workings of nature itself; this is why there is a branch of artificial intelligence that incorporates some of nature's processes, like evolution, which can be seen being applied in practice in the \gls{GA} (see section \ref{sec:geneticalgorithm}).
 
- There are other approaches in artificial intelligence which also have their routes in nature, for instance animal learning or the study of how dogs learn\cite{DLearning}. These approaches only look at a “single agent” thought process when an agent percepts (senses) are mapped to actions in the agents particular environment \cite{DLearning}. 
+ There are other approaches in artificial intelligence which also have their routes in nature, for instance animal learning or the study of how dogs learn\cite{DLearning}. These approaches only look at a “single agent” thought process when agent percepts (senses) are mapped to actions in an agents particular environment \cite{DLearning}. 
  
  A percept can be said to be a process that is specifically designed to take data from the surrounding environment, process it and present it as information upon which decisions can be made\cite{DLearning,AIModernApproach}. For instance, eyes are percepts, which take visual data presented by the environment\cite{DLearning,AIModernApproach}. The visual data is processed by the brain into information to enable decisions to be made on navigating the environment\cite{DLearning,AIModernApproach}.
 
-The research field of swarm intelligence is an approach more concerned with the underlying processes and behaviour patterns when multiple agents (insects, animals) come together and perform a task as one collective entity\cite{DLearning,AIModernApproach,ChaoticSwarmIntel,BeeJobShop}.  The study of animals and insects and how they socially interact within their local environments in groups has already contributed to artificial intelligence as a whole in the form of Swarm Intelligence\cite{ChaoticSwarmIntel,BeeJobShop}.  In the field of Swarm Intelligence, animals and insects are represented by agents which are simple stimulus-response agents and can only perceive changes in their local environments. A group of agents is referred to as a \emph{swarm}.
+The research field of swarm intelligence is an approach more concerned with the underlying processes and behaviour patterns when multiple agents (insects, animals) come together and perform a task as one collective entity\cite{DLearning,AIModernApproach}.  The study of animals and insects and how they socially interact within their local environments in groups has already contributed to artificial intelligence as a whole in the form of Swarm Intelligence\cite{ChaoticSwarmIntel,BeeJobShop}.  In the field of Swarm Intelligence, animals and insects are represented by agents which are simple stimulus-response agents and can only perceive changes in their local environments. A group of agents is referred to as a \emph{swarm}.
 
-Swarm intelligence works on a key aspect observed in nature, the notion of emergent behaviour\cite{SwarmArt,CompuIntelligenceIntro,FundamentalSwarm}. Emergent behaviour is when an individual in the swarm achieves success due to the it obtaining more knowledge through exploration about its local environment\cite{SwarmArt,CompuIntelligenceIntro,FundamentalSwarm}.
+Swarm intelligence works on a key aspect observed in nature, the notion of emergent behaviour\cite{SwarmArt,FundamentalSwarm}. Emergent behaviour is when an individual in the swarm achieves success due to the it obtaining more knowledge through exploration about its local environment\cite{SwarmArt,FundamentalSwarm}.
 
-In swarm intelligence, when an agent exhibits emergent behaviour, the outcome of the behaviour needs to be shared with the whole swarm in order for the swarm to adapt and use the newly gained knowledge\cite{SwarmArt,ChaoticSwarmIntel,CompuIntelligenceIntro,FundamentalSwarm}.
+In swarm intelligence, when an agent exhibits emergent behaviour, the outcome of the behaviour needs to be shared with the whole swarm in order for the swarm to adapt and use the newly gained knowledge\cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
-In a swarm, the agents communicate with each other about knowledge gained as a consequence of the changes in their local environments\cite{SwarmArt,ChaoticSwarmIntel,CompuIntelligenceIntro,FundamentalSwarm}. Changes can be caused by emergent behaviour by the agent itself, other agents or the environment\cite{SwarmArt,ChaoticSwarmIntel,CompuIntelligenceIntro,FundamentalSwarm}. Communication among agents facilitates \emph{knowledge sharing}\cite{SwarmArt,ChaoticSwarmIntel,CompuIntelligenceIntro,FundamentalSwarm}. 
+In a swarm, the agents communicate with each other about knowledge gained as a consequence of the changes in their local environments\cite{SwarmArt,ChaoticSwarmIntel}. Changes can be caused by emergent behaviour by the agent itself, other agents or the environment\cite{CompuIntelligenceIntro,FundamentalSwarm}. Communication among agents facilitates \emph{knowledge sharing}\cite{SwarmArt,FundamentalSwarm}. 
 
 Social interaction among agents is certainly not the only means of interacting, but with regard to biological inspired systems it is the most prominent\cite{CompuIntelligenceIntro}.
 
-Using this social interaction between the agents of the swarm can influence their own local environment to move towards more promosing space in the search space \cite{SwarmArt,ChaoticSwarmIntel,CompuIntelligenceIntro,FundamentalSwarm}. Due to the social interaction between agents the swarm is also referred to as a \emph{social swarm}\cite{SwarmArt,ChaoticSwarmIntel,CompuIntelligenceIntro,FundamentalSwarm}. Thus each agents of a swarm contributes to the swarm as a whole to locate and produce better solutions \cite{BeeJobShop}. 
+Using this social interaction between the agents of the swarm can influence their own local environment to move towards more promosing space in the search space \cite{ChaoticSwarmIntel,CompuIntelligenceIntro}. Thus each agents of a swarm contributes to the swarm as a whole to locate and produce better solutions \cite{BeeJobShop}. Due to the social interaction between agents the swarm is also referred to as a \emph{social swarm}\cite{ChaoticSwarmIntel,FundamentalSwarm} 
 
 As discussed the behaviour propagates from one agent to another through social interaction, which brings forth information exchange\cite{SwarmArt}. Social interaction is but one component of self-organisation. Other components that form part of self-organisation are \cite{SIPowerInNums}:
 \begin{itemize}
 \item Positive and negative feedback\cite{SIPowerInNums}
-\item Increasing fluctuations of random events\cite{SIPowerInNums}
+\item Increased fluctuations of random events\cite{SIPowerInNums}
 \end{itemize}
 
-The means by which agents facilitate indirect communication with each other is known as \emph{stigmergy}. Stimergy as well as the different forms of stigmergy is discussed in ~\ref{sec:stigmergy}.
+The means by which agents facilitate indirect communication with each other is known as \emph{stigmergy}. Stimergy as well as the different forms of stigmergy are discussed in ~\ref{sec:stigmergy}.
 
 Swarm intelligence algorithms are also meta-heuristic algorithms, with the distinction being made that swarm intelligence algorithms use multiple agents as a collective entity of knowledge to search the problem space\cite{SwarmArt,ChaoticSwarmIntel,BeeJobShop,CompuIntelligenceIntro,FundamentalSwarm}.
 
@@ -40,9 +40,9 @@ The initial algorithms developed with regard to swarm intelligence, were based o
 \end{itemize}
 
 
-Swarm intelligence based algorithms are able to achieve good results since they have simple individuals searching in their own local environments for more optimal solutions\cite{CompuIntelligenceIntro,FundamentalSwarm}. A direct consequence of multiple individuals in a swarm searching is that the algorithms are able to explore multple locations within the defined search space\cite{CompuIntelligenceIntro,FundamentalSwarm}.Traditional single agent based metaheuristic algorithms like \gls{TS} (section~\ref{sec:tabusearch}) and \gls{SA} (section~\ref{sec:simulatedannealing}) only have in essence one ``individual'' searching for a solution\cite{CompuIntelligenceIntro,FundamentalSwarm}. 
+Swarm intelligence based algorithms are able to achieve good results since they have simple individuals searching in their own local environments for more optimal solutions\cite{CompuIntelligenceIntro,FundamentalSwarm}. A direct consequence of multiple individuals in a swarm searching is that the algorithms are able to explore multple locations within the defined search space\cite{CompuIntelligenceIntro,FundamentalSwarm}. Traditional single agent based metaheuristic algorithms like \gls{TS} (section~\ref{sec:tabusearch}) and \gls{SA} (section~\ref{sec:simulatedannealing}) only have in essence one ``individual'' searching for a solution\cite{CompuIntelligenceIntro,FundamentalSwarm}. 
 
-With algorithms like \gls{TS} and \gls{SA}, the information is not shared since there is only one individual search\cite{CompuIntelligenceIntro,FundamentalSwarm,SASingleMultiObj,TSHazardous}. The information is kept to influence future decisions\cite{AIModernApproach,TabuMontemanniSmith,TabuVechicleRoutingWithTimeWindows,CurveFittingSA,EcoEquilSA}. Swarm intelligence algorithms also store information for use by the various individuals that make up the swarm to make more informed decisions as the solution space is explored\cite{CompuIntelligenceIntro,FundamentalSwarm}.
+With algorithms like \gls{TS} and \gls{SA}, the information is not shared since there is only one individual search\cite{CompuIntelligenceIntro,FundamentalSwarm,SASingleMultiObj,TSHazardous}. The information is kept to influence future decisions\cite{AIModernApproach,TabuMontemanniSmith,TabuVechicleRoutingWithTimeWindows,CurveFittingSA,EcoEquilSA}. Swarm intelligence algorithms also store information for use by the various individuals that make up the swarm to make more informed decisions as the search space is explored\cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
 NP-Complete optimisation problems are but one of the fields where swarm intelligence algorithms have been adapted to. Other fields where swarm intelligence has been applied include neural network training\cite{CompuIntelligenceIntro}, vehicle routing\cite{ACOSurvey}, clustering\cite{AntSwarmClustering}, search engines and electrical power systems\cite{SAElectricPower}. Swarm intelligence thus seems more suited towards problems with combinatorial complexity\cite{SIOPDenby}.
 
@@ -50,7 +50,7 @@ The chapter is organised as follows. Before the algorithms are discussed an over
 
 \section{Stigmergy}
 \label{sec:stigmergy}
-Stigmergy is defined as the method used by animals and insects to facilitate indirect communication\cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends,FundamentalSwarm}. Through the use of stimergy animals or insects are able to socially interact with their own species to convey information to each other\cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends,FundamentalSwarm}.
+Stigmergy is defined as the method used by animals and insects to facilitate indirect communication\cite{CompuIntelligenceIntro,AntIntroTrends}. Through the use of stimergy animals or insects are able to socially interact with their own species to convey information to each other\cite{AntsAndStigmergy,FundamentalSwarm}.
 
 Interaction occurs through signals that the individuals receive which might require them to perform a specific action\cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends}.
 
@@ -66,7 +66,7 @@ The other bees of the hive pick up this pheromone that is released by the initia
 
 Stigmergy is a powerful mechanism that is able to alter the behaviour of a collective entity efficiently, as can be gathered from the above-mentioned examples of stigmergy in nature\cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends}. Stigmergy is therefore a core concept upon which swarm intelligence algorithms are based as these communication techniques are exploited to aid the algorithm in finding better solutions\cite{AntsAndStigmergy,CompuIntelligenceIntro,AntIntroTrends}.
 
-In the forthcoming sections three swarm intelligence algorithms is discussed. Each section is divided into four subsections. 
+In the forthcoming sections three swarm intelligence algorithms are discussed. Each section is divided into four subsections. 
 
 First, an overview of the algorithm is given, where basic concepts about the algorithm are introduced as well as a general outline given of the search process the algorithm uses. 
 The second subsection will give an in-depth discussion of some of the core characteristics that make the algorithm unique. 
@@ -80,9 +80,11 @@ Finally, for each algorithm studies using the algorithm on the \gls{FAP} are men
 \label{sec:ACOverview}
 ACO is a class of algorithms incorporating different behavioural aspects that ants exhibit when they perform certain activities, i.e. gather food, build nests and construct cemeteries\cite{AntsAndStigmergy,CompuIntelligenceIntro}. The first \gls{ACO} algorithms that were developed were based on the foraging behaviour that was exhibited by ants when finding the most optimal path towards a food source. Deneubourg noticed the foraging behaviour when he performed the bridge experiment \cite{AntsAndStigmergy,CompuIntelligenceIntro}.
 
-The bridge experiment outlined by Deneubourg placed a food source a certain distance away from the nest\cite{AntsAndStigmergy,CompuIntelligenceIntro}. Two bridges of equal length were established towards the food resource. The ants initially selected a path randomly with no clear distinction of the more dominant path to take to retrieve food from the food source\cite{AntsAndStigmergy,CompuIntelligenceIntro}. After a finite amount of time, one of paths to the food source became the preferred route for the ants even though both paths were of equal length. The preference of the one bridge by the ants is due to the bridge having a higher concentration of pheromones due to the bridge being chosen randomly more by ants. 
+The bridge experiment outlined by Deneubourg placed a food source a certain distance away from the nest\cite{AntsAndStigmergy,CompuIntelligenceIntro}. Two bridges of equal length were established towards the food resource. The ants initially selected a path randomly with no clear distinction of the more dominant path to take to retrieve food from the food source\cite{AntsAndStigmergy,CompuIntelligenceIntro}. After a finite amount of time, one of the paths to the food source became the preferred route for the ants even though both paths were of equal length. The preference of the one bridge by the ants is.
 
-The bridge experiment was extended to have two bridges that differ in length. The extended bridge experiment is presented in figure~\ref{fig:antBridgeExperiment} and is known as the shortest path bridge experiement\cite{FundamentalSwarm}. In this experiment the ants started to prefer the shortest bridge within a finite amount of time\cite{FundamentalSwarm}. The conclusion was made that the ants prefered the shorter bridge because ants return to the nest quicker and therefore the path is reinforced with pheromones faster than on the longer path\cite{FundamentalSwarm}.
+Deneubourg concluded that ants utilise pheromones to communicate to the rest of the foraging ants the shortest path towards a food source.\cite{FundamentalSwarm} By using pheromones to communicate with other ants it can be concluded that ants use sign-based stigmergy (discussed in section~\ref{sec:stigmergy}) when they retrieve food\cite{AntIntroTrends,AntsAndStigmergy,CompuIntelligenceIntro}. As the ant moves along a particular path, it marks the path with a chemical signal that alerts other ants to the desirability of the path \cite{CompuIntelligenceIntro}. The chemical signal that ants use to indicate optimal paths is called \emph{pheromones}\cite{AntsAndStigmergy,CompuIntelligenceIntro}.
+
+The bridge experiment was extended to have two bridges that differ in length. The extended bridge experiment is presented in figure~\ref{fig:antBridgeExperiment} and is known as the shortest path bridge experiement\cite{FundamentalSwarm}. In the experiment the ants started to prefer the shortest bridge \cite{FundamentalSwarm}. The conclusion was made that the ants prefered the shorter bridge because ants return to the nest quicker and therefore the path is reinforced with pheromones faster than on the longer path\cite{FundamentalSwarm}.
 
 \begin{figure}[H]
 	\centering
@@ -92,9 +94,8 @@ The bridge experiment was extended to have two bridges that differ in length. Th
 	\caption{The shortest path bridge experiment \cite{AntsAndStigmergy}}
 	\label{fig:antBridgeExperiment}
 \end{figure}
-Deneubourg concluded that ants utilise pheromones to communicate to the rest of the foraging ants the shortest path towards a food source.\cite{FundamentalSwarm} By using pheromones to communicate with other ants it can be concluded that ants use sign-based stigmergy (discussed in section~\ref{sec:stigmergy}) when they retrieve food\cite{AntIntroTrends,AntsAndStigmergy,CompuIntelligenceIntro}. As the ant moves along a particular path, it marks the path with a chemical signal that alerts other ants to the desirability of the path \cite{CompuIntelligenceIntro}. The chemical signal that ants use to indicate optimal paths is called \emph{pheromones}\cite{AntsAndStigmergy,CompuIntelligenceIntro}.
 
-Pheromones used by the \gls{ACO} go through two phases. The first phase is where pheromones a despoited on a particular path by an ant whether their exists previous pheromones or not. The second phase is where pheromones evapurate. Pheromones are not permenant and deteriorate over time\cite{FundamentalSwarm}. By letting pheromones evapurate, ants can ``forget'' previous desicions made by die colony\cite{FundamentalSwarm}. It can be concluded that the more pheromones evapurate the less influence the ants will have on their path selection, therefore promoting exploration\cite{FundamentalSwarm}.
+Pheromones used by the ants in \gls{ACO} go through two phases. The first phase is where pheromones a despoited on a particular path by an ant whether their exists previous pheromones or not. The second phase is where pheromones evapurate. Pheromones are not permenant and deteriorate over time\cite{FundamentalSwarm}. By letting pheromones evapurate, ants can ``forget'' previous desicions made by die colony\cite{FundamentalSwarm}. It can be concluded that the more pheromones evapurate the less influence the ants will have on their path selection, therefore promoting exploration\cite{FundamentalSwarm}.
 
 The concept of pheromones and how the \gls{ACO} proceeds in updating the pheromones is a critical concept of \gls{ACO}. Hence, an in-depth discussion on pheromones is provided in subsection \ref{sec:ACOcharacter}.
 
@@ -111,9 +112,9 @@ The \gls{AS} algorithm has achieved relatively good success in the problems it h
 
 Subsequently, various algorithms have been developed that improve on the \gls{AS} algorithm. These improved algorithms include the \gls{ACS}, \gls{MMAS}, Ant-Q, fast ant system, AntTabu, \gls{AS}-rank and i\gls{ANTS}\cite{CompuIntelligenceIntro,AntIntroTrends}. The discussion in this section is focused on providing an introduction to the general \gls{ACO} algorithm concepts and not to discuss various improvements made by variants of the core algorithm. In the forth coming sections reference is made to these algorithms and their respective improvements.
 
-The \gls{AS} algorithm is the base algorithm upon which all other \gls{ACO} class algorithms are based upon. Therefore in the forth coming sections when a reference is made to the \gls{ACO} algorithm it is directed at the base \gls{AS} algorithm.
+The \gls{AS} algorithm is the base algorithm upon which all other \gls{ACO} class algorithms are based upon. Therefore in the forth coming sections when a reference is made to the \gls{ACO} algorithm, it is directed at the base \gls{AS} algorithm.
 
-In this section the concepts  upon which the core of \gls{ACO} is based upon were briefly introduced. The concepts include pheromone trails, pheromone evapuration, pheromone updating and state transition rules. In the next section a discussion is given on each of the concepts.
+In this section the concepts  upon which the core of \gls{ACO} is based upon were briefly introduced. In the next section a discussion is given on each of the concepts.
 \subsection{ACO Characteristics}
 \label{sec:ACOcharacter}
 In this section characteristics that are important and unique to the \gls{ACO} class of algorithms is discussed. The discussion is focused upon three core characteristics namely pheromone trials, pheromone evaporation, pheromone updates and state transition rules.
@@ -121,43 +122,43 @@ In this section characteristics that are important and unique to the \gls{ACO} c
 \label{sec:pheromonetrail}
 The pheromone technique used by ants forms part of the core methodology used by the \gls{ACO} algorithm \cite{AntQAP}. As an ant moves it lays down pheromones to mark the path it is walking.
 
-With the use of pheromones ants are able to communicate the best and shortest link between nodes\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. The more ants following a preferred link the more pheromones would be laid on that specific link. This increases the strength of the pheromones \cite{ImpACOComplex}. The increase in strength of the pheromones on a link would thus let ants more clearly distinguish between links they should and should not take \cite{ImpACOComplex}. Therefore, a pheromone provides positive feedback to the colony\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}.
+With the use of pheromones ants are able to communicate the best and shortest link between nodes\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. The more ants following a preferred link the more pheromones would be deposited on that specific link. This increases the strength of the pheromones \cite{ImpACOComplex}. The increase in strength of the pheromones on a link would thus let ants more clearly distinguish between links they should and should not take \cite{ImpACOComplex}. Therefore, a pheromone provides positive feedback to the colony\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}.
 
-Initially, all the ants will choose random a link to a node\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. After all the ants have completed their paths, each path is evaluated using a cost function defined by the problem domain\cite{CompuIntelligenceIntro}. The amount of pheromone marking the links contained in a path in the standard \gls{ACO} is related to the cost function\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. Therefore, a low cost function value will have a high pheromone dosage indicating the link the ant took from each node, and a high cost function value will have a low dosage\cite{CompuIntelligenceIntro}. 
+Initially, all the ants will choose random a link to a node\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. After all the ants have completed their paths, each path is evaluated using a cost function defined by the problem domain\cite{CompuIntelligenceIntro}. The amount of pheromone marking the links contained in a path in the standard \gls{ACO} is related to the cost function\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. Therefore, a low cost function value will have a high pheromone dosage and a high cost function value will have a low dosage\cite{CompuIntelligenceIntro}. 
 
 
 By incorporating the cost of a particular path into the amount of pheromone deposited the colony is able to influcence future decisions\cite{CompuIntelligenceIntro}. In terms of minimisation a path with a low cost will have a high pheromone value making the links of path more likely to be selected by future ants\cite{CompuIntelligenceIntro}.
 
-In the iterations following the initial one, the ants will at each node decide based on a probability whether it should to a particular neighbouring node. The higher the pheromone intensity is at a neighbouring node, the higher the probability that the ant will choose to move towards that node\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. The probability with which ants choose links to neighbouring nodes will defined and discussed in the next section.
+In the iterations following the initial one, the ants will at each node decide based on a probability whether it should to a particular neighbouring node. The higher the pheromone intensity is at a neighbouring node, the higher the probability that the ant will choose to move towards that node\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. The probability with which ants choose links to neighbouring nodes are defined and discussed in the next section.
 
-Due ants choosing links to node based on a probability, it is still possible for the ant to choose a random link towards an other node. Thus the \gls{ACO} algorithms are considered stochastic search proceduresdue to the ants ability to choose links randomly when exploring the search space \cite{ACOSurvey,ImpACOComplex}.
+Due ants choosing links to node based on a probability, it is still possible for the ant to choose a random link towards an other node. Thus the \gls{ACO} algorithms are considered stochastic search procedures due to the ants ability to choose links randomly when exploring the search space \cite{ACOSurvey,ImpACOComplex}.
 
-The pheromone trail was initially developed with only one colony in mind \cite{CompuIntelligenceIntro}. In the research done by Tiwari et al.\cite{ACOLargeProblem} pheromones in multiple colonies are considered. The basic principle of how pheromones are used by the ants stays the same, but the meaning of the pheromone changes if an ant of another colony encounters the pheromone trail\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. The ant will not follow or even consider the pheromone trail since any pheromone encountered from other colonies repulses the ant\cite{ACOLargeProblem}. Thus pheromones only provide positive feedback if the ant is from the same colony, otherwise the pheromone gives negative feedback, in a way warning the ant to stay away\cite{ACOLargeProblem}. This repulsion strategy promotes exploration among the multiple colonies\cite{ACOLargeProblem}.
+The pheromone trail was initially developed with only one colony in mind \cite{CompuIntelligenceIntro}. In research done by Tiwari et al.\cite{ACOLargeProblem} pheromones in multiple colonies are considered. The basic principle of how pheromones are used by the ants stays the same, but the meaning of the pheromone changes if an ant of another colony encounters the pheromone trail\cite{AntQAP,AntsAndStigmergy,CompuIntelligenceIntro}. The ant will not follow or even consider the pheromone trail since any pheromone encountered from other colonies repulses the ant\cite{ACOLargeProblem}. Thus pheromones only provide positive feedback if the ant is from the same colony, otherwise the pheromone gives negative feedback, in a way warning the ant to stay away\cite{ACOLargeProblem}. This repulsion strategy promotes exploration among the multiple colonies\cite{ACOLargeProblem}.
 
 The probability with which a link towards a particular node is chosen by an ant forms part of the \emph{state transition rules} which is discussed in the section that follows.
 
 \subsubsection{Pheromone Evaporation}
 \label{sec:pheromoneevapuation}
-Initially when the pheromone concept was first implemented the ants of the colony rapidly converged on a solution. The search space was not adequately explored and the produced solution was of local optima. To combat this premature convergence and force the ants to explore the search space more, the concept of \emph{pheromone evaporation} was introduced\cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}. 
+Initially when the pheromone concept was first implemented the ants of the colony rapidly converged on a solution\cite{CompuIntelligenceIntro}. The search space was not adequately explored and the produced solution was of local optima\cite{AntsAndStigmergy}. To combat this premature convergence and force the ants to explore the search space more, the concept of \emph{pheromone evaporation} was introduced\cite{AntIntroTrends,AntSurvey}. 
 
-Real pheromones used by ants to mark a particular link to a node is not permanent and over time the strength of the pheromone deteriorates until it eventually disappears. Pheromone deteriorating is known in the literature as pheromone evaporation. The pheromone will not completely evaporate as long there are ants traversing the defined link reinforcing the pheromone. The evaporation of pheromones is modelled in the \gls{ACO} by equation \ref{eq:pheromoneevapuration}\cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}:
+Real pheromones used by ants to mark a particular link to a node is not permanent and over time the strength of the pheromone deteriorates until it eventually disappears\cite{CompuIntelligenceIntro}. Pheromone deteriorating is known in the literature as pheromone evaporation\cite{CompuIntelligenceIntro}. The pheromone will not completely evaporate as long there are ants traversing the defined link reinforcing the pheromone. The evaporation of pheromones is modelled in the \gls{ACO} by equation \ref{eq:pheromoneevapuration}\cite{AntIntroTrends,AntSurvey}:
 \begin{equation}
 \label{eq:pheromoneevapuration}
 	\tau_{ij}(t) = (1-p)\tau_{ij}(t), p\in [0,1]
 \end{equation}
 The constant $p$ defines the rate at which the pheromone evaporates. If $p=1$ the pheromone completely evaporates every iteration. With no pheromone on a link towards a node the ants take no knowledge gained from the previous iteration into account and therefore select a link randomly \cite{CompuIntelligenceIntro,AntsAndStigmergy}. Thus, the amount of exploration done by the algorithm can be controlled by the constant $p$ \cite{CompuIntelligenceIntro,AntsAndStigmergy}.
 
-Equation \ref{eq:pheromoneevapuration} was first introduced in the \gls{AS} \cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}. Most subsequent algorithms that are a form of the \gls{ACO} class of algorithms also use the concept of pheromone evaporation, but they either use the standard equation or develop their own variant \cite{CompuIntelligenceIntro,AntsAndStigmergy,AntIntroTrends,AntSurvey}.
+Equation \ref{eq:pheromoneevapuration} was first introduced in the \gls{AS} \cite{CompuIntelligenceIntro,AntSurvey}. Most subsequent algorithms that are a form of the \gls{ACO} class of algorithms also use the concept of pheromone evaporation, but they either use the standard equation or develop their own variant \cite{CompuIntelligenceIntro,AntsAndStigmergy}.
 
 A more aggressive form of pheromone evaporation  is added to the \gls{AS} discussed in the research done by Gambardella et. al\cite{AntQAP}. The more aggressive form works beside the already present pheromone evaporation, but this form seeks to add an additional search phase called \emph{diversification}\cite{AntQAP}. The aim of the diversification phase is to lead the algorithm into another direction of the search space\cite{AntQAP}. This is done in an attempt to avoid local minima and stagnation\cite{AntQAP}.
 
-In the ant system developed by Gambardella et. al. the algorithm continually monitors the current best solution and keeps a history of recent best solutions\cite{AntQAP}. If the algorithm starts to notice that solutions are cycling or that the current best solution has not changed for a certain number of iterations, the algorithm activates the diversification phase\cite{AntQAP}. The algorithm is forced to re-search the search space to create new solutions, as it cannot rely on previous historical information provided by the pheromone trails\cite{AntQAP}.
+In the ant system developed by Gambardella et. al. the algorithm continually monitors the current best solution and keeps a history of recent best solutions\cite{AntQAP}. If the algorithm starts to notice that solutions are cycling or that the current best solution has not changed for a certain number of iterations, the algorithm activates the diversification phase\cite{AntQAP}. In this phase the algorithm is forced to re-search the search space to create new solutions, as it cannot rely on previous historical information provided by the pheromone trails\cite{AntQAP}.
 
 \subsubsection{State Transition Rules}
 \label{sec:STR}
-The intention for this section is not to give an exhaustive survey of different transition rules in the literature. Therefore, only the first transition rule that was developed is discussed, since most of the other rules can simply be considered derivatives of the first. 
+The intention for this section is not to give an exhaustive survey of different transition rules in the literature. Therefore, only the first transition rule that was developed is discussed, since most of the other rules can be considered derivatives of the first. 
 
- As discussed previously, the ants select which link to follow towards a node next based on a probability. This probability is also known as the \emph{transition probability} and is formulated by equation~ref\ref{eq:ASprobability}.
+ As discussed previously, the ants select which link to follow towards a node based on a probability. This probability is also known as the \emph{transition probability} and is formulated by equation~\ref{eq:ASprobability}.
 \begin{equation}
 \label{eq:ASprobability}
 p^k_{ij}(t) =
@@ -166,17 +167,17 @@ p^k_{ij}(t) =
 	0, &\text{if $j \notin N^k_i(t)$}\\
 \end{cases}
 \end{equation}
-The transition probability is used by individual ants of the \gls{AS} algorithm \cite{CompuIntelligenceIntro,AntSurvey,ACOLargeProblem,AntQAP,FundamentalSwarm}. An ant $k$ uses this equation to decide with what probability it will move from node $i$ to node $j$ \cite{CompuIntelligenceIntro,ACOLargeProblem,AntQAP,FundamentalSwarm}. $\tau_{ij}$ is the amount of pheromone on the link between nodes $i$ and $j$ \cite{CompuIntelligenceIntro,AntsAndStigmergy,ACOLargeProblem,AntQAP,FundamentalSwarm}. Heuristic information is incorporated into the equation through the symbol $\eta_{ij}$, which is the desirability of the link from node $i$ to node $j$ as evaluated by a heuristic function \cite{CompuIntelligenceIntro,AntsAndStigmergy,ACOLargeProblem,AntQAP,FundamentalSwarm}. 
+The transition probability is used by individual ants of the \gls{AS} algorithm \cite{AntQAP,FundamentalSwarm}. An ant $k$ uses this equation to decide with what probability it will move from node $i$ to node $j$ \cite{CompuIntelligenceIntro,ACOLargeProblem}. $\tau_{ij}$ is the amount of pheromone on the link between nodes $i$ and $j$ \cite{AntsAndStigmergy,ACOLargeProblem}. Heuristic information is incorporated into the equation through the symbol $\eta_{ij}$, which is the desirability of the link from node $i$ to node $j$ as evaluated by a heuristic function \cite{AntsAndStigmergy,ACOLargeProblem}. 
 
 Each ant starting at a source node moves from one node to another based on the defined transition probaility until the ant reaches the final node.
 
-Through the use of parameters $\alpha$ to represent pheromone intensity and $\beta$ to represent heuristic information the algorithm is able to achieve a good balance between exploration and exploitation when $\alpha=\beta$ \cite{CompuIntelligenceIntro,ACOLargeProblem,AntQAP,FundamentalSwarm}. When $\alpha = 0$ no pheromone is taken into account; hence, any history that the algorithm has on the link between node $i$ and node $j$ is neglected and the algorithm degrades to a stochastic greedy search procedure. If $\beta = 0$ then the algorithm does not take into account the amount of desirability of the link between node $i$ and node $j$ as dictated by the problem-specific heuristic function.
+Through the use of parameters $\alpha$ to represent pheromone intensity and $\beta$ to represent heuristic information the algorithm is able to achieve a good balance between exploration and exploitation when $\alpha=\beta$ \cite{ACOLargeProblem,AntQAP}. When $\alpha = 0$ no pheromone is taken into account; hence, any history that the algorithm has on the link between node $i$ and node $j$ is neglected and the algorithm degrades to a stochastic greedy search procedure. If $\beta = 0$ then the algorithm does not take into account the amount of desirability of the link between node $i$ and node $j$ as dictated by the problem-specific heuristic function.
 
 The set $j \in N^k_i(t)$ contains all the valid neighbourhood moves ant $k$ is allowed to make when moving from node $i$ to node $j$. A tabu list is kept by each ant to trim the set of moves already performed previously, and thus cycling is prevented.
 
-The interested reader that wants more information about state transition rules is directed to the survey by Engelbrecht\cite{FundamentalSwarm}.
+The interested reader that requires more information about state transition rules is directed to the survey by Engelbrecht\cite{FundamentalSwarm}.
 \subsubsection{Pheromone Update}
-Pheromones start to evaporate over time, and so the link marked by the pheromone trail becomes less attractive to the ants. Therefore, a path that represents a good solution needs its pheromone trail to be continuously updated. Certian rules govern when and by how much pheromones are updated.
+Pheromones start to evaporate over time, and so the link marked by a pheromone trail becomes less attractive to the ants. Therefore, a path that represents a good solution needs its pheromone trail to be continuously reinforced. Certian rules govern when and by how much pheromones are reinforced.
 
  Most of the variants that have been developed differ in what pheromone update rules they employ. In the literature pheromone update rules are classified into two groups \cite{CompuIntelligenceIntro}. One group is called the global update rule. The other group is called the iteration-based or local update rule\cite{CompuIntelligenceIntro}. 
 
@@ -188,7 +189,7 @@ The first local pheromone update rule was first introduced in the \gls{AS} algor
 \end{align}
 In equation~\ref{eq:pheromonedeposit} $\tau_{ij}(t+1)$ represents the amount of pheromone that will be on the link for the next time step $(t+1)$. $\tau_{ij}$ represents the amount of pheromone currently on the link $(i,j)$. $\Delta\tau_{ij}$ is the actual amount of pheromone that needs to be added to the current pheromone $\tau_{ij}$.
 
-Pheromone update rules that are in the global update group only allow the pheromone trail of the path representing the best found solution by the algorithm since the first iteration to be updated \cite{CompuIntelligenceIntro}. Thus the global rule favours intensification where the algorithm exploits the global knowledge gained by the ants to find a better solution. By updating a pheromone the concentration of the particular pheromone is reinforced.
+Pheromone update rules that are in the global update group only allow the pheromone trail of the path representing the best found solution since the first iteration to be updated \cite{CompuIntelligenceIntro}. Thus the global rule favours intensification where the algorithm exploits the global knowledge gained by the ants to find a better solution. By updating a pheromone the concentration of the particular pheromone is reinforced.
 
 \gls{ACS} was the first to use both the global update rule and local update rule together\cite{CompuIntelligenceIntro}. By using both types of rules the algorithm is able to efficiently exploit the history provided by the pheromones\cite{CompuIntelligenceIntro}. The global update rule used by the \gls{ACS} is formulated in the following equation\cite{CompuIntelligenceIntro}:
 \begin{align}
@@ -208,7 +209,7 @@ As can been seen in the following equation, the \gls{ACS} uses a slight variant 
 \begin{equation}
 	\tau_{ij}(t) = (1 - p_2)\tau_{ij} + p_2\tau_0
 \end{equation}
-In the above equation $\tau_0$ is a small constant and $p_2 \in [0,1]$ is the constant that defines the rate of evaporation\cite{CompuIntelligenceIntro}. With the local update rule, the algorithm is able to explore more as the individual ant constructed path is used to update the pheromone and no information from the best path found in the colony is incorporated, as with equation~\ref{eq:pheromoneupdate}\cite{CompuIntelligenceIntro,FundamentalSwarm}.
+In the above equation $\tau_0$ is a small constant and $p_2 \in [0,1]$ is the constant that defines the rate of evaporation\cite{CompuIntelligenceIntro}. With the local update rule, the algorithm is able to explore more. The path constructed by the individual ant is used to update the pheromone and no information from the best path found in the colony is incorporated, as with equation~\ref{eq:pheromoneupdate}\cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
 The \gls{MMAS} algorithm as discussed also improves on the \gls{AS}. The global update rule used by \gls{AS} has a disadvantage in the sense that the search might concentrate too quickly on a particular good solution (the global best path)\cite{FundamentalSwarm}. \gls{MMAS} address this disadvantage by using the global update rule on an iteration basis\cite{FundamentalSwarm}.
 
@@ -234,6 +235,7 @@ In this section the process the \gls{AS} algorithm uses to explore the search sp
 			\Until{Final node reached}
 			\algstore{AS}
 	\end{algorithmic}
+\addtocounter{algorithm}{-1}
 \end{algorithm}
 
 \begin{algorithm}[H]
@@ -259,11 +261,11 @@ In this section the process the \gls{AS} algorithm uses to explore the search sp
 	\end{algorithmic}
 \end{algorithm}
 
-The \gls{ACO} algorithm initialises by creating a set population of ants and placing them on random starting nodes as well as initialising the pheromones to starting values as can be observed from algorithm~\ref{alg:ACO}, lines 1 -- 3. The main purpose of the ant is to explore the solution space and to ultimately produce a solution that might be optimal. The ant explores the solution space by performing a series of moves from one node to another. Each move is a link that is added to the path. This process can be seen in lines 5 -- 10.
+The \gls{ACO} algorithm initialises by creating a set population of ants and placing them on random starting nodes as well as initialising the pheromones to starting values as can be observed from algorithm~\ref{alg:ACO}, lines 1 -- 3. The main purpose of the ant is to explore the search space and to ultimately produce a solution that might be optimal. The ant explores the search space by performing a series of moves from one node to another. Each move is a link that is added to the path. This process can be seen in lines 5 -- 10.
 
 The ant selects which node to move to next based on a probability. The probability is calculated taking into account the amount of pheromone that is on the current link representing the movement from the current node to the next node\cite{CompuIntelligenceIntro,FundamentalSwarm}. This decision process can be seen to occur in line 8.
 
-As the ant moves it records each link between the nodes it traverses until it reaches the final node. All the links the ant has traversed represent a path taken through the solution space\cite{CompuIntelligenceIntro,FundamentalSwarm}. Thus, as the ant is moving it is actively building an optimal solution.
+As the ant moves it records each link between the nodes it traverses until it reaches the final node. All the links the ant has traversed represent a path taken through the search space\cite{CompuIntelligenceIntro,FundamentalSwarm}. Thus, as the ant is moving it is actively building an optimal solution.
 
 Before the ant deposits pheromone on the links it traversed to construct its solution, the pheromones first need to be decayed. This is why in lines 14 -- 16, the algorithm traverses all links that contain pheromones and reduces the amount of pheromones by applying equation~\ref{eq:pheromoneevapuration}.
 
@@ -296,8 +298,8 @@ The authors presented two versions of the algorithm. The first version used no h
 
 With regard to the heuristic updating of the pheromone trails, the authors opted to increase the pheromone by some magnitude\cite{ACOvsEA}. This magnitude was handtuned to be 100. The heuristic only increases a certain path's pheromone if the frequencies assigned to the transceivers represented by this path differ enough so as to not cause significant interference\cite{ACOvsEA}. Thus, the heuristic aims to amplify good choices made previously by the algorithm for the next iteration of the algorithm.
 
-In table~\ref{tab:ACO} the results abtained by Lune et. al \cite{ACOvsEA}. By evaluating the results obtained, one can clearly see that the \gls{ACO} version that incorporates heuristic information to reinforce pheromone trails outperforms the version that does not \cite{ACOvsEA}. The values depicted in the table represent the amount of interference that will result if the plan is used in the network\cite{ACOvsEA}.
-\begin{table}
+In table~\ref{tab:ACO} the results abtained by Lune et. al \cite{ACOvsEA} are presented. By evaluating the results obtained, one can clearly see that the \gls{ACO} version that incorporates heuristic information to reinforce pheromone trails outperforms the version that does not \cite{ACOvsEA}. The values depicted in the table represent the amount of interference that will result if the plan is used in the network\cite{ACOvsEA}.
+\begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c |}
 	\hline
@@ -309,7 +311,7 @@ In table~\ref{tab:ACO} the results abtained by Lune et. al \cite{ACOvsEA}. By ev
 \caption{ACO and \gls{ACO}* on custom GSM \gls{FAP} benchmark\cite{ACOvsEA}}
 \label{tab:ACO}
 \end{table}
-
+\newpage
 \section{Artificial Bee Colony (ABC) Algorithm}
 \label{sec:BEE}
 
@@ -331,7 +333,7 @@ It can be concluded that foraging bees use \emph{sematectonic} stigmergy (discus
 
 The dance is observed by \emph{onlooker} worker bees \cite{ABCCompareStudy,ABCImageEnhancement}. These onlooker bees are initially \emph{unemployed} in the colony \cite{ABCCompareStudy,ABCImageEnhancement}. Once the information of the scout has been transferred to the onlooker bees, the onlooker bees become \emph{employed} bees\cite{ABCCompareStudy,ABCImageEnhancement}. They become employed bees when they operate on a particular food source to gather food\cite{ABCCompareStudy,ABCImageEnhancement}. Thus it is the job of the worker bees to \emph{exploit} the information provided by the \emph{exploration} done by the scout bees \cite{ABCCompareStudy,ABCNumericalOptimization}. 
 
-Worker bees gather food from the designated food source, until the food source reaches a certain quantity with regard to nectar content \cite{ABCCompareStudy,ABCNumericalOptimization}. Each time the bee returns to the colony it evaluates the current food source versus other food sources discovered \cite{ABCCompareStudy,ABCNumericalOptimization}. If a better food source is found, the bee abandons the previous and starts gathering food from the new source \cite{ABCCompareStudy,ABCNumericalOptimization}. On the other hand, if the food source has been exhausted, meaning there is no more nectar content to gather, the bee returns to the colony and becomes ``unemployed'' again \cite{ABCCompareStudy,ABCNumericalOptimization}.
+Worker bees gather food from the designated food source, until the food source reaches a certain quantity with regard to nectar content \cite{ABCCompareStudy,ABCNumericalOptimization}. Each time the bee returns to the colony it evaluates the current food source versus other food sources discovered \cite{ABCCompareStudy,ABCNumericalOptimization}. If a better food source is found, the bee abandons the previous source and starts gathering food from the new source \cite{ABCCompareStudy,ABCNumericalOptimization}. On the other hand, if the food source has been exhausted, meaning there is no more nectar content to gather, the bee returns to the colony and becomes ``unemployed'' \cite{ABCCompareStudy,ABCNumericalOptimization}.
 
 In the \gls{ABC} algorithm, possible solutions are considered to be food sources\cite{ABCCompareStudy,ABCNumericalOptimization}. Each food source has an employed bee associated with it. Onlooker bees either wait for new food sources to be communicated to them or become employed bees by moving to another, more attractive food source \cite{ABCCompareStudy,ABCNumericalOptimization}. 
 
@@ -353,28 +355,27 @@ Another bee algorithm is the \gls{VBA} which, like the previous algorithms, is a
 
 Karaboga developed the \gls{ABC} algorithm based on the previous research done on bee colony optimisation and the above algorithms. The \gls{ABC} algorithm is designed to be a multivariable optimisation algorithm and has to date been applied to the job scheduling problem, clustering \cite{HybridABCClustering}, neural network training and reconfiguration of distribution networks \cite{ABCReconfigDistro}. Due to the nature of the algorithm being similar to that of the \gls{ACO}, the \gls{ABC} algorithm will most likely also be applied to a whole host of other of problems.
 
-In the next subsection the general flow of the \gls{ABC} algorithm is described, which will aid in the understanding of how the algorithm searches a particular problem space. 
 \subsection{ABC Algorithm Characteristics}
 Various characteristics of the \gls{ABC} algorithm define the algorithm and make it unique. The first characteristic is how food sources are handled in the algorithm. The second is how information is communicated to the colony.
 \subsubsection{Food Sources}
 \label{sec:foodsources}
-As discussed previously, food sources represent solutions to the problem the \gls{ABC} algorithm is being applied to. When the algorithm starts, there are no defined food sources for the bees to evaluate and report on, and therefore initially a finite number of food sources are randomly generated\cite{BeeJobShop,ABCCompareStudy,ABCFusionGrid,ABCNumericalOptimization,ABCImageEnhancement,ABCReconfigDistro}. Since each food source needs an employed bee to evaluate the nectar amount of the source, the parameter that defines the number of food sources also defines the number of employed bees\cite{ABCCompareStudy,ABCLeafConstrained,ABCNumericalOptimization,ABCImageEnhancement}.
+As discussed previously, food sources represent solutions to the problem the \gls{ABC} algorithm is being applied to. When the algorithm starts, there are no defined food sources for the bees to evaluate and report on, and therefore initially a finite number of food sources are randomly generated\cite{ABCCompareStudy,ABCFusionGrid}. Since each food source needs an employed bee to evaluate the nectar amount of the source, the parameter that defines the number of food sources also defines the number of employed bees\cite{ABCCompareStudy,ABCLeafConstrained}.
 
-Employed bees evaluate these food sources by determining their nectar amount\cite{ABCCompareStudy,ABCLeafConstrained,ABCNumericalOptimization,ABCImageEnhancement}. The nectar amount is directly related to the fitness value calculated using a domain specific cost function\cite{ABCCompareStudy,ABCLeafConstrained,ABCReconfigDistro}. After the amount is determined the employed bee advertises the food source to the colony by performing the waggle dance. In algorithm~\ref{alg:ABC} lines 4 -- 9 are where the nectar amount of a particular solution is calculated.
+Employed bees evaluate these food sources by determining their nectar amount\cite{ABCCompareStudy,ABCLeafConstrained}. The nectar amount is directly related to the fitness value calculated using a domain specific cost function\cite{ABCCompareStudy,ABCReconfigDistro}. After the amount is determined the employed bee advertises the food source to the colony by performing the waggle dance.
 
-Onlooker bees witness a number of dances from a variety of employed bees\cite{ABCFusionGrid,BeeJobShop,ABCNumericalOptimization,ABCImageEnhancement,ABCReconfigDistro}. They therefore need to select a food source that is the most attractive while maintaining some diversity in the pool of solutions. Thus, an onlooker bee selects a food source based on a probability function which is formulated in equation \ref{eq:beeProbability}\cite{ABCCompareStudy}:
+Onlooker bees witness a number of dances from a variety of employed bees\cite{ABCFusionGrid,BeeJobShop}. They therefore need to select a food source that is the most attractive while maintaining some diversity in the pool of solutions. Thus, an onlooker bee selects a food source based on a probability function which is formulated in equation \ref{eq:beeProbability}\cite{ABCCompareStudy}:
 \begin{equation}
 \label{eq:beeProbability}
 p_i = \frac{{fit}_i}{\sum^{SN}_{n=1}{fit}_n}
 \end{equation}
 
-The parameter $p_i$ is the $i$th food source under consideration by the onlooker bee. As discussed above, the ${fit}_i$ parameter represents the value of the cost function and is directly related to the nectar amount of food source $i$. The parameter SN is the maximum amount of food source and hence the maximum employed onlooker bees \cite{ABCCompareStudy}.
+The parameter $p_i$ is the $i$th food source under consideration by the onlooker bee. The ${fit}_i$ parameter represents the value of the cost function and is directly related to the nectar amount of food source $i$. The parameter SN is the maximum amount of food source and hence the maximum employed onlooker bees \cite{ABCCompareStudy}.
 
 In algorithm~\ref{alg:ABC} the waggle dance can be seen being applied in line 11 where the probability of all the employed bee' solutions are calculated using equation~\ref{eq:beeProbability}. From lines 12 -- 16 the onlooker bees evaluate the solutions of the employed bees based on the probability $p_i$ that was calculated. $P_i$ can be seen as the rating of the waggle dance that was performed by the employed bee.
 
 \subsubsection{Employed and Onlooker Bees}
 \label{sec:employonlookerbees}
-As previously outlined, when recruited onlooker bees reach the advertised food source that is stored in memory, they do not occupy the same food source\cite{ABCCompareStudy,ABCNumericalOptimization}. Instead the bees explore the immediate neighbourhood of the food source that was communicated to them\cite{BeeJobShop,ABCFusionGrid,ABCReconfigDistro}. They seek to find a food source that improves on the previous one\cite{BeeJobShop,ABCCompareStudy,ABCLeafConstrained,ABCNumericalOptimization}. Equation \ref{eq:beeGenerate} is used by the bees to generate new food sources in the neighbourhood of food source $x_i$\cite{BeeJobShop,ABCCompareStudy,ABCFusionGrid}.
+As previously outlined, when recruited onlooker bees reach the advertised food source that is stored in memory, they do not occupy the same food source\cite{ABCCompareStudy,ABCNumericalOptimization}. Instead the bees explore the immediate neighbourhood of the food source that was communicated to them\cite{BeeJobShop,ABCFusionGrid,ABCReconfigDistro}. They seek to find a food source that improves on the previous one\cite{BeeJobShop,ABCNumericalOptimization}. Equation \ref{eq:beeGenerate} is used by the bees to generate new food sources in the neighbourhood of food source $x_i$\cite{ABCCompareStudy,ABCFusionGrid}.
 \begin{equation}
 \label{eq:beeGenerate}
 v_{ij} = x_{ij} + \phi_{ij}(x_{ij} - x_{kj})
@@ -383,7 +384,7 @@ The subscripts $k \in \{1,2,\dots,SN\}$ and $j \in \{1,2,\dots,D\}$ are indices 
 
 From equation \ref{eq:beeGenerate} it can be concluded that the randomness of the food source position decreases as the difference between $x_{ij} - x_{kj}$ decreases. Thus, as the algorithm moves closer to an optimal solution the finer grained the search process of the algorithm becomes\cite{ABCCompareStudy,ABCNumericalOptimization,ABCImageEnhancement}.
 
-After a new solution $v_i$ is produced, the bee takes the new and old solutions from memory to compare their respective nectar contents. If the new solution is found to have higher quality nectar, the bee replaces the old solution in memory with the new solution\cite{ABCCompareStudy,BeeJobShop,ABCImageEnhancement,ABCReconfigDistro}. Otherwise, the bee abandons the new solution and keeps the old solution in memory\cite{ABCCompareStudy,ABCLeafConstrained,ABCNumericalOptimization}. Thus, the bee seeks to always move towards a better solution and therefore uses a greedy selection process\cite{ABCCompareStudy,ABCLeafConstrained,ABCReconfigDistro}.
+After a new solution $v_i$ is produced, the bee takes the new and old solutions from memory to compare their respective nectar contents. If the new solution is found to have higher quality nectar, the bee replaces the old solution in memory with the new solution\cite{ABCCompareStudy,ABCReconfigDistro}. Otherwise, the bee abandons the new solution and keeps the old solution in memory\cite{ABCCompareStudy,ABCNumericalOptimization}. Thus, the bee seeks to always move towards a better solution and therefore uses a greedy selection process\cite{ABCLeafConstrained,ABCReconfigDistro}.
 
 One of the problems with the above approach is that little information about the food source is used in generating a neighbouring food source. In the research by Singh \cite{ABCLeafConstrained} a slight variation is proposed to generating food source neighbours by using more global information. The author adds a constraint to the algorithm that all neighbouring solutions generated by \emph{employed} bees must be unique. 
 
@@ -392,9 +393,9 @@ When an employed bee generates a neighbour and an identical solution already exi
 The artificial bees are modelled on the behaviour of real bees. Thus an employed bee can also abandon certain food sources when it has outlived its usefulness. Abandonment of a food source can occur for the following reasons\cite{BeeJobShop,ABCNumericalOptimization,ABCImageEnhancement}:
 \begin{itemize}
 \item The employed bee has reached the maximum allowed cycles to improve the nectar amount. The maximum cycles spent on a food source allow the algorithm to avoid local optima\cite{ABCCompareStudy,ABCNumericalOptimization,ABCImageEnhancement}.
-\item The bee cannot improve the solution represented by the food source any further\cite{ABCCompareStudy,ABCNumericalOptimization,ABCImageEnhancement}.
+\item The bee cannot improve the search represented by the food source any further\cite{ABCCompareStudy,ABCNumericalOptimization,ABCImageEnhancement}.
 \end{itemize}
-When a food source in the algorithm is abandoned, it needs to be replaced by a new food source\cite{BeeJobShop,ABCCompareStudy,ABCImageEnhancement}. Note that a food source is not abandoned when it represents the globally best found solution. An employed bee under goes a role transition when it abandons a food source from an employed bee to a scout bee\cite{ABCCompareStudy,ABCNumericalOptimization,ABCImageEnhancement}. 
+When a food source in the algorithm is abandoned, it needs to be replaced by a new food source\cite{BeeJobShop,ABCCompareStudy,ABCImageEnhancement}. Note that a food source is not abandoned when it represents the globally best found solution. An employed bee transitions to a new role when it abandons a food source from an employed bee to a scout bee\cite{ABCCompareStudy,ABCNumericalOptimization,ABCImageEnhancement}. 
 
 It is the responsibility of the scout bee to replace the abandoned food source with a new randomly generated one\cite{BeeJobShop,ABCCompareStudy,ABCImageEnhancement}. The scout bee uses equation \ref{eq:scoutGenerate} to produce a new food source that will replace food source $x_i$.
 \begin{equation}
@@ -406,10 +407,12 @@ The subscript $y$ represents the minimum value of $i$ and the subscript $y$ repr
 
 In research done by G\'{o}mez-Iglesias et al. \cite{ABCFusionGrid} an extension is made to the scout bees. The scout bee individuals are divided into two types of bees, namely \emph{rovers} and \emph{cubs} bees\cite{ABCFusionGrid}.
 \begin{itemize}
-\item{Rover bees} are similar to traditional scout bees and hence use diversification strategies to explore the solution space. 
-\item {Cub bees} explore the solution space relative to a good solution found by a rover by randomly changing configuration parameters. 
+\item{Rover bees} are similar to traditional scout bees and hence use diversification strategies to explore the search space. 
+\item {Cub bees} explore the search space relative to a good solution found by a rover by randomly changing configuration parameters. 
 \end{itemize}
-By using two different scout bees a good balance is achieved when searching the solution space in the beginning where diversity is preferred and late in the algorithm where intensification is preferred \cite{ABCFusionGrid}.
+By using two different scout bees a good balance is achieved when searching the search space in the beginning where diversity is preferred and late in the algorithm where intensification is preferred \cite{ABCFusionGrid}.
+
+In the next subsection the general flow of the \gls{ABC} algorithm is described, which will aid in the understanding of how the algorithm searches a particular problem space. 
 \subsection{Flow of the Algorithm}
 Most of the concepts that are used in the \gls{ABC} algorithm have been explained. The general search process of the algorithm will now be discussed using algorithm~\ref{alg:ABC} as a reference point.
 \begin{algorithm}[H]
@@ -422,19 +425,13 @@ Most of the concepts that are used in the \gls{ABC} algorithm have been explaine
 		\State$t \leftarrow 0$
 		\While{stopping criteria not met}
 			\For{each employed bee $eb_i = 0$ to max bees $b_n$}
-				\State$v_i \leftarrow \text{Generate new solution with equation~\ref{eq:beeGenerate}}$
-				\State$\text{Evaluate with fitness function $f(v_i)$}$
-				\State Apply greedy selection between $v_i$ and the current solution $s_i$ of bee $eb_i$
-			\EndFor
-			\State$\text{Calculate probability $p_i$ for solutions $s_i$ in $s_n$ using equation~\ref{eq:beeProbability}}$
-			\For{each onlooker bee $ob_i \leftarrow 0$ to max bees $b_n$}
-				\State$x_i \leftarrow \text{Select solution $s_i$ based on $p_i$} $
-				\State$v_i \leftarrow \text{Generate new solution with $x_i$ and $p_i$}$
-				\State$\text{Evaluate $v_i$ with fitness function $f(v_i)$}$
-				\State$\text{Apply greedy selection between $v_i$ and bee $ob_i$ current solution}$
+				\State$\hat{v_i} \leftarrow \text{Generate new solution with equation~\ref{eq:beeGenerate}}$
+				\State$\text{Evaluate with fitness function $f(\hat{v_i})$}$
+				\State Apply greedy selection between $\hat{v_i}$ and the current solution $\hat{s_i}$ of bee $eb_i$
 			\EndFor
 			\algstore{ABC}
 	\end{algorithmic}
+\addtocounter{algorithm}{-1}
 \end{algorithm}
 
 \begin{algorithm}
@@ -442,6 +439,13 @@ Most of the concepts that are used in the \gls{ABC} algorithm have been explaine
 	\label{alg:ABC1}
 	\begin{algorithmic}[1]
 		\algrestore{ABC}
+    \State$\text{Calculate probability $p_i$ for solutions $\hat{s_i}$ in $\hat{s_n}$ using equation~\ref{eq:beeProbability}}$
+			\For{each onlooker bee $ob_i \leftarrow 0$ to max bees $b_n$}
+				\State$\hat{x_i} \leftarrow \text{Select solution $\hat{s_i}$ based on $p_i$} $
+				\State$\hat{v_i} \leftarrow \text{Generate new solution with $\hat{x_i}$ and $p_i$}$
+				\State$\text{Evaluate $\hat{v_i}$ with fitness function $f(\hat{v_i})$}$
+				\State$\text{Apply greedy selection between $\hat{v_i}$ and bee $ob_i$ current solution}$
+			\EndFor
 			\If{there is an abandoned solution for a scout bee}
 				\State Replace with solution generated with equation~\ref{eq:scoutGenerate}
 			\EndIf
@@ -453,7 +457,7 @@ The algorithm starts off by generating a set number of possible solutions. The n
 
 At first each bee is assigned to one of the initial generated solutions (food sources). Hence the bees start off as employed bees and each bee has in its memory a particular possible solution with an associated nectar amount. The algorithm can now be considered to be initialised, and therefore the algorithm enters the next phase, which is where the actual optimisation and search procedure occurs. This phase stretches from lines 5 -- 22.
 
-From lines 6 -- 10, each employed bee modifies its particular solution based on local information, which is also referred to as visual information in the literature. The modified solution is then tested to determine its nectar amount, i.e. the fitness of the generated solution is calculated. The employed bee then compares the newly generated nectar amount with the nectar amount of the solution in the bee's memory. If the newly generated solution has a better nectar amount, the bee replaces the current solution in its memory with the newly generated solution.
+From lines 6 -- 10, each employed bee modifies its particular solution based on local information, which is also referred to as visual information in the literature. The modified solution is then tested to determine its nectar amount, i.e. the fitness of the generated solution is calculated. The employed bee then compares the newly generated nectar amount with the nectar amount of the search in the bee's memory. If the newly generated solution has a better nectar amount, the bee replaces the current solution in its memory with the newly generated solution.
 
 After all the employed bees have determined whether to keep the newly generated solution or keep the one in memory, they then need to communicate to the rest of the bee hive the nectar amount of the food sources that they occupy. This phase is where the waggle dance occurs and can be observed in algorithm~\ref{alg:ABC} from lines 12 -- 17.
 
@@ -497,17 +501,17 @@ Because birds obtain information by observing their neighbouring birds, the stig
 
 The simulations based on this behaviour of the flock allowed researchers to discover the underlying patterns that governed the way birds are able to share information about the general movement of the flock. Based on these patterns and simulations, the particle swarm algorithm emerged into an optimisation algorithm \cite{CompuIntelligenceIntro}.
 
-In the algorithm a particle is an individual. A group of particles, referred to in the literature as a swarm,  are moved through the search space of the problem the algorithm is being applied to. Each particle changes its movement based on information shared with it by neighbouring particles in the swarm \cite{FundamentalSwarm,CompuIntelligenceIntro}. 
+In the algorithm a particle is an individual\cite{FundamentalSwarm}. A group of particles, referred to in the literature as a swarm,  are moved through the search space of the problem the algorithm is being applied to\cite{FundamentalSwarm}. Each particle changes its movement based on information shared with it by neighbouring particles in the swarm \cite{FundamentalSwarm,CompuIntelligenceIntro}. 
 
 As information is shared among particles, the success of one particle ripples through the rest of the swarm and each particle is able to utilise shared information that leads to success of another particle. Thus, each particle's own personal experience and knowledge of the search space has an effect on its neighbouring particles \cite{FundamentalSwarm,CompuIntelligenceIntro}.
 
-Two variants of the initial \gls{PSO} algorithm were developed namely the global \gls{PSO} and local \gls{PSO}. The only difference between the two algorithms is how they go about sharing information with the rest of the swarm. The sharing models of these two algorithms along with other sharing models is discussed in the \gls{PSO} characteristics subsection \cite{SOSwarm}.
+Two variants of the initial \gls{PSO} algorithm were developed namely the global \gls{PSO} and local \gls{PSO}. The only difference between the two algorithms is how they go about sharing information with the rest of the swarm. The sharing models of these two algorithms along with other sharing models are discussed in the \gls{PSO} characteristics subsection \cite{SOSwarm}.
 
-In the swarm, each particle is a potential solution that is represented by a D-dimensional vector \cite{PSOHybridJobShop,PSOSelfHierarch}. As a particle moves through the solution space, it continually evaluates its current position and adjusts it accordingly to move in the general direction of its own personal best position and the position of the best particle in its neighbourhood. 
+In the swarm, each particle is a potential solution that is represented by a D-dimensional vector \cite{PSOHybridJobShop,PSOSelfHierarch}. As a particle moves through the search space, it continually evaluates its current position and adjusts it accordingly to move in the general direction of its own personal best position and the position of the best particle in its neighbourhood. 
 
 A particle evaluates its current position by using a heuristic function, or in more evolutionary algorithm terms, a fitness function. The fitness value indicates to the particle how far it is from an optimal position\cite{CompuIntelligenceIntro}. 
 
-As a particle moves through the solution space it keeps a memory of the personal best position it has achieved since the start of the algorithm. In the literature and in the algorithm this personal best position is referred to as \emph{pbest} \cite{SOSwarm}.
+As a particle moves through the search space it keeps a memory of the personal best position it has achieved since the start of the algorithm. In the literature and in the algorithm this personal best position is referred to as \emph{pbest} \cite{SOSwarm}.
 
 Most of the research done on \gls{PSO} has focused on the convergence of the algorithm as well as improving the diversity \cite{FundamentalSwarm}. Some of these improvements and modifications is discussed in the subsection on \gls{PSO} characteristics.
 
@@ -515,46 +519,46 @@ Most of the research done on \gls{PSO} has focused on the convergence of the alg
 \label{sec:psocharacteristics}
 The defining characteristics of the \gls{PSO} algorithm that are discussed in this section include \emph{neighbourhood topology}, \emph{the partcle swarm}, \emph{movement of particles} and \emph{keeping particle velocities in check}.
 \subsubsection{The Particle Swarm}
-The initialising of particles in a swarm are the same as traditional population-based evolutionary algorithm use to initialise their respective populations \cite{FixedFAPPSO}.  At the start of the algorithm the swarm is initialised by randomly generating possible solutions that will represent the position of particles\cite{CompuIntelligenceIntro}. 
+The initialising of particles in a swarm are the same as used by traditional population-based evolutionary algorithm to initialise their respective populations \cite{FixedFAPPSO}.  At the start of the algorithm the swarm is initialised by randomly generating possible solutions that will represent the position of particles\cite{CompuIntelligenceIntro}. 
 
-The \gls{PSO} algorithm in some aspects resembles evolutionary algorithms like the genetic algorithm since it also has a population that operates in the problem space in search of an optimal solution. However unlike the \gls{GA} the \gls{PSO} does not continually generate new solutions to be reinserted into the swarm to increase diversity \cite{PSOHybridUnitCommit}. Thus the swarm size needs to be adjusted to get an optimal representation of the search space because as particles move in the swarm, the diversity among particles decreases rapidly as information is shared \cite{FundamentalSwarm,CompuIntelligenceIntro}. 
+The \gls{PSO} algorithm in some aspects resembles evolutionary algorithms like the genetic algorithm since it also has a population that operates in the problem space in search of an optimal solution. However unlike some of the variants that exist for the \gls{GA}, the \gls{PSO} does not continually generate new solutions to be reinserted into the swarm to increase diversity \cite{PSOHybridUnitCommit}. Thus the swarm size needs to be adjusted to get an optimal representation of the search space because as particles move in the swarm, the diversity among particles decreases rapidly as information is shared \cite{FundamentalSwarm,CompuIntelligenceIntro}. 
 
-Diversity decreases as the swarm moves because, with each iteration, the swarm converges towards the neighbouthood best position\cite{PSOHybridJobShop,CompuIntelligenceIntro,FundamentalSwarm} since the velocity equation directs the general movement of a particle in the direction of the neighbourhood best\cite{PSOHybridJobShop,CompuIntelligenceIntro,FundamentalSwarm}. The velocity equation is discussed below\cite{PSOHybridJobShop,CompuIntelligenceIntro,FundamentalSwarm}. If the best position in the neighbourhood does not change as the algorithm processes more iterations, a larger portion of the swarm will soon occupy the a position which is a weighted average between the neighbourhood and each individual particles personal best\cite{PSOHybridJobShop,CompuIntelligenceIntro,FundamentalSwarm}.
+Diversity decreases as the swarm moves because, with each iteration, the swarm converges towards the neighbourhood best position\cite{PSOHybridJobShop,CompuIntelligenceIntro,FundamentalSwarm}. This occurs due to the velocity equation directs the general movement of a particle in the direction of the neighbourhood best\cite{PSOHybridJobShop,CompuIntelligenceIntro,FundamentalSwarm}. The velocity equation is discussed later in section~\ref{sec:particleVelocity}\cite{PSOHybridJobShop,CompuIntelligenceIntro,FundamentalSwarm}. If the best position in the neighbourhood does not change as the algorithm processes more iterations, a larger portion of the swarm will soon occupy a position which is a weighted average between the neighbourhood and each individual particles personal best\cite{PSOHybridJobShop,CompuIntelligenceIntro,FundamentalSwarm}.
 
 Diversity among the particles in the swarm is important and at least initially must be maintained for the search space to be explored adequeately. Depending on the neighbourhood topolgy used diversity can be increased. In the next section neighbourhood topolgies is discussed.
 \subsubsection{Neighbourhood topolgies}
-The neighbourhood topoloy (also called social structure) used by a \gls{PSO} algorithm dictates how information is shared among the particles of the swarm. According to Engelbrecht\cite{FundamentalSwarm} there are 6 neighbourhood topologies. Each topology will now be listed and a short description will also be given.
+The neighbourhood topology (also called social structure) used by a \gls{PSO} algorithm dictates how information is shared among the particles of the swarm. According to Engelbrecht\cite{FundamentalSwarm} there are 6 neighbourhood topologies. Each topology will now be listed and a short description will also be given.
 \begin{description}
 \item{\textbf{star}} --- With the star topology all particles within a swarm are interconnected with each other. Any one particle can communicate with any other particle in the swarm\cite{FundamentalSwarm}. Using this topology each particle is attracted towards the best solution found globally by the swarm\cite{FundamentalSwarm}. 
-\item{\textbf{ring}} --- Using the ring topology each particle communicates with its immediate adjacent neighbour\cite{FundamentalSwarm}. Each particle aims to mimic the best solution found within its neighbourhood\cite{FundamentalSwarm}. Neighbourhoods are allowed to overlap in the ring topology\cite{FundamentalSwarm}. Overlapping enables information sharing among neighbourhoods and facilitates the swarm in converging to a single solution\cite{FundamentalSwarm}. 
-\item{\textbf{wheel}} --- In the wheel topology there is a central particle with which all other particles in the swarm are connected to\cite{FundamentalSwarm}. The other particles are isolated and can only share information with the central particle\cite{FundamentalSwarm}. The central particle utilises information about all the particles in its neighbourhood and adjusts its own best position accordingly\cite{FundamentalSwarm}. Depending on whether the new best position represents a better solution than previously, the central particle shares the information to its neighbours\cite{FundamentalSwarm}. A consequence of the limited sharing that occurs in the wheel topology, propagation of good solutions through the swarm is slowed\cite{FundamentalSwarm}.
-\item{\textbf{pyramid}} --- The pyramid topology interconnects particles so that their connected structure resembles a three-dimensional pyrami\cite{FundamentalSwarm}d.
+\item{\textbf{ring}} --- Using the ring topology each particle communicates with its immediate adjacent neighbour\cite{FundamentalSwarm}. Each particle aims to mimic the best solution found within its neighbourhood\cite{FundamentalSwarm}. Neighbourhoods are allowed to overlap in the ring topology\cite{FundamentalSwarm}. Overlapping allows for information sharing among neighbourhoods and facilitates the swarm in converging to a single solution\cite{FundamentalSwarm}. 
+\item{\textbf{wheel}} --- In the wheel topology there is a central particle with which all other particles in the swarm are connected to\cite{FundamentalSwarm}. The other particles are isolated and can only share information with the central particle\cite{FundamentalSwarm}. The central particle utilises information about all the particles in its neighbourhood and adjusts its own best position accordingly\cite{FundamentalSwarm}. Depending on whether the new best position represents a better solution than previously, the central particle shares the information to its neighbours\cite{FundamentalSwarm}. A consequence of the limited sharing that occurs in the wheel topology is that the propagation of good solutions through the swarm is slowed\cite{FundamentalSwarm}.
+\item{\textbf{pyramid}} --- The pyramid topology interconnects particles so that their connected structure resembles a three-dimensional pyramid\cite{FundamentalSwarm}.
 \item{\textbf{four clusters}} --- With this topology four clusters are formed. Each cluster containing interconnected particles\cite{FundamentalSwarm}. Between each cluster there exists only two connections to other clusters\cite{FundamentalSwarm}.
 \item{\textbf{von Neumon}} --- Using this topology all particles are connected in a structure that resembles a grid\cite{FundamentalSwarm}. This structure has been shown to enable the swarm to produce better results than other neighbourhood topologies\cite{FundamentalSwarm}
 \end{description}
 
-Based on the neighbourhood topologies defined the global \gls{PSO} uses a star neighbourhood to allow for information to be shared all particles in the swarm. The particle whose position in the search space indicates the best solution found by the swarm is denoted as \emph{gbest}\cite{SOSwarm, FundamentalSwarm, CompuIntelligenceIntro}. 
+Based on the neighbourhood topologies defined above the global \gls{PSO} uses a star neighbourhood to allow for information to be shared all particles in the swarm. The particle whose position in the search space indicates the best solution found by the swarm is denoted as \emph{gbest}\cite{SOSwarm, FundamentalSwarm, CompuIntelligenceIntro}. 
 
 In contrast, the local \gls{PSO} follows the process of natural birds more closely and uses the ring neighbourhood for information sharing\cite{SOSwarm, FundamentalSwarm, CompuIntelligenceIntro}. Hence, particles only share information with their immediate neighbourhood and not with the whole swarm. The best particle in the local \gls{PSO} is denoted as \emph{lbest}\cite{SOSwarm, FundamentalSwarm, CompuIntelligenceIntro}.
 
 \subsubsection{Movement of particles}
 \label{sec:particleVelocity}
-A particle moves with a certain velocity through the solution space. As the information is shared the particle must take advantage of the newly gained knowledge and therefore needs to adjust its own velocity to match the movement of the swarm. The particle updates its own velocity to move in the direction of the \emph{gbest} shared position, its own \emph{pbest} position and its current heading.
+A particle moves with a certain velocity through the search space. As the information is shared the particle must take advantage of the newly gained knowledge and therefore needs to adjust its own velocity to match the movement of the swarm. The particle updates its own velocity to move in the direction of the \emph{gbest} shared position, its own \emph{pbest} position and its current heading.
 
-A particle needs to systematically explore the solution space; therefore when the particle needs to update its personal velocity, it does not use all the information it has available, otherwise it will start to cycle solutions. The particle uses a certain amount of global information together with a certain amount of local information to produce a direction and new velocity\cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}. 
+A particle needs to systematically explore the search space; therefore when the particle needs to update its personal velocity, it does not use all the information it has available, otherwise it will start to cycle solutions. The particle uses a certain amount of global information together with a certain amount of local information to produce a direction and new velocity\cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}. 
 
 The amount of global knowledge is referred to as the \emph{social} \label{def:socialcomponent} component \cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}. The amount of personal information used by a particle is referred to as the \emph{cognitive} \label{def:cognitivecomponent} component\cite{FundamentalSwarm,CompuIntelligenceIntro,PSOSelfHierarch,SOSwarm}.
 
-The velocity calculation of each particle is where the optimisation procedure occurs in the \gls{PSO} algorithm. It is the only means by which the \gls{PSO} algorithm searches the solution space, since it is the only means by which particles are moved to new positions in the search space\cite{CompuIntelligenceIntro}.
+The velocity calculation of each particle is where the optimisation procedure occurs in the \gls{PSO} algorithm. It is the only means by which the \gls{PSO} algorithm searches the search space and particles are moved\cite{CompuIntelligenceIntro}.
 
-The velocity update is where the personal experience of a particle and the knowledge gained through social sharing are incorporated. By updating the velocity of a particle, the particle is steered into a more promosing direction. The velocity of a particle is updated based upon on equation\ref{eq:velocityupdate}.
+The velocity update is where the personal experience of a particle and the knowledge gained through social sharing are incorporated. By updating the velocity of a particle, the particle is steered into a more promosing direction. The velocity of a particle is updated based upon on equation~\ref{eq:velocityupdate}.
 \begin{align}
-\vec{v}_i(t+1) &= \vec{v}_i(t) + c_1\vec{\phi}_1(t)[\vec{pbest}_i - \vec{x}_i(t)] + c_2\vec{\phi}_2(t)[\vec{gbest}_i - \vec{x}_i(t)]\label{eq:velocityupdate}\\
-\vec{x}_i(t+1) &= \vec{x}_i(t) + \vec{v}_i(t+1)\label{eq:positionupdate}
+\hat{v}_i(t+1) &= \hat{v}_i(t) + c_1\hat{\phi}_1(t)[\hat{pbest}_i - \hat{x}_i(t)] + c_2\hat{\phi}_2(t)[\hat{gbest}_i - \hat{x}_i(t)]\label{eq:velocityupdate}\\
+\hat{x}_i(t+1) &= \hat{x}_i(t) + \hat{v}_i(t+1)\label{eq:positionupdate}
 \end{align}
-where $\vec{v}_i(t+1)$ is the new velocity of particle $i$ for the next time step $t+1$. The cognitive component is represented by the term $c_1\vec{\phi}_1(t)[\vec{pbest}_i - \vec{x}_i(t)]$ where $c_1$ is the cognitive coefficient. The social component is represented by the term $c_2\vec{\phi}_2(t)[\vec{gbest}_i - \vec{x}_i(t)]$ where $c_2$ is the social coefficient (discussed on page \pageref{def:cognitivecomponent})\cite{FundamentalSwarm,CompuIntelligenceIntro}. Each of the respective components $c_1$ and $c_2$ controls how much neighborhood information is used in the calculation of the new velocity. 
+where $\hat{v}_i(t+1)$ is the new velocity of particle $i$ for the next time step $t+1$. The cognitive component is represented by the term $c_1\hat{\phi}_1(t)[\hat{pbest}_i - \hat{x}_i(t)]$ where $c_1$ is the cognitive coefficient. The social component is represented by the term $c_2\hat{\phi}_2(t)[\hat{gbest}_i - \hat{x}_i(t)]$ where $c_2$ is the social coefficient (discussed on page \pageref{def:cognitivecomponent})\cite{FundamentalSwarm,CompuIntelligenceIntro}. Each of the respective components $c_1$ and $c_2$ controls how much neighborhood information is used in the calculation of the new velocity. 
 
-The variables $\vec{\phi}_i$ and $\vec{\phi}_2$ are vectors containing random scalar values in the range $[0,1]$. The current position of a particle in the solution space at time step $t$ is represented by parameter $\vec{x}_i(t)$\cite{FundamentalSwarm,CompuIntelligenceIntro}. After the new velocity is calculated the position of the particle is updated for time step $t+1$ using equation \ref{eq:positionupdate} \cite{FundamentalSwarm,CompuIntelligenceIntro}. The velocity update can be visually depicted as shown in figure \ref{fig:particleVelocityUpdate}. 
+The variables $\hat{\phi}_i$ and $\hat{\phi}_2$ are vectors containing random scalar values in the range $[0,1]$. The current position of a particle in the search space at time step $t$ is represented by parameter $\hat{x}_i(t)$\cite{FundamentalSwarm,CompuIntelligenceIntro}. After the new velocity is calculated the position of the particle is updated for time step $t+1$ using equation \ref{eq:positionupdate} \cite{FundamentalSwarm,CompuIntelligenceIntro}. The velocity update can be visually depicted as shown in figure \ref{fig:particleVelocityUpdate}. 
 \begin{figure}[H]
 	\begin{center}
 	\fbox{\includegraphics[width=4.5in,height=2.5in]{./pictures/geovelocity.pdf}}
@@ -563,15 +567,15 @@ The variables $\vec{\phi}_i$ and $\vec{\phi}_2$ are vectors containing random sc
 	\end{center}
 \end{figure}
 
-As discussed earlier gbest is the best position the particle has occupied since the start of the algorithm. In the literature there are two defined methods of determining gbest. The most common method used is where gbest is the best position obtained by a particle in the swarm since the start of the algorithm; thus long-term knowledge dictates the best position found which favours exploitation \cite{CompuIntelligenceIntro,FundamentalSwarm}.
+As discussed earlier gbest is the best position the swarm has occupied since the start of the algorithm. In the literature there are two defined methods of determining gbest. The most common method used is where gbest is the best position obtained by a particle in the swarm since the start of the algorithm; thus long-term knowledge dictates the best position found which favours exploitation \cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
 The second method of determining the gbest is the best particle position occupied by any particle in the swarm, in the \emph{current} iteration of the algorithm; thus short-term knowledge dictates the best position found which favours exploration \cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
-Most of the literature has concentrated on the velocity of the particle because it is the main function performing the optimisation. In research done by Ratnaweera et al.\cite{PSOSelfHierarch} particle positions in the solutions space are continually monitored. If the particle appears to be stagnant in the solution space, the velocity is first updated, and then the particle is reinitialised with a random position. The new position of the particle is then updated with the new velocity, thus knowledge of the discarded particle is retained by using the velocity it had\cite{PSOSelfHierarch}.
+Most of the literature has concentrated on the velocity of the particle because it is the main function performing the optimisation. In research done by Ratnaweera et al.\cite{PSOSelfHierarch} particle positions in the solutions space are continually monitored. If the particle appears to be stagnant in the search space, the velocity is first updated, and then the particle is reinitialised with a random position. The new position of the particle is then updated with the new velocity, thus knowledge of the discarded particle is retained by using the velocity it had\cite{PSOSelfHierarch}.
 
-In research done by Kalivarapu et al. \cite{PSOPheromones} a \gls{PSO} algorithm is developed that seeks to incorporate the pheromone notion of \gls{ACO} algorithms into the velocity updating of particles. The premise of the method is to allow greater sharing of information about promising areas between particles. The algorithm developed by the authors achieved promising results, with it in certain cases finding solutions faster and also better solutions than other \gls{PSO} algorithms \cite{PSOPheromones}. 
+In research done by Kalivarapu et al. \cite{PSOPheromones} a \gls{PSO} algorithm is developed that seeks to incorporate the pheromone notion of \gls{ACO} algorithms into the velocity updating of particles. The premise of the method is to allow greater sharing of information about promising areas between particles. The algorithm developed by the authors achieved promising results, with it finding solutions faster and also better solutions than other \gls{PSO} algorithms \cite{PSOPheromones}. 
 
-Other research done by Monson and Seppi \cite{adaptPSO} is more concerned with how the particle is presented. In the general \gls{PSO} algorithm, particles have no physical form or volume and so particles in the swarm move through each other. The authors changed this in their algorithm by letting each particle have a radius around itself. This means that as particles move through the solution space and another particle at a certain time step occupies the same space, the particles are said to collide. As one would expect, when a collision occurs both particles are deflected into random directions \cite{adaptPSO}. At a greater expense of computational time due to constant collision detection, the \gls{PSO} gains greater exploration in the solution space. 
+Other research done by Monson and Seppi \cite{adaptPSO} is more concerned with how the particle is presented. In the general \gls{PSO} algorithm, particles have no physical form or volume and so particles in the swarm move through each other. The authors changed this in their algorithm by letting each particle have a radius around itself. This means that as particles move through the search space and another particle at a certain time step occupies the same space, the particles are said to collide. As one would expect, when a collision occurs both particles are deflected into random directions \cite{adaptPSO}. At a greater expense of computational time due to constant collision detection, the \gls{PSO} gains greater exploration in the search space. 
 
 Finally, in the research by Lenin and Monan a \gls{PSO} algorithm is developed that is called the \gls{ARPSO}. The algorithm continually monitors the solutions in the swarm. If it picks up that a certain percentage of the swarm is stagnating, it activates the repulse state. In the repulse state particles are repelled from other particles in the swarm, which facilitates greater exploration. After a certain number of iterations, the algorithm returns to its default state, where particles attract each other. The state of attraction facilitates exploitation \cite{PSOAttractRepulse}.
 \subsubsection{Keeping velocity in check}
@@ -579,26 +583,26 @@ As can be observed in equation \ref{eq:velocityupdate} the new velocity is added
 
 Velocities should be kept in check since if a particles velocity becomes too large, it can overstep the search spaces boundaries and produce infeasible solutions \cite{FundamentalSwarm}. Thus the velocity of a particle needs to be bounded to ensure that its movement with in the search space stays within acceptable bounds. One of the means to bound the velocity of a particle is by applying equation \ref{eq:velocityclamp}. The equation is applied on the velocity before its position is updated\cite{FundamentalSwarm}.
 \begin{align}
-	\vec{v_i}(t+1) &=
+	\hat{v_i}(t+1) &=
 	\begin{cases}
-	\vec{v'_i}(t+1), &\text{if $\vec{v'_i}(t+1) < \vec{V_{max}}$}\\
-	\vec{V_{max}}, &\text{if $\vec{v'_i}(t+1) \geq \vec{V_{max}}$}
+	\hat{v'_i}(t+1), &\text{if $\hat{v'_i}(t+1) < \hat{V_{max}}$}\\
+	\hat{V_{max}}, &\text{if $\hat{v'_i}(t+1) \geq \hat{V_{max}}$}
 	\end{cases} \label{eq:velocityclamp}\\
-	\vec{V_{max}} &= \delta(\vec{x_{max}} - \vec{x_{min}})
+	\hat{V_{max}} &= \delta(\hat{x_{max}} - \hat{x_{min}})
 \end{align}
-In equation~\ref{eq:velocityclamp} $\vec{v'_i}$ is calculated using equation~\ref{eq:velocityupdate} for the global \gls{PSO}. Where $\vec{V_{max}}$ is the maximum allowed velocity and $\delta \in (0,1]$. The values $\vec{x_{max}}$ and $\vec{x_{min}}$ are the respective minimum and maximum position vectors in the domain the algorithm is being applied to \cite{FundamentalSwarm}. The value of $\delta$ is very problem dependent and must be carefully chosen to maximise the exploration-exploitation trade-off \cite{FundamentalSwarm}. The use of velocity clamping is not mandatory and should be considered only if the problem requires it\cite{FundamentalSwarm}. Finally there is no guarantee that velocity clamping will prohibit velocities becoming too large\cite{FundamentalSwarm}. There is still a chance, just to a smaller extent\cite{FundamentalSwarm}.
+In equation~\ref{eq:velocityclamp} $\hat{v'_i}$ is calculated using equation~\ref{eq:velocityupdate} for the global \gls{PSO}. Where $\hat{V_{max}}$ is the maximum allowed velocity and $\delta \in (0,1]$. The values $\hat{x_{max}}$ and $\hat{x_{min}}$ are the respective maximum and minimum position vectors in the domain the algorithm is being applied to \cite{FundamentalSwarm}. The value of $\delta$ is very problem dependent and must be carefully chosen to maximise the exploration-exploitation trade-off \cite{FundamentalSwarm}. The use of velocity clamping is not mandatory and should be considered only if the problem requires it\cite{FundamentalSwarm}. Finally there is no guarantee that velocity clamping will prohibit velocities becoming too large\cite{FundamentalSwarm}. There is still a chance, just to a lesser extent\cite{FundamentalSwarm}.
 
-Velocity clamping is not the only developed means by which  the exploration-exploitation trade-off of the \gls{PSO} can be control. Consider the case when an object moves with a certain velocity it carries momentum. If the object were to suddenly change direction, momentum would for a certain period still move the object in the previous direction. Inertia weight seeks to add type of behaviour to the particles of the \gls{PSO} algorithm. The velocity update equation with added inertia is formulated in equation \ref{eq:inertia} \cite{FundamentalSwarm}.
+Velocity clamping is not the only developed means by which  the exploration-exploitation trade-off of the \gls{PSO} can be controlled. Consider the case when an object moves with a certain velocity it carries momentum. If the object were to suddenly change direction, momentum would for a certain period still move the object in the previous direction. Inertia weight seeks to add this type of behaviour to the particles of the \gls{PSO} algorithm. The velocity update equation with added inertia is formulated in equation \ref{eq:inertia} \cite{FundamentalSwarm}.
 \begin{equation}
-\vec{v_i}(t+1) = w\vec{v_i}(t) + c_1\vec{\phi}_1(t)[\vec{pbest}_i - \vec{x}_i(t)] + c_2\vec{\phi}_2(t)[\vec{gbest}_i - \vec{x}_i(t)]\label{eq:inertia}
+\hat{v_i}(t+1) = w\hat{v_i}(t) + c_1\hat{\phi}_1(t)[\hat{pbest}_i - \hat{x}_i(t)] + c_2\hat{\phi}_2(t)[\hat{gbest}_i - \hat{x}_i(t)]\label{eq:inertia}
 \end{equation}
 Inertia ($w$ in equation \ref{eq:inertia}) was added to the general velocity update equation in an attempt to control the exploration and exploitation of the \gls{PSO} as well as eliminate the need for velocity clamping\cite{FundamentalSwarm}. Although the inertia component did succeeded in enabling the control of the \gls{PSO}'s exploration-exploitation in the search space, the need for velocity clamping could not be eliminated\cite{FundamentalSwarm}.
 
-For values of $w > 1$ , the inertia of the particle is increased. With increased the particle will explore more but it also more likely to leave the boundaries of the search space leading to infeasible solutions \cite{FundamentalSwarm}. 
+For values of $w > 1$ , the inertia of the particle is increased. With increased inertia the particle will explore more but it also more likely to leave the boundaries of the search space leading to infeasible solutions \cite{FundamentalSwarm}. 
 
 When $w < 1$ and depending on the values of $c_1$ and $c_2$ each time a particles velocity is updated a certain amount of momentum is lost. The particle seems to slow down, allowing it to exploit the current solution space in finer detail \cite{FundamentalSwarm}. This is not always the case, as $w < 1$ can also lead to the particles in the swarm diverging never to converge on an optimal solution.
 
-To allow for a greater trade-off between exploration and exploitation, the inertia value can be made dynamic. Exploration is favoured early on in an optimisation algorithm and  exploitation later on the algorithm when it is near an optimum; thus various methods that are either linear decreasing or non-linear decreasing have been developed that modify the inertia component as the algorithm moves around in the solution space \cite{CompuIntelligenceIntro,FundamentalSwarm}.
+To allow for a greater trade-off between exploration and exploitation, the inertia value can be made dynamic. Exploration is favoured early on in an optimisation algorithm and  exploitation later on the algorithm when it is near an optimum. Various methods that are either linear decreasing or non-linear decreasing have been developed that modify the inertia component as the algorithm moves around in the search space \cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
 Finally, a similar inertia type component was developed from the analysis of particle dynamics \cite{FundamentalSwarm}. This new component is called the \emph{constriction coefficient} and, like the inertia above, also modifies the velocity update equation slightly\cite{adaptPSO,FundamentalSwarm,CompuIntelligenceIntro}. 
 
@@ -608,7 +612,7 @@ v_i(t+1) &= \chi[v_i(t) + c_1\phi_{1}(t)[pbest - x_i(t)] + c_2\phi_{2}(t)[gbest 
 \chi &= \frac{2\kappa}{\lvert 2 - \phi - \sqrt{\phi^2 - 4\phi}\rvert}\label{eq:constriction}
 \end{align}
 
-The constriction coefficient is represented by the value $phi$. The constriction coefficient evaluates to an ever-decreasing value between $[0,1]$. By using the constriction coefficient the \gls{PSO} algorithm is also guaranteed to converge for values of $phi \geq 4$ and $\kappa \in [0,1]$. As with the inertia discussed above, high values of $\kappa$ allow for greater exploration and slow convergence, whereas low values of $\kappa$ force the algorithm to exploit the solution space and converge quickly \cite{adaptPSO,FundamentalSwarm,CompuIntelligenceIntro}.
+search constriction coefficient is represented by the value $phi$. The constriction coefficient evaluates to an ever-decreasing value between $[0,1]$. By using the constriction coefficient the \gls{PSO} algorithm is also guaranteed to converge for values of $phi \geq 4$ and $\kappa \in [0,1]$. As with the inertia discussed above, high values of $\kappa$ allow for greater exploration and slow convergence, whereas low values of $\kappa$ force the algorithm to exploit the search space and converge quickly \cite{adaptPSO,FundamentalSwarm,CompuIntelligenceIntro}.
 
 \subsection{Flow of the Algorithm}
 The general concepts that are evident in the \gls{PSO} algorithm have been covered. Using these concepts a general overview will now be given of the \gls{PSO} algorithm flow using algorithm~\ref{alg:PSO} as a reference point. Note that for the algorithm presented a start neighourhood topology is used and the algorithm is applied on a minimisation problem.
@@ -618,18 +622,18 @@ The general concepts that are evident in the \gls{PSO} algorithm have been cover
 	\begin{algorithmic}[1]
 		\State Initialize $s_n$ swarm
 		\While{Stopping condition not met}
-			\For{each particle $p_i \leftarrow 0$ in $s_n$}
-				\State Evaluate particle with fitness function $f(p_i)$
-				\If{$f(p_i) \leq pbest(p_i)$}
-					\State personal best of $p_i$ to $f(p_i)$
+			\For{each particle $\hat{p_i} \leftarrow 0$ in $s_n$}
+				\State Evaluate particle with fitness function $f(\hat{p_i})$
+				\If{$f(\hat{p_i}) \leq pbest(\hat{p_i})$}
+					\State personal best of $\hat{p_i}$ to $f(\hat{p_i})$
 				\EndIf
-				\If{$f(p_i) \leq f(gbest)$}
-					\State $gbest \leftarrow f(p_i)$
+				\If{$f(\hat{p_i}) \leq f(\hat{gbest)}$}
+					\}State $\hat{gbest} \leftarrow f(\hat{p_i})$
 				\EndIf
 			\EndFor
-			\For{each particle $p_i \leftarrow 0$ in $s_n$}
-				\State update velocity of $p_i$ with equation~\ref{eq:velocityupdate}
-				\State update position of $p_i$ with equation~\ref{eq:positionupdate}
+			\For{each particle $\hat{p_i} \leftarrow 0$ in $s_n$}
+				\State update velocity of $\hat{p_i}$ with equation~\ref{eq:velocityupdate}
+				\State update position of $\hat{p_i}$ with equation~\ref{eq:positionupdate}
 			\EndFor
 		\EndWhile
 	\end{algorithmic}
@@ -637,7 +641,7 @@ The general concepts that are evident in the \gls{PSO} algorithm have been cover
 
 The \gls{PSO} algorithm starts off by initialising the swarm of particles. Each particle is randomly assigned a certain position in the problem space. After the swarm has been initialised the algorithm enters the optimization or search phase, which starts in line 2.
 
-Before the swarm can start moving around in the problem space, it first needs to determine the gbest particle as well as each particle's own pbest position. Therefore as can be observed in line 3, each particle's current fitness $f(p_i)$ is determined using a problem-specific fitness function. The fitness determines the lucrativeness of the current position a particle occupies in the problem space.
+Before the swarm can start moving around in the problem space, it first needs to determine the gbest particle as well as each particle's own pbest position. Therefore as can be observed in line 3, each particle's current fitness $f(\hat{p_i})$ is determined using a problem-specific fitness function. The fitness determines the lucrativeness of the current position a particle occupies in the problem space.
 
 Once the fitness of a particle's position is calculated, the algorithm needs to determine whether the current position of the particle is its pbest since the algorithm started. This comparison can be seen occur in line 5. 
 
@@ -673,7 +677,7 @@ Because of the success of the \gls{PSO} on the \gls{MS-FAP}, for this dissertati
 
 The algorithm also makes extensive use of knowledge gained by the various particles as they search the problem space. Depending on the values used for $w, c_1$ and $c_2$, a particle does not only keep personal history (with pbest), but the swarm as a whole keeps a history of the best particle (neighbourhood best). Thus with regard to \gls{FAP}, it is possible that even though a particle might be in an overall bad position, it might have some small bit of good knowledge being overshadowed by bad knowledge. Through the extensive use of historical knowledge good information is more likely to be shared or kept slightly longer in the algorithms collective knowledge.
 
-For this current research the \gls{PSO} was applied to the \gls{FS-FAP} on the \gls{COST} 259 benchmark problems. The approach by the authors in the above literature could not be used. \gls{FS-FAP} is concerned with interference generated and there are some constraints which cannot be broken which are mentioned in section~\ref{sec:COST259} page~\pageref{sec:COST259}. In contrast with \gls{MS-FAP}, the performance measure is explicitly the number of constraints violated not interference.
+For this research the \gls{PSO} was applied to the \gls{FS-FAP} on the \gls{COST} 259 benchmark problems. The approach by the authors in the above literature could not be used. \gls{FS-FAP} is concerned with interference generated and there are some constraints which cannot be broken which are mentioned in section~\ref{sec:COST259} page~\pageref{sec:COST259}. In contrast with \gls{MS-FAP}, the performance measure is explicitly the number of constraints violated not interference.
 
 \section{Summary}
 \label{sec:SISummary}
@@ -683,4 +687,4 @@ The second swarm intelligence algorithm was the artificial bee colony optimizati
 
 A series of defining characteristics was explained. Each characteristic is a defining attribute of the algorithm that makes it unique with regard to other algorithms. No literature is available on the algorithm being applied to the \gls{FAP} since to date no research has been conducted on such an \gls{ABC} algorithm.
 
-This chapter concluded with the most important algorithm, which is used in this dissertation on the \gls{FAP}, namely the particle swarm optimization algorithm. The flow of the \gls{PSO} algorithm was described in \ref{alg:PSO}. Furthermore, characteristics that make the algorithm unique were explained, and a literature review was given of the \gls{PSO} algorithm being applied to the \gls{FAP}.
+This chapter concluded with the most important algorithm, which is used in this dissertation on the \gls{FAP}, namely the particle swarm optimization algorithm. The flow of the \gls{PSO} algorithm was described in algorithm~\ref{alg:PSO}. Furthermore, characteristics that make the algorithm unique were explained, and a literature review was given of the \gls{PSO} algorithm being applied to the \gls{FAP}.

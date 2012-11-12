@@ -7,9 +7,7 @@ Metaheuristics forms part of a collective body of algorithms that use heuristics
 
 Constraints can be either hard or soft. A hard constraint is defined as a certain condition an algorithm or potential solution is not allowed to violate\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}. A soft constraint is allowed to be violated but there is some sort of penalty or cost involved which is imposed onto the potential solution, which lowers its desirability\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}. 
 
-An optimal solution would therefore be any solution that violates no hard constraints and violates no or a minimum number of soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}.
-
-Algorithms that are classified as being part of the collective body of algorithms known as metaheuristic algorithms are Tabu Search\cite{TabuVechicleRoutingWithTimeWindows,TabuCSP}, Simulated Annealing \cite{SASingleMultiObj,CurveFittingSA} and Genetic Algorithm\cite{GATSP, GeostatisticalGA}.
+An optimal solution would therefore be any solution that violates no hard constraints and violates no or a minimum number of soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}. Algorithms that are classified as being part of the collective body of algorithms known as metaheuristic algorithms are Tabu Search\cite{TabuVechicleRoutingWithTimeWindows,TabuCSP}, Simulated Annealing \cite{SASingleMultiObj,CurveFittingSA} and Genetic Algorithm\cite{GATSP, GeostatisticalGA}.
 
 The above-mentioned algorithms are not the only algorithms to form part of this subdomain, but they are the algorithms that have received the most attention in the literature and produce good results\cite{SweepMeta}.
 
@@ -18,18 +16,18 @@ The main focus of this chapter is on each of the above algorithms. Before each o
 \gls{AI} search algorithms operate in search spaces, where they occupy various states while they are searching for a solution or goal state in a search space. Before these algorithms can be properly introduced, the concept of search spaces and states needs to be introduced.
 
 \section{Search Spaces and States}
-A search space is defined as a set of candidate goal states which may or may not be a solution to a problem\cite{AIModernApproach}. The candidate states are defined by the problem definition\cite{AIModernApproach}. The possible states can be given by a successor function which generates new states adhering to the problem defined constraints if any\cite{AIModernApproach}. 
+A search space is defined as a set of candidate goal states which may or may not be a solution to an problem\cite{AIModernApproach}. The candidate states are defined by the problem definition\cite{AIModernApproach}. The possible states can be given by a successor function which generates new states adhering to the problem defined constraints if any\cite{AIModernApproach}. 
 
-The search space can also be explicitly defined with constraints to which as solution must adhere to\cite{AIModernApproach}. When constraints are defined it is up to the algorithm how it moves from one state to another in the search space\cite{AIModernApproach}. Each state the algorithm moves to is then checked whether it adheres to the constraints\cite{AIModernApproach}.
+The search space can also be explicitly defined with constraints to which a solution must adhere to\cite{AIModernApproach}. When constraints are defined it is up to the algorithm how it moves from one state to another in the search space\cite{AIModernApproach}. Each state the algorithm moves to is then checked whether it adheres to the constraints\cite{AIModernApproach}.
 
-A state is a position in the search space\cite{AIModernApproach}. This position represents a configuration that describes a possible solution to the defined problem\cite{AIModernApproach}. When a algorithm is said to be moving to a new state, the algorithm moves to a new position in the search space\cite{AIModernApproach}. This new position represents a diffirent solution than the previous position that was occupied\cite{AIModernApproach}.
+A state is a position in the search space\cite{AIModernApproach}. This position represents a configuration that describes a possible solution to the defined problem\cite{AIModernApproach}. When a algorithm is said to be moving to a new state, the algorithm moves to a new position in the search space\cite{AIModernApproach}. This new position represents a different solution than the previous position that was occupied\cite{AIModernApproach}.
 
-When dealing with optimisation problem there can be more than one solution\cite{AIModernApproach}. Which is why with optimisation problems not only does an algorithm have to find a solution, but also the most optimal solution among the candidate solutions\cite{AIModernApproach}. This subset of solutions in the search space is referred to as the \emph{solution} space.
+When dealing with an optimisation problem there can be more than one solution\cite{AIModernApproach}. Which is why with optimisation problems not only does an algorithm have to find a solution, but also the most optimal solution among the candidate solutions\cite{AIModernApproach}. This subset of solutions in the search space is referred to as the \emph{solution} space.
 
-Both concepts of search spaces and states have now been defined. All search algorithms operate in search spaces and occupy states. The domain of search contains a wide variety of algortihms. In the next section a Metaheuristics Algorithms are discussed as this body of algorithms are used to solved optimisation problems.
+Both concepts of search spaces and states have now been defined. All search algorithms operate in search spaces and occupy states. The domain of search contains a wide variety of algortihms. In the next section Metaheuristics Algorithms are discussed as this body of algorithms are used to solved optimisation problems.
 
 \section{Metaheuristics Algorithms}
-NP-Complete\footnote{A discussion of NP-Complete problems is appears in section \ref{sec:NPComplete}} problems have been proven to not be solvable in polynomial time by traditional uninformed search methods such as Breath First Search and Depth-First Search\cite{AIModernApproach}. 
+NP-Complete\footnote{A discussion of NP-Complete problems is appears in section \ref{sec:NPComplete}} problems have been proven to not be solvable in polynomial time by traditional uninformed search algorithms such as Breath First Search and Depth-First Search\cite{AIModernApproach}. 
 
 Uninformed algorithms are not able to distinguish whether a particular goal state is more ``correct'' than any other goal state\cite{AIModernApproach}.
 
@@ -45,25 +43,15 @@ Metaheuristic algorithms do not dictate all aspects of the search procedure but 
 
 As can be gathered from the name, a metaheuristic algorithm uses some sort of heuristic. A heuristic is a decision rule. Algorithms use heuristics to make decisions by applying the heuristic to the data the algorithm is currently working on\cite{AIModernApproach,NatureInspiredMetaHeuristic}.
 
-When an algorithm utilises a heuristic its forms part of a group known as informred search methods. As the name implies the algorithm is more ``informed'' using the heuristic the algorithm gains additional information about its search space. With this additional information the algorithm is able to performa a better search for a possible solution\cite{AIModernApproach}.
+When an algorithm utilises a heuristic its forms part of a group known as informred search algorithms. As the name implies the algorithm is more ``informed'' using the heuristic the algorithm gains additional information about its search space. With this additional information the algorithm is able to performa a better search for a possible solution\cite{AIModernApproach}.
 
-A heuristic is able to dictate what an algorithm must do for its next iteration by evaluating the current internal state of the algorithm, i.e. whether it should move to a different point in the search space, generate new data, or select the current data as the most optimal solution\cite{AIModernApproach,NatureInspiredMetaHeuristic}.
+Heuristics are strategies that direct the search based on the information available, to move towards areas where there is a higher probability of obtaining high quality candidate solutions \cite{AIModernApproach}. A heuristic is able to dictate what an algorithm must do for its next iteration by evaluating the current internal state of the algorithm, i.e. whether it should move to a different point in the search space, generate new data, or select the current data as the most optimal solution\cite{AIModernApproach,NatureInspiredMetaHeuristic}. 
 
 In general ``meta'' means \emph{beyond} or \emph{higher level}\cite{AIModernApproach,NatureInspiredMetaHeuristic}. A metaheuristic therefore refers to a heuristic that is more complex with regard to the decisions it is able to make compared with a standard heuristic\cite{AIModernApproach,NatureInspiredMetaHeuristic}. With a standard heuristic only the current state is considered\cite{AIModernApproach}. A metaheuristic takes additional information into account when considering a current state\cite{NatureInspiredMetaHeuristic}. This additional information can be previous states, or states that are considering to be close in the search space\cite{AIModernApproach, NatureInspiredMetaHeuristic}.
 
-Metaheuristic algorithms do not search the solution space statically by testing and evaluating every possible permutation in the search space. This is inefficient and a normal path-based algorithm can be used instead\cite{MetaAgricultural}.
+Metaheuristic-based search algorithms are not guaranteed to find the most optimal solutions in the search space; instead these algorithms are used to find near-optimal solutions. Thus most algorithmic development in the metaheuristic domain focuses on developing new techniques that will increase the probability that a good solution will be obtained in difficult combinatorial problems \cite{MetaAgricultural}.
 
-As these algorithms explore the search space, neighbouring states are selected non-deterministic making their search procedures of a stochastic nature\cite{HandbookofMH, NatureInspiredMetaHeuristic}. Heuristics are used to guide the search to move to more desirable states in the search space where there is a higher probability of obtaining high quality candidate solutions \cite{TabuMontemanniSmith,SweepMeta}.
-
-Metaheuristic-based search methods are not guaranteed to find the most optimal solutions in the search space; instead these methods are used to find near-optimal solutions. Thus most algorithmic development in the metaheuristic domain focuses on developing new techniques that will increase the probability that a good solution will be obtained in difficult combinatorial problems \cite{MetaAgricultural}.
-
-Similarly, metaheuristics are not guaranteed to find suitable solutions or perform well in each problem domain it is applied to. The quality of the solution and performance of the metaheuristic is very much dependent upon on the expertise of the algorithm designer \cite{AutoComplexMeta}. 
-
-Although heuristics plays a key role in the performance of metaheuristic algorithms, it is not the only factor that has an impact on performance and results. Algorithms also use techniques and concepts from other system paradigms like multi-agent systems\cite{Self-AdaptiveMeta}. 
-
-In multi-agent systems, multiple agents have to communicate with each other and the system as a whole has to perform some sort of autonomous self-organisation\cite{Self-AdaptiveMeta}.
-
-These social and self-organisation concepts enable these systems to be distributed, robust and flexible. This is why in metaheuristic algorithms that are population-based, hybrid and/or distributed, these concepts of social and self-organisation  are used to better exploit the solution space\cite{Self-AdaptiveMeta}.
+Similarly, metaheuristics are not guaranteed to find suitable solutions or perform well in each problem domain it is applied to. The quality of the solution and performance of the metaheuristic is very much dependent upon on the expertise of the algorithm designer \cite{AutoComplexMeta}. Besides the algoritm designer modifying the algorithm; metaheuristic algorithms that are inherently population-based, hybrid and/or distributed, use the concept of social and self-organisation to better exploit the solution space\cite{Self-AdaptiveMeta}.
 
 In this section the characteristics of metaheuristics that set these algorithms apart from the conventional algorithms used on difficult problems was introduced. In the next section of this chapter the tabu search algorithm is discussed.
 \section{Tabu Search}
@@ -159,41 +147,32 @@ Intensification is the first phase of the \gls{TS} algorithm, since it is respon
 
 In the following section, an overview is presented of the flow the \gls{TS} algorithm along with pseudo code describing the \gls{TS} algorithm.
 \subsection{Flow of the algorithm}
-In this section the general flow of the \gls{TS} algorithm is described using the algorithm~\ref{alg:TS} presented in pseudo code as a reference point.
+In this section the general flow of the \gls{TS} algorithm is described using algorithm~\ref{alg:TS} as a reference point.
 \begin{algorithm}[H]
 \caption{Basic Tabu Search Algorithm\cite{TabuRCAProblem,TabuMontemanniSmith}}
 \label{alg:TS}
 	\begin{algorithmic}[1]
 		\State Initialize parameters
-		\State $x_0 \leftarrow$ Initialize starting solution
+    \State $\hat{x_0} \leftarrow$ Initialize starting solution
 		\While{stopping criteria not met}
-			\State $y_i \leftarrow$ Determine $x_i$ neighbourhood solutions 
-			\State Evaluate neighbouring solutions with fitness function $f(y_i)$
-			\State $z_i \leftarrow$Select best neighbour from $y_i$
-			\If{Move to $z_i$ is Tabu}
-				\If{$z_i$ meets Aspiration Criterion}
-					\State $x_i \leftarrow z_i$
+    \State $\hat{y_i} \leftarrow$ Determine $\hat{x_i}$ neighbourhood solutions 
+    \State Evaluate neighbouring solutions with fitness function $f(\hat{y_i})$
+    \State $\hat{z_i} \leftarrow$Select best neighbour from $\hat{y_i}$
+    \If{Move to $\hat{z_i}$ is Tabu}
+    \If{$\hat{z_i}$ meets Aspiration Criterion}
+    \State $\hat{x_i} \leftarrow \hat{z_i}$
 				\EndIf
-			\algstore{TS}
-	\end{algorithmic}
-\end{algorithm}
-
-\begin{algorithm}[H]
-\caption{Basic Tabu Search Algorithm (continued) \cite{TabuRCAProblem,TabuMontemanniSmith}}
-\label{alg:TS2}
-	\begin{algorithmic}[1]
-			\algrestore{TS}
 			\Else
-				\State Add $x_i$ to Tabu List
-				\State $x_i \leftarrow z_i$
-				\If{$x_i$ repeated $\ge$ max repeats}
+      \State Add $\hat{x_i}$ to Tabu List
+      \State $\hat{x_i} \leftarrow \hat{z_i}$
+      \If{$\hat{x_i}$ repeated $\ge$ max repeats}
 					\State diversify()
 				\Else
 					\State intensify()
 				\EndIf
 			\EndIf
 		\EndWhile
-		\State Return $x_i$ as best found solution
+    \State Return $\hat{x_i}$ as best found solution
 	\end{algorithmic}
 \end{algorithm}
 
@@ -229,9 +208,9 @@ The \gls{TS} algorithm used by the authors is the multistart \gls{TS} algorithm,
 
 The authors developed a technique called \gls{HMT}. \gls{HMT} first monitors an underlying heuristic being used on the problem by the algorithm\cite{TabuMontemanniSmith}. It then identifies certain characteristics that good solutions exhibit. In the \gls{FAP}, it is transmitters that are assigned different frequencies which results in an overall lower interference value\cite{TabuMontemanniSmith}.
 
-The HMT then uses the identified characteristics to add \emph{additional} constraints to the problem\cite{TabuMontemanniSmith}. By adding constraints, the search space is reduced. However, by reducing the search space, other near-optimal solutions which might be far better are excluded\cite{TabuMontemanniSmith}. It is for this reason that the authors opted not to add the constraints permanently.
+The HMT then uses the identified characteristics to add \emph{additional} constraints to the problem\cite{TabuMontemanniSmith}. By adding constraints, the search space is reduced. However, by reducing the search space, other near-optimal solutions which might be far better are excluded\cite{TabuMontemanniSmith}. It is for this reason that that Montemanni and Smith opted not to add the constraints permanently.
 
-The authors applied their \gls{TS} algorithm together with HMT to the \gls{COST} 259 family of benchmarks, specifically the Siemens1, Siemens2, Siemens3 and Siemens4 problems. The results are presented in table~\ref{TSCOST259}. The values presented are scalar and indicate the total interference of the frequency plan. The lower the interference value is, the better the frequency plan.
+Montemanni and Smith applied their \gls{TS} algorithm together with HMT to the \gls{COST} 259 family of benchmarks, specifically the Siemens1, Siemens2, Siemens3 and Siemens4 problems. The results are presented in table~\ref{TSCOST259}. The values presented are scalar and indicate the total interference of the frequency plan. The lower the interference value is, the better the frequency plan.
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c |}
@@ -317,7 +296,7 @@ After each iteration, whether the algorithm has selected a new best solution or 
 
 In general, when the \gls{SA} algorithm temperature has a very high value most solutions that are produced from the neighbourhood are accepted \cite{ClusterSA}. Thus the algorithm moves freely in the search space with little constraint. As the temperature decreases, the probability that the algorithm will select a bad or just any solution decreases\cite{ClusterSA}. When the temperature is very low, the \gls{SA} algorithm is similar to a greedy algorithm in the sense that it only accepts downhill movements\cite{ClusterSA}.
 
-The cooling schedule provides the \gls{SA} algorithm with the critical ability to control the rate the algorithm transitions from the diversification phase (high temperature) to the intensification phase (low temperature)\cite{ClusterSA}.
+The cooling schedule provides the \gls{SA} algorithm with the critical ability to control the rate the algorithm transitions from the diversification phase (high temperature) to the intensification phase (low temperature)\cite{ClusterSA}. By controlling this rate, one is able to direct the algorithm to explore more early on to locate the more promosing areas for possible solutions. These promoosing areas can then be used by the algorithm in its intensification phase to find more promosing solutions.
 
 In the literature there are three annealing schedules in common use, namely \emph{the logarithmic schedule}, the \emph{geometric schedule} and the \emph{Cauchy schedule}\cite{VeryFastSAImageEnchancement,SASingleMultiObj}. 
 
@@ -364,7 +343,7 @@ In research done by Tseung and Lin \cite{CurveFittingSA} an initial solution is 
 \subsubsection{Algorithm Efficiency}
 The algorithm is also efficient with regard to CPU cycles when compared with the genetic algorithm. \gls{SA} only has to evaluate a certain number of moves each iteration, instead of a whole population of individuals each iteration. The genetic algorithm is discussed in section~\ref{sec:geneticalgorithm}.
 
-Unlike \gls{TS}, the basic \gls{SA} algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that the solution will cycle. The more iterations spent at a temperature, the longer the algorithm spends at a certain temperature and therefore the higher the probability that solutions may cycle.
+Unlike \gls{TS}, the basic \gls{SA} algorithm does not keep any memory and is therefore memory efficient, but in contrast suffers the risk that the solution may cycle. The more iterations spent at a temperature, the longer the algorithm spends at a certain temperature and therefore the higher the probability that solutions may cycle.
 
 In next section the flow of the \gls{SA} algorithm is discussed and pseudo code for the \gls{SA} algortihm is presented.
 
@@ -376,37 +355,36 @@ In an attempt to better understand how the \gls{SA} algorithm operates, a genera
 	\begin{algorithmic}[1]
 		\State Initialize parameters
 		\State Set starting temperature $T(0)$
-		\State $x_0 \leftarrow$ Generate initial starting solution
+    \State $\hat{x_0} \leftarrow$ Generate initial starting solution
 		\While{Stopping criterion not met}
-			\State $y_i \leftarrow$ Generate neighbouring solutions to $x_i$
-			\State Evaluate $y_i$ neighbours with fitness function $f(y_i)$
-			\State Calculate probability $p_i$ of $y_i$ neighbours with equation~\ref{eq:saprobability}
-			\State $x_i \leftarrow$ Select $y_i$ neighbour based on probability $p_i$
+    \State $\hat{y_i} \leftarrow$ Generate neighbouring solutions to $\hat{x_i}$
+    \State Evaluate $\hat{y_i}$ neighbours with fitness function $f(\hat{y_i})$
+    \State Calculate probability $\hat{p_i}$ of $\hat{y_i}$ neighbours with equation~\ref{eq:saprobability}
+    \State $\hat{x_i} \leftarrow$ Select $\hat{y_i}$ neighbour based on probability $p_i$
 			\State Reduce temperature $T(i)$ based on cooling schedule
 		\EndWhile
-		\State Return best solution $x_i$
+    \State Return best solution $\hat{x_i}$
 	\end{algorithmic}
 \end{algorithm}
 
-From lines 1 -- 3, the \gls{SA} algorithm is initialised. The most important step here is setting the starting temperature for the annealing process to start. As mentioned in the introduction, the temperature of the annealing process plays a critical role in the potential solution selection process.
-
-After the algorithm has been initialised the search phase of the algorithm starts which ranges from lines 4 -- 10. Like the \gls{TS} algorithm, the \gls{SA} algorithm starts the search phase by generating a number of neighbours to the current solution held by the algorithm as can be observed in line 5.
+From lines 1 -- 3, the \gls{SA} algorithm is initialised. The most important step here is setting the starting temperature for the annealing process to start. As mentioned in the introduction, the temperature of the annealing process plays a critical role in the potential solution selection process. After the algorithm has been initialised the search phase of the algorithm starts which ranges from lines 4 -- 10. Like the \gls{TS} algorithm, the \gls{SA} algorithm starts the search phase by generating a number of neighbours to the current solution held by the algorithm as can be observed in line 5.
 
 Before selecting a neighbour the algorithm first needs to evaluate the generated neighbours. It evaluates each neighbour by applying a fitness function $f(y_i)$ in order to determine its fitness.
 Once the fitness of all the generated neighbours has been determined, the algorithm uses equation~\ref{eq:saprobability} to calculate the probability of selecting a particular neighbour for all the generated neighbours as well. The probability calculation can be observed to occur in line 7. The algorithm then selects the neighbour with the highest probability to be the current solution, as observed in line 9. 
 
-Before the algorithm advances to the next iteration the temperature needs to be lowered. As discussed, the temperature is lowered according to a particular cooling schedule. In the algorithm the process of lowering the temperature occurs in line 10.
+Before the algorithm advances to the next iteration the temperature needs to be lowered. As discussed, the temperature is lowered according to a particular cooling schedule. In the algorithm the process of lowering the temperature occurs in line 10. 
 
-In the section that follows a discussion is given on when \gls{SA} is applied to the \gls{FAP}.
+This concludes the discussion on the flow of the SA algorithm. In the section that follows a discussion is given on when \gls{SA} is applied to the \gls{FAP}.
 \subsection{Simulated Annealing on the \gls{FAP}}
 The \gls{SA} algorithm, as with the \gls{TS} algorithm, has achieved good results in other optimisation problems, as mentioned in section \ref{sec:SAIntroduction}. Due to its success on other NP-Complete optimisation problems, the \gls{SA} algorithm has also been applied to the \gls{FAP}.
 
-In literature by Carlo Mannino and Gianpaolo Oriolo\cite{SolvingSuperIntervalGraphs} the \gls{SA} algorithm is applied to the \gls{FAP}. The resulting \gls{SA} algorithm was benchmarked on the \gls{COST} 259 Siemens benchmark instances. The results obtained by the authors is presented in table~\ref{tab:SA}. Values represent the total interference generated by the frequency assignment. 
+In literature by Carlo Mannino and Gianpaolo Oriolo\cite{SolvingSuperIntervalGraphs} the \gls{SA} algorithm is applied to the \gls{FAP}. The resulting \gls{SA} algorithm was benchmarked on the \gls{COST} 259 Siemens benchmark instances. The results obtained by the authors are presented in table~\ref{tab:SA}. 
+
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c | c |}
 	\hline
-	Problem instance & \gls{SA} & \gls{COST} 259 (old) & \gls{COST} 259 (new) \\ \hline
+	Problem instance & \gls{SA} & \gls{COST} 259 (old) & Best \gls{COST} 259 \\ \hline
 	Siemens1 & 22.96 & 23.00 & 2.200\\ \hline
 	Siemens2 & 14.72 & 14.75 & 14.280\\ \hline
 	Siemens3 & 52.43 & 52.55 & 5.19\\ \hline
@@ -415,11 +393,9 @@ In literature by Carlo Mannino and Gianpaolo Oriolo\cite{SolvingSuperIntervalGra
 \caption{SA on \gls{COST} 259 Benchmark}
 \label{tab:SA}
 \end{table}
-Note that at the time the above results where obtained the best results obtained for the siemens problem were different from the latest results.
 
-An overview of the \gls{SA} algorithm along with its unique characteristics have now been given. Utilising the knowledge that was gained from understanding how the \gls{SA} algorithm operates a critical evaluation can be presented. 
-
-In the following paragraphs, a theoretical critical evaluation is presented if the \gls{SA} algorithm would be applied to the \gls{FAP}.
+Values represent the total interference generated by the frequency assignment. Note that the values represented in the SA column, are the values as presented in the reasearch by the authors. Also, note that the column \gls{COST} 259 (old) represents the best obtained results to the instances as it was when the authors presented their research.
+An overview of the \gls{SA} algorithm along with its unique characteristics have now been given. Utilising the knowledge that was gained from understanding how the \gls{SA} algorithm operates a critical evaluation can be presented. In the following paragraphs, a theoretical critical evaluation is presented that lists the various characteristics which would be problematic if the \gls{SA} algorithm would be applied to the \gls{FAP}.
 
 \paragraph{Cooling Schedule}
 --- Depending on the cooling schedule selected, the algorithm might converge too quickly. As discussed previously the cooling schedule reduces the temperature. The temperature plays a large part in the determination of whether a particular solution will be moved to or not in an iteration. Thus early on the algorithm will explore a lot more (diversification) and later on will exploit more (intensification). In the \gls{FAP}, the algorithm must not only be able to explore and exploit, but also be able to return to an exploration phase if need be.
@@ -455,9 +431,9 @@ With the generational \gls{GA} the offspring are not immediately used in the nex
 
 The \gls{GA} search process moves around in the search space using probabilistic rules rather than deterministic rules \cite{FamilyGA}. The probabilistic transition rules aid the algorithm to avoid local optima regions in the search space \cite{HybridIntelliGA}. Note that by even using the probabilistic transition rules there is no guarantee that the \gls{GA} will completely avoid local optima\cite{CompuIntelligenceIntro}.
 
-The \gls{GA} makes no assumptions about the search space and primarily works on the information provided by the chromosomes and the representation of solutions used\cite{CompuIntelligenceIntro,ConstrainedGA,HybridIntelliGA}. 
-
-Unlike the \gls{SA} and \gls{TS} algorithms, the \gls{GA} if properly initialized, starts with a number of search points that cover a wide area of the search space. Depending on the operators used, diversity can be quickly lost and the population can become homogeneous very quickly\cite{DistributedHierarchicalGA,FamilyGA,HybridIntelliGA}\label{GASearchPoints}.
+The \gls{GA} makes no assumptions about the search space and primarily works on the information provided by the chromosomes and the representation of solutions used\cite{CompuIntelligenceIntro,ConstrainedGA,HybridIntelliGA}. Unlike the \gls{SA} and \gls{TS} algorithms, the \gls{GA} if properly initialized, starts with a number of search points that cover a wide area of the search space. Depending on the operators used, diversity can be quickly lost and the population can become homogeneous very quickly\cite{DistributedHierarchicalGA,FamilyGA,HybridIntelliGA}\label{GASearchPoints}.
+ 
+The different operators used by the GA along with their probalities are not specific. Each operator and probability can be changed the suit the problem domain the GA is being applied to. Therefore the particular probability and operators the GA uses is problem dependant.
 
 As discussed earlier the defined operators consists of a selection operator, crossover operator and mutation operator\cite{SelfAdaptiveGA,MultiPopGA}. In the section that follows each operator is discussed.
 
@@ -469,7 +445,7 @@ The selection operator is the first operator to be applied to the population aft
 
 The individuals are selected based on the selective pressure and are moved to the ``mating pool''. Individuals that are selected by selection operator are used by the crossover and mutation operators (in the reproduction phase), to generate offspring from the mating pool\cite{AdaptiveSAGA,AcceleratingGA}.
 
-By favouring high fitness individuals above low fitness individuals the operator is said to have a high selective pressure\cite{CompuIntelligenceIntro}. Care must be taken if the operator uses a high selective pressure. Since high fitness individuals are preferred diversity among the individuals in the population will deteriorate and thus result in premature convergence\cite{ConstrainedGA, CompuIntelligenceIntro}.
+By favouring high fitness individuals above low fitness individuals the operator is said to have a high selective pressure\cite{CompuIntelligenceIntro}. Care must be taken if the operator uses a high selective pressure. Since high fitness individuals are preferred, diversity among the individuals in the population will deteriorate and thus result in premature convergence\cite{ConstrainedGA, CompuIntelligenceIntro}.
 
 If the search space is known to have only one optimum, then a high selection pressure is feasible\cite{ConstrainedGA}. The selection operator directs the search into a gradient-based direction that converges on a single optimum solution \cite{ConstrainedGA}. 
 
@@ -477,47 +453,37 @@ In contrast, with a search space that is known to have multiple optima a low sel
 
 The means by which the selection operator selects individuals is referred to as the selection scheme. The most widely adopted selection scheme is known as the \emph{roulette wheel} selection scheme \cite{ConstrainedGA,GeostatisticalGA,HybridBaldwinGA,CoactiveFuzzyGA}. With this scheme an individual is selected based on a probability defined by the fitness of the individual divided by the collective fitness of the population \cite{GeostatisticalGA}.
 
-Depending on how complicated the objective function is and how large the population is, the selection phase may be the most computationally expensive as well as time consuming \cite{AcceleratingGA}.
+Depending on how complicated the objective function is and how large the population is, the selection phase may be the most computationally expensive as well as time consuming \cite{AcceleratingGA}. The selection process as described below  can also be applied by the crossover operator. This process was opted to be split from the crossover operator as to provide a better overview of how the algorithm works
 
-The selection process as described below  can also be applied by the crossover operator. This process was opted to be split from the crossover operator as to provide a better overview of how the algorithm works
+After the offspring has been generated, a selection operator is applied again\cite{CompuIntelligenceIntro}. The purpose of this selection operator is to determine the population of the next generation\cite{CompuIntelligenceIntro}. Within this selection process replacement policies can \emph{optionally} be applied\cite{CompuIntelligenceIntro}. 
 
-After the offspring has been generated, a selection operator is applied again\cite{CompuIntelligenceIntro}. The purpose of this selection operator is to determine the population of the next generation\cite{CompuIntelligenceIntro}. Within this selection process replacement policies can \emph{optionally} be applied\cite{CompuIntelligenceIntro}. These replacement policies define which individuals of the current population should be replaced by the newly generated offspring\cite{CompuIntelligenceIntro}. For instance, the policy can define that the entire current population should be replaced by the offspring\cite{CompuIntelligenceIntro}. Using this policy is not ideal as some generated offspring could have much worse fitness than their parents but due to the replacement the solutions represented by the good parents are lost\cite{CompuIntelligenceIntro}. Other replacement policies include replacing the worst individual in the current population with offspring on the premise that the offspring has a better fitness\cite{CompuIntelligenceIntro}. By replacing older chromosomes with better performing chromosomes in the population replacement strategy, the \gls{GA} achieves an hill-climbing ability.
+These replacement policies define which individuals of the current population should be replaced by the newly generated offspring\cite{CompuIntelligenceIntro}. For instance, the policy can define that the entire current population should be replaced by the offspring\cite{CompuIntelligenceIntro}. Using this policy is not ideal as some generated offspring could have much worse fitness than their parents but due to the replacement the solutions represented by the good parents are lost\cite{CompuIntelligenceIntro}. 
 
-The reader that is interested in more information on different selection operators is directed to the suvery by Engelbrecht\cite{CompuIntelligenceIntro}.
+Other replacement policies include replacing the worst individual in the current population with offspring on the premise that the offspring has a better fitness\cite{CompuIntelligenceIntro}. By replacing older chromosomes with better performing chromosomes in the population replacement strategy, the \gls{GA} achieves an hill-climbing ability. The reader that is interested in more information on different selection operators is directed to the suvery by Engelbrecht\cite{CompuIntelligenceIntro}.
 \subsubsection{Crossover Operator}
 \label{sec:crossover}
-The crossover operator is the first operator applied to the population in the reproduction phase. The crossover operates exclusively on the chromosomes in the mating pool. 
+The crossover operator is the first operator applied to the population in the reproduction phase. The crossover operates exclusively on the chromosomes in the mating pool. Crossover works by interchanging genes from one or more parent chromosomes. The parent chromosomes are selected with a probability from the mating pool to produce a single chromosome known as the offspring \cite{FamilyGA,HumanPassiveGA,CoactiveFuzzyGA}. 
 
-Crossover works by interchanging genes from one or more parent chromosomes. The parent chromosomes are selected with a probability from the mating pool to produce a single chromosome known as the offspring \cite{FamilyGA,HumanPassiveGA,CoactiveFuzzyGA}. The probability is known as the \emph{crossover probability} and is problem dependent\cite{CompuIntelligenceIntro}.
+The probability is known as the \emph{crossover probability} and is problem dependent\cite{CompuIntelligenceIntro}. By defining a high crossver probability the good genes that form the current population are retained in the next population\cite{CompuIntelligenceIntro}. With good genes being retained more historical information is passed onto the next generation's population\cite{FamilyGA}.
 
-By defining a high crossver probability, good genes form the current population are retained in the next population\cite{CompuIntelligenceIntro}. With good genes being retained more historical information is passed onto the next generations population\cite{FamilyGA}.
+There are a variety of ways in which genes are interchanged between chromosomes in the crossover operation i.e. fixed point crossover, two point crossover, uniform crossover and gaussian crossover\cite{CompuIntelligenceIntro}. All of these crossovers operate on the premise that a byte representation is used for the chromosomes. 
 
-There are a variety of ways in which genes are interchanged between chromosomes in the crossover operation i.e. fixed point crossover, two point crossover, uniform crossover and gaussian crossover\cite{CompuIntelligenceIntro}. 
+With the byte representation, each chromosome is a byte. Each byte is made up of sequence of bits. As discussed previously each chromosome is made out of genes and therefore each bit is a gene\cite{CompuIntelligenceIntro}.
 
-Fixed point crossover operates on binary parents whereby a point is selected in one parent and then all other bits are replaced by the other parents' bits \cite{HumanPassiveGA}. 
+Fixed point crossover operates on binary parents whereby a point is selected in one parent and then all other bits are replaced by the other parents' bits \cite{HumanPassiveGA}. Two point crossover generates two random indices which dictate a certain segment in the one parent to be interchanged with the other parent \cite{ConstrainedGA}. Where a segment consists of a subset of genes from the chromosome. 
 
-Two point crossover generates two random indices which dictate a certain segment in the one parent to be interchanged with the other parent \cite{ConstrainedGA}. Where a segment consists of a subset of genes from the chromosome. 
+The uniform crossover is the most basic of all crossovers since it randomly selects bits from one parent to be replaced by another parent's bits\cite{ParallelGASA,GeostatisticalGA}. Finally, the Gaussian crossover also uses the byte representation. The Gaussian crossover interchanges bits between parents based on a Gaussian distribution \cite{ParallelGASA,GeostatisticalGA}. Depending on the state of the algorithm, crossover operators can also be interchanged or even paired if the algorithm needs better search performance for large or small solution spaces \cite{HetergeneousGA,ParallelGASA}.
 
-With a uniform crossover a chromosome is represented by a byte\cite{CompuIntelligenceIntro}. Each byte is made up of sequence of bits. As discussed each chromosome is made out of genes and therefore in the uniform crossover each bit is a gene\cite{CompuIntelligenceIntro}. The uniform crossover is the most basic of all crossovers since it randomly selects bits from one parent to be replaced by another parent's bits and is used when a large solution space must be search\cite{ParallelGASA,GeostatisticalGA}. 
-
-Finally, the Gaussian crossover also uses the byte representation. The Gaussian crossover interchanges bits between parents based on a Gaussian distribution \cite{ParallelGASA,GeostatisticalGA}. Depending on the state of the algorithm, crossover operators can also be interchanged or even paired if the algorithm needs better search performance for large or small solution spaces \cite{HetergeneousGA,ParallelGASA}.
-
-Caution should be exercised by the crossover operator when selecting chromosomes for reproduction. It is possible for the operator to select the same chromosome twice to be the parent of a single offspring\cite{CompuIntelligenceIntro}. The operator is also at risk of selecting the same chromosome multiple times for reproduction\cite{CompuIntelligenceIntro}. The opertator must therefore incorporate a test to detect unenecessary repeated usage of a chromosome\cite{CompuIntelligenceIntro}.
-
-Finally, it is important to note that there exist strategies for both Gaussian crossover and mutation based operators for use with continuous-valued representations\cite{FundamentalSwarm}.
+Caution should be exercised by the crossover operator when selecting chromosomes for reproduction. It is possible for the operator to select the same chromosome twice to be the parent of a single offspring\cite{CompuIntelligenceIntro}. The operator is also at risk of selecting the same chromosome multiple times for reproduction\cite{CompuIntelligenceIntro}. The opertator must therefore incorporate a test to detect unenecessary repeated usage of a chromosome\cite{CompuIntelligenceIntro}. Finally, it is important to note that there exist strategies for both Gaussian crossover and mutation based operators for use with continuous-valued representations\cite{FundamentalSwarm}.
 
 \subsubsection{Mutation Operator}
-The mutation operator is a probabilistic operator and thus it is applied to an existing individual with a probability referred to as the mutation rate\cite{CompuIntelligenceIntro}. 
+The mutation operator is a probabilistic operator and thus it is applied to an existing individual with a probability referred to as the mutation rate\cite{CompuIntelligenceIntro}. The purpose of the mutation operator is to increase the diversity of the genes of a individual chromosomes\cite{CompuIntelligenceIntro}. By introducing new genes into an individual the diversity of the populations characteristics are increased\cite{CoactiveFuzzyGA,AcceleratingGA,ConstrainedGA}.
 
-The purpose of the mutation operator is to increase the diversity of the genes of a individual chromosomes\cite{CompuIntelligenceIntro}. By introducing new genes into an individual the diversity of the populations characteristics are increased\cite{CoactiveFuzzyGA,AcceleratingGA,ConstrainedGA}.
-
-The mutation operator has no previous information on the chromosome it is mutating; thus it is entirely possible that the mutation may modify the chromosome for the worse \cite{AcceleratingGA}. A worse solution might lead the algorithm out of local optima or lead it down a new path to find the global optima, but this is not always the case \cite{AdaptiveSAGA,FamilyGA,ConstrainedGA}. It is for this reason that it is recommend that the mutation rate be set to a low value to ensure good solutions are not distored too much\cite{CompuIntelligenceIntro}.
+The mutation operator has no previous information on the chromosome it is mutating; thus it is entirely possible that the mutation may modify the chromosome for the worse \cite{AcceleratingGA}. A worse solution might lead the algorithm out of local optima or lead it down a new path to find the global optima, but this is not always the case \cite{AdaptiveSAGA,FamilyGA,ConstrainedGA}. It is for this reason that it is recommended that the mutation rate be set to a low value to ensure good solutions are not distored too much\cite{CompuIntelligenceIntro}.
 
 In a survey done by Engelbrecht\cite{CompuIntelligenceIntro} another mutation operator is discussed. Instead of mutating a small part of randomly selected chromosomes, this operator generates new offspring to be inserted back into the population. The operator randomly generates a new chromosome and then uses any of the previously discussed crossover operators (see page~\pageref{sec:crossover}).
 
-The mutation operator is not always a basic random replacement of genes operation. In research done by Il-kwon Jeong and Ju-jang Lee\cite{AdaptiveSAGA}, a mutation operator is presented that uses the \gls{SA} algorithm to determine the genes that need to be replaced. The \gls{SA} mutation operator generates a new chromosome from which genes are used to replace in the chromosome being mutated \cite{AdaptiveSAGA}.
-
-Addition mutation operators are discussed in Engelbrecht\cite{CompuIntelligenceIntro}
+The mutation operator is not always a basic random replacement of genes operation. In research done by Il-kwon Jeong and Ju-jang Lee\cite{AdaptiveSAGA}, a mutation operator is presented that uses the \gls{SA} algorithm to determine the genes that need to be replaced. The \gls{SA} mutation operator generates a new chromosome from which genes are used to replace in the chromosome being mutated \cite{AdaptiveSAGA}. Addition mutation operators are discussed in Engelbrecht\cite{CompuIntelligenceIntro}.
 \subsubsection{Initial Population Generation}
 Initial population generation is the very first activity that the \gls{GA} performs. Out of this population potential mating candidates are selected based on their fitness, which indicates desirability. The initial population is generated by means of randomisation \cite{SelfAdaptiveGA}. Since the algorithm searches multiple points simultaneously in the search space, it is desirable that the initial population have a wide diversity with regard to the solution it represents \cite{CombinedBranchBoundGA,DistributedHierarchicalGA}. By controlling the initial population generation we can control, to a small degree, the amount of exploration the algorithm does initially\cite{CombinedBranchBoundGA}. Therefore care must be taken in the selection of the particular randomisation scheme that will be used to generate chromosomes for individuals.
 
@@ -539,55 +505,53 @@ The core concepts of the genetic algorithm were introduced in the previous secti
 		\State $pop_n\leftarrow$Initialize population
 		\While{Stopping criteria is not met}
 		\State Evaluate individuals of population with fitness function $f(i)$
-		\State $y_k \leftarrow$ Select parent individuals from population using selection operator
+    \State $\hat{y_k} \leftarrow$ Select parent individuals from population using selection operator
 		\Repeat
-			\For{Each chromosome $g_i$ in $y_{k-1}$}
-				\State $c_i \leftarrow$ calculate crossover porbability for $g_i$
-				\If{$c_i \geq$ Crossover threshold}
-					\State $g_i \leftarrow$ Apply crossover operator to $g_i$
+    \For{Each chromosome $\hat{g_i}$ in $\hat{y_{k-1}}$}
+    \State $\hat{c_i} \leftarrow$ calculate crossover porbability for $\hat{g_i}$
+    \If{$\hat{c_i} \geq$ Crossover threshold}
+    \State $\hat{g_i} \leftarrow$ Apply crossover operator to $\hat{g_i}$
 				\EndIf
-				\State $o_i \leftarrow g_i$
-				\State $m_i\leftarrow$ Calculate Mutation probability for $o_i$
-				\If{$m_i \geq$ Mutation threshold}
-					\State Apply mutation operator to $o_i$
+        \State $\hat{o_i} \leftarrow \hat{g_i}$
+        \State $\hat{m_i}\leftarrow$ Calculate Mutation probability for $\hat{o_i}$
+        \If{$\hat{m_i} \geq$ Mutation threshold}
+        \State Apply mutation operator to $\hat{o_i}$
 				\EndIf
-				\State Add offspring chromosome $o_i$ to $new_{pop}$
+        \State Add offspring chromosome $\hat{o_i}$ to $new_{pop}$
 			\EndFor
 		\Until{$size(new_{pop}) = size(pop_n)$}
 		\State $pop_n \leftarrow$ select new population from $pop_n$ and $new_{pop}$
 		\EndWhile
-		\State $x_i \leftarrow$ Determine best chromosome in $pop_n$
-		\State Return best solution $x_i$
+    \State $\hat{x_i} \leftarrow$ Determine best chromosome in $pop_n$
+    \State Return best solution $\hat{x_i}$
 	\end{algorithmic}
 \end{algorithm}
-The \gls{GA} algorithm is a population-based algorithm and therefore needs to initialise its population. Each individual of the population represents a potential solution. Population initialisation occurs in line 1 of algorithm~\ref{alg:GA}. 
+The \gls{GA} algorithm is a population-based algorithm and therefore needs to initialise its population. Each individual of the population represents a potential solution. Population initialisation occurs in line 1 of algorithm~\ref{alg:GA} on page~\pageref{alg:GA}. 
 
-The amount of individuals in a population to be generated is predefined and is known as the population size. In algorithm~\ref{alg:GA} the population size is represented by the subscript $n$ in $pop_n$, where $n > 0$.
+The amount of individuals in a population to be generated is predefined and is known as the population size. In algorithm~\ref{alg:GA} on page~\pageref{alg:GA} the population size is represented by the subscript $n$ in $pop_n$, where $n > 0$.
 
 Before the algorithm can start \emph{evolving} its population, it first needs to determine each individual in the population's fitness. The fitness of an individual is calculated using a fitness function $f(x_i)$.
 
-After each individual within the initial population has been evaluated, the algorithm is able to start its searching process, which starts at line 3 and ends at line 17 of algorithm~\ref{alg:GA}.
+After each individual within the initial population has been evaluated, the algorithm is able to start its searching process, which starts at line 3 and ends at line 17 of algorithm~\ref{alg:GA} on page~\pageref{alg:GA}.
 
 Since each individual has a fitness value after being evaluated, the selection operator is applied. The selection operator used on line 4 determine which individuals will form part of the parents used to generate offspring for the next population.
 
-Once the selection operator has selected the parent individuals needed for the next population, the algorithm is ready to enter the reproduction phase, which ranges from lines 5 -- 17 of algorithm~\ref{alg:GA}.
+Once the selection operator has selected the parent individuals needed for the next population, the algorithm is ready to enter the reproduction phase, which ranges from lines 5 -- 17 of algorithm~\ref{alg:GA} on page~\pageref{alg:GA}.
 
 In the reproduction phase the crossover and mutation operators are applied probabilisticly. For the crossover operator a crossover probability is calculated on line 7. Depending if the calculated probability satisfies the crossover probability the crossover operator is applied on line 9. Depending on the crossover used, offspring are generated using one or more individuals as parents. The resulting offspring from the crossover operation is assigned to $g_i$.
 
 On line 11 the value of $g_i$ is assigned to the variable $o_i$ which represents the offspring. From lines 7 -- 11 it can be observed that a particular individual does not have to take part in a crossover operation to be carried over to the new population. Thus knowledge gained from the current population is persisted based on the crossover propbability.
 
-The second step of the reproduction phase is where the mutation operator is applied. For each of the offspring a mutation probability is calculated. If the calculated probability for a particular offspring are high enough, the algorithm enters the mutation phase. In the mutation phase an individual is selected and the mutation operator is applied. Application of the mutation operator can be seen to occur in lines 13 -- 15 of algorithm~\ref{alg:GA}.
+The second step of the reproduction phase is where the mutation operator is applied. For each of the offspring a mutation probability is calculated. If the calculated probability for a particular offspring are high enough, the algorithm enters the mutation phase. In the mutation phase an individual is selected and the mutation operator is applied. Application of the mutation operator can be seen to occur in lines 13 -- 15 of algorithm~\ref{alg:GA} on page~\pageref{alg:GA}.
 
 Regardless of whether the offspring has been mutated or not, the resulting offspring are added to the new population. The reproduction phase continually loops, until the new population equals the size of the initial starting population. Once the amount of individuals in the new population has reached the population size $n$, the algorithm moves on to its next iteration.
 
 After the algorithm has completed the reproduction phase the algorithm selects the new population to be used in the next generation. The new population is selected from the current population and the created offspring.
 
-The algorithm continually generates a new population for each generation until a predetermined stopping criterion has been met. Once the criterion has been met, the algorithm selects the individual with the best fitness in the current population as its most optimal solution.
-
-The following section discusses literature where the \gls{GA} has been applied to the \gls{FAP}.
+The algorithm continually generates a new population for each generation until a predetermined stopping criterion has been met. Once the criterion has been met, the algorithm selects the individual with the best fitness in the current population as its most optimal solution. The following section discusses literature where the \gls{GA} has been applied to the \gls{FAP}.
 
 \subsection{Genetic Algorithm on the \gls{FAP}}
-Continuing the trend of the \gls{SA} and \gls{TS} algorithms, the \gls{GA} has also been applied to a wide variety of optimisation problems and has on average obtained good results as can be observed in the following research \cite{GANonConvex,SelfAdaptiveDataMiningGA,AutoComplexMeta}. Due to the success of the \gls{GA} on other difficult problems, it has therefore also been applied to the \gls{FAP}.
+Continuing the trend of the \gls{SA} and \gls{TS} algorithms, the \gls{GA} has also been applied to a wide variety of problems. These problems include: solving nonconvex nonlinear programming problems\cite{GANonConvex}, data mining \cite{SelfAdaptiveDataMiningGA} and auto configuring metaheuristic algorithms for complex combinatorial problems \cite{AutoComplexMeta}.
 
 Colombo and Allen\cite{ProblemDecompMIFAP} have developed a \gls{GA} to be applied on the \gls{FAP}. The authors decomposed the \gls{FAP} into smaller subproblems. On average the solution quality is improved by using the technique but at the expense of more complex and taxing evaluations that have to be performed\cite{ProblemDecompMIFAP}. 
 
@@ -596,7 +560,7 @@ In table~\ref{tab:GA} the results obtained by authors on the \gls{COST} 259 benc
 \centering
 	\begin{tabular}{| c | c | c |}
 	\hline
-	Problem instance & \gls{GA} & \gls{COST} 259 \\ \hline
+	Problem instance & \gls{GA} & Best \gls{COST} 259 \\ \hline
 	Siemens 1 & 2.60 & 2.20 \\ \hline
 	Siemens 2 & 16.34 & 14.280 \\ \hline
 	Siemens 3 & 6.37 & 5.19 \\ \hline
@@ -606,9 +570,7 @@ In table~\ref{tab:GA} the results obtained by authors on the \gls{COST} 259 benc
 \label{tab:GA}
 \end{table}
 
-As per the results in table~\ref{tab:GA} the \gls{GA} produces good results coming close to the best obtained results in the benchmark. 
-
-By critically reasoning about the \gls{GA} if it were applied to the \gls{FAP} in theory, the following disadvantages can be identified:
+As per the results in table~\ref{tab:GA} the \gls{GA} produces good results coming close to the best obtained results in the benchmark. By critically reasoning about the \gls{GA} if it were applied to the \gls{FAP} in theory, the following disadvantages can be identified:
 
 \paragraph{Diversity}
 --- The \gls{GA} continually operates on a set population that is randomly initialised at the beginning of the algorithm. It therefore only has this set of generated genes in the initialised population to therefore evolve successive populations.
@@ -616,7 +578,7 @@ If one disregards mutation, the \gls{GA} is a process by which the optimal combi
 \paragraph{Crossover}
 --- The crossover operation in the \gls{GA} is the only means by which successive populations are generated and can therefore be regarded as the primary means by which the algorithm performs its search. As the crossover is defined in the standard algorithm, certain parts of both parents are copied and combined to form a new individual. With regard to the \gls{FAP}, if each individual represents a frequency plan, the crossover operation would copy certain cells from the two parent plans. This is not desirable, since a single channel within a cell can generate major interference which overshadows the rest of the channels that generate low interference in the cell. Thus, for the \gls{GA} to generate high quality solutions on the \gls{FAP}, the algorithm would be better off utilising a crossover operation which works on individual channels assigned rather than cells. Crossover operation is also a memory and computationally expensive operation since individuals need to be constantly created and values need to be copied to these new individuals from the respective parents.
 \paragraph{Mutation}
---- Mutation is a means by which more diversity is introduced into the chromosomes of the invididuals.  As discussed, the mutation operator introduces new genes to existing chromosome which can lead to an excellent solution being distorted and becoming one of the worst solutions. With regard to the \gls{FAP}, the low probability of mutation is not desirable, as the \gls{FAP} search space is huge and therefore requires constant diversity to be introduced to accurately explore it. A possible good mutation would be one that is slightly more intelligent than the standard mutation operator, which just randomly modifies a selected individual. An intelligent mutation would be one that takes into account the recent history of the individual as well as the history of the population and, based on the collective knowledge alters or \emph{mutates} a particular individual. Another means of applying the mutation operator is to set the mutation rate proprtional to an individuals fitness. By modifying the mutation rate in this manner, mutating good individuals can be avoided.
+--- Mutation is a means by which more diversity is introduced into the chromosomes of the invididuals.  As discussed, the mutation operator introduces new genes to existing chromosome which can lead to an excellent solution being distorted and becoming one of the worst solutions. With regard to the \gls{FAP}, the low probability of mutation is not desirable, as the \gls{FAP} search space is huge and therefore requires constant diversity to be introduced to accurately explore it. A possible good mutation would be one that is slightly more intelligent than the standard mutation operator, which just randomly modifies a selected individual. An intelligent mutation would be one that takes into account the recent history of the individual as well as the history of the population and, based on the collective knowledge alters or \emph{mutates} a particular individual. Each chromosome would therefore be required to keep history of changes made to itself, to allow the mutation operator to take it into account. Another means of applying the mutation operator is to set the mutation rate proprtional to an individuals fitness. By modifying the mutation rate in this manner, mutating good individuals can be avoided.
 \section {Summary}
 In this chapter a description was given of metaheuristic algorithms. What it means for an algorithm to be classified as being of a metaheuristic nature was explained as well as the characteristics these algorithms exhibit were identified.
 
