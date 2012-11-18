@@ -15,24 +15,23 @@
 \contentsline {subsubsection}{Chapter 6}{8}{section*.12}
 \contentsline {subsubsection}{Chapter 7}{8}{section*.13}
 \contentsline {subsubsection}{Chapter 8}{8}{section*.14}
-\contentsline {subsubsection}{Chapter 9}{8}{section*.15}
 \contentsline {chapter}{\numberline {2}Cellular Communication Technology}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{9}{section.2.1}
 \contentsline {section}{\numberline {2.2}GSM Networks}{10}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}A Brief History of GSM Networks}{11}{subsection.2.2.1}
 \contentsline {section}{\numberline {2.3}Topology of a GSM Network}{15}{section.2.3}
-\contentsline {subsubsection}{Mobile Station}{15}{section*.16}
+\contentsline {subsubsection}{Mobile Station}{15}{section*.15}
 \contentsline {subsection}{\numberline {2.3.1}Base Station Subsystem}{17}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Mobile Switching Centre}{20}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Network databases}{22}{subsection.2.3.3}
-\contentsline {paragraph}{Home location register}{22}{section*.17}
-\contentsline {paragraph}{Authentication centre}{22}{section*.18}
-\contentsline {paragraph}{Equipment identity register}{23}{section*.19}
+\contentsline {paragraph}{Home location register}{22}{section*.16}
+\contentsline {paragraph}{Authentication centre}{22}{section*.17}
+\contentsline {paragraph}{Equipment identity register}{23}{section*.18}
 \contentsline {subsection}{\numberline {2.3.4}GSM Network Management Entities}{23}{subsection.2.3.4}
-\contentsline {paragraph}{Operational and Management Centre}{23}{section*.20}
-\contentsline {paragraph}{Network Management Centre}{24}{section*.21}
+\contentsline {paragraph}{Operational and Management Centre}{23}{section*.19}
+\contentsline {paragraph}{Network Management Centre}{24}{section*.20}
 \contentsline {section}{\numberline {2.4}GSM Interfaces}{24}{section.2.4}
-\contentsline {section}{\numberline {2.5}GSM Channels}{25}{section.2.5}
+\contentsline {section}{\numberline {2.5}GSM channels}{25}{section.2.5}
 \contentsline {section}{\numberline {2.6}Handover}{29}{section.2.6}
 \contentsline {section}{\numberline {2.7}Summary}{32}{section.2.7}
 \contentsline {chapter}{\numberline {3}The Frequency Assignment Problem}{35}{chapter.3}
@@ -47,22 +46,22 @@
 \contentsline {subsection}{\numberline {3.6.1}Minimum Order Frequency Assignment Problem}{47}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Minimum Span Frequency Assignment Problem}{47}{subsection.3.6.2}
 \contentsline {subsection}{\numberline {3.6.3}Minimum Interference Frequency Assignment Problem}{48}{subsection.3.6.3}
-\contentsline {section}{\numberline {3.7}\gls {FS-FAP} Mathematical Formulation}{48}{section.3.7}
+\contentsline {section}{\numberline {3.7}FS-FAP Mathematical Formulation}{48}{section.3.7}
 \contentsline {section}{\numberline {3.8}FAP Benchmarks}{50}{section.3.8}
 \contentsline {subsection}{\numberline {3.8.1}Philadelphia Benchmarks}{50}{subsection.3.8.1}
 \contentsline {subsection}{\numberline {3.8.2}CELAR}{51}{subsection.3.8.2}
 \contentsline {subsection}{\numberline {3.8.3}COST 259}{51}{subsection.3.8.3}
-\contentsline {subsubsection}{Siemens1}{52}{section*.22}
-\contentsline {subsubsection}{Siemens2}{52}{section*.23}
-\contentsline {subsubsection}{Siemens3}{53}{section*.24}
-\contentsline {subsubsection}{Siemens4}{53}{section*.25}
+\contentsline {subsubsection}{Siemens1}{52}{section*.21}
+\contentsline {subsubsection}{Siemens2}{52}{section*.22}
+\contentsline {subsubsection}{Siemens3}{53}{section*.23}
+\contentsline {subsubsection}{Siemens4}{53}{section*.24}
 \contentsline {section}{\numberline {3.9}FAP in the Industry}{53}{section.3.9}
 \contentsline {subsection}{\numberline {3.9.1}Satellite Communication}{54}{subsection.3.9.1}
 \contentsline {subsection}{\numberline {3.9.2}Wireless Mesh Networks and Wireless Local Area Networks (WLANs)}{54}{subsection.3.9.2}
 \contentsline {subsection}{\numberline {3.9.3}Military Field Communication}{55}{subsection.3.9.3}
 \contentsline {subsection}{\numberline {3.9.4}Television and Radio Broadcasting}{56}{subsection.3.9.4}
 \contentsline {subsection}{\numberline {3.9.5}Cellular Communication}{56}{subsection.3.9.5}
-\contentsline {section}{\numberline {3.10}Summary}{57}{section.3.10}
+\contentsline {section}{\numberline {3.10}Summary}{56}{section.3.10}
 \contentsline {chapter}{\numberline {4}Metaheuristic Algorithms}{59}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{59}{section.4.1}
 \contentsline {section}{\numberline {4.2}Search Spaces and States}{60}{section.4.2}
@@ -70,40 +69,40 @@
 \contentsline {section}{\numberline {4.4}Tabu Search}{63}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Introduction}{63}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Important Tabu Search Characteristics}{64}{subsection.4.4.2}
-\contentsline {subsubsection}{Initial Solution Generation}{64}{section*.26}
-\contentsline {subsubsection}{Neighbourhood Search}{65}{section*.27}
-\contentsline {subsubsection}{Memory Structures of Tabu Search}{67}{section*.28}
-\contentsline {subsubsection}{Search Phases}{68}{section*.29}
+\contentsline {subsubsection}{Initial Solution Generation}{64}{section*.25}
+\contentsline {subsubsection}{Neighbourhood Search}{64}{section*.26}
+\contentsline {subsubsection}{Memory Structures of Tabu Search}{66}{section*.27}
+\contentsline {subsubsection}{Search Phases}{68}{section*.28}
 \contentsline {subsection}{\numberline {4.4.3}Flow of the algorithm}{69}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Tabu Search on the \gls {FAP}}{71}{subsection.4.4.4}
-\contentsline {paragraph}{Search based on a single solution}{72}{section*.30}
-\contentsline {paragraph}{Neighbourhood generation}{73}{section*.31}
-\contentsline {paragraph}{Tabu lifetime}{73}{section*.32}
+\contentsline {paragraph}{Search based on a single solution}{72}{section*.29}
+\contentsline {paragraph}{Neighbourhood generation}{72}{section*.30}
+\contentsline {paragraph}{Tabu lifetime}{72}{section*.31}
 \contentsline {section}{\numberline {4.5}Simulated Annealing}{73}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Introduction}{73}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Important Simulated Annealing Characteristics}{75}{subsection.4.5.2}
-\contentsline {subsubsection}{Cooling Schedule}{75}{section*.33}
-\contentsline {subsubsection}{Initial Temperature}{77}{section*.34}
-\contentsline {subsubsection}{Move Generation}{77}{section*.35}
-\contentsline {subsubsection}{Algorithm Efficiency}{78}{section*.36}
+\contentsline {subsubsection}{Cooling Schedule}{75}{section*.32}
+\contentsline {subsubsection}{Initial Temperature}{76}{section*.33}
+\contentsline {subsubsection}{Move Generation}{77}{section*.34}
+\contentsline {subsubsection}{Algorithm Efficiency}{78}{section*.35}
 \contentsline {subsection}{\numberline {4.5.3}Flow of the Algorithm}{78}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Simulated Annealing on the \gls {FAP}}{80}{subsection.4.5.4}
-\contentsline {paragraph}{Cooling Schedule}{80}{section*.37}
-\contentsline {paragraph}{Neighbourhood generation}{81}{section*.38}
-\contentsline {paragraph}{Single solution based search}{81}{section*.39}
+\contentsline {subsection}{\numberline {4.5.4}Simulated Annealing on the \gls {FAP}}{79}{subsection.4.5.4}
+\contentsline {paragraph}{Cooling Schedule}{80}{section*.36}
+\contentsline {paragraph}{Neighbourhood generation}{81}{section*.37}
+\contentsline {paragraph}{Single solution based search}{81}{section*.38}
 \contentsline {section}{\numberline {4.6}Genetic Algorithm}{81}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Introduction}{81}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Important Genetic Algorithm Characteristics}{84}{subsection.4.6.2}
-\contentsline {subsubsection}{Selection Operator}{84}{section*.40}
-\contentsline {subsubsection}{Crossover Operator}{85}{section*.41}
-\contentsline {subsubsection}{Mutation Operator}{86}{section*.42}
-\contentsline {subsubsection}{Initial Population Generation}{87}{section*.43}
-\contentsline {subsubsection}{Algorithm Efficiency}{88}{section*.44}
+\contentsline {subsection}{\numberline {4.6.2}Important Genetic Algorithm Characteristics}{83}{subsection.4.6.2}
+\contentsline {subsubsection}{Selection Operator}{84}{section*.39}
+\contentsline {subsubsection}{Crossover Operator}{85}{section*.40}
+\contentsline {subsubsection}{Mutation Operator}{86}{section*.41}
+\contentsline {subsubsection}{Initial Population Generation}{87}{section*.42}
+\contentsline {subsubsection}{Algorithm Efficiency}{87}{section*.43}
 \contentsline {subsection}{\numberline {4.6.3}Flow of the Algorithm}{88}{subsection.4.6.3}
 \contentsline {subsection}{\numberline {4.6.4}Genetic Algorithm on the \gls {FAP}}{91}{subsection.4.6.4}
-\contentsline {paragraph}{Diversity}{91}{section*.45}
-\contentsline {paragraph}{Crossover}{92}{section*.46}
-\contentsline {paragraph}{Mutation}{92}{section*.47}
+\contentsline {paragraph}{Diversity}{91}{section*.44}
+\contentsline {paragraph}{Crossover}{92}{section*.45}
+\contentsline {paragraph}{Mutation}{92}{section*.46}
 \contentsline {section}{\numberline {4.7}Summary}{93}{section.4.7}
 \contentsline {chapter}{\numberline {5}Swarm Intelligence}{95}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{95}{section.5.1}
@@ -111,35 +110,35 @@
 \contentsline {section}{\numberline {5.3}Ant Colony Optimisation (ACO)}{99}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Introduction}{99}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}ACO Characteristics}{102}{subsection.5.3.2}
-\contentsline {subsubsection}{Pheromone Trail}{102}{section*.48}
-\contentsline {subsubsection}{Pheromone Evaporation}{104}{section*.49}
-\contentsline {subsubsection}{State Transition Rules}{105}{section*.50}
-\contentsline {subsubsection}{Pheromone Update}{106}{section*.51}
+\contentsline {subsubsection}{Pheromone Trail}{102}{section*.47}
+\contentsline {subsubsection}{Pheromone Evaporation}{104}{section*.48}
+\contentsline {subsubsection}{State Transition Rules}{105}{section*.49}
+\contentsline {subsubsection}{Pheromone Update}{106}{section*.50}
 \contentsline {subsection}{\numberline {5.3.3}Flow of the Algorithm}{108}{subsection.5.3.3}
 \contentsline {subsection}{\numberline {5.3.4}ACO on the \gls {FAP}}{110}{subsection.5.3.4}
-\contentsline {paragraph}{Memory Usage}{111}{section*.52}
-\contentsline {paragraph}{Building a solution}{111}{section*.53}
-\contentsline {section}{\numberline {5.4}Artificial Bee Colony (ABC) Algorithm}{112}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Introduction}{112}{subsection.5.4.1}
+\contentsline {paragraph}{Memory Usage}{111}{section*.51}
+\contentsline {paragraph}{Building a solution}{111}{section*.52}
+\contentsline {section}{\numberline {5.4}Artificial Bee Colony (ABC) Algorithm}{113}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Introduction}{113}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}ABC Algorithm Characteristics}{116}{subsection.5.4.2}
-\contentsline {subsubsection}{Food Sources}{116}{section*.54}
-\contentsline {subsubsection}{Employed and Onlooker Bees}{117}{section*.55}
-\contentsline {subsubsection}{Scout Bee}{118}{section*.56}
+\contentsline {subsubsection}{Food Sources}{116}{section*.53}
+\contentsline {subsubsection}{Employed and Onlooker Bees}{117}{section*.54}
+\contentsline {subsubsection}{Scout Bee}{118}{section*.55}
 \contentsline {subsection}{\numberline {5.4.3}Flow of the Algorithm}{119}{subsection.5.4.3}
 \contentsline {subsection}{\numberline {5.4.4}ABC algorithm on the \gls {FAP}}{121}{subsection.5.4.4}
-\contentsline {paragraph}{Food source representation}{121}{section*.57}
-\contentsline {paragraph}{Scout bee generation}{122}{section*.58}
-\contentsline {paragraph}{Knowledge sharing}{122}{section*.59}
+\contentsline {paragraph}{Food source representation}{122}{section*.56}
+\contentsline {paragraph}{Scout bee generation}{122}{section*.57}
+\contentsline {paragraph}{Knowledge sharing}{122}{section*.58}
 \contentsline {section}{\numberline {5.5}Particle Swarm Optimisation (PSO)}{123}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Introduction}{123}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}PSO Characteristics}{124}{subsection.5.5.2}
-\contentsline {subsubsection}{The Particle Swarm}{124}{section*.60}
-\contentsline {subsubsection}{Neighbourhood topolgies}{125}{section*.61}
-\contentsline {subsubsection}{Movement of particles}{126}{section*.62}
-\contentsline {subsubsection}{Keeping velocity in check}{129}{section*.63}
-\contentsline {subsection}{\numberline {5.5.3}Flow of the Algorithm}{131}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}PSO on the \gls {FAP}}{133}{subsection.5.5.4}
-\contentsline {section}{\numberline {5.6}Summary}{134}{section.5.6}
+\contentsline {subsubsection}{The Particle Swarm}{125}{section*.59}
+\contentsline {subsubsection}{Neighbourhood topolgies}{126}{section*.60}
+\contentsline {subsubsection}{Movement of particles}{127}{section*.61}
+\contentsline {subsubsection}{Keeping velocity in check}{130}{section*.62}
+\contentsline {subsection}{\numberline {5.5.3}Flow of the Algorithm}{132}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}PSO on the \gls {FAP}}{134}{subsection.5.5.4}
+\contentsline {section}{\numberline {5.6}Summary}{135}{section.5.6}
 \contentsline {part}{II\hspace {1em}Discussion and results of implementing a PSO algorithm on the FAP}{137}{part.2}
 \contentsline {chapter}{\numberline {6}Applying the \gls {PSO} to the \gls {FAP}}{139}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{139}{section.6.1}
@@ -171,16 +170,16 @@
 \contentsline {section}{\numberline {8.3}Research Objective}{185}{section.8.3}
 \contentsline {section}{\numberline {8.4}Chapter Breakdown Revisited}{185}{section.8.4}
 \contentsline {subsection}{\numberline {8.4.1}Part I - Background}{185}{subsection.8.4.1}
-\contentsline {subsubsection}{Chapter 1}{185}{section*.64}
-\contentsline {subsubsection}{Chapter 2}{185}{section*.65}
-\contentsline {subsubsection}{Chapter 3}{186}{section*.66}
-\contentsline {subsubsection}{Chapter 4}{186}{section*.67}
-\contentsline {subsubsection}{Chapter 5}{186}{section*.68}
+\contentsline {subsubsection}{Chapter 1}{185}{section*.63}
+\contentsline {subsubsection}{Chapter 2}{185}{section*.64}
+\contentsline {subsubsection}{Chapter 3}{186}{section*.65}
+\contentsline {subsubsection}{Chapter 4}{186}{section*.66}
+\contentsline {subsubsection}{Chapter 5}{186}{section*.67}
 \contentsline {subsection}{\numberline {8.4.2}Part II - Implementation}{187}{subsection.8.4.2}
-\contentsline {subsubsection}{Chapter 6}{187}{section*.69}
-\contentsline {subsubsection}{Chapter 7}{187}{section*.70}
-\contentsline {subsubsection}{Chapter 8}{187}{section*.71}
+\contentsline {subsubsection}{Chapter 6}{187}{section*.68}
+\contentsline {subsubsection}{Chapter 7}{187}{section*.69}
+\contentsline {subsubsection}{Chapter 8}{187}{section*.70}
 \contentsline {subsection}{\numberline {8.4.3}The Conclusion}{188}{subsection.8.4.3}
 \contentsline {section}{\numberline {8.5}Future Work}{188}{section.8.5}
-\contentsline {chapter}{Acronyms}{193}{section*.72}
-\contentsline {chapter}{Bibliography}{199}{section*.75}
+\contentsline {chapter}{Acronyms}{193}{section*.71}
+\contentsline {chapter}{Bibliography}{199}{section*.74}

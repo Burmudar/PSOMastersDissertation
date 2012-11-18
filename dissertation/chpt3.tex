@@ -13,9 +13,9 @@ Due to the whole spectrum not being available to network operators and only a su
 
 It is not always possible to simply allocate more frequencies to a network even if the network pays the associated fees. The whole commercial spectrum may already have been licensed to various entities. Hence, licensed frequencies are a very valuable and scarce commodity \cite{FAPRAMColouring,FAPInCell}.
 
-The chapter is organised as follows. The first section the follows provides a discussion on NP-Complete problems. In section~\ref{sec:chm} constraint handling mechanisms are presented. Section~\ref{sec:FreqAssignmentTypes} presents an overview of different methods for allocated frequencies. Interference is discussed in depth in section~\ref{sec:Interference}. After the interference discussion a section is presented on the diffirent types of frequencies assignment problems in section~\ref{sec:FAPVariants}. A mathematical formulation of the fixed spectrum frequency assignment problem is presented in section~\ref{sec:FAPMathDef}. Section~\ref{sec:FAPBenchmarks} provides an overview of the different benchmarks used to evaluate frequency assignment problems. After the discussion on the different benchmarks that are available in the domain a section on the where the FAP is encountered in the industrial domain is presented. This chapter conclused with a section that summarises the contents presented.
+The chapter is organised as follows. The first section the follows provides a discussion on NP-Complete problems. In section~\ref{sec:chm} constraint handling mechanisms are presented. Section~\ref{sec:FreqAssignmentTypes} presents an overview of different methods for allocated frequencies. Interference is discussed in depth in section~\ref{sec:Interference}. After the interference discussion a section is presented on the different types of frequencies assignment problems in section~\ref{sec:FAPVariants}. A mathematical formulation of the fixed spectrum frequency assignment problem is presented in section~\ref{sec:FAPMathDef}. Section~\ref{sec:FAPBenchmarks} provides an overview of the different benchmarks used to evaluate frequency assignment problems. After the discussion on the different benchmarks that are available in the domain a section on the where the FAP is encountered in the industrial domain is presented. 
 
-In the next section an overview of what it means when a problem is NP-Complete is given.
+This chapter concluded with a section that summarises the contents presented. In the next section an overview of what it means when a problem is NP-Complete is given.
 
 \section{NP-Complete}
 \label{sec:NPComplete}
@@ -25,7 +25,7 @@ The field of complexity analysis makes a keen distinction between problems that 
 
 A distinction needs to be made between \emph{finding} a possible solution and determining whether a result is a valid solution to an NP problem\cite{AIModernApproach}. Verifying whether some result is indeed a solution to an NP problem is a quick operation\cite{AIModernApproach}. Finding a solution through the use of an algorithm is what polynomial time refers to.
 
-Algorithms that are able to solve problems in polynomial time have worst case running times of $O(n),O(\log n)$ and $O(n^2)$\cite{AIModernApproach}. These class of problems are easy to solve using modern algorithms available today. Problems that can be solved with these kind of running times are classified as being in the P range of complexity problems\cite{AIModernApproach}.
+Algorithms that are able to solve problems in polynomial time have worst case running times of $O(n),O(\log n)$ and $O(n^2)$\cite{AIModernApproach}. These classes of problems are easy to solve using modern algorithms available today. Problems that can be solved with these kind of running times are classified as being in the P range of complexity problems\cite{AIModernApproach}.
 
 Another range of problems consists mostly of problems that cannot be solved in polynomial time\cite{AIModernApproach}. Hence, if an algorithm were to try each and every possible solution, it would take an arbitrarily long time, which cannot be determined, which is why these problems also have the characteristic of being non-deterministic\cite{AIModernApproach}. Problems in this range are referred to as being in the NP range of complexity problems\cite{AIModernApproach}.
 
@@ -40,14 +40,14 @@ Constraints define the boundaries of the search space. Solutions found to be vio
 In research done by Engelbrecht\cite{CompuIntelligenceIntro} the following constraint handling mechanisms are defined.
 \begin{itemize}
 \item{\textbf{Reject infeasible solutions}} --- Solutions that violate the defined constraints are not even considered and rejected.
-\item{\textbf{Penalty function methods}} --- Modifies the objective funciton to add a penalty that is enforced if a solution violates constraints. By adding a penalty the infeasible solutions are discouraged.
+\item{\textbf{Penalty function methods}} --- Modifies the objective function to add a penalty that is enforced if a solution violates constraints. By adding a penalty the infeasible solutions are discouraged.
 \item{\textbf{Convert the constrained problem to an unconstrained problem}} --- By solving the unconstrained problem better solutions can be found although not guaranteed.
-\item{\textbf{Preserving feasibility methods}} --- Candidate solutions are initialised in the search space and satisfy all constraints. These solutions are continuously moved or transformed with specialised operators who ensure that the solutions continue to satisfy all the constraints. The operators ensure that all solutions stay with in the bounded search space.
+\item{\textbf{Preserving feasibility methods}} --- Candidate solutions are initialised in the search space and satisfy all constraints. These solutions are continuously moved or transformed with specialised operators who ensure that the solutions continue to satisfy all the constraints. The operators ensure that all solutions stay within the bounded search space.
 \item{\textbf{Pareto ranking methods}} --- Solutions are ranked based on the severity of their constraint violations.
 \item{\textbf{Repair methods}} --- Operators are used to transform solutions that violate constraints to solutions that adhere to all the constraints and are thus feasible solutions.
 \end{itemize}
 
-Constraint handling methods need to be used when solving constrained problems like the \gls{FAP}. Without these methods, the search for solutions are undirected and solutions that cannot be used are presented as most optimal. Reference to these methods will be made where applicable.
+Constraint handling methods need to be used when solving constrained problems like the \gls{FAP}. Without these methods, the search for solutions is undirected and solutions that cannot be used are presented as most optimal. Reference to these methods will be made where applicable.
 
 In the next section, two methods are discussed that define how frequencies are allocated.
 \section{Frequency Allocation Types}
@@ -65,7 +65,7 @@ There are a variety of \gls{FAP}s in the wireless communication domain but each 
 \subsection{Fixed Frequency/Channel Assignment}
 \gls{FFA} is the process of permanently assigning frequencies to cells \cite{PrinciplesMobileCommunication}. The frequencies assigned are fixed and cannot be changed immediately while the network is active, since the frequencies assigned to the cell form part of a delicate frequency plan designed to keep interference on communication links to a minimum\cite{PrinciplesMobileCommunication}. 
 
-When the channel used by a particular cell for communication is suddenly changed, the cell might start interfering with neighbouring cells' communication links. If the assigned frequencies of the neighbouring cells are close to each other on the frequency spectrum. Hence, if the cell is sectored (refer to section~\ref{def:cellsector} in chapter two for a discussion on cell sectorisation) it can interfere with a minimum of three and up to a maximum of six neighbouring cells\cite{PrinciplesMobileCommunication}.
+When the channel used by a particular cell for communication is suddenly changed, the cell might start interfering with neighbouring cells' communication links. This interference is caused because the assigned frequencies of the neighbouring cells are close to each other on the frequency spectrum. Hence, if the cell is sectored (refer to section~\ref{def:cellsector} in chapter two for a discussion on cell sectorisation) it can interfere with a minimum of three and up to a maximum of six neighbouring cells\cite{PrinciplesMobileCommunication}.
 
 When an \gls{FFA} plan is created, cells are assigned frequencies based on the estimated traffic that cell will be expected to handle during peak network usage. \gls{FFA} is ideally suited for macro cellular networks since the nature of the traffic encountered in such networks has the characteristic of being homogeneous, stationary and predictable \cite{PrinciplesMobileCommunication}. Cellular networks can be classified as being in the macro cellular group of wireless networks.
 
@@ -120,7 +120,7 @@ The impact interference will have on an entity that has established a connection
 
 This separation is defined as the minimum number of cells (which must all use different frequencies) between one cell, which has been allocated a channel, and another cell before a cell is allowed to reuse the same channel that another cell has been allocated\cite{WirelessCommunications,InterferenceOrientatedFAP}. 
 
-The separation can be depicted visually as in figure~\ref{fig:seperationgraph} where $f_a,f_b,f_c,f_d$ are different frequencies that are assigned to the specific cells. The frequency $f_a$ is allowed to be reused since the two cells it is assigned to are separated by three cells (shaded in gray) because the separation for this network was set to three.
+The separation can be depicted visually as in figure~\ref{fig:seperationgraph} where $f_a,f_b,f_c,f_d$ are different frequencies that are assigned to the specific cells. The frequency $f_a$ is allowed to be reused since the two cells it is assigned to are separated by three cells (shaded in grey) because the separation for this network was set to three.
 
 \begin{figure}[H]
 	\begin{centering}
@@ -153,7 +153,7 @@ This calculation can be considered a best guess as it models the environment, we
 
 Using the \gls{SIR} formula cellular networks are able to determine the \gls{BER} users on the network will experience on their connections\cite{WirelessDigitalCommunications}. The \gls{BER} is defined as the probability that a received bit on the connection will be incorrect\cite{MobileWirelessCommunications}. 
 
-As the \gls{BER} increases voice quality on the connection decreases since more bits that are used to describe the voice information are incorrectly received\cite{WirelessDigitalCommunications}. \gls{SIR} and \gls{BER} probability are interlinked. As \gls{SIR} increases, i.e less interference is encountered on the communication link, the probability that bits will be received incorrectly decreases\cite{WirelessDigitalCommunications}.
+As the \gls{BER} increases voice quality on the connection decreases since more bits that are used to describe the voice information are incorrectly received\cite{WirelessDigitalCommunications}. \gls{SIR} and \gls{BER} probability are interlinked. As \gls{SIR} increases, i.e. less interference is encountered on the communication link, the probability that bits will be received incorrectly decreases\cite{WirelessDigitalCommunications}.
 
 Whether precise measurements are taken or the interference is calculated based on the \gls{SIR} formula, the end result of both methods is that all the calculated or measured values are put into a matrix to produce an \emph{interference matrix}\cite{ACOvsEA}.
 
@@ -178,7 +178,7 @@ The first set of hard constraint frequencies is known as \emph{globally blocked 
 
 The second set of hard constraint frequencies is known as \emph{locally blocked frequencies}. These frequencies are not allowed at certain geographic areas but are free for use at any other area\cite{InterferenceOrientatedFAP}. A typical area where certain frequencies will be forbidden to be used is near a country border\cite{InterferenceOrientatedFAP}. The locally blocked frequencies are most likely in use by another network resident to the bordered country.
 
-In this section a description was given of what interference is and what the consequences are of too much interference in a network. This section further elaborated on the circumstances in which interference can occur in a wireless network. In the next section an overview is given of the various different subproblems in the \gls{FAP} domain.
+In this section a description was given of what interference is and what the consequences are of too much interference in a network. This section further elaborated on the circumstances in which interference can occur in a wireless network. In the next section an overview is given of the various different sub problems in the \gls{FAP} domain.
 
 
 \section{Frequency Assignment Problem types}
@@ -348,8 +348,8 @@ Within the \gls{FAP} domain there are two different techniques when assigning fr
 
 An important concept that needs to be understood to comprehend why the \gls{FAP} exists is the concept of interference. This was discussed in depth in section~\ref{sec:Interference}.
 
-The \gls{FAP} is not just one problem but consists of various subproblems that have different goals for the resulting frequency plan. Some problems are concerned with the number of frequencies used, others are more concerned with the amount of interference that is generated on the network.
+The \gls{FAP} is not just one problem but consists of various sub problems that have different goals for the resulting frequency plan. Some problems are concerned with the number of frequencies used, others are more concerned with the amount of interference that is generated on the network.
 
-The various \gls{FAP} subproblems were outlined and discussed in section~\ref{sec:FAPVariants}.
+The various \gls{FAP} sub problems were outlined and discussed in section~\ref{sec:FAPVariants}.
 
 A formal mathematical definition of the \gls{MI-FAP} was also presented. Finally, this chapter concluded with a discussion on the on the different industries where the FAP is encountered and how the problem is handled.

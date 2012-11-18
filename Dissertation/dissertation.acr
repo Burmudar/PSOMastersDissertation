@@ -3,7 +3,7 @@
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossaryentryfield{ABC}{\glsnamefont{ABC}}{artificial bee colony}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{97}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{112\delimR 116}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{113\delimR 116}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{119}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{121\delimR 123}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{135}}}%
@@ -12,7 +12,7 @@
 		\setentrycounter[]{page}\glsnumberformat{97}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{99\delimR 104}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{109\delimR 112}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{115}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{116}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{129}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{135}}}%
 \glossaryentryfield{ACS}{\glsnamefont{ACS}}{ant colony system}{\relax }{\glossaryentrynumbers{\relax 
@@ -32,33 +32,33 @@
 		\setentrycounter[]{page}\glsnumberformat{101\delimN 102}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{104\delimR 108}}}%
 \glossaryentryfield{AUC}{\glsnamefont{AUC}}{authentication centre}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{22\delimN 23}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{22}}}\glsgroupskip
 \glsgroupheading{B}\relax \glsresetentrylist %
 \glossaryentryfield{BCCH}{\glsnamefont{BCCH}}{broadcast control channel}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{27\delimN 28}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{30}}}%
+		\setentrycounter[]{page}\glsnumberformat{27}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{29}}}%
 \glossaryentryfield{BCH}{\glsnamefont{BCH}}{broadcast channel}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{27}}}%
 \glossaryentryfield{BCO}{\glsnamefont{BCO}}{bee colony optimisation}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{115}}}%
 \glossaryentryfield{BER}{\glsnamefont{BER}}{bit error rate}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{44}}}%
+		\setentrycounter[]{page}\glsnumberformat{44\delimN 45}}}%
 \glossaryentryfield{BSC}{\glsnamefont{BSC}}{base station controller}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{25}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{31\delimN 32}}}%
+		\setentrycounter[]{page}\glsnumberformat{30\delimR 32}}}%
 \glossaryentryfield{BSO}{\glsnamefont{BSO}}{bee swarm optimisation}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{115}}}%
 \glossaryentryfield{BSS}{\glsnamefont{BSS}}{base station subsystem}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{21}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{20}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{25}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{28\delimN 29}}}%
 \glossaryentryfield{BTS}{\glsnamefont{BTS}}{base tranceiver stations}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{17\delimR 19}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{24\delimN 25}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{27}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{30\delimR 32}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{29\delimR 32}}}\glsgroupskip
 \glsgroupheading{C}\relax \glsresetentrylist %
 \glossaryentryfield{CAP}{\glsnamefont{CAP}}{channel assignment problem}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{35}}}%
@@ -68,15 +68,15 @@
 		\setentrycounter[]{page}\glsnumberformat{27\delimN 28}}}%
 \glossaryentryfield{CDMA}{\glsnamefont{CDMA}}{code division multiple access}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{13\delimN 14}}}%
-\glossaryentryfield{COST}{\glsnamefont{COST}}{COop{é}ration europ{é}ene dans le domaine de la recherche Scientifique et Technique}{\relax }{\glossaryentrynumbers{\relax 
+\glossaryentryfield{COST}{\glsnamefont{COST}}{COop\'{e}ration europ\'{e}ene dans le domaine de la recherche Scientifique et Technique}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{xiii}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{48}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{51}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{73}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{81}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{92}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{94}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{134}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{71\delimN 72}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{79\delimN 80}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{90}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{92\delimN 93}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{135}}}\glsgroupskip
 \glsgroupheading{D}\relax \glsresetentrylist %
 \glossaryentryfield{D/ACCH}{\glsnamefont{D/ACCH}}{dedicated/associated control channel}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{28}}}%
@@ -96,30 +96,28 @@
 		\setentrycounter[]{page}\glsnumberformat{22\delimN 23}}}%
 \glossaryentryfield{EUCLID}{\glsnamefont{EUCLID}}{EUropean Cooperation on the Long term in the Defense}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{51}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{55}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{56}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %
 \glossaryentryfield{FACCH}{\glsnamefont{FACCH}}{fast associated control channel}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{29}}}%
+		\setentrycounter[]{page}\glsnumberformat{28\delimN 29}}}%
 \glossaryentryfield{FAP}{\glsnamefont{FAP}}{frequency assignment problem}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{v\delimN vi}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{xi}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{xiii}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{10}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{13}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{33}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{35}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{37\delimR 39}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{46}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{48\delimR 50}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{46\delimR 50}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{52\delimR 57}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{64}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{72\delimR 74}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{80\delimR 82}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{92\delimR 94}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{63}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{71\delimN 72}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{79\delimR 81}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{90\delimR 92}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{99}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{110\delimR 112}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{121\delimR 123}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{133\delimR 135}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{134\delimN 135}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{139\delimR 141}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{143}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{147}\delimN 
@@ -127,7 +125,7 @@
 		\setentrycounter[]{page}\glsnumberformat{161\delimR 163}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{165\delimR 170}}}%
 \glossaryentryfield{FCCH}{\glsnamefont{FCCH}}{frequency control channel}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{27\delimN 28}}}%
+		\setentrycounter[]{page}\glsnumberformat{27}}}%
 \glossaryentryfield{FDM}{\glsnamefont{FDM}}{frequency division multiplexing}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{20}}}%
 \glossaryentryfield{FEA}{\glsnamefont{FEA}}{frequency exhaustive assignment}{\relax }{\glossaryentrynumbers{\relax 
@@ -136,23 +134,26 @@
 		\setentrycounter[]{page}\glsnumberformat{39\delimR 41}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{55}}}%
 \glossaryentryfield{FS-FAP}{\glsnamefont{FS-FAP}}{fixed spectrum frequency assignment problem}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{iv}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{47\delimR 49}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{72}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{133\delimN 134}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{48}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{50}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{71}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{134\delimN 135}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{144}}}\glsgroupskip
 \glsgroupheading{G}\relax \glsresetentrylist %
 \glossaryentryfield{GA}{\glsnamefont{GA}}{genetic algorithm}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{82\delimR 86}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{88\delimR 90}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{92\delimR 95}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{81\delimR 84}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{87\delimN 88}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{90\delimN 91}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{93}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{95}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{125}}}%
 \glossaryentryfield{GPRS}{\glsnamefont{GPRS}}{general packet radio system}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{10}}}%
 \glossaryentryfield{gsm}{\glsnamefont{GSM}}{general system for mobile communication}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{10\delimR 15}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{17\delimN 18}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{20\delimR 30}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{20\delimR 27}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{29\delimN 30}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{32\delimN 33}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{51\delimR 53}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{56}}}\glsgroupskip
@@ -161,7 +162,7 @@
 		\setentrycounter[]{page}\glsnumberformat{21\delimR 23}}}%
 \glossaryentryfield{HMT}{\glsnamefont{HMT}}{heuristic manipulation technique}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{xiii}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{72\delimN 73}}}%
+		\setentrycounter[]{page}\glsnumberformat{71}}}%
 \glossaryentryfield{HSCSD}{\glsnamefont{HSCSD}}{high speed circuit switched data}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{10}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
@@ -172,19 +173,19 @@
 		\setentrycounter[]{page}\glsnumberformat{15}}}%
 \glossaryentryfield{ISDN}{\glsnamefont{ISDN}}{integrated service digital network}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{24}}}\glsgroupskip
 \glsgroupheading{L}\relax \glsresetentrylist %
 \glossaryentryfield{LA}{\glsnamefont{LA}}{location area}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{17}}}%
 \glossaryentryfield{LAPDm}{\glsnamefont{LAPDm}}{link access protocol D channel modified}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{25}}}%
+		\setentrycounter[]{page}\glsnumberformat{24}}}%
 \glossaryentryfield{LTE}{\glsnamefont{LTE}}{long term evolution}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{14}}}%
 \glossaryentryfield{LTM}{\glsnamefont{LTM}}{long term memory}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{68\delimN 69}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{67}}}\glsgroupskip
 \glsgroupheading{M}\relax \glsresetentrylist %
 \glossaryentryfield{MI-FAP}{\glsnamefont{MI-FAP}}{minimum interference frequency assignment problem}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{47\delimN 48}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{48}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{57}}}%
 \glossaryentryfield{MMAS}{\glsnamefont{MMAS}}{min-max ant system}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{102}\delimN 
@@ -192,33 +193,32 @@
 \glossaryentryfield{MMS}{\glsnamefont{MMS}}{multimedia message service}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{10}}}%
 \glossaryentryfield{MO-FAP}{\glsnamefont{MO-FAP}}{minimum-order frequency assignment problem}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{46\delimN 47}}}%
+		\setentrycounter[]{page}\glsnumberformat{47}}}%
 \glossaryentryfield{MS}{\glsnamefont{MS}}{mobile station}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{20\delimN 21}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{23}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{27\delimR 33}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{40}}}%
+		\setentrycounter[]{page}\glsnumberformat{23\delimR 33}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{41}}}%
 \glossaryentryfield{MS-FAP}{\glsnamefont{MS-FAP}}{minimum span frequency assignment problem}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{47}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{50}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{133\delimN 134}}}%
+		\setentrycounter[]{page}\glsnumberformat{47\delimN 48}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{51}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{134\delimN 135}}}%
 \glossaryentryfield{MSC}{\glsnamefont{MSC}}{mobile switching centre}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{17}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{21\delimN 22}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{20\delimR 22}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{25}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{29\delimR 32}}}%
+		\setentrycounter[]{page}\glsnumberformat{29}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{31\delimN 32}}}%
 \glossaryentryfield{MTM}{\glsnamefont{MTM}}{medium term memory}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{68\delimN 69}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{67}}}\glsgroupskip
 \glsgroupheading{N}\relax \glsresetentrylist %
 \glossaryentryfield{NCH}{\glsnamefont{NCH}}{notification channel}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{28}}}%
 \glossaryentryfield{NMC}{\glsnamefont{NMC}}{network management centre}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{23\delimN 24}}}%
 \glossaryentryfield{NSS}{\glsnamefont{NSS}}{network switching subsystem}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{21}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{20}}}\glsgroupskip
 \glsgroupheading{O}\relax \glsresetentrylist %
 \glossaryentryfield{OMC}{\glsnamefont{OMC}}{operations and management centre}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{23\delimN 24}}}\glsgroupskip
@@ -228,12 +228,14 @@
 \glossaryentryfield{POS}{\glsnamefont{POS}}{[point of sale}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{15}}}%
 \glossaryentryfield{PRNG}{\glsnamefont{PRNG}}{pseudo random number generator}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{88\delimN 89}}}%
+		\setentrycounter[]{page}\glsnumberformat{87}}}%
 \glossaryentryfield{PSO}{\glsnamefont{PSO}}{particle swarm optimisation}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{vi}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{xi}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{97}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{124\delimR 135}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{124\delimR 127}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{129\delimR 132}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{134\delimN 135}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{139\delimR 141}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{143\delimR 145}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{147}\delimN 
@@ -243,29 +245,29 @@
 		\setentrycounter[]{page}\glsnumberformat{160\delimR 163}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{165\delimR 170}}}%
 \glossaryentryfield{PSTN}{\glsnamefont{PSTN}}{public switching telephone network}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{21\delimN 22}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{21}}}\glsgroupskip
 \glsgroupheading{Q}\relax \glsresetentrylist %
 \glossaryentryfield{QoS}{\glsnamefont{QoS}}{quality of service}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{43}}}%
+		\setentrycounter[]{page}\glsnumberformat{43\delimN 44}}}%
 \glossaryentryfield{QRNG}{\glsnamefont{QRNG}}{quasi random number generator}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{88}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{87}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
 \glossaryentryfield{RACH}{\glsnamefont{RACH}}{random access channel}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{28}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{SA}{\glsnamefont{SA}}{simulated annealing}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{74\delimR 82}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{84}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{88}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{92}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{94}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{73\delimR 81}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{83}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{86}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{90}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{93}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{97}}}%
 \glossaryentryfield{SACCH}{\glsnamefont{SACCH}}{slow associated control channel}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{29}}}%
+		\setentrycounter[]{page}\glsnumberformat{28}}}%
 \glossaryentryfield{SACO}{\glsnamefont{SACO}}{simple ant colony optimisation}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{101}}}%
 \glossaryentryfield{SCH}{\glsnamefont{SCH}}{sychronisation channel}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{27\delimN 28}}}%
+		\setentrycounter[]{page}\glsnumberformat{27}}}%
 \glossaryentryfield{SDCCH}{\glsnamefont{SDCCH}}{stand-alone dedicated control channel}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{28\delimN 29}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
@@ -275,34 +277,35 @@
 		\setentrycounter[]{page}\glsnumberformat{44}}}%
 \glossaryentryfield{SIR}{\glsnamefont{SIR}}{signal-to-noise ratio}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{12\delimN 13}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{43\delimN 44}}}%
+		\setentrycounter[]{page}\glsnumberformat{44\delimN 45}}}%
 \glossaryentryfield{SMS}{\glsnamefont{SMS}}{short message service}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{10}}}%
+		\setentrycounter[]{page}\glsnumberformat{10}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{21}}}%
 \glossaryentryfield{SRES}{\glsnamefont{SRES}}{signed response}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{23}}}%
+		\setentrycounter[]{page}\glsnumberformat{22}}}%
 \glossaryentryfield{STM}{\glsnamefont{STM}}{short term memory}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{68}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{67}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossaryentryfield{TCH}{\glsnamefont{TCH}}{traffic channel}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{27\delimR 29}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{26}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{28}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{31}}}%
 \glossaryentryfield{TDM}{\glsnamefont{TDM}}{time division multiplexing}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{20}}}%
 \glossaryentryfield{TDMA}{\glsnamefont{TDMA}}{time division multiple access}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{11}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{25\delimN 26}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{28}}}%
+		\setentrycounter[]{page}\glsnumberformat{24}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{26\delimN 27}}}%
 \glossaryentryfield{TRX}{\glsnamefont{TRX}}{transceiver}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{19\delimN 20}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{20}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{35}}}%
 \glossaryentryfield{TS}{\glsnamefont{TS}}{tabu search}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{xiii}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{64\delimR 74}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{76}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{79\delimR 82}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{84}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{92}\delimN 
-		\setentrycounter[]{page}\glsnumberformat{94}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{63\delimR 74}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{78\delimR 81}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{83}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{90}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{93}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{97}\delimN 
 		\setentrycounter[]{page}\glsnumberformat{166}}}\glsgroupskip
 \glsgroupheading{U}\relax \glsresetentrylist %
