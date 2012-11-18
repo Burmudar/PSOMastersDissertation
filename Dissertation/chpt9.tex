@@ -1,7 +1,7 @@
 \chapter{Conclusion}
 \label{chpt:conclusion}
 \section{Introduction}
-The aim of this dissertation was to develop a modern artificial intelligence optimisation algorithm which would be applied to a problem in the cellular technology domain. This aim was achieved: an algorithm was developed based on the standard PSO algorithm which was then applied to operate on the FAP. 
+The aim of this dissertation was to develop a modern artificial intelligence optimisation algorithm, which would be applied to a problem in the cellular technology domain. This aim was achieved: an algorithm was developed based on the standard \gls{PSO} algorithm which was then applied to operate on the FAP. 
 
 In current research no similar PSO algorithm to date has been presented that has been applied to the FS-FAP using interference as a performance measurement. In chapter~\ref{chpt:psoapplicationFAP} the innovation and new techniques that made it possible for an algorithm based on the PSO to operate in the FS-FAP domain were discussed.
 
@@ -33,17 +33,17 @@ This chapter provided an introduction to the research as well as a broad overvie
 \subsubsection{Chapter 2}
 In this chapter a broad discussion was given on modern cellular technology, specifically the GSM cellular network technology. A brief history on how GSM was developed to be the most widely used cellular technology in use today was presented in section \ref{sec:gsmhistory}. This was followed by various GSM architecture entities.
 
-A broad overview followed in section \ref{sec:gsminterfaces} on the various communication interfaces used between the various GSM entities to communicate with each other. The different GSM channels which are used on the interfaces to communicate information were covered.
+A broad overview followed in section \ref{sec:gsminterfaces} on the various communication interfaces used between the various GSM entities to communicate with each other. The different GSM channels that are used on the interfaces to communicate information were covered.
 
-The chapter concluded with the handover process which is used to allow an MS device to move freely geographically within the network. 
+The chapter concluded with the handover process, which is used to allow an MS device to move freely geographically within the network. 
 \subsubsection{Chapter 3}
 The problem defined in this dissertation is the frequency assignment problem (FAP). The problem where the problem was categorised as being part of the set of NP-Complete problems. The NP-Complete nature of the problem is an important concept to understand.
 
 Within the FAP domain there exists are different techniques when assigning frequencies, discussed in section \ref{sec:FreqAssignmentTypes}. 
 
-The FAP is not just one problem but consists of various subproblems that have different goals for the resulting frequency plan. Some problems are concerned with the number of frequencies used, others are more concerned with the amount of interference that is generated on the network because of the assignment. The various FAP subproblems were outlined in section~\ref{sec:FAPVariants}.
+The FAP is not just one problem but consists of various sub problems that have different goals for the resulting frequency plan. Some problems are concerned with the number of frequencies used, others are more concerned with the amount of interference that is generated on the network because of the assignment. The various FAP sub problems were outlined in section~\ref{sec:FAPVariants}.
 
-A formal mathematical definition of the MI-FAP was also given. Finally, the chapter concluded with the various benchmark problems which are used to test the viability of frequency assignment algorithms.
+A formal mathematical definition of the MI-FAP was also given. Finally, the chapter concluded with the various benchmark problems that are used to test the viability of frequency assignment algorithms.
 \subsubsection{Chapter 4}
 In this chapter a definition was given of what it means for an algorithm to be classified as metaheuristic and also what characteristics these algorithms must exhibit.
 
@@ -62,7 +62,7 @@ To get a better idea of how the particle swarm optimisation (PSO) algorithm oper
 \subsubsection{Chapter 7}
 This chapter contained an algorithm based on the standard PSO algorithm to operate on the FAP encountered in cellular networks.
 
-All the various problems as well as how they were solved during the development of the main algorithm of this dissertation were described. For each new or old technique used by the algorithm pseudocode was given for a better idea of how the algorithm uses it.
+All the various problems as well as how they were solved during the development of the main algorithm of this dissertation were described. For each new or old technique used by the algorithm pseudo code was given for a better idea of how the algorithm uses it.
 
 The chapter concluded with small additions made to the algorithm to improve performance and, most important of all, improve solution quality.
 \subsubsection{Chapter 8}
@@ -74,9 +74,9 @@ The additional techniques were mainly concerned with how the gbest for the swarm
 
 The FAP PSO algorithm uses random collision resolution when a particle position is already in the tabu list. The random collision resolution works by randomly selecting a new channel until it is found not to be tabu. This procedure is very similar to the mutation operation used by the GA algorithm.
 
-In chapter~\ref{chpt:results} the results of the FAP PSO algorithm applied to the COST 259 Siemens benchmark were discussed. By critically evaluating the results one can conclude that the best performing PSO variant is the particular algorithm using the first developed velocity method, which utilises cells to build the global best. The results achieved by this variant of the algorithm greatly outweigh those of the other algorithms, but when compared with the best achieved in the literature the algorithm still has some way to go.
+In chapter~\ref{chpt:results} the results of the FAP PSO algorithm applied to the COST 259 Siemens benchmark were discussed. By critically evaluating the results one can conclude that the best performing PSO variant is the particular algorithm using the first developed velocity method, which utilises cells to build the global best. The results achieved by this variant of the algorithm greatly outweigh those of the other algorithms, but when compared with the best-achieved in the literature the algorithm still has some way to go.
 
-Being so far off the best achieved results in the literature is not surprising, as applying the PSO to the FS-FAP and to the COST 259 benchmark is a first. Nonetheless this research has shown that it is indeed viable to apply the PSO to the FS-FAP, and with more research it is possible that the PSO algorithm might be able to either come near the best presented results or actually improve upon them.
+Being so far off the best-achieved results in the literature is not surprising, as applying the PSO to the FS-FAP and to the COST 259 benchmark is a first. Nonetheless this research has shown that it is indeed viable to apply the PSO to the FS-FAP, and with more research it is possible that the PSO algorithm might be able to either come near the best-presented results or actually improve upon them.
 
 \section{Future Work}
 Most of the techniques developed for the FAP PSO, aim to stay true to the standard PSO algorithm. The next step is to hybridise the FAP PSO algorithm. A good candidate for hybridisation would be the GA as the algorithm naturally ``purifies'' results in finding the right genes that make up a good possible solution.

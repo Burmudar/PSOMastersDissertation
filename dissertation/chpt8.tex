@@ -23,7 +23,7 @@ For each benchmark, 12 results are presented. The following changes were made to
 \begin{itemize}
 \item The two velocity methods that were developed for the PSO were tested.
 \item Each velocity method also used the three different global best mechanisms that were developed.
-\item The swarm size was set to 20, 50, 100, 500.
+\item The swarm size was set to 20, 50, 100 and 500.
 \item Inertia was set to 0.5.
 \item Cognitive coefficient was set to 0.4.
 \item Social coefficient was set to 0.5.
@@ -208,7 +208,7 @@ Table~\ref{tab:siem3m1} and table~\ref{tab:siem3m2} below present the results ob
 \label{tab:siem4m2}
 \end{table}
 \subsection{Comparison with best results in COST259}
-Below the best results achieved by the FAP PSO is compared to the best results obtained with each siemens problem as published on the FAP website\cite{FAPWeb}.
+Below the best results achieved by the FAP PSO is compared to the best results obtained with each Siemens problem as published on the FAP website\cite{FAPWeb}.
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c | c | c |}
@@ -226,7 +226,7 @@ Below the best results achieved by the FAP PSO is compared to the best results o
 In this section the effects of the changes made to the FAP PSO algorithm in terms of the results is discussed. 
 
 Firstly, the effect of the two developed velocity methods in terms of the results is described. In section~\ref{sec:diffglobalschemes} the three global schemes that are used by the algorithm are discussed. Finally this section concludes with the effect of a larger population size on solution quality rather than a small population.
-\subsection{Velocity Method 1 vs Method 2}
+\subsection{Velocity Method 1 vs. Method 2}
 The FAP PSO algorithm is able to utilise two different velocity methods to move the swarm around in the FAP space. The algorithms that implement these two methods were presented in section~\ref{sec:velocityFAP} and section~\ref{sec:velocityFAP2}.
 
 By analysing the results, it becomes abundantly clear that velocity method 1 is by far the superior method for moving in the problem space. In each of the results, when comparing end fitness values produced by algorithm variants that use method 1 one can easily come to the conclusion that method 1 performs better than method 2.
@@ -235,9 +235,9 @@ As discussed in chapter~\ref{chpt:psoapplicationFAP}, method 1 uses a stage-base
 
 Method 1 works by moving the whole swarm through to each stage before applying the next stage in the velocity equation. Thus after each stage, the whole swarm is at the same phase of the equation which keeps the swarm structured.
 
-With method 2, the whole velocity equation is applied to whatever value is exposed to be operated on. Thus when method 2 moves a particle the frequency plan is moved piece by piece to some destination in the problem space.
+With method 2, the whole velocity equation is applied to whatever value is supposed to be operated on. Thus when method 2 moves a particle the frequency plan is moved piece by piece to some destination in the problem space.
 
-By applying the velocity equation it is difficult to control the algorithm search process. With the FAP PSO control is necessary as there are various constraints which must not only be avoided but also adhered to for the generated plan to be usable. With method 2 adding domain knowledge is difficult, since after the velocity equation has been calculated the particle is very close to being moved to a new position. All that still needs to be done, before a particle is moved, is to apply inertia, which means there is a little check that can be done to ensure that all the frequency values are within acceptable bounds.
+By applying the velocity equation it is difficult to control the algorithm search process. With the FAP PSO control is necessary as there are various constraints that must not only be avoided but also adhered to for the generated plan to be usable. With method 2 adding domain knowledge is difficult, since after the velocity equation has been calculated the particle is very close to being moved to a new position. All that still needs to be done, before a particle is moved, is to apply inertia, which means there is a little check that can be done to ensure that all the frequency values are within acceptable bounds.
 
 By breaking the velocity equation up into smaller parts (stages) using method 1 the algorithm is able to direct and ensure that the swarm is moving in the general direction of valid frequency allocations.
 
@@ -265,9 +265,9 @@ By analysing the results produced by the various FAP PSO algorithms, it can be c
 
 As discussed the build from cells scheme uses cells to build a gbest, and thus each cell stores the interference that the frequencies allocated to its transceivers generate by interfering with other cells. As a cell interferes with other cells, the interference generated is added to the cell causing the interference.
 
-After the PSO has calculated the fitness of all positions, each cell will contain the interference it personally has caused throughout the network to other cells. A cell with low interference means the frequencies that have been allocated to this particular cell are the best combination which causes the least amount of interference. Therefore, with the build gbest from cells scheme, the algorithm is able to make informed choices when selecting a cell to be included in the global best. 
+After the PSO has calculated the fitness of all positions, each cell will contain the interference it personally has caused throughout the network to other cells. A cell with low interference means the frequencies that have been allocated to this particular cell are the best combination that causes the least amount of interference. Therefore, with the build gbest from cells scheme, the algorithm is able to make informed choices when selecting a cell to be included in the global best. 
 \subsection{Population Size}
-As discussed in chapter~\ref{chpt:swarm} the population parameter of the PSO is a sensitive parameter. For problems with big search spaces, it is better to have a large population. A large population increases diversity, meaning more particles occupy different positions in the problem space and hence the space is better explored, which internally increases the likelyhood of finding a better solution. Thus, in the results the population size was also varied.
+As discussed in chapter~\ref{chpt:swarm} the population parameter of the PSO is a sensitive parameter. For problems with big search spaces, it is better to have a large population. A large population increases diversity, meaning more particles occupy different positions in the problem space and hence the space is better explored, which internally increases the likelihood of finding a better solution. Thus, in the results the population size was also varied.
 
 In the results using a larger population did not significantly improve the possible solutions. In only one benchmark, namely Siemens2, the algorithm was able to produce a better possible solution than an algorithm that used a lower population size. In Siemens1, Siemens3 and Siemens4 the algorithm using a lower population was able to produce the best overall results.
 
