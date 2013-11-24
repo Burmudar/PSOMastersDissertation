@@ -1,6 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dissertation.aux
+A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: chpt1.aux
 A level-1 auxiliary file: chpt2.aux
 A level-1 auxiliary file: chpt3.aux
@@ -12,45 +13,45 @@ A level-1 auxiliary file: chpt9.aux
 The style file: plain.bst
 Database file #1: ReferenceDB.bib
 Warning--there's a number but no volume in FAPInCell
-You've used 136 entries,
+You've used 135 entries,
             2118 wiz_defined-function locations,
-            1393 strings with 30875 characters,
-and the built_in function-call counts, 50901 in all, are:
-= -- 5133
-> -- 2031
-< -- 54
-+ -- 841
-- -- 660
-* -- 3516
-:= -- 7971
-add.period$ -- 429
-call.type$ -- 136
-change.case$ -- 724
+            1388 strings with 30537 characters,
+and the built_in function-call counts, 50563 in all, are:
+= -- 5098
+> -- 2018
+< -- 55
++ -- 836
+- -- 656
+* -- 3494
+:= -- 7914
+add.period$ -- 425
+call.type$ -- 135
+change.case$ -- 718
 chr.to.int$ -- 0
-cite$ -- 137
-duplicate$ -- 2056
-empty$ -- 4164
-format.name$ -- 660
-if$ -- 11084
+cite$ -- 136
+duplicate$ -- 2046
+empty$ -- 4135
+format.name$ -- 656
+if$ -- 11012
 int.to.chr$ -- 0
-int.to.str$ -- 136
-missing$ -- 146
-newline$ -- 684
-num.names$ -- 274
-pop$ -- 768
+int.to.str$ -- 135
+missing$ -- 145
+newline$ -- 678
+num.names$ -- 272
+pop$ -- 765
 preamble$ -- 1
-purify$ -- 601
+purify$ -- 597
 quote$ -- 0
-skip$ -- 1558
+skip$ -- 1550
 stack$ -- 0
-substring$ -- 3832
+substring$ -- 3800
 swap$ -- 599
-text.length$ -- 54
+text.length$ -- 55
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 508
+type$ -- 504
 warning$ -- 1
-while$ -- 473
-width$ -- 139
-write$ -- 1531
+while$ -- 470
+width$ -- 138
+write$ -- 1519
 (There was 1 warning)

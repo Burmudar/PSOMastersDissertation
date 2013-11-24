@@ -10,19 +10,20 @@ At the start of the dissertation a series of research questions were outlined. T
 
 Six questions were identified in total. Each original question will now be listed together with a short discussion on how the question was answered and to which chapter it is related to.
 \begin{itemize}
-\item \textbf{Question 1} --- \emph{What is cellular technology, how was it got developed and what improvements have been made since its initial development?} This question was answered in chapter 2, which provided the history of cellular technology and also highlighted improvements that have been made since the inception of cellular networks.
-\item \textbf{Question 2} --- \emph{What is the architecture behind a modern cellular network, how do the various hardware entities within a network communicate with each other and how is a communicational link established between two users of the network?} This question was answered in chapter 2 where the architecture of a modern-day cellular network was outlined and discussed in depth. Each entity used by the network to facilitate communication was identified and discussed in detail.
+\item \textbf{Question 1} --- \emph{What is cellular technology and what components are involved when devices communicate in the network ?} This question was answered in chapter 2, which provided the history of cellular technology and also highlighted improvements that have been made since the inception of cellular networks.
+\item \textbf{Question 2} --- \emph{What factors influence the quality of communication and what is interference ?} This question was answered in chapter 2 where the architecture of a modern-day cellular network was outlined and discussed in depth. Each entity used by the network to facilitate communication was identified and discussed in detail.
 \item \textbf{Question 3} --- \emph{What exactly is the frequency problem and how does it affect modern wireless communication? } This question was answered in chapter 3, which contains a description of the general problem of the frequency assignment problem as well as exactly what happens in a cellular network for this problem to occur.
-\item \textbf{Question 4} --- \emph{What variants of the frequency problem exist and which are most applicable to cellular networks?} The variants that currently exist in the problem domain were listed in chapter 3, together with their respective history and what domain they affect. The particular variant concentrated on in this dissertation concentrated on was formally stated. 
-\item \textbf{Question 5} --- \emph{What are the most popular optimisation algorithms and what characteristics make them unique?} This question was answered in two chapters namely chapters 4 and 5. In these chapters the most popular and modern optimisation algorithms were evaluated.
-\item \textbf{Question 6} --- \emph{With algorithms that achieved success in their respective optimisation problems, what particular technique is used by the algorithms that them it to achieve better performance?} Chapters 4 and 5 covered modern optimisation algorithms, which were also evaluated. Exactly what made the algorithm unique and allowed it to achieve success in the domain it was applied to was also dealt with
+\item \textbf{Question 4} --- \emph{What are the most popular optimisation algorithms and what characteristics make them unique?} This question was answered in two chapters namely chapters 4 and 5. In these chapters the most popular and modern optimisation algorithms were evaluated.
+\item \textbf{Question 6} --- \emph{With regard to particle swarms, how can a particle best be represented as a frequency plan ?} Chapter 6 described in detail how frequency plan is represented as a particle in the algorithm.
+\item \textbf{Question 7} --- \emph{With regard to particle swarms, how can one frequency plan be moved towards another frequency plan ?} Chapter 6 also describes the two methods that were developed to facilitate moving one frequency plan to another.
+\item \textbf{Question 8} --- \emph{With regard to particle swarms, how can particles be prevented from using forbidden frequencies when they move towards a particular plan ?} Finally, chapter 6 also provided detail on exactly how when moving particles the algorithm avoids assigning invalid or forbidden frequencies.
 \end{itemize}
 
 \section{Research Objective}
 As stated in the introduction, the objective of this research was to determine whether it is viable and possible to apply a modern-day swarm-based algorithm to the frequency assignment problem. 
+The question therefore is whether this research objective was achieved.
 
-The question therefore is whether this research objective was achieved. The answer is yes. An algorithm based on the PSO algorithm was presented that operated on the frequency assignment problem. The only part still left is the viability of applying this algorithm to modern cellular networks.
-
+The answer is yes. An algorithm based on the PSO algorithm was presented that operated on the frequency assignment problem. The only part still left is the viability of applying this algorithm to modern cellular networks.
 Before the viability analysis is presented, the chapter breakdown in the introduction is revisited in the next section.
 
 \section{Chapter Breakdown Revisited}
@@ -34,21 +35,17 @@ This chapter provided an introduction to the research as well as a broad overvie
 In this chapter a broad discussion was given on modern cellular technology, specifically the GSM cellular network technology. A brief history on how GSM was developed to be the most widely used cellular technology in use today was presented in section \ref{sec:gsmhistory}. This was followed by various GSM architecture entities.
 
 A broad overview followed in section \ref{sec:gsminterfaces} on the various communication interfaces used between the various GSM entities to communicate with each other. The different GSM channels that are used on the interfaces to communicate information were covered.
-
 The chapter concluded with the handover process, which is used to allow an MS device to move freely geographically within the network. 
 \subsubsection{Chapter 3}
-The problem defined in this dissertation is the frequency assignment problem (FAP). The problem where the problem was categorised as being part of the set of NP-Complete problems. The NP-Complete nature of the problem is an important concept to understand.
+The problem defined in this dissertation is the frequency assignment problem (FAP). The problem was categorised as being part of the set of NP-Complete problems. The NP-Complete nature of the problem is an important concept to understand.
 
-Within the FAP domain there exists are different techniques when assigning frequencies, discussed in section \ref{sec:FreqAssignmentTypes}. 
-
+Within the FAP domain there are different techniques when assigning frequencies, discussed in section \ref{sec:FreqAssignmentTypes}.
 The FAP is not just one problem but consists of various sub problems that have different goals for the resulting frequency plan. Some problems are concerned with the number of frequencies used, others are more concerned with the amount of interference that is generated on the network because of the assignment. The various FAP sub problems were outlined in section~\ref{sec:FAPVariants}.
 
 A formal mathematical definition of the MI-FAP was also given. Finally, the chapter concluded with the various benchmark problems that are used to test the viability of frequency assignment algorithms.
 \subsubsection{Chapter 4}
 In this chapter a definition was given of what it means for an algorithm to be classified as metaheuristic and also what characteristics these algorithms must exhibit.
-
 Three metaheuristic algorithms were discussed in this chapter. Each algorithm was accompanied by a flow chart depicting the general flow of the algorithm. How the algorithm works as well as the various characteristics that make the algorithm unique were described.
-
 For each algorithm, a brief overview of literature using the particular algorithm was given as well as some of the disadvantages or challenges faced when applying the particular algorithm to the FAP.
 
 \subsubsection{Chapter 5}
@@ -57,16 +54,11 @@ In this chapter a discussion was presented on three swarm intelligence algorithm
 Each algorithm was analysed in detail to identify its strengths and the techniques it uses to achieve good results. Finally the algorithm was critically evaluated in the terms of being applied to the FAP.
 \subsection{Part II - Implementation}
 \subsubsection{Chapter 6}
-In this chapter a series of mathematical optimisation problems were presented. Each problem was mathematically formulated as well as categorised as to whether the particular problem was multimodal and separable.
-To get a better idea of how the particle swarm optimisation (PSO) algorithm operates and performs, two PSO algorithms were developed. Finally, this chapter concluded with the results obtained by the algorithms.
-\subsubsection{Chapter 7}
 This chapter contained an algorithm based on the standard PSO algorithm to operate on the FAP encountered in cellular networks.
-
 All the various problems as well as how they were solved during the development of the main algorithm of this dissertation were described. For each new or old technique used by the algorithm pseudo code was given for a better idea of how the algorithm uses it.
-
 The chapter concluded with small additions made to the algorithm to improve performance and, most important of all, improve solution quality.
-\subsubsection{Chapter 8}
-In this chapter results produced by the algorithm discussed in chapter~\ref{chpt:psoapplicationFAP} were presented. The FAP PSO algorithm was applied to four COST 259 benchmarks namely Siemens1, Siemens2, Siemens3 and Siemens4. These four benchmarks were discussed in detail in chapter~\ref{chpt:fap}. For each of the benchmarks, 12 different variants of the FAP PSO algorithm were tested. Each variant used a different velocity function, global best selection scheme or population size. The chapter concluded with a critical analysis of each of the different algorithms developed for this dissertation to enable the PSO to operate in the FAP space.
+\subsubsection{Chapter 7}
+In this chapter results produced by the algorithm (discussed in chapter~\ref{chpt:psoapplicationFAP}) were presented. The FAP PSO algorithm was applied to four COST 259 benchmarks namely Siemens1, Siemens2, Siemens3 and Siemens4. These four benchmarks were discussed in detail in chapter~\ref{chpt:fap}. For each of the benchmarks, 12 different variants of the FAP PSO algorithm were tested. Each variant used a different velocity function, global best selection scheme or population size. The chapter concluded with a critical analysis of each of the different algorithms developed for this dissertation to enable the PSO to operate in the FAP space.
 \subsection{The Conclusion}
 In chapter~\ref{chpt:psoapplicationFAP} new velocity methods were created to enable the PSO swarm to move around in the problem space. To further improve the performance of the PSO additional techniques were developed.
 
@@ -78,6 +70,14 @@ In chapter~\ref{chpt:results} the results of the FAP PSO algorithm applied to th
 
 Being so far off the best-achieved results in the literature is not surprising, as applying the PSO to the FS-FAP and to the COST 259 benchmark is a first. Nonetheless this research has shown that it is indeed viable to apply the PSO to the FS-FAP, and with more research it is possible that the PSO algorithm might be able to either come near the best-presented results or actually improve upon them.
 
+\section{Difficulties faced}
+In the development of the PSO FAP algorithm a few challenges were faced. First and foremost there is no formal definition of the COST 259 fitness function. By just blindly summing all the interference values the calculated value will be wrong. One way to verify whether the interference calculation is corrected is to download one of the assignment plans that have been submitted. Each plan defines the total interference that will be generated by applying the plan. 
+
+The key in calculating the right interference value with the COST 259 benchmark is to notice that a minimum tolerable interference value is defined in each and every problem. Therefore, if the generated interference is either less than or equal to this minimum value, the interference is tolerable and can be safely ignored.
+
+Another difficulty that was faced was improving the efficiency of the algorithm. By using the parallel extensions framework in .Net 4 the algorithm uses all cores available, but at the expense of potential expensive context switching. Context switching especially becomes expensive when large populations are used as values need to be moved in and out of a cores cache as the threads move from core to core based on how they are scheduled.
+
+In this section some of the difficulties that were encountered during the development of the FAP were discussed. In the following section a overview of the potential future work based on this study is presented.
 \section{Future Work}
 Most of the techniques developed for the FAP PSO, aim to stay true to the standard PSO algorithm. The next step is to hybridise the FAP PSO algorithm. A good candidate for hybridisation would be the GA as the algorithm naturally ``purifies'' results in finding the right genes that make up a good possible solution.
 
@@ -87,7 +87,7 @@ The second method takes a swarm of a certain iteration and then mates all the pa
 
 Another point of interest is to disregard the PSO and rather try and produce an ABC algorithm on the FS-FAP. As mentioned, the ABC algorithm was not chosen for this research, since it is new and has not been applied to a wide variety of problems. 
 
-By using some of the techniques developed in this research for instance the selection schemes, a viable ABC algorithm could be developed. The ABC algorithm is not that specific as to how new solutions are generated, as with the PSO which relies on vector mathematics, which allows an algorithm designer considerably more freedom.
+By using the techniques developed in this research for instance the selection schemes, a viable ABC algorithm could be developed. The ABC algorithm is not that specific as to how new solutions are generated, as with the PSO which relies on vector mathematics, which allows an algorithm designer considerably more freedom.
 
 
 

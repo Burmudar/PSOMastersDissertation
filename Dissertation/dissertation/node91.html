@@ -1,6 +1,0 @@
-
-<H4><A NAME="SECTION04454010000000000000">
-Cooling Schedule</A>
-</H4>
---- Depending on the cooling schedule selected, the algorithm might converge too quickly. As discussed previously the cooling schedule reduces the temperature. The temperature plays a large part in the determination of whether a particular solution will be moved to or not in an iteration. Thus early on the algorithm will explore a lot more (diversification) and later on will exploit more (intensification). In the <#2839#>FAP<#2839#>, the algorithm must not only be able to explore and exploit, but also be able to return to an exploration phase if need be.
-As the temperature becomes colder the <#2840#>SA<#2840#> algorithm exploits more and therefore will not easily move to a worse off solution. In the <#2841#>FAP<#2841#>, it might be desirable to rather move a worse off solution later on, as the particular current solution is a local minimum and yields bad neighbours as potential next solutions. With the cooling schedule this is simply not possible, unless the temperature and schedule are reset. Resetting the temperature and schedule is not ideal, since the algorithm keeps no history and might risk making the same faults as before the reset.

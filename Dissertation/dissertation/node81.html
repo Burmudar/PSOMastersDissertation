@@ -1,8 +1,0 @@
-
-<H4><A NAME="SECTION04444030000000000000">
-Tabu lifetime</A>
-</H4>
---- The <#2661#>TS<#2661#> algorithm only operates on a single solution at a time and at most only considers one potential neighbour as its next possible current solution. Therefore a difficult choice needs to be made as to how long a solution stays tabu. In the <#2662#>FAP<#2662#> a solution might be entered into the tabu list early in the search process of the algorithm. A large majority of the neighbours of this solution are vastly superior solutions compared with any of the current solutions produced by the algorithm. Due to the solution with these neighbours being in the tabu list, these neighbours will not be reconsidered until much later when the solution is removed from the list. A possible option to allow the <#2663#>TS<#2663#> to reconsider the tabu solutions is to increase the aspiration criterion. Increasing the aspiration criterion does have its risks. A high aspiration criterion and the algorithm might be too eager to select just any solution even though it is Tabu. A low aspiration criterion and the algorithm will be too strict in selecting a tabu solution.
-
-<P>
-In the next section the simulated annealing algorithm is discussed.

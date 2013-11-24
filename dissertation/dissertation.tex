@@ -1,7 +1,8 @@
-\documentclass[11pt,a4paper]{book}
+\documentclass[11pt,a4paper,oneside]{book}
 \usepackage{ujthesis,float,enumerate,amssymb,amsmath,algorithm,algpseudocode}
 \usepackage{cite,graphicx,tikz,xcolor,appendix,hyperref}
 \usepackage[acronym,toc]{glossaries}
+%\usepackage[margin=1.25in]{geometry}
 \usetikzlibrary{plothandlers}
 \usetikzlibrary{positioning}
 \usetikzlibrary{decorations.pathreplacing}
@@ -22,7 +23,7 @@
 \field{Information Technology}
 \faculty{Faculty of Science}
 \supervisorName{Dr G.B. O'Reilly}
-\submissionDate{May 2012}
+\submissionDate{February 2013}
 %glossary definitions
 \makeglossaries
 \newacronym{FAP}{FAP}{frequency assignment problem}
@@ -43,7 +44,7 @@
 \newacronym{LTE}{LTE}{long term evolution}
 \newacronym{WIMAX}{WiMAX}{worldwide interoperability for microwave access}
 \newacronym{MS}{MS}{mobile station}
-\newacronym{POS}{POS}{[point of sale}
+\newacronym{POS}{POS}{point of sale}
 \newacronym{SIM}{SIM}{subscriber identification module}
 \newacronym{IMSI}{IMSI}{international mobile subscriber identity}
 \newacronym{IMEI}{IMEI}{international mobile equipment identity}
@@ -88,13 +89,13 @@
 \newacronym{DFA}{DFA}{dynamic frequency allocation}
 \newacronym{DCA}{DCA}{dynamic channel allocation}
 \newacronym{QoS}{QoS}{quality of service}
-\newacronym{SINR}{SINR}{signal to interference noise power ration}
+\newacronym{SINR}{SINR}{signal to interference noise power ratio}
 \newacronym{BER}{BER}{bit error rate}
 \newacronym{MO-FAP}{MO-FAP}{minimum-order frequency assignment problem}
 \newacronym{MS-FAP}{MS-FAP}{minimum span frequency assignment problem}
 \newacronym{MI-FAP}{MI-FAP}{minimum interference frequency assignment problem}
 \newacronym{FS-FAP}{FS-FAP}{fixed spectrum frequency assignment problem}
-\newacronym{EUCLID}{EUCLID}{EUropean Cooperation on the Long term in the Defense}
+\newacronym{EUCLID}{EUCLID}{EUropean COop\'{e}ration on the Long term in the Defense}
 \newacronym{CELAR}{CELAR}{cenre d'electronique de l'armement}
 \newacronym{COST}{COST}{COop\'{e}ration europ\'{e}ene dans le domaine de la recherche Scientifique et Technique}
 \newacronym{WLAN}{WLAN}{wireless local area network}
@@ -126,13 +127,14 @@
 \begin{document}
 \frontmatter
 \makecover
+\include{abstract}
 \tableofcontents
 \listoffigures
 \listofalgorithms
 \listoftables
 \mainmatter
-\part{Background on the problem domain and influential algorithms}
 \include{chpt1}%Introduction
+\part{Background on the problem domain and influential algorithms}
 \include{chpt2}%GSM Cellular Networks
 \include{chpt3}%Frequency Assignment Problem
 \include{chpt4}%Metaheuristics algorithms
@@ -142,12 +144,8 @@
 \include{chpt7}%Applying the PSO to the FAP
 \include{chpt8}%Results
 \include{chpt9}%Conclusion
-%\appendix
-%\appendixpage
-%\addappheadtotoc
-%\include{apdxA}
 \backmatter
-\printglossaries
 \bibliography{ReferenceDB}
 \bibliographystyle{plain}
+\printglossaries
 \end{document}
