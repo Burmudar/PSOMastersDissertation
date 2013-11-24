@@ -1,0 +1,48 @@
+
+<H4><A NAME="SECTION04534020000000000000">
+Building a solution</A>
+</H4>
+--- The <#4085#>ACO<#4085#> <I>builds</I> an optimal solution. Therefore, early decisions made by the ants still influence the plan later for better or for worse. A good decision might seem to be good early on, but later the algorithm might be better off with a slightly worse decision. In the <#4087#>FAP<#4087#>, a cell can have multiple interfering cells, but a particular ant only knows about one link between two cells and not about the other interfering cells. Thus an ant will find the optimal path on the first interfering link between two cells, in other words it will optimise the channels allocated to these cells so that interference is low. The first interfering link is now optimised, and subsequent ants will reinforce this channel allocation since the interference is low. When the ants later reach the other cells that also interfere with the first cell that has been optimised, they will have difficulty changing the assignments that have already been made, since the pheromone representing that assignment is too strong to disregard.
+
+<P>
+The above disadvantages have only been identified by critically evaluating the algorithm as a possible point of interest to produce an optimal solution for the <#4088#>FAP<#4088#> for this dissertation. Even with these disadvantages the <#4089#>ACO<#4089#> has achieved success in producing high quality optimal solutions for the <#4090#>FAP<#4090#>.
+
+<P>
+In research conducted by Luna et al.[#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#] an <#4092#>ACO<#4092#> algorithm was applied to a custom cellular network instance. This network instance had 711 sectors with 2 612 transceivers, which needed to be assigned frequencies. For their particular network, only 18 channels were available for assignment. The channels started at 134 and ended at 151[#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The authors presented two versions of the algorithm. The first version used no heuristic information (henceforth referred to as <#4094#>ACO<#4094#>*) and the other version used heuristic information to update the pheromone laid done by the artificial ants[#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+With regard to the heuristic updating of the pheromone trails, the authors opted to increase the pheromone by some magnitude[#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. This magnitude was handtuned to be 100. The heuristic only increases a certain path's pheromone if the frequencies assigned to the transceivers represented by this path differ enough so as to not cause significant interference[#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Thus, the heuristic aims to amplify good choices made previously by the algorithm for the next iteration of the algorithm.
+
+<P>
+In table~<A HREF=<tex2html_cr_mark>#tab:ACO#4098><tex2html_cr_mark></A> the results abtained by Lune et. al [#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#] are presented. By evaluating the results obtained, one can clearly see that the <#4100#>ACO<#4100#> version that incorporates heuristic information to reinforce pheromone trails outperforms the version that does not [#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The values depicted in the table represent the amount of interference that will result if the plan is used in the network[#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="4653"><tex2html_anchor_mark></A>
+<TABLE>
+<CAPTION><STRONG><#15430#>Table<#15430#> 5.1:</STRONG>
+<#15431#>ACO and <#4109#>ACO<#4109#>* on custom GSM <#4110#>FAP<#4110#> benchmark[#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]<#15431#></CAPTION>
+<TR><TD><DIV ALIGN="CENTER">	<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER">Time limit</TD>
+<TD ALIGN="CENTER">ACO*</TD>
+<TD ALIGN="CENTER">ACO</TD>
+</TR>
+<TR><TD ALIGN="CENTER">120s</TD>
+<TD ALIGN="CENTER">104719.72</TD>
+<TD ALIGN="CENTER">91140.04</TD>
+</TR>
+<TR><TD ALIGN="CENTER">600s</TD>
+<TD ALIGN="CENTER">103752.12</TD>
+<TD ALIGN="CENTER">89703.44</TD>
+</TR>
+<TR><TD ALIGN="CENTER">1 800s</TD>
+<TD ALIGN="CENTER">103781.86</TD>
+<TD ALIGN="CENTER">88345.94</TD>
+</TR>
+</TABLE>
+
+<A NAME="tab:ACO"><tex2html_anchor_mark></A></DIV></TD></TR>
+</TABLE>
+</DIV><P></P><BR>
+

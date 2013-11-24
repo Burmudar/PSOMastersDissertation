@@ -1,0 +1,58 @@
+
+<H3><A NAME="SECTION04452100000000000000">
+Cooling Schedule</A>
+</H3>
+The cooling schedule/annealing Schedule is the most defining characteristic of the <#2719#>SA<#2719#> algorithm. It is the procedure where the natural annealing process is mimicked. The temperature of the <#2720#>SA<#2720#> algorithm is a control parameter that defines how much the algorithm moves around in the search space.
+
+<P>
+After each iteration, whether the algorithm has selected a new best solution or not, the temperature is reduced by a certain amount. This amount is determined by the <I>cooling schedule</I>.
+
+<P>
+In general, when the <#2722#>SA<#2722#> algorithm temperature has a very high value most solutions that are produced from the neighbourhood are accepted [#ClusterSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Thus the algorithm moves freely in the search space with little constraint. As the temperature decreases, the probability that the algorithm will select a bad or just any solution decreases[#ClusterSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. When the temperature is very low, the <#2725#>SA<#2725#> algorithm is similar to a greedy algorithm in the sense that it only accepts downhill movements[#ClusterSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The cooling schedule provides the <#2727#>SA<#2727#> algorithm with the critical ability to control the rate the algorithm transitions from the diversification phase (high temperature) to the intensification phase (low temperature)[#ClusterSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. By controlling this rate, one is able to direct the algorithm to explore more early on to locate the more promosing areas for possible solutions. These promoosing areas can then be used by the algorithm in its intensification phase to find more promosing solutions.
+
+<P>
+In the literature there are three annealing schedules in common use, namely <I>the logarithmic schedule</I>, the <I>geometric schedule</I> and the <I>Cauchy schedule</I>[#VeryFastSAImageEnchancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#SASingleMultiObj#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+The standard and most commonly used schedule is known as the logarithmic schedule and is based on Boltzmann annealing [#VeryFastSAImageEnchancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The main disadvantage of this schedule is that is slow due to its logarithmic nature [#VeryFastSAImageEnchancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. It also requires moves to be generated from a Gaussian distribution for it to be able to reach the global minimum[#SASingleMultiObj#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The logarithmic annealing function has the following form:
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="eq:logcooling"><tex2html_anchor_mark></A><tex2html_verbatim_mark>#math71#<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><tex2html_image_mark>#tex2html_wrap_indisplay15186#where k is the iteration value and;SPMnbsp;<tex2html_image_mark>#tex2html_wrap_indisplay15187#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(4.2)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+Where <tex2html_image_mark>#tex2html_wrap_inline15189#
+<tex2html_verbatim_mark>mathend000# is the temperature at iteration <tex2html_image_mark>#tex2html_wrap_inline15191#
+<tex2html_verbatim_mark>mathend000#.
+
+<P>
+The Cauchy schedule is faster than the logarithmic schedule. Similar to the logarithmic, this schedule also has a movement requirement. Moves must be generated from a Cauchy distribution for the algorithm to be able to reach the global minimum [#SASingleMultiObj#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#VeryFastSAImageEnchancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The Cauchy schedule is also referred to as fast annealing[#VeryFastSAImageEnchancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The schedule has the following form:
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="eq:cauchycooling"><tex2html_anchor_mark></A><tex2html_verbatim_mark>#math72#<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><tex2html_image_mark>#tex2html_wrap_indisplay15193#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(4.3)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Finally, the fastest annealing schedule is known as the geometric or exponential annealing schedule [#SASingleMultiObj#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The schedule has no move generation requirement to reach the global minimum, since there is no regorous proof in the literature [#SASingleMultiObj#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. By using the geometric schedule the <#2751#>SA<#2751#> temperatures are rescaled which is called <I>re-annealing</I>[#VeryFastSAImageEnchancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The geometric schedule has the following form:
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="eq:geocooling"><tex2html_anchor_mark></A><tex2html_verbatim_mark>#math73#<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><tex2html_image_mark>#tex2html_wrap_indisplay15195#where C is a constant</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(4.4)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>

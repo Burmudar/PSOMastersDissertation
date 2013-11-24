@@ -1,0 +1,46 @@
+
+<H2><A NAME="SECTION04461000000000000000">
+Introduction</A>
+</H2>
+The genetic algorithm (GA) is a stochastic search method that is based on the natural process of genetic evolution and the Darwinian concept of ``survival of the fittest'' [#DistributedHierarchicalGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AcceleratingGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AdaptiveSAGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The <#2855#>GA<#2855#> was first proposed by Fraser, but it was not till the research presented by Holland that <#2856#>GA<#2856#>'s became popular[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Holland initially applied the algorithm to adaptive systems but has been widely used in the optimisation field of study due to its success on multidimensional problems[#ParallelGASA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#DistributedHierarchicalGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The <#2859#>GA<#2859#> developed by Holland is referred to in the literature as the Canonical <#2860#>GA<#2860#> (CGA)[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The wide use of the <#2862#>GA<#2862#> can also be attributed to its generic algorithm structure as well as the ease of implementation [#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AdaptiveSAGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The <#2864#>GA<#2864#> defines generic operators that select, create and mutate individuals for the next population of the next generation[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. It should be noted that initially the mutation operator was not a required to be part of the <#2866#>GA<#2866#>. Only after successive implementations of the <#2867#>GA<#2867#> showcased the explorative power that the mutation operator brings tot he search capability of the <#2868#>GA<#2868#> was the mutation operator considered to be important[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+The <#2870#>GA<#2870#> search procedure involves searching the solution space through artificial evolution and natural selection[#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#MultiPopGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#HybridIntelliGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. An individual or point in the search space is known as a <I>chromosome</I> [#HumanPassiveGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. An initial set of chromosomes (referred to in the research as the <I>population</I>) is randomly generated to form the starting population[#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#HybridIntelliGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AcceleratingGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#MultiPopGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+A chromosome consists of a sequence of smaller parts called <I>genes</I>[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The sequence upon which these genes appear in the chromosome determines the characteristics of an individual[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. In the <#2879#>GA<#2879#> a single gene represents a single variable of a solution[#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AcceleratingGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. A whole chromosome therefore represents a solution[#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AcceleratingGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Exactly how best to represent a chromosome as a solution is problem dependent[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+According to the evolution theory proposed by Darwin individuals of a population with the best chromosome have the best chance to survive and to reproduce[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. These individuals are reffered to as the fittest individuals of the population. In a <#2884#>GA<#2884#> population each individual is ``rated'' to determine how good the solution its chromosome represents [#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The rating of a chromosome is referred to as its fitness value and is also problem dependent[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Determining the fitness value of a chromosome is achieved by means of a <I>fitness function</I>. The fitness function is a mathematical function which maps the chromosome representation to a scalar value[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. An optimisation problem has a objective function which calculates how good a solution is, therefore in the <#2889#>GA<#2889#> the fitness function represents the objective function[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+When the fitness of individuals in a population have been determined the <#2891#>GA<#2891#> probablisticly selects individuals for the next generation[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The selection probability is referred to as the <I>selective pressure</I>[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The individuals that are selected by the operator enter the reproduction phase of the <#2895#>GA<#2895#> where offspring are created[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Offspring are created by combining parts of one or more chromosomes to form a new chromosome this procedure is called the <I>crossover</I>[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The chromomsomes used in the production of the offspring are referred to as the parent chromosomes[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+With regard to how offspring and parents are handled, there are two forms of the <#2900#>GA<#2900#> [#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. One form is called the <I>generational</I> <#2903#>GA<#2903#>  and the other form is known as the <I>steady-state</I> <#2905#>GA<#2905#> [#GeostatisticalGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+With the generational <#2907#>GA<#2907#> the offspring are not immediately used in the next generation; instead they are kept in a pool until the pool reaches a required size [#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The offspring are then used to replace the parents entirely in the next generation [#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. In the steady-state <#2910#>GA<#2910#> once offspring has been created a selection operator is applied once more. The operator selects individuals from the old population and from the offspring to form the new population for the next generation [#GeostatisticalGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The <#2912#>GA<#2912#> search process moves around in the search space using probabilistic rules rather than deterministic rules [#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The probabilistic transition rules aid the algorithm to avoid local optima regions in the search space [#HybridIntelliGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Note that by even using the probabilistic transition rules there is no guarantee that the <#2915#>GA<#2915#> will completely avoid local optima[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The <#2917#>GA<#2917#> makes no assumptions about the search space and primarily works on the information provided by the chromosomes and the representation of solutions used[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ConstrainedGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#HybridIntelliGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Unlike the <#2919#>SA<#2919#> and <#2920#>TS<#2920#> algorithms, the <#2921#>GA<#2921#> if properly initialized, starts with a number of search points that cover a wide area of the search space. Depending on the operators used, diversity can be quickly lost and the population can become homogeneous very quickly[#DistributedHierarchicalGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FamilyGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#HybridIntelliGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]<A NAME="GASearchPoints"><tex2html_anchor_mark></A>.
+
+<P>
+The different operators used by the GA along with their probalities are not specific. Each operator and probability can be changed the suit the problem domain the GA is being applied to. Therefore the particular probability and operators the GA uses is problem dependant.
+
+<P>
+As discussed earlier the defined operators consists of a selection operator, crossover operator and mutation operator[#SelfAdaptiveGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#MultiPopGA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. In the section that follows each operator is discussed.
+
+<P>

@@ -1,0 +1,57 @@
+
+<H2><A NAME="SECTION04451000000000000000"><tex2html_anchor_invisible_mark></A>
+<A NAME="sec:SAIntroduction"><tex2html_anchor_mark></A><BR>
+Introduction
+</H2>
+<#2668#>SA<#2668#> is a metaheuristic search technique proposed in the 1980s by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process which is known in metallurgy as annealing [#SASingleMultiObj#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TempCyclingSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Kirkpatrick was the first to use <#2670#>SA<#2670#> to solve optimisations problems but the basic algorithm structure was defined by Metropolis et al. in 1953 [#CurveFittingSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#VeryFastSAImageEnchancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Annealing is the natural process of crystallisation when a solid is heated to a high temperature and then systematically cooled to a lower temperature to reach a crystallised form [#NewSAs#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ConstantTempSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The crystallised form of the solid is known to be the global minimum of the solid's internal energy state. 
+
+<P>
+When the solid is rapidly cooled from a high temperature, the molecules have no time to reach a thermodynamic equilibrium stage [#MobileRobotSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ConstantTempSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Therefore the molecules of the solid have high energy and the resultant structure has no real crystalline form; thus the solid energy is at a local minimum[#CurveFittingSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#NewSAs#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#MobileRobotSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. When the solid is slowly cooled in a controlled manner, the molecules are able to reach a thermal equilibrium at each temperature [#ChaosSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#CurveFittingSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#NewSAs#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+In the algorithm the energy state is the <I>cost function</I> that needs to be minimised, and the molecules are the <I>variables</I>, which represent the solutions, and thus their state needs to be optimised to reach the desired energy state.
+
+<P>
+The <#2678#>SA<#2678#> algorithm is able to purposely move to a worse solution in the search space[#EcoEquilSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. In the research when an algorithm moves to a worse solution it is classified as an <I>uphill</I> move[#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Similarly, when a move is made by the algorithm which results in a better solution the move is classified as an <I>downhill</I> move[#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The following equation is the standard probability function that is used to determine when an uphill move is performed by the algorithm. This function is known in the literature as the <I>metropolis criterion</I>. 
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="eq:saprobability"><tex2html_anchor_mark></A><tex2html_verbatim_mark>#math70#<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><tex2html_image_mark>#tex2html_wrap_indisplay15170#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(4.1)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+The function <tex2html_image_mark>#tex2html_wrap_inline15172#
+<tex2html_verbatim_mark>mathend000# is the objective function or a function that determines the state of a given position in solution space[#EcoEquilSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The parameter <tex2html_image_mark>#tex2html_wrap_inline15174#
+<tex2html_verbatim_mark>mathend000# is the temperature of the algorithm at iteration <tex2html_image_mark>#tex2html_wrap_inline15176#
+<tex2html_verbatim_mark>mathend000# [#EcoEquilSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Finally, <tex2html_image_mark>#tex2html_wrap_inline15178#
+<tex2html_verbatim_mark>mathend000# is the change in ``energy'' between two solutions <tex2html_image_mark>#tex2html_wrap_inline15180#
+<tex2html_verbatim_mark>mathend000# and <tex2html_image_mark>#tex2html_wrap_inline15182#
+<tex2html_verbatim_mark>mathend000# [#EcoEquilSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The main purpose of the <#2698#>SA<#2698#> algorithm (like most optimisation algorithms) is to minimise or maximise the cost function [#SASingleMultiObj#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. This cost function evaluates a solution desirability compared with other solutions in the immediate <I>neighbourhood</I> of the algorithm's current position [#TheoPraticalSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+The immediate neighbourhood of solutions is generated based on a heuristic implemented by the algorithm designer[#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. This heuristic, as with the <#2703#>TS<#2703#> algorithm, can be simple or complex.
+
+<P>
+A neighbouring solution is only selected as the new best state if its desirability ranks higher than the current solution. When the algorithm moves to a better solution from the previous solution, the move is referred in the literature as a <I>downhill</I> move [#CurveFittingSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The best state is not always selected; in some cases the algorithm is also able to move to solutions that are worse than the current solution. A worse solution is only selected based on a probability which is controlled by the <I>annealing temperature</I> of the algorithm [#TheoPraticalSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+At a high annealing temperature the probability that the algorithm will select a bad solution is very good. As the annealing temperature decreases so does the probability that a bad solution will be selected [#CurveFittingSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. When the algorithm moves to a worse solution, the move is referred to in the literature as an <I>uphill</I> move [#CurveFittingSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Uphill moves allow the algorithm to break out of local minima and can lead the algorithm down a different path, which may ultimately result in obtaining the global optimum [#SASingleMultiObj#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+As with the <#2712#>TS<#2712#> algorithm, the standard <#2713#>SA<#2713#> algorithm does not define a set neighbourhood generation mechanism; instead it is up to the algorithm designer to implement a suitable generation mechanism that will allow the algorithm to adequately explore the search space[#VariousCoolingSA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+The following section presents a discussion on various characteristics of the <#2715#>SA<#2715#> algortihm.

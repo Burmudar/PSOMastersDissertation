@@ -1,0 +1,41 @@
+
+<H2><A NAME="SECTION04553000000000000000">
+Flow of the Algorithm</A>
+</H2>
+The general concepts that are evident in the <#4563#>PSO<#4563#> algorithm have been covered. Using these concepts a general overview will now be given of the <#4564#>PSO<#4564#> algorithm flow using algorithm~<A HREF=<tex2html_cr_mark>#alg:PSO#4565><tex2html_cr_mark></A> as a reference point. Note that for the algorithm presented a start neighourhood topology is used and the algorithm is applied on a minimisation problem.
+<BR>
+<A NAME="alg:PSO"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm4566#
+<BR>
+
+<P>
+The <#4588#>PSO<#4588#> algorithm starts off by initialising the swarm of particles. Each particle is randomly assigned a certain position in the problem space. After the swarm has been initialised the algorithm enters the optimization or search phase, which starts in line 2.
+
+<P>
+Before the swarm can start moving around in the problem space, it first needs to determine the gbest particle as well as each particle's own pbest position. Therefore as can be observed in line 3, each particle's current fitness <tex2html_verbatim_mark>#math110#<tex2html_image_mark>#tex2html_wrap_inline15595#
+<tex2html_verbatim_mark>mathend000# is determined using a problem-specific fitness function. The fitness determines the lucrativeness of the current position a particle occupies in the problem space.
+
+<P>
+Once the fitness of a particle's position is calculated, the algorithm needs to determine whether the current position of the particle is its pbest since the algorithm started. This comparison can be seen occur in line 5. 
+
+<P>
+If the fitness of the currently held position is indeed better than the previous personal best of the particle, then the new position is remembered as the personal best for that particular particle, as can be observed in line 6.
+
+<P>
+Regardless of whether the personal best of a particle has been updated or not, the algorithm performs another comparison also utilising the calculated fitness of the current position of the particle. The algorithm uses this fitness to also determine whether the current position of the particle is the best in the <I>entire</I> swarm, i.e. whether it is  the <I>global</I> best (gbest). This comparison occurs in line  8.
+
+<P>
+If the position of the particle is indeed the best position in the entire swarm, the algorithm replaces the current gbest with the position of the current particle being evaluated, as seen in line 9.
+
+<P>
+After the swarm has been evaluated, each particle should have a personal best and the swarm should have a global best. The swarm is therefore ready to move around in the problem space, which occurs in algorithm~<A HREF=<tex2html_cr_mark>#alg:PSO#4592><tex2html_cr_mark></A> from lines 12 -- 15.
+
+<P>
+For each particle in the swarm the algorithm determines the particle's new velocity, as can be observed in line 13. The velocity of a particle is calculated using equation~<A HREF=<tex2html_cr_mark>#eq:velocityupdate#4593><tex2html_cr_mark></A>. 
+
+<P>
+Once the velocity of a specific particle has been calculated, the particle is ready to move to a new position. Moving a particle from its current position to a new position using the calculated velocity is done by applying equation~<A HREF=<tex2html_cr_mark>#alg:PSO#4594><tex2html_cr_mark></A> and occurs in line 14 in algorithm~<A HREF=<tex2html_cr_mark>#alg:PSO#4595><tex2html_cr_mark></A>.
+
+<P>
+After the whole swarm has been moved, the algorithm continues to the next iteration to evaluate the new positions. This process occurs until certain stopping criteria are met.
+
+<P>

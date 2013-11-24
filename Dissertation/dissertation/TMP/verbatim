@@ -1,0 +1,94 @@
+
+<tex2html_mydb_mark>#1#%glossary definitions
+
+<tex2html_mydb_mark>#2#%
+
+<tex2html_mydb_mark>#3#%\draw[step=0.25cm,thin,color=gray] (-6,-8) grid (6,8);
+		
+<tex2html_mydb_mark>#4#%drawing of handsets
+		
+<tex2html_mydb_mark>#5#%left handset
+		
+<tex2html_mydb_mark>#6#%right handset
+		
+<tex2html_mydb_mark>#7#%Drawing of the BTS's
+		
+<tex2html_mydb_mark>#8#%Lines connecting Handsets with BTS's
+		
+<tex2html_mydb_mark>#9#%Left
+		
+<tex2html_mydb_mark>#10#%Right
+		
+<tex2html_mydb_mark>#11#%Drawing of BCS's
+		
+<tex2html_mydb_mark>#12#%Draw MSC
+		
+<tex2html_mydb_mark>#13#%Databases
+		
+<tex2html_mydb_mark>#14#%
+
+<tex2html_mydb_mark>#15#%===============================Top======================================
+	
+<tex2html_mydb_mark>#16#%========================================================================
+	
+<tex2html_mydb_mark>#17#%%================================Second Line======================================
+	
+<tex2html_mydb_mark>#18#%========================================================================
+	
+<tex2html_mydb_mark>#19#%%================================Third Line======================================
+	
+<tex2html_mydb_mark>#20#%========================================================================
+	
+<tex2html_mydb_mark>#21#%%================================Fourth Line======================================
+	
+<tex2html_mydb_mark>#22#%========================================================================
+	
+<tex2html_mydb_mark>#23#%%================================Fifth Line======================================
+	
+<tex2html_mydb_mark>#24#%
+
+<tex2html_mydb_mark>#25#%%% TEXEXPAND: END FILE ./chpt2.tex
+
+<tex2html_mydb_mark>#26#%
+
+<tex2html_mydb_mark>#27#%\draw[step=.5cm,gray,very thin] (-0.5,-0.5) grid(10,5);
+	
+<tex2html_mydb_mark>#28#%
+
+<tex2html_mydb_mark>#29#%\draw[step=.5cm,gray,very thin] (-0.5,-0.5) grid(10,5);
+	
+<tex2html_mydb_mark>#30#%
+
+<tex2html_mydb_mark>#31#%%% TEXEXPAND: END FILE ./chpt3.tex
+
+<tex2html_mydb_mark>#32#%\subsubsection{Markov Chain}
+
+<tex2html_mydb_mark>#33#%The \gls{SA} Algorithm is typically modelled by using Markov chains due to each Markov chain represents a set of trials that the algorithm has executed at the same temperature. 
+
+<tex2html_mydb_mark>#34#%A Markov chain\footnote{Also known as Markov process} defines a chain of states or processes that satisfy the \emph{Markov assumption}. Which is defined as, that any state only depends on a set amount of previous states that have been encountered previously\cite{AIModernApproach}.
+
+<tex2html_mydb_mark>#35#%%
+
+<tex2html_mydb_mark>#36#%It has been proven with the use of Markov Chain theory that \gls{SA} will find the global minimum in the solution space \cite{ClusterSA}. This proof is only valid when the following properties for the underlying Markov chain hold \cite{VeryFastSAImageEnchancement}:
+
+<tex2html_mydb_mark>#37#%\begin{itemize}
+
+<tex2html_mydb_mark>#38#%\item It must be irreducible
+
+<tex2html_mydb_mark>#39#%\item It mustn't be periodic
+
+<tex2html_mydb_mark>#40#%\item The detailed balance condition must hold
+
+<tex2html_mydb_mark>#41#%\end{itemize}
+
+<tex2html_mydb_mark>#42#%According to the proof presented in \emph{Image enhancement using very fast simulated reannealing}\cite{ClusterSA}, if the \gls{SA} algorithm designer can uphold the above properties, the algorithm is able to find the global optimum. Even though the algorithm will eventually find the global optimum, the algorithm is known to take a very long time to do so.
+
+<tex2html_mydb_mark>#43#%\include{chpt6}%PSO on benchmark functions
+
+<tex2html_mydb_mark>#44#%\appendix
+
+<tex2html_mydb_mark>#45#%\appendixpage
+
+<tex2html_mydb_mark>#46#%\addappheadtotoc
+
+<tex2html_mydb_mark>#47#%\include{apdxA}

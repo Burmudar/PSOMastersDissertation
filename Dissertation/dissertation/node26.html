@@ -1,0 +1,43 @@
+
+<H2><A NAME="SECTION04232000000000000000">
+Mobile Switching Centre</A>
+</H2>
+
+<P>
+The <#800#>MSC<#800#> is at the heart of a cellular switching system and forms part of the <#801#>NSS<#801#>. The <#802#>MSC<#802#> is responsible for the setting up, routing and supervision of calls between <#803#>gsm<#803#> subscribers[#GSM92#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSMSysEngin#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The <#805#>MSC<#805#> has interfaces to communicate with <#806#>gsm<#806#> subscribers (through the <#807#>BSS<#807#>) on the one hand and with external networks on the other[#GSM92#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The <#809#>MSC<#809#> interfaces with external networks to utilise their superior capability in data transmission as well as for the signalling and communication with other <#810#>gsm<#810#> network components [#GSM92#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+The most basic functions that an <#812#>MSC<#812#> is responsible for in a network are the following [#wirelesstelcoMullet#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]:
+
+<UL>
+<LI>Voice call initialization, routing, control and supervision between subscribers
+</LI>
+<LI>Handover process between two cells
+</LI>
+<LI>Location updating
+</LI>
+<LI><#815#>MS<#815#> authentication
+</LI>
+<LI><#816#>SMS<#816#> delivery
+</LI>
+<LI>Charging and accounting of services used by subscriber
+</LI>
+<LI>Notification of other network elements
+</LI>
+<LI>Administration input or output processing functions
+</LI>
+</UL>
+
+<P>
+To achieve most of these functions the <#818#>MSC<#818#> has an integrated <#819#>VLR<#819#> database that stores call setup information for any <#820#>MS<#820#> that is currently registered for service with the <#821#>MSC<#821#> [#GSM92#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#wirelesstelcoMullet#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+The <#823#>VLR<#823#>retrieves this information from the <#824#>HLR<#824#> that contains all the registered <#825#>gsm<#825#> subscriber information for the network. This information enables the <#826#>MSC<#826#> to quickly retrieve the necessary information to set up a call between two clients that want to communicate with each other [#GSMSysEngin#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSMSecurInTeleNetwork#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+A requirement for being able to communicate with other network elements such as <#828#>PSTN<#828#> is the ability to multiplex and demultiplex signals to and from such network elements. This operation is a necessity, since the incoming or outgoing connection bitrate from the source entity might be either too low or too high for the receiving entity.
+
+<P>
+A typical scenario where this operation proves vital is when a mobile subscriber makes a call to a subscriber on a<#829#>PSTN<#829#> . The connection bit rate needs to be changed at the <#830#>MSC<#830#> from a wireless connection bitrate to a bitrate suitable for transmission over a<#831#>PSTN<#831#> . In chapter~<A HREF=<tex2html_cr_mark>#chpt:fap#832><tex2html_cr_mark></A> section~<A HREF=<tex2html_cr_mark>#sec:Interference#833><tex2html_cr_mark></A> more information regarding bit rates is presented.
+
+<P>

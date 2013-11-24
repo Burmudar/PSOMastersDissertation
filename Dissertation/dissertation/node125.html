@@ -1,0 +1,34 @@
+
+<H3><A NAME="SECTION04542100000000000000"><tex2html_anchor_invisible_mark></A>
+<A NAME="sec:foodsources"><tex2html_anchor_mark></A><BR>
+Food Sources
+</H3>
+As discussed previously, food sources represent solutions to the problem the <#4192#>ABC<#4192#> algorithm is being applied to. When the algorithm starts, there are no defined food sources for the bees to evaluate and report on, and therefore initially a finite number of food sources are randomly generated[#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCFusionGrid#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Since each food source needs an employed bee to evaluate the nectar amount of the source, the parameter that defines the number of food sources also defines the number of employed bees[#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCLeafConstrained#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Employed bees evaluate these food sources by determining their nectar amount[#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCLeafConstrained#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The nectar amount is directly related to the fitness value calculated using a domain specific cost function[#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCReconfigDistro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. After the amount is determined the employed bee advertises the food source to the colony by performing the waggle dance.
+
+<P>
+Onlooker bees witness a number of dances from a variety of employed bees[#ABCFusionGrid#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#BeeJobShop#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. They therefore need to select a food source that is the most attractive while maintaining some diversity in the pool of solutions. Thus, an onlooker bee selects a food source based on a probability function which is formulated in equation <A HREF=<tex2html_cr_mark>#eq:beeProbability#4198><tex2html_cr_mark></A>[#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]:
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="eq:beeProbability"><tex2html_anchor_mark></A><tex2html_verbatim_mark>#math87#<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><tex2html_image_mark>#tex2html_wrap_indisplay15438#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(5.6)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+The parameter <tex2html_image_mark>#tex2html_wrap_inline15440#
+<tex2html_verbatim_mark>mathend000# is the <tex2html_image_mark>#tex2html_wrap_inline15442#
+<tex2html_verbatim_mark>mathend000#th food source under consideration by the onlooker bee. The <tex2html_image_mark>#tex2html_wrap_inline15444#
+<tex2html_verbatim_mark>mathend000# parameter represents the value of the cost function and is directly related to the nectar amount of food source <tex2html_image_mark>#tex2html_wrap_inline15446#
+<tex2html_verbatim_mark>mathend000#. The parameter SN is the maximum amount of food source and hence the maximum employed onlooker bees [#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+In algorithm~<A HREF=<tex2html_cr_mark>#alg:ABC#4209><tex2html_cr_mark></A> the waggle dance can be seen being applied in line 11 where the probability of all the employed bee' solutions are calculated using equation~<A HREF=<tex2html_cr_mark>#eq:beeProbability#4210><tex2html_cr_mark></A>. From lines 12 -- 16 the onlooker bees evaluate the solutions of the employed bees based on the probability <tex2html_image_mark>#tex2html_wrap_inline15448#
+<tex2html_verbatim_mark>mathend000# that was calculated. <tex2html_image_mark>#tex2html_wrap_inline15450#
+<tex2html_verbatim_mark>mathend000# can be seen as the rating of the waggle dance that was performed by the employed bee.
+
+<P>

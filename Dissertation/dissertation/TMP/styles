@@ -1,0 +1,16 @@
+book 11pt, a4paper,
+ujthesis 
+float 
+enumerate 
+amssymb 
+amsmath 
+algorithm 
+algpseudocode 
+cite 
+graphicx 
+tikz 
+xcolor 
+appendix 
+hyperref 
+glossaries acronym,toc
+tocbibind nottoc

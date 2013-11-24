@@ -1,0 +1,76 @@
+
+<H1><A NAME="SECTION05120000000000000000">
+Position in the Frequency Planning Domain</A>
+</H1>
+In this section a description is given of what a position is in the frequency planning domain. First a frequency plan is defined and the general structure to represent such a plan is provided. The section will conclude with the hard and soft constraints and how the constraints aid in creating a frequency plan that is suitable for a network.
+
+<P>
+A frequency plan, is almost exactly what the name implies: A plan that outlines frequency usage for a mobile telecommunication network. The benchmark problems that were used to test the developed <#5485#>PSO<#5485#> all pertained to cellular phone networks and were presented in section~<A HREF=<tex2html_cr_mark>#sec:FAPBenchmarks#5486><tex2html_cr_mark></A>. For cellular networks, the frequency plan outlines which frequency must be allocated to which transceiver.
+
+<P>
+With this basic definition, the problem is deceptive as one naturally assumes that there are an infinite number of frequencies that can be used or the number of frequencies available for assignment is more than the number of transceivers in the network. 
+
+<P>
+The reality is that there are only a finite number of frequencies available for cellphone transmissions, as was discussed in chapters~<A HREF=<tex2html_cr_mark>#chpt:celltech#5487><tex2html_cr_mark></A> and <A HREF=<tex2html_cr_mark>#chpt:fap#5488><tex2html_cr_mark></A>. Hence a regulatory body needs to assign wireless spectrum to cellphone network operators for use in their networks. A regulatory body is needed because, if a network operator uses just any frequency it wants, it is bound to interfere with someone else also utilising the same frequency.
+
+<P>
+A network is not assigned to the entire wireless spectrum for wireless communication, but rather only a subset is assigned to the network. If one observes the <#5489#>FAP<#5489#> benchmark problems the <#5490#>PSO<#5490#> was applied to (see section~<A HREF=<tex2html_cr_mark>#sec:FAPBenchmarks#5491><tex2html_cr_mark></A>) for instance Siemens1, the allotted spectrum is from frequency 16 to 90. Which gives the network operator 74 frequencies to use in its network without considering other constraints. 
+
+<P>
+Besides the electromagnetic constraints that are also applicable here, there are regulatory constraints, for instance frequencies in the spectrum that are by no means allowed to be used. These frequencies are referred to as globally blocked frequencies and are hard constraints. An in-depth discussion of these constraints was given in section~<A HREF=<tex2html_cr_mark>#sec:Interference#5492><tex2html_cr_mark></A>.
+
+<P>
+As discussed in chapters~<A HREF=<tex2html_cr_mark>#chpt:celltech#5493><tex2html_cr_mark></A> and <A HREF=<tex2html_cr_mark>#chpt:fap#5494><tex2html_cr_mark></A>, a cellphone network is divided into a number of cells, and each cell requires a certain number of transceivers to service its corresponding area. 
+
+<P>
+The number of transceivers is based on the expected volume of traffic that a particular cell will experience at peak network usage. Some cells might be located in highly populous areas, which means the potential traffic that cell might need to handle during peak network usage is very high and thus the cell has more than one transceiver to handle the potential traffic. With cells that are located in areas that have a low population, the potential traffic the cell might experience during peak network usage is low and thus the cell only has one transceiver to handle potential traffic.
+
+<P>
+Based on the amount of traffic a cell needs to handle, the number of transceivers differs; thus in a frequency plan not all cells have the same number of transceivers, otherwise a frequency plan can be modelled as a series of constant D-dimensional vectors, where the D represents the number of transceivers. 
+~
+
+<DIV ALIGN="CENTER"><A NAME="fig:fapPlan"><tex2html_anchor_mark></A><A NAME="5499"><tex2html_anchor_mark></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG><#15611#>Figure<#15611#> 6.1:</STRONG>
+<#15612#>The structure of a frequency plan<#15612#></CAPTION>
+<TR><TD><DIV ALIGN="CENTER">	 <#5496#>0pt<#5496#>
+	 <#5497#>0.5pt<#5497#>
+	<tex2html_verbatim_mark>#math111#<tex2html_image_mark>#tex2html_wrap_inline6236#
+<tex2html_verbatim_mark>mathend000#
+	</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+~
+As can be seen in figure <A HREF=<tex2html_cr_mark>#fig:fapPlan#5502><tex2html_cr_mark></A> a cellular network can have any number (<tex2html_image_mark>#tex2html_wrap_inline15615#
+<tex2html_verbatim_mark>mathend000# in the figure) of cells to attain the desired coverage over the geographical landscape. In the COST 259 benchmark problems the cellular networks have a large number of cells that range from 500 to more than 1 000. 
+
+<P>
+The most important part of the plan is the actual transceivers within each cell. In figure~<A HREF=<tex2html_cr_mark>#fig:fapPlan#5503><tex2html_cr_mark></A> it can be clearly seen how the number of transceivers (TRXs) varies from one cell to the next. <tex2html_image_mark>#tex2html_wrap_inline15617#
+<tex2html_verbatim_mark>mathend000# is a frequency at position <tex2html_image_mark>#tex2html_wrap_inline15619#
+<tex2html_verbatim_mark>mathend000# from the available usable spectrum. 
+
+<P>
+Based on the structure of the plan depicted in figure <A HREF=<tex2html_cr_mark>#fig:fapPlan#5504><tex2html_cr_mark></A> there is no concept of which cell interferes with which other cell and if there is indeed interference, the extent of this interference. Not all this information is part of the plan. Instead this information, for the purpose of this research is supplied by the COST 259 benchmark. 
+
+<P>
+The interference information is referred to as the interference matrix. A definition of the structure of an interference matrix was given in section~<A HREF=<tex2html_cr_mark>#sec:Interference#5505><tex2html_cr_mark></A>. As discussed, each entry references two cells' entries: Cell A and Cell B. Along with the entry the amount of interference that occurs when Cell B interferes with Cell A is also listed<A NAME="tex2html25"
+  HREF="footnode.html#foot5875"><SUP>6.1</SUP></A>.
+
+<P>
+A frequency plan is a possible solution to the <#5507#>FAP<#5507#>. Therefore in the <#5508#>PSO<#5508#> that was developed each particle's position in the solution space is represented by a frequency plan. As illustrated in figure~<A HREF=<tex2html_cr_mark>#fig:fapPlan#5509><tex2html_cr_mark></A>, a frequency plan is just a series of cells, where each cell has a set of transceivers; thus in the <#5510#>PSO<#5510#> algorithm a plan is actually represented as an array of cells. This enables the algorithm to access particular cells in a plan by index as can be observed in listed algorithms~<A HREF=<tex2html_cr_mark>#alg:velocitymethod1#5511><tex2html_cr_mark></A> and ~<A HREF=<tex2html_cr_mark>#alg:velocitymethod2#5512><tex2html_cr_mark></A>. 
+
+<P>
+Before the particles can actually start to move around in the <#5513#>FAP<#5513#> space, they first need to be assigned positions. In the developed <#5514#>PSO<#5514#> listed in algorithm~<A HREF=<tex2html_cr_mark>#alg:FAPPSO#5515><tex2html_cr_mark></A> line 1 the first operation that the algorithm executes is to initialise all the particles in the swarm. A particle position in the algorithm is initialised by assigning it a random position; thus a frequency plan (representing a position) is randomly generated by the algorithm.
+<BR>
+<A NAME="alg:FAPPSO"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm5516#
+<BR>
+
+<P>
+The position is purely random in that the only considerations made by the position generator are that valid frequencies are assigned to transceivers installed at cells. Thus the generator does not check whether a frequency has already been assigned in the current cell or any other considerations. The intended purpose of the generator is just to place a particle in the problem space, not the premature start of the optimisation process.
+
+<P>
+Since particles are able to occupy positions in the <#5524#>FAP<#5524#> space the <#5525#>PSO<#5525#> algorithm is now able to move them around in the problem space. As mentioned previously, moving particles through the frequency plan solution space introduces an interesting problem due to the multidimensionality of a plan. A discussion of how particles are moved from one position to another through the solution space is provided in section <A HREF=<tex2html_cr_mark>#sec:velocityFAP#5526><tex2html_cr_mark></A>
+
+<P>
+In the next section an explanation is given on the fitness function that determines the desirability of a particular particle's position or rather the frequency plan its position represents.

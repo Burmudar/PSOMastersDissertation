@@ -1,0 +1,84 @@
+
+<H2><A NAME="SECTION04231000000000000000">
+Base Station Subsystem</A>
+</H2>
+
+<P>
+According to the <#696#>gsm<#696#> Phase 2+ specification, this system is viewed by the <#697#>MSC<#697#> through an Abis radio interface. The <#698#>BSS<#698#> is responsible for communicating with mobile stations in a particular location area [#Eisenblatter#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The <#700#>BSS<#700#> usually consists of one <#701#>BSC<#701#> with one or more <#702#>BTS<#702#> that it controls [#Eisenblatter#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].A <#704#>BTS<#704#> has similar equipment to that of a MS[#GSMSysEngin#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Both have transceivers, antennae and the necessary functions to perform radio communication.
+
+<P>
+The communication link between the <#706#>MSC<#706#> and <#707#>BSC<#707#> is the called the A-interface. The interface between the <#708#>BSC<#708#> and <#709#>BTS<#709#> is called the Abis interface [#Eisenblatter#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The A and Abis interface as well as other interfaces between other <#711#>gsm<#711#> architecture components are discussed in section~<A HREF=<tex2html_cr_mark>#sec:gsminterfaces#712><tex2html_cr_mark></A>.  
+
+<P>
+In a <#713#>gsm<#713#> network a service area is defined as a geographical area where the networks wants to deliver its cellular network service to potential clients [#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#Karen2004#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The service area is subdivided into <#715#>LA<#715#> which are then further divided into smaller radio zones called cells [#GSMSecurInTeleNetwork#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. When a cellular network is modelled, cells are modelled as hexagonal shapes. Each cell in the modelled network is served by only one <#717#>BTS<#717#> and is usually regarded to be in the centre of a cell as can be seen in figure~<A HREF=<tex2html_cr_mark>#fig:GSMCell#718><tex2html_cr_mark></A>[#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<DIV ALIGN="CENTER"><A NAME="fig:GSMCell"><tex2html_anchor_mark></A><A NAME="750"><tex2html_anchor_mark></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG><#14878#>Figure<#14878#> 2.2:</STRONG>
+<#14879#>Cells with BTSs<#14879#></CAPTION>
+<TR><TD><tex2html_image_mark>#figure720#</TD></TR>
+</TABLE>
+</DIV>
+
+Even though cells are modelled as being hexagons (see figure~<A HREF=<tex2html_cr_mark>#fig:GSMCell#754><tex2html_cr_mark></A>), the actual coverage area of a cell has no predefined regular shape [#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+For the purpose of this research a <#756#>BTS<#756#> is considered to be assigned channels which are used for communication. No discussion will be presented on the electro-magnetic wavelength properties of channels as it has no effect on the results presented or problem being investigated.
+
+<P>
+With the network modelled as a series of interconnecting hexagons it allows one to more easily take constraints into account[#Eisenblatter#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. For a cell to serve its geographical area, it needs to be allocated frequencies to operate on. Therefore, for each cell <tex2html_image_mark>#tex2html_wrap_inline14882#
+<tex2html_verbatim_mark>mathend000# in the modelled network a subset <tex2html_image_mark>#tex2html_wrap_inline14884#
+<tex2html_verbatim_mark>mathend000# of frequencies from the total frequencies <tex2html_image_mark>#tex2html_wrap_inline14886#
+<tex2html_verbatim_mark>mathend000# allocated to the <#758#>gsm<#758#> network is assigned[#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Neighbouring cells must at all costs avoid having the same subset of frequencies allocated to them, since such a scenario would lead to severe interference on any communication and thus degrade quality [#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Since the number of cells in a network greatly outnumber the available of subset frequencies available, one is forced to start reusing frequency subsets in cells[#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. To ensure that the reused frequency subsets do not interfere with their neighbouring cells, a reuse distance <tex2html_image_mark>#tex2html_wrap_inline14888#
+<tex2html_verbatim_mark>mathend000# is defined [#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The reuse distance means that a certain number of cells must be between the cell already assigned the frequency subset <tex2html_image_mark>#tex2html_wrap_inline14890#
+<tex2html_verbatim_mark>mathend000# and the cell to be assigned a frequency subset [#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The amount of cells is the distance value <tex2html_image_mark>#tex2html_wrap_inline14892#
+<tex2html_verbatim_mark>mathend000#.
+
+<P>
+The size of a cell determines the amount of potential traffic that the cell will be required to handle [#GSM92#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#Eisenblatter#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Therefore, if the size of a cell is chosen to be small, fewer channels will be required to be allocated to that cell as it would not be required to handle as much traffic as a larger cell[#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+By making the size of cells smaller, the network operator is required to invest more into its network infrastructure. Smaller cells have a direct consequence that more cells would be required to serve the same geographical area, and more cells means that more <#766#>BTS<#766#> etc. need to be built and maintained, more locations need to be rented [#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Hence, making a cell smaller has a compounding effect on the amount of infrastructure needed to support it.
+
+<P>
+Fortunately all the extra infrastructure investment by the operator can be greatly scaled down if cells are divided into sectors<A NAME="def:cellsector"><tex2html_anchor_mark></A>. Each sector performs the exact same function as a traditional cell and is therefore regarded to also be a cell, just smaller in size and not omnidirectional [#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSM92#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSMSysEngin#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+A cell is divided into 3 to 6 service sectors and each sector is allocated an antenna/transceiver [#GSMSysEngin#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Figure~<A HREF=<tex2html_cr_mark>#fig:cellsector#771><tex2html_cr_mark></A> illustrates a cell divided into sectors. 
+
+<P>
+
+<DIV ALIGN="CENTER"><A NAME="fig:cellsector"><tex2html_anchor_mark></A><A NAME="981"><tex2html_anchor_mark></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG><#14893#>Figure<#14893#> 2.3:</STRONG>
+<#14894#>Cell sectorisation[#GSMSysEngin#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].<#14894#></CAPTION>
+<TR><TD><DIV ALIGN="CENTER">
+<tex2html_image_mark>#tex2html_wrap14896#
+	
+</DIV></TD></TR>
+</TABLE>
+</DIV>
+
+
+<P>
+Depending on how many sectors are at a cell, the operating angles of the antennae need to be adjusted accordingly to ensure 360 degree service. If there is only one sector, an omnidirectional antenna is used, otherwise the antennae operating angles are adjusted to <tex2html_verbatim_mark>#math48#<tex2html_image_mark>#tex2html_wrap_inline14898#
+<tex2html_verbatim_mark>mathend000# where <tex2html_image_mark>#tex2html_wrap_inline14900#
+<tex2html_verbatim_mark>mathend000# is the number of antennae [#Eisenblatter#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+By dividing the cell into sectors the amount of co-channel interference that would occur in a cell is greatly reduced [#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. It is important to note that the reduction of co-channel interference is only applicable when the angle of the antenna by which transmission occurs is restricted[#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Suppose, if a cell using an omnidirectional transceiver is assigned 6 channels. If the cell were to be divided into three sectors, where the sectors' antennae are <tex2html_image_mark>#tex2html_wrap_inline14902#
+<tex2html_verbatim_mark>mathend000# apart, the number of interfering co-channels shrinks from 6 to 2 and from 6 to one in the case when the cell is divided into 6 sectors [#GSMSysEngin#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSM92#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Each sector operates one or more elementary transceivers called <#786#>TRX<#786#>. The number of <#787#>TRX<#787#> per sector is determined by the expected peak traffic demand that the cell must be able to handle. Each <#788#>TRX<#788#> can handle 7 to 8 communication links or calls in parallel except the first <#789#>TRX<#789#>, which handles fewer calls than normal because it is responsible for transmitting cell organisation and protocol information [#Eisenblatter#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. <#791#>TRX<#791#> are able to handle 7-8 calls in parallel due to the use of <#792#>FDM<#792#> and <#793#>TDM<#793#> schemes. 
+
+<P>
+<#794#>TRX<#794#> are assigned channels, which enable them to provide conversion between digital traffic data on the network side and the radio communication between <#795#>MS<#795#>and the <#796#>gsm<#796#> network[#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FAPOrientationModel#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The channels that are used by a cell for communication are discussed in section~<A HREF=<tex2html_cr_mark>#sec:interfacech#798><tex2html_cr_mark></A>.
+
+<P>

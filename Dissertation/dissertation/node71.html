@@ -1,0 +1,30 @@
+
+<H2><A NAME="SECTION04441000000000000000"><tex2html_anchor_invisible_mark></A>
+<A NAME="sec:TSIntroduction"><tex2html_anchor_mark></A><BR>
+Introduction
+</H2>
+<#2481#>TS<#2481#> was first proposed by Glover[#Glover89#<tex2html_cite_mark>#1##<tex2html_cite_mark>#] as a new searching technique to help algorithms avoid getting trapped in local optima in combinatorial and optimisation problems [#TabuRCAProblem#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Since Glover introduced the algorithm in the 1980s, tabu search has been applied to a wide range of problems such as the vehicle routing problem[#TabuVechicleRoutingWithTimeWindows#<tex2html_cite_mark>#1##<tex2html_cite_mark>#], <#2485#>FAP<#2485#>[#TabuMontemanniSmith#<tex2html_cite_mark>#1##<tex2html_cite_mark>#], capacitated-lot sizing problem[#TabuCarryOver#<tex2html_cite_mark>#1##<tex2html_cite_mark>#], Nurse Scheduling[#TabuNurse#<tex2html_cite_mark>#1##<tex2html_cite_mark>#] and the Resource Constrained Assignment Problem[#TabuRCAProblem#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+Even though the problems mentioned differ by a large margin, the algorithm has been successful in most optimisation problems it has been applied to. If one observes the results obtained in research [#TabuMontemanniSmith#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#tabuglobalplanning3g#<tex2html_cite_mark>#1##<tex2html_cite_mark>#], it can be inferred that tabu search has on average obtained the best results compared with previous attempts with other algorithms. 
+
+<P>
+<#2491#>TS<#2491#> resembles in its most basic form the hill-climbing search algorithm[#TabuBiddingStrats#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The hill-climbing search algorithm starts from an initial solution and then iteratively moves from the current solution to a neighbouring solution[#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Each neighbour is rated based on its attractiveness as a possible optimal solution that the algorithm is being applied to[#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+The hill-climbing algorithm moves to the neighbour with the highest rating without considering whether the neighbour might lead the algorithm astray, to a position where the neighbours are in fact <I>worse</I> than previously encountered possible solutions[#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+The <#2497#>TS<#2497#> algorithm addresses this shortcoming by introducing the concept of memory[#TabuBiddingStrats#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The memory of the algorithm is actually a history of previous solutions that the algorithm has moved to in its search for the search space for a solution[#TabuBiddingStrats#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+General search algorithms like hill-climbing, random-restart<A NAME="tex2html16"
+  HREF="footnode.html#foot3110"><SUP>4.2</SUP></A> or scatter search tend to get trapped in local optima [#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The local optima might be a very attractive solution and thus general search algorithms will not move to better solutions since, according to the algorithm's built-in strategy, it has found the best solution. 
+
+<P>
+In actual fact the solution that was found is the best solution in the <I>local</I> search space, but not in the <I>global</I> search space[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Therefore an important characteristic of algorithms being applied to optimisation problems is breaking out of local optima[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The next section discussed some of the characteristics that make the <#2506#>TS<#2506#> algorithm unique.
+
+<P>

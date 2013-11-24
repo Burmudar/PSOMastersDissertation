@@ -17,8 +17,16 @@
 	algorithms;search problems;transportation;}
 }
 
+@MISC{salamonwebsite,
+  author = {LAPPEENRANTA UNIVERSITY OF TECHNOLOGY: EVOLUATIONARY COMPUTATION
+	PAGES (Accessed 2011/06/09)},
+  title = {http://www.it.lut.fi/ip/evo/functions/node12.html},
+  owner = {william},
+  timestamp = {2012.01.29}
+}
+
 @INCOLLECTION{HandbookofMH,
-  author = {Sigurdur Ólafsson},
+  author = {Sigurdur {\'O}lafsson},
   title = {Chapter 21 Metaheuristics},
   booktitle = {Simulation},
   publisher = {Elsevier},
@@ -30,14 +38,6 @@
   doi = {10.1016/S0927-0507(06)13021-2},
   issn = {0927-0507},
   url = {http://www.sciencedirect.com/science/article/pii/S0927050706130212}
-}
-
-@MISC{salamonwebsite,
-  author = {LAPPEENRANTA UNIVERSITY OF TECHNOLOGY: EVOLUATIONARY COMPUTATION
-	PAGES (Accessed 2011/06/09)},
-  title = {http://www.it.lut.fi/ip/evo/functions/node12.html},
-  owner = {william},
-  timestamp = {2012.01.29}
 }
 
 @ARTICLE{CALMA,

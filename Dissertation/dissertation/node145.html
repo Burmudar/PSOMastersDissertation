@@ -1,0 +1,32 @@
+
+<H1><A NAME="SECTION05110000000000000000">
+Introduction</A>
+</H1>
+PSO, as discussed previously (see page <A HREF=<tex2html_cr_mark>#sec:PSO#5460><tex2html_cross_ref_visible_mark></A>), is an algorithm that is largely based on the flying behaviour exhibited by a flock of birds. This is why the core of the algorithm is based upon vector mathematics, with new positions and velocities being calculated after each iteration of the algorithm. Thus a D-dimensional vector represents each particle position and is then simulated by flying through the D-dimensional space using the velocity equation (see section~<A HREF=<tex2html_cr_mark>#sec:particleVelocity#5461><tex2html_cr_mark></A> on page~<A HREF=<tex2html_cr_mark>#eq:velocityupdate#5462><tex2html_cross_ref_visible_mark></A>).
+
+<P>
+Most of the problems to which <#5463#>PSO<#5463#> has been applied to date have been problems where the position of particles has a constant D-dimensional space. In formal terms, therefore, <I>the dimensionality of a particle position in its entirety is constant</I>. Therefore, each particle has a position which is defined in a set dimension like 2D where a position is represented at <tex2html_image_mark>#tex2html_wrap_inline15606#
+<tex2html_verbatim_mark>mathend000# and <tex2html_image_mark>#tex2html_wrap_inline15608#
+<tex2html_verbatim_mark>mathend000# coordinate pairs.
+
+<P>
+This constant dimensionality introduces an intriguing problem if one wants to apply the <#5465#>PSO<#5465#> to an inherent multidimension problem like the <#5466#>FAP<#5466#>. This chapter deals with how the <#5467#>PSO<#5467#> was applied to the <#5468#>FAP<#5468#>.
+
+<P>
+Firstly, the particle position is represented in the frequency planning domain is defined. This definition of the particle position is important because it plays a central part in
+the movement of particles through the Frequency planning domain. A description is then given of how each position is evaluated as well as the fitness function that the <#5469#>PSO<#5469#> will use in the <#5470#>FAP<#5470#> domain.
+
+<P>
+Arguably the most important part of the swarm is how the velocity of a particle is calculated and then moving it to a new position in the problem space. The velocity update is important, as it is the primary means by which the algorithm searches problem space.
+
+<P>
+As was discussed in section~<A HREF=<tex2html_cr_mark>#sec:psoonfap#5471><tex2html_cr_mark></A>, applying the <#5472#>PSO<#5472#> to the <#5473#>FAP<#5473#> introduces a variety of challenges. One of the challenges is how exactly one ``flies'' a frequency plan towards another frequency plan. This is an important question that needs to be addressed as the <#5474#>PSO<#5474#> algorithms have no other way of searching the problem space by any other means.
+
+<P>
+To be able to allow the <#5475#>PSO<#5475#> to operate in the <#5476#>FAP<#5476#> space custom velocity functions had to be developed to enable the particles of the swarm to move. These velocity functions that were developed will expanded on in section~<A HREF=<tex2html_cr_mark>#sec:velocityFAP#5477><tex2html_cr_mark></A>. 
+
+<P>
+Developing custom velocity functions for the <#5478#>PSO<#5478#> was simply not enough to achieve good results with the <#5479#>PSO<#5479#> . Therefore more innovations needed to be made to improve the solution quality of the <#5480#>PSO<#5480#> . In section~<A HREF=<tex2html_cr_mark>#sec:buildglobalbest#5481><tex2html_cr_mark></A> a new mechanism is presented for selecting the global best which enabled the <#5482#>PSO<#5482#> to get better fitness values and therefore direct the swarm more towards better solutions. 
+
+<P>
+Finally, the chapter will conclude with how the swarm utilises history to produce better results to enable the <#5483#>PSO<#5483#> to further improve the solution quality.

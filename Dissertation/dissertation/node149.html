@@ -1,0 +1,128 @@
+
+<H2><A NAME="SECTION05141000000000000000">
+Movement in the Frequency Planning Domain</A>
+</H2>
+The standard velocity equation works on the basis of vector mathematics. Each particle has a velocity and position, which is represented by a standard mathematical vector. The standard equation alters the direction of the particle to move to a more promising position in the solution space that is in the general direction of the global best particle and a previous personal best position the particle held..
+
+<P>
+Vector mathematics has standard basic operations defined for adding, subtracting and multiplying; hence applying the <#5553#>PSO<#5553#> to problems that are either mathematical functions or problems that map well to the vector domain is a defined process. With regard to the frequency planning domain an important question needs to be answered: How can one multidimension frequency plan be moved to another?
+
+<P>
+With any difficult problem it is better to break the problem down into its most basic constructs and then solve each piece individually until the problem as a collective is solved. This technique is also commonly known as divide and conquer. This technique was first applied to the nature of a frequency plan.
+
+<P>
+A frequency plan is a plan that consists of a series of different cells that are in use in the network. The plan specifies the frequencies that each individual transceiver installed at a cell must use for communication. Thus a frequency plan can broken up into three important constructs:
+
+<OL>
+<LI>A plan is a list of different cells.
+</LI>
+<LI>Each cell in a plan has a list of transceivers that it has installed.
+</LI>
+<LI>Each installed transceiver has a single number allocated to it called the frequency. This frequency is used for communication.
+</LI>
+</OL>
+
+<P>
+Now that a frequency plan has been broken up into its constructs, the question of how to move one frequency plan to another can be rephrased. How does one move a frequency allocated to a <I>transceiver</I> in a particular <I>cell</I> of one frequency plan to another frequency of the <I>same</I> transceiver and cell in another <I>different</I> plan? An important realisation needs to be noted here. In the <#5560#>PSO<#5560#> at any one time the algorithm is only considering two positions and for the <#5561#>FAP<#5561#> the two positions are frequency plans. Both plans are <I>identical</I> except for the specific that frequencies transceivers use. Thus a cell that exists in the one plan, also exists in another plan. Both the cells have exactly the same number of transceivers installed; only the frequencies each individual transceiver uses for communication differ.
+
+<P>
+Using this realisation, the conclusion can be made that the velocity equation can only work with the frequencies assigned to transceivers. Therefore a potential velocity equation mechanism needs to operate on the finest granularity of a frequency plan, i.e. the frequencies.
+
+<P>
+The principle on which the first velocity method developed is based, is for the movement of the swarm to be at a much finer granularity and hence movement is based on frequencies. Therefore when a particle needs to move towards a global best particle, the velocity procedure goes into the intricate details of the particle wanting to move and the global best particle. The procedure goes into each cell defined in the frequency plan represented by the standard particle as well as the global best particle to be able to access each installed transceiver.
+
+<P>
+To be able to move from one frequency plan to another by utilising the standard velocity equation, the equation needs to be broken up into its smaller operations. In this way, small operations can be developed that perform the same function as the individual parts. 
+
+<P>
+The velocity equation in section~<A HREF=<tex2html_cr_mark>#sec:particleVelocity#5563><tex2html_cr_mark></A> can be broken up into the following parts:
+<A NAME="lst:velocitybreakup"><tex2html_anchor_mark></A>
+<UL>
+<LI><B>Subtraction</B> --- <tex2html_verbatim_mark>#math112#<tex2html_image_mark>#tex2html_wrap_inline15626#
+<tex2html_verbatim_mark>mathend000# --- (SubtractionResultPbest) and <tex2html_verbatim_mark>#math113#<tex2html_image_mark>#tex2html_wrap_inline15628#
+<tex2html_verbatim_mark>mathend000# --- (SubtractionResultGbest)
+</LI>
+<LI><B>Multiplication</B> --- <tex2html_verbatim_mark>#math114#<tex2html_image_mark>#tex2html_wrap_inline15630#
+<tex2html_verbatim_mark>mathend000# --- (MultiPbestResult) and <tex2html_verbatim_mark>#math115#<tex2html_image_mark>#tex2html_wrap_inline15632#
+<tex2html_verbatim_mark>mathend000# --- (MultiGBestResult)
+</LI>
+<LI><B>Addition</B> --- <tex2html_verbatim_mark>#math116#<tex2html_image_mark>#tex2html_wrap_inline15634#
+<tex2html_verbatim_mark>mathend000#
+</LI>
+</UL>
+There are no mathematical constructs that define how two frequency plans are added together or subtracted, let alone multiplied. As discussed earlier, a frequency plan is just a series of cells that have frequencies and these frequencies are numbers that internally are just integers and there are mathematical constructs that define how two integers should be added, subtracted or multiplied. Both velocity methods that were developed utilise the basic principle that on a fine granularity of a frequency plan one is merely working with integers.
+
+<P>
+The first velocity method is listed in algorithm~<A HREF=<tex2html_cr_mark>#alg:velocitymethod1#5570><tex2html_cr_mark></A>. Velocity method 1 works on the principle of moving one cell in a particular frequency plan to the same cell in a different frequency plan. As noted earlier, the cells are the <I>same</I>, but the frequencies that have been allocated to each transceiver within a cell differs. Thus in velocity method 1, each cell has an array of transceivers. The array of transceivers contains the individual frequency numbers that have been allocated to a cell.
+<BR>
+<A NAME="alg:velocitymethod1"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm5572#
+<BR>
+
+<P>
+Velocity method 1 actually moves one array of transceivers to another array of transceivers. This is why, if one observes lines 5 -- 17 in algorithm~<A HREF=<tex2html_cr_mark>#alg:velocitymethod1#5579><tex2html_cr_mark></A>, each particle position is passed to methods that are named Subtraction, Multiplication and Addition. As discussed in the previous section, each position of a particle is actually a frequency plan.
+
+<P>
+The first method that is used to calculate the velocity of a frequency plan, is the first basic operation defined in the velocity equation, namely subtraction, as can be observed from algorithm~<A HREF=<tex2html_cr_mark>#alg:arraySubtract#5580><tex2html_cr_mark></A>. The particular algorithm expects two positions to be given to it: the position it must be moved from and the position it must be move to. Because each position is a frequency plan that contains an array of cells, a for-loop is started on line 1 that allows the algorithm to go through each cell that is defined in the frequency plan. Each cell has a number of transceivers, each with an assigned frequency. 
+<BR>
+<A NAME="alg:arraySubtract"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm5581#
+<BR>
+
+<P>
+To be able to subtract two transceivers from each other, the algorithm needs access to a particular transceiver of a cell. The algorithm gains this access by entering another for-loop based on the number of transceivers a cell has, as can be observed to occur in line 2. Within this for-loop the actual subtraction of transceivers occurs.
+
+<P>
+The algorithm first obtains the exact same transceiver in the toPosition frequency plan. This operation is quick, as the two plans are identical except for the frequencies assigned to transceivers for each cell. Thus the algorithm is able to refer to the cell and specific transceiver in the toPosition plan by the same index it utilises to access the cell and transceiver in the fromPosition.
+
+<P>
+Once the toPosition plan transceiver frequency value has been obtained, the algorithm performs a standard integer subtraction as seen in line 4 of algorithm~<A HREF=<tex2html_cr_mark>#alg:arraySubtract#5594><tex2html_cr_mark></A>.
+After the subtraction algorithm is completed, a position is returned which is the result of subtracting the fromPosition from the toPosition. Using this result the velocity method 1 algorithm is now ready to apply the next operation in the velocity update equation, namely multiplication which is depicted in algorithm~<A HREF=<tex2html_cr_mark>#alg:arrayMultiply#5595><tex2html_cr_mark></A>.
+
+<P>
+<BR>
+<A NAME="alg:arrayMultiply"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm5596#
+<BR>
+
+<P>
+The multiplication algorithm is where the local Coefficient and the global coefficient<A NAME="tex2html26"
+  HREF="footnode.html#foot5878"><SUP>6.2</SUP></A> defined for the <#5606#>PSO<#5606#> are multiplied into a position, i.e. frequency plan. As with the subtraction algorithm the multiplication algorithm enters two for-loops. The first for-loop is to access each cell defined in the frequency plan. The second loop allows the algorithm to access each transceiver within a particular cell. These for-loops can be observed to occur in algorithm~<A HREF=<tex2html_cr_mark>#alg:arrayMultiply#5607><tex2html_cr_mark></A> in lines 1 and 2.
+
+<P>
+Once the algorithm is able to access each individual transceiver and get its assigned frequency, it is able to perform the multiplication operation. As can be observed in the algorithm in line 3 the algorithm checks whether it needs to multiply the frequency by an additional random number besides the <tex2html_image_mark>#tex2html_wrap_inline15638#
+<tex2html_verbatim_mark>mathend000# passed to the algorithm. The reason this is done is that multiplication is required in the <#5608#>PSO<#5608#> in the following cases:
+
+<P>
+
+<UL>
+<LI>The inertia case --- <tex2html_verbatim_mark>#math117#<tex2html_image_mark>#tex2html_wrap_inline15640#
+<tex2html_verbatim_mark>mathend000#, where 0.5 is the inertia value and <tex2html_image_mark>#tex2html_wrap_inline15642#
+<tex2html_verbatim_mark>mathend000# is velocity that has already been calculated for a particular particle <tex2html_image_mark>#tex2html_wrap_inline15644#
+<tex2html_verbatim_mark>mathend000#. Note, a velocity that has been calculated is still a frequency plan.
+</LI>
+<LI>Standard velocity calculation randomisation case --- As can be observed from the velocity equation~<A HREF=<tex2html_cr_mark>#eq:velocityupdate#5610><tex2html_cr_mark></A> and also from the multiplication bullet point on page~<A HREF=<tex2html_cr_mark>#lst:velocitybreakup#5611><tex2html_cross_ref_visible_mark></A>, the equation requires that a position be multiplied by a coefficient <tex2html_image_mark>#tex2html_wrap_inline15646#
+<tex2html_verbatim_mark>mathend000# or <tex2html_image_mark>#tex2html_wrap_inline15648#
+<tex2html_verbatim_mark>mathend000# and then a random value <tex2html_image_mark>#tex2html_wrap_inline15650#
+<tex2html_verbatim_mark>mathend000# or <tex2html_image_mark>#tex2html_wrap_inline15652#
+<tex2html_verbatim_mark>mathend000#. 
+</LI>
+</UL>
+
+<P>
+Regardless of which case is executed, the actual operation that is performed is integer multiplication, which therefore means that even though the inertia and random numbers are decimal, the fractional component of the result is discarded. Channels are integers so the loss of the fractional component is warranted as it is of no use.
+
+<P>
+As per the last bullet point on page~<A HREF=<tex2html_cr_mark>#lst:velocitybreakup#5613><tex2html_cross_ref_visible_mark></A> the last basic operation that occurs in the velocity equation is an integer addition operation. Algorithm~<A HREF=<tex2html_cr_mark>#alg:arrayAdd#5614><tex2html_cr_mark></A> is the addition procedure used by velocity method 1 (algorithm~<A HREF=<tex2html_cr_mark>#alg:velocitymethod1#5615><tex2html_cr_mark></A>).
+<BR>
+<A NAME="alg:arrayAdd"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm5616#
+<BR>
+
+<P>
+In the addition algorithm, as with multiplication and subtraction, two for-loops are started as can be observed in lines 1 -- 2. The algorithm first starts iterating through all the cell's present in the fromPosition frequency plan and then within the cell for-loop starts another for-loop which iterates through each cells transceivers. Inside the transceiver for-loop the algorithm actually performs the addition of two frequencies.
+
+<P>
+Two frequencies are added based on integer addition. Once the fromPosition cell transceiver is accessed, the algorithm retrieves the exact transceiver and cell in the toPosition in order to get its allocated frequency value. After both values have been retrieved the algorithm performs the addition as can be observed in line 4 of algorithm~<A HREF=<tex2html_cr_mark>#alg:arrayAdd#5630><tex2html_cr_mark></A>.
+
+<P>
+The addition operation is the last operation that occurs in the velocity equation and is also the only operation that occurs when the resultant velocity is applied to the current position of a particle as in equation~<A HREF=<tex2html_cr_mark>#eq:positionupdate#5631><tex2html_cr_mark></A>. Since the addition operation is also used in the final position update of the particle, its last operation in the transceiver loop a bound operation. 
+
+<P>
+The purpose of the bound operation is to keep the frequencies within valid value ranges.

@@ -1,0 +1,33 @@
+
+<H2><A NAME="SECTION04533000000000000000">
+Flow of the Algorithm</A>
+</H2>
+In this section the process the <#4025#>AS<#4025#> algorithm uses to explore the search space is described using algorithm~<A HREF=<tex2html_cr_mark>#alg:ACO#4026><tex2html_cr_mark></A> as a reference point.
+<BR>
+<A NAME="alg:ACO"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm4027#
+<BR>
+
+<P>
+<BR>
+<A NAME="alg:ACO1"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm4045#
+<BR>
+
+<P>
+The <#4065#>ACO<#4065#> algorithm initialises by creating a set population of ants and placing them on random starting nodes as well as initialising the pheromones to starting values as can be observed from algorithm~<A HREF=<tex2html_cr_mark>#alg:ACO#4066><tex2html_cr_mark></A>, lines 1 -- 3. The main purpose of the ant is to explore the search space and to ultimately produce a solution that might be optimal. The ant explores the search space by performing a series of moves from one node to another. Each move is a link that is added to the path. This process can be seen in lines 5 -- 10.
+
+<P>
+The ant selects which node to move to next based on a probability. The probability is calculated taking into account the amount of pheromone that is on the current link representing the movement from the current node to the next node[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. This decision process can be seen to occur in line 8.
+
+<P>
+As the ant moves it records each link between the nodes it traverses until it reaches the final node. All the links the ant has traversed represent a path taken through the search space[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Thus, as the ant is moving it is actively building an optimal solution.
+
+<P>
+Before the ant deposits pheromone on the links it traversed to construct its solution, the pheromones first need to be decayed. This is why in lines 14 -- 16, the algorithm traverses all links that contain pheromones and reduces the amount of pheromones by applying equation~<A HREF=<tex2html_cr_mark>#eq:pheromoneevapuration#4069><tex2html_cr_mark></A>.
+
+<P>
+Once an ant has constructed a path and the pheromone evaporation has occurred, the ant is ready to inform the rest of the ants of what movements it made to construct its solution. The ant needs to share this movement information in order for the rest of the colony to know which movements worked well and which did not. The ant therefore needs to signal the other ants, which is accomplished with pheromones. Therefore, in the next phase of the algorithm, pheromones are deposited on all the links that make up the path the particular ant constructed. In the algorithm pheromones are deposited on lines 17 -- 22 in algorithm~<A HREF=<tex2html_cr_mark>#alg:ACO1#4070><tex2html_cr_mark></A>.
+
+<P>
+After all the ants have deposited pheromones on all the links represented by each individual ant's constructed solution, the algorithm is ready to continue to its next iteration. This process occurs until some defined stopping criterion occurs.
+
+<P>

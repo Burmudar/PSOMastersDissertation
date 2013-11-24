@@ -1,0 +1,22 @@
+
+<H2><A NAME="SECTION04453000000000000000">
+Flow of the Algorithm</A>
+</H2>
+In an attempt to better understand how the <#2785#>SA<#2785#> algorithm operates, a general discussion on the flow of the algorithm will now be given using algorithm~<A HREF=<tex2html_cr_mark>#alg:SA#2786><tex2html_cr_mark></A> as a reference point.
+<BR>
+<A NAME="alg:SA"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm2787#
+<BR>
+
+<P>
+From lines 1 -- 3, the <#2805#>SA<#2805#> algorithm is initialised. The most important step here is setting the starting temperature for the annealing process to start. As mentioned in the introduction, the temperature of the annealing process plays a critical role in the potential solution selection process. After the algorithm has been initialised the search phase of the algorithm starts which ranges from lines 4 -- 10. Like the <#2806#>TS<#2806#> algorithm, the <#2807#>SA<#2807#> algorithm starts the search phase by generating a number of neighbours to the current solution held by the algorithm as can be observed in line 5.
+
+<P>
+Before selecting a neighbour the algorithm first needs to evaluate the generated neighbours. It evaluates each neighbour by applying a fitness function <tex2html_image_mark>#tex2html_wrap_inline15201#
+<tex2html_verbatim_mark>mathend000# in order to determine its fitness.
+Once the fitness of all the generated neighbours has been determined, the algorithm uses equation~<A HREF=<tex2html_cr_mark>#eq:saprobability#2808><tex2html_cr_mark></A> to calculate the probability of selecting a particular neighbour for all the generated neighbours as well. The probability calculation can be observed to occur in line 7. The algorithm then selects the neighbour with the highest probability to be the current solution, as observed in line 9. 
+
+<P>
+Before the algorithm advances to the next iteration the temperature needs to be lowered. As discussed, the temperature is lowered according to a particular cooling schedule. In the algorithm the process of lowering the temperature occurs in line 10. 
+
+<P>
+This concludes the discussion on the flow of the SA algorithm. In the section that follows a discussion is given on when <#2809#>SA<#2809#> is applied to the <#2810#>FAP<#2810#>.

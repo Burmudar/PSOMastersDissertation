@@ -1,0 +1,16 @@
+
+<H3><A NAME="SECTION04442100000000000000">
+Initial Solution Generation</A>
+</H3>
+The core feature of the <#2512#>TS<#2512#> algorithm is to sequentially improve an initial solution [#TSHazardous#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. An initial possible solution is a point in the search space where the <#2514#>TS<#2514#> algorithm will <I>start</I> exploring in search of a more optimal solution [#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TSHazardous#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+An important consideration one has to make is how initial solutions are generated for the <#2517#>TS<#2517#> algorithm to start on[#AIModernApproach#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TSHazardous#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Random initial solutions might seem to be a good starting point, but by introducing randomisation it becomes hard to control the quality of the end solution[#TSHazardous#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Hence the generation of starting solutions must be controlled to limit the infeasibility of potential solutions [#TSHazardous#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+Control of the randomly generation solutions can be achieved by simply constraining the random solution generator to only generate initial starting points in a bounded subset of the entire search space. For example: instead of letting the random initial starting point be any number between positive infinity and negative infinity, the random number generator is constrained to only generate numbers between 5 and -5.
+
+<P>

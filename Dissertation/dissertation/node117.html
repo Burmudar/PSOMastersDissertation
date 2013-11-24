@@ -1,0 +1,87 @@
+
+<H3><A NAME="SECTION04532400000000000000">
+Pheromone Update</A>
+</H3>
+Pheromones start to evaporate over time, and so the link marked by a pheromone trail becomes less attractive to the ants. Therefore, a path that represents a good solution needs its pheromone trail to be continuously reinforced. Certian rules govern when and by how much pheromones are reinforced.
+
+<P>
+Most of the variants that have been developed differ in what pheromone update rules they employ. In the literature pheromone update rules are classified into two groups [#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. One group is called the global update rule. The other group is called the iteration-based or local update rule[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+The first local pheromone update rule was first introduced in the <#3954#>AS<#3954#> algorithm [#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AntSurvey#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AntsAndStigmergy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The ants would retrace their path after each iteration, depositing pheromones on each link that makes the complete path. The following equation is used to update the pheromone:
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><tex2html_image_mark>#tex2html_wrap_indisplay15374#</TD>
+<TD NOWRAP ALIGN="LEFT"><tex2html_image_mark>#tex2html_wrap_indisplay15375#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+<A NAME="eq:pheromonedeposit">(5.3)</A></TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT">where;SPMnbsp;<tex2html_image_mark>#tex2html_wrap_indisplay15376#</TD>
+<TD NOWRAP ALIGN="LEFT"><tex2html_image_mark>#tex2html_wrap_indisplay15377#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+;SPMnbsp;;SPMnbsp;;SPMnbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+In equation~<A HREF=<tex2html_cr_mark>#eq:pheromonedeposit#3967><tex2html_cr_mark></A> <tex2html_verbatim_mark>#math81#<tex2html_image_mark>#tex2html_wrap_inline15379#
+<tex2html_verbatim_mark>mathend000# represents the amount of pheromone that will be on the link for the next time step <tex2html_image_mark>#tex2html_wrap_inline15381#
+<tex2html_verbatim_mark>mathend000#. <tex2html_image_mark>#tex2html_wrap_inline15383#
+<tex2html_verbatim_mark>mathend000# represents the amount of pheromone currently on the link <tex2html_image_mark>#tex2html_wrap_inline15385#
+<tex2html_verbatim_mark>mathend000#. <tex2html_verbatim_mark>#math82#<tex2html_image_mark>#tex2html_wrap_inline15387#
+<tex2html_verbatim_mark>mathend000# is the actual amount of pheromone that needs to be added to the current pheromone <tex2html_image_mark>#tex2html_wrap_inline15389#
+<tex2html_verbatim_mark>mathend000#.
+
+<P>
+Pheromone update rules that are in the global update group only allow the pheromone trail of the path representing the best found solution since the first iteration to be updated [#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Thus the global rule favours intensification where the algorithm exploits the global knowledge gained by the ants to find a better solution. By updating a pheromone the concentration of the particular pheromone is reinforced.
+
+<P>
+<#3973#>ACS<#3973#> was the first to use both the global update rule and local update rule together[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. By using both types of rules the algorithm is able to efficiently exploit the history provided by the pheromones[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The global update rule used by the <#3976#>ACS<#3976#> is formulated in the following equation[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]:
+<P></P>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT"><tex2html_image_mark>#tex2html_wrap_indisplay15390#</TD>
+<TD NOWRAP ALIGN="LEFT"><tex2html_image_mark>#tex2html_wrap_indisplay15391#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+<A NAME="eq:pheromoneupdate">(5.4)</A></TD></TR>
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="RIGHT">where;SPMnbsp;<tex2html_image_mark>#tex2html_wrap_indisplay15392#</TD>
+<TD NOWRAP ALIGN="LEFT"><tex2html_image_mark>#tex2html_wrap_indisplay15393#if <tex2html_verbatim_mark>#math83#<tex2html_image_mark>#tex2html_wrap_inline15395#
+<tex2html_verbatim_mark>mathend000#<tex2html_image_mark>#tex2html_wrap_indisplay15396#otherwise<tex2html_image_mark>#tex2html_wrap_indisplay15397#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+;SPMnbsp;;SPMnbsp;;SPMnbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+The parameter <tex2html_image_mark>#tex2html_wrap_inline15399#
+<tex2html_verbatim_mark>mathend000# represents the best/shortest path found so far by the algorithm[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. <tex2html_image_mark>#tex2html_wrap_inline15401#
+<tex2html_verbatim_mark>mathend000# is the variable that controls the rate of evaporation. <tex2html_verbatim_mark>#math84#<tex2html_image_mark>#tex2html_wrap_inline15403#
+<tex2html_verbatim_mark>mathend000# is the amount of pheromone at the current time step <tex2html_image_mark>#tex2html_wrap_inline15405#
+<tex2html_verbatim_mark>mathend000# for the link <tex2html_image_mark>#tex2html_wrap_inline15407#
+<tex2html_verbatim_mark>mathend000#.
+
+<P>
+By using the global update rule the algorithm is able to direct the search more, which is to say the algorithm exploits the search space more. Exploitation is achieved since the best path is continually used in the update of the pheromone as can be observed in equation~<A HREF=<tex2html_cr_mark>#eq:pheromoneupdate#3994><tex2html_cr_mark></A>[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+As can been seen in the following equation, the <#3996#>ACS<#3996#> uses a slight variant of the local update rule first used in <#3997#>AS<#3997#>[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]:
+<P></P>
+<DIV ALIGN="CENTER"><tex2html_verbatim_mark>#math85#<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><tex2html_image_mark>#tex2html_wrap_indisplay15409#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(5.5)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+In the above equation <tex2html_image_mark>#tex2html_wrap_inline15411#
+<tex2html_verbatim_mark>mathend000# is a small constant and <tex2html_verbatim_mark>#math86#<tex2html_image_mark>#tex2html_wrap_inline15413#
+<tex2html_verbatim_mark>mathend000# is the constant that defines the rate of evaporation[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. With the local update rule, the algorithm is able to explore more. The path constructed by the individual ant is used to update the pheromone and no information from the best path found in the colony is incorporated, as with equation~<A HREF=<tex2html_cr_mark>#eq:pheromoneupdate#4004><tex2html_cr_mark></A>[#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The <#4006#>MMAS<#4006#> algorithm as discussed also improves on the <#4007#>AS<#4007#>. The global update rule used by <#4008#>AS<#4008#> has a disadvantage in the sense that the search might concentrate too quickly on a particular good solution (the global best path)[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. <#4010#>MMAS<#4010#> address this disadvantage by using the global update rule on an iteration basis[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+When considering only on an per iteration basis, the best path found by the algorithm can differ from one iteration to the next[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Therefore the <#4013#>MMAS<#4013#> a different path will be updating with the global update rule each iteration[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Using this approach the algorithm is allowed to explore the search space more[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Another short coming of the <#4016#>AS<#4016#> is that pheromone concentrations can become extremely high leading to less exploration by the algorithm[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The <#4018#>MMAS<#4018#> algorithm addresses this short coming by enforcing an maximum and minimum amount of pheromone that can exist on a path[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. By defining a maximum the algorithm is prevents the algorithm from settling on one particular solution i.e, stagnation[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. On the other hand, defining a minimum on all possible links between nodes ensures that links will be continiously considered for possible inclusion into a solution[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. In addition to providing boundaries for the pheromones <#4022#>MMAS<#4022#> also uses a smoothing strategy to even out the difference between high and low pheromones[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>

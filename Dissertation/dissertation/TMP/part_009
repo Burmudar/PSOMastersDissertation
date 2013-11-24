@@ -1,0 +1,27 @@
+<tex2html_file>#./tikz-pics/adjchannel.tex#
+\begin<<1748>>tikzpicture<<1748>>[]
+	<tex2html_comment_mark>29
+\draw(-0.5,0) -- (10,0);
+	\draw(0,-0.5) -- (0,5);
+	\draw[pattern=crosshatch dots,even odd rule] (0,0) parabola bend(2.5,4) (5,0) (4.5,0) parabola bend(7,4) (10,0);
+	\draw[-] (2.5,0) -- (2.5,4.5);
+	\node (interference) at (4.75,3.25) <<1763>>\begin<<1768>>tex2html_deferred<<1768>>\tiny\end<<1769>>tex2html_deferred<<1769>><<1749>>Interference<<1749>><<1763>>;
+	\draw[;SPMlt;-] (4.75,0.25) -- (interference);
+	\draw[-] (7,0) -- (7,4.5);
+	\draw[;SPMlt;-;SPMgt;] (2.5,4.25) -- (7,4.25);
+\end<<1750>>tikzpicture<<1750>>
+<tex2html_endfile>#./tikz-pics/adjchannel.tex#
+	\begin<<1770>>tex2html_deferred<<1770>>\caption<<1751>>Adjacent channel interference<<1751>>\end<<1771>>tex2html_deferred<<1771>>
+	\label<<1752>>fig:adjacentinterference<<1752>>
+	\end<<1753>>centering<<1753>>
+\end<<1754>>figure<<1754>>
+\begin<<1772>>tex2html_deferred<<1772>>\par\end<<1773>>tex2html_deferred<<1773>>
+The impact interference will have on an entity that has established a connection and that operates on the same channel or adjacent channel as another entity decreases as the geographic distance between them increases\cite<<1755>>InterferenceOrientatedFAP<<1755>>. Therefore, to minimise the impact interference will have on communication links a \emph<<1756>>separation<<1756>> is defined\cite<<1757>>WirelessCommunications<<1757>>. More specifically, this separation is known as the channel reuse or frequency reuse distance within wireless networks\cite<<1758>>WirelessCommunications<<1758>>.
+\begin<<1774>>tex2html_deferred<<1774>>\par\end<<1775>>tex2html_deferred<<1775>>
+This separation is defined as the minimum number of cells (which must all use different frequencies) between one cell, which has been allocated a channel, and another cell before a cell is allowed to reuse the same channel that another cell has been allocated\cite<<1759>>WirelessCommunications,InterferenceOrientatedFAP<<1759>>. 
+\begin<<1776>>tex2html_deferred<<1776>>\par\end<<1777>>tex2html_deferred<<1777>>
+The separation can be depicted visually as in figure~\ref<<1760>>fig:seperationgraph<<1760>> where \begin<<1764>>tex2html_wrap_inline<<1764>>$f_a,f_b,f_c,f_d$\end<<1765>>tex2html_wrap_inline<<1765>>\space are different frequencies that are assigned to the specific cells. The frequency \begin<<1766>>tex2html_wrap_inline<<1766>>$f_a$\end<<1767>>tex2html_wrap_inline<<1767>>\space is allowed to be reused since the two cells it is assigned to are separated by three cells (shaded in grey) because the separation for this network was set to three.
+\begin<<1778>>tex2html_deferred<<1778>>\par\end<<1779>>tex2html_deferred<<1779>>
+\begin<<1761>>figure<<1761>>[H]
+	\begin<<1762>>centering<<1762>>
+	<tex2html_comment_mark>30

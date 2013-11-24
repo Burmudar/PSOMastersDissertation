@@ -1,0 +1,40 @@
+
+<H2><A NAME="SECTION04543000000000000000">
+Flow of the Algorithm</A>
+</H2>
+Most of the concepts that are used in the <#4270#>ABC<#4270#> algorithm have been explained. The general search process of the algorithm will now be discussed using algorithm~<A HREF=<tex2html_cr_mark>#alg:ABC#4271><tex2html_cr_mark></A> as a reference point.
+<BR>
+<A NAME="alg:ABC"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm4272#
+<BR>
+
+<P>
+<BR>
+<A NAME="alg:ABC1"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm4291#
+<BR>
+The algorithm starts off by generating a set number of possible solutions. The number of solutions is equal to the number of employed bees. Each starting solution is evaluated using a fitness function. The operations that peform these functions can be observed to occur from lines 1 -- 3.
+
+<P>
+At first each bee is assigned to one of the initial generated solutions (food sources). Hence the bees start off as employed bees and each bee has in its memory a particular possible solution with an associated nectar amount. The algorithm can now be considered to be initialised, and therefore the algorithm enters the next phase, which is where the actual optimisation and search procedure occurs. This phase stretches from lines 5 -- 22.
+
+<P>
+From lines 6 -- 10, each employed bee modifies its particular solution based on local information, which is also referred to as visual information in the literature. The modified solution is then tested to determine its nectar amount, i.e. the fitness of the generated solution is calculated. The employed bee then compares the newly generated nectar amount with the nectar amount of the search in the bee's memory. If the newly generated solution has a better nectar amount, the bee replaces the current solution in its memory with the newly generated solution.
+
+<P>
+After all the employed bees have determined whether to keep the newly generated solution or keep the one in memory, they then need to communicate to the rest of the bee hive the nectar amount of the food sources that they occupy. This phase is where the waggle dance occurs and can be observed in algorithm~<A HREF=<tex2html_cr_mark>#alg:ABC#4311><tex2html_cr_mark></A> from lines 12 -- 17.
+
+<P>
+Each onlooker bee then selects which food source it will move towards based on a probability. The probability takes into account the nectar amount that was communicated through the waggle dance by a particular employed bee. The probability is calculated using equation~<A HREF=<tex2html_cr_mark>#eq:beeProbability#4312><tex2html_cr_mark></A> which is discussed in section~<A HREF=<tex2html_cr_mark>#sec:foodsources#4313><tex2html_cr_mark></A>.
+
+<P>
+Once an onlooker bee has selected a food source based on the calculated probability, it then starts to search the immediate neighbourhood of the selected food source for other food sources. The neighbouring food sources are generated using equation~<A HREF=<tex2html_cr_mark>#eq:beeGenerate#4314><tex2html_cr_mark></A> which is discussed in section~<A HREF=<tex2html_cr_mark>#sec:employonlookerbees#4315><tex2html_cr_mark></A>. This procedure of generating neighbouring food sources by an onlooker bee can be observed in line 14 in algorithm~<A HREF=<tex2html_cr_mark>#alg:ABC#4316><tex2html_cr_mark></A>.
+
+<P>
+The onlooker bee then applies the same procedure as an employed bee with regard to determining if the newly generated food source should be remembered or discarded. The bee does this by evaluating each generated neighbouring food source to determine its nectar amount, which is then compared to the nectar amount of the food source in the bee's memory.
+
+<P>
+In the last phase of the algorithm (before the next iteration starts) the algorithm determines which food sources have been abandoned by the bees. A food source in the algorithm can be abandoned if, for a certain number of iterations the food source has not improved, meaning its nectar content has not increased. When a food source is abandoned the employed bee that occupied the particular food source transitions to a scout bee.
+
+<P>
+A scout bee aims to replace the abandoned food source with a new food source. In algorithm~<A HREF=<tex2html_cr_mark>#alg:ABC#4317><tex2html_cr_mark></A> this occurs in lines 18 -- 22. The scout bee uses equation~<A HREF=<tex2html_cr_mark>#eq:scoutGenerate#4318><tex2html_cr_mark></A> to generate a new food source. It then transitions to an employed bee and occupies the newly generated solution. The newly generated food source will now also be evaluated to determine its nectar amount as the rest of the employed bees do at the start of the next iteration.
+
+<P>

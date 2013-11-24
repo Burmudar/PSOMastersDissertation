@@ -1,0 +1,88 @@
+
+<H2><A NAME="SECTION05143000000000000000"><tex2html_anchor_invisible_mark></A>
+<A NAME="sec:velocityFAP2"><tex2html_anchor_mark></A><BR>
+Using Indices instead of Frequencies
+</H2>
+As discussed in section~<A HREF=<tex2html_cr_mark>#sec:velocityFAP#5665><tex2html_cr_mark></A> and as can be observed from algorithm~<A HREF=<tex2html_cr_mark>#alg:velocitymethod1#5666><tex2html_cr_mark></A>, the first velocity method that was developed for the <#5667#>PSO<#5667#> worked with raw frequency values. This is not ideal since upon closer inspection the frequency range that the swarm used to move around was indeed incorrect. The bound value algorithm only keeps frequencies within a minimum and maximum allowable frequency range, but globally blocked frequencies and locally blocked frequencies can be in between this minimum and maximum frequency range. 
+
+<P>
+With velocity method 1 and the <#5668#>PSO<#5668#> using raw frequency values, the swarm increasingly moved towards allocating these blocked frequencies to trans-ceivers since the fitness function does not penalise the use of blocked or invalid frequency values. This is partly due to the fact that these values are under no circumstances allowed to be used and thus the fitness function is not designed to check for these values explicitly to impose a penalty.
+
+<P>
+Frequency plans that utilise these blocked frequencies are invalid and cannot be used. If a network were to use a plan that uses blocked frequencies, it could cause unexpected interference to other services and the network could be fined by the governing body that controls the spectrum. A bare minimum requirement then is that the <#5669#>PSO<#5669#> must generate valid frequency plans and hence swarm particles can only occupy valid positions. The following options were presented to solve the problem of particles moving towards invalid positions and hence having invalid frequency plans:
+
+<OL>
+<LI>Modify the fitness function to penalise a frequency plan if it uses any globally blocked frequencies or locally blocked frequencies.
+</LI>
+<LI>Instead of letting the swarm work with raw frequency values, rather let it work with indices of an array. The array index values indicate positions in an array that has been pre-filled with only <I>valid</I> frequencies. Thus the swarm then moves around in a range from 0 to <tex2html_image_mark>#tex2html_wrap_inline15670#
+<tex2html_verbatim_mark>mathend000#, where <tex2html_image_mark>#tex2html_wrap_inline15672#
+<tex2html_verbatim_mark>mathend000# is the size of the frequency array.
+</LI>
+</OL>
+
+<P>
+With the first solution, the fitness function would have to be modified to impose a penalty if a prohibited frequency value were used. The first proposed solution was disregarded because it introduces complexity which can be completely avoided with the second proposed solution.
+
+<P>
+With the second solution the fitness function does not have to be modified and the boundary check is simplified since there is no need to check for a lower bound. The boundary check now only has to check for negative index values and whether the upper bound, which is now the size of the array, is violated. 
+
+<P>
+The second method is also a method known in constraint handling as <I>preserving feasibility</I> (see section~<A HREF=<tex2html_cr_mark>#sec:chm#5674><tex2html_cr_mark></A> for a discussion on constriant handling methods). By using only valid frequencies the search space is even more constricted to only feasible solutions.
+
+<P>
+Working with index values rather than with raw frequency values led to  a second velocity method. Algorithm~<A HREF=<tex2html_cr_mark>#alg:velocitymethod2#5675><tex2html_cr_mark></A> is the pseudocode for the second velocity method. The second velocity method differs from velocity method 1 due to it being designed to only work with indices of an array.
+<BR>
+<A NAME="alg:velocitymethod2"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm5676#
+<BR>
+
+<P>
+Velocity method 2 also differs from method 1 due to the manner in which it applies the velocity equation. Velocity method 1 applies the velocity equation in stages. Each stage is applied to the entire position, i.e. frequency plan before applying the next stage. With velocity method 2 the algorithm first enters a for-loop as in line 6. Within this for-loop the algorithm obtains the current cell, the cell stored in its previous best-held position <tex2html_image_mark>#tex2html_wrap_inline15674#
+<tex2html_verbatim_mark>mathend000# and the same cell stored in the global best position <tex2html_image_mark>#tex2html_wrap_inline15676#
+<tex2html_verbatim_mark>mathend000#.
+
+<P>
+Once all the correct cells have been obtained the algorithm calls a method named <I>MoveIndices</I> (which is presented in algorithm~<A HREF=<tex2html_cr_mark>#alg:moveindices#5689><tex2html_cr_mark></A>) to which all the cells are passed.
+<BR>
+<A NAME="alg:moveindices"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm5690#
+<BR>
+
+<P>
+In the MoveIndices algorithm three cells are passed to it. The current cell of the velocity algorithm that is being moved, as is the same cell that is stored in the previous best-held position of the particle and also the same cell in the global best position. The algorithm starts off by iterating through all the transceivers installed at the current cell as can be seen in line 1 of algorithm~<A HREF=<tex2html_cr_mark>#alg:moveindices#5697><tex2html_cr_mark></A>. In lines 2 -- 3 the algorithm obtains the frequency values from the <I>pbestCell</I> and <I>gbestCell</I>.
+
+<P>
+After the MoveIndices algorithm has obtained the frequency values it is ready to apply the velocity equation. As can be seen in lines 8 -- 10 the algorithm applies the standard velocity equation~<A HREF=<tex2html_cr_mark>#eq:velocityupdate#5700><tex2html_cr_mark></A> formulated in chapter~<A HREF=<tex2html_cr_mark>#chpt:swarm#5701><tex2html_cr_mark></A>. 
+
+<P>
+Once the MoveIndices algorithm has completef, the currCell variable now stores the calculated velocity. Algorithm~<A HREF=<tex2html_cr_mark>#alg:velocitymethod2#5702><tex2html_cr_mark></A> uses the return calculated velocity to update the cell position of the current particle. The algorithm accomplishes this by first determining whether the particle has had a previously calculated velocity. If it is the first time the velocity has been calculated, the algorithm simply applies the velocity by using algorithm~<A HREF=<tex2html_cr_mark>#alg:applyvelocity#5703><tex2html_cr_mark></A>. 
+
+<P>
+<BR>
+<A NAME="alg:applyvelocity"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm5704#
+<BR>
+
+<P>
+If the particle does have a current velocity, the algorithm first executes algorithm~<A HREF=<tex2html_cr_mark>#alg:calcindexvelocity#5711><tex2html_cr_mark></A> as can be observed to occur in line 11 of algorithm~<A HREF=<tex2html_cr_mark>#alg:velocitymethod2#5712><tex2html_cr_mark></A> before applying the calculated velocity with algorithm~<A HREF=<tex2html_cr_mark>#alg:applyvelocity#5713><tex2html_cr_mark></A>. Velocity method 2 first executes algorithm~<A HREF=<tex2html_cr_mark>#alg:calcindexvelocity#5714><tex2html_cr_mark></A> to apply the concept of inertia<A NAME="tex2html29"
+  HREF="footnode.html#foot5882"><SUP>6.5</SUP></A>.
+
+<P>
+<BR>
+<A NAME="alg:calcindexvelocity"><tex2html_anchor_mark></A><tex2html_image_mark>#algorithm5717#
+<BR>
+
+<P>
+As can be observed in algorithm~<A HREF=<tex2html_cr_mark>#alg:calcindexvelocity#5724><tex2html_cr_mark></A> the CalculateIndexVelocity method loops the current velocity. Within the loop the algorithm retrieves the inertia value that needs to be applied, after which the inertia value is multiplied by the newVelocity value.
+
+<P>
+After the CalculateIndexVelocity algorithm has finished executing, the concept of inertia has been applied to the velocity. Velocity method 2 therefore applies the velocity using the ApplyVelocity method listed in algorithm~<A HREF=<tex2html_cr_mark>#alg:applyvelocity#5725><tex2html_cr_mark></A> to the current cell found in the particle position to move it in order to obtain a new position.
+
+<P>
+The observant reader might have noticed that in all the presented and associated velocity algorithms the procedures operate and store the result in the current particle position that is currently being worked on. Naturally one might think that this overwrites the position information currently in that position. In the developed <#5726#>PSO<#5726#> algorithm when velocity is calculated the respective velocity methods operate on clones of the original position. The original position is only used once the velocity has been calculated and the particle has actually moved.
+
+<P>
+Another important note, is that if one analyses velocity method 1, the switch to using index values instead of raw frequencies does not affect the method's operation. Since the method only requires explicit knowledge on the data to operate on in the BoundValue algorithm, the algorithm is still able to calculate velocity. 
+
+<P>
+It is up to the algorithm designer to update the bound value method to use the array index bounds rather than the raw lower and upper bounds of the frequencies. The BoundValue algorithm needs to be updated since it is the primary means by which velocity method 1 ensures valid positions.
+
+<P>
+Both the velocity methods that are utilised by the developed <#5727#>FAP<#5727#> <#5728#>PSO<#5728#> algorithm have now been explained with corresponding pseudocode. Why the developed <#5729#>PSO<#5729#> was modified to operate on frequency index values rather than frequency values was also explained. All the algorithms that enable the main algorithm to accomplish particle movement with indices were also discussed. The <#5730#>PSO<#5730#> is hence able to move the particles in the <#5731#>FAP<#5731#> using two different methods, but for a particle to be moved it needs a personal best and most importantly, a global best to move towards. The next section deals with on how the developed <#5732#>PSO<#5732#> algorithm differs from the standard <#5733#>PSO<#5733#> with regard to selecting a global best.

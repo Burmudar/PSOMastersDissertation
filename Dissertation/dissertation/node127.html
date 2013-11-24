@@ -1,0 +1,46 @@
+
+<H3><A NAME="SECTION04542300000000000000">
+Scout Bee</A>
+</H3>
+The artificial bees are modelled on the behaviour of real bees. Thus an employed bee can also abandon certain food sources when it has outlived its usefulness. Abandonment of a food source can occur for the following reasons[#BeeJobShop#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCNumericalOptimization#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCImageEnhancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]:
+
+<UL>
+<LI>The employed bee has reached the maximum allowed cycles to improve the nectar amount. The maximum cycles spent on a food source allow the algorithm to avoid local optima[#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCNumericalOptimization#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCImageEnhancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+</LI>
+<LI>The bee cannot improve the search represented by the food source any further[#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCNumericalOptimization#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCImageEnhancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+</LI>
+</UL>
+When a food source in the algorithm is abandoned, it needs to be replaced by a new food source[#BeeJobShop#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCImageEnhancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Note that a food source is not abandoned when it represents the globally best found solution. An employed bee transitions to a new role when it abandons a food source from an employed bee to a scout bee[#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCNumericalOptimization#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCImageEnhancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+It is the responsibility of the scout bee to replace the abandoned food source with a new randomly generated one[#BeeJobShop#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCCompareStudy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ABCImageEnhancement#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The scout bee uses equation <A HREF=<tex2html_cr_mark>#eq:scoutGenerate#4250><tex2html_cr_mark></A> to produce a new food source that will replace food source <tex2html_image_mark>#tex2html_wrap_inline15480#
+<tex2html_verbatim_mark>mathend000#.
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="eq:scoutGenerate"><tex2html_anchor_mark></A><tex2html_verbatim_mark>#math92#<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><tex2html_image_mark>#tex2html_wrap_indisplay15482#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(5.8)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+The subscript <tex2html_image_mark>#tex2html_wrap_inline15484#
+<tex2html_verbatim_mark>mathend000# represents the minimum value of <tex2html_image_mark>#tex2html_wrap_inline15486#
+<tex2html_verbatim_mark>mathend000# and the subscript <tex2html_image_mark>#tex2html_wrap_inline15488#
+<tex2html_verbatim_mark>mathend000# represents the maximum value of <tex2html_image_mark>#tex2html_wrap_inline15490#
+<tex2html_verbatim_mark>mathend000#.
+
+<P>
+In research done by G&#243;mez-Iglesias et al. [#ABCFusionGrid#<tex2html_cite_mark>#1##<tex2html_cite_mark>#] an extension is made to the scout bees. The scout bee individuals are divided into two types of bees, namely <I>rovers</I> and <I>cubs</I> bees[#ABCFusionGrid#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<UL>
+<LI><#4264#>Rover bees<#4264#> are similar to traditional scout bees and hence use diversification strategies to explore the search space. 
+</LI>
+<LI><#4265#>Cub bees<#4265#> explore the search space relative to a good solution found by a rover by randomly changing configuration parameters. 
+</LI>
+</UL>
+By using two different scout bees a good balance is achieved when searching the search space in the beginning where diversity is preferred and late in the algorithm where intensification is preferred [#ABCFusionGrid#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+In the next subsection the general flow of the <#4268#>ABC<#4268#> algorithm is described, which will aid in the understanding of how the algorithm searches a particular problem space. 

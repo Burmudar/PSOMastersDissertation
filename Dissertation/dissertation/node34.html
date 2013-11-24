@@ -1,0 +1,23 @@
+
+<H1><A NAME="SECTION04240000000000000000"><tex2html_anchor_invisible_mark></A>
+<A NAME="sec:gsminterfaces"><tex2html_anchor_mark></A><BR>
+GSM Interfaces
+</H1>
+In the <#924#>gsm<#924#> network all the network components communicate with each other through predefined interfaces. In this section an overview is given of these interfaces between the components.
+<DL>
+<DT></DT>
+<DD><#983#><B>Um interface</B><#983#> --- This interface is the link between an <#927#>MS<#927#> device and a <#928#>BTS<#928#> and is also referred to as the <I>Air</I> interface since communication occurs wirelessly. The primary protocol used on this interface is the <#930#>LAPDm<#930#>, which is an extension of the <#931#>ISDN<#931#> LAPD protocol to accommodate the mobile nature of <#932#>MS<#932#> devices as well as for the shorter <#933#>TDMA<#933#> frames which are used in <#934#>gsm<#934#> networks[#wirelesstelcoMullet#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSMSecurInTeleNetwork#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+</DD>
+<DT></DT>
+<DD><#984#><B>Abis interface</B><#984#> --- Between the <#937#>BTS<#937#> and <#938#>BSC<#938#> the interface used for communication is known as the Abis interface. The only messages that the <#939#>BTS<#939#> is interested in are those that have to do with management of radio resources[#wirelesstelcoMullet#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSMSecurInTeleNetwork#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. All other messages are left alone and merely pass through the <#941#>BTS<#941#> to the <#942#>BSC<#942#> transparently.
+</DD>
+<DT></DT>
+<DD><#985#><B>A interface</B><#985#> --- The interface between the <#944#>BSC<#944#> and <#945#>MSC<#945#> is known as the A interface. This interface is used for the transfer of information, which is used by the <#946#>MSC<#946#> to manage BSSs, control connections and manage the mobility of <#947#>MS<#947#> in its area of service[#wirelesstelcoMullet#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+</DD>
+<DT></DT>
+<DD><#986#><B>Other Interfaces</B><#986#> --- The <#950#>MSC<#950#> has interfaces going from itself to databases and other external networks. Each interface connects to a specific database, <#951#>MSC<#951#> or network and is therefore very specific as to what function it performs[#wirelesstelcoMullet#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#GSMArchitectureProtocolsServices#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. An interface going from one <#953#>MSC<#953#> to another will convey information regarding handling the administration of handover of an <#954#>MS<#954#> device leaving one administrative area to another MSC's administrative area. The administrative area of an Msc is the section of <#955#>BSS<#955#> components the Msc is responsible for. The handover procedure is a very delicate process which is described in section~<A HREF=<tex2html_cr_mark>#sec:handover#956><tex2html_cr_mark></A>.
+</DD>
+</DL>
+
+<P>
+In this section a brief overview was given of the most critical interfaces used by all the network components of the <#958#>gsm<#958#> network involved. In the next section the difference between a logical channel and a frequency is described. Additionally an outline and overview of all the logical channels defined in the <#959#>gsm<#959#> is presented. 

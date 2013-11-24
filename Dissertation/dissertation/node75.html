@@ -1,0 +1,22 @@
+
+<H3><A NAME="SECTION04442300000000000000">
+Memory Structures of Tabu Search</A>
+</H3>
+The hill-climbing and random-restart algorithms are able to break out of local minima, but there is nothing stopping these algorithms from avoiding the local optima with their second or n-pass in the search space. <#2543#>TS<#2543#> addresses the shortcoming of these algorithms by incorporating an important concept: the notion of memory.
+
+<P>
+In its most basic form <#2544#>TS<#2544#> keeps a local memory of all its recent best moves, and puts them into a <I>tabu list</I> that has a predefined size. In the literature the Tabu list is also referred to as the <I>tabu tenure</I> [#TSHazardous#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TabuCarryOver#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The algorithm is not allowed to move to any solution that is in the tabu list unless a solution that is <I>tabu</I> is better than any current moves available in the immediate search neighbourhood [#TabuCarryOver#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ReactiveTabuVHR#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The process of overriding a solution's tabu status in the tabu tenure is called the <I>aspiration criterion</I> [#TSHazardous#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TabuCarryOver#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. With the use of the tabu tenure and the aspiration criterion, the algorithm is able to avoid cycling, local optima as well as searching in a too narrow region [#TabuSingleMachineScheduling#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#CircuitTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Research done by Ashish Sureka and Peter R. Wurman makes an important distinction with regard to the memory scheme that is used in the <#2553#>TS<#2553#> algorithm. Two memory schemes are discussed: <I>explicit memory</I> and <I>attribute-based memory</I> [#TabuBiddingStrats#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TabuFormGames#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Of the two memory schemes the explicit memory scheme is the most used in the literature [#TabuVechicleRoutingWithTimeWindows#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+With explicit memory the algorithm stores a complete solution in the tabu tenure; hence the algorithm is prohibited from moving to that position in the search for as long as the solution is in the Tabu tenure[#TabuBiddingStrats#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TabuFormGames#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. With attribute-based memory the algorithm stores the <I>operation</I> used to move from the previous solution to the current solution[#TabuBiddingStrats#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TabuFormGames#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Therefore with attribute-based memory the tabu tenure intended function is changed from prohibiting certain solutions already encountered to rather prohibiting making changes to the current solution that would lead to solutions already present in the tabu tenure [#TabuBiddingStrats#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TabuFormGames#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+In research conducted by Clarkson et. al[#MultiObjTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#], the authors add two additional memory structures called <#2563#>MTM<#2563#> and <#2564#>LTM<#2564#> besides the standard <#2565#>STM<#2565#>, referred to as the tabu List [#MultiObjTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Each additional structure remembers a different set of solutions for use by the diversification and intensification phases in the algorithm.
+
+<P>
+STM is similar to the traditional tabu list: to store the most recent solutions produced by the algorithm. <#2567#>MTM<#2567#> is designed to remember optimal or near-optimal solutions. These solutions are therefore used later in the intensification phase. Finally, the <#2568#>LTM<#2568#> structure stores all the solutions that the algorithm has already explored and is thus used in the diversification phase of the algorithm [#MultiObjTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>

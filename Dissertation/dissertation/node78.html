@@ -1,0 +1,52 @@
+
+<H2><A NAME="SECTION04444000000000000000">
+Tabu Search on the FAP</A>
+</H2>
+In a study conducted by Robert Montemanni and Derek Smith [#TabuMontemanniSmith#<tex2html_cite_mark>#1##<tex2html_cite_mark>#] the <#2620#>TS<#2620#> algorithm is used on the <#2621#>FS-FAP<#2621#>. The authors had to make some alterations to the algorithm to suit their needs as well as to make the algorithm more efficient in exploring in the <#2622#>FAP<#2622#> solution space.
+
+<P>
+The <#2623#>TS<#2623#> algorithm used by the authors is the multistart <#2624#>TS<#2624#> algorithm, which randomly starts on different initial solutions [#TabuMontemanniSmith#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The authors developed a technique called <#2626#>HMT<#2626#>. <#2627#>HMT<#2627#> first monitors an underlying heuristic being used on the problem by the algorithm[#TabuMontemanniSmith#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. It then identifies certain characteristics that good solutions exhibit. In the <#2629#>FAP<#2629#>, it is transmitters that are assigned different frequencies which results in an overall lower interference value[#TabuMontemanniSmith#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The HMT then uses the identified characteristics to add <I>additional</I> constraints to the problem[#TabuMontemanniSmith#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. By adding constraints, the search space is reduced. However, by reducing the search space, other near-optimal solutions which might be far better are excluded[#TabuMontemanniSmith#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. It is for this reason that that Montemanni and Smith opted not to add the constraints permanently.
+
+<P>
+Montemanni and Smith applied their <#2634#>TS<#2634#> algorithm together with HMT to the <#2635#>COST<#2635#> 259 family of benchmarks, specifically the Siemens1, Siemens2, Siemens3 and Siemens4 problems. The results are presented in table~<A HREF=<tex2html_cr_mark>#TSCOST259#2636><tex2html_cr_mark></A>. The values presented are scalar and indicate the total interference of the frequency plan. The lower the interference value is, the better the frequency plan.
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="3116"><tex2html_anchor_mark></A>
+<TABLE>
+<CAPTION><STRONG><#15161#>Table<#15161#> 4.1:</STRONG>
+<#15162#>Results of applying <#2644#>TS<#2644#> with <#2645#>HMT<#2645#> on <#2646#>COST<#2646#> 259<#15162#></CAPTION>
+<TR><TD><DIV ALIGN="CENTER">	<TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER">Problem instance</TD>
+<TD ALIGN="CENTER">TS with HMT</TD>
+<TD ALIGN="CENTER">Best COST 259</TD>
+</TR>
+<TR><TD ALIGN="CENTER">Siemens1</TD>
+<TD ALIGN="CENTER">2.7692</TD>
+<TD ALIGN="CENTER">2.200</TD>
+</TR>
+<TR><TD ALIGN="CENTER">Siemens2</TD>
+<TD ALIGN="CENTER">14.9360</TD>
+<TD ALIGN="CENTER">14.280</TD>
+</TR>
+<TR><TD ALIGN="CENTER">Siemens3</TD>
+<TD ALIGN="CENTER">6.6496</TD>
+<TD ALIGN="CENTER">5.19</TD>
+</TR>
+<TR><TD ALIGN="CENTER">Siemens4</TD>
+<TD ALIGN="CENTER">110.9725</TD>
+<TD ALIGN="CENTER">81.89</TD>
+</TR>
+</TABLE>
+
+<A NAME="TSCOST259"><tex2html_anchor_mark></A></DIV></TD></TR>
+</TABLE>
+</DIV><P></P><BR>
+As can be observed from the results obtained by the authors, the <#2649#>TS<#2649#> algorithm with HMT produces results that rank very favourably against other algorithms also applied to the <#2650#>COST<#2650#> 259.
+
+<P>
+When critically reasoning about the <#2651#>TS<#2651#> algorithm with regard to applying it to the <#2652#>FAP<#2652#>, the following disadvantages in theory can be identified:

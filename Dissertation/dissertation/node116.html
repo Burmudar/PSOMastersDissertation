@@ -1,0 +1,52 @@
+
+<H3><A NAME="SECTION04532300000000000000"><tex2html_anchor_invisible_mark></A>
+<A NAME="sec:STR"><tex2html_anchor_mark></A><BR>
+State Transition Rules
+</H3>
+The intention for this section is not to give an exhaustive survey of different transition rules in the literature. Therefore, only the first transition rule that was developed is discussed, since most of the other rules can be considered derivatives of the first. 
+
+<P>
+As discussed previously, the ants select which link to follow towards a node based on a probability. This probability is also known as the <I>transition probability</I> and is formulated by equation~<A HREF=<tex2html_cr_mark>#eq:ASprobability#3924><tex2html_cr_mark></A>.
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="eq:ASprobability"><tex2html_anchor_mark></A><tex2html_verbatim_mark>#math77#<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><tex2html_image_mark>#tex2html_wrap_indisplay15328#</TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(5.2)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+The transition probability is used by individual ants of the <#3942#>AS<#3942#> algorithm [#AntQAP#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. An ant <tex2html_image_mark>#tex2html_wrap_inline15330#
+<tex2html_verbatim_mark>mathend000# uses this equation to decide with what probability it will move from node <tex2html_image_mark>#tex2html_wrap_inline15332#
+<tex2html_verbatim_mark>mathend000# to node <tex2html_image_mark>#tex2html_wrap_inline15334#
+<tex2html_verbatim_mark>mathend000# [#CompuIntelligenceIntro#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ACOLargeProblem#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. <tex2html_image_mark>#tex2html_wrap_inline15336#
+<tex2html_verbatim_mark>mathend000# is the amount of pheromone on the link between nodes <tex2html_image_mark>#tex2html_wrap_inline15338#
+<tex2html_verbatim_mark>mathend000# and <tex2html_image_mark>#tex2html_wrap_inline15340#
+<tex2html_verbatim_mark>mathend000# [#AntsAndStigmergy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ACOLargeProblem#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Heuristic information is incorporated into the equation through the symbol <tex2html_image_mark>#tex2html_wrap_inline15342#
+<tex2html_verbatim_mark>mathend000#, which is the desirability of the link from node <tex2html_image_mark>#tex2html_wrap_inline15344#
+<tex2html_verbatim_mark>mathend000# to node <tex2html_image_mark>#tex2html_wrap_inline15346#
+<tex2html_verbatim_mark>mathend000# as evaluated by a heuristic function [#AntsAndStigmergy#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#ACOLargeProblem#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+Each ant starting at a source node moves from one node to another based on the defined transition probaility until the ant reaches the final node.
+
+<P>
+Through the use of parameters <tex2html_image_mark>#tex2html_wrap_inline15348#
+<tex2html_verbatim_mark>mathend000# to represent pheromone intensity and <tex2html_image_mark>#tex2html_wrap_inline15350#
+<tex2html_verbatim_mark>mathend000# to represent heuristic information the algorithm is able to achieve a good balance between exploration and exploitation when <tex2html_verbatim_mark>#math78#<tex2html_image_mark>#tex2html_wrap_inline15352#
+<tex2html_verbatim_mark>mathend000# [#ACOLargeProblem#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#AntQAP#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. When <tex2html_verbatim_mark>#math79#<tex2html_image_mark>#tex2html_wrap_inline15354#
+<tex2html_verbatim_mark>mathend000# no pheromone is taken into account; hence, any history that the algorithm has on the link between node <tex2html_image_mark>#tex2html_wrap_inline15356#
+<tex2html_verbatim_mark>mathend000# and node <tex2html_image_mark>#tex2html_wrap_inline15358#
+<tex2html_verbatim_mark>mathend000# is neglected and the algorithm degrades to a stochastic greedy search procedure. If <tex2html_image_mark>#tex2html_wrap_inline15360#
+<tex2html_verbatim_mark>mathend000# then the algorithm does not take into account the amount of desirability of the link between node <tex2html_image_mark>#tex2html_wrap_inline15362#
+<tex2html_verbatim_mark>mathend000# and node <tex2html_image_mark>#tex2html_wrap_inline15364#
+<tex2html_verbatim_mark>mathend000# as dictated by the problem-specific heuristic function.
+
+<P>
+The set <tex2html_verbatim_mark>#math80#<tex2html_image_mark>#tex2html_wrap_inline15366#
+<tex2html_verbatim_mark>mathend000# contains all the valid neighbourhood moves ant <tex2html_image_mark>#tex2html_wrap_inline15368#
+<tex2html_verbatim_mark>mathend000# is allowed to make when moving from node <tex2html_image_mark>#tex2html_wrap_inline15370#
+<tex2html_verbatim_mark>mathend000# to node <tex2html_image_mark>#tex2html_wrap_inline15372#
+<tex2html_verbatim_mark>mathend000#. A tabu list is kept by each ant to trim the set of moves already performed previously, and thus cycling is prevented.
+
+<P>
+The interested reader that requires more information about state transition rules is directed to the survey by Engelbrecht[#FundamentalSwarm#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].

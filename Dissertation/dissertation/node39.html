@@ -1,0 +1,29 @@
+
+<H1><A NAME="SECTION04310000000000000000">
+Introduction</A>
+</H1>
+The <#1502#>FAP<#1502#><A NAME="tex2html11"
+  HREF="footnode.html#foot1625"><SUP>3.1</SUP></A> is a generalisation of the graph-colouring problem and is consequently an NP-Complete problem[#FAPRAMColouring#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The <#1507#>FAP<#1507#> is an NP-Complete problem due to fact that only a finite number of frequencies can be assigned to <#1508#>TRX<#1508#>, where the number of transceivers to be assigned frequencies greatly outweighs the number of available frequencies[#FAPRAMColouring#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. A more thorough definition of what it means for a problem to be NP-Complete is given in section~<A HREF=<tex2html_cr_mark>#sec:NPComplete#1510><tex2html_cr_mark></A>.
+
+<P>
+In wireless communication a huge concern is interference which occurs when frequencies used for communication are close to each other in the frequency spectrum[#Karen2004#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Interference and its effects is discussed in detail in section~<A HREF=<tex2html_cr_mark>#sec:Interference#1512><tex2html_cr_mark></A>. Essentially for the <#1513#>FAP<#1513#> the primary concern is to develop an approximate plan on assigning frequencies in such a way that interference is kept to a minimum. 
+
+<P>
+Using exact algorithms to find a solution is not practical since the time to find a solution is polynomial. Generally metaheuristic algorithms are used to find optimal solutions to NP-Complete problems[#ACOvsEA#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. In the chapter~<A HREF=<tex2html_cr_mark>#chpt:heuristic#1515><tex2html_cr_mark></A>, a discussion is presented on algorithms that are used to find solutions to NP-Complete problems. 
+
+<P>
+As discussed in chapter~<A HREF=<tex2html_cr_mark>#chpt:celltech#1516><tex2html_cr_mark></A> network operators are licensed a range of frequencies from the available spectrum. A licensed piece of spectrum contains a series of consecutive frequencies as well as gaps. Gap frequencies are barred from being used by any device within the network as they may have already been allocated to another operator for use [#FAPInCell#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. By barring frequencies, a scenario is avoided where the different networks' equipment interferes with their respective operations[#FAPInCell#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Due to the whole spectrum not being available to network operators and only a subset being available for commercial communication as per the frequencies allocated to them, networks opt to reuse their frequencies[#FAPInCell#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The networks do this to maximise the use of their allocated frequencies and to minimise their licensing fees, since if the network needs more frequencies, they need to be licensed[#FAPRAMColouring#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+It is not always possible to simply allocate more frequencies to a network even if the network pays the associated fees. The whole commercial spectrum may already have been licensed to various entities. Hence, licensed frequencies are a very valuable and scarce commodity [#FAPRAMColouring#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#FAPInCell#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The chapter is organised as follows. The first section the follows provides a discussion on NP-Complete problems. In section~<A HREF=<tex2html_cr_mark>#sec:chm#1522><tex2html_cr_mark></A> constraint handling mechanisms are presented. Section~<A HREF=<tex2html_cr_mark>#sec:FreqAssignmentTypes#1523><tex2html_cr_mark></A> presents an overview of different methods for allocated frequencies. Interference is discussed in depth in section~<A HREF=<tex2html_cr_mark>#sec:Interference#1524><tex2html_cr_mark></A>. After the interference discussion a section is presented on the different types of frequencies assignment problems in section~<A HREF=<tex2html_cr_mark>#sec:FAPVariants#1525><tex2html_cr_mark></A>. A mathematical formulation of the fixed spectrum frequency assignment problem is presented in section~<A HREF=<tex2html_cr_mark>#sec:FAPMathDef#1526><tex2html_cr_mark></A>. Section~<A HREF=<tex2html_cr_mark>#sec:FAPBenchmarks#1527><tex2html_cr_mark></A> provides an overview of the different benchmarks used to evaluate frequency assignment problems. After the discussion on the different benchmarks that are available in the domain a section on the where the FAP is encountered in the industrial domain is presented. 
+
+<P>
+This chapter concluded with a section that summarises the contents presented. In the next section an overview of what it means when a problem is NP-Complete is given.
+
+<P>

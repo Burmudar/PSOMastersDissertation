@@ -1,0 +1,135 @@
+\documentclass[11pt,a4paper]<<1>>book<<1>>
+\usepackage<<2>>ujthesis,float,enumerate,amssymb,amsmath,algorithm,algpseudocode<<2>>
+\usepackage<<3>>cite,graphicx,tikz,xcolor,appendix,hyperref<<3>>
+\usepackage[acronym,toc]<<4>>glossaries<<4>>
+\usetikzlibrary<<5>>plothandlers<<5>>
+\usetikzlibrary<<6>>positioning<<6>>
+\usetikzlibrary<<7>>decorations.pathreplacing<<7>>
+\usetikzlibrary<<8>>patterns<<8>>
+\usetikzlibrary<<9>>shapes.geometric<<9>>
+\usetikzlibrary<<10>>shapes.symbols<<10>>
+\usetikzlibrary<<11>>shapes.misc<<11>>
+\raggedbottom
+\usepackage[nottoc]<<12>>tocbibind<<12>>
+\linespread<<13>>1.2<<13>>
+\dissertation
+\coverFont<<14>>\begin<<324>>tex2html_deferred<<324>>\large\end<<325>>tex2html_deferred<<325>><<14>>
+\begin<<326>>tex2html_nowrap<<326>>
+\setlength<<15>>\parskip<<15>><<16>>0.5ex plus0.5ex minus0.2ex<<16>>\end<<327>>tex2html_nowrap<<327>> 
+\begin<<328>>tex2html_nowrap<<328>>
+\setlength<<17>>\spaceLength<<17>><<18>>7mm<<18>>\end<<329>>tex2html_nowrap<<329>> 
+\approvedtitle<<19>>Optimising the Frequency Assignment Problem utilizing Particle Swarm Optimisation<<19>>
+\student<<20>>William Bezuidenhout<<20>>
+\degree<<21>>Magister Scientiae<<21>>
+\field<<22>>Information Technology<<22>>
+\faculty<<23>>Faculty of Science<<23>>
+\supervisorName<<24>>Dr G.B. O'Reilly<<24>>
+\submissionDate<<25>>May 2012<<25>>
+\makeglossaries
+\newacronym<<26>>FAP<<26>><<27>>FAP<<27>><<28>>frequency assignment problem<<28>>
+\newacronym<<29>>gsm<<29>><<30>>GSM<<30>><<31>>general system for mobile communication<<31>>
+\newacronym<<32>>SMS<<32>><<33>>SMS<<33>><<34>>short message service<<34>>
+\newacronym<<35>>MMS<<35>><<36>>MMS<<36>><<37>>multimedia message service<<37>>
+\newacronym<<38>>GPRS<<38>><<39>>GPRS<<39>><<40>>general packet radio system<<40>>
+\newacronym<<41>>EDGE<<41>><<42>>EDGE<<42>><<43>>enhanced data global evolution<<43>>
+\newacronym<<44>>HSCSD<<44>><<45>>HSCSD<<45>><<46>>high speed circuit switched data<<46>>
+\newacronym<<47>>ISDN<<47>><<48>>ISDN<<48>><<49>>integrated service digital network<<49>>
+\newacronym<<50>>DCS1800<<50>><<51>>DCS1800<<51>><<52>>digital cellular system<<52>>
+\newacronym<<53>>TDMA<<53>><<54>>TDMA<<54>><<55>>time division multiple access<<55>>
+\newacronym<<56>>SIR<<56>><<57>>SIR<<57>><<58>>signal-to-noise ratio<<58>>
+\newacronym<<59>>UMTS<<59>><<60>>UMTS<<60>><<61>>universal mobile telecommunications system<<61>>
+\newacronym<<62>>DS-CDMA<<62>><<63>>DS-CDMA<<63>><<64>>direct sequence collision detection multiple access<<64>>
+\newacronym<<65>>WCDMA<<65>><<66>>WCDMA<<66>><<67>>wide band collision detection multiple access<<67>>
+\newacronym<<68>>CDMA<<68>><<69>>CDMA<<69>><<70>>code division multiple access<<70>>
+\newacronym<<71>>LTE<<71>><<72>>LTE<<72>><<73>>long term evolution<<73>>
+\newacronym<<74>>WIMAX<<74>><<75>>WiMAX<<75>><<76>>worlwide interoperability for microwave access<<76>>
+\newacronym<<77>>MS<<77>><<78>>MS<<78>><<79>>mobile station<<79>>
+\newacronym<<80>>POS<<80>><<81>>POS<<81>><<82>>[point of sale<<82>>
+\newacronym<<83>>SIM<<83>><<84>>SIM<<84>><<85>>subscriber identification module<<85>>
+\newacronym<<86>>IMSI<<86>><<87>>IMSI<<87>><<88>>international mobile subscriber identity<<88>>
+\newacronym<<89>>IMEI<<89>><<90>>IMEI<<90>><<91>>international mobile equipment identity<<91>>
+\newacronym<<92>>BTS<<92>><<93>>BTS<<93>><<94>>base tranceiver stations<<94>>
+\newacronym<<95>>MSC<<95>><<96>>MSC<<96>><<97>>mobile switching centre<<97>>
+\newacronym<<98>>BSS<<98>><<99>>BSS<<99>><<100>>base station subsystem<<100>>
+\newacronym<<101>>BSC<<101>><<102>>BSC<<102>><<103>>base station controller<<103>>
+\newacronym<<104>>LA<<104>><<105>>LA<<105>><<106>>location area<<106>>
+\newacronym<<107>>TRX<<107>><<108>>TRX<<108>><<109>>transceiver<<109>>
+\newacronym<<110>>TDM<<110>><<111>>TDM<<111>><<112>>time division multiplexing<<112>>
+\newacronym<<113>>FDM<<113>><<114>>FDM<<114>><<115>>frequency division multiplexing<<115>>
+\newacronym<<116>>NSS<<116>><<117>>NSS<<117>><<118>>network switching subsystem<<118>>
+\newacronym<<119>>VLR<<119>><<120>>VLR<<120>><<121>>visitor location register<<121>>
+\newacronym<<122>>HLR<<122>><<123>>HLR<<123>><<124>>home location register<<124>>
+\newacronym<<125>>PSTN<<125>><<126>>PSTN<<126>><<127>>public switching telephone network<<127>>
+\newacronym<<128>>AUC<<128>><<129>>AUC<<129>><<130>>authentication centre<<130>>
+\newacronym<<131>>EIR<<131>><<132>>EIR<<132>><<133>>equipment identity register<<133>>
+\newacronym<<134>>SRES<<134>><<135>>SRES<<135>><<136>>signed response<<136>>
+\newacronym<<137>>OMC<<137>><<138>>OMC<<138>><<139>>operations and management centre<<139>>
+\newacronym<<140>>NMC<<140>><<141>>NMC<<141>><<142>>network management centre<<142>>
+\newacronym<<143>>LAPDm<<143>><<144>>LAPDm<<144>><<145>>link access protocol D channel modified<<145>>
+\newacronym<<146>>TCH<<146>><<147>>TCH<<147>><<148>>traffic channel<<148>>
+\newacronym<<149>>BCH<<149>><<150>>BCH<<150>><<151>>broadcast channel<<151>>
+\newacronym<<152>>CCCH<<152>><<153>>CCCH<<153>><<154>>common control channel<<154>>
+\newacronym<<155>>DCCH<<155>><<156>>DCCH<<156>><<157>>dedicated control channel<<157>>
+\newacronym<<158>>BCCH<<158>><<159>>BCCH<<159>><<160>>broadcast control channel<<160>>
+\newacronym<<161>>FCCH<<161>><<162>>FCCH<<162>><<163>>frequency control channel<<163>>
+\newacronym<<164>>SCH<<164>><<165>>SCH<<165>><<166>>sychronisation channel<<166>>
+\newacronym<<167>>RACH<<167>><<168>>RACH<<168>><<169>>random access channel<<169>>
+\newacronym<<170>>AGCH<<170>><<171>>AGCH<<171>><<172>>access grant channel<<172>>
+\newacronym<<173>>PCH<<173>><<174>>PCH<<174>><<175>>paging channel<<175>>
+\newacronym<<176>>NCH<<176>><<177>>NCH<<177>><<178>>notification channel<<178>>
+\newacronym<<179>>D/ACCH<<179>><<180>>D/ACCH<<180>><<181>>dedicated/associated control channel<<181>>
+\newacronym<<182>>SDCCH<<182>><<183>>SDCCH<<183>><<184>>stand-alone dedicated control channel<<184>>
+\newacronym<<185>>SACCH<<185>><<186>>SACCH<<186>><<187>>slow associated control channel<<187>>
+\newacronym<<188>>FACCH<<188>><<189>>FACCH<<189>><<190>>fast associated control channel<<190>>
+\newacronym<<191>>CBCH<<191>><<192>>CBCH<<192>><<193>>cell broadcast control channel<<193>>
+\newacronym<<194>>AFP<<194>><<195>>AFP<<195>><<196>>automatic frequency planning<<196>>
+\newacronym<<197>>CAP<<197>><<198>>CAP<<198>><<199>>channel assignment problem<<199>>
+\newacronym<<200>>FFA<<200>><<201>>FFA<<201>><<202>>fixed frequency allocation<<202>>
+\newacronym<<203>>FCA<<203>><<204>>FCA<<204>><<205>>fixed channel allocation<<205>>
+\newacronym<<206>>DFA<<206>><<207>>DFA<<207>><<208>>dynamic frequency allocation<<208>>
+\newacronym<<209>>DCA<<209>><<210>>DCA<<210>><<211>>dynamic channel allocation<<211>>
+\newacronym<<212>>QoS<<212>><<213>>QoS<<213>><<214>>quality of service<<214>>
+\newacronym<<215>>SINR<<215>><<216>>SINR<<216>><<217>>signal to interference noise power ration<<217>>
+\newacronym<<218>>BER<<218>><<219>>BER<<219>><<220>>bit error rate<<220>>
+\newacronym<<221>>MO-FAP<<221>><<222>>MO-FAP<<222>><<223>>minimum-order frequency assignment problem<<223>>
+\newacronym<<224>>MS-FAP<<224>><<225>>MS-FAP<<225>><<226>>minimum span frequency assignment problem<<226>>
+\newacronym<<227>>MI-FAP<<227>><<228>>MI-FAP<<228>><<229>>minimum interference frequency assignment problem<<229>>
+\newacronym<<230>>FS-FAP<<230>><<231>>FS-FAP<<231>><<232>>fixed spectrum frequency assignment problem<<232>>
+\newacronym<<233>>EUCLID<<233>><<234>>EUCLID<<234>><<235>>EUropean Cooperation on the Long term in the Defense<<235>>
+\newacronym<<236>>CELAR<<236>><<237>>CELAR<<237>><<238>>cenre d'electronique de l'armement<<238>>
+\newacronym<<239>>COST<<239>><<240>>COST<<240>><<323>>COop\'<<241>>e<<241>>ration europ\'<<242>>e<<242>>ene dans le domaine de la recherche Scientifique et Technique<<323>>
+\newacronym<<243>>WLAN<<243>><<244>>WLAN<<244>><<245>>wireless local area network<<245>>
+\newacronym<<246>>AP<<246>><<247>>AP<<247>><<248>>access point<<248>>
+\newacronym<<249>>SA<<249>><<250>>SA<<250>><<251>>simulated annealing<<251>>
+\newacronym<<252>>AI<<252>><<253>>AI<<253>><<254>>artificial intelligence<<254>>
+\newacronym<<255>>TS<<255>><<256>>TS<<256>><<257>>tabu search<<257>>
+\newacronym<<258>>MTM<<258>><<259>>MTM<<259>><<260>>medium term memory<<260>>
+\newacronym<<261>>LTM<<261>><<262>>LTM<<262>><<263>>long term memory<<263>>
+\newacronym<<264>>STM<<264>><<265>>STM<<265>><<266>>short term memory<<266>>
+\newacronym<<267>>HMT<<267>><<268>>HMT<<268>><<269>>heuristic manipulation technique<<269>>
+\newacronym<<270>>GA<<270>><<271>>GA<<271>><<272>>genetic algorithm<<272>>
+\newacronym<<273>>CGA<<273>><<274>>CGA<<274>><<275>>canical genetic algorithm<<275>>
+\newacronym<<276>>PRNG<<276>><<277>>PRNG<<277>><<278>>pseudo random number generator<<278>>
+\newacronym<<279>>QRNG<<279>><<280>>QRNG<<280>><<281>>quasi random number generator<<281>>
+\newacronym<<282>>ACO<<282>><<283>>ACO<<283>><<284>>ant colony optimisation<<284>>
+\newacronym<<285>>PSO<<285>><<286>>PSO<<286>><<287>>particle swarm optimisation<<287>>
+\newacronym<<288>>ABC<<288>><<289>>ABC<<289>><<290>>artificial bee colony<<290>>
+\newacronym<<291>>SACO<<291>><<292>>SACO<<292>><<293>>simple ant colony optimisation<<293>>
+\newacronym<<294>>AS<<294>><<295>>AS<<295>><<296>>ant system<<296>>
+\newacronym<<297>>ACS<<297>><<298>>ACS<<298>><<299>>ant colony system<<299>>
+\newacronym<<300>>ANTS<<300>><<301>>ANTS<<301>><<302>>approximate non-deterministic tree search<<302>>
+\newacronym<<303>>BCO<<303>><<304>>BCO<<304>><<305>>bee colony optimisation<<305>>
+\newacronym<<306>>BSO<<306>><<307>>BSO<<307>><<308>>bee swarm optimisation<<308>>
+\newacronym<<309>>VBA<<309>><<310>>VBA<<310>><<311>>virtual bee algorithm<<311>>
+\newacronym<<312>>ARPSO<<312>><<313>>ARPSO<<313>><<314>>attract repulse particle swarm optimisation<<314>>
+\newacronym<<315>>FEA<<315>><<316>>FEA<<316>><<317>>frequency exhaustive assignment<<317>>
+\newacronym<<318>>MMAS<<318>><<319>>MMAS<<319>><<320>>min-max ant system<<320>>
+\begin<<321>>document<<321>>
+\frontmatter
+\makecover
+\begin<<330>>tex2html_deferred<<330>>\tableofcontents\end<<331>>tex2html_deferred<<331>>
+\begin<<332>>tex2html_deferred<<332>>\listoffigures\end<<333>>tex2html_deferred<<333>>
+\listofalgorithms
+\begin<<334>>tex2html_deferred<<334>>\listoftables\end<<335>>tex2html_deferred<<335>>
+\mainmatter
+\part<<322>>Background on the problem domain and influential algorithms<<322>>

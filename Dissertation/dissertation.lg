@@ -1,0 +1,339 @@
+htfcss: cmmi font-style: italic;
+htfcss: cmmib font-style: italic; font-weight: bold;
+htfcss: cmti  font-style: italic;
+htfcss: cmbx  font-weight: bold;
+htfcss: cmbxsl  font-weight: bold; font-style: oblique;
+htfcss: cmtt font-family: monospace;
+File: dissertation.html
+File: dissertation.css
+File: dissertation.tmp
+File: dissertation2.html
+File: dissertation3.html
+File: dissertation4.html
+File: dissertation5.html
+File: dissertation.tmp
+File: dissertation6.html
+File: dissertation7.html
+File: dissertation8.html
+File: dissertation9.html
+File: dissertation10.html
+File: dissertation.tmp
+File: dissertation.tmp
+File: dissertation11.html
+File: dissertation12.html
+File: dissertation13.html
+File: dissertation14.html
+File: dissertation15.html
+File: dissertation16.html
+File: dissertation17.html
+Css: p.noindent { text-indent: 0em }
+Css: td p.noindent { text-indent: 0em; margin-top:0em; }
+Css: p.nopar { text-indent: 0em; }
+Css: p.indent{ text-indent: 1.5em }
+Css: @media print {div.crosslinks {visibility:hidden;}}
+Css: a img { border-top: 0; border-left: 0; border-right: 0; }
+Font_Css("4"): .small-caps{font-variant: small-caps; }
+Font_Css("10"): .htf-cmbx {font-weight: bold; font-style:normal;}
+Font_Css("12"): .htf-calligraphy {font-family:cursive}
+Font_Css("14"): .htf-italic {font-style: italic;}
+Font_Css("16"): .htf-bold {font-weight: bold;}
+Font_Css("12"): .htf-calligraphy-bold {font-family:cursive ; font-weight: bold; }
+Css: center { margin-top:1em; margin-bottom:1em; }
+Css: td center { margin-top:0em; margin-bottom:0em; }
+Css: .Canvas { position:relative; }
+Css: img.math{vertical-align:middle;}
+Css: li p.indent { text-indent: 0em }
+Css: li p:first-child{ margin-top:0em; }
+Css: li p:last-child, li div:last-child { margin-bottom:0.5em; }
+Css: li p~ul:last-child, li p~ol:last-child{ margin-bottom:0.5em; }
+Css: .enumerate1 {list-style-type:decimal;}
+Css: .enumerate2 {list-style-type:lower-alpha;}
+Css: .enumerate3 {list-style-type:lower-roman;}
+Css: .enumerate4 {list-style-type:upper-alpha;}
+Css: div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+Css: .obeylines-h,.obeylines-v {white-space: nowrap; }
+Css: div.obeylines-v p { margin-top:0; margin-bottom:0; }
+Css: .overline{ text-decoration:overline; }
+Css: .overline img{ border-top: 1px solid black; }
+Css: td.displaylines {text-align:center; white-space:nowrap;}
+Css: .centerline {text-align:center;}
+Css: .rightline {text-align:right;}
+Css: div.verbatim {font-family: monospace; white-space: nowrap; text-align:left; clear:both; }
+Css: .fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.fbox {display:table}
+Css: div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: div.minipage{width:100%;}
+Css: div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+Css: div.center div {text-align: left;}
+Css: div.flushright, div.flushright div.flushright {text-align: right;}
+Css: div.flushright div {text-align: left;}
+Css: div.flushleft {text-align: left;}
+Css: .underline{ text-decoration:underline; }
+Css: .underline img{ border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: .framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid black 0.4pt; }
+Css: .framebox-c {text-align:center;}
+Css: .framebox-l {text-align:left;}
+Css: .framebox-r {text-align:right;}
+Css: span.thank-mark{ vertical-align: super }
+Css: span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+Css: div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+Css: table.tabular td p{margin-top:0em;}
+Css: table.tabular {margin-left: auto; margin-right: auto;}
+Css: td p:first-child{ margin-top:0em; }
+Css: td p:last-child{ margin-bottom:0em; }
+Css: div.td00{ margin-left:0pt; margin-right:0pt; }
+Css: div.td01{ margin-left:0pt; margin-right:5pt; }
+Css: div.td10{ margin-left:5pt; margin-right:0pt; }
+Css: div.td11{ margin-left:5pt; margin-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: td.td00{ padding-left:0pt; padding-right:0pt; }
+Css: td.td01{ padding-left:0pt; padding-right:5pt; }
+Css: td.td10{ padding-left:5pt; padding-right:0pt; }
+Css: td.td11{ padding-left:5pt; padding-right:5pt; }
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: .hline hr, .cline hr{ height : 1px; margin:0px; }
+Css: .tabbing-right {text-align:right;}
+Css: span.TEX {letter-spacing: -0.125em; }
+Css: span.TEX span.E{ position:relative;top:0.5ex;left:-0.0417em;}
+Css: a span.TEX span.E {text-decoration: none; }
+Css: span.LATEX span.A{ position:relative; top:-0.5ex; left:-0.4em; font-size:85%;}
+Css: span.LATEX span.TEX{ position:relative; left: -0.4em; }
+Css: div.float, div.figure {margin-left: auto; margin-right: auto;}
+Css: div.float img {text-align:center;}
+Css: div.figure img {text-align:center;}
+Css: .marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+Css: .marginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+Css: table.equation {width:100%;}
+Css: .equation td{text-align:center; }
+Css: td.equation { margin-top:1em; margin-bottom:1em; } 
+Css: td.equation-label { width:5%; text-align:center; }
+Css: td.eqnarray4 { width:5%; white-space: normal; }
+Css: td.eqnarray2 { width:5%; }
+Css: table.eqnarray-star, table.eqnarray {width:100%;}
+Css: div.eqnarray{text-align:center;}
+Css: div.array {text-align:center;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.pmatrix img{vertical-align:middle;}
+Css: div.pmatrix {text-align:center;}
+Css: table.pmatrix {width:100%;}
+Css: span.bar-css {text-decoration:overline;}
+Css: img.cdots{vertical-align:middle;}
+Css: .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+Css: .chapterToc a, .chapterToc, .likechapterToc a, .likechapterToc, .appendixToc a, .appendixToc {line-height: 200%; font-weight:bold;}
+Css: .index-item, .index-subitem, .index-subsubitem {display:block}
+Css: div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
+Css: div.caption span.id{font-weight: bold; white-space: nowrap; }
+Css: h1.partHead{text-align: center}
+Css: p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+Css: .paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+Css: .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+Css: .quote {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; margin-right:1em; text-align:justify;}
+Css: .verse{white-space:nowrap; margin-left:2em}
+Css: div.maketitle {text-align:center;}
+Css: h2.titleHead{text-align:center;}
+Css: div.maketitle{ margin-bottom: 2em; }
+Css: div.author, div.date {text-align:center;}
+Css: div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+Css: div.author{white-space: nowrap;}
+Font_Size: 11
+Css: .quotation {margin-bottom:0.25em; margin-top:0.25em; margin-left:1em; }
+Css: h1.partHead{text-align: center}
+Css:  .chapterToc, .likechapterToc {margin-left:0em;}
+Css:  .chapterToc ~ .likesectionToc, .chapterToc ~ .sectionToc, .likechapterToc ~ .likesectionToc, .likechapterToc ~ .sectionToc {margin-left:2em;}
+Css:  .chapterToc ~ .likesectionToc ~ .likesubsectionToc, .chapterToc ~ .likesectionToc ~ .subsectionToc, .chapterToc ~ .sectionToc ~ .likesubsectionToc, .chapterToc ~ .sectionToc ~ .subsectionToc, .likechapterToc ~ .likesectionToc ~ .likesubsectionToc, .likechapterToc ~ .likesectionToc ~ .subsectionToc, .likechapterToc ~ .sectionToc ~ .likesubsectionToc, .likechapterToc ~ .sectionToc ~ .subsectionToc {margin-left:4em;}
+Css: .chapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .chapterToc ~ .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .chapterToc ~ .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .chapterToc ~ .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .chapterToc ~ .sectionToc ~ .subsectionToc ~ .subsubsectionToc, .likechapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likechapterToc ~ .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likechapterToc ~ .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .likechapterToc ~ .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .likechapterToc ~ .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likechapterToc ~ .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likechapterToc ~ .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc .likechapterToc ~ .sectionToc ~ .subsectionToc ~ .subsubsectionToc {margin-left:6em;}
+Css:  .likesectionToc , .sectionToc {margin-left:0em;}
+Css:  .likesectionToc ~ .likesubsectionToc, .likesectionToc ~ .subsectionToc, .sectionToc ~ .likesubsectionToc, .sectionToc ~ .subsectionToc {margin-left:2em;}
+Css: .likesectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .likesectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .likesectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .likesectionToc ~ .subsectionToc ~ .subsubsectionToc, .sectionToc ~ .likesubsectionToc ~ .likesubsubsectionToc, .sectionToc ~ .likesubsectionToc ~ .subsubsectionToc, .sectionToc ~ .subsectionToc ~ .likesubsubsectionToc, .sectionToc ~ .subsectionToc ~ .subsubsectionToc {margin-left:4em;}
+Css:  .likesubsectionToc, .subsectionToc {margin-left:0em;}
+Css:  .likesubsectionToc ~ .subsubsectionToc, .subsectionToc ~ .subsubsectionToc, {margin-left:2em;}
+Css: dd.enumerate {margin-left: 2em;}
+Css: dt.enumerate {float:left; clear:left; margin-right:0.5em; margin-left:0.5em; text-align:right; }
+Css: .equation td{text-align:center; }
+Css: .equation-star td{text-align:center; }
+Css: table.equation-star { width:100%; }
+Css: table.equation { width:100%; }
+Css: table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:100%; margin-left:5%; white-space: nowrap;}
+Css: table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+Css: td.align-label { width:5%; text-align:center; }
+Css: td.align-odd { text-align:right; padding-right:0.3em;}
+Css: td.align-even { text-align:left; padding-right:0.6em;}
+Css: table.multline, table.multline-star {width:100%;}
+Css: td.gather {text-align:center; }
+Css: table.gather {width:100%;}
+Css: div.gather-star {text-align:center;}
+Css: div.algorithm table.caption { border-bottom: 1px solid black; margin-bottom:1pt; }
+Css: div.algorithmic span.algorithmic{white-space:pre}
+Css: .figure img.graphics {margin-left:10%;}
+Css: table[rules] {border-left:solid black 0.4pt; border-right:solid black 0.4pt; }
+Css: div.longtable{text-align:center;}
+Css: .supertabular {text-align:center}
+--- needs --- dissertation.idv[2] ==> dissertation0x.png ---
+--- needs --- dissertation.idv[4] ==> dissertation1x.png ---
+--- needs --- dissertation.idv[6] ==> dissertation2x.png ---
+--- needs --- dissertation.idv[7] ==> dissertation3x.png ---
+--- needs --- dissertation.idv[9] ==> dissertation4x.png ---
+--- needs --- dissertation.idv[10] ==> dissertation5x.png ---
+--- needs --- dissertation.idv[11] ==> dissertation6x.png ---
+--- needs --- dissertation.idv[13] ==> dissertation7x.png ---
+--- needs --- dissertation.idv[14] ==> dissertation8x.png ---
+--- needs --- dissertation.idv[16] ==> dissertation9x.png ---
+--- needs --- dissertation.idv[18] ==> dissertation10x.png ---
+--- needs --- dissertation.idv[19] ==> dissertation11x.png ---
+--- needs --- dissertation.idv[20] ==> dissertation12x.png ---
+--- needs --- dissertation.idv[21] ==> dissertation13x.png ---
+--- needs --- dissertation.idv[22] ==> dissertation14x.png ---
+--- needs --- dissertation.idv[23] ==> dissertation15x.png ---
+--- needs --- dissertation.idv[24] ==> dissertation16x.png ---
+--- needs --- dissertation.idv[25] ==> dissertation17x.png ---
+--- needs --- dissertation.idv[26] ==> dissertation18x.png ---
+--- needs --- dissertation.idv[27] ==> dissertation19x.png ---
+Css: .algorithmic span.label{width:3em; text-align:right;}
+--- needs --- dissertation.idv[28] ==> dissertation20x.png ---
+--- needs --- dissertation.idv[29] ==> dissertation21x.png ---
+--- needs --- dissertation.idv[30] ==> dissertation22x.png ---
+--- needs --- dissertation.idv[31] ==> dissertation23x.png ---
+--- needs --- dissertation.idv[33] ==> dissertation24x.png ---
+--- needs --- dissertation.idv[35] ==> dissertation25x.png ---
+--- needs --- dissertation.idv[37] ==> dissertation26x.png ---
+--- needs --- dissertation.idv[39] ==> dissertation27x.png ---
+--- needs --- dissertation.idv[41] ==> dissertation28x.png ---
+--- needs --- dissertation.idv[43] ==> dissertation29x.png ---
+--- needs --- dissertation.idv[44] ==> dissertation30x.png ---
+--- needs --- dissertation.idv[45] ==> dissertation31x.png ---
+--- needs --- dissertation.idv[46] ==> dissertation32x.png ---
+--- needs --- dissertation.idv[47] ==> dissertation33x.png ---
+--- needs --- dissertation.idv[48] ==> dissertation34x.png ---
+--- needs --- dissertation.idv[49] ==> dissertation35x.png ---
+--- needs --- dissertation.idv[50] ==> dissertation36x.png ---
+--- needs --- dissertation.idv[51] ==> dissertation37x.png ---
+Css: .algorithmic span.label{width:3em; text-align:right;}
+--- needs --- dissertation.idv[52] ==> dissertation38x.png ---
+--- needs --- dissertation.idv[54] ==> dissertation39x.png ---
+--- needs --- dissertation.idv[55] ==> dissertation40x.png ---
+--- needs --- dissertation.idv[56] ==> dissertation41x.png ---
+--- needs --- dissertation.idv[57] ==> dissertation42x.png ---
+--- needs --- dissertation.idv[58] ==> dissertation43x.png ---
+--- needs --- dissertation.idv[59] ==> dissertation44x.png ---
+--- needs --- dissertation.idv[60] ==> dissertation45x.png ---
+--- needs --- dissertation.idv[61] ==> dissertation46x.png ---
+--- needs --- dissertation.idv[62] ==> dissertation47x.png ---
+Css: .algorithmic span.label{width:3em; text-align:right;}
+--- needs --- dissertation.idv[63] ==> dissertation48x.png ---
+--- needs --- dissertation.idv[64] ==> dissertation49x.png ---
+--- needs --- dissertation.idv[65] ==> dissertation50x.png ---
+--- needs --- dissertation.idv[66] ==> dissertation51x.png ---
+--- needs --- dissertation.idv[67] ==> dissertation52x.png ---
+--- needs --- dissertation.idv[68] ==> dissertation53x.png ---
+--- needs --- dissertation.idv[69] ==> dissertation54x.png ---
+--- needs --- dissertation.idv[71] ==> dissertation55x.png ---
+--- needs --- dissertation.idv[72] ==> dissertation56x.png ---
+--- needs --- dissertation.idv[74] ==> dissertation57x.png ---
+--- needs --- dissertation.idv[75] ==> dissertation58x.png ---
+--- needs --- dissertation.idv[76] ==> dissertation59x.png ---
+--- needs --- dissertation.idv[77] ==> dissertation60x.png ---
+File: ./pictures/antBridgeExperiment.png
+--- needs --- dissertation.idv[79] ==> dissertation61x.png ---
+--- needs --- dissertation.idv[81] ==> dissertation62x.png ---
+--- needs --- dissertation.idv[83] ==> dissertation63x.png ---
+--- needs --- dissertation.idv[84] ==> dissertation64x.png ---
+Css: .algorithmic span.label{width:3em; text-align:right;}
+--- needs --- dissertation.idv[86] ==> dissertation65x.png ---
+--- needs --- dissertation.idv[88] ==> dissertation66x.png ---
+--- needs --- dissertation.idv[90] ==> dissertation67x.png ---
+--- needs --- dissertation.idv[92] ==> dissertation68x.png ---
+--- needs --- dissertation.idv[94] ==> dissertation69x.png ---
+--- needs --- dissertation.idv[95] ==> dissertation70x.png ---
+--- needs --- dissertation.idv[96] ==> dissertation71x.png ---
+--- needs --- dissertation.idv[97] ==> dissertation72x.png ---
+Css: .algorithmic span.label{width:3em; text-align:right;}
+--- needs --- dissertation.idv[99] ==> dissertation73x.png ---
+--- needs --- dissertation.idv[100] ==> dissertation74x.png ---
+--- needs --- dissertation.idv[101] ==> dissertation75x.png ---
+--- needs --- dissertation.idv[102] ==> dissertation76x.png ---
+--- needs --- dissertation.idv[103] ==> dissertation77x.png ---
+--- needs --- dissertation.idv[104] ==> dissertation78x.png ---
+--- needs --- dissertation.idv[105] ==> dissertation79x.png ---
+--- needs --- dissertation.idv[106] ==> dissertation80x.png ---
+--- needs --- dissertation.idv[107] ==> dissertation81x.png ---
+--- needs --- dissertation.idv[109] ==> dissertation82x.png ---
+--- needs --- dissertation.idv[110] ==> dissertation83x.png ---
+--- needs --- dissertation.idv[111] ==> dissertation84x.png ---
+--- needs --- dissertation.idv[112] ==> dissertation85x.png ---
+--- needs --- dissertation.idv[113] ==> dissertation86x.png ---
+--- needs --- dissertation.idv[114] ==> dissertation87x.png ---
+--- needs --- dissertation.idv[115] ==> dissertation88x.png ---
+--- needs --- dissertation.idv[116] ==> dissertation89x.png ---
+--- needs --- dissertation.idv[117] ==> dissertation90x.png ---
+--- needs --- dissertation.idv[118] ==> dissertation91x.png ---
+--- needs --- dissertation.idv[119] ==> dissertation92x.png ---
+--- needs --- dissertation.idv[120] ==> dissertation93x.png ---
+--- needs --- dissertation.idv[121] ==> dissertation94x.png ---
+--- needs --- dissertation.idv[122] ==> dissertation95x.png ---
+--- needs --- dissertation.idv[123] ==> dissertation96x.png ---
+--- needs --- dissertation.idv[124] ==> dissertation97x.png ---
+--- needs --- dissertation.idv[125] ==> dissertation98x.png ---
+--- needs --- dissertation.idv[126] ==> dissertation99x.png ---
+--- needs --- dissertation.idv[128] ==> dissertation100x.png ---
+--- needs --- dissertation.idv[129] ==> dissertation101x.png ---
+--- needs --- dissertation.idv[130] ==> dissertation102x.png ---
+--- needs --- dissertation.idv[132] ==> dissertation103x.png ---
+--- needs --- dissertation.idv[134] ==> dissertation104x.png ---
+--- needs --- dissertation.idv[135] ==> dissertation105x.png ---
+--- needs --- dissertation.idv[136] ==> dissertation106x.png ---
+--- needs --- dissertation.idv[137] ==> dissertation107x.png ---
+--- needs --- dissertation.idv[138] ==> dissertation108x.png ---
+--- needs --- dissertation.idv[139] ==> dissertation109x.png ---
+--- needs --- dissertation.idv[140] ==> dissertation110x.png ---
+--- needs --- dissertation.idv[141] ==> dissertation111x.png ---
+--- needs --- dissertation.idv[142] ==> dissertation112x.png ---
+--- needs --- dissertation.idv[144] ==> dissertation113x.png ---
+--- needs --- dissertation.idv[146] ==> dissertation114x.png ---
+--- needs --- dissertation.idv[148] ==> dissertation115x.png ---
+--- needs --- dissertation.idv[149] ==> dissertation116x.png ---
+--- needs --- dissertation.idv[150] ==> dissertation117x.png ---
+--- needs --- dissertation.idv[151] ==> dissertation118x.png ---
+--- needs --- dissertation.idv[152] ==> dissertation119x.png ---
+--- needs --- dissertation.idv[153] ==> dissertation120x.png ---
+--- needs --- dissertation.idv[154] ==> dissertation121x.png ---
+--- needs --- dissertation.idv[155] ==> dissertation122x.png ---
+--- needs --- dissertation.idv[156] ==> dissertation123x.png ---
+--- needs --- dissertation.idv[157] ==> dissertation124x.png ---
+Css: .algorithmic span.label{width:3em; text-align:right;}
+--- needs --- dissertation.idv[158] ==> dissertation125x.png ---
+--- needs --- dissertation.idv[159] ==> dissertation126x.png ---
+--- needs --- dissertation.idv[160] ==> dissertation127x.png ---
+--- needs --- dissertation.idv[162] ==> dissertation128x.png ---
+--- needs --- dissertation.idv[164] ==> dissertation129x.png ---
+Css: .algorithmic span.label{width:3em; text-align:right;}
+Css: .algorithmic span.label{width:3em; text-align:right;}
+--- needs --- dissertation.idv[166] ==> dissertation130x.png ---
+Css: .algorithmic span.label{width:3em; text-align:right;}
+Css: .algorithmic span.label{width:3em; text-align:right;}
+Css: .algorithmic span.label{width:3em; text-align:right;}
+Css: .algorithmic span.label{width:3em; text-align:right;}
+Css: .algorithmic span.label{width:3em; text-align:right;}
+--- characters ---
+Font("cmr","10","10","100")
+Font("cmmi","5","5","100")
+Font("cmr","10","10","109")
+Font("cmr","12","12","100")
+Font("cmtt","10","10","109")
+Font("cmr","9","9","100")
+Font("cmsy","10","10","109")
+Font("cmbx","10","10","109")
+Font("cmti","10","10","109")
+Font("cmti","9","9","100")
+Font("cmr","6","6","100")
+Font("cmr","8","8","100")
+Font("cmmi","10","10","109")
+Font("cmmi","8","8","100")
+Font("cmmi","6","6","100")
+Font("cmsy","8","8","100")
+Font("cmsy","6","6","100")
+Font("cmex","10","10","109")
+Font("cmex","8","8","100")
+Font("msam","10","10","109")
+Font("msbm","10","10","109")

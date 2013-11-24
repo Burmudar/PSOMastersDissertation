@@ -61,6 +61,13 @@ Hua Bai and Bo~Zhao.
 \newblock In {\em Intelligent Control and Automation, 2006. WCICA 2006. The
   Sixth World Congress on}, volume~2, pages 7587 --7591, 0-0 2006.
 
+\bibitem{BeKi99a}
+D.~Beckmann and U.~Killat.
+\newblock Frequency planning with respect to interference minimization in
+  cellular radio networks.
+\newblock Technical Report TD(99)\,032, COST\,259, Vienna, Austria, January
+  1999.
+
 \bibitem{ABCImageEnhancement}
 T.R. Benala, S.D. Jampala, S.H. Villa, and B.~Konathala.
 \newblock A novel approach to image edge enhancement using artificial bee
@@ -137,15 +144,6 @@ Agnieszka Debudaj-Grabysz and Zbigniew~J. Czech.
 \newblock In {\em PPAM'07: Proceedings of the 7th international conference on
   Parallel processing and applied mathematics}, pages 189--198, Berlin,
   Heidelberg, 2008. Springer-Verlag.
-
-\bibitem{SIOPDenby}
-B.~Denby and S.~Le HŽgarat-Mascle.
-\newblock Swarm intelligence in optimisation problems.
-\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
-  Accelerators, Spectrometers, Detectors and Associated Equipment},
-  502(2-3):364 -- 368, 2003.
-\newblock Proceedings of the VIII International Workshop on Advanced Computing
-  and Analysis Techniques in Physics Research.
 
 \bibitem{ACOSurvey}
 Marco Dorigo and Christian Blum.
@@ -442,11 +440,6 @@ Vittoria Maniezzo and Roberto Montemanni.
   problem.
 \newblock Technical report, Department of Computer Science, University of
   Bologna, 2000.
-
-\bibitem{SolvingSuperIntervalGraphs}
-Carlo Mannino and Gianpaolo Oriolo.
-\newblock Solving stability problems on a superclass of interval graphs.
-\newblock Technical report, Centro Vito Volterra, 2002.
 
 \bibitem{HybridABCClustering}
 Y.~Marinakis, M.~Marinaki, and N.~Matsatsinis.

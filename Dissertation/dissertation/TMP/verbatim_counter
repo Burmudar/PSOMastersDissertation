@@ -1,0 +1,101 @@
+
+<tex2html_mydb_mark>#48#$\frac{360\,^{\circ}}{n}$
+<tex2html_mydb_mark>#49#$O(n),O(\log n)$
+<tex2html_mydb_mark>#50#$f_a,f_b,f_c,f_d$
+<tex2html_mydb_mark>#51#$v \in V(G)$
+<tex2html_mydb_mark>#52#$\bar{p_{i0}}$
+<tex2html_mydb_mark>#53#$\overset{=}{p_{i1}}$
+<tex2html_mydb_mark>#54#$= (V,E,D,P,F)$
+<tex2html_mydb_mark>#55#$f: V \rightarrow F$
+<tex2html_mydb_mark>#56#$\bar{p_{i0}}$
+<tex2html_mydb_mark>#57#$\overset{=}{p_{i1}}$
+<tex2html_mydb_mark>#58#$|f(i) - f(j)| = 0$
+<tex2html_mydb_mark>#59#$|f(i) - f(j)| \leqslant d_{ij}$
+<tex2html_mydb_mark>#60#$|f(i) - f(j)| > d_{ij}$
+<tex2html_mydb_mark>#61#$F = \{16,17,18,\dots,90\}$
+<tex2html_mydb_mark>#62#$F= \{36,37,38,\dots,67\}$
+<tex2html_mydb_mark>#63#$F= \{16,17,\dots,35\}$
+<tex2html_mydb_mark>#64#$F= \{68,69,70,\dots,90\}$
+<tex2html_mydb_mark>#65#$F = \{42,43,44,45,46\}$
+<tex2html_mydb_mark>#66#$F= \{53,54,55,\dots,124\}$
+<tex2html_mydb_mark>#67#$F = \{47,48,49,50,51,52\}$
+<tex2html_mydb_mark>#68#$F= \{681,682,683, \dots, 735\}$
+<tex2html_mydb_mark>#69#$F = \{56,57,58,\dots,94\}$
+<tex2html_mydb_mark>#70#\begin{equation}
+M_{AC} =
+	\begin{cases}
+	1, &\text{if $f(y) \leq f(x)$}\\
+	e^{-\frac{\Delta E}{T_k}} , &\text{otherwise}\\
+	\end{cases}
+\end{equation}
+<tex2html_mydb_mark>#71#\begin{equation}
+T_k = \frac{T_0}{ln(k)},\text{where k is the iteration value and } k \neq 0\\
+\end{equation}
+<tex2html_mydb_mark>#72#\begin{equation}
+T_k = \frac{T_0}{k} ~, k \neq 0
+\end{equation}
+<tex2html_mydb_mark>#73#\begin{equation}
+T(k)=T_0e^{-C_k},\text{where C is a constant}
+\end{equation}
+<tex2html_mydb_mark>#74#$f(\hat{x_i})$
+<tex2html_mydb_mark>#75#$\fbox{\includegraphics[width=4.0in,height=2.0in]{./pictures/antBridgeExperiment.png}}$
+<tex2html_mydb_mark>#76#\begin{equation}
+\tau_{ij}(t) = (1-p)\tau_{ij}(t), p\in [0,1]
+\end{equation}
+<tex2html_mydb_mark>#77#\begin{equation}
+p^k_{ij}(t) =
+\begin{cases}
+	\frac{\tau^{\alpha}_{ij}(t)\eta^{\beta}_{ij}}{\sum_{u \in N^k_i(t)} {\tau^{\alpha}_{iu}(t)\eta^{\beta}_{iu}(t)}}, &\text{if $j \in N^k_i(t)$}\\
+	0, &\text{if $j \notin N^k_i(t)$}\\
+\end{cases}
+\end{equation}
+<tex2html_mydb_mark>#78#$\alpha=\beta$
+<tex2html_mydb_mark>#79#$\alpha = 0$
+<tex2html_mydb_mark>#80#$j \in N^k_i(t)$
+<tex2html_mydb_mark>#81#$\tau_{ij}(t+1)$
+<tex2html_mydb_mark>#82#$\Delta\tau_{ij}$
+<tex2html_mydb_mark>#83#$(i,j) \in x+(t)$
+<tex2html_mydb_mark>#84#$\Delta\tau_{ij}(t)$
+<tex2html_mydb_mark>#85#\begin{equation}
+\tau_{ij}(t) = (1 - p_2)\tau_{ij} + p_2\tau_0
+\end{equation}
+<tex2html_mydb_mark>#86#$p_2 \in [0,1]$
+<tex2html_mydb_mark>#87#\begin{equation}
+p_i = \frac{{fit}_i}{\sum^{SN}_{n=1}{fit}_n}
+\end{equation}
+<tex2html_mydb_mark>#88#\begin{equation}
+v_{ij} = x_{ij} + \phi_{ij}(x_{ij} - x_{kj})
+\end{equation}
+<tex2html_mydb_mark>#89#$k \in \{1,2,\dots,SN\}$
+<tex2html_mydb_mark>#90#$j \in \{1,2,\dots,D\}$
+<tex2html_mydb_mark>#91#$x_{ij} - x_{kj}$
+<tex2html_mydb_mark>#92#\begin{equation}
+x_{ij} = x_{yj} + rand[0,1](x_{zj} - x_{yj})
+\end{equation}
+<tex2html_mydb_mark>#93#$\hat{v}_i(t+1)$
+<tex2html_mydb_mark>#94#$c_1\hat{\phi}_1(t)[\hat{pbest}_i - \hat{x}_i(t)]$
+<tex2html_mydb_mark>#95#$c_2\hat{\phi}_2(t)[\hat{gbest}_i - \hat{x}_i(t)]$
+<tex2html_mydb_mark>#96#$\hat{\phi}_i$
+<tex2html_mydb_mark>#97#$\hat{\phi}_2$
+<tex2html_mydb_mark>#98#$\hat{x}_i(t)$
+<tex2html_mydb_mark>#99#$\fbox{\includegraphics[width=4.5in,height=2.5in]{./pictures/geovelocity.pdf}}$
+<tex2html_mydb_mark>#100#$\hat{v'_i}(t+1) < \hat{V_{max}}$
+<tex2html_mydb_mark>#101#$\hat{v'_i}(t+1) \geq \hat{V_{max}}$
+<tex2html_mydb_mark>#102#$\hat{v'_i}$
+<tex2html_mydb_mark>#103#$\hat{V_{max}}$
+<tex2html_mydb_mark>#104#$\delta \in (0,1]$
+<tex2html_mydb_mark>#105#$\hat{x_{max}}$
+<tex2html_mydb_mark>#106#$\hat{x_{min}}$
+<tex2html_mydb_mark>#107#\begin{equation}
+\hat{v_i}(t+1) = w\hat{v_i}(t) + c_1\hat{\phi}_1(t)[\hat{pbest}_i - \hat{x}_i(t)] + c_2\hat{\phi}_2(t)[\hat{gbest}_i - \hat{x}_i(t)]
+\end{equation}
+<tex2html_mydb_mark>#108#$phi \geq 4$
+<tex2html_mydb_mark>#109#$\kappa \in [0,1]$
+<tex2html_mydb_mark>#110#$f(\hat{p_i})$
+<tex2html_mydb_mark>#111#$\fbox{\includegraphics[width=4.8in, height=3.5in]{./pictures/fapPlanDiagram.pdf}}$
+<tex2html_mydb_mark>#112#$pbest - x_i(t)$
+<tex2html_mydb_mark>#113#$gbest - x_i(t)$
+<tex2html_mydb_mark>#114#$c_1\phi_1 * SubtractionResultPbest$
+<tex2html_mydb_mark>#115#$c_2\phi_2 * SubtractionResultGbest$
+<tex2html_mydb_mark>#116#$v_i(t) + MultiPbestResult + MultiGBestResult$
+<tex2html_mydb_mark>#117#$0.5 * v(t+1)$

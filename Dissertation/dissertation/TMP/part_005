@@ -1,0 +1,205 @@
+<tex2html_file>#./tikz-pics/GSMCell.tex#
+\begin<<736>>tikzpicture<<736>>
+	<tex2html_comment_mark>15
+\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (0,1) <<737>><<737>>;
+	\path (0,1.75) coordinate (TowerCirlce);
+	\path (0 - 0.10,1.635) coordinate (startLeftMast);
+	\path (0 + 0.10,1.635) coordinate (startRightMast);
+	\path (0 - 0.45,0.01) coordinate (endLeftMast);
+	\path (0 + 0.45,0.01) coordinate (endRightMast);
+	\path (0 - 0.140,1.345) coordinate (startTopHorizontalBar);
+	\path (0 + 0.140,1.345) coordinate (endTopHorizontalBar);
+	\path (0 - 0.260,0.85) coordinate (startMiddelHorizontalBar);
+	\path (0 + 0.260,0.85) coordinate (endMiddelHorizontalBar);
+	\path (0 - 0.370,0.35) coordinate (startBottomHorizontalBar);
+	\path (0 + 0.370,0.35) coordinate (endBottomHorizontalBar);
+	\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+	\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] <<976>>\begin<<1013>>tex2html_deferred<<1013>>\tiny\end<<1014>>tex2html_deferred<<1014>><<738>>BTS<<738>><<976>>;
+	<tex2html_comment_mark>
+\foreach \x in <<739>>-2.25,2.25<<739>>
+	<<987>>
+		\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (\x,-0.3) <<740>><<740>>;
+		\path (\x,-0.3 + 0.75) coordinate (TowerCirlce);
+		\path (\x - 0.10,-0.3 + 0.635) coordinate (startLeftMast);
+		\path (\x + 0.10,-0.3 + 0.635) coordinate (startRightMast);
+		\path (\x - 0.45,-0.3 - 0.99) coordinate (endLeftMast);
+		\path (\x + 0.45,-0.3 - 0.99) coordinate (endRightMast);
+		\path (\x - 0.140,-0.3 + 0.345) coordinate (startTopHorizontalBar);
+		\path (\x + 0.140,-0.3 + 0.345) coordinate (endTopHorizontalBar);
+		\path (\x - 0.260,-0.3 - 0.15) coordinate (startMiddelHorizontalBar);
+		\path (\x + 0.260,-0.3 - 0.15) coordinate (endMiddelHorizontalBar);
+		\path (\x - 0.370,-0.3 - 0.65) coordinate (startBottomHorizontalBar);
+		\path (\x + 0.370,-0.3 - 0.65) coordinate (endBottomHorizontalBar);
+		\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+		\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] <<977>>\begin<<1015>>tex2html_deferred<<1015>>\tiny\end<<1016>>tex2html_deferred<<1016>><<741>>BTS<<741>><<977>>;
+	<<987>>
+	<tex2html_comment_mark>
+\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (0,-1.6) <<742>><<742>>;
+	\path (0,-1.6 + 0.75) coordinate (TowerCirlce);
+	\path (0 - 0.10,-1.6 + 0.635) coordinate (startLeftMast);
+	\path (0 + 0.10,-1.6 + 0.635) coordinate (startRightMast);
+	\path (0 - 0.45,-1.6 - 0.99) coordinate (endLeftMast);
+	\path (0 + 0.45,-1.6 - 0.99) coordinate (endRightMast);
+	\path (0 - 0.140,-1.6 + 0.345) coordinate (startTopHorizontalBar);
+	\path (0 + 0.140,-1.6 + 0.345) coordinate (endTopHorizontalBar);
+	\path (0 - 0.260,-1.6 - 0.15) coordinate (startMiddelHorizontalBar);
+	\path (0 + 0.260,-1.6 - 0.15) coordinate (endMiddelHorizontalBar);
+	\path (0 - 0.370,-1.6 - 0.65) coordinate (startBottomHorizontalBar);
+	\path (0 + 0.370,-1.6 - 0.65) coordinate (endBottomHorizontalBar);
+	\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+	\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] <<978>>\begin<<1017>>tex2html_deferred<<1017>>\tiny\end<<1018>>tex2html_deferred<<1018>><<743>>BTS<<743>><<978>>;
+	<tex2html_comment_mark>
+\foreach \x in <<744>>-2.25,2.25<<744>>
+	<<988>>
+		\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (\x,-2.9) <<745>><<745>>;
+		\path (\x,-2.9 + 0.75) coordinate (TowerCirlce);
+		\path (\x - 0.10,-2.9 + 0.635) coordinate (startLeftMast);
+		\path (\x + 0.10,-2.9 + 0.635) coordinate (startRightMast);
+		\path (\x - 0.45,-2.9 - 0.99) coordinate (endLeftMast);
+		\path (\x + 0.45,-2.9 - 0.99) coordinate (endRightMast);
+		\path (\x - 0.140,-2.9 + 0.345) coordinate (startTopHorizontalBar);
+		\path (\x + 0.140,-2.9 + 0.345) coordinate (endTopHorizontalBar);
+		\path (\x - 0.260,-2.9 - 0.15) coordinate (startMiddelHorizontalBar);
+		\path (\x + 0.260,-2.9 - 0.15) coordinate (endMiddelHorizontalBar);
+		\path (\x - 0.370,-2.9 - 0.65) coordinate (startBottomHorizontalBar);
+		\path (\x + 0.370,-2.9 - 0.65) coordinate (endBottomHorizontalBar);
+		\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+		\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] <<979>>\begin<<1019>>tex2html_deferred<<1019>>\tiny\end<<1020>>tex2html_deferred<<1020>><<746>>BTS<<746>><<979>>;
+	<<988>>
+	<tex2html_comment_mark>
+\node [regular polygon, regular polygon sides=6, minimum size=3cm,draw] at (0,-4.2) <<747>><<747>>;
+	\path (0,-4.2 + 0.75) coordinate (TowerCirlce);
+	\path (0 - 0.10,-4.2 + 0.635) coordinate (startLeftMast);
+	\path (0 + 0.10,-4.2 + 0.635) coordinate (startRightMast);
+	\path (0 - 0.45,-4.2 - 0.99) coordinate (endLeftMast);
+	\path (0 + 0.45,-4.2 - 0.99) coordinate (endRightMast);
+	\path (0 - 0.140,-4.2 + 0.345) coordinate (startTopHorizontalBar);
+	\path (0 + 0.140,-4.2 + 0.345) coordinate (endTopHorizontalBar);
+	\path (0 - 0.260,-4.2 - 0.15) coordinate (startMiddelHorizontalBar);
+	\path (0 + 0.260,-4.2 - 0.15) coordinate (endMiddelHorizontalBar);
+	\path (0 - 0.370,-4.2 - 0.65) coordinate (startBottomHorizontalBar);
+	\path (0 + 0.370,-4.2 - 0.65) coordinate (endBottomHorizontalBar);
+	\draw [thick,color=gray] (startLeftMast) -- (endLeftMast) (startRightMast) -- (endRightMast) (startMiddelHorizontalBar) -- (endTopHorizontalBar) -- (startTopHorizontalBar) -- (endMiddelHorizontalBar) -- (startMiddelHorizontalBar) -- (endBottomHorizontalBar) -- (startBottomHorizontalBar) -- (endMiddelHorizontalBar) -- cycle;
+\shade [ball color=gray] (TowerCirlce) circle (0.15) node [above=0.10cm] <<980>>\begin<<1021>>tex2html_deferred<<1021>>\tiny\end<<1022>>tex2html_deferred<<1022>><<748>>BTS<<748>><<980>>;
+\end<<749>>tikzpicture<<749>>
+<tex2html_endfile>#./tikz-pics/GSMCell.tex#
+		\begin<<1023>>tex2html_deferred<<1023>>\caption<<750>>Cells with BTSs<<750>>\end<<1024>>tex2html_deferred<<1024>>
+		\label<<751>>fig:GSMCell<<751>>
+	\end<<752>>centering<<752>>z
+\end<<753>>figure<<753>>
+Even though cells are modelled as being hexagons (see figure~\ref<<754>>fig:GSMCell<<754>>), the actual coverage area of a cell has no predefined regular shape \cite<<755>>GSMArchitectureProtocolsServices<<755>>.
+\begin<<1025>>tex2html_deferred<<1025>>\par\end<<1026>>tex2html_deferred<<1026>>
+For the purpose of this research a \gls<<756>>BTS<<756>> is considered to be assigned channels which are used for communication. No discussion will be presented on the electro-magnetic wavelength properties of channels as it has no effect on the results presented or problem being investigated.
+\begin<<1027>>tex2html_deferred<<1027>>\par\end<<1028>>tex2html_deferred<<1028>>
+With the network modelled as a series of interconnecting hexagons it allows one to more easily take constraints into account\cite<<757>>Eisenblatter<<757>>. For a cell to serve its geographical area, it needs to be allocated frequencies to operate on. Therefore, for each cell \begin<<989>>tex2html_wrap_inline<<989>>$i$\end<<990>>tex2html_wrap_inline<<990>>\space in the modelled network a subset \begin<<991>>tex2html_wrap_inline<<991>>$S_i$\end<<992>>tex2html_wrap_inline<<992>>\space of frequencies from the total frequencies \begin<<993>>tex2html_wrap_inline<<993>>$F$\end<<994>>tex2html_wrap_inline<<994>>\space allocated to the \gls<<758>>gsm<<758>> network is assigned\cite<<759>>GSMArchitectureProtocolsServices<<759>>. Neighbouring cells must at all costs avoid having the same subset of frequencies allocated to them, since such a scenario would lead to severe interference on any communication and thus degrade quality \cite<<760>>GSMArchitectureProtocolsServices<<760>>.
+\begin<<1029>>tex2html_deferred<<1029>>\par\end<<1030>>tex2html_deferred<<1030>>
+Since the number of cells in a network greatly outnumber the available of subset frequencies available, one is forced to start reusing frequency subsets in cells\cite<<761>>GSMArchitectureProtocolsServices<<761>>. To ensure that the reused frequency subsets do not interfere with their neighbouring cells, a reuse distance \begin<<995>>tex2html_wrap_inline<<995>>$D$\end<<996>>tex2html_wrap_inline<<996>>\space is defined \cite<<762>>GSMArchitectureProtocolsServices<<762>>. The reuse distance means that a certain number of cells must be between the cell already assigned the frequency subset \begin<<997>>tex2html_wrap_inline<<997>>$S_i$\end<<998>>tex2html_wrap_inline<<998>>\space and the cell to be assigned a frequency subset \cite<<763>>GSMArchitectureProtocolsServices<<763>>. The amount of cells is the distance value \begin<<999>>tex2html_wrap_inline<<999>>$D$\end<<1000>>tex2html_wrap_inline<<1000>>.
+\begin<<1031>>tex2html_deferred<<1031>>\par\end<<1032>>tex2html_deferred<<1032>>
+The size of a cell determines the amount of potential traffic that the cell will be required to handle \cite<<764>>GSM92,Eisenblatter,GSMArchitectureProtocolsServices<<764>>. Therefore, if the size of a cell is chosen to be small, fewer channels will be required to be allocated to that cell as it would not be required to handle as much traffic as a larger cell\cite<<765>>GSMArchitectureProtocolsServices<<765>>. 
+\begin<<1033>>tex2html_deferred<<1033>>\par\end<<1034>>tex2html_deferred<<1034>>
+By making the size of cells smaller, the network operator is required to invest more into its network infrastructure. Smaller cells have a direct consequence that more cells would be required to serve the same geographical area, and more cells means that more \glspl<<766>>BTS<<766>> etc.\ need to be built and maintained, more locations need to be rented \cite<<767>>GSMArchitectureProtocolsServices<<767>>. Hence, making a cell smaller has a compounding effect on the amount of infrastructure needed to support it.
+\begin<<1035>>tex2html_deferred<<1035>>\par\end<<1036>>tex2html_deferred<<1036>>
+Fortunately all the extra infrastructure investment by the operator can be greatly scaled down if cells are divided into sectors\label<<768>>def:cellsector<<768>>. Each sector performs the exact same function as a traditional cell and is therefore regarded to also be a cell, just smaller in size and not omnidirectional \cite<<769>>GSMArchitectureProtocolsServices,GSM92,GSMSysEngin<<769>>. 
+\begin<<1037>>tex2html_deferred<<1037>>\par\end<<1038>>tex2html_deferred<<1038>>
+A cell is divided into 3 to 6 service sectors and each sector is allocated an antenna/transceiver \cite<<770>>GSMSysEngin<<770>>. Figure~\ref<<771>>fig:cellsector<<771>> illustrates a cell divided into sectors. 
+\begin<<1039>>tex2html_deferred<<1039>>\par\end<<1040>>tex2html_deferred<<1040>>
+\begin<<772>>figure<<772>>[H]
+	\begin<<773>>centering<<773>>
+	\includegraphics[scale=0.5]<<774>>tikz-pics/cellsector.pdf<<774>>
+	\begin<<1041>>tex2html_deferred<<1041>>\caption[Cell Sectorization]<<981>>Cell sectorisation\cite<<775>>GSMSysEngin<<775>>.<<981>>\end<<1042>>tex2html_deferred<<1042>>
+	\label<<776>>fig:cellsector<<776>>
+	\end<<777>>centering<<777>>
+\end<<778>>figure<<778>>
+\begin<<1043>>tex2html_deferred<<1043>>\par\end<<1044>>tex2html_deferred<<1044>>
+Depending on how many sectors are at a cell, the operating angles of the antennae need to be adjusted accordingly to ensure 360 degree service. If there is only one sector, an omnidirectional antenna is used, otherwise the antennae operating angles are adjusted to \begin<<1001>>tex2html_wrap_inline<<1001>>$\frac<<982>>360\,^<<779>>\circ<<779>><<982>><<780>>n<<780>>$\end<<1002>>tex2html_wrap_inline<<1002>>\space where \begin<<1003>>tex2html_wrap_inline<<1003>>$<<781>>n<<781>>$\end<<1004>>tex2html_wrap_inline<<1004>>\space is the number of antennae \cite<<782>>Eisenblatter<<782>>.
+\begin<<1045>>tex2html_deferred<<1045>>\par\end<<1046>>tex2html_deferred<<1046>>
+By dividing the cell into sectors the amount of co-channel interference that would occur in a cell is greatly reduced \cite<<783>>GSMArchitectureProtocolsServices<<783>>. It is important to note that the reduction of co-channel interference is only applicable when the angle of the antenna by which transmission occurs is restricted\cite<<784>>GSMArchitectureProtocolsServices<<784>>.
+\begin<<1047>>tex2html_deferred<<1047>>\par\end<<1048>>tex2html_deferred<<1048>>
+Suppose, if a cell using an omnidirectional transceiver is assigned 6 channels. If the cell were to be divided into three sectors, where the sectors' antennae are \begin<<1005>>tex2html_wrap_inline<<1005>>$120^\circ$\end<<1006>>tex2html_wrap_inline<<1006>>\space apart, the number of interfering co-channels shrinks from 6 to 2 and from 6 to one in the case when the cell is divided into 6 sectors \cite<<785>>GSMSysEngin,GSM92,GSMArchitectureProtocolsServices<<785>>.
+\begin<<1049>>tex2html_deferred<<1049>>\par\end<<1050>>tex2html_deferred<<1050>>
+Each sector operates one or more elementary transceivers called \gls<<786>>TRX<<786>>. The number of \gls<<787>>TRX<<787>> per sector is determined by the expected peak traffic demand that the cell must be able to handle. Each \gls<<788>>TRX<<788>> can handle 7 to 8 communication links or calls in parallel except the first \gls<<789>>TRX<<789>>, which handles fewer calls than normal because it is responsible for transmitting cell organisation and protocol information \cite<<790>>Eisenblatter<<790>>. \glspl<<791>>TRX<<791>> are able to handle 7-8 calls in parallel due to the use of \gls<<792>>FDM<<792>> and \gls<<793>>TDM<<793>> schemes. 
+\begin<<1051>>tex2html_deferred<<1051>>\par\end<<1052>>tex2html_deferred<<1052>>
+\glspl<<794>>TRX<<794>> are assigned channels, which enable them to provide conversion between digital traffic data on the network side and the radio communication between \glspl<<795>>MS<<795>>and the \gls<<796>>gsm<<796>> network\cite<<797>>ACOvsEA,FAPOrientationModel<<797>>. The channels that are used by a cell for communication are discussed in section~\ref<<798>>sec:interfacech<<798>>.
+\begin<<1053>>tex2html_deferred<<1053>>\par\end<<1054>>tex2html_deferred<<1054>>
+\subsection<<799>>Mobile Switching Centre<<799>>
+\begin<<1055>>tex2html_deferred<<1055>>\par\end<<1056>>tex2html_deferred<<1056>>
+The \gls<<800>>MSC<<800>> is at the heart of a cellular switching system and forms part of the \gls<<801>>NSS<<801>>. The \gls<<802>>MSC<<802>> is responsible for the setting up, routing and supervision of calls between \gls<<803>>gsm<<803>> subscribers\cite<<804>>GSM92,GSMSysEngin<<804>>. The \gls<<805>>MSC<<805>> has interfaces to communicate with \gls<<806>>gsm<<806>> subscribers (through the \gls<<807>>BSS<<807>>) on the one hand and with external networks on the other\cite<<808>>GSM92<<808>>. The \gls<<809>>MSC<<809>> interfaces with external networks to utilise their superior capability in data transmission as well as for the signalling and communication with other \gls<<810>>gsm<<810>> network components \cite<<811>>GSM92<<811>>. 
+\begin<<1057>>tex2html_deferred<<1057>>\par\end<<1058>>tex2html_deferred<<1058>>
+The most basic functions that an \gls<<812>>MSC<<812>> is responsible for in a network are the following \cite<<813>>wirelesstelcoMullet<<813>>:
+\begin<<814>>itemize<<814>>
+\item Voice call initialization, routing, control and supervision between subscribers
+\item Handover process between two cells
+\item Location updating
+\item \gls<<815>>MS<<815>> authentication
+\item \gls<<816>>SMS<<816>> delivery
+\item Charging and accounting of services used by subscriber
+\item Notification of other network elements
+\item Administration input or output processing functions
+\end<<817>>itemize<<817>>
+\begin<<1059>>tex2html_deferred<<1059>>\par\end<<1060>>tex2html_deferred<<1060>>
+To achieve most of these functions the \gls<<818>>MSC<<818>> has an integrated \gls<<819>>VLR<<819>> database that stores call setup information for any \gls<<820>>MS<<820>> that is currently registered for service with the \gls<<821>>MSC<<821>> \cite<<822>>GSM92,wirelesstelcoMullet<<822>>. 
+\begin<<1061>>tex2html_deferred<<1061>>\par\end<<1062>>tex2html_deferred<<1062>>
+The \glspl<<823>>VLR<<823>>retrieves this information from the \gls<<824>>HLR<<824>> that contains all the registered \gls<<825>>gsm<<825>> subscriber information for the network. This information enables the \gls<<826>>MSC<<826>> to quickly retrieve the necessary information to set up a call between two clients that want to communicate with each other \cite<<827>>GSMSysEngin,GSMSecurInTeleNetwork<<827>>.
+\begin<<1063>>tex2html_deferred<<1063>>\par\end<<1064>>tex2html_deferred<<1064>>
+A requirement for being able to communicate with other network elements such as \gls<<828>>PSTN<<828>> is the ability to multiplex and demultiplex signals to and from such network elements. This operation is a necessity, since the incoming or outgoing connection bitrate from the source entity might be either too low or too high for the receiving entity.
+\begin<<1065>>tex2html_deferred<<1065>>\par\end<<1066>>tex2html_deferred<<1066>>
+A typical scenario where this operation proves vital is when a mobile subscriber makes a call to a subscriber on a\gls<<829>>PSTN<<829>> \@. The connection bit rate needs to be changed at the \gls<<830>>MSC<<830>> from a wireless connection bitrate to a bitrate suitable for transmission over a\gls<<831>>PSTN<<831>> \@. In chapter~\ref<<832>>chpt:fap<<832>> section~\ref<<833>>sec:Interference<<833>> more information regarding bit rates is presented.
+\begin<<1067>>tex2html_deferred<<1067>>\par\end<<1068>>tex2html_deferred<<1068>>
+\subsection<<834>>Network databases<<834>>
+The \gls<<835>>HLR<<835>>,  \gls<<836>>AUC<<836>> and \gls<<837>>EIR<<837>> are the three `back-end' databases which store and provide information for the rest of the \gls<<838>>gsm<<838>> network. In this subsection each one of the databases that form part of the `back-end' is discussed briefly and a description is given of the core functions that each database performs in the network.
+\begin<<1069>>tex2html_deferred<<1069>>\par\end<<1070>>tex2html_deferred<<1070>>
+\paragraph<<839>>Home location register<<839>>
+--- The \gls<<840>>HLR<<840>> is a database that permanently stores information pertaining to a given set of subscribers. It needs to store a wide range of subscriber parameters because it is the reference source for anything \gls<<841>>gsm<<841>> subscriber related in the network\cite<<842>>GSMSysEngin<<842>>. 
+\begin<<1071>>tex2html_deferred<<1071>>\par\end<<1072>>tex2html_deferred<<1072>>
+Subscriber parameters that are stored in the database include billing information, routing information, identification numbers, authentication parameters and subscribed services\cite<<843>>GSMSysEngin<<843>>. The following information is also stored, but the information is of a temporary nature and can change at any time: The current \glspl<<844>>VLR<<844>>and \gls<<845>>MSC<<845>> the subscriber is registered with and whether the subscriber is roaming \cite<<846>>GSMSysEngin<<846>>.
+\begin<<1073>>tex2html_deferred<<1073>>\par\end<<1074>>tex2html_deferred<<1074>>
+\paragraph<<847>>Authentication centre<<847>>
+--- The AUC is the entity in the \gls<<848>>gsm<<848>> network that performs security functions and thus stores information that enables it to provide secure over-the-air communication\cite<<849>>GSM92,GSMSysEngin<<849>>. The information that is stored contains authentication information as well as keys that are used in ciphering information\cite<<850>>GSM92,GSMSysEngin<<850>>.
+\begin<<1075>>tex2html_deferred<<1075>>\par\end<<1076>>tex2html_deferred<<1076>>
+During an authentication procedure no ciphering key is ever transmitted over the air; instead a challenge is issued to the mobile that needs to be authenticated. This challenge requires the mobile station to provide the correct \gls<<851>>SRES<<851>> with regard to the random number generated by the \gls<<852>>AUC<<852>>\cite<<853>>GSM92,GSMSysEngin<<853>>. The random number and ciphering keys that are used change with each call that is made; thus an attacker would gain nothing by intercepting a key, since it will change with the next call \cite<<854>>GSMSysEngin<<854>>.
+\begin<<1077>>tex2html_deferred<<1077>>\par\end<<1078>>tex2html_deferred<<1078>>
+Each mobile that is registered in the \gls<<855>>HLR<<855>> database needs to be authenticated and each call that is instantiated needs to retrieve keys from the AUC to establish a secure communication link\cite<<856>>GSM92,GSMSysEngin<<856>>. The AUC is sometimes included with \gls<<857>>HLR<<857>> to allow for fast communication between the two databases \cite<<858>>GSMSysEngin<<858>>.
+\begin<<1079>>tex2html_deferred<<1079>>\par\end<<1080>>tex2html_deferred<<1080>>
+\paragraph<<859>>Equipment identity register<<859>>
+--- The \gls<<860>>EIR<<860>> is a database that stores the \gls<<861>>IMEI<<861>> numbers of all registered mobile equipment that has accessed the network\cite<<862>>GSMSysEngin<<862>>. Only information about the mobile equipment is stored, nothing about the subscriber or call is stored in the databas\cite<<863>>GSMSysEngin<<863>>.
+\begin<<1081>>tex2html_deferred<<1081>>\par\end<<1082>>tex2html_deferred<<1082>>
+Typically there is only one \gls<<864>>EIR<<864>> database per network and interfaces to the \gls<<865>>HLR<<865>> databases contained in the network\cite<<866>>GSMSysEngin<<866>>. The \glspl<<867>>IMEI<<867>> are grouped into three categories: \emph<<868>>white list<<868>>, \emph<<869>>black list<<869>> and the \emph<<870>>gray list<<870>>\cite<<871>>GSMSysEngin<<871>> The white list contains only the \gls<<872>>IMEI<<872>> numbers of valid \glspl<<873>>MS<<873>>; the black list stores the \gls<<874>>IMEI<<874>> numbers of equipment that has been reported stolen and the gray list stores the \gls<<875>>IMEI<<875>> numbers of equipment that has some fault (faulty software, wrong make of equipment)\cite<<876>>GSMSysEngin<<876>>.
+\begin<<1083>>tex2html_deferred<<1083>>\par\end<<1084>>tex2html_deferred<<1084>>
+\subsection<<877>>GSM Network Management Entities<<877>>
+In a \gls<<878>>gsm<<878>> network most of the elements that form part of and make the network function are often distributed in a wide geographical area to provide the best network coverage for the customer\cite<<879>>GSMSysEngin<<879>>. 
+\begin<<1085>>tex2html_deferred<<1085>>\par\end<<1086>>tex2html_deferred<<1086>>
+For a network to function properly and efficiently network engineers need to be kept up to date on the state of the network and be alerted if \emph<<880>>any<<880>> problems occur\cite<<881>>GSMSysEngin<<881>>. For this purpose there are two systems in the \gls<<882>>gsm<<882>> network architecture that allow for this functionality required by network engineers\cite<<883>>GSMSysEngin<<883>>. 
+\begin<<1087>>tex2html_deferred<<1087>>\par\end<<1088>>tex2html_deferred<<1088>>
+One system is called the \gls<<884>>OMC<<884>> which is responsible for centralised regional and local operational and maintenance activities\cite<<885>>GSMSysEngin<<885>>. The other system is called the \gls<<886>>NMC<<886>> and unlike the \gls<<887>>OMC<<887>> it provides global and centralised management for operations and maintenance of the network supported by the OMCs \cite<<888>>GSMSysEngin<<888>>.
+\begin<<1089>>tex2html_deferred<<1089>>\par\end<<1090>>tex2html_deferred<<1090>>
+In the following paragraphs more in depth discussions on the critical functions the \gls<<889>>OMC<<889>> and \gls<<890>>NMC<<890>> perform is presented.
+\begin<<1091>>tex2html_deferred<<1091>>\par\end<<1092>>tex2html_deferred<<1092>>
+\paragraph<<891>>Operational and Management Centre<<891>>
+--- The \gls<<892>>OMC<<892>> is capable of communicating with \gls<<893>>gsm<<893>> network components using two protocols, namely SS7 and X.25\cite<<894>>GSMSysEngin<<894>>. The SS7 protocol is usually used when the \gls<<895>>OMC<<895>> is communicating within the \gls<<896>>gsm<<896>> network over short and medium distances\cite<<897>>GSMSysEngin<<897>>. The X.25 protocol is used for large external data transfers\cite<<898>>GSMSysEngin<<898>>. All communication where the \gls<<899>>OMC<<899>> is involved occurs over fixed line networks and/or leased lines. The \gls<<900>>OMC<<900>> is usually used for day-to-day operation of a network \cite<<901>>GSMSysEngin<<901>>.
+\begin<<1093>>tex2html_deferred<<1093>>\par\end<<1094>>tex2html_deferred<<1094>>
+The \gls<<902>>OMC<<902>> has support for alarm handling\cite<<903>>GSMSysEngin<<903>>. An alarm in a \gls<<904>>gsm<<904>> network goes off whenever a predefined expected condition does occur. Engineers are able to define the severity of an alarm, which defines who or what is further alerted and if the alarm needs to be escalated to a higher level \cite<<905>>GSMSysEngin<<905>>.
+\begin<<1095>>tex2html_deferred<<1095>>\par\end<<1096>>tex2html_deferred<<1096>>
+The \gls<<906>>OMC<<906>> is also capable of fault management in the \gls<<907>>gsm<<907>> network\cite<<908>>GSMSysEngin<<908>>. It is able to activate, deactivate, remove and restore a service manually or automatically on network devices\cite<<909>>GSM92<<909>>. Various tests can be run and diagnostic information can be retrieved on the network devices to detect any current or future defects \cite<<910>>GSMSysEngin<<910>>.
+\begin<<1097>>tex2html_deferred<<1097>>\par\end<<1098>>tex2html_deferred<<1098>>
+\paragraph<<911>>Network Management Centre<<911>>
+--- The \gls<<912>>NMC<<912>> is similar to the \gls<<913>>OMC<<913>> but it is not restricted to only regional \gls<<914>>gsm<<914>> network components as it is in charge of all the \gls<<915>>gsm<<915>> network components in the network\cite<<916>>GSMSysEngin<<916>>. The \gls<<917>>NMC<<917>> provides traffic management for the global network and also monitors high priority alarms such as overloaded or failed \gls<<918>>gsm<<918>> network components\cite<<919>>GSMSysEngin<<919>>. It is usually used in long-term planning of a network, but it has the capability to perform certain \gls<<920>>OMC<<920>> functions when a \gls<<921>>OMC<<921>> is not staffed. 
+\begin<<1099>>tex2html_deferred<<1099>>\par\end<<1100>>tex2html_deferred<<1100>>
+\section<<922>>GSM Interfaces<<922>>
+\label<<923>>sec:gsminterfaces<<923>>
+In the \gls<<924>>gsm<<924>> network all the network components communicate with each other through predefined interfaces. In this section an overview is given of these interfaces between the components.
+\begin<<925>>description<<925>>
+  \item<<983>>\textbf<<926>>Um interface<<926>><<983>> --- This interface is the link between an \gls<<927>>MS<<927>> device and a \gls<<928>>BTS<<928>> and is also referred to as the \emph<<929>>Air<<929>> interface since communication occurs wirelessly. The primary protocol used on this interface is the \gls<<930>>LAPDm<<930>>, which is an extension of the \gls<<931>>ISDN<<931>> LAPD protocol to accommodate the mobile nature of \gls<<932>>MS<<932>> devices as well as for the shorter \gls<<933>>TDMA<<933>> frames which are used in \gls<<934>>gsm<<934>> networks\cite<<935>>wirelesstelcoMullet,GSMSecurInTeleNetwork<<935>>.
+\item<<984>>\textbf<<936>>Abis interface<<936>><<984>> --- Between the \gls<<937>>BTS<<937>> and \gls<<938>>BSC<<938>> the interface used for communication is known as the Abis interface. The only messages that the \gls<<939>>BTS<<939>> is interested in are those that have to do with management of radio resources\cite<<940>>wirelesstelcoMullet,GSMSecurInTeleNetwork<<940>>. All other messages are left alone and merely pass through the \gls<<941>>BTS<<941>> to the \gls<<942>>BSC<<942>> transparently.
+\item<<985>>\textbf<<943>>A interface<<943>><<985>> --- The interface between the \gls<<944>>BSC<<944>> and \gls<<945>>MSC<<945>> is known as the A interface. This interface is used for the transfer of information, which is used by the \gls<<946>>MSC<<946>> to manage BSSs, control connections and manage the mobility of \gls<<947>>MS<<947>> in its area of service\cite<<948>>wirelesstelcoMullet,GSMArchitectureProtocolsServices<<948>>.
+\item<<986>>\textbf<<949>>Other Interfaces<<949>><<986>> --- The \gls<<950>>MSC<<950>> has interfaces going from itself to databases and other external networks. Each interface connects to a specific database, \gls<<951>>MSC<<951>> or network and is therefore very specific as to what function it performs\cite<<952>>wirelesstelcoMullet,GSMArchitectureProtocolsServices<<952>>. An interface going from one \gls<<953>>MSC<<953>> to another will convey information regarding handling the administration of handover of an \gls<<954>>MS<<954>> device leaving one administrative area to another MSC's administrative area. The administrative area of an Msc is the section of \gls<<955>>BSS<<955>> components the Msc is responsible for. The handover procedure is a very delicate process which is described in section~\ref<<956>>sec:handover<<956>>.
+\end<<957>>description<<957>>
+\begin<<1101>>tex2html_deferred<<1101>>\par\end<<1102>>tex2html_deferred<<1102>>
+In this section a brief overview was given of the most critical interfaces used by all the network components of the \gls<<958>>gsm<<958>> network involved. In the next section the difference between a logical channel and a frequency is described. Additionally an outline and overview of all the logical channels defined in the \gls<<959>>gsm<<959>> is presented. 
+\section<<960>>GSM Channels<<960>>
+\label<<961>>sec:interfacech<<961>>
+\gls<<962>>gsm<<962>> defines a series of logical channels, which are used for communication over these interfaces. A distinction needs to be made between channels and frequencies. As discussed earlier, a network is licensed in a certain section of the wireless spectrum for use for commercial communication. This piece of spectrum is referred to as bandwidth and is measured in Hz, therefore \begin<<1007>>tex2html_wrap_inline<<1007>>$W$\end<<1008>>tex2html_wrap_inline<<1008>>\space Hz, where \begin<<1009>>tex2html_wrap_inline<<1009>>$W$\end<<1010>>tex2html_wrap_inline<<1010>>\space denotes the allocated bandwidth\cite<<963>>FundamentalsWirelessCommunication<<963>>. This bandwidth W is then divided into N smaller chunks of bandwidth called narrowband chunks. Each N narrowband chunk is a channel and has a width of \begin<<1011>>tex2html_wrap_inline<<1011>>$W/N$\end<<1012>>tex2html_wrap_inline<<1012>>\space Hz\cite<<964>>FundamentalsWirelessCommunication<<964>>. 
+\begin<<1103>>tex2html_deferred<<1103>>\par\end<<1104>>tex2html_deferred<<1104>>
+Using \gls<<965>>TDMA<<965>> the \gls<<966>>gsm<<966>> system is able to provide additional transmission capacity by dividing the frequency into eight equal timeslots \cite<<967>>wirelesstelcoMullet<<967>>. As can be observed from figure~\ref<<968>>fig:GSMChannels<<968>> each \gls<<969>>TDMA<<969>> frame has a series of consecutive timeslots. Each timeslot can be used for both uplink and downlink transmission. A \gls<<970>>gsm<<970>> \emph<<971>>channel<<971>> is a logical channel and refers to a single timeslot within a \gls<<972>>TDMA<<972>> frame \cite<<973>>wirelesstelcoMullet,GSMArchitectureProtocolsServices<<973>>.
+\begin<<974>>figure<<974>>[H]
+	\begin<<975>>centering<<975>>
+		<tex2html_comment_mark>24

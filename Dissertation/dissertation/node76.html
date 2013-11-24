@@ -1,0 +1,24 @@
+
+<H3><A NAME="SECTION04442400000000000000"><tex2html_anchor_invisible_mark></A>
+<A NAME="TSSearchPhases"><tex2html_anchor_mark></A><BR>
+Search Phases
+</H3>
+As <#2572#>TS<#2572#> searches through the search space, it goes through two cycles of search phases called <I>diversification</I> and <I>intensification</I> [#TabuParameterization#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#TabuCrewSchedulingProblem#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#NonlinearGlobalTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#SelfControllingReactiveTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The diversification phase in the <#2576#>TS<#2576#> algorithm is the phase where the algorithm is directed to areas in the search space that has not yet been explored. The algorithm applies diversification as mechanisms monitoring the memory; note that solutions being produced are being repeated [#ReactiveTabuVHR#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#SelfControllingReactiveTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+Research by Fescioglu-Unver and Kokar [#SelfControllingReactiveTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#] provides a strategy that consists of two components namely the <I>observer</I> and the <I>diversifier</I>. The goal of the observer is to continually monitor the best solution obtained by the algorithm as to whether it violates the <I>stagnation period</I>. The stagnation period is defined as the number of iterations where the current best obtained solution has not changed and the algorithm has not moved to a new solution[#SelfControllingReactiveTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. 
+
+<P>
+As soon as the current solution exceeds the stagnation period the observer component activates and transfers the necessary information needed by the diversifier component. The diversifier component dynamically changes the size of the tabu tenure based on the information the observer gathered. The diversifier mainly targets older moves to diversify, but for short bursts of time it decreases the tabu list size to a very small value in an attempt to combine new and old moves [#SelfControllingReactiveTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+The specific mechanism used to define a new position where the algorithm can continue to search, should ideally select areas in the search space that have not been explored yet[#NonlinearGlobalTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#SelfControllingReactiveTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. Therefore, the diversification phase makes extensive use of the knowledge present in the long-term memory structures as an indication of what areas of the search space have been previously explored and which areas have not [#NonlinearGlobalTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#,#SelfControllingReactiveTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#].
+
+<P>
+Intensification is the first phase of the <#2586#>TS<#2586#> algorithm, since it is responsible for building up a history in memory on which the diversification phase can act. Fescioglu-Unver and Kokar also present an intensification strategy based on control theory in their research [#SelfControllingReactiveTabu#<tex2html_cite_mark>#1##<tex2html_cite_mark>#]. The authors identify repetition length as a critical value for their intensification strategy to be based upon. The repetition length is a control measure that defines how many times the algorithm can occupy the same solution within a span of iterations.
+
+<P>
+In the following section, an overview is presented of the flow the <#2588#>TS<#2588#> algorithm along with pseudo code describing the <#2589#>TS<#2589#> algorithm.

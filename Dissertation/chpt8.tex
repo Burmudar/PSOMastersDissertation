@@ -1,13 +1,13 @@
 \chapter{Results}
 \label{chpt:results}
 \section{Introduction}
-In the previous chapter the FAP PSO algorithm was discussed. This algorithm was developed by modifying the standard PSO algorithm to operate on the FS-FAP. Thus far, no other PSO algorithms have been attempted on the FS-FAP. The only PSO algorithm that has been attempted in the FAP domain was discussed in chapter~\ref{chpt:swarm} and was not relevant to the study in this dissertation, as the PSO was applied to an entirely different FAP variant (MS-FAP). The PSO on the MS-FAP was not relevant because the performance measures and what the algorithms optimise differ.
+The previous chapter presented a discussion on the FAP PSO algorithm . This algorithm was developed by modifying the standard PSO algorithm to operate on the FS-FAP. Thus far, no other PSO algorithms have been attempted on the FS-FAP. The only PSO algorithm that has been attempted in the FAP domain was discussed in chapter~\ref{chpt:swarm} and was not relevant to the study in this dissertation, as the PSO was applied to an entirely different FAP variant (MS-FAP). The PSO on the MS-FAP was not relevant because the performance measures and what the algorithms optimise differ.
 
 With the FS-FAP, the main performance measurement is interference and the PSO aims to allocate frequencies in an optimal way to internally produce a frequency plan. On the other hand, the MS-FAP is concerned with the span of frequencies used and the performance measurement is based on the calls dropped. The main purpose of the PSO in the MS-FAP is to minimise the span of frequencies used and keep the number of dropped calls to a minimum.
 
-In the previous chapter all the modifications that were made to the standard PSO were discussed. The modifications were made to enable to PSO to operate on the FAP. Two velocity methods were developed and in addition to the standard global best selection scheme, two additional global best selection schemes were put forward. The algorithm presented was benchmarked against the Siemens instances of the COST 259 benchmark.
+The previous chapter discussed all the modifications that were made to the standard PSO. The modifications were made to enable to PSO to operate on the FAP. Two velocity methods were developed and in addition to the standard global best selection scheme, two additional global best selection schemes were put forward. The algorithm presented was benchmarked against the Siemens instances of the COST 259 benchmark.
 
-In this chapter the results are given of applying the FAP PSO algorithm with its different velocity methods as well as different global selection schemes. This is followed by how the different velocity methods affected the PSO performance as well as how the global selection schemes affected the final produces results.
+This chapter presents the results of applying the FAP PSO algorithm with its different velocity methods as well as different global selection schemes. This is followed by how the different velocity methods affected the PSO performance as well as how the global selection schemes affected the final produces results.
 
 \section{PSO COST 259 Siemens Results}
 The PSO was applied to the benchmarks on the following machine and frameworks:
@@ -17,61 +17,55 @@ The PSO was applied to the benchmarks on the following machine and frameworks:
 \item Intel Quad Core CPU
 \item C\# using .Net 4 Framework with Parallel Extensions
 \end{itemize}
-The FAP PSO was applied to Siemens1, Siemens2, Siemens3 and Siemen4 of the COST 259 benchmark suite. For more information about the nature of the benchmarks, the reader is directed to section \ref{sec:COST259}.
+The FAP PSO was applied to Siemens1, Siemens2, Siemens3 and Siemens4 of the COST 259 benchmark suite. For more information about the nature of the benchmarks, the reader is directed to section \ref{sec:COST259}.
 
 For each benchmark, 12 results are presented. The following changes were made to the FAP PSO to obtain 12 different results:
 \begin{itemize}
 \item The two velocity methods that were developed for the PSO were tested.
 \item Each velocity method also used the three different global best mechanisms that were developed.
-\item The swarm size was set to 20, 50, 100 and 500.
+\item The swarm size was set to 20, 50 and 100.
 \item Inertia was set to 0.5.
 \item Cognitive coefficient was set to 0.4.
 \item Social coefficient was set to 0.5.
-\item Each variant of FAP PSO was allowed 15 minutes on each of the benchmarks.
+\item The stopping criteria was set to max iterations 50.
 \end{itemize}
 The velocity methods and global selection schemes were discussed in the previous chapter.
 
-In the following sections the results obtained are tabulated.
+The following sections tabulate all the results obtained. Each section presents two tables. The first table presents the results obtained using velocity method 1 with three global selection schemes developed. In the table the interference value represents the total interference of the plan generated by the algorithm. The lower this value is the better the generated plan is. The results presented are the best obtained out of a set of 15 independent runs done by the algorithms. The average was calculated based on the average value the global best of the swarm over 50 iterations. The standard deviation was also calculated based on the global best value across 50 iterations.
 \subsection{Siemens1}
 In table~\ref{tab:siem1m1} the results obtained using the FAP PSO with velocity method 1. In table~\ref{tab:siem1m2} presents the results for the FAP PSO that used velocity method 2.
 \begin{table}[H]
 \centering
-	\begin{tabular}{| c | c | c | c |}
+	\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	GBest selection & Population & Interference\\ \hline
-	Standard & 20 & 106.855\\ \hline
-	Built with cells & 20 & 39.945\\ \hline
-	Built with TRXs & 20 & 114.121\\ \hline
-	Standard & 50 & 102.666\\ \hline
-	Built with cells & 50 & \textbf{34.689}\\ \hline
-	Built with TRXs & 50 & 116.150\\ \hline
-	Standard & 100 & 104.649\\ \hline
-	Built with cells & 100 & 38.252\\ \hline
-	Built with TRXs & 100 & 126.630\\ \hline
-	Standard & 500 & 106.132\\ \hline
-	Built with cells & 500 & 44.171\\ \hline
-	Built with TRXs & 500 & 118.911\\ \hline
+	GBest selection & Population & Interference & Average & Std. Deviation\\ \hline
+	Standard & 20 & 110.922 & 161.25 & 22.518 \\ \hline
+	Built with cells & 20 & 42.315 & 76.728 & 24.943\\ \hline
+	Built with TRXs & 20 & 121.87 & 186.381 & 23.937\\ \hline
+	Standard & 50 & 108.657 & 153.434 & 18.852\\ \hline
+	Built with cells & 50 & 43.410 & 66.854 & 17.790\\ \hline
+	Built with TRXs & 50 & 124.542 & 183.004 & 23.171\\ \hline
+	Standard & 100 & 106.876 & 149.553 & 17.663\\ \hline
+	Built with cells & 100 & \textbf{41.699} & \textbf{64.189} & \textbf{17.732}\\ \hline
+	Built with TRXs & 100 & 122.312 & 183.468 & 22.59\\ \hline
 	\end{tabular}
 	\caption{Siemens1 results using velocity method 1}
 	\label{tab:siem1m1}
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{| c | c | c | c |}
+	\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	GBest selection & Population & Interference\\ \hline
-	Standard & 20 & 817.161\\ \hline
-	Built with cells & 20 & 336.102\\ \hline
-	Built with TRXs & 20 & 312.120\\ \hline
-	Standard & 50 & 637.030\\ \hline
-	Built with cells & 50 & 258.049\\ \hline
-	Built with TRXs & 50 & 217.247\\ \hline
-	Standard & 100 & 517.347\\ \hline
-	Built with cells & 100 & 252.827\\ \hline
-	Built with TRXs & 100 & 197.421\\ \hline
-	Standard & 500 & 272.717\\ \hline
-	Built with cells & 500 & \textbf{123.427}\\ \hline
-	Built with TRXs & 500 & 141.060\\ \hline
+	GBest selection & Population & Interference & Average & Std. Deviation\\ \hline
+	Standard & 20 & 974.933 & 2218.055 & 199.925\\ \hline
+	Built with cells & 20 & 663.050 & 692.532 & 16.448\\ \hline
+	Built with TRXs & 20 & 1092.806 & 1684.288 & 85.95\\ \hline
+	Standard & 50 & 964.346 & 2234.571 & 212.911\\ \hline
+	Built with cells & 50 & 574.951 & 599.443 & 14.000\\ \hline
+	Built with TRXs & 50 & 622.858 & 1506.447 & 95.910\\ \hline
+	Standard & 100 & 581.805 & 2093.108 & 234.181\\ \hline
+	Built with cells & 100 & 305.327 & 323.760 & 11.686\\ \hline
+	Built with TRXs & 100 & \textbf{276.802} & \textbf{1721.189} & \textbf{103.722}\\ \hline
 	\end{tabular}
 	\caption{Siemens1 results with velocity method 2}
 	\label{tab:siem1m2}
@@ -80,42 +74,36 @@ In table~\ref{tab:siem1m1} the results obtained using the FAP PSO with velocity 
 Below the results obtained by applying FAP PSO on the siemens2 benchmark is presented in table~\ref{tab:siem2m1} and table~\ref{tab:siem2m2}.
 \begin{table}[H]
 \centering
-	\begin{tabular}{| c | c | c | c |}
+	\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	GBest selection & Population & Interference\\ \hline
-	Standard & 20 & 76.199\\ \hline
-	Built with cells & 20 & 55.051\\ \hline
-	Built with TRXs & 20 & 82.262\\ \hline
-	Standard & 50 & 78.181\\ \hline
-	Built with cells & 50 & 55.488\\ \hline
-	Built with TRXs & 50 & 81.076\\ \hline
-	Standard & 100 & 77.511\\ \hline
-	Built with cells & 100 & 55.436\\ \hline
-	Built with TRXs & 100 & 82.857\\ \hline
-	Standard & 500 & 77.104\\ \hline
-	Built with cells & 500 & \textbf{54.880}\\ \hline
-	Built with TRXs & 500 & 86.794\\ \hline
+	GBest selection & Population & Interference & Average & Std. Deviation\\ \hline
+	Standard & 20 & 79.300 & 98.075 & 10.083\\ \hline
+	Built with cells & 20 & 57.537 & 75.432 & 20.050\\ \hline
+	Built with TRXs & 20 & 87.117 & 139.275 & 26.33\\ \hline
+	Standard & 50 & 78.538 & 96.561 & 10.014\\ \hline
+	Built with cells & 50 & 56.58 & 71.648 & 11.310\\ \hline
+	Built with TRXs & 50 & 85.070 & 128.430 & 21.022\\ \hline
+	Standard & 100 & 77.408 & 95.277 & 9.180\\ \hline
+	Built with cells & 100 & \textbf{56.539} & \textbf{65.968} & \textbf{8.704}\\ \hline
+	Built with TRXs & 100 & 84.029 & 126.767 & 19.646\\ \hline
 	\end{tabular}
 \caption{Siemens2 results with velocity method 1}
 \label{tab:siem2m1}
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{| c | c | c | c |}
+	\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	GBest selection & Population & Interference\\ \hline
-	Standard & 20 & 217.025\\ \hline
-	Built with cells & 20 & 316.679\\ \hline
-	Built with TRXs & 20 & 111.535\\ \hline
-	Standard & 50 & 240.186\\ \hline
-	Built with cells & 50 & 197.572\\ \hline
-	Built with TRXs & 50 & 103.896\\ \hline
-	Standard & 100 & 228.486\\ \hline
-	Built with cells & 100 & 195.921\\ \hline
-	Built with TRXs & 100 & 100.298\\ \hline
-	Standard & 500 & 236.228\\ \hline
-	Built with cells & 500 & \textbf{96.605}\\ \hline
-	Built with TRXs & 500 & 96.832\\ \hline
+	GBest selection & Population & Interference & Average & Std. Deviation\\ \hline
+	Standard & 20 & 239.150 & 1831.288 & 357.308\\ \hline
+	Built with cells & 20 & 621.649 & 645.135 & 3.807\\ \hline
+	Built with TRXs & 20 & 145.733 & 219.053 & 67.394\\ \hline
+	Standard & 50 & 237.192 & 1766.006 & 375.017\\ \hline
+	Built with cells & 50 & 400.893 & 404.033 & 2.717\\ \hline
+	Built with TRXs & 50 & 128.688 & 183.716 & 28.684\\ \hline
+	Standard & 100 & 216.909 & 2155.314 & 352.803\\ \hline
+	Built with cells & 100 & 287.358 & 288.169 & 2.237\\ \hline
+	Built with TRXs & 100 & \textbf{114.456} & \textbf{167.751} & \textbf{19.912}\\ \hline
 	\end{tabular}
 \caption{Siemens2 results with velocity method 2}
 \label{tab:siem2m2}
@@ -124,42 +112,36 @@ Below the results obtained by applying FAP PSO on the siemens2 benchmark is pres
 Table~\ref{tab:siem3m1} and table~\ref{tab:siem3m2} below present the results obtained by applying the FAP PSO algorithm to the siemens3 benchmark.
 \begin{table}[H]
 \centering
-	\begin{tabular}{| c | c | c | c |}
+	\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	GBest Selection & Population & Interference\\ \hline
-	Standard & 20 & 135.078\\ \hline
-	Built with cells & 20 & 50.543\\ \hline
-	Built with TRXs & 20 & 141.538\\ \hline
-	Standard & 50 & 138.418\\ \hline
-	Built with cells & 50 & 51.300\\ \hline
-	Built with TRXs & 50 & 144.444\\ \hline
-	Standard & 100 & 138.774\\ \hline
-	Built with cells & 100 & 50.652\\ \hline
-	Built with TRXs & 100 & 157.552\\ \hline
-	Standard & 500 & 141.105\\ \hline
-	Built with cells & 500 & \textbf{54.417}\\ \hline
-	Built with TRXs & 500 & 148.643\\ \hline
+	GBest Selection & Population & Interference & Average & Std. Deviation\\ \hline
+	Standard & 20 & 142.470 & 218.403 & 28.809\\ \hline
+	Built with cells & 20 & 52.132 & 110.314 & 33.922\\ \hline
+	Built with TRXs & 20 & 156.121 & 261.927 & 34.883\\ \hline
+	Standard & 50 & 139.614 & 214.994 & 29.235\\ \hline
+	Built with cells & 50 & 51.963 & 97.039 & 27.571\\ \hline
+	Built with TRXs & 50 & 153.941 & 256.811 & 32.23\\ \hline
+	Standard & 100 & 139.534 & 212.448 & 28.834\\ \hline
+	Built with cells & 100 & \textbf{50.883} & \textbf{86.381} & \textbf{23.978}\\ \hline
+	Built with TRXs & 100 & 157.49 & 249.952 & 30.207\\ \hline
 	\end{tabular}
 \caption{Siemens3 result with velocity method 1}
 \label{tab:siem3m1}
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{| c | c | c | c |}
+	\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	GBest Selection & Population & Interference\\ \hline
-	Standard & 20 & 1104.006\\ \hline
-	Built with cells & 20 & 415.866\\ \hline
-	Built with TRXs & 20 & 460.403\\ \hline
-	Standard & 50 & 2197.760\\ \hline
-	Built with cells & 50 & 1014.373\\ \hline
-	Built with TRXs & 50 & 1182.665\\ \hline
-	Standard & 100 & 764.894\\ \hline
-	Built with cells & 100 & 311.646\\ \hline
-	Built with TRXs & 100 & 316.998\\ \hline
-	Standard & 500 & 361.118\\ \hline
-	Built with cells & 500 & \textbf{167.185}\\ \hline
-	Built with TRXs & 500 & 186.705\\ \hline
+	GBest Selection & Population & Interference & Average & Std. Deviation\\ \hline
+	Standard & 20 & 1353.745 & 3049.414 & 249.377\\ \hline
+	Built with cells & 20 & 753.168 & 816.332 & 28.163\\ \hline
+	Built with TRXs & 20 & 1465.360 & 2096.471 & 73.169\\ \hline
+	Standard & 50 & 1324.700 & 3559.1212 & 247.792\\ \hline
+	Built with cells & 50 & 526.109 & 573.260 & 20.957\\ \hline
+	Built with TRXs & 50 & 799.505 & 1773.806 & 80.899\\ \hline
+	Standard & 100 & 1442.136 & 3106.970 & 251.82\\ \hline
+	Built with cells & 100 & \textbf{378.603} & \textbf{407.120} & \textbf{15.814}\\ \hline
+	Built with TRXs & 100 & 508.455 & 1677.427 & 111.176\\ \hline
 	\end{tabular}
 \caption{Siemens3 result with velocity method 2}
 \label{tab:siem3m2}
@@ -167,42 +149,36 @@ Table~\ref{tab:siem3m1} and table~\ref{tab:siem3m2} below present the results ob
 \subsection{Siemens 4}
 \begin{table}[H]
 \centering
-	\begin{tabular}{| c | c | c | c |}
+	\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	GBest Selection & Population & Interference\\ \hline
-	Standard & 20 & 528.162\\ \hline
-	Built with cells & 20 & 287.665\\ \hline
-	Built with TRXs & 20 & 555.445\\ \hline
-	Standard & 50 & 542.143\\ \hline
-	Built with cells & 50 & \textbf{283.473}\\ \hline
-	Built with TRXs & 50 & 557.154\\ \hline
-	Standard & 100 & 541.617\\ \hline
-	Built with cells & 100 & 293.238\\ \hline
-	Built with TRXs & 100 & 551.930\\ \hline
-	Standard & 500 & 538.812\\ \hline
-	Built with cells & 500 & 302.441\\ \hline
-	Built with TRXs & 500 & 582.992\\ \hline
+	GBest Selection & Population & Interference & Average & Std. Deviation\\ \hline
+	Standard & 20 & 537.505 & 600.997 & 12.422\\ \hline
+	Built with cells & 20 & 298.221 & 364.761 & 23.809\\ \hline
+	Built with TRXs & 20 & 556.088 & 693.901 & 24.812\\ \hline
+	Standard & 50 & 530.198 & 591.635 & 11.654\\ \hline
+	Built with cells & 50 & 290.168 & 346.692 & 22.431\\ \hline
+	Built with TRXs & 50 & 545.220 & 699.124 & 27.784\\ \hline
+	Standard & 100 & 527.442 & 588.672 & 11.918\\ \hline
+	Built with cells & 100 & \textbf{285.497} & \textbf{341.009} & \textbf{23.95}\\ \hline
+	Built with TRXs & 100 & 565.894 & 710.937 & 24.981\\ \hline
 	\end{tabular}
 \caption{Siemens4 results using velocity method 1}
 \label{tab:siem4m1}
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{| c | c | c | c |}
+	\begin{tabular}{| c | c | c | c | c |}
 	\hline
-	GBest Selection & Population & Interference\\ \hline
-	Standard & 20 & 2300.40\\ \hline
-	Built with cells & 20 & 1091.827\\ \hline
-	Built with TRXs & 20 & 2966.514\\ \hline
-	Standard & 50 & 1877.781\\ \hline
-	Built with cells & 50 & 2197.760\\ \hline
-	Built with TRXs & 50 & 1014.373\\ \hline
-	Standard & 100 & 1182.665\\ \hline
-	Built with cells & 100 & 814.950\\ \hline
-	Built with TRXs & 100 & 930.631\\ \hline
-	Standard & 500 & 1934.260\\ \hline
-	Built with cells & 500 & \textbf{631.668}\\ \hline
-	Built with TRXs & 500 & 723.772\\ \hline
+	GBest Selection & Population & Interference & Average & Std. Deviation\\ \hline
+	Standard & 20 & 2571.753 & 8426.652 & 592.764\\ \hline
+	Built with cells & 20 & 1634.386 & 1640.5050 & 2.305\\ \hline
+	Built with TRXs & 20 & 2774.244 & 5483.736 & 157.372\\ \hline
+	Standard & 50 & 2345.992 & 8224.456 & 609.627\\ \hline
+	Built with cells & 50 & 1286.972 & 1289.063 & 0.677\\ \hline
+	Built with TRXs & 50 & 1174,211 & 4525.090 & 137.208\\ \hline
+	Standard & 100 & 2425.249 & 8371.759 & 585.213\\ \hline
+	Built with cells & 100 & 1016.524 & 1018.703 & 0.605\\ \hline
+	Built with TRXs & 100 & \textbf{952.871} & \textbf{4294.953} & \textbf{170.383}\\ \hline
 	\end{tabular}
 \caption{Siemens4 results using velocity method 2}
 \label{tab:siem4m2}
@@ -223,11 +199,11 @@ Below the best results achieved by the FAP PSO is compared to the best results o
 \label{tab:siem4m2}
 \end{table}
 \section{The Performance of the PSO}
-In this section the effects of the changes made to the FAP PSO algorithm in terms of the results is discussed. 
+In this section the effects of the changes made to the FAP PSO algorithm in terms of the results is discussed. First, the effect of the two developed velocity methods in terms of the results is described. 
 
-Firstly, the effect of the two developed velocity methods in terms of the results is described. In section~\ref{sec:diffglobalschemes} the three global schemes that are used by the algorithm are discussed. Finally this section concludes with the effect of a larger population size on solution quality rather than a small population.
+In section~\ref{sec:diffglobalschemes} the three global schemes that are used by the algorithm are discussed. Finally this section concludes with the effect of a larger population size on solution quality rather than a small population.
 \subsection{Velocity Method 1 vs. Method 2}
-The FAP PSO algorithm is able to utilise two different velocity methods to move the swarm around in the FAP space. The algorithms that implement these two methods were presented in section~\ref{sec:velocityFAP} and section~\ref{sec:velocityFAP2}.
+The FAP PSO algorithm is able to utilise two different velocity methods to move the swarm around in the FAP problem space. The algorithms that implement these two methods were presented in section~\ref{sec:velocityFAP} and section~\ref{sec:velocityFAP2}.
 
 By analysing the results, it becomes abundantly clear that velocity method 1 is by far the superior method for moving in the problem space. In each of the results, when comparing end fitness values produced by algorithm variants that use method 1 one can easily come to the conclusion that method 1 performs better than method 2.
 
@@ -235,9 +211,9 @@ As discussed in chapter~\ref{chpt:psoapplicationFAP}, method 1 uses a stage-base
 
 Method 1 works by moving the whole swarm through to each stage before applying the next stage in the velocity equation. Thus after each stage, the whole swarm is at the same phase of the equation which keeps the swarm structured.
 
-With method 2, the whole velocity equation is applied to whatever value is supposed to be operated on. Thus when method 2 moves a particle the frequency plan is moved piece by piece to some destination in the problem space.
+With method 2, the whole velocity equation is applied to whatever value is supposed to be operated on. Thus when method 2 moves a particle the frequency plan is moved piece by piece to a destination in the problem space. How method 2 accomplishes this movement was discussed in chapter~\ref{chpt:psoapplicationFAP} section~\ref{sec:velocityFAP2}.
 
-By applying the velocity equation it is difficult to control the algorithm search process. With the FAP PSO control is necessary as there are various constraints that must not only be avoided but also adhered to for the generated plan to be usable. With method 2 adding domain knowledge is difficult, since after the velocity equation has been calculated the particle is very close to being moved to a new position. All that still needs to be done, before a particle is moved, is to apply inertia, which means there is a little check that can be done to ensure that all the frequency values are within acceptable bounds.
+By applying the velocity equation it is difficult to control the algorithm search process. With the FAP PSO control is necessary as there are various constraints that must not only be avoided but also adhered to for the generated plan to be usable. With method 2 adding domain knowledge is difficult, since after the velocity equation has been calculated the particle is very close to being moved to a new position. All that still needs to be done, before a particle is moved, is to apply inertia, which means there is a minor check that can be done to ensure that all the frequency values are within acceptable bounds.
 
 By breaking the velocity equation up into smaller parts (stages) using method 1 the algorithm is able to direct and ensure that the swarm is moving in the general direction of valid frequency allocations.
 
@@ -245,15 +221,14 @@ Also the algorithm is able to embed domain knowledge earlier into the calculatio
 
 \subsection{Different Global Schemes}
 \label{sec:diffglobalschemes}
-In the previous chapter three global selection schemes were identified. The first global selection scheme uses the standard PSO selection and the particle with the best fitness is the global best. This scheme is called ``Standard GBest''.
+The previous chapter identified and discussed three global selection schemes. The first global selection scheme uses the standard PSO selection and the particle with the best fitness is the global best. This scheme is called ``Standard GBest''.
 
 As discussed in section~\ref{sec:buildglobalbest}, using the standard gbest selection scheme is not preferable as it can lead to the swarm losing out on good frequency allocations due to overshadowing of frequencies\footnote{Overshadowing is discussed in chapter~\ref{chpt:psoapplicationFAP}}.
-
 Even with overshadowing the standard global scheme does not produce bad results, which seems to indicate that overshadowing of frequency allocations does not impact the frequency plans as significantly as thought initially.
 
-In addition to the standard gbest selection scheme, two other selection schemes were tested. It is actually incorrect to call these schemes selection schemes of gbest, since they build global best rather than select them.
+In addition to the standard gbest selection scheme, two other selection schemes were tested. It is incorrect to call these schemes selection schemes of gbest, since they build global best rather than select them.
 
-By far the worst performing scheme is where the global best is built from transceivers. In every benchmark performed where this scheme was paired with a velocity method and population size, the algorithm was simply not able to produce any relatively good solutions. All possible solutions had high interference values, making them undesirable.
+By far the worst performing scheme is where the global best is built from transceivers. In every benchmark performed where this scheme was paired with a velocity method and population size, the algorithm was simply not able to produce any good solutions. All possible solutions had high interference values, making them undesirable.
 
 The bad performance of the build from transceivers scheme can be attributed to the granularity it uses to build a global best. As outlined in section~\ref{sec:buildglobalbest} the scheme only considers the interference generated by a single frequency allocated to a transceiver. This would have worked well if there were some sort of guarantee that a particular transceiver would only be interfered with by one other transceiver.
 
@@ -266,11 +241,12 @@ By analysing the results produced by the various FAP PSO algorithms, it can be c
 As discussed the build from cells scheme uses cells to build a gbest, and thus each cell stores the interference that the frequencies allocated to its transceivers generate by interfering with other cells. As a cell interferes with other cells, the interference generated is added to the cell causing the interference.
 
 After the PSO has calculated the fitness of all positions, each cell will contain the interference it personally has caused throughout the network to other cells. A cell with low interference means the frequencies that have been allocated to this particular cell are the best combination that causes the least amount of interference. Therefore, with the build gbest from cells scheme, the algorithm is able to make informed choices when selecting a cell to be included in the global best. 
-\subsection{Population Size}
-As discussed in chapter~\ref{chpt:swarm} the population parameter of the PSO is a sensitive parameter. For problems with big search spaces, it is better to have a large population. A large population increases diversity, meaning more particles occupy different positions in the problem space and hence the space is better explored, which internally increases the likelihood of finding a better solution. Thus, in the results the population size was also varied.
+\subsection{Average and standard deviation}
+As can be observed from the results presented the average values the global best achieved across 50 iterations are presented. Also presented is the standard deviation.
 
-In the results using a larger population did not significantly improve the possible solutions. In only one benchmark, namely Siemens2, the algorithm was able to produce a better possible solution than an algorithm that used a lower population size. In Siemens1, Siemens3 and Siemens4 the algorithm using a lower population was able to produce the best overall results.
+By analysing the average and standard deviation it can be concluded that by using velocity method 1, the swarm search process is more directed and focused. The deviation obtained while using velocity method 1 is low meaning that the gbest value of the swarm is near the average value of the gbest obtained across the swarm. Thus by using velocity method 1 the search process of the swarm is more focused and does not explore as much.
 
-Due to the complexity of the FAP it is difficult to use the PSO with a large population. The algorithm's efficiency greatly decreased with the increase in population, taking significantly longer to iterate through the same number of iterations as the algorithms with lower populations. The decrease in efficiency was not unexpected due to the function evaluations, movements and considerations increasing fivefold over the lower population size. What was unexpected was the degree to which the efficiency degraded.
+On the other hand, with the high deviation and high average, it can be concluded that velocity method 2 lets the swarm explore the problem space a lot more. Even though the search space is explored more, with velocity method 2 the algorithm fails to intensify and converge on a good solution.
+
 \section{Summary}
-In this chapter the results produced by the algorithm discussed in chapter~\ref{chpt:psoapplicationFAP} were presented. The FAP PSO algorithm was applied to four COST 259 benchmarks namely Siemens1, Siemens2, Siemens3 and Siemens4. These four benchmarks were discussed in detail in chapter~\ref{chpt:fap}. For each of the benchmarks, 12 different variants of the FAP PSO algorithm were tested. Each variant used a different velocity function, global best selection scheme or population size. The chapter concluded with critical analyses of each of the different algorithms developed in this study to enable the PSO to operate in the FAP space.
+In this chapter the results produced by the algorithm discussed in chapter~\ref{chpt:psoapplicationFAP} were presented. The FAP PSO algorithm was applied to four COST 259 benchmarks namely Siemens1, Siemens2, Siemens3 and Siemens4. These four benchmarks were discussed in detail in chapter~\ref{chpt:fap}. For each of the benchmarks, 12 different variants of the FAP PSO algorithm were tested. Each variant used a different velocity function, global best selection scheme or population size. The chapter concluded with critical analysis of each of the different algorithms developed in this study to enable the PSO to operate in the FAP space.

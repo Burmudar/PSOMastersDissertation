@@ -1,0 +1,854 @@
+\begin{thebibliography}{100}
+
+\bibitem{CALMA}
+Karen Aardal, Cor Hurkens, Jan~Karel Lenstra, and Sergey Tiourine.
+\newblock Algorithm for radio link frequency assignment: The calma project.
+\newblock {\em Operations Research}, 50(6):968--980, Nov - Dec 2002.
+
+\bibitem{Karen2004}
+Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
+  and Antonio Sassano.
+\newblock Models and solution techniques for frequency assignment problems.
+\newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
+  December 2004.
+
+\bibitem{HetergeneousGA}
+E.~Alba, F.~Luna, A.~J. Nebro, and J.~M. Troya.
+\newblock Parallel heterogeneous genetic algorithms for continuous
+  optimization.
+\newblock {\em Parallel Comput.}, 30(5-6):699--719, 2004.
+
+\bibitem{ConstantTempSA}
+Mahmoud~H. Alrefaei and Sigr{{\'u}}n Andrad{{\'o}}ttir.
+\newblock A simulated annealing algorithm with constant temperature for
+  discrete stochastic optimization.
+\newblock {\em Management Science}, 45:748--764, 1999.
+
+\bibitem{AndersonPhiladelphia}
+L.~G. Anderson.
+\newblock A simulation study of some dynamic channel assignment algorithms in a
+  high capacity mobile telecommunications system.
+\newblock {\em IEEE Transactions on Communications}, 21:1294--1301, 1973.
+
+\bibitem{CircuitTabu}
+S.~Areibi and A.~Vannelli.
+\newblock Circuit partitioning using a tabu search approach.
+\newblock In {\em Circuits and Systems, 1993., ISCAS '93, 1993 IEEE
+  International Symposium on}, pages 1643 --1645, 3-6 1993.
+
+\bibitem{GANonConvex}
+M.B. Aryanezhad and Mohammad Hemati.
+\newblock A new genetic algorithm for solving nonconvex nonlinear programming
+  problems.
+\newblock {\em Applied Mathematics and Computation}, 199(1):186 -- 194, 2008.
+
+\bibitem{EvoParallelTabu}
+A.~Augugliaro, L.~Dusonchet, and E.~R. Sanseverino.
+\newblock An evolutionary parallel tabu search approach for distribution
+  systems reinforcement planning.
+\newblock {\em Advanced Engineering Informatics}, 16(3):205 -- 215, 2002.
+
+\bibitem{MetaAgricultural}
+I.~Badarudin, A.B.M. Sultan, M.N. Sulaiman, A.~Mamat, and M.T.M. Mohamed.
+\newblock Metaheuristic approaches for optimizing agricultural land areas.
+\newblock In {\em Data Mining and Optimization, 2009. DMO '09. 2nd Conference
+  on}, pages 28 --31, 27-28 2009.
+
+\bibitem{SAElectricPower}
+Hua Bai and Bo~Zhao.
+\newblock A survey on application of swarm intelligence computation to electric
+  power system.
+\newblock In {\em Intelligent Control and Automation, 2006. WCICA 2006. The
+  Sixth World Congress on}, volume~2, pages 7587 --7591, 0-0 2006.
+
+\bibitem{ABCImageEnhancement}
+T.R. Benala, S.D. Jampala, S.H. Villa, and B.~Konathala.
+\newblock A novel approach to image edge enhancement using artificial bee
+  colony optimization algorithm for hybridized smoothening filters.
+\newblock In {\em Nature Biologically Inspired Computing, 2009. NaBIC 2009.
+  World Congress on}, pages 1071 --1076, 9-11 2009.
+
+\bibitem{AntIntroTrends}
+Christian Blum.
+\newblock Ant colony optimization: Introduction and recent trends.
+\newblock {\em Physics of Life Reviews}, 2(4):353 -- 373, 2005.
+
+\bibitem{DLearning}
+Bruce~M. Blumberg.
+\newblock {\em Exploring Artificial Intelligence in the New Millenium}, chapter
+  D-Learning: what learning in dogs tells us about building characters that
+  learn what they ought to learn, pages 37--67.
+\newblock Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 2003.
+
+\bibitem{FAPInCell}
+R.~Bornd{\"o}rfer, A.~Eisenbl{\"a}tter, M.~Gr{\"o}tschel, and A.~Martin.
+\newblock Frequency assignment in cellular phone networks.
+\newblock {\em Annals of Operations Research}, (76):73--93, 1998.
+
+\bibitem{FAPOrientationModel}
+Ralf Bornd{\"o}rfer, Andreas Eisenbl{\"a}tter, Martin Gr{\"o}tschel, and
+  Alexander Martin.
+\newblock The orientation model for frequency assignment problems.
+\newblock Technical report, Konrad-Zuse-Zentrum Berlin, 1998.
+
+\bibitem{SwarmArt}
+Jeffrey~E. Boyd, Gerald Hushlak, and Christian~J. Jacob.
+\newblock Swarmart: interactive art from swarm intelligence.
+\newblock In {\em MULTIMEDIA '04: Proceedings of the 12th annual ACM
+  international conference on Multimedia}, pages 628--635, New York, NY, USA,
+  2004. ACM.
+
+\bibitem{TabuCrewSchedulingProblem}
+L.~Cavique, C.~Rego, and I.~Themido.
+\newblock Subgraph ejection chains and tabu search for the crew scheduling
+  problem.
+\newblock {\em The Journal of the Operational Research Society}, 50:608--616,
+  1999.
+
+\bibitem{HumanPassiveGA}
+A.~Chawla, S.~Mukherjee, and B.~Karthikeyan.
+\newblock Characterization of human passive muscles for impact loads using
+  genetic algorithm and inverse finite element methods.
+\newblock {\em Biomechanics and Modeling in Mechanobiology}, 8(1):67--76, 2009.
+
+\bibitem{ACOFlowShop}
+Ruey-Maw Chen, Shih-Tang Lo, Chung-Lun Wu, and Tsung-Hung Lin.
+\newblock An effective ant colony optimization-based algorithm for flow shop
+  scheduling.
+\newblock In {\em Soft Computing in Industrial Applications, 2008. SMCia '08.
+  IEEE Conference on}, pages 101 --106, june 2008.
+
+\bibitem{BeeJobShop}
+Chin~Soon Chong, Appa~Iyer Sivakumar, Malcolm Yoke~Hean Low, and Kheng~Leng
+  Gay.
+\newblock A bee colony optimization algorithm to job shop scheduling.
+\newblock In {\em WSC '06: Proceedings of the 38th conference on Winter
+  simulation}, pages 1954--1961. Winter Simulation Conference, 2006.
+
+\bibitem{ProblemDecompMIFAP}
+G.~Colombo and S.M. Allen.
+\newblock Problem decomposition for minimum interference frequency assignment.
+\newblock In {\em Evolutionary Computation, 2007. CEC 2007. IEEE Congress on},
+  pages 3492 --3499, sept. 2007.
+
+\bibitem{TheoPraticalSA}
+Agnieszka Debudaj-Grabysz and Zbigniew~J. Czech.
+\newblock Theoretical and practical issues of parallel simulated annealing.
+\newblock In {\em PPAM'07: Proceedings of the 7th international conference on
+  Parallel processing and applied mathematics}, pages 189--198, Berlin,
+  Heidelberg, 2008. Springer-Verlag.
+
+\bibitem{SIOPDenby}
+B.~Denby and S.~Le HŽgarat-Mascle.
+\newblock Swarm intelligence in optimisation problems.
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section A:
+  Accelerators, Spectrometers, Detectors and Associated Equipment},
+  502(2-3):364 -- 368, 2003.
+\newblock Proceedings of the VIII International Workshop on Advanced Computing
+  and Analysis Techniques in Physics Research.
+
+\bibitem{ACOSurvey}
+Marco Dorigo and Christian Blum.
+\newblock Ant colony optimization theory: A survey.
+\newblock {\em Theoretical Computer Science}, 344(2-3):243 -- 278, 2005.
+
+\bibitem{AntSurvey}
+Marco Dorigo and Christian Blum.
+\newblock Ant colony optimization theory: A survey.
+\newblock {\em Theoretical Computer Science}, 344(2-3):243 -- 278, 2005.
+
+\bibitem{AntsAndStigmergy}
+Marco Dorigo, Eric Bonabeau, and Guy Theraulaz.
+\newblock Ant algorithms and stigmergy.
+\newblock {\em Future Gener. Comput. Syst.}, 16(9):851--871, 2000.
+
+\bibitem{TabuNurse}
+K~A Dowsland and J~M Thompson.
+\newblock Solving a nurse scheduling problem with knapsacks, networks and tabu
+  search.
+\newblock {\em J Oper Res Soc}, 51(7):825--833, 07 2000.
+
+\bibitem{DynamicFAP}
+Audrey Dupont, Andrea~Carneiro Linhares, Christian Artigues, Dominique Feillet,
+  Philippe, and Michel Vasquez.
+\newblock The dynamic frequency assignment problem.
+\newblock {\em European Journal of Operational Research}, 195:75--88, 2009.
+
+\bibitem{FAPRAMColouring}
+A.~Eisenbl{\"a}tter, M.~Gr{\"o}tschel, and A.~Martin.
+\newblock Frequency planning and rammifications of colouring.
+\newblock Technical report, Konrad-Zuse-Zentrum fu Ìˆr Informationstechnik
+  Berlin, 2000.
+
+\bibitem{AndreasPaper}
+Andreas Eisenbl{\"a}tter.
+\newblock Assigning frequencies in gsm networks.
+\newblock Technical report, Konrad-Zuse-Zentrum f{\"u}r Informationstechnik
+  Berlin (ZIB), 2001.
+
+\bibitem{Eisenblatter}
+Andreas Eisenbl{\"a}tter.
+\newblock {\em Frequency Assignment in {GSM} Networks: {M}odels, Heuristics,
+  and Lower Bounds}.
+\newblock PhD thesis, Technische Universit{\"a}t Berlin, Berlin, Germany, 2001.
+
+\bibitem{EgyptFAPPSO}
+H.M. Elkamchouchi, H.M. Elragal, and M.A. Makar.
+\newblock Channel assignment for cellular radio using particle swarm
+  optimization.
+\newblock In {\em Radio Science Conference, 2006. NRSC 2006. Proceedings of the
+  Twenty Third National}, volume~0, pages 1 --9, 14-16 2006.
+
+\bibitem{FundamentalSwarm}
+Andries~P. Engelbrecht.
+\newblock {\em Fundamentals of Computational Swarm Intelligence}.
+\newblock John Wiley \& Sons, 2006.
+
+\bibitem{CompuIntelligenceIntro}
+Andries~P. Engelbrecht.
+\newblock {\em Computational Intelligence: An Introduction}.
+\newblock Wiley Publishing, 2007.
+
+\bibitem{WirelessDigitalCommunications}
+Dr.~Kamilo Feher.
+\newblock {\em Wireless Digital Communications: Modulation \& Spread Sprectrum
+  Applications}.
+\newblock Prentice Hall, 1995.
+
+\bibitem{SelfControllingReactiveTabu}
+N.~Fescioglu-Unver and M.M. Kokar.
+\newblock Application of self controlling software approach to reactive tabu
+  search.
+\newblock In {\em Self-Adaptive and Self-Organizing Systems, 2008. SASO '08.
+  Second IEEE International Conference on}, pages 297 --305, 20-24 2008.
+
+\bibitem{AntQAP}
+L.~M. Gambardella, {{\'E}}D Taillard, and M.~Dorigo.
+\newblock Ant colonies for the quadratic assignment problem.
+\newblock {\em The Journal of the Operational Research Society},
+  50(2):167--176, Feb 1999.
+
+\bibitem{DistributedHierarchicalGA}
+Gautam Garai and B.~B. Chaudhuri.
+\newblock A distributed hierarchical genetic algorithm for efficient
+  optimization and pattern matching.
+\newblock {\em Pattern Recogn.}, 40(1):212--228, 2007.
+
+\bibitem{Glover89}
+Fred Glover.
+\newblock Tabu search - part i.
+\newblock {\em INFORMS Journal on Computing}, 1(3):190--206, 1989.
+
+\bibitem{WirelessCommunications}
+Andrea Goldsmith.
+\newblock {\em Wireless Communications}.
+\newblock Cambridge University Press, 2005.
+
+\bibitem{ABCFusionGrid}
+Antonio G\'{o}mez-Iglesias, Miguel~A. Vega-Rodr\'{\i}guez, Francisco
+  Castej\'{o}n, Miguel C\'{a}rdenas-Montes, and Enrique Morales-Ramos.
+\newblock Artificial bee colony inspired algorithm applied to fusion research
+  in a grid computing environment.
+\newblock In {\em PDP '10: Proceedings of the 2010 18th Euromicro Conference on
+  Parallel, Distributed and Network-based Processing}, pages 508--512,
+  Washington, DC, USA, 2010. IEEE Computer Society.
+
+\bibitem{DataStructuresJava}
+Michael~T. Goodrich.
+\newblock {\em Data Structures and Algorithms in Java}.
+\newblock John Wiley \& Sons, 2005.
+
+\bibitem{TabuCarryOver}
+Mohan Gopalakrishnan, Ke~Ding, Jean-Marie Bourjolly, and Srimathy Mohan.
+\newblock A tabu-search heuristic for the capacitated lot-sizing problem with
+  set-up carryover.
+\newblock {\em Manage. Sci.}, 47(6):851--863, 2001.
+
+\bibitem{MultipleBinaryFAP}
+J.S Graham, R.~Montemanni, J.~N~J. Moon, and D.~H. Smith.
+\newblock Frequency assignment. multiple interference and binary constraints.
+\newblock {\em Wireless Networking}, 14:449--464, 2008.
+
+\bibitem{stigmergicoptimization}
+C.~Grosan and A.~Abraham.
+\newblock {\em Stigmergic optimization: inspiration, technologies and
+  perspectives}, volume~31 of {\em Studies in Computational Intelligence},
+  chapter~1, pages 1--24.
+\newblock Springer Berlin / Heidelberg, 2006.
+
+\bibitem{AcceleratingGA}
+Timo H\"{a}m\"{a}l\"{a}inen, Harri Klapuri, Jukka Saarinen, Pekka Ojala, and
+  Kimmo Kaski.
+\newblock Accelerating genetic algorithm computation in tree shaped parallel
+  computer.
+\newblock {\em J. Syst. Archit.}, 42(1):19--36, 1996.
+
+\bibitem{AntSwarmClustering}
+Julia Handl and Bernd Meyer.
+\newblock Ant-based and swarm-based clustering.
+\newblock {\em Swarm Intelligence}, 1(2):95--113, December 2007.
+
+\bibitem{NonlinearGlobalTabu}
+{Abdel-rahman} Hedar and Masao Fukushima.
+\newblock Tabu search directed by direct search methods for nonlinear global
+  optimization.
+\newblock {\em European Journal of Operational Research}, 170:329--349, 2006.
+
+\bibitem{LowerPolarFAP}
+Alan Herz, David Schindl, and Nicolas Zufferey.
+\newblock Lower bounding and tabu search procedures for the frequency
+  assignment problem with polarization constraints.
+\newblock {\em 4OR: A Quarterly Journal of Operations Research}, 3:139--161,
+  2005.
+
+\bibitem{ACOSingleMachine}
+O.~Holthaus and C.~Rajendran.
+\newblock A fast ant-colony algorithm for single-machine scheduling to minimize
+  the sum of weighted tardiness of jobs.
+\newblock {\em The Journal of the Operational Research Society}, 56(8):pp.
+  947--953, 2005.
+
+\bibitem{FAPWeb}
+http://fap.zib.de/.
+\newblock Fap web, 2010.
+
+\bibitem{RadioFAP}
+Lhassane Idoumghar and Ren{{\'e}} Schott.
+\newblock Two distributed algorithms for the frequency assignment problem in
+  the field of radio broadcasting.
+\newblock {\em IEEE Transactions on Broadcasting}, 55:223--229, 2009.
+
+\bibitem{GSMArchitectureProtocolsServices}
+C.~Bettstetter J.~Ebersp{\"a}cher, H.-J.~V{\"o}gel and C.~Hartmann.
+\newblock {\em GSM - Architecture, Protocols and Services}.
+\newblock Wiley Publishing, third edition, 2009.
+
+\bibitem{MultiObjTabu}
+D.M. Jaeggi, G.T. Parks, T.~Kipouros, and P.J. Clarkson.
+\newblock The development of a multi-objective tabu search algorithm for
+  continuous optimisation problems.
+\newblock {\em European Journal of Operational Research}, 185(3):1192 -- 1212,
+  2008.
+
+\bibitem{HybridIntelliGA}
+A.A. Javadi, R.~Farmani, and T.P. Tan.
+\newblock A hybrid intelligent genetic algorithm.
+\newblock {\em Advanced Engineering Informatics}, 19(4):255 -- 262, 2005.
+\newblock Computing in Civil Engineering.
+
+\bibitem{TabuParameterization}
+I.~Jovanoski, I.~Chorbev, D.~Mihajlov, and I.~Dimitrovski.
+\newblock Tabu search parameterization and implementation in a constraint
+  programming library.
+\newblock In {\em EUROCON, 2007. The International Conference on Computer as a
+  Tool}, pages 459 --464, 9-12 2007.
+
+\bibitem{PSOHybridJobShop}
+Wei jun Xia and Zhi ming Wu.
+\newblock A hybrid particle swarm optimization approach for the job-shop
+  scheduling problem.
+\newblock {\em The International Journal of Advanced Manufacturing Technology},
+  29(3):360--366, June 2006.
+
+\bibitem{PSOPheromones}
+Vijay Kalivarapu, Jung-Leng Foo, and Eliot Winer.
+\newblock Improving solution characteristics of particle swarm optimization
+  using digital pheromones.
+\newblock {\em Structural and Multidisciplinary Optimization}, 37:415 -- 427,
+  2009.
+
+\bibitem{ABCCompareStudy}
+Dervis Karaboga and Bahriye Akay.
+\newblock A comparative study of artificial bee colony algorithm.
+\newblock {\em Applied Mathematics and Computation}, 214(1):108 -- 132, 2009.
+
+\bibitem{ABCNumericalOptimization}
+Dervis Karaboga and Bahriye Basturk.
+\newblock A powerful and efficient algorithm for numerical function
+  optimization: artificial bee colony (abc) algorithm.
+\newblock {\em J. of Global Optimization}, 39(3):459--471, 2007.
+
+\bibitem{AdaptiveSAGA}
+Il~kwon Jeong and Ju~jang Lee.
+\newblock Adaptive simulated annealing genetic algorithm for system
+  identification.
+\newblock {\em Engineering Applications of Artificial Intelligence}, 9(5):523
+  -- 532, 1996.
+
+\bibitem{TempCyclingSA}
+Sergio Ledesma, Miguel Torres, Donato Hern{{\'a}}ndez, Gabriel Avi{{\~n}}a, and
+  Guadalupe Garc{{\'\i}}a.
+\newblock Temperature cycling on simulated annealing for neural network
+  learning.
+\newblock In {\em MICAI 2007: Advances in Artificial Intelligence}, pages
+  161--171, 2007.
+
+\bibitem{WeaponTargetACO}
+Zne-Jung Lee, Chou-Yuan Lee, and Shun-Feng Su.
+\newblock An immunity-based ant colony optimization algorithm for solving
+  weapon-target assignment problem.
+\newblock {\em Applied Soft Computing}, 2(1):39 -- 47, 2002.
+
+\bibitem{PSOAttractRepulse}
+K.~Lenin and M.R. Mohan.
+\newblock Attractive and repulsive particle swarm optimization for reactive
+  power optimization.
+\newblock {\em Journal of Engineering and Applied Sciences}, 1(4):288--292,
+  2006.
+
+\bibitem{MobileRobotSA}
+Yuming Liang and Lihong Xu.
+\newblock Mobile robot global path planning using hybrid modified simulated
+  annealing optimization algorithm.
+\newblock In {\em GEC '09: Proceedings of the first ACM/SIGEVO Summit on
+  Genetic and Evolutionary Computation}, pages 309--314, New York, NY, USA,
+  2009. ACM.
+
+\bibitem{ABCReconfigDistro}
+Nguyen~Tung Linh and Nguyen~Quynh Anh.
+\newblock Application artificial bee colony algorithm (abc) for reconfiguring
+  distribution network.
+\newblock In {\em Computer Modeling and Simulation, 2010. ICCMS '10. Second
+  International Conference on}, volume~1, pages 102 --106, 22-24 2010.
+
+\bibitem{ChaoticSwarmIntel}
+Hongbo Liu, Ajith Abraham, and Maurice Clerc.
+\newblock Chaotic dynamic characteristics in swarm intelligence.
+\newblock {\em Applied Soft Computing}, 7(3):1019 -- 1026, 2007.
+
+\bibitem{ACOvsEA}
+Francisco Luna, Christian Blum, Enrique Alba, and Antonio~J. Nebro.
+\newblock Aco vs eas for solving a real-world frequency assignment problem in
+  gsm networks.
+\newblock In {\em GECCO '07: Proceedings of the 9th annual conference on
+  Genetic and evolutionary computation}, pages 94--101, New York, NY, USA,
+  2007. ACM.
+
+\bibitem{MetaGraph}
+H.~Mahmoudzadeh and K.~Eshghi.
+\newblock A metaheuristic approach to the graceful labeling problem of graphs.
+\newblock In {\em Swarm Intelligence Symposium, 2007. SIS 2007. IEEE}, pages 84
+  --91, 1-5 2007.
+
+\bibitem{ClusterSA}
+S.~Mallela and L.K. Grover.
+\newblock Clustering based simulated annealing for standard cell placement.
+\newblock In {\em Design Automation Conference, 1988. Proceedings., 25th
+  ACM/IEEE}, pages 312 --317, 12-15 1988.
+
+\bibitem{ExactMIFAP}
+Vittoria Maniezzo and Roberto Montemanni.
+\newblock An exact algorithm for the min-interference frequency assignment
+  problem.
+\newblock Technical report, Department of Computer Science, University of
+  Bologna, 2000.
+
+\bibitem{SolvingSuperIntervalGraphs}
+Carlo Mannino and Gianpaolo Oriolo.
+\newblock Solving stability problems on a superclass of interval graphs.
+\newblock Technical report, Centro Vito Volterra, 2002.
+
+\bibitem{HybridABCClustering}
+Y.~Marinakis, M.~Marinaki, and N.~Matsatsinis.
+\newblock A hybrid discrete artificial bee colony - grasp algorithm for
+  clustering.
+\newblock In {\em Computers Industrial Engineering, 2009. CIE 2009.
+  International Conference on}, pages 548 --553, 6-9 2009.
+
+\bibitem{GSMSysEngin}
+Asha Mehrotra.
+\newblock {\em GSM System Engineering}.
+\newblock Arteh House, Inc, 1997.
+
+\bibitem{Self-AdaptiveMeta}
+David Meignan, Jean-Charles Cr\'{e}put, and Abderrafiaa Koukam.
+\newblock A cooperative and self-adaptive metaheuristic for the facility
+  location problem.
+\newblock In {\em GECCO '09: Proceedings of the 11th Annual conference on
+  Genetic and evolutionary computation}, pages 317--324, New York, NY, USA,
+  2009. ACM.
+
+\bibitem{SweepMeta}
+George~Jiri Mejtsky.
+\newblock The improved sweep metaheuristic for simulation optimization and
+  application to job shop scheduling.
+\newblock In {\em WSC '08: Proceedings of the 40th Conference on Winter
+  Simulation}, pages 731--739. Winter Simulation Conference, 2008.
+
+\bibitem{NewSAs}
+P.R.S. Mendonca and L.P. Caloba.
+\newblock New simulated annealing algorithms.
+\newblock In {\em Circuits and Systems, 1997. ISCAS '97., Proceedings of 1997
+  IEEE International Symposium on}, volume~3, pages 1668 --1671 vol.3, 9-12
+  1997.
+
+\bibitem{GSM92}
+Marie-Bernadette~Pautet Michel~Mouly.
+\newblock {\em The GSM System for Mobile Communications}.
+\newblock Cell \& Sys, 1992.
+
+\bibitem{TabuVechicleRoutingWithTimeWindows}
+Qi~Ming-yao, Miao Li-xin, Zhang Le, and Xu~Hua-yu.
+\newblock A new tabu search heuristic algorithm for the vehicle routing problem
+  with time windows.
+\newblock In {\em Management Science and Engineering, 2008. ICMSE 2008. 15th
+  Annual Conference Proceedings., International Conference on}, pages 1648
+  --1653, 10-12 2008.
+
+\bibitem{adaptPSO}
+Christopher~K. Monson and Kevin~D. Seppi.
+\newblock Adaptive diversity in pso.
+\newblock In {\em GECCO '06: Proceedings of the 8th annual conference on
+  Genetic and evolutionary computation}, pages 59--66, New York, NY, USA, 2006.
+  ACM.
+
+\bibitem{MontemanniThesis}
+Roberto Montemanni.
+\newblock {\em Upper and Lower bounds for the fixed spectrum frequency
+  assignment problem}.
+\newblock PhD thesis, School of Tecnology, University of Glamorgan, 2001.
+
+\bibitem{TabuMontemanniSmith}
+Roberto Montemanni and Derek~H. Smith.
+\newblock Heuristic manipulation, tabu search and frequency assignment.
+\newblock {\em Comput. Oper. Res.}, 37(3):543--551, 2008.
+
+\bibitem{wirelesstelcoMullet}
+Garry Mullet.
+\newblock {\em Wireless telecommunications systems and networks}.
+\newblock Thomsan Delmar Learning, 2006.
+
+\bibitem{CombinedBranchBoundGA}
+Amit Nagar, Sunderesh~S. Heragu, and Jorge Haddock.
+\newblock A combined branch-and-bound and genetic algorithm based approach for
+  a flowshop scheduling problem.
+\newblock {\em Annals of Operations Research}, 63(3):397--414, June 1996.
+
+\bibitem{VeryFastSAImageEnchancement}
+B.~Natrajan and B.E. Rosen.
+\newblock Image enhancement using very fast simulated reannealing.
+\newblock In {\em Image Analysis and Interpretation, 1996., Proceedings of the
+  IEEE Southwest Symposium on}, pages 230 --235, 8-9 1996.
+
+\bibitem{ChaosSA}
+Lin Ni and Hong-Ying Zheng.
+\newblock An unsupervised intrusion detection method combined clustering with
+  chaos simulated annealing.
+\newblock In {\em Machine Learning and Cybernetics, 2007 International
+  Conference on}, volume~6, pages 3217 --3222, 19-22 2007.
+
+\bibitem{TabuCSP}
+Koji Nonobe and Toshihide Ibaraki.
+\newblock A tabu search approach to the constraint satisfaction problem as a
+  general problem solver.
+\newblock {\em European Journal of Operational Research}, 106(2-3):599 -- 623,
+  1998.
+
+\bibitem{TabuSingleMachineScheduling}
+E.~Nowicki and S.~Zdrzalka.
+\newblock Single machine scheduling with major and minor setup times - a tabu
+  search approach.
+\newblock {\em The Journal of the Operational Research Society}, 47:1054--1064,
+  1996.
+
+\bibitem{HandbookofMH}
+Sigurdur {\'O}lafsson.
+\newblock Chapter 21 metaheuristics.
+\newblock In Shane~G. Henderson and Barry~L. Nelson, editors, {\em Simulation},
+  volume~13 of {\em Handbooks in Operations Research and Management Science},
+  pages 633 -- 654. Elsevier, 2006.
+
+\bibitem{SOSwarm}
+Michael O\&\#x2019;Neill and Anthony Brabazon.
+\newblock Self-organising swarm (soswarm).
+\newblock {\em Soft Comput.}, 12(11):1073--1080, 2008.
+
+\bibitem{GSMSecurInTeleNetwork}
+Thomas La~Porta Patrick~Traynor, Patrick~McDaniel.
+\newblock {\em Security for Telecommunications Networks}, volume~40 of {\em
+  Advances in Information Security}.
+\newblock Springer US, 2008.
+
+\bibitem{PatternDetectionGA}
+Pedro Pereira, Fernando Silva, and Nuno~A. Fonseca.
+\newblock Biored - a genetic algorithm for pattern detection in biosequences.
+\newblock In {\em 2nd International Workshop on Practical Applications of
+  Computational Biology and Bioinformatics (IWPACBB 2008)}, pages 156--165,
+  2009.
+
+\bibitem{GATSP}
+Jean-Yves Potvin.
+\newblock Genetic algorithms for the traveling salesman problem.
+\newblock {\em Annals of Operations Research}, 63:337--370, 1996.
+
+\bibitem{VariousCoolingSA}
+Nilesh~B. Prajapati, Rupal~R. Agravat, and Mosin~I. Hasan.
+\newblock Comparative study of various cooling schedules for location area
+  planning in cellular networks using simulated annealing.
+\newblock {\em Networks \& Communications, International Conference on},
+  0:146--150, 2009.
+
+\bibitem{TabuRCAProblem}
+Abraham~P. Punnen and Y.~P. Aneja.
+\newblock A tabu search algorithm for the resource-constrained assignment
+  problem.
+\newblock {\em The Journal of the Operational Research Society},
+  46(2):214--220, Feb 1995.
+
+\bibitem{PSOSelfHierarch}
+A.~Ratnaweera, S.K. Halgamuge, and H.C. Watson.
+\newblock Self-organizing hierarchical particle swarm optimizer with
+  time-varying acceleration coefficients.
+\newblock {\em Evolutionary Computation, IEEE Transactions on}, 8(3):240 --
+  255, june 2004.
+
+\bibitem{RandomNumberGA}
+Andrea Reese.
+\newblock Random number generators in genetic algorithms for unconstrained and
+  constrained optimization.
+\newblock {\em Nonlinear Analysis: Theory, Methods \& Applications},
+  71(12):e679 -- e692, 2009.
+
+\bibitem{ConstrainedGA}
+D.~J. Reid.
+\newblock Genetic algorithms in constrained optimization.
+\newblock {\em Mathematical and Computer Modelling}, 23(5):87 -- 111, 1996.
+
+\bibitem{MSFAP}
+Angelos~N. Rouskas, Michael~G. Kazantzakis, and Miltiades~E. Anagnostou.
+\newblock Minimizing of frequency assignment span in cellular networks.
+\newblock {\em IEEE Transactions on Vehicular Technology}, 48:873--882, 1999.
+
+\bibitem{AIModernApproach}
+Stuart Russel and Peter Norvig.
+\newblock {\em Artificial Intelligence A Modern Approach}.
+\newblock Prentice Hall, second edition, 2003.
+
+\bibitem{InterferenceOrientatedFAP}
+P.~Demestichas E.~Tzifa S.~Kotrotsos, G.~Kotsakis and V.~Demesticha.
+\newblock Forumlation and computationally efficient algirithms for an
+  interference-orientated version of the frequency assignment problem.
+\newblock {\em Wireless Personal Communications}, 18:289--317, 2001.
+
+\bibitem{CoactiveFuzzyGA}
+Mohsen Saemi and Morteza Ahmadi.
+\newblock Integration of genetic algorithm and a coactive neuro-fuzzy inference
+  system for permeability prediction from well logs data.
+\newblock {\em Transport in Porous Media}, 71(3):273--288, February 2008.
+
+\bibitem{MobileWirelessCommunications}
+Mischa Schwartz.
+\newblock {\em Mobile Wireless Communications}.
+\newblock Cambridge University Press, 2005.
+
+\bibitem{PSOGABreeding}
+Matthew Settles and Terence Soule.
+\newblock Breeding swarms: a ga/pso hybrid.
+\newblock In {\em GECCO '05: Proceedings of the 2005 conference on Genetic and
+  evolutionary computation}, pages 161--168, New York, NY, USA, 2005. ACM.
+
+\bibitem{MultiPopGA}
+Patrick Siarry, Alain P\'{e}trowski, and Mourad Bessaou.
+\newblock A multipopulation genetic algorithm aimed at multimodal optimization.
+\newblock {\em Adv. Eng. Softw.}, 33(4):207--213, 2002.
+
+\bibitem{ABCLeafConstrained}
+Alok Singh.
+\newblock An artificial bee colony algorithm for the leaf-constrained minimum
+  spanning tree problem.
+\newblock {\em Applied Soft Computing}, 9(2):625 -- 631, 2009.
+
+\bibitem{AutoConfigSA}
+J.~R. Slagle, A.~Bose, P.~Busalacchi, and C.~Wee.
+\newblock Enhanced simulated annealing for automatic reconfiguration of
+  multiprocessors in space.
+\newblock In {\em IEA/AIE '89: Proceedings of the 2nd international conference
+  on Industrial and engineering applications of artificial intelligence and
+  expert systems}, pages 401--408, New York, NY, USA, 1989. ACM.
+
+\bibitem{SelfAdaptiveDataMiningGA}
+K.G. Srinivasa, K.R. Venugopal, and L.M. Patnaik.
+\newblock A self-adaptive migration model genetic algorithm for data mining
+  applications.
+\newblock {\em Information Sciences}, 177(20):4295 -- 4313, 2007.
+
+\bibitem{tabuglobalplanning3g}
+Marc St-Hilaire, Steven Chamberland, and Samuel Pierre.
+\newblock A tabu search algorithm for the global planning problem of third
+  generation mobile networks.
+\newblock {\em Comput. Electr. Eng.}, 34(6):470--487, 2008.
+
+\bibitem{PrinciplesMobileCommunication}
+Gordon~L. Stu\"{u}ber.
+\newblock {\em Principles of Mobile Communication}.
+\newblock Kluwer Academic Publishers, 1996.
+
+\bibitem{MultiradioMeshNetworks}
+Anand~Prabhu Subramanian, Himanshu Gupta, Samir~R. Das, and Jing Cao.
+\newblock Minimum interference channel assignment multiradio wireless mesh
+  networks.
+\newblock {\em IEEE Transactions on Mobile Computing}, 7(7):1459--1473,
+  December 2008.
+
+\bibitem{SASingleMultiObj}
+B.~Suman and P.~Kumar.
+\newblock A survey of simulated annealing as a tool for single and
+  multiobjective optimization.
+\newblock {\em The Journal of the Operational Research Society},
+  57(10):1143--1160, 2006.
+
+\bibitem{TabuBiddingStrats}
+Ashish Sureka and Peter~R. Wurman.
+\newblock Applying metaheuristic techniques to search the space of bidding
+  strategies in combinatorial auctions.
+\newblock In {\em GECCO '05: Proceedings of the 2005 conference on Genetic and
+  evolutionary computation}, pages 2097--2103, New York, NY, USA, 2005. ACM.
+
+\bibitem{TabuFormGames}
+Ashish Sureka and Peter~R. Wurman.
+\newblock Using tabu best-response search to find pure strategy nash equilibria
+  in normal form games.
+\newblock In {\em AAMAS '05: Proceedings of the fourth international joint
+  conference on Autonomous agents and multiagent systems}, pages 1023--1029,
+  New York, NY, USA, 2005. ACM.
+
+\bibitem{SIPowerInNums}
+Peter Tarasewich and Patrick~R. McMullen.
+\newblock Swarm intelligence: power in numbers.
+\newblock {\em Commun. ACM}, 45(8):62--67, August 2002.
+
+\bibitem{BCO}
+Dusan Teodorovic, Panta Lucic, Goran Markovic, and Mauro~Dell' Orco.
+\newblock Bee colony optimization: Principles and applications.
+\newblock In {\em Neural Network Applications in Electrical Engineering, 2006.
+  NEUREL 2006. 8th Seminar on}, pages 151 --156, 25-27 2006.
+
+\bibitem{PSOHybridUnitCommit}
+T.O. Ting, M.V.C. Rao, and C.K. Loo.
+\newblock A novel approach for unit commitment problem via an effective hybrid
+  particle swarm optimization.
+\newblock {\em Power Systems, IEEE Transactions on}, 21(1):411 -- 418, feb.
+  2006.
+
+\bibitem{ACOLargeProblem}
+Raj~Gaurang Tiwari, Mohd. Husain, Sandeep Gupta, and Arun~Pratap Srivastava.
+\newblock A new ant colony optimization meta-heuristic algorithm to tackle
+  large optimization problem.
+\newblock In {\em COMPUTE '10: Proceedings of the Third Annual ACM Bangalore
+  Conference}, pages 1--4, New York, NY, USA, 2010. ACM.
+
+\bibitem{SelfAdaptiveGA}
+Vedat To\u{g}an and Ay\c{s}e~T. Dalo\u{g}lu.
+\newblock An improved genetic algorithm with initial population strategy and
+  self-adaptive member grouping.
+\newblock {\em Comput. Struct.}, 86(11-12):1204--1218, 2008.
+
+\bibitem{FundamentalsWirelessCommunication}
+David Tse and Pramod Viswanath.
+\newblock {\em Fundamentals of Wireless Communication}.
+\newblock Cambridge University Press, 2005.
+
+\bibitem{CurveFittingSA}
+Hsien-Yu Tseng and Chang-Ching Lin.
+\newblock A simulated annealing approach for curve fitting in automated
+  manufacturing systems.
+\newblock {\em Journal of Manufacturing Technology Management}, 18:202 -- 216,
+  2007.
+
+\bibitem{FamilyGA}
+Roger~L. Wainwright.
+\newblock A family of genetic algorithm packages on a workstation for solving
+  combinatorial optimization problems.
+\newblock {\em SIGICE Bull.}, 19(3):30--36, 1994.
+
+\bibitem{4GWirelessVid}
+Haohong Wang, Lisimachos Kondi, Ajay Luthra, and Song Ci.
+\newblock {\em 4G Wireless Video Communications}.
+\newblock Wiley Publishing, 2009.
+
+\bibitem{ParallelGASA}
+Z.~G. Wang, Y.~S. Wong, and M.~Rahman.
+\newblock Development of a parallel optimization method based on genetic
+  simulated annealing algorithm.
+\newblock {\em Parallel Comput.}, 31(8+9):839--857, 2005.
+
+\bibitem{ReactiveTabuVHR}
+N.~A. Wassan.
+\newblock A reactive tabu search for the vehicle routing problem.
+\newblock {\em The Journal of the Operation Research Society}, 57(1):111--116,
+  Jan 2006.
+
+\bibitem{GeostatisticalGA}
+Xian-Huan Wen, Tina Yu, and Seong Lee.
+\newblock Coupling sequential-self calibration and genetic algorithms to
+  integrate production data in geostatistical reservoir modeling.
+\newblock In {\em Geostatistics Banff 2004}, volume~14 of {\em Quantitative
+  Geology and Geostatistics}, pages 691--701. Springer Netherlands, 2005.
+
+\bibitem{SALongestCommon}
+Dennis Weyland.
+\newblock Simulated annealing, its parameter settings and the longest common
+  subsequence problem.
+\newblock In {\em GECCO '08: Proceedings of the 10th annual conference on
+  Genetic and evolutionary computation}, pages 803--810, New York, NY, USA,
+  2008. ACM.
+
+\bibitem{PSOSoftTesting}
+Andreas Windisch, Stefan Wappler, and Joachim Wegener.
+\newblock Applying particle swarm optimization to software testing.
+\newblock In {\em GECCO '07: Proceedings of the 9th annual conference on
+  Genetic and evolutionary computation}, pages 1121--1128, New York, NY, USA,
+  2007. ACM.
+
+\bibitem{EcoEquilSA}
+Lihua Wu and Yuyun Wang.
+\newblock An introduction to simulated annealing algorithms for the computation
+  of economic equilibrium.
+\newblock {\em Computational Economics}, 12:151--169, 1998.
+
+\bibitem{AutoComplexMeta}
+Yiliang Xu, Meng~Hiot Lim, and Yew-Soon Ong.
+\newblock Automatic configuration of metaheuristic algorithms for complex
+  combinatorial optimization problems.
+\newblock In {\em Evolutionary Computation, 2008. CEC 2008. (IEEE World
+  Congress on Computational Intelligence). IEEE Congress on}, pages 2380
+  --2387, 1-6 2008.
+
+\bibitem{ImpACOComplex}
+Jingan Yang and Yanbin Zhuang.
+\newblock An improved ant colony optimization algorithm for solving a complex
+  combinatorial optimization problem.
+\newblock {\em Appl. Soft Comput.}, 10(2):653--660, 2010.
+
+\bibitem{NatureInspiredMetaHeuristic}
+Xin-She Yang.
+\newblock {\em Nature-Inspired Metaheuristic Algorithms}.
+\newblock Luniver Press, 2008.
+
+\bibitem{FixedFAPPSO}
+Dominic C~O'Brien Yangyang~Zhang.
+\newblock Fixed channel assignment in cellular radio networks using particle
+  swarm optimization.
+\newblock In {\em Proceedings of the Internation Symposium of Industrial
+  Electronics}, June 2005.
+
+\bibitem{HybridBaldwinGA}
+Quan Yuan, Feng Qian, and Wenli Du.
+\newblock A hybrid genetic algorithm with the baldwin effect.
+\newblock {\em Information Sciences}, 180(5):640 -- 652, 2010.
+
+\bibitem{TSHazardous}
+L.~Zhang, S.~Guo, Y.~Zhu, and A.~Lim.
+\newblock A tabu search algorithm for the safe transportation of hazardous
+  materials.
+\newblock In {\em SAC '05: Proceedings of the 2005 ACM symposium on Applied
+  computing}, pages 940--946, New York, NY, USA, 2005. ACM.
+
+\bibitem{ACOImageThreshold}
+Xin Zhao, Myung-Eun Lee, and Soo-Hyung Kim.
+\newblock Improved image thresholding using ant colony optimization algorithm.
+\newblock In {\em Proceedings of the 2008 International Conference on Advanced
+  Language Processing and Web Information Technology}, pages 210--215,
+  Washington, DC, USA, 2008. IEEE Computer Society.
+
+\end{thebibliography}
