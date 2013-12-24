@@ -31,7 +31,7 @@ namespace PSOFAPConsole.FAPPSO
                  localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCViolationChecker(Model.GeneralInformation.GloballyBlockedChannels);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName,Population, evalFunction, moveFunction, generator, checker,GBestFactory.GetStandardSelector());
+            return new FAPPSOAlgorithm(benchName,Population, evalFunction, moveFunction, generator, checker,GBestFactory.GetStandardSelector(), new StdStatisticalAnalyser(Model));
         }
 
         public PSOAlgorithm<ICell[]> CreateFrequencyIndexBased(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
@@ -41,7 +41,7 @@ namespace PSOFAPConsole.FAPPSO
             ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(Model, 0, Model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector());
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector(), new IndexStatisticalAnalyser(Model));
         }
 
         public PSOAlgorithm<ICell[]> CreateIndexMovementBased(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
@@ -51,7 +51,7 @@ namespace PSOFAPConsole.FAPPSO
             ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector());
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetStandardSelector(), new IndexStatisticalAnalyser(Model));
         }
 
         public PSOAlgorithm<ICell[]> CreateIndexBasedFAPPSOWithGlobalBestCellBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
@@ -61,7 +61,7 @@ namespace PSOFAPConsole.FAPPSO
             ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(Model, 0, Model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector(), new IndexStatisticalAnalyser(Model));
         }
 
         public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestCellBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
@@ -71,7 +71,7 @@ namespace PSOFAPConsole.FAPPSO
             ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector());
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector(), new IndexStatisticalAnalyser(Model));
         }
 
         public PSOAlgorithm<ICell[]> CreateIndexBasedFAPPSOWithGlobalBestTRXBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
@@ -81,7 +81,7 @@ namespace PSOFAPConsole.FAPPSO
             ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(Model, 0, Model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestTRXBuilderSelector());
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestTRXBuilderSelector(), new IndexStatisticalAnalyser(Model));
         }
 
         public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestTRXBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
@@ -91,7 +91,7 @@ namespace PSOFAPConsole.FAPPSO
             ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient,globalCoefficient,CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestTRXBuilderSelector());
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestTRXBuilderSelector(), new IndexStatisticalAnalyser(Model));
         }
 
         protected AbstractCollisionResolver CreateCollisionResolver(FAPModel model)

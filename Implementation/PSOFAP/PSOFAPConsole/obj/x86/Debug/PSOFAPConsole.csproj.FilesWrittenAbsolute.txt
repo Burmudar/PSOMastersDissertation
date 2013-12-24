@@ -1,0 +1,6 @@
+/Users/william/Dropbox/Masters/Implementation/PSOFAP/PSOFAPConsole/obj/x86/Debug/.NETFramework,Version=v4.0,Profile=Client.AssemblyAttribute.cs
+/Users/william/Dropbox/Masters/Implementation/PSOFAP/PSOFAPConsole/obj/x86/Debug/PSOFAPConsole.exe
+/Users/william/Dropbox/Masters/Implementation/PSOFAP/PSOFAPConsole/bin/Debug/PSOFAPConsole.exe.mdb
+/Users/william/Dropbox/Masters/Implementation/PSOFAP/PSOFAPConsole/bin/Debug/PSOFAPConsole.exe
+/Users/william/Dropbox/Masters/Implementation/PSOFAP/PSOFAPConsole/obj/x86/Debug/PSOFAPConsole.exe.mdb
+/Users/william/Dropbox/Masters/Implementation/PSOFAP/PSOFAPConsole/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs

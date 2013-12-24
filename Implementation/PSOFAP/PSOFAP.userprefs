@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PSOFAPConsole/FAPPSO/StdStatisticalAnalyser.cs">
+    <Files>
+      <File FileName="PSOFAPConsole/PSO/BenchRunner.cs" Line="1" Column="1" />
+      <File FileName="PSOFAPConsole/FAP/FAPModel.cs" Line="1" Column="1" />
+      <File FileName="PSOFAPConsole/FAP/FAPModelFactory.cs" Line="1" Column="1" />
+      <File FileName="PSOFAPConsole/Parser/Lexer/Token.cs" Line="1" Column="1" />
+      <File FileName="PSOFAPConsole/Parser/Lexer/Scanner.cs" Line="1" Column="1" />
+      <File FileName="PSOFAPConsole/Parser/Lexer/Lexer.cs" Line="1" Column="1" />
+      <File FileName="PSOFAPConsole/FAPPSO/IndexStatisticalAnalyser.cs" Line="40" Column="10" />
+      <File FileName="PSOFAPConsole/FAPPSO/StdStatisticalAnalyser.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/william/Dropbox/Masters/Implementation/PSOFAP/PSOFAPConsole/FAP/FAPModelFactory.cs" line="14" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -18,3 +18,7 @@ C:\Users\William\Dropbox\Masters\Implementation\PSOFAP\PSOFAPConsole\obj\x86\Rel
 C:\Users\William\Dropbox\Masters\Implementation\PSOFAP\PSOFAPConsole\bin\Release\PSOFAPConsole.exe
 C:\Users\William\Dropbox\Masters\Implementation\PSOFAP\PSOFAPConsole\bin\Release\PSOFAPConsole.pdb
 C:\Users\William\Dropbox\Masters\Implementation\PSOFAP\PSOFAPConsole\obj\x86\Release\ResolveAssemblyReference.cache
+C:\PSOFAP\PSOFAPConsole\obj\x86\Release\PSOFAPConsole.exe
+C:\PSOFAP\PSOFAPConsole\obj\x86\Release\PSOFAPConsole.pdb
+C:\PSOFAP\PSOFAPConsole\bin\Release\PSOFAPConsole.exe
+C:\PSOFAP\PSOFAPConsole\bin\Release\PSOFAPConsole.pdb

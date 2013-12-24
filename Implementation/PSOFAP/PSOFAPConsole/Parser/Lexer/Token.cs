@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Globalization;
 
 namespace PSOFAP.Parser.Lexer
 {
@@ -85,7 +86,7 @@ namespace PSOFAP.Parser.Lexer
         public Real(Tag tag, String value)
             : base(tag)
         {
-            this.Value = double.Parse(value);
+			this.Value = double.Parse(value, CultureInfo.InvariantCulture.NumberFormat);
         }
 
         public Real(Tag tag,double value) : base(tag)
@@ -101,7 +102,7 @@ namespace PSOFAP.Parser.Lexer
         public RealArray(Tag tag, String value, char splitChar):base(tag)
         {
             String[] values = value.Split(splitChar);
-            this.Value = values.Select(x => double.Parse(x)).ToArray();
+			this.Value = values.Select(x => double.Parse(x,CultureInfo.InvariantCulture.NumberFormat)).ToArray();
         }
 
         public RealArray(Tag tag, double[] value) : base(tag)

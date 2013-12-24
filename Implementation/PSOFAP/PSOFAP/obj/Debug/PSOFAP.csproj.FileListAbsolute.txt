@@ -46,3 +46,18 @@ C:\Users\William\Documents\My Dropbox\Masters\Implementation\PSOFAP\PSOFAP\obj\D
 C:\Users\William\Documents\My Dropbox\Masters\Implementation\PSOFAP\PSOFAP\obj\Debug\ResGen.write.1.tlog
 C:\Users\William\Documents\My Dropbox\Masters\Implementation\PSOFAP\PSOFAP\obj\Debug\PSOFAP.exe
 C:\Users\William\Documents\My Dropbox\Masters\Implementation\PSOFAP\PSOFAP\obj\Debug\PSOFAP.pdb
+C:\PSOFAP\PSOFAP\bin\Debug\PSOFAP.exe.config
+C:\PSOFAP\PSOFAP\bin\Debug\PSOFAP.exe
+C:\PSOFAP\PSOFAP\bin\Debug\PSOFAP.pdb
+C:\PSOFAP\PSOFAP\bin\Debug\PSOFAPConsole.exe
+C:\PSOFAP\PSOFAP\bin\Debug\PSOFAPConsole.pdb
+C:\PSOFAP\PSOFAP\obj\Debug\PSOFAP.csprojResolveAssemblyReference.cache
+C:\PSOFAP\PSOFAP\obj\Debug\Window1.baml
+C:\PSOFAP\PSOFAP\obj\Debug\Window1.g.cs
+C:\PSOFAP\PSOFAP\obj\Debug\App.g.cs
+C:\PSOFAP\PSOFAP\obj\Debug\PSOFAP_MarkupCompile.cache
+C:\PSOFAP\PSOFAP\obj\Debug\PSOFAP.g.resources
+C:\PSOFAP\PSOFAP\obj\Debug\PSOFAP.Properties.Resources.resources
+C:\PSOFAP\PSOFAP\obj\Debug\PSOFAP.csproj.GenerateResource.Cache
+C:\PSOFAP\PSOFAP\obj\Debug\PSOFAP.exe
+C:\PSOFAP\PSOFAP\obj\Debug\PSOFAP.pdb

@@ -21,6 +21,11 @@ namespace PSOFAPConsole.FAPPSO
 
         #region IFitnessFunction<ICell[]> Members
 
+        public virtual double[] Stats(ICell[] position)
+        {
+            return new double[19];
+        }
+
         public virtual double Evaluate(ICell[] position)
         {
             return CalculateInterfernece(position);

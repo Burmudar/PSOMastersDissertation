@@ -28,10 +28,12 @@ namespace PSOFAPConsole.FAPPSO
         public ParticleMoveFunction VelocityFunction { get; set; }
         public PositionGenCellArray Generator { get; set; }
         public GlobalBestSelector Selector { get; set; }
+        public FAPCostFunction Analyser { get; set; }
         private ICellIntegrityChecker cellIntegrityChecker;
         public String BenchName { get; set; }
+        private List<double> runFitness;
 
-        public FAPPSOAlgorithm(string benchName,int population,FitnessFuncCellArray evalFunction, ParticleMoveFunction moveFunction, PositionGenCellArray positionGenerator, ICellIntegrityChecker checker,GlobalBestSelector selector)
+        public FAPPSOAlgorithm(string benchName,int population,FitnessFuncCellArray evalFunction, ParticleMoveFunction moveFunction, PositionGenCellArray positionGenerator, ICellIntegrityChecker checker,GlobalBestSelector selector, FAPCostFunction analyser)
         {
             BenchName = benchName;
             Particles = new List<ParticleCellArray>();
@@ -41,9 +43,12 @@ namespace PSOFAPConsole.FAPPSO
             Generator = positionGenerator;
             cellIntegrityChecker = checker;
             Selector = selector;
+            Analyser = analyser;
             BenchName += "("+moveFunction.GetType().Name+")";
             BenchName += "("+selector.GetConstructionMethodName()+")";
+            BenchName += "[" + evalFunction.GetType().Name + "]";
             Console.WriteLine(BenchName);
+            runFitness = new List<double>();
             Initialize();
         }
 
@@ -65,28 +70,38 @@ namespace PSOFAPConsole.FAPPSO
         public void Start()
         {
             DateTime start = DateTime.Now;
-            String filename = "Bench-"+BenchName+"("+Population+")-" + start.ToLongDateString() + " " + start.ToLongTimeString().Replace(':','-') +"#" + this.GetHashCode() +".csv";
-            Console.WriteLine("Outputting results to <{0}>", filename);
-            StreamWriter swriter = new StreamWriter(new FileStream(filename, FileMode.CreateNew));
-            for (int i = 0; i < 10000; i++)
+            BenchName = "Bench-" + BenchName + "(" + Population + ")-" + start.ToLongDateString() + " " + start.ToLongTimeString().Replace(':', '-') + "#" + this.GetHashCode();
+            String filename = BenchName +".csv";
+            String statsFilename = "Stats-" + filename;
+            Console.WriteLine("Outputting results to <{0}> and Stats to <{1}>", filename, statsFilename);
+            using (StreamWriter swriter = new StreamWriter(new FileStream(filename, FileMode.CreateNew)), statsWriter = new StreamWriter(new FileStream(statsFilename, FileMode.CreateNew)))
             {
-                Parallel.ForEach(Particles, EvaluateParticle);
-                UpdateGlobalBest();
-                UpdateSwarmMovement();
-                swriter.WriteLine("{0},{1}", i, GlobalBest.Fitness);
-                TimeSpan timespan = DateTime.Now - start;
-                int duration = timespan.Duration().Minutes;
-                if ( duration >= 15)
+                swriter.WriteLine("iteration, fitness");
+            
+                statsWriter.WriteLine("iteration, fitness,co-channel max, co-channel avg, co-channel std, adj-channel max, adj-channel avg, adj-channel std, trx max, trx avg, trx std, ex-0.01, ex-0.02, ex-0.03, ex-0.04, ex-0.05, ex-0.10, ex-0.15, ex-0.20, ex-0.50");
+                for (int i = 0; i < 50; i++)
                 {
-                    Console.WriteLine(filename + " is at iteration " + i + " after "+duration+" mins");
+                    Console.Write("Iteration {0} ... ", i + 1);
+                    Parallel.ForEach(Particles, EvaluateParticle);
+                    UpdateGlobalBest();
+                    UpdateSwarmMovement();
+                    runFitness.Add(GlobalBest.Fitness);
+                    swriter.WriteLine("{0},{1}", i, GlobalBest.Fitness.ToString("F"));
+                    double[] stats = Analyser.Stats(GlobalBest.Position);
+                    statsWriter.WriteLine("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19}",
+                        i, stats[0].ToString("F"), stats[1].ToString("F"), stats[2].ToString("F"), stats[3].ToString("F"), stats[4].ToString("F"), stats[5].ToString("F"), stats[6].ToString("F"), stats[7].ToString("F"), stats[8].ToString("F"), stats[9].ToString("F"), stats[10].ToString("F"),
+                        stats[11].ToString("F"), stats[12].ToString("F"), stats[13].ToString("F"), stats[14].ToString("F"), stats[15].ToString("F"), stats[16].ToString("F"), stats[17].ToString("F"), stats[18].ToString("F"));
+                    Console.WriteLine("Done");
+                    if ((i + 1) % 10 == 0)
+                    {
+                        Console.WriteLine("Flushing");
+                        swriter.Flush();
+                        statsWriter.Flush();
+                    }
+                
                 }
-                if (duration >= 15 && i >= 20)
-                {
-                    Console.WriteLine(filename + " -- finished -- 15 Minute mark and iteration is greater 20 -- fitness:" + GlobalBest.Fitness + " with " + cellIntegrityChecker.CountViolations(GlobalBest.Position) + " violations");
-                    break;
-                }
+                swriter.WriteLine("StdDev {0}, Avg {1}", StdStatisticalAnalyser.CalculateStdDev(runFitness), runFitness.Average());
             }
-            swriter.Close();
         }
 
         private void UpdateGlobalBest()

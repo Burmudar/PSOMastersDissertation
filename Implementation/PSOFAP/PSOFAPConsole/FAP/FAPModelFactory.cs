@@ -18,22 +18,22 @@ namespace PSOFAPConsole.FAP
 
         public FAPModel CreateSiemens1Model()
         {
-            return CreateModel(@"..\..\FAP\Problems\siemens1");
+			return CreateModel("Problems/siemens1");
         }
 
         public FAPModel CreateSiemens2Model()
         {
-            return CreateModel(@"..\..\FAP\Problems\siemens2");
+			return CreateModel("Problems/siemens2");
         }
 
         public FAPModel CreateSiemens3Model()
         {
-            return CreateModel(@"..\..\FAP\Problems\siemens3");
+			return CreateModel("Problems/siemens3");
         }
 
         public FAPModel CreateSiemens4Model()
         {
-            return CreateModel(@"..\..\FAP\Problems\siemens4");
+			return CreateModel("Problems/siemens4");
         }
     }
 }

@@ -33,15 +33,18 @@ namespace PSOFAPConsole.FAPPSO
                     {
                         int frequencyA = channels[interferingCell.Frequencies[i].Value];
                         int frequencyB = channels[cell.Frequencies[j].Value];
+                        double trxInf = 0;
                         if (SameFrequency(frequencyA, frequencyB))
                         {
-                            interference += ZeroIfOusideInterferneceThreshold(cellRelation.DA[0]);
+                            trxInf = ZeroIfOusideInterferneceThreshold(cellRelation.DA[0]);
+                            interference += trxInf;
                         }
                         else if (base.FrequenciesDifferByOne(frequencyA, frequencyB))
                         {
-                            interference += ZeroIfOusideInterferneceThreshold(cellRelation.DA[1]);
+                            trxInf = ZeroIfOusideInterferneceThreshold(cellRelation.DA[1]);
+                            interference += trxInf;
                         }
-                        cell.FrequencyHandler.SetSingleTrxInterference(j, interference);
+                        cell.FrequencyHandler.SetSingleTrxInterference(j, trxInf);
                     }
                     //cell.Interference += interference;
                 }

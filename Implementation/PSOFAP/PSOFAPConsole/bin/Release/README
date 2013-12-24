@@ -1,0 +1,10 @@
+On Windows
+==========
+
+    - Execute PSOFAPConsole.exe
+
+On Unix
+========
+
+    - mono --aot PSOFAPConsole.exe
+    - mono PSOFAPConsole.exe
