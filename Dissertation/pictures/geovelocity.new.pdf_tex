@@ -1,0 +1,73 @@
+%% Creator: Inkscape inkscape 0.48.4, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'geovelocity.new.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{448.05047696bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.57849265)%
+    \put(0,0){\includegraphics[width=\unitlength]{geovelocity.new.pdf}}%
+    \put(0.08410456,0.36321374){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{x(t + 1)}}}%
+    \put(0.20304147,0.08899602){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{x(t)}}}%
+    \put(0.41921609,0.07815543){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{y(t)}}}%
+    \put(0.30570147,0.38670036){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{y'(t)}}}%
+    \put(0.27532584,0.54431581){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{inertia velocity}}}%
+    \put(0.38008797,0.52504951){\color[rgb]{0,0,0}\makebox(0,0)[rb]{\smash{social velocity}}}%
+    \put(0.38002383,0.50627525){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{cognitive velocity}}}%
+    \put(0.38015205,0.48700894){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{new velocity}}}%
+    \put(0.76556138,0.5455865){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{inertia velocity}}}%
+    \put(0.87032346,0.5263202){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{social velocity}}}%
+    \put(0.87025938,0.50754594){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{cognitive velocity}}}%
+    \put(0.87038754,0.48827964){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{new velocity}}}%
+    \put(0.74922907,0.09073674){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{x(t)}}}%
+    \put(0.6554674,0.2936464){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{x(t + 1)}}}%
+    \put(0.93773715,0.27741375){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{x(t + 2)}}}%
+    \put(0.85026052,0.39014126){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{y'(t + 1)}}}%
+    \put(0.96118432,0.08442413){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{y(t + 1)}}}%
+    \put(0.16266183,0.00503255){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(a) Time step t}}}%
+    \put(0.69346426,0.00371401){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(b) Time step t + 1}}}%
+  \end{picture}%
+\endgroup%
