@@ -84,7 +84,7 @@ The bridge experiment was extended to have two bridges that differ in length. Th
 	\label{fig:antBridgeExperiment}
 \end{figure}
 
-Pheromones used by the ants in \gls{ACO} go through two phases. The first phase is where pheromones a deposited on a particular path by an ant whether there exists previous pheromones or not. The second phase is where pheromones evaporate. Pheromones are not permanent and deteriorate over time\cite{FundamentalSwarm}. By letting pheromones evaporate, ants can ``forget'' previous decisions made by the colony\cite{FundamentalSwarm}. It can be concluded that the more pheromones evaporate the less influence the ants will have on their path selection, therefore promoting exploration\cite{FundamentalSwarm}.
+Pheromones used by the ants in \gls{ACO} go through two phases. The first phase is where pheromones are deposited on a particular path by an ant whether there exists previous pheromones or not. The second phase is where pheromones evaporate. Pheromones are not permanent and deteriorate over time\cite{FundamentalSwarm}. By letting pheromones evaporate, ants can ``forget'' previous decisions made by the colony\cite{FundamentalSwarm}. It can be concluded that the more pheromones evaporate the less influence the ants will have on their path selection, therefore promoting exploration\cite{FundamentalSwarm}.
 
 The concept of pheromones and how the \gls{ACO} proceeds in updating the pheromones is a critical concept of \gls{ACO}. Hence, an in-depth discussion on pheromones is provided in subsection \ref{sec:ACOcharacter}.
 
@@ -97,13 +97,13 @@ The first algorithm developed based on the foraging behaviour of ants is known a
 
 The first algorithm to improve upon the \gls{SACO} is the \gls{AS} \cite{CompuIntelligenceIntro,AntIntroTrends}. The \gls{AS} included heuristic information into the probability that an ant chooses to move towards a node. The \gls{AS} also added memory to the \gls{AS} by using a tabu list and also incorporated pheromone evaporation. The improvements made enabled the \gls{AS} to better explore the search space and produce better results\cite{CompuIntelligenceIntro,AntIntroTrends}. 
 
-The \gls{AS} algorithm has achieved good success in the problems it has been applied to, but it does have some disadvantages\cite{ImpACOComplex,ACOSurvey}. One of the primary disadvantages of \gls{AS} is that it tends to premature converge on local optima \cite{FundamentalSwarm,ImpACOComplex}. The premature convergence can be attributed to the ants exploiting the high concentration of pheromones on good solution paths too quickly\cite{FundamentalSwarm}. With the ants focusing only on the good solutions less exploration occurs in the search space leading to local optima being produced as the best solution\cite{FundamentalSwarm}.
+The \gls{AS} algorithm has achieved good success in the problems it has been applied to, but it does have some disadvantages\cite{ImpACOComplex,ACOSurvey}. One of the primary disadvantages of \gls{AS} is that it tends to converge prematurely to local optima \cite{FundamentalSwarm,ImpACOComplex}. The premature convergence can be attributed to the ants exploiting the high concentration of pheromones on good solution paths too quickly\cite{FundamentalSwarm}. With the ants focusing only on the good solutions less exploration occurs in the search space leading to local optima being produced as the best solution\cite{FundamentalSwarm}.
 
 Subsequently, various algorithms have been developed that improve on the \gls{AS} algorithm. These improved algorithms include the \gls{ACS}, \gls{MMAS}, Ant-Q, fast ant system, AntTabu, \gls{AS}-rank and \gls{ANTS}\cite{CompuIntelligenceIntro,AntIntroTrends}. The discussion in this section is focused on providing an introduction to the general \gls{ACO} algorithm concepts and not to discuss various improvements made by variants of the core algorithm. In the forth-coming sections reference is made to these algorithms and their respective improvements.
 
-The \gls{AS} algorithm is the base algorithm upon which all other \gls{ACO} class algorithms are based upon. Therefore in the forth-coming sections when a reference is made to the \gls{ACO} algorithm, it is directed at the base \gls{AS} algorithm.
+The \gls{AS} algorithm is the base algorithm upon which all other \gls{ACO} class algorithms are based. Therefore in the forth-coming sections when a reference is made to the \gls{ACO} algorithm, it is directed at the base \gls{AS} algorithm.
 
-In this section the concepts  upon which the core of \gls{ACO} is based upon were briefly introduced. The next section discusses each of these concepts.
+In this section the concepts  upon which the core of \gls{ACO} is based upon are briefly introduced. The next section discusses each of these concepts.
 \subsection{ACO Characteristics}
 \label{sec:ACOcharacter}
 In this section characteristics that are important and unique to the \gls{ACO} class of algorithms are discussed. The discussion is focused upon three core characteristics namely pheromone trials, pheromone evaporation, pheromone updates and state transition rules.
@@ -125,7 +125,7 @@ The pheromone trail was initially developed with only one colony in mind \cite{C
 
 \subsubsection{Pheromone Evaporation}
 \label{sec:pheromoneevapuation}
-Initially when the pheromone concept was first implemented the ants of the colony rapidly converged on a solution\cite{CompuIntelligenceIntro}. The search space was not adequately explored and the produced solution was of local optima\cite{AntsAndStigmergy}. To combat this premature convergence and force the ants to explore the search space more, the concept of \emph{pheromone evaporation} was introduced\cite{AntIntroTrends,AntSurvey}. 
+Initially when the pheromone concept was first implemented the ants of the colony rapidly converged on a solution\cite{CompuIntelligenceIntro}. The search space was not adequately explored and the produced solution was a local optimum\cite{AntsAndStigmergy}. To combat this premature convergence and force the ants to explore the search space more, the concept of \emph{pheromone evaporation} was introduced\cite{AntIntroTrends,AntSurvey}. 
 
 Real pheromones used by ants to mark a particular link to a node is not permanent and over time the strength of the pheromone deteriorates until it eventually disappears\cite{CompuIntelligenceIntro}. Pheromone deteriorating is known in the literature as pheromone evaporation\cite{CompuIntelligenceIntro}. The pheromone will not completely evaporate as long there are ants traversing the defined link reinforcing the pheromone. The evaporation of pheromones is modelled in the \gls{ACO} by equation \ref{eq:pheromoneevapuration}\cite{AntIntroTrends,AntSurvey}:
 \begin{equation}
@@ -193,7 +193,7 @@ As can be seen in the following equation, the \gls{ACS} uses a slight variant of
 \end{equation}
 In the above equation $\tau_0$ is a small constant and $p_2 \in [0,1]$ is the constant that defines the rate of evaporation\cite{CompuIntelligenceIntro}. With the local update rule, the algorithm is able to explore more. The path constructed by the individual ant is used to update the pheromone and no information from the best path found in the colony is incorporated, as with equation~\ref{eq:pheromoneupdate}\cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
-The \gls{MMAS} algorithm as discussed also improves on the \gls{AS}. The global update rule used by \gls{AS} has a disadvantage in the sense that the search might concentrate too quickly on a particular good solution (the global best path)\cite{FundamentalSwarm}. \gls{MMAS} address this disadvantage by using the global update rule on an iteration basis\cite{FundamentalSwarm}.
+The \gls{MMAS} algorithm as discussed also improves on the \gls{AS}. The global update rule used by \gls{AS} has a disadvantage in the sense that the search might concentrate too quickly on a particular good solution (the global best path)\cite{FundamentalSwarm}. \gls{MMAS} addresses this disadvantage by using the global update rule on an iteration basis\cite{FundamentalSwarm}.
 
 When considering only on a per iteration basis, the best path found by the algorithm can differ from one iteration to the next\cite{FundamentalSwarm}. Therefore the \gls{MMAS} a different path will be updating with the global update rule each iteration\cite{FundamentalSwarm}. Using this approach the algorithm is allowed to explore the search space more\cite{FundamentalSwarm}.
 
@@ -268,7 +268,7 @@ The authors presented two versions of the algorithm. The first version used no h
 
 With regard to the heuristic updating of the pheromone trails, the authors opted to increase the pheromone by some magnitude\cite{ACOvsEA}. This magnitude was hand tuned to be 100. The heuristic only increases a certain path's pheromone if the frequencies assigned to the transceivers represented by this path differ enough so as to not cause significant interference\cite{ACOvsEA}. Thus, the heuristic aims to amplify good choices made previously by the algorithm for the next iteration of the algorithm.
 
-In table~\ref{tab:ACO} the results obtained by Lune \emph{et al.} \cite{ACOvsEA} is presented. By evaluating the results obtained, one can clearly see that the \gls{ACO} version that incorporates heuristic information to reinforce pheromone trails outperforms the version that does not \cite{ACOvsEA}. 
+In table~\ref{tab:ACO} the results obtained by Lune \emph{et al.}\cite{ACOvsEA} are presented. By evaluating the results obtained, one can clearly see that the \gls{ACO} version that incorporates heuristic information to reinforce pheromone trails outperforms the version that does not \cite{ACOvsEA}. 
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c |}
@@ -281,7 +281,7 @@ In table~\ref{tab:ACO} the results obtained by Lune \emph{et al.} \cite{ACOvsEA}
 \caption{ACO and \gls{ACO}* on custom GSM \gls{FAP} benchmark\cite{ACOvsEA}}
 \label{tab:ACO}
 \end{table}
-The values depicted in the table represent the amount of interference that will result if the plan is used in the network\cite{ACOvsEA}.The values depicted in the table represent the amount of interference that will result if the plan is used in the network\cite{ACOvsEA}. The following section discusses the Artificial Bee Algorithm.
+The values depicted in the table represent the amount of interference that will result if the plan is used in the network\cite{ACOvsEA}. The following section discusses the Artificial Bee Algorithm.
 \section{Artificial Bee Colony (ABC) Algorithm}
 \label{sec:BEE}
 
@@ -339,13 +339,13 @@ Onlooker bees witness a number of dances from a variety of employed bees\cite{AB
 p_i = \frac{{fit}_i}{\sum^{SN}_{n=1}{fit}_n}
 \end{equation}
 
-The parameter $p_i$ is the $i$th food source under consideration by the onlooker bee. The ${fit}_i$ parameter represents the value of the cost function and is directly related to the nectar amount of food source $i$. The parameter SN is the maximum amount of food source and hence the maximum employed onlooker bees \cite{ABCCompareStudy}.
+The parameter $p_i$ is the $i$th food source under consideration by the onlooker bee. The ${fit}_i$ parameter represents the value of the cost function and is directly related to the nectar amount of food source $i$. The parameter SN is the maximum amount of food sources and hence the maximum employed onlooker bees \cite{ABCCompareStudy}.
 
 In algorithm~\ref{alg:ABC} the waggle dance can be seen being applied in line 11 where the probability of all the employed bee' solutions are calculated using equation~\ref{eq:beeProbability}. From lines 12 -- 16 the onlooker bees evaluate the solutions of the employed bees based on the probability $p_i$ that was calculated. $P_i$ can be seen as the rating of the waggle dance that was performed by the employed bee.
 
 \subsubsection{Employed and Onlooker Bees}
 \label{sec:employonlookerbees}
-As previously outlined, when recruited onlooker bees reach the advertised food source that is stored in memory, they do not occupy the same food source\cite{ABCCompareStudy,ABCNumericalOptimization}. Instead the bees explore the immediate neighbourhood of the food source that was communicated to them\cite{BeeJobShop,ABCFusionGrid,ABCReconfigDistro}. They seek to find a food source that improves on the previous one\cite{BeeJobShop,ABCNumericalOptimization}. Equation \ref{eq:beeGenerate} is used by the bees to generate new food sources in the neighbourhood of food source $x_i$\cite{ABCCompareStudy,ABCFusionGrid}.
+As previously outlined, when recruited onlooker bees reach the advertised food source that is stored in memory, they do not occupy the same food source\cite{ABCCompareStudy,ABCNumericalOptimization}. Instead the bees explore the immediate neighbourhood of the food source that was communicated to them\cite{BeeJobShop,ABCFusionGrid,ABCReconfigDistro}. They seek to find a food source that improves on the previous one\cite{BeeJobShop,ABCNumericalOptimization}. Equation \ref{eq:beeGenerate} is used by the bees to generate new food sources in the neighbourhood of food source $x_{ij}$\cite{ABCCompareStudy,ABCFusionGrid}.
 \begin{equation}
 \label{eq:beeGenerate}
 v_{ij} = x_{ij} + \phi_{ij}(x_{ij} - x_{kj})
@@ -358,7 +358,7 @@ After a new solution $v_i$ is produced, the bee takes the new and old solutions 
 
 One of the problems with the above approach is that little information about the food source is used in generating a neighbouring food source. Research by Singh \cite{ABCLeafConstrained} proposed a slight variation to generating food source neighbours by using more global information. The author adds a constraint to the algorithm that all neighbouring solutions generated by \emph{employed} bees must be unique. 
 
-When an employed bee generates a neighbour and an identical solution already exists in the system, a \emph{collision} is said to have occurred. A collision is solved by letting the employed bee transition to a scout bee so that a completely random solution can be generated \cite{ABCLeafConstrained}. Scout and onlooker bee generated solutions are not checked if they collide with other solutions in the system since the aim for them is exploring and not exploiting as with employed bees\cite{BeeJobShop,ABCCompareStudy}. 
+When an employed bee generates a neighbour and an identical solution already exists in the system, a \emph{collision} is said to have occurred. A collision is solved by letting the employed bee transition to a scout bee so that a completely random solution can be generated \cite{ABCLeafConstrained}. Solutions generated by scout and onlooker bees are not checked whether they collide with other potential solutions already present in the system\cite{BeeJobShop,ABCCompareStudy}. This is due to the purpose of scout and onlooker bees is to explore the search space by generating solutions and not to exploit the search space\cite{BeeJobShop,ABCCompareStudy}. Exploitation of the search space is the sole purpose of employed bees\cite{BeeJobShop,ABCCompareStudy}. 
 \subsubsection{Scout Bee}
 The artificial bees are modelled on the behaviour of real bees. Thus an employed bee can also abandon certain food sources when it has outlived its usefulness. Abandonment of a food source can occur for the following reasons\cite{BeeJobShop,ABCNumericalOptimization,ABCImageEnhancement}:
 \begin{itemize}
@@ -440,7 +440,7 @@ As yet, no research has been done to apply the \gls{ABC} algorithm to the \gls{F
 \paragraph{Scout bee generation}
 --- When a food source is abandoned a scout bee needs to generate a new food source to take its place. In particular with the \gls{FAP}, the newly generated solution cannot be completely random. The scout bee needs to incorporate knowledge already gained by the colony operating on different food sources, otherwise a completely random solution might not be even nearly lucrative enough for the rest of the bee colony to consider if it contains no knowledge gained by the algorithm.
 \paragraph{Knowledge sharing}
---- As a food source becomes more popular due to its high nectar amount, more onlooker bees will select it. By selecting the food source the onlooker be will then proceed to search in its neighbourhood for better solutions. Therefore the bees are disregarding previously gained knowledge while searching for neighbouring sources on \emph{other} food sources. If a food source represents a complete frequency plan, a previous food source a bee operated on might have had one or more cells that were assigned to their optimal frequencies. Due to the larger majority of the cells not being optimised, these \emph{good} cells are overshadowed. Thus due to the \emph{bad} cells overshadowing the good cells, the food source nectar amount becomes lower. As a consequence of the low nectar amount by the food source the bees abandon the food source and those optimal cells are lost.
+--- As a food source becomes more popular due to its high nectar amount, more onlooker bees will select it. By selecting the food source the onlooker bee will then proceed to search in its neighbourhood for better solutions. Therefore the bees are disregarding previously gained knowledge while searching for neighbouring sources on \emph{other} food sources. If a food source represents a complete frequency plan, a previous food source a bee operated on might have had one or more cells that were assigned to their optimal frequencies. Due to the larger majority of the cells not being optimised, these \emph{good} cells are overshadowed. Thus due to the \emph{bad} cells overshadowing the good cells, the food source nectar amount becomes lower. As a consequence of the low nectar amount by the food source the bees abandon the food source and those optimal cells are lost.
 
 The above obstacles present real relevant challenges that would require new techniques to be developed. As the algorithm has not been applied to a wide variety of problems and taking into account the above obstacles, it is difficult to gauge if the \gls{ABC} is well suited to be applied. The algorithm first needs to be applied to a wider set of problems. Once the algorithm has matured in the research behind it the algorithm can be revisited and applied to the \gls{FAP}.
 
@@ -529,7 +529,7 @@ The variables $\hat{\phi}_i$ and $\hat{\phi}_2$ are vectors containing random sc
 As discussed earlier gbest is the best position the swarm has occupied since the start of the algorithm. The literature defines that there are two defined methods of determining gbest. The most common method used is where gbest is the best position obtained by a particle in the swarm since the start of the algorithm; thus long-term knowledge dictates the best position found which favours exploitation \cite{CompuIntelligenceIntro,FundamentalSwarm}.
 The second method of determining the gbest is the best particle position occupied by any particle in the swarm, in the \emph{current} iteration of the algorithm; thus short-term knowledge dictates the best position found which favours exploration \cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
-Most of the literature has concentrated on the velocity of the particle because it is the main function performing the optimisation. In research done by Ratnaweera \emph{et al.}\cite{PSOSelfHierarch} particle positions in the solutions space are continually monitored. If the particle appears to be stagnant in the search space, the velocity is first updated, and then the particle is reinitialised with a random position. The new position of the particle is then updated with the new velocity, thus knowledge of the discarded particle is retained by using the velocity it had\cite{PSOSelfHierarch}.
+Most of the literature has concentrated on the velocity of the particle because it is the main function performing the optimisation. In research done by Ratnaweera \emph{et al.}\cite{PSOSelfHierarch} particle positions in the solution space are continually monitored. If the particle appears to be stagnant in the search space, the velocity is first updated, and then the particle is reinitialised with a random position. The new position of the particle is then updated with the new velocity, thus knowledge of the discarded particle is retained by using the velocity it had\cite{PSOSelfHierarch}.
 
 In research done by Kalivarapu \emph{et al.} \cite{PSOPheromones} a \gls{PSO} algorithm is developed that seeks to incorporate the pheromone notion of \gls{ACO} algorithms into the velocity updating of particles. The premise of the method is to allow greater sharing of information about promising areas between particles. The algorithm developed by the authors achieved promising results, with it finding solutions faster and also better solutions than other \gls{PSO} algorithms \cite{PSOPheromones}. 
 
@@ -539,7 +539,7 @@ Finally, in the research by Lenin and Monan a \gls{PSO} algorithm is developed t
 \subsubsection{Keeping velocity in check}
 As can be observed in equation \ref{eq:velocityupdate} the new velocity is added to the old velocity. The velocity of particles can get very large, especially for those particles that are far from the pbest and gbest positions. Large velocities are necessary for early exploration. 
 
-Velocities should be kept in check since if a particles velocity becomes too large, it can overstep the search spaces boundaries and produce infeasible solutions \cite{FundamentalSwarm}. Thus the velocity of a particle needs to be bounded to ensure that its movement with in the search space stays within acceptable bounds. One of the means to bound the velocity is to clamp it. Clamping of velocity is achieved by applying equation \ref{eq:velocityclamp}. The equation is applied on the velocity before its position is updated\cite{FundamentalSwarm}.
+Velocities should be kept in check since if a particles velocity becomes too large, it can overstep the search spaces boundaries and produce infeasible solutions \cite{FundamentalSwarm}. Thus the velocity of a particle needs to be bounded to ensure that its movement within the search space stays within acceptable bounds. One of the means to bound the velocity is to clamp it. Clamping of velocity is achieved by applying equation \ref{eq:velocityclamp}. The equation is applied on the velocity before its position is updated\cite{FundamentalSwarm}.
 \begin{align}
 	\hat{v_i}(t+1) &=
 	\begin{cases}
@@ -633,7 +633,7 @@ The \gls{PSO} algorithm starts off by initialising the swarm of particles. Each 
 
 Before the swarm can start moving around in the problem space, it first needs to determine the gbest particle as well as each particle's own pbest position. Therefore as can be observed in line 3, each particle's current fitness $f(\hat{p_i})$ is determined using a problem-specific fitness function. The fitness determines the lucrativeness of the current position a particle occupies in the problem space.
 
-Once the fitness of a particle's position is calculated, the algorithm needs to determine whether the current position of the particle is its pbest since the algorithm started. This comparison can be seen occur in line 5. 
+Once the fitness of a particle's position is calculated, the algorithm needs to determine whether the current position of the particle is its pbest since the algorithm started. This comparison can be seen in line 5.
 If the fitness of the currently held position is indeed better than the previous personal best of the particle, then the new position is stored as the personal best for that particular particle, as can be observed in line 6.
 
 Regardless of whether the personal best of a particle has been updated or not, the algorithm performs another comparison also utilising the calculated fitness of the current position of the particle. The algorithm uses this fitness to also determine whether the current position of the particle is the best in the \emph{entire} swarm, i.e whether it is  the \emph{global} best (gbest). This comparison occurs in line  8.
