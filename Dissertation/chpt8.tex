@@ -5,9 +5,9 @@ The previous chapter presented a discussion on the FAP PSO algorithm . This algo
 
 With the FS-FAP, the main performance measurement is interference and the PSO aims to allocate frequencies in an optimal way to internally produce a frequency plan. On the other hand, the MS-FAP is concerned with the span of frequencies used and the performance measurement is based on the calls dropped. The main purpose of the PSO in the MS-FAP is to minimise the span of frequencies used and keep the number of dropped calls to a minimum.
 
-The previous chapter discussed all the modifications that were made to the standard PSO. The modifications were made to enable to PSO to operate on the FAP. Two velocity methods were developed and in addition to the standard global best selection scheme, two additional global best selection schemes were put forward. The algorithm presented was benchmarked against the Siemens instances of the COST 259 benchmark.
+The previous chapter discussed all the modifications that were made to the standard PSO. The modifications were made to enable PSO to operate on the FAP. Two velocity methods were developed and in addition to the standard global best selection scheme, two additional global best selection schemes were put forward. The algorithm presented was benchmarked against the Siemens instances of the COST 259 benchmark.
 
-This chapter presents the results of applying the FAP PSO algorithm with its different velocity methods as well as different global selection schemes. This is followed by how the different velocity methods affected the PSO performance as well as how the global selection schemes affected the final produces results.
+This chapter presents the results of applying the FAP PSO algorithm with its different velocity methods as well as different global selection schemes. This is followed by how the different velocity methods affected the PSO performance as well as how the global selection schemes affected the final results.
 
 \section{PSO COST 259 Siemens Results}
 The PSO was applied to the benchmarks on the following machine and frameworks:
@@ -19,10 +19,13 @@ The PSO was applied to the benchmarks on the following machine and frameworks:
 \end{itemize}
 The FAP PSO was applied to Siemens1, Siemens2, Siemens3 and Siemens4 of the COST 259 benchmark suite. For more information about the nature of the benchmarks, the reader is directed to section \ref{sec:COST259}.
 
-For each benchmark, 12 results are presented. The following changes were made to the FAP PSO to obtain 12 different results:
+For each benchmark, 12 results are presented. The following changes were made to the FAP PSO to obtain 12 different results one for each variant of the algorithm.
 \begin{itemize}
-\item The two velocity methods that were developed for the PSO were tested.
-\item Each velocity method also used the three different global best mechanisms that were developed.
+\item The two velocity methods that were developed for the PSO are tested.
+\item Each velocity method also used the two different global best mechanisms that were developed.
+\end{itemize}
+The following values were used for the FAPPSO algorithm regardless of the variant being benchmarked. These values were chosen after a series of trail runs showed that these values produce the best results.
+\begin{itemize}
 \item The swarm size was set to 20, 50 and 100.
 \item Inertia was set to 0.5.
 \item Cognitive coefficient was set to 0.4.
