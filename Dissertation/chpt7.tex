@@ -352,6 +352,20 @@ In the above equations, the function $f'$ retrieves the index value for a partic
 
 In the algorithm $v'$ represents the newly calculated velocity and $w$ the inertia. The variables $c^{pbest}$ and $c^{gbest}$ each represent the personal best position and the global best position for a particle. The variable $r$ is a random scalar value where $r \in \mathbb{N}$. Variables $\delta_1$ and $\delta_2$ represent the local and global coefficients.
 
+As with velocity method 1, a more practical example will now be presented using figure~\ref{fig:fapparticlepos} as reference point. The exmaple will aid in understanding the operation of velocity method 2 better. Note that with each variable the subscript 1 indicates that the values for cell 1 are used.
+\begin{align}
+    currPos_1 &= \{47,41,55\}
+    pbestPos_1 &= \{34,37,39\}
+    gbestPos_1 &= \{30, 31,34\}
+    r_1 &= 0.435
+    r_2 &= 0.288
+    newVelocity_{11} &= 0.5 \times r_1 \times (34 - 47) + 0.4 \times r_2 \times (34 - 30)
+    newVelocity_{12} &= 0.5 \times r_1 \times (37 - 41) + 0.4 \times r_2 \times (37 - 31)
+    newVelocity_{13} &= 0.5 \times r_1 \times (39 - 50) + 0.4 \times r_2 \times (39 - 34)
+    w &= 0.5
+    newVelocity &= |0.5 \times newVelocity_1|
+    currPos_1 &= currPos_1 + newVelocity_1
+\end{align}
 Velocity method 2 differs from method 1 due to the manner in which it applies the velocity equation. Velocity method 1 applies the velocity equation in stages. Each stage is applied to the entire position, i.e. frequency plan before applying the next stage. The algorithm applies the standard velocity equation~\ref{eq:velocityupdate} formulated in chapter~\ref{chpt:swarm} as is to the raw indices.
 
 An important note, is that if one analyses velocity method 1, the switch to using index values instead of raw frequencies does not affect the method's operation. Since the method only requires explicit knowledge on the data to operate on in the BoundValue function, the algorithm is still able to calculate velocity. 
