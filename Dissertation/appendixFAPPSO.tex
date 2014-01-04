@@ -1,0 +1,26 @@
+\appendix
+\label{chpt:apxFAPPSO}
+\chapter{FAP PSO Code}
+\section{Introduction}
+In this chapter the C# code for the FAP PSO algorithm is presented. Note that only the relevant code for the PSO algorithm is presented and not the code that parses the benchmark scenario files.
+\section{Code}
+\subsection{PSO Algorithm Factory}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/FAPPSO/FAPPSOFactory.cs}
+\subsection{FAP PSO Algorithm}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/FAPPSO/FAPPSOAlgorithm.cs}
+\subsection{Frequency Position Generator}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/FAPPSO/FrequencyPositionGenerator.cs}
+\subsection{Index Based Frequency Position Generator}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/FAPPSO/FrequencyIndexPositionGenerator.cs}
+\subsection{Standard FAP Cost Function}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/FAPPSO/FAPCostFunction.cs}
+\subsection{FAP Cost Function with Index Based Frequencies}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/FAPPSO/FAPIndexCostFunction.cs}
+\subsection{Velocity Method 1: Per TRX}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/FAPPSO/Functions/ParticlePerTrxFunction.cs}
+\subsection{Velocity Method 1: Per Index Based TRX}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/FAPPSO/Functions/PerTRXChannelIndexFunction.cs}
+\subsection{Global Best Builder}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/FAPPSO/GBestBuilder.cs}
+\subsection{FAP PSO Algorithm}
+\inputminted[fontsize=\tiny]{csharp}{../Implementation/PSOFAP/PSOFAPConsole/}
