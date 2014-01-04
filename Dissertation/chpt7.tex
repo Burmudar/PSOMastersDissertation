@@ -131,6 +131,16 @@ A frequency plan is a plan that consists of a series of different cells that are
 \item Each installed transceiver has a single number allocated to it called the frequency. This frequency is used for communication.
 \end{enumerate}
 
+As discussed previously, a position is a frequency plan and each particle has a current position and a best position. A visual depiction of a particle position is presented in figure~\ref{fig:fapparticlepos}. The global best particle is also depicted in the figure. When providing examples on how any of the following velocity methods operate, figure~\ref{fig:fapparticlepos} will be used as reference point.
+\begin{figure}[ht]
+	\centering
+	\setlength \fboxsep{0pt}
+	\setlength \fboxrule{0.5pt}
+	\fbox{\includegraphics[width=4.8in, height=3.5in]{./pictures/FAP_Particle_Positions.pdf}}
+	\caption{FAP PSO Particle Position and Global Best Position}
+	\label{fig:fapparticlepos}
+\end{figure}
+
 Now that a frequency plan has been broken up into its constructs, the question of how to move one frequency plan to another can be rephrased. How does one move a frequency allocated to a \emph{transceiver} in a particular \emph{cell} of one frequency plan to another frequency of the \emph{same} transceiver and cell in another \emph{different} plan? An important realisation needs to be noted here. In the \gls{PSO} at any one time the algorithm is only considering two positions and for the \gls{FAP} the two positions are frequency plans. Both plans are \emph{identical} except for the specific frequencies that transceivers use. Thus a cell that exists in the one plan, also exists in another plan. Both the cells have exactly the same number of transceivers installed; only the frequencies each individual transceiver uses for communication differ.
 
 Using this realisation, the conclusion can be made that the velocity equation can only work with the frequencies assigned to transceivers. Therefore a potential velocity equation mechanism needs to operate on the finest granularity of a frequency plan, i.e. the frequencies.
@@ -194,6 +204,40 @@ Velocity method 1 is depicted in algorithm~\ref{alg:velocitymethod1}. The algori
 	\State SanatizePosition(currentParticle)
 	\end{algorithmic}
 \end{algorithm}
+
+To better understand how velocity method 1 operates. An example will now be presented using figure~\ref{fig:fapparticlepos} as the example position and example global best. Note that for the example presented, only $cell_1$ is considered for the current, personal and global best position. The example is verbose to better illustrate the workings of the method.
+\begin{align}
+    pbest_1 &= \{34,37,39\} \nonumber \\
+    gbest_1 &= \{30,31,34\} \nonumber \\ \nonumber \\
+    cell_1 &= \{47,41,55\} \nonumber \\
+    pbestSubtractResult_{11} &= cell_{11} - pbest_{11} \nonumber \\
+                        &= 47 - 34 \nonumber \\
+    gbestSubtractResult_{11} &= cell_{11} - pbest_{11} \nonumber \\
+                        &= 47 - 30 \nonumber \\
+    pbestSubtractResult_{12} &= cell_{12} - pbest_{12} \nonumber \\
+                        &= 41 - 37 \nonumber \\
+    gbestSubtractResult_{12} &= cell_{12} - pbest_{12} \nonumber \\
+                        &= 41 - 31 \nonumber \\
+    pbestSubtractResult_{13} &= cell_{13} - pbest_{13} \nonumber \\
+                        &= 55 - 39 \nonumber \\
+    gbestSubtractResult_{13} &= cell_{13} - pbest_{13} \nonumber \\
+                        &= 55 - 34 \nonumber \\
+    r = 0.725 \nonumber \\
+    pbestSubstractResult = \{13,4,16\} \nonumber \\
+    a &= 0.5 \times pbestSubtractresult \times r \nonumber \\
+    &= \{4, 1, 5\} \nonumber \\
+    gbestSubtractResult = \{17,10,21\} \nonumber \\
+    r = 0.654 \nonumber \\
+    b &= 0.4 \times gBestSubtractResult \times r \nonumber \\
+    &= \{4,2,5\} \nonumber \\
+    abAdditionResult &= \{4,1,5\} + \{4,2,5\}  \nonumber \\
+                    &= \{8,3,10\} \nonumber \\
+    newVelocity &= abAdditionResult \times 0.5 \nonumber \\
+    &= \{4,1,5\} \nonumber \\
+    cell_1= cell_1 + newVelocity \nonumber \\
+    &= \{47,41,55\} + \{\4,1,5\} \nonumber \\
+    &= \{51, 42, 60\} \nonumber \\
+\end{align}
 
 In the following discussion the \emph{fromPosition} is the position of the currentParticle. The \emph{toPosition} is the position the currentParticle must move towards. The toPosition in this discussion is the position of the \emph{globalBestParticle}.
 The algorithm first obtains the exact same transceiver in the toPosition frequency plan. This operation is quick, as the two plans are identical except for the frequencies assigned to transceivers for each cell. Thus the algorithm is able to refer to the cell and specific transceiver in the toPosition plan by the same index it utilises to access the cell and transceiver in the fromPosition.
