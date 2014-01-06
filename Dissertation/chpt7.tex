@@ -222,19 +222,19 @@ To better understand how velocity method 1 operates. An example will now be pres
                         &= 55 - 39 \nonumber \\
     gbestSubtractResult_{13} &= cell_{13} - pbest_{13} \nonumber \\
                         &= 55 - 34 \nonumber \\
-    r = 0.725 \nonumber \\
-    pbestSubstractResult = \{13,4,16\} \nonumber \\
+    r &= 0.725 \nonumber \\
+    pbestSubstractResult &= \{13,4,16\} \nonumber \\
     a &= 0.5 \times pbestSubtractresult \times r \nonumber \\
     &= \{4, 1, 5\} \nonumber \\
-    gbestSubtractResult = \{17,10,21\} \nonumber \\
-    r = 0.654 \nonumber \\
+    gbestSubtractResult &= \{17,10,21\} \nonumber \\
+    r &= 0.654 \nonumber \\
     b &= 0.4 \times gBestSubtractResult \times r \nonumber \\
     &= \{4,2,5\} \nonumber \\
     abAdditionResult &= \{4,1,5\} + \{4,2,5\}  \nonumber \\
                     &= \{8,3,10\} \nonumber \\
     newVelocity &= abAdditionResult \times 0.5 \nonumber \\
     &= \{4,1,5\} \nonumber \\
-    cell_1= cell_1 + newVelocity \nonumber \\
+    cell_1 &= cell_1 + newVelocity \nonumber \\
     &= \{47,41,55\} + \{4,1,5\} \nonumber \\
     &= \{51, 42, 60\} \nonumber \\
 \end{align}
@@ -354,17 +354,17 @@ In the algorithm $v'$ represents the newly calculated velocity and $w$ the inert
 
 As with velocity method 1, a more practical example will now be presented using figure~\ref{fig:fapparticlepos} as reference point. The exmaple will aid in understanding the operation of velocity method 2 better. Note that with each variable the subscript 1 indicates that the values for cell 1 are used.
 \begin{align}
-    currPos_1 &= \{47,41,55\}
-    pbestPos_1 &= \{34,37,39\}
-    gbestPos_1 &= \{30, 31,34\}
-    r_1 &= 0.435
-    r_2 &= 0.288
-    newVelocity_{11} &= 0.5 \times r_1 \times (34 - 47) + 0.4 \times r_2 \times (34 - 30)
-    newVelocity_{12} &= 0.5 \times r_1 \times (37 - 41) + 0.4 \times r_2 \times (37 - 31)
-    newVelocity_{13} &= 0.5 \times r_1 \times (39 - 50) + 0.4 \times r_2 \times (39 - 34)
-    w &= 0.5
-    newVelocity &= |0.5 \times newVelocity_1|
-    currPos_1 &= currPos_1 + newVelocity_1
+    currPos_1 &= \{47,41,55\}\nonumber \\
+    pbestPos_1 &= \{34,37,39\}\nonumber \\
+    gbestPos_1 &= \{30, 31,34\}\nonumber \\
+    r_1 &= 0.435\nonumber \\
+    r_2 &= 0.288\nonumber \\
+    newVelocity_{11} &= 0.5 \times r_1 \times (34 - 47) + 0.4 \times r_2 \times (34 - 30)\nonumber \\
+    newVelocity_{12} &= 0.5 \times r_1 \times (37 - 41) + 0.4 \times r_2 \times (37 - 31)\nonumber \\
+    newVelocity_{13} &= 0.5 \times r_1 \times (39 - 50) + 0.4 \times r_2 \times (39 - 34)\nonumber \\
+    w &= 0.5\nonumber \\
+    newVelocity &= |0.5 \times newVelocity_1|\nonumber \\
+    currPos_1 &= currPos_1 + newVelocity_1\nonumber \\
 \end{align}
 Velocity method 2 differs from method 1 due to the manner in which it applies the velocity equation. Velocity method 1 applies the velocity equation in stages. Each stage is applied to the entire position, i.e. frequency plan before applying the next stage. The algorithm applies the standard velocity equation~\ref{eq:velocityupdate} formulated in chapter~\ref{chpt:swarm} as is to the raw indices.
 
