@@ -208,7 +208,7 @@ Velocity method 1 is depicted in algorithm~\ref{alg:velocitymethod1}. The algori
 To better understand how velocity method 1 operates. An example will now be presented using figure~\ref{fig:fapparticlepos} as the example position and example global best. Note that for the example presented, only $cell_1$ is considered for the current, personal and global best position. The example is verbose to better illustrate the workings of the method.
 \begin{align}
     pbest_1 &= \{34,37,39\} \nonumber \\
-    gbest_1 &= \{30,31,34\} \nonumber \\ \nonumber \\
+    gbest_1 &= \{30,31,34\} \nonumber \\
     cell_1 &= \{47,41,55\} \nonumber \\
     pbestSubtractResult_{11} &= cell_{11} - pbest_{11} \nonumber \\
                         &= 47 - 34 \nonumber \\
@@ -235,7 +235,7 @@ To better understand how velocity method 1 operates. An example will now be pres
     newVelocity &= abAdditionResult \times 0.5 \nonumber \\
     &= \{4,1,5\} \nonumber \\
     cell_1= cell_1 + newVelocity \nonumber \\
-    &= \{47,41,55\} + \{\4,1,5\} \nonumber \\
+    &= \{47,41,55\} + \{4,1,5\} \nonumber \\
     &= \{51, 42, 60\} \nonumber \\
 \end{align}
 
