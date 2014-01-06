@@ -131,12 +131,12 @@ A frequency plan is a plan that consists of a series of different cells that are
 \item Each installed transceiver has a single number allocated to it called the frequency. This frequency is used for communication.
 \end{enumerate}
 
-As discussed previously, a position is a frequency plan and each particle has a current position and a best position. A visual depiction of a particle position is presented in figure~\ref{fig:fapparticlepos}. The global best particle is also depicted in the figure. When providing examples on how any of the following velocity methods operate, figure~\ref{fig:fapparticlepos} will be used as reference point.
+As discussed previously, a position is a frequency plan and each particle has a current position and a best position. A visual depiction of a particle position is presented in figure~\ref{fig:fapparticlepos}. The global best particle is also depicted in the figure.In the figure, position 1 represents a particle. The current compartment in the particle represents the current position and hence a frequency plan. The best compartment represents the best position found and hence the best frequency plan found thus far by the particle. When providing examples on how any of the following velocity methods operate, figure~\ref{fig:fapparticlepos} will be used as reference point.
 \begin{figure}[ht]
 	\centering
 	\setlength \fboxsep{0pt}
 	\setlength \fboxrule{0.5pt}
-	\fbox{\includegraphics[width=4.8in, height=3.5in]{./pictures/FAP_Particle_Positions.pdf}}
+	\fbox{\includegraphics[width=4.8in, height=3.00in]{./pictures/FAP_Particle_Positions.pdf}}
 	\caption{FAP PSO Particle Position and Global Best Position}
 	\label{fig:fapparticlepos}
 \end{figure}
@@ -237,7 +237,7 @@ After the subtraction, a position is returned which is the result of subtracting
 
 In the multiplication stage of the velocity update operation, the local and global coefficients defined for the \gls{PSO} are multiplied into a position, i.e. frequency plan. The coefficient are scalar values and therefore a different method needs to be used to multiply a scalar value with a frequency plan. Equation~\ref{eq:arrayScalar} is used to multiply scalar values with frequency plans. Multiplying a frequency plan results in another frequency plan. Scalar values need to be multiplied in for the following cases in the velocity update.
 \begin{itemize}
-\item The inertia case: $0.5 * v(t+1)$, where 0.5 is the inertia value and $v(t+1)$ is velocity that has already been calculated for a particular particle $t$. Note, a velocity that has been calculated is still a frequency plan. In the algorithm, inertia is applied in line 12.
+\item The inertia case: $w \times v(t+1)$, where $w$ is the inertia value and $v(t+1)$ is velocity that has already been calculated for a particular particle $t$. Note, a velocity that has been calculated is still a frequency plan. In the algorithm, inertia is applied in line 12.
 \item Standard velocity calculation randomisation case: As can be observed from the velocity equation~\ref{eq:velocityupdate} and also from the multiplication bullet point on page~\pageref{lst:velocitybreakup}, the equation requires that a position be multiplied by a coefficient $c_1$ or $c_2$ and then a random value $\phi_1$ or $\phi_2$. 
 \end{itemize}
 
@@ -479,7 +479,7 @@ Initially the \gls{FAP} \gls{PSO} algorithm calculated the velocity of a particl
 Tabu lists are there to prevent cycling of movements to the same position. Thus to stop the particle from moving to a position that was previously occupied, an extra check has to occur before the particle can occupy a new position. As can be seen in the two developed velocity methods in algorithms~\ref{alg:velocitymethod1} and \ref{alg:velocitymethod2} the last step that occurs in both algorithms is that the SanitizePosition method is called.
 
 
-The SanitizePosition method is listed in algorithm~\ref{alg:sanitizeposition}. Within this algorithm a particle's future position is first checked and sanitised before the particle is allowed to move to that position. The main purpose of this algorithm is to check if the future position has been occupied previously and hence is in the tabu list.
+The SanitizePosition method is listed in algorithm~\ref{alg:sanitizeposition}. Within this algorithm a particle's future position is first checked and sanitised before the particle is allowed to move to that position. The main purpose of this algorithm is to check if the future position has been occupied previously and hence is in the tabu list. 
 \begin{algorithm}[H]
 \caption{SanitizePosition}
 \label{alg:sanitizeposition}
@@ -502,6 +502,7 @@ In the \gls{FAP} \gls{PSO} the tabu list check works slightly differently from w
 \begin{algorithmic}[1]
 	\Require cell
 	\Require tabuList
+    \State EnsureUniqueFrequenciesWithinCell(cell)
 	\For{Each $trx_i$ in cell}
 			\While{$trx_i$ exists in TabuList}
 				\State $trx_i = $ Generate random frequency
@@ -513,11 +514,13 @@ In the \gls{FAP} \gls{PSO} the tabu list check works slightly differently from w
 \end{algorithmic}
 \end{algorithm}
 
-As can be observed in algorithm~\ref{alg:resolvecollision}, when a frequency value is found to exist in the tabu list a collision is said to occur. In the \gls{FAP} \gls{PSO} a collision means that the specific frequency value that has been assigned to a transceiver for a particular cell was found in the tabu list. Once a collision occurs, the algorithm tries to generate a new random frequency that can be assigned to the transceiver as can be seen to occur within the while-loop in lines 2 -- 3.
+As can be observed in algorithm~\ref{alg:resolvecollision}, when a frequency value is found to exist either in the tabu list or assigned to a different transceiver within the same cell,  a collision is said to occur. In the case where the same frequency is assigned to two different transceivers within the same cell, the method randomly assigned a new frequency to the offending transceiver. The randomly assigned frequency is also subject to check whether it is Tabu.  In the \gls{FAP} \gls{PSO} a collision means that the specific frequency value that has been assigned to a transceiver for a particular cell was found in the tabu list. Once a collision occurs, the algorithm tries to generate a new random frequency that can be assigned to the transceiver as can be seen to occur within the while-loop in lines 3 -- 4.
 
 The algorithm generates a new random frequency value and then checks to see if the generated value collides with the tabu list. If collision still occurs, the algorithm will generate another random frequency. As long as a collision occurs the algorithm will continually generate a new random frequency until it has attempted 20 random frequencies with no frequency colliding. 
 
 After 20 attempts the algorithm just accepts the last generated frequency as the new frequency. The maximum number of 20  attempts was selected through testing and can be increased at the expense of more computational time. 
+
+In addition to checking if a frequency is tabu, resolve collisions also handles the case where if a tranceiver within a cell has the same frequency as a different transceiver within the same cell. This process occurs on line 
 
 The resolution of collisions can be seen as a mechanism to increase the exploration of the \gls{PSO} algorithm as well as to increase the diversity. By making certain frequency assignments to transceivers tabu the algorithm is forced to try new frequency assignments and thus explore more of the problem space.
 

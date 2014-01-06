@@ -17,6 +17,7 @@ namespace PSOFAPConsole.FAP
             {
                 ResolveLBCCollisions(freqHandler);
             }
+	    EnsureUniqueFrequenciesWithinCell(freqHandler);
             if (freqHandler is FrequencyHandlerWithTabu)
             {
                 FrequencyHandlerWithTabu frequencyHandler = freqHandler as FrequencyHandlerWithTabu;
@@ -33,6 +34,22 @@ namespace PSOFAPConsole.FAP
 
             
         }
+
+	private void EnsureUniqueFrequenciesWithinCell(FrequencyHandler freqHandler)
+	{
+	    Random r = new Random();
+	    for (int i = 0; i < freqHandler.Length; i++)
+            {
+                if (freqHandler.Count(f => f == freqHandler[i]) > 1)
+                {
+                    int newFrequency = r.Random(0,Channels.Length);
+		    while (frequencyHandler.Contains(newFrequency) {
+			newFrequecy = r.Random(0,Channels.Length);
+		    }
+		    freqHandler[i] = new TRX(newFrequency);
+                }
+            }
+	}
 
         private bool hasLBC(FrequencyHandler freqHandler)
         {
@@ -84,6 +101,9 @@ namespace PSOFAPConsole.FAP
                 if (collisionIndex > -1)
                 {
                     int newFrequency = RandomizeChannelIndex(frequencies[collisionIndex], frequencyHandler.TabuList);
+		    while (frequencyHandler.Contains(newFrequency) {
+			newFrequecy = RandomizeChannelIndex(frequencies[collisionIndex], frequencyHandler.TabuList);
+		    }
                     frequencies[collisionIndex] = new TRX(newFrequency);
                 }
             }
