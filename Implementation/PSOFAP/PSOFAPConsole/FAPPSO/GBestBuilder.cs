@@ -45,10 +45,6 @@ namespace PSOFAPConsole.FAPPSO
 
         }
 
-
-
-
-
         public string GetConstructionMethodName()
         {
             return BuildGBest.Method.Name;
