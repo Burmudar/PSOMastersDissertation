@@ -115,6 +115,7 @@
     <Compile Include="PSO\Particle.cs" />
     <Compile Include="PSO\ParticleBest.cs" />
     <Compile Include="PSO\Interfaces\PSOAlgorithm.cs" />
+    <Compile Include="FAPPSO\StatsWriter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="FAP\Problems\siemens1" />

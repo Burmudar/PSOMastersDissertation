@@ -51,7 +51,6 @@ namespace PSOFAPConsole.FAPPSO
                         addTrxStats(trxInf);
                         interference += trxInf;
                     }
-                    //cell.Interference += interference;
                 }
                 totalInterference += interference;
 
@@ -65,11 +64,22 @@ namespace PSOFAPConsole.FAPPSO
 
         public static double CalculateStdDev(List<double> values)
         {
-            double avg = values.Average();
-            double sumOfDifferences = values.Select(val => (val - avg) * (val - avg)).Sum();
+			double sumOfDifferences = CalculateSumOfDifferences (values);
             return Math.Sqrt(sumOfDifferences / values.Count); 
 
         }
+
+		public static double CalculateSumOfDifferences(List<double> values)
+		{
+			double avg = values.Average();
+			double sumOfDifferences = values.Select(val => (val - avg) * (val - avg)).Sum();
+			return sumOfDifferences;
+		}
+
+		public static double CalculateVariance(List<double> values)
+		{
+			return CalculateSumOfDifferences (values) / values.Count;
+		}
 
         private void addAdjChannelStats(double adjChInf)
         {
