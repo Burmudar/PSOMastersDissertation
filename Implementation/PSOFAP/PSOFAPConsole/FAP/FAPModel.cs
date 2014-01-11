@@ -38,7 +38,8 @@ namespace PSOFAPConsole.FAP
 
 
         /// <summary>
-        /// Parses the problem file specified by the problem path. From this file, the Format is created, the GeneralInformation, the Cells and lastly the InterferenceMatrix
+        /// Parses the problem file specified by the problem path. From this file, the Format is created, 
+		/// the GeneralInformation, the Cells and lastly the InterferenceMatrix
         /// </summary>
         public void createModel()
         {
@@ -98,7 +99,8 @@ namespace PSOFAPConsole.FAP
                             }
                             else
                             {
-                                throw new InvalidFAPFileException("The current problem file specified in the problem path isn't of a scenario type");
+                                throw new InvalidFAPFileException("The current problem file specified in the problem " +
+                                	"path isn't of a scenario type");
                             }
                             
                         }

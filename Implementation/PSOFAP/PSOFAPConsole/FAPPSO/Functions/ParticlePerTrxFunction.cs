@@ -20,7 +20,8 @@ namespace PSOFAPConsole.FAPPSO
         private int coSite;
         private int coCell;
 
-        public ParticlePerTrxFunction(FAPModel model,int lowerBound, int upperBound, double localCoef, double globalCoef,AbstractCollisionResolver collisionResolver)
+        public ParticlePerTrxFunction(FAPModel model,int lowerBound, int upperBound, double localCoef, 
+			double globalCoef,AbstractCollisionResolver collisionResolver)
         {
             this.upperBound = upperBound;
             this.lowerBound = lowerBound;

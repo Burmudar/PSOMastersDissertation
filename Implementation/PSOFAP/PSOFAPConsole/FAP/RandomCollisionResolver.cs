@@ -101,9 +101,9 @@ namespace PSOFAPConsole.FAP
                 if (collisionIndex > -1)
                 {
                     int newFrequency = RandomizeChannelIndex(frequencies[collisionIndex], frequencyHandler.TabuList);
-		    while (frequencyHandler.Contains(newFrequency) {
-			newFrequecy = RandomizeChannelIndex(frequencies[collisionIndex], frequencyHandler.TabuList);
-		    }
+					while (frequencyHandler.Contains(newFrequency)){
+						newFrequency = RandomizeChannelIndex(frequencies[collisionIndex], frequencyHandler.TabuList);
+		    		}
                     frequencies[collisionIndex] = new TRX(newFrequency);
                 }
             }

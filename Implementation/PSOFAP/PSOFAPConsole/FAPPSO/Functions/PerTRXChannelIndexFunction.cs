@@ -19,7 +19,8 @@ namespace PSOFAPConsole.FAPPSO.Functions
         private int coSite;
         private int coCell;
 
-        public PerTRXChannelIndexFunction(FAPModel model,double localCoefficient, double globalCoefficient,AbstractCollisionResolver collisionResolver)
+        public PerTRXChannelIndexFunction(FAPModel model,double localCoefficient, double globalCoefficient,
+			AbstractCollisionResolver collisionResolver)
         {
             CollisionResolver = collisionResolver;
             Channels = model.Channels;

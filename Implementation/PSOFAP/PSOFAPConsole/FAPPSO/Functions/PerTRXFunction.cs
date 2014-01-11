@@ -19,7 +19,8 @@ namespace PSOFAPConsole.FAPPSO
         private int coSite;
         private int coCell;
 
-        public PerTRXFunction(FAPModel model, double localCoefficient, double globalCoefficient, AbstractCollisionResolver collisionResolver)
+        public PerTRXFunction(FAPModel model, double localCoefficient, double globalCoefficient, 
+			AbstractCollisionResolver collisionResolver)
         {
             Spectrum = model.GeneralInformation.Spectrum;
             GBC = model.GeneralInformation.GloballyBlockedChannels;
@@ -36,7 +37,8 @@ namespace PSOFAPConsole.FAPPSO
         {
             for (int i = 0; i < to.Length; i++)
             {
-                FrequencyHandler newFrequencies = MoveTowardsChannelArray(from[i].FrequencyHandler, to[i].FrequencyHandler);
+                FrequencyHandler newFrequencies = MoveTowardsChannelArray(from[i].FrequencyHandler, 
+					to[i].FrequencyHandler);
                 CollisionResolver.ResolveCollisions(newFrequencies);
                 newFrequencies.MigrateFrequenciesToParent();
             }
@@ -58,7 +60,8 @@ namespace PSOFAPConsole.FAPPSO
             int newChannel = 0;
             while (true)
             {
-                newChannel = Math.Abs((int)(((LocalCoefficient * random.Next() * from) + (GlobalCoefficient * random.Next() * to)) % Spectrum[1]));
+                newChannel = Math.Abs((int)(((LocalCoefficient * random.Next() * from) + 
+					(GlobalCoefficient * random.Next() * to)) % Spectrum[1]));
                 if (NotInGBC(newChannel))
                     break;
             }
