@@ -5,6 +5,7 @@ import (
 	"encoding/csv"
 	"fmt"
 	"log"
+	"math"
 	"os"
 	"path/filepath"
 	"strconv"
@@ -14,6 +15,7 @@ import (
 const (
 	BENCHMARK_PREFIX = "Benchmark-Bench-"
 	KEY_SEP          = "-"
+	S4_100_VARIANT_1 = "siemens4-ParticlePerTrxFunction-BuildGBestFromCells-FAPIndexCostFunction-100"
 )
 
 type benchmark struct {
@@ -45,6 +47,15 @@ func trimAndToFloat(val string) float32 {
 		log.Fatal(error)
 	}
 	return float32(fVal)
+}
+
+func (b *benchmark) CopyNamesFrom(other *benchmark) {
+	b.File = other.File
+	b.Name = other.Name
+	b.Population = other.Population
+	b.MoveFuncName = other.MoveFuncName
+	b.BuildStratName = other.BuildStratName
+	b.CostFuncName = other.CostFuncName
 }
 
 func (b *benchmark) LoadLastValues() {
@@ -105,7 +116,7 @@ func NewBenchmark(file *string) *benchmark {
 	} else {
 		b.Population = popNum
 	}
-	fmt.Println(rest)
+	b.LoadLastValues()
 	return b
 }
 
@@ -134,20 +145,48 @@ func GetCSVFiles(dirPath, prefix string) []string {
 	return csvFiles
 }
 
+func zip(elements []*benchmark) *benchmark {
+	b := new(benchmark)
+	b.CopyNamesFrom(elements[0])
+	b.Min = elements[0].Min
+	var sum float32 = 0.0
+	for _, el := range elements {
+		sum = sum + el.Min
+		if el.Min <= b.Min {
+			b.CopyNamesFrom(el)
+			b.Min = el.Min
+		}
+	}
+	b.Avg = sum / float32(len(elements))
+	var sumOfDiff float32 = 0.0
+	for _, el := range elements {
+		sumOfDiff = sumOfDiff + (el.Min-b.Avg)*(el.Min-b.Avg)
+		fmt.Println(sumOfDiff)
+	}
+	b.StdDev = float32(math.Sqrt(float64(sumOfDiff)))
+	b.Variance = sumOfDiff / float32(len(elements))
+	b.SumOfDiff = sumOfDiff
+	return b
+}
+
 func main() {
+	var benchBuckets map[string][]*benchmark = make(map[string][]*benchmark)
 	for _, f := range GetCSVFiles("data/", "Benchmark-Bench") {
 		b := NewBenchmark(&f)
-		fmt.Println(b.Name)
-		fmt.Println(b.MoveFuncName)
-		fmt.Println(b.BuildStratName)
-		fmt.Println(b.CostFuncName)
-		fmt.Println(b.Population)
-		b.LoadLastValues()
-		fmt.Println(b.StdDev)
-		fmt.Println(b.Avg)
-		fmt.Println(b.Min)
-		fmt.Println(b.Max)
-		fmt.Println(b.Variance)
-		fmt.Println(b.SumOfDiff)
+		bucket, ok := benchBuckets[b.Key()]
+		if ok == false {
+			bucket = make([]*benchmark, 1)
+			bucket[0] = b
+			benchBuckets[b.Key()] = bucket
+		} else {
+			bucket = append(bucket, b)
+		}
 	}
+	b := zip(benchBuckets[S4_100_VARIANT_1])
+	fmt.Println(b.Name)
+	fmt.Println(b.MoveFuncName)
+	fmt.Println(b.CostFuncName)
+	fmt.Println(b.File)
+	fmt.Println(b.Min)
+	fmt.Println(b.StdDev)
 }
