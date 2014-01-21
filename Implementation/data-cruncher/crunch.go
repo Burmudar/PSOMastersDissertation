@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"encoding/csv"
+	"errors"
 	"fmt"
 	"log"
 	"math"
@@ -15,7 +16,6 @@ import (
 const (
 	BENCHMARK_PREFIX = "Benchmark-Bench-"
 	KEY_SEP          = "-"
-	S4_100_VARIANT_1 = "siemens4-ParticlePerTrxFunction-BuildGBestFromCells-FAPIndexCostFunction-100"
 )
 
 type benchmark struct {
@@ -58,7 +58,7 @@ func (b *benchmark) CopyNamesFrom(other *benchmark) {
 	b.CostFuncName = other.CostFuncName
 }
 
-func (b *benchmark) LoadLastValues() {
+func (b *benchmark) LoadLastValues() error {
 	fileReader := openFile(b.File)
 	reader := csv.NewReader(fileReader)
 	reader.FieldsPerRecord = 2
@@ -66,12 +66,16 @@ func (b *benchmark) LoadLastValues() {
 	if error != nil {
 		log.Fatal(error)
 	}
+	if len(records) < 54 {
+		return errors.New("Benchmark is incomplete - " + b.File)
+	}
 	b.StdDev = trimAndToFloat(records[51][0])    //std dev
 	b.Avg = trimAndToFloat(records[51][1])       //avg
 	b.Min = trimAndToFloat(records[52][0])       //min
 	b.Max = trimAndToFloat(records[52][1])       //max
 	b.Variance = trimAndToFloat(records[53][0])  //variance
 	b.SumOfDiff = trimAndToFloat(records[53][1]) //SumOfDiff
+	return nil
 }
 
 func stripDir(fullname string) (dir, rest string) {
@@ -99,11 +103,10 @@ func stripValueBetweenBrackets(portion, openBracket, closeBracket string) (name,
 	return name, rest[closeBracketPos+1 : len(rest)]
 }
 
-func NewBenchmark(file *string) *benchmark {
+func NewBenchmark(file *string) (*benchmark, error) {
 	b := new(benchmark)
 	b.File = *file
 	_, filename := stripDir(b.File)
-	fmt.Println(filename)
 	name, rest := stripNameForBenchmark(filename)
 	b.Name = name
 	b.MoveFuncName, rest = stripValueBetweenBrackets(rest, "(", ")")
@@ -116,8 +119,8 @@ func NewBenchmark(file *string) *benchmark {
 	} else {
 		b.Population = popNum
 	}
-	b.LoadLastValues()
-	return b
+	error = b.LoadLastValues()
+	return b, error
 }
 
 func openFile(filename string) *bufio.Reader {
@@ -161,7 +164,6 @@ func zip(elements []*benchmark) *benchmark {
 	var sumOfDiff float32 = 0.0
 	for _, el := range elements {
 		sumOfDiff = sumOfDiff + (el.Min-b.Avg)*(el.Min-b.Avg)
-		fmt.Println(sumOfDiff)
 	}
 	b.StdDev = float32(math.Sqrt(float64(sumOfDiff)))
 	b.Variance = sumOfDiff / float32(len(elements))
@@ -172,21 +174,32 @@ func zip(elements []*benchmark) *benchmark {
 func main() {
 	var benchBuckets map[string][]*benchmark = make(map[string][]*benchmark)
 	for _, f := range GetCSVFiles("data/", "Benchmark-Bench") {
-		b := NewBenchmark(&f)
+		b, error := NewBenchmark(&f)
+		if error != nil {
+			log.Print(error)
+			continue
+		}
 		bucket, ok := benchBuckets[b.Key()]
-		if ok == false {
+		if ok {
+			bucket = append(bucket, b)
+			benchBuckets[b.Key()] = bucket
+		} else {
 			bucket = make([]*benchmark, 1)
 			bucket[0] = b
 			benchBuckets[b.Key()] = bucket
-		} else {
-			bucket = append(bucket, b)
 		}
 	}
-	b := zip(benchBuckets[S4_100_VARIANT_1])
-	fmt.Println(b.Name)
-	fmt.Println(b.MoveFuncName)
-	fmt.Println(b.CostFuncName)
-	fmt.Println(b.File)
-	fmt.Println(b.Min)
-	fmt.Println(b.StdDev)
+	for key, value := range benchBuckets {
+		b := zip(value)
+		fmt.Printf("================================================\n")
+		fmt.Printf("Key: %v\n", key)
+		fmt.Printf("Name: %v\n", b.Name)
+		fmt.Printf("Move Function Name: %v\n", b.MoveFuncName)
+		fmt.Printf("Cost Function Name: %v\n", b.CostFuncName)
+		fmt.Printf("File: %v\n", b.File)
+		fmt.Printf("Min: %v\n", b.Min)
+		fmt.Printf("Standard Deviation: %v\n", b.StdDev)
+		fmt.Printf("Variance: %v\n", b.Variance)
+		fmt.Println("================================================\n")
+	}
 }
