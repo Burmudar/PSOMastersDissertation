@@ -187,24 +187,25 @@ The authors developed a technique called \gls{HMT}. \Gls{HMT} first monitors an 
 The \gls{HMT} then uses the identified characteristics to add \emph{additional} constraints to the problem\cite{TabuMontemanniSmith}. By adding constraints, the search space is reduced. However, by reducing the search space, other near-optimal solutions, which might be far better are excluded\cite{TabuMontemanniSmith}. It is for this reason that that Montemanni and Smith opted not to add the constraints permanently.
 
 Montemanni and Smith applied their \gls{TS} algorithm together with \gls{HMT} to the \gls{COST} 259 family of benchmarks, specifically the Siemens1, Siemens2, Siemens3 and Siemens4 problems. The results are presented in table~\ref{TSCOST259}. The values presented are scalar and indicate the total interference of the frequency plan. The lower the interference value is, the better the frequency plan.
-\begin{table}[H]
-\centering
-	\begin{tabular}{| c | c | c |}
-		\hline
-		Problem instance & \gls{TS} with HMT & Best COST 259 \\ \hline
-		Siemens1 & 2.7692 & 2.20 \\ \hline
-		Siemens2 & 14.9360 & 14.28 \\ \hline
-		Siemens3 & 6.6496 & 5.19 \\ \hline
-		Siemens4 & 110.9725 & 81.89 \\ \hline
-	\end{tabular}
-\caption{Results of applying \gls{TS} with HMT on COST 259}
-\label{TSCOST259}
-\end{table}
+
 As can be observed from the results obtained by the authors, the \gls{TS} algorithm with HMT produces results that rank very favourably against other algorithms also applied to the \gls{COST} 259. 
 
 Bouja et al. \cite{} presents a TS algorithm that is applied to the MI-FAP. In the algorithm the fitness function counts the number of violations. The algorithm restricts the neighborhood by only selecting $n$ cells that have large local constraint violations. $n$ is gradually increased by the algorithm as the search progresses. Once all the instances are selected the algorithm performs arc consistency on them. Arc consistency is best explained with a formal example. Consider a cell $c$ with neighbors given by the function $N(c)$. As frequencies get assigned to the neighbours of $c$ the assignement will cause some frequencies on $c$ to be blocked(violating constraints). If there are still free frequencies left to assign to $c$ after the maximum number of blocked frequencies has been reached, then $c$ can be removed from the selected instances.
 
-In research by Montemanni et al.\ discuss a \gls{TS} algorithm which utilizes dynamic tabu\cite{MontiTS}. By using dynamic tabu the algorithm gradually reduces the length of the tabu list with each iteration. After a pre-defined number of iterations the algorithm applies cell reoptimisation. Cell reoptimisation fixes the assignement of frequencies to all cells except one. The frequencies for this one cell can then be changed and optimised to provide the lowest interference\cite{MontiTS}. The algorithm is applied to the COST 259 family of benchmarks and the results obtained is denoted by MontiTS.
+In research by Montemanni et al.\ discuss a \gls{TS} algorithm which utilizes dynamic tabu\cite{MontiTS}. By using dynamic tabu the algorithm gradually reduces the length of the tabu list with each iteration. After a pre-defined number of iterations the algorithm applies cell reoptimisation. Cell reoptimisation fixes the assignment of frequencies to all cells except one. The frequencies for this one cell can then be changed and optimised to provide the lowest interference\cite{MontiTS}. The algorithm is applied to the COST 259 family of benchmarks and the results obtained are in the column ``Dynamic Tabu'' in table~\ref{TSCOST259}. Note that the authors did not apply their algorithm to Siemens1, no reason was given why.
+\begin{table}[H]
+\centering
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+        Problem instance & \gls{TS} with HMT & Dynamic Tabu & Best COST 259 \\ \hline
+        Siemens1 & 2.769 & --- & 2.200 \\ \hline
+        Siemens2 & 14.936 & 14.275 & 14.271 \\ \hline
+        Siemens3 & 6.650 & 5.186 & 5.129 \\ \hline
+        Siemens4 & 110.973 & 81.876 & 77.246 \\ \hline
+	\end{tabular}
+\caption{Results of applying \gls{TS} with HMT on COST 259}
+\label{TSCOST259}
+\end{table}
 
 Adjakpl\'{e} and Jaumard present a TS algorithm that utilizes block assignment\cite{AdJa97}. Block assignment refers to a small set of frequencies which are assigned to the cell as a whole and not to a TRX individually. This set or block of frequencies is generated to minimise interference, maximise variance and to not use forbidden channels or violate constraints with respect to the particular cell. Frequecies are then assigned to TRXs individually from this block of frequencies, instead of the entire spectrum. The algorithm presented by the authors use block assignment for the initial solution generation. Neighbourhood moves are performed by changing the block assigned to a cell with another available block. The neighbourhood is restricted by only allowing blocks for selection where the number of local constraint violations they'll impose on a cell is minimal. The algorithm was tested on real life instances provided by Bell Mobility.
 
@@ -366,9 +367,9 @@ In table\ref{tab:SA} results are presented from research presented by two author
 	\hline
     Problem instance & (BK)\gls{SA} & Best \gls{COST} 259 \\ \hline
 	Siemens1 & 2.78 & 2.20\\ \hline
-	Siemens2 & 15.46 & 14.28\\ \hline
-	Siemens3 & 6.75 & 5.19\\ \hline
-	Siemens4 & 89.15 & 81.89\\ \hline
+	Siemens2 & 15.46 & 14.27\\ \hline
+	Siemens3 & 6.75 & 5.12\\ \hline
+	Siemens4 & 89.15 & 77.24\\ \hline
 	\end{tabular}
 \caption{SA on \gls{COST} 259 Benchmark}
 \label{tab:SA}
@@ -546,16 +547,16 @@ Jaimes-Romero et al.\cite{} uses a two phase genetic algorithm approach to find 
 
 Colombo and Allen\cite{ProblemDecompMIFAP} have developed a \gls{GA} to be applied to \gls{FAP}. The authors decomposed the \gls{FAP} into smaller sub problems. On average the solution quality is improved by using the technique but at the expense of more complex and taxing evaluations that have to be performed\cite{ProblemDecompMIFAP}. 
 
-In table~\ref{tab:GA} the results obtained by authors on the \gls{COST} 259 benchmarks are compared. The listed values are scalars representing the total interference generated by the frequency plan.
+In table~\ref{tab:GA} the results obtained by authors on the \gls{COST} 259 benchmarks are compared. The listed values are scalars representing the total interference generated by the frequency plan. The results presented in this table are rounded to two decimals places due to the authors reporting their results with two decimals as well.
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c |}
 	\hline
 	Problem instance & \gls{GA} & Best \gls{COST} 259 \\ \hline
-	Siemens1 & 2.60 & 2.200 \\ \hline
-	Siemens2 & 16.34 & 14.280 \\ \hline
-	Siemens3 & 6.37 & 5.19 \\ \hline
-	Siemens4 & 84.08 & 81.89 \\ \hline
+	Siemens1 & 2.96 & 2.20 \\ \hline
+	Siemens2 & 17.83 & 14.27 \\ \hline
+	Siemens3 & 6.08 & 5.13 \\ \hline
+	Siemens4 & 96.84 & 77.25 \\ \hline
 	\end{tabular}
 \caption{GA on \gls{COST} 259 Benchmark}
 \label{tab:GA}
