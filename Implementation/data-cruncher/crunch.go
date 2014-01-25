@@ -39,6 +39,10 @@ func (b *benchmark) Key() string {
 		b.CostFuncName + KEY_SEP + strconv.Itoa(b.Population)
 }
 
+func (b *benchmark) KeyBasicNameAndPop() string {
+	return b.Name + KEY_SEP + strconv.Itoa(b.Population)
+}
+
 func trimAndToFloat(val string) float32 {
 	val = strings.Trim(val, " ")
 	parts := strings.Split(val, " ")
@@ -179,14 +183,15 @@ func main() {
 			log.Print(error)
 			continue
 		}
-		bucket, ok := benchBuckets[b.Key()]
+		key := b.KeyBasicNameAndPop()
+		bucket, ok := benchBuckets[key]
 		if ok {
 			bucket = append(bucket, b)
-			benchBuckets[b.Key()] = bucket
+			benchBuckets[key] = bucket
 		} else {
 			bucket = make([]*benchmark, 1)
 			bucket[0] = b
-			benchBuckets[b.Key()] = bucket
+			benchBuckets[key] = bucket
 		}
 	}
 	for key, value := range benchBuckets {
