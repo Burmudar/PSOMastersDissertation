@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"encoding/csv"
 	"errors"
+	"flag"
 	"fmt"
 	"log"
 	"math"
@@ -14,9 +15,16 @@ import (
 )
 
 const (
-	BENCHMARK_PREFIX = "Benchmark-Bench-"
-	KEY_SEP          = "-"
+	BENCHMARK_PREFIX       = "Benchmark-Bench-"
+	KEY_SEP                = "-"
+	PER_TRX_CHANNEL_INDEX  = "PerTRXChannelIndexFunction"
+	PARTICLE_PER_TRX       = "ParticlePerTrxFunction"
+	BUILD_GBEST_FROM_TRX   = "BuildGBestFromTrxs"
+	BUILD_GBEST_FROM_CELLS = "BuildGBestFromCells"
+	CLONE_IF_GBEST         = "CloneIfGbest"
 )
+
+type KeyGenFunc func(b *benchmark) string
 
 type benchmark struct {
 	File           string
@@ -33,10 +41,32 @@ type benchmark struct {
 	SumOfDiff      float32
 }
 
-func (b *benchmark) Key() string {
+var KeyGen KeyGenFunc = Key
+var benchmarkName string
+var moveFuncNum int
+var gbestBuildNum int
+var analysisFilter int
+
+func Key(b *benchmark) string {
 	return b.Name + KEY_SEP + b.MoveFuncName +
 		KEY_SEP + b.BuildStratName + KEY_SEP +
 		b.CostFuncName + KEY_SEP + strconv.Itoa(b.Population)
+}
+
+func KeyNamePopAndMoveFunc(b *benchmark) string {
+	return b.Name + KEY_SEP + strconv.Itoa(b.Population) + KEY_SEP + b.MoveFuncName
+}
+
+func KeyNamePopAndBuildScheme(b *benchmark) string {
+	return b.Name + KEY_SEP + strconv.Itoa(b.Population) + KEY_SEP + b.BuildStratName
+}
+
+func KeyBasicNameAndPop(b *benchmark) string {
+	return b.Name + KEY_SEP + strconv.Itoa(b.Population)
+}
+
+func KeyBasicName(b *benchmark) string {
+	return b.Name
 }
 
 func trimAndToFloat(val string) float32 {
@@ -131,13 +161,60 @@ func openFile(filename string) *bufio.Reader {
 	return bufio.NewReader(file)
 }
 
+func wantedBenchmark(filename string) bool {
+	switch benchmarkName {
+	case "all":
+		return true
+	case "siemens1":
+		return strings.Contains(strings.ToLower(filename), "siemens1")
+	case "siemens2":
+		return strings.Contains(strings.ToLower(filename), "siemens1")
+	case "siemens3":
+		return strings.Contains(strings.ToLower(filename), "siemens3")
+	case "siemens4":
+		return strings.Contains(strings.ToLower(filename), "siemens4")
+	default:
+		panic("Unkown benchmark option given")
+	}
+}
+
+func wantedMoveFunc(filename string) bool {
+	switch moveFuncNum {
+	case 0:
+		return true
+	case 1:
+		return strings.Contains(filename, PARTICLE_PER_TRX)
+	case 2:
+		return strings.Contains(filename, PER_TRX_CHANNEL_INDEX)
+	default:
+		panic("Unkown Move Func number given")
+	}
+}
+
+func wantedGBestScheme(filename string) bool {
+	switch gbestBuildNum {
+	case 0:
+		return true
+	case 1:
+		return strings.Contains(filename, CLONE_IF_GBEST)
+	case 2:
+		return strings.Contains(filename, BUILD_GBEST_FROM_CELLS)
+	case 3:
+		return strings.Contains(filename, BUILD_GBEST_FROM_TRX)
+	default:
+		panic("Unkown GBest Scheme given")
+	}
+}
+
 func GetCSVFiles(dirPath, prefix string) []string {
 	csvFiles := make([]string, 0)
 	walkFunc := func(path string, info os.FileInfo, err error) error {
 		if filepath.Ext(path) == ".csv" &&
 			prefix != "" &&
 			strings.HasPrefix(info.Name(), prefix) {
-			csvFiles = append(csvFiles, path)
+			if wantedBenchmark(info.Name()) && wantedMoveFunc(info.Name()) && wantedGBestScheme(info.Name()) {
+				csvFiles = append(csvFiles, path)
+			}
 		}
 		return nil
 	}
@@ -171,22 +248,49 @@ func zip(elements []*benchmark) *benchmark {
 	return b
 }
 
+func getKeyGen(keyType int) KeyGenFunc {
+	switch keyType {
+	case 0:
+		return Key
+	case 1:
+		return KeyBasicNameAndPop
+	case 2:
+		return KeyNamePopAndMoveFunc
+	case 3:
+		return KeyNamePopAndBuildScheme
+	case 4:
+		return KeyBasicName
+	default:
+		panic("Unkown Build Scheme option selected")
+	}
+}
+
+func init() {
+	flag.StringVar(&benchmarkName, "Benchmark", "all", "siemens1, siemens2, siemens3, siemens4 ot all")
+	flag.IntVar(&moveFuncNum, "MoveFuncNum", 0, "1 - ParticlePerTRX or 2 - PerTRXChannelIndex or 0 for both")
+	flag.IntVar(&gbestBuildNum, "GbestBuildScheme", 0, "GBest building scheme: 1 for CloneIfGBest. 2 for BuildGBestFromCells. 3 BuildGBestFromTrxs or 0 for all")
+	flag.IntVar(&analysisFilter, "AnalysisFilter", 0, "0 - None, 1 - Best Benchmark regardless of move or gbest scheme, 2 - Best Benchmark with Move method, 3 - Best Benchmark with GBest Scheme, 4 - Best Benchmark regardles of pop, move or gbest scheme")
+}
+
 func main() {
+	flag.Parse()
 	var benchBuckets map[string][]*benchmark = make(map[string][]*benchmark)
+	KeyGen = getKeyGen(analysisFilter)
 	for _, f := range GetCSVFiles("data/", "Benchmark-Bench") {
 		b, error := NewBenchmark(&f)
 		if error != nil {
 			log.Print(error)
 			continue
 		}
-		bucket, ok := benchBuckets[b.Key()]
+		key := KeyGen(b)
+		bucket, ok := benchBuckets[key]
 		if ok {
 			bucket = append(bucket, b)
-			benchBuckets[b.Key()] = bucket
+			benchBuckets[key] = bucket
 		} else {
 			bucket = make([]*benchmark, 1)
 			bucket[0] = b
-			benchBuckets[b.Key()] = bucket
+			benchBuckets[key] = bucket
 		}
 	}
 	for key, value := range benchBuckets {
@@ -198,8 +302,10 @@ func main() {
 		fmt.Printf("Cost Function Name: %v\n", b.CostFuncName)
 		fmt.Printf("File: %v\n", b.File)
 		fmt.Printf("Min: %v\n", b.Min)
+		fmt.Printf("Avg: %v\n", b.Avg)
 		fmt.Printf("Standard Deviation: %v\n", b.StdDev)
 		fmt.Printf("Variance: %v\n", b.Variance)
 		fmt.Println("================================================\n")
 	}
+	fmt.Printf("Completed Analysis with the following flags: -benchmark=%v -moveFuncNum=%v -gbestBuildScheme=%v\n", benchmarkName, moveFuncNum, gbestBuildNum)
 }

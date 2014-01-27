@@ -187,24 +187,25 @@ The authors developed a technique called \gls{HMT}. \Gls{HMT} first monitors an 
 The \gls{HMT} then uses the identified characteristics to add \emph{additional} constraints to the problem\cite{TabuMontemanniSmith}. By adding constraints, the search space is reduced. However, by reducing the search space, other near-optimal solutions, which might be far better are excluded\cite{TabuMontemanniSmith}. It is for this reason that that Montemanni and Smith opted not to add the constraints permanently.
 
 Montemanni and Smith applied their \gls{TS} algorithm together with \gls{HMT} to the \gls{COST} 259 family of benchmarks, specifically the Siemens1, Siemens2, Siemens3 and Siemens4 problems. The results are presented in table~\ref{TSCOST259}. The values presented are scalar and indicate the total interference of the frequency plan. The lower the interference value is, the better the frequency plan.
-\begin{table}[H]
-\centering
-	\begin{tabular}{| c | c | c |}
-		\hline
-		Problem instance & \gls{TS} with HMT & Best COST 259 \\ \hline
-		Siemens1 & 2.7692 & 2.20 \\ \hline
-		Siemens2 & 14.9360 & 14.28 \\ \hline
-		Siemens3 & 6.6496 & 5.19 \\ \hline
-		Siemens4 & 110.9725 & 81.89 \\ \hline
-	\end{tabular}
-\caption{Results of applying \gls{TS} with HMT on COST 259}
-\label{TSCOST259}
-\end{table}
+
 As can be observed from the results obtained by the authors, the \gls{TS} algorithm with HMT produces results that rank very favourably against other algorithms also applied to the \gls{COST} 259. 
 
 Bouja et al. \cite{} presents a TS algorithm that is applied to the MI-FAP. In the algorithm the fitness function counts the number of violations. The algorithm restricts the neighborhood by only selecting $n$ cells that have large local constraint violations. $n$ is gradually increased by the algorithm as the search progresses. Once all the instances are selected the algorithm performs arc consistency on them. Arc consistency is best explained with a formal example. Consider a cell $c$ with neighbors given by the function $N(c)$. As frequencies get assigned to the neighbours of $c$ the assignement will cause some frequencies on $c$ to be blocked(violating constraints). If there are still free frequencies left to assign to $c$ after the maximum number of blocked frequencies has been reached, then $c$ can be removed from the selected instances.
 
-In research by Montemanni et al.\ discuss a \gls{TS} algorithm which utilizes dynamic tabu\cite{MontiTS}. By using dynamic tabu the algorithm gradually reduces the length of the tabu list with each iteration. After a pre-defined number of iterations the algorithm applies cell reoptimisation. Cell reoptimisation fixes the assignement of frequencies to all cells except one. The frequencies for this one cell can then be changed and optimised to provide the lowest interference\cite{MontiTS}. The algorithm is applied to the COST 259 family of benchmarks and the results obtained is denoted by MontiTS.
+In research by Montemanni et al.\ discuss a \gls{TS} algorithm which utilizes dynamic tabu\cite{MontiTS}. By using dynamic tabu the algorithm gradually reduces the length of the tabu list with each iteration. After a pre-defined number of iterations the algorithm applies cell reoptimisation. Cell reoptimisation fixes the assignment of frequencies to all cells except one. The frequencies for this one cell can then be changed and optimised to provide the lowest interference\cite{MontiTS}. The algorithm is applied to the COST 259 family of benchmarks and the results obtained are in the column ``Dynamic Tabu'' in table~\ref{TSCOST259}. Note that the authors did not apply their algorithm to Siemens1, no reason was given why.
+\begin{table}[H]
+\centering
+	\begin{tabular}{| c | c | c | c |}
+		\hline
+        Problem instance & \gls{TS} with HMT & Dynamic Tabu & Best COST 259 \\ \hline
+        Siemens1 & 2.769 & --- & 2.200 \\ \hline
+        Siemens2 & 14.936 & 14.275 & 14.271 \\ \hline
+        Siemens3 & 6.650 & 5.186 & 5.129 \\ \hline
+        Siemens4 & 110.973 & 81.876 & 77.246 \\ \hline
+	\end{tabular}
+\caption{Results of applying \gls{TS} with HMT on COST 259}
+\label{TSCOST259}
+\end{table}
 
 Adjakpl\'{e} and Jaumard present a TS algorithm that utilizes block assignment\cite{AdJa97}. Block assignment refers to a small set of frequencies which are assigned to the cell as a whole and not to a TRX individually. This set or block of frequencies is generated to minimise interference, maximise variance and to not use forbidden channels or violate constraints with respect to the particular cell. Frequecies are then assigned to TRXs individually from this block of frequencies, instead of the entire spectrum. The algorithm presented by the authors use block assignment for the initial solution generation. Neighbourhood moves are performed by changing the block assigned to a cell with another available block. The neighbourhood is restricted by only allowing blocks for selection where the number of local constraint violations they'll impose on a cell is minimal. The algorithm was tested on real life instances provided by Bell Mobility.
 
@@ -349,27 +350,31 @@ This concludes the discussion on the flow of the SA algorithm. The section that 
 \subsection{Simulated Annealing on the \gls{FAP}}
 The \gls{SA} algorithm, as with the \gls{TS} algorithm, has achieved good results in other optimisation problems, as mentioned in section \ref{sec:SAIntroduction}. Due to its success on other NP-Complete optimisation problems, the \gls{SA} algorithm has also been applied to the \gls{FAP}.
 
-Research conducted by Duque-Anton et al.\cite{SAChanAss} utilise the \gls{SA} on the FAP. The authors introduce the concept of a \emph{dummy} frequency. The freqeuncy is used to indicate (partial) untatisfied demand. Where demand is defined as the amount of tranceivers installed at a cell to handle expected traffic. By swapping out a real frequency with the dummy frequency or vice versa the algorihtm is able to increase of decrease violation of the traffic demand. The particular cell and frequency that is used for this swapping that occurs is chosen at random. The authors opted to use a custom cooling schedule. In their schedule the cooling rate is calculated based on the average cost taken over two L-loops at temperature $t1$ and $t2$ is less than the standard deviation of solutions at temperature $t1$. Where L-loop refers to the \gls{SA} algorithm inner loop where the temperature does not change.
+Research conducted by Duque-Anton et al.\cite{SAChanAss} utilise the \gls{SA} on the FAP. The authors introduce the concept of a \emph{dummy} frequency. The frequency is used to indicate (partial) unsatisfied demand. Where demand is defined as the amount of transceivers installed at a cell to handle expected traffic. By swapping out a real frequency with the dummy frequency or vice versa the algorithm is able to increase of decrease violation of the traffic demand. The particular cell and frequency that is used for this swapping that occurs is chosen at random. The authors opted to use a custom cooling schedule. In their schedule the cooling rate is calculated based on the average cost taken over two L-loops at temperature $t1$ and $t2$ is less than the standard deviation of solutions at temperature $t1$. Where L-loop refers to the \gls{SA} algorithm inner loop where the temperature does not change.
 
-A unconventional \gls{SA} algorithm  is presented by Zerovnik\cite{Zerovnik97}. The defining characteristic that sets this algorithm apart from convetional \gls{SA} algorihtms is that the initial temperature $T$ is never changed. The algorithm selects a cell based on the number of constraints it has violated. Using this cell frequencies are assigned to it based on a probability. This probability is formulated as follows. For every new frequency $f$ the probablity that is will be assigned to the cell is given by $e^{S_f/T}$, where $S_f$ represents the number of violated constraints if $f$ is assigned to the particular trx at the cell.
+A unconventional \gls{SA} algorithm  is presented by Zerovnik\cite{Zerovnik97}. The defining characteristic that sets this algorithm apart from conventional \gls{SA} algorithms is that the initial temperature $T$ is never changed. The algorithm selects a cell based on the number of constraints it has violated. Using this cell frequencies are assigned to it based on a probability. This probability is formulated as follows. For every new frequency $f$ the probability that is will be assigned to the cell is given by $e^{S_f/T}$, where $S_f$ represents the number of violated constraints if $f$ is assigned to the particular TRX at the cell.
 
-Hellebrandt and Heller \cite{Hehe00} present an \gls{SA} algorithm which is applied to the COST 259 set of benchmark instances. In their algorithm, the initial solution is generated in such a manner to ensure it fullfulls all hard constriants. The authors opted to set the initial temperature acceptance rate to between 0.8 and 0.9. Movement occurs through the 1-exchange movement strategy. The alogirhtm restricts the neighbourhood by only selecting potential moves which will not violate any constriants. The defining attribute of the algorithm presented by the authors is due to their \emph{one-cell optimisation} method that is applied at the end of each iteration. With this method a cell is randomly selected and by using a simple dynamic program the authors show the the cell can be efficiently optimised. The optimisation occurs by allowing that for the particular cell all frequences can be changed simultaneously\cite{Hehe00}. 
+Hellebrandt and Heller \cite{Hehe00} present an \gls{SA} algorithm which is applied to the COST 259 set of benchmark instances. In their algorithm, the initial solution is generated in such a manner to ensure it fulfills all hard constraints. The authors opted to set the initial temperature acceptance rate to between 0.8 and 0.9. Movement occurs through the 1-exchange movement strategy. The algorithm restricts the neighbourhood by only selecting potential moves which will not violate any constraints. The defining attribute of the algorithm presented by the authors is due to their \emph{one-cell optimisation} method that is applied at the end of each iteration. With this method a cell is randomly selected and by using a simple dynamic program the authors show the cell can be efficiently optimised. The optimisation occurs by allowing that for the particular cell all frequencies can be changed simultaneously\cite{Hehe00}. 
 
-In literature by Beckmann and Killat\cite{BeKi99a} the \gls{SA} algorithm is applied to the \gls{FAP}. The resulting \gls{SA} algorithm was benchmarked on the \gls{COST} 259 Siemens benchmark instances. The results obtained by the authors are presented in table~\ref{tab:SA}. Values represent the total interference generated by the frequency assignment. 
+In literature by Beckmann and Killat\cite{BeKi99a} the \gls{SA} algorithm is applied to the \gls{FAP}. The resulting \gls{SA} algorithm was benchmarked on the \gls{COST} 259 Siemens benchmark instances. The results obtained by the authors are presented in table~\ref{tab:SA} in column ``(BK) \gls{SA}''. Values represent the total interference generated by the frequency assignment. 
 
+Research presented by Mannino et al.\cite{MaOrRi02} discusses an \gls{SA} algorithm that utilizes \emph{interval graphs}. A graph $G(V,E)$ is an interval graph if the graph contains a ordering of vertices ${v_1,\dots,v_n}$ such that it can be shown that for any triple $(r,s,t)$ that $r < s < t$, if $v_1v_2 \in E$, then $v_1v_s \in E$. If such an ordering exists within the graph, then a maximum weighted stable set can be found by a dynamic programming algorithm in $O(|V|)$-time. The authors generalised the graph interval to define when a graph is k-thin. Namely a graph $G(V,E)$ is k-thin when one can define a ordering of vertices ${v_1,\dots,v_n}$ for $V$ and partition the ordering into $k$ classes $V^1,\dots,V^k$, such that for any triple $(r,s,t)$ that $r < s < t$, if $v_r,v_s \in E$ belong to the same $k$ class and $v_t,v_r \in E$ then $v_t,v_s \in E$. If a graph is found to satisfy these conditions defined by the authors then the graph is an interval graph if and only if it is 1-thin. When the ordering and partition is given from the beginning, then the authors are able to find a maximum stable set $S^*$ on a k-thin graph in $O(\frac{|V|}{k})^k$. Using this k-thin graph approach together with \gls{SA} algorithm allowed the authors to out perform all the other results presented in the \gls{COST} 259 benchmark. 
+
+In table\ref{tab:SA} results are presented from research presented by two authors. As mentioned previously, the results in column ``(BK) \gls{SA}'' are from the research presented by Beckmann and Killat\cite{BeKi99a}. The results depicted in column ``Best \gls{COST} 259'' are from the research presented by Mannino et al.\cite{MaOrRi02}.
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c | c |}
 	\hline
-	Problem instance & \gls{SA} & Best \gls{COST} 259 \\ \hline
+    Problem instance & (BK)\gls{SA} & Best \gls{COST} 259 \\ \hline
 	Siemens1 & 2.78 & 2.20\\ \hline
-	Siemens2 & 15.46 & 14.28\\ \hline
-	Siemens3 & 6.75 & 5.19\\ \hline
-	Siemens4 & 89.15 & 81.89\\ \hline
+	Siemens2 & 15.46 & 14.27\\ \hline
+	Siemens3 & 6.75 & 5.12\\ \hline
+	Siemens4 & 89.15 & 77.24\\ \hline
 	\end{tabular}
 \caption{SA on \gls{COST} 259 Benchmark}
 \label{tab:SA}
 \end{table}
+
 
 An overview of the \gls{SA} algorithm along with its unique characteristics have now been given. Utilising the knowledge that was gained from understanding how the \gls{SA} algorithm operates a critical evaluation can be presented. In the following paragraphs, a theoretical critical evaluation is presented that lists the various characteristics, which would be problematic if the \gls{SA} algorithm would be applied to the \gls{FAP}.
 
@@ -542,16 +547,16 @@ Jaimes-Romero et al.\cite{} uses a two phase genetic algorithm approach to find 
 
 Colombo and Allen\cite{ProblemDecompMIFAP} have developed a \gls{GA} to be applied to \gls{FAP}. The authors decomposed the \gls{FAP} into smaller sub problems. On average the solution quality is improved by using the technique but at the expense of more complex and taxing evaluations that have to be performed\cite{ProblemDecompMIFAP}. 
 
-In table~\ref{tab:GA} the results obtained by authors on the \gls{COST} 259 benchmarks are compared. The listed values are scalars representing the total interference generated by the frequency plan.
+In table~\ref{tab:GA} the results obtained by authors on the \gls{COST} 259 benchmarks are compared. The listed values are scalars representing the total interference generated by the frequency plan. The results presented in this table are rounded to two decimals places due to the authors reporting their results with two decimals as well.
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c |}
 	\hline
 	Problem instance & \gls{GA} & Best \gls{COST} 259 \\ \hline
-	Siemens1 & 2.60 & 2.200 \\ \hline
-	Siemens2 & 16.34 & 14.280 \\ \hline
-	Siemens3 & 6.37 & 5.19 \\ \hline
-	Siemens4 & 84.08 & 81.89 \\ \hline
+	Siemens1 & 2.96 & 2.20 \\ \hline
+	Siemens2 & 17.83 & 14.27 \\ \hline
+	Siemens3 & 6.08 & 5.13 \\ \hline
+	Siemens4 & 96.84 & 77.25 \\ \hline
 	\end{tabular}
 \caption{GA on \gls{COST} 259 Benchmark}
 \label{tab:GA}
@@ -573,7 +578,6 @@ Three metaheuristic algorithms were discussed in this chapter. For every algorit
 
 For each algorithm, a brief overview of studies using the particular algorithm was given as well as some of the disadvantages or challenges that would be faced when applying the particular algorithm to the \gls{FAP}.
 The first algorithm discussed was the tabu search algorithm and the second was the simulated annealing algorithm. The chapter concluded with the genetic algorithm. 
-
 In table~\ref{tab:summary1}, the algorithms discussed in this chapter and their performance on the \gls{COST} 259 set of benchmarks have been summarised.
 The next chapter presents a discussion on a class of algorithm that is new to optimisation research, namely swarm intelligence.
 \begin{table}[H]
