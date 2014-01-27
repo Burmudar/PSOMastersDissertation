@@ -1,0 +1,132 @@
+================================================
+Key: siemens1-100
+Name: siemens1
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens1(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](100)-17 January 2014 09-27-03 AM#50081034.csv
+Min: 35.27
+Standard Deviation: 1930.204
+Variance: 28224.906
+================================================
+
+================================================
+Key: siemens1-20
+Name: siemens1
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens1(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](20)-16 January 2014 07-38-27 PM#46418718.csv
+Min: 36.41
+Standard Deviation: 3920.1013
+Variance: 95448.414
+================================================
+
+================================================
+Key: siemens2-20
+Name: siemens2
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens2(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](20)-14 January 2014 12-06-15 AM#25938836.csv
+Min: 52.63
+Standard Deviation: 1862.6091
+Variance: 21415.512
+================================================
+
+================================================
+Key: siemens3-50
+Name: siemens3
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens3(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](50)-14 January 2014 11-08-50 AM#36899882.csv
+Min: 46.5
+Standard Deviation: 3923.096
+Variance: 111526.67
+================================================
+
+================================================
+Key: siemens1-50
+Name: siemens1
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens1(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](50)-14 January 2014 06-29-46 AM#41425547.csv
+Min: 35.19
+Standard Deviation: 2864.633
+Variance: 52603.348
+================================================
+
+================================================
+Key: siemens2-100
+Name: siemens2
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens2(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](100)-15 January 2014 04-17-52 AM#60927424.csv
+Min: 52.78
+Standard Deviation: 830.62787
+Variance: 5749.5225
+================================================
+
+================================================
+Key: siemens2-50
+Name: siemens2
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens2(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](50)-17 January 2014 09-49-12 PM#30776584.csv
+Min: 53.44
+Standard Deviation: 1302.1678
+Variance: 10869.493
+================================================
+
+================================================
+Key: siemens3-100
+Name: siemens3
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens3(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](100)-15 January 2014 08-36-57 AM#5812491.csv
+Min: 45.37
+Standard Deviation: 2484.9426
+Variance: 57175.37
+================================================
+
+================================================
+Key: siemens3-20
+Name: siemens3
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens3(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](20)-Tuesday, January 14, 2014 12-09-24 AM#61646925.csv
+Min: 44.64
+Standard Deviation: 5221.2197
+Variance: 181740.89
+================================================
+
+================================================
+Key: siemens4-100
+Name: siemens4
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens4(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](100)-16 January 2014 02-25-52 AM#12422406.csv
+Min: 282.36
+Standard Deviation: 3988.643
+Variance: 338495.2
+================================================
+
+================================================
+Key: siemens4-20
+Name: siemens4
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens4(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](20)-14 January 2014 11-23-51 PM#44770262.csv
+Min: 284.6
+Standard Deviation: 9444.525
+Variance: 571788.9
+================================================
+
+================================================
+Key: siemens4-50
+Name: siemens4
+Move Function Name: ParticlePerTrxFunction
+Cost Function Name: FAPIndexCostFunction
+File: data/Benchmark-Bench-siemens4(ParticlePerTrxFunction)(BuildGBestFromCells)[FAPIndexCostFunction](50)-Tuesday, January 14, 2014 5-20-58 AM#56718604.csv
+Min: 277.36
+Standard Deviation: 7019.239
+Variance: 373255.44
+================================================
+
