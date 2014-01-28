@@ -74,22 +74,21 @@ Each section in this chapter presents results on a \gls{COST} 259 benchmark inst
 
 The basis for how the results were produced has now been discussed. Furthermore, a layout for each section has been given. The next section presents the results obtained for the benchmark instance siemens1.
 \subsection{Siemens1}
-In table~\ref{tab:siem1m1} the results obtained using the FAP PSO with velocity method 1. In table~\ref{tab:siem1m2} presents the results for the FAP PSO that used velocity method 2.
 \begin{table}[H]
 \centering
-	\begin{tabular}{ccccc}
+	\begin{tabular}{cccccc}
 	\toprule
-	GBest selection & Population & Interference & Average & Std. Deviation\\
+    GBest selection & Population & Interference & Average & Std. Deviation & Variance \\
     \midrule
-    Standard & 20 & 101.15 & 106.70 & 12.23 & 5.54\\
-	Built with cells & 20 & 57.537 & 75.432 & 20.050\\
-	Built with TRXs & 20 & 87.117 & 139.275 & 26.33\\
-    Standard & 50 & 100.9 & 105.69 & 10.44 & 4.19\\
-	Built with cells & 50 & 56.58 & 71.648 & 11.310\\
-	Built with TRXs & 50 & 85.070 & 128.430 & 21.022\\
-    Standard & 100 & 100.23 & 103.62 & 9.44 & 4.05\\
-	Built with cells & 100 & \textbf{56.539} & \textbf{65.968} & \textbf{8.704}\\
-	Built with TRXs & 100 & 84.029 & 126.767 & 19.646\\
+    Standard & 100 & 100.23 & 103.62 &   9.44 &   4.05\\
+    Standard & 50 & 100.90 & 105.69 &  10.44 &   4.19\\
+    Standard & 20 & 101.15 & 106.70 &  12.23 &   5.54\\
+    GBestFromCells & 20 &  36.41 &  39.60 &   9.09 &   3.18\\
+    GBestFromCells & 50 &  35.19 &  38.72 &   7.84 &   2.36\\
+    GBestFromCells & 100 &  35.27 &  38.82 &   8.80 &   3.52\\
+    GBestFromTrxs & 20 & 106.23 & 113.91 &  16.82 &  10.48\\
+    GBestFromTrxs & 50 & 107.33 & 114.42 &  16.15 &  10.03\\
+    GBestFromTrxs & 100 & 109.80 & 114.94 &  14.61 &   9.70\\
     Dynamic Tabu & --- & 1 & --- & --- \\
     k-Thin SA & --- & 2 & --- & --- \\
     GA & --- & 3 & --- & --- \\
@@ -100,19 +99,19 @@ In table~\ref{tab:siem1m1} the results obtained using the FAP PSO with velocity 
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{ccccc}
+	\begin{tabular}{cccccc}
 	\toprule
-	GBest selection & Population & Interference & Average & Std. Deviation\\
+    GBest selection & Population & Interference & Average & Std. Deviation & Variance \\
     \midrule
-	Standard & 20 & 239.150 & 1831.288 & 357.308\\
-	Built with cells & 20 & 621.649 & 645.135 & 3.807\\
-	Built with TRXs & 20 & 145.733 & 219.053 & 67.394\\
-	Standard & 50 & 237.192 & 1766.006 & 375.017\\
-	Built with cells & 50 & 400.893 & 404.033 & 2.717\\
-	Built with TRXs & 50 & 128.688 & 183.716 & 28.684\\
-	Standard & 100 & 216.909 & 2155.314 & 352.803\\ 
-	Built with cells & 100 & 287.358 & 288.169 & 2.237\\
-	Built with TRXs & 100 & \textbf{114.456} & \textbf{167.751} & \textbf{19.912}\\ 
+    Standard & 20 & 378.53 & 784.02 & 794.81 & 23397.43\\
+    Standard & 50 & 353.06 & 652.72 & 728.49 & 20411.46\\
+    Standard & 100 & 317.16 & 511.48 & 613.45 & 17105.75\\
+    GBestFromCells & 20 & 325.69 & 553.86 & 561.71 & 11685.80\\
+    GBestFromCells & 50 & 161.25 & 322.53 & 373.15 & 5355.40\\
+    GBestFromCells & 100 & 209.01 & 249.04 & 149.56 & 1016.78\\
+    GBestFromTrxs & 20 & 193.83 & 577.81 & 1111.87 & 45787.46\\
+    GBestFromTrxs & 50 & 149.19 & 347.40 & 885.59 & 30164.26\\
+    GBestFromTrxs & 100 & 142.19 & 244.64 & 417.93 & 7939.47\\
     Dynamic Tabu & --- & 1 & --- & --- \\
     k-Thin SA & --- & 2 & --- & --- \\
     GA & --- & 3 & --- & --- \\
@@ -158,21 +157,21 @@ In table~\ref{tab:siem1m1} the results obtained using the FAP PSO with velocity 
 
 
 \subsection{Siemens2}
-Below the results obtained by applying FAP PSO on the siemens2 benchmark is presented in table~\ref{tab:siem2m1} and table~\ref{tab:siem2m2}.
 \begin{table}[H]
 \centering
-	\begin{tabular}{ccccc}
+	\begin{tabular}{cccccc}
 	\toprule
-	GBest selection & Population & Interference & Average & Std. Deviation\\
+    GBest selection & Population & Interference & Average & Std. Deviation & Variance \\
     \midrule
-    Standard & 20 & 73.32 & 77.65 & 6.20 & 1.43\\
-    Standard & 50 & 74.23 & 76.85 & 4.38 & 0.74\\
-    Standard & 100 & 74.19 & 76.65 & 3.54 & 0.62 \\
-    Dynamic Tabu & --- & 1 & --- & --- \\
-    k-Thin SA & --- & 2 & --- & --- \\
-    GA & --- & 3 & --- & --- \\
-    \bottomrule
-	Built with TRXs & 100 & 84.029 & 126.767 & 19.646\\
+    Standard & 20 & 101.15 & 106.70 &  12.23 &   5.54\\
+    Standard & 50 & 100.90 & 105.69 &  10.44 &   4.19\\
+    Standard & 100 & 100.23 & 103.62 &   9.44 &   4.05\\
+    GBestFromCells & 20 &  36.41 &  39.60 &   9.09 &   3.18\\
+    GBestFromCells & 50 &  35.19 &  38.72 &   7.84 &   2.36\\
+    GBestFromCells & 100 &  35.27 &  38.82 &   8.80 &   3.52\\
+    GBestFromTrxs & 20 & 106.23 & 113.91 &  16.82 &  10.48\\
+    GBestFromTrxs & 50 & 107.33 & 114.42 &  16.15 &  10.03\\
+    GBestFromTrxs & 100 & 109.80 & 114.94 &  14.61 &   9.70\\
     Dynamic Tabu & --- & 1 & --- & --- \\
     k-Thin SA & --- & 2 & --- & --- \\
     GA & --- & 3 & --- & --- \\
@@ -183,18 +182,19 @@ Below the results obtained by applying FAP PSO on the siemens2 benchmark is pres
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{ccccc}
+	\begin{tabular}{cccccc}
 	\toprule
-	GBest selection & Population & Interference & Average & Std. Deviation\\
+    GBest selection & Population & Interference & Average & Std. Deviation & Variance \\
     \midrule
-	Standard & 20 & 239.150 & 1831.288 & 357.308\\
-	Standard & 50 & 237.192 & 1766.006 & 375.017\\
-	Standard & 100 & 216.909 & 2155.314 & 352.803\\ 
-    Dynamic Tabu & --- & 1 & --- & --- \\
-    k-Thin SA & --- & 2 & --- & --- \\
-    GA & --- & 3 & --- & --- \\
-    \bottomrule
-	Built with TRXs & 100 & \textbf{114.456} & \textbf{167.751} & \textbf{19.912}\\ 
+    Standard & 20 & 378.53 & 784.02 & 794.81 & 23397.43\\
+    Standard & 50 & 353.06 & 652.72 & 728.49 & 20411.46\\
+    Standard & 100 & 317.16 & 511.48 & 613.45 & 17105.75\\
+    GBestFromCells & 20 & 325.69 & 553.86 & 561.71 & 11685.80\\
+    GBestFromCells & 50 & 161.25 & 322.53 & 373.15 & 5355.40\\
+    GBestFromCells & 100 & 209.01 & 249.04 & 149.56 & 1016.78\\
+    GBestFromTrxs & 20 & 193.83 & 577.81 & 1111.87 & 45787.46\\
+    GBestFromTrxs & 50 & 149.19 & 347.40 & 885.59 & 30164.26\\
+    GBestFromTrxs & 100 & 142.19 & 244.64 & 417.93 & 7939.47\\
     Dynamic Tabu & --- & 1 & --- & --- \\
     k-Thin SA & --- & 2 & --- & --- \\
     GA & --- & 3 & --- & --- \\
@@ -239,45 +239,50 @@ Below the results obtained by applying FAP PSO on the siemens2 benchmark is pres
 \end{table}
 
 \subsection{Siemens3}
-Below the results obtained by applying FAP PSO on the siemens2 benchmark is presented in table~\ref{tab:siem2m1} and table~\ref{tab:siem2m2}.
 \begin{table}[H]
 \centering
-	\begin{tabular}{ccccc}
+	\begin{tabular}{cccccc}
 	\toprule
-	GBest selection & Population & Interference & Average & Std. Deviation\\
+    GBest selection & Population & Interference & Average & Std. Deviation & Variance \\
     \midrule
-    Standard & 20 & 133.47 & 139.18 & 11.77 & 5.54\\
-    Standard & 50 & 132.81 & 136.65 & 9.67 & 4.07\\
-    Standard & 100 & 131.79 & 135.43 & 8.06 & 3.61\\
+    Standard & 20 & 133.47 & 139.18 &  11.77 &   5.54\\
+    Standard & 50 & 132.81 & 136.65 &   9.67 &   4.07\\
+    Standard & 100 & 131.79 & 135.43 &   8.06 &   3.61\\
+    GBestFromCells & 20 &  44.64 &  48.37 &   8.06 &   2.60\\
+    GBestFromCells & 50 &  46.50 &  48.79 &   5.08 &   1.12\\
+    GBestFromCells & 100 &  45.37 &  48.75 &   7.11 &   2.81\\
+    GBestFromTrxs & 20 & 132.93 & 145.69 &  25.55 &  26.12\\
+    GBestFromTrxs & 50 & 136.42 & 144.03 &  19.09 &  15.84\\
+    GBestFromTrxs & 100 & 136.86 & 145.75 &  17.21 &  16.45\\
     Dynamic Tabu & --- & 1 & --- & --- \\
     k-Thin SA & --- & 2 & --- & --- \\
     GA & --- & 3 & --- & --- \\
     \bottomrule
-    Dynamic Tabu & --- & 1 & --- & --- \\hline
-    k-Thin SA & --- & 2 & --- & --- \\hline
-    GA & --- & 3 & --- & --- \\hline
 	\end{tabular}
-\caption{Siemens2 results with velocity method 1}
+\caption{Siemens3 results with velocity method 1}
 \label{tab:siem2m1}
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{ccccc}
+	\begin{tabular}{cccccc}
 	\toprule
-	GBest selection & Population & Interference & Average & Std. Deviation\\
+    GBest selection & Population & Interference & Average & Std. Deviation & Variance \\
     \midrule
-	Standard & 20 & 239.150 & 1831.288 & 357.308\\
-	Standard & 50 & 237.192 & 1766.006 & 375.017\\
-	Standard & 100 & 216.909 & 2155.314 & 352.803\\ 
+    Standard & 20 & 834.88 & 1203.31 & 1037.77 & 43078.83\\
+    Standard & 50 & 488.22 & 963.06 & 1439.96 & 90151.59\\
+    Standard & 100 & 360.76 & 701.69 & 1064.67 & 62973.79\\
+    GBestFromCells & 20 & 413.96 & 571.54 & 535.42 & 11467.16\\
+    GBestFromCells & 50 & 269.23 & 392.32 & 319.11 & 4427.39\\
+    GBestFromCells & 100 & 221.26 & 315.09 & 203.02 & 2289.75\\
+    GBestFromTrxs & 20 & 229.05 & 619.35 & 1365.12 & 74541.80\\
+    GBestFromTrxs & 50 & 222.19 & 370.61 & 646.37 & 18165.03\\
+    GBestFromTrxs & 100 & 210.01 & 277.58 & 350.43 & 6822.20\\
     Dynamic Tabu & --- & 1 & --- & --- \\
     k-Thin SA & --- & 2 & --- & --- \\
     GA & --- & 3 & --- & --- \\
     \bottomrule
-    Dynamic Tabu & --- & 1 & --- & --- \\hline
-    k-Thin SA & --- & 2 & --- & --- \\hline
-    GA & --- & 3 & --- & --- \\hline
 	\end{tabular}
-\caption{Siemens2 results with velocity method 2}
+\caption{Siemens3 results with velocity method 2}
 \label{tab:siem2m2}
 \end{table}
 \begin{table}[H]
@@ -317,43 +322,48 @@ Below the results obtained by applying FAP PSO on the siemens2 benchmark is pres
 
 
 \subsection{Siemens 4}
-Below the results obtained by applying FAP PSO on the siemens4 benchmark is presented.
 \begin{table}[H]
 \centering
-	\begin{tabular}{ccccc}
+	\begin{tabular}{cccccc}
 	\toprule
-	GBest selection & Population & Interference & Average & Std. Deviation\\
+    GBest selection & Population & Interference & Average & Std. Deviation & Variance \\
     \midrule
-    Standard & 20 & 513.86 & 527.40 & 28.30 & 30.81\\
-    Standard & 50 & 507.81 & 521.39 & 25.28 & 29.05\\
-    Standard & 100 & 512.97 & 517.03 & 9.02 & 10.17\\
+    Standard & 20 & 513.86 & 527.40 &  28.30 &  30.81\\
+    Standard & 50 & 507.81 & 521.39 &  25.28 &  29.05\\
+    Standard & 100 & 512.97 & 517.03 &   9.02 &  10.17\\
+    GBestFromCells & 20 & 284.60 & 291.73 &  26.44 &  26.89\\
+    GBestFromCells & 50 & 277.36 & 288.84 &  22.52 &  23.06\\
+    GBestFromCells & 100 & 282.36 & 288.14 &  15.41 &  33.94\\
+    GBestFromTrxs & 20 & 526.47 & 535.88 &  31.79 &  38.87\\
+    GBestFromTrxs & 50 & 518.61 & 533.59 &  35.25 &  56.49\\
+    GBestFromTrxs & 100 & 523.24 & 533.67 &  13.59 &  23.07\\
     Dynamic Tabu & --- & 1 & --- & --- \\
     k-Thin SA & --- & 2 & --- & --- \\
     GA & --- & 3 & --- & --- \\
     \bottomrule
-    Dynamic Tabu & --- & 1 & --- & --- \\hline
-    k-Thin SA & --- & 2 & --- & --- \\hline
-    GA & --- & 3 & --- & --- \\hline
 	\end{tabular}
 \caption{Siemens4 results with velocity method 1}
 \label{tab:siem4m1}
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{ccccc}
+	\begin{tabular}{cccccc}
 	\toprule
-	GBest selection & Population & Interference & Average & Std. Deviation\\
+    GBest selection & Population & Interference & Average & Std. Deviation & Variance \\
     \midrule
-	Standard & 20 & 239.150 & 1831.288 & 357.308\\
-	Standard & 50 & 237.192 & 1766.006 & 375.017\\
-	Standard & 100 & 216.909 & 2155.314 & 352.803\\ 
+    Standard & 20 & 1482.01 & 2184.35 & 1232.51 & 58426.63\\
+    Standard & 50 & 1646.26 & 2058.09 & 987.90 & 44361.28\\
+    Standard & 100 & 1746.22 & 2036.60 & 366.09 & 16752.78\\
+    GBestFromCells & 20 & 1176.55 & 1572.82 & 1208.47 & 56169.28\\
+    GBestFromCells & 50 & 862.67 & 1078.10 & 702.90 & 22457.42\\
+    GBestFromCells & 100 & 834.08 & 1007.29 & 286.25 & 10242.22\\
+    GBestFromTrxs & 20 & 826.82 & 1761.64 & 2234.28 & 192000.61\\
+    GBestFromTrxs & 50 & 942.28 & 1261.93 & 903.42 & 37098.69\\
+    GBestFromTrxs & 100 & 844.45 & 1092.90 & 363.64 & 16529.03\\
     Dynamic Tabu & --- & 1 & --- & --- \\
     k-Thin SA & --- & 2 & --- & --- \\
     GA & --- & 3 & --- & --- \\
     \bottomrule
-    Dynamic Tabu & --- & 1 & --- & --- \\hline
-    k-Thin SA & --- & 2 & --- & --- \\hline
-    GA & --- & 3 & --- & --- \\hline
 	\end{tabular}
 \caption{Siemens4 results with velocity method 2}
 \label{tab:siem4m2}

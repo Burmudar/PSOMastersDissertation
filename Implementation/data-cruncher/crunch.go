@@ -16,6 +16,7 @@ import (
 
 const (
 	BENCHMARK_PREFIX       = "Benchmark-Bench-"
+	STATS_PREFIX           = "Stats-Bench-"
 	KEY_SEP                = "-"
 	PER_TRX_CHANNEL_INDEX  = "PerTRXChannelIndexFunction"
 	PARTICLE_PER_TRX       = "ParticlePerTrxFunction"
@@ -26,13 +27,17 @@ const (
 
 type KeyGenFunc func(b *benchmark) string
 
+type BenchmarkOutputFunc func(b *benchmark)
+
 type benchmark struct {
 	File           string
+	StatsFile      string
 	Name           string
 	MoveFuncName   string
 	BuildStratName string
 	CostFuncName   string
 	Population     int
+	Iteration      int
 	StdDev         float32
 	Avg            float32
 	Min            float32
@@ -42,10 +47,12 @@ type benchmark struct {
 }
 
 var KeyGen KeyGenFunc = Key
+var OutputBenchmark BenchmarkOutputFunc = BasicOutput
 var benchmarkName string
 var moveFuncNum int
 var gbestBuildNum int
 var analysisFilter int
+var outputFormat string
 
 func Key(b *benchmark) string {
 	return b.Name + KEY_SEP + b.MoveFuncName +
@@ -69,6 +76,29 @@ func KeyBasicName(b *benchmark) string {
 	return b.Name
 }
 
+func BasicOutput(b *benchmark) {
+	fmt.Printf("========= %v ========\n", b.Name)
+	fmt.Printf("Population: %v\n", b.Population)
+	fmt.Printf("Stats File: %v\n", b.StatsFile)
+	fmt.Printf("MoveFuncName: %v\n", b.MoveFuncName)
+	fmt.Printf("Build Scheme: %v\n", b.BuildStratName)
+	fmt.Printf("Best Iteration: %v\n", b.Iteration)
+	fmt.Printf("Max: %v\n", b.Max)
+	fmt.Printf("Min: %v\n", b.Min)
+	fmt.Printf("Std Dev: %v\n", b.StdDev)
+	fmt.Printf("Avg: %v\n", b.Avg)
+	fmt.Printf("Variance: %v\n", b.Variance)
+	fmt.Println("==============================\n")
+}
+
+func LatexTableEntryOutput(b *benchmark) {
+	scheme := b.BuildStratName
+	if b.BuildStratName == CLONE_IF_GBEST {
+		scheme = "Standard"
+	}
+	fmt.Printf("%v -> %v & %v & %6.2f & %6.2f & %6.2f & %6.2f\\\\\n", b.Name, scheme, b.Population, b.Min, b.Avg, b.StdDev, b.Variance)
+}
+
 func trimAndToFloat(val string) float32 {
 	val = strings.Trim(val, " ")
 	parts := strings.Split(val, " ")
@@ -81,8 +111,10 @@ func trimAndToFloat(val string) float32 {
 
 func (b *benchmark) CopyNamesFrom(other *benchmark) {
 	b.File = other.File
+	b.StatsFile = other.StatsFile
 	b.Name = other.Name
 	b.Population = other.Population
+	b.Iteration = other.Iteration
 	b.MoveFuncName = other.MoveFuncName
 	b.BuildStratName = other.BuildStratName
 	b.CostFuncName = other.CostFuncName
@@ -105,6 +137,15 @@ func (b *benchmark) LoadLastValues() error {
 	b.Max = trimAndToFloat(records[52][1])       //max
 	b.Variance = trimAndToFloat(records[53][0])  //variance
 	b.SumOfDiff = trimAndToFloat(records[53][1]) //SumOfDiff
+	for i := 1; i < 51; i++ {
+		val := strings.Trim(records[i][1], " ")
+		recordVal, error := strconv.ParseFloat(val, 32)
+		if error != nil {
+			log.Fatal(error)
+		} else if float32(recordVal) == b.Min {
+			b.Iteration = i
+		}
+	}
 	return nil
 }
 
@@ -139,6 +180,7 @@ func NewBenchmark(file *string) (*benchmark, error) {
 	_, filename := stripDir(b.File)
 	name, rest := stripNameForBenchmark(filename)
 	b.Name = name
+	b.StatsFile = STATS_PREFIX + name + rest
 	b.MoveFuncName, rest = stripValueBetweenBrackets(rest, "(", ")")
 	b.BuildStratName, rest = stripValueBetweenBrackets(rest, "(", ")")
 	b.CostFuncName, rest = stripValueBetweenBrackets(rest, "[", "]")
@@ -270,12 +312,18 @@ func init() {
 	flag.IntVar(&moveFuncNum, "MoveFuncNum", 0, "1 - ParticlePerTRX or 2 - PerTRXChannelIndex or 0 for both")
 	flag.IntVar(&gbestBuildNum, "GbestBuildScheme", 0, "GBest building scheme: 1 for CloneIfGBest. 2 for BuildGBestFromCells. 3 BuildGBestFromTrxs or 0 for all")
 	flag.IntVar(&analysisFilter, "AnalysisFilter", 0, "0 - None, 1 - Best Benchmark regardless of move or gbest scheme, 2 - Best Benchmark with Move method, 3 - Best Benchmark with GBest Scheme, 4 - Best Benchmark regardles of pop, move or gbest scheme")
+	flag.StringVar(&outputFormat, "OutputFormat", "normal", "Latex - Table data entry is outputed. Normal - Prints out all the fields with labels and values")
 }
 
 func main() {
 	flag.Parse()
 	var benchBuckets map[string][]*benchmark = make(map[string][]*benchmark)
 	KeyGen = getKeyGen(analysisFilter)
+	if outputFormat == "Latex" {
+		OutputBenchmark = LatexTableEntryOutput
+	} else {
+		OutputBenchmark = BasicOutput
+	}
 	for _, f := range GetCSVFiles("data/", "Benchmark-Bench") {
 		b, error := NewBenchmark(&f)
 		if error != nil {
@@ -293,19 +341,9 @@ func main() {
 			benchBuckets[key] = bucket
 		}
 	}
-	for key, value := range benchBuckets {
+	for _, value := range benchBuckets {
 		b := zip(value)
-		fmt.Printf("================================================\n")
-		fmt.Printf("Key: %v\n", key)
-		fmt.Printf("Name: %v\n", b.Name)
-		fmt.Printf("Move Function Name: %v\n", b.MoveFuncName)
-		fmt.Printf("Cost Function Name: %v\n", b.CostFuncName)
-		fmt.Printf("File: %v\n", b.File)
-		fmt.Printf("Min: %v\n", b.Min)
-		fmt.Printf("Avg: %v\n", b.Avg)
-		fmt.Printf("Standard Deviation: %v\n", b.StdDev)
-		fmt.Printf("Variance: %v\n", b.Variance)
-		fmt.Println("================================================\n")
+		OutputBenchmark(b)
 	}
 	fmt.Printf("Completed Analysis with the following flags: -benchmark=%v -moveFuncNum=%v -gbestBuildScheme=%v\n", benchmarkName, moveFuncNum, gbestBuildNum)
 }
