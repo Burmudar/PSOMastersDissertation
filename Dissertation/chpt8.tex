@@ -377,7 +377,7 @@ The basis for how the results were produced has now been discussed. Furthermore,
               & max & std & max
               & max & std & max\\
     \midrule
-    Best FAP PSO & 2 & 3 & 1 & 2 & 3 & 1 & 2 & 3 & 4\\ \hline
+    Best FAP PSO & 0.57 & 0.01 & 0.03 & 0.08 & 0.00 & 0.00 & 0.57 & 0.00 & 0.00\\
     Dynamic Tabu & 2 & 3 & 1 & 2 & 3 & 1 & 2 & 3 & 4\\\hline
     k-Thin SA & 2 & 3 & 1 & 2 & 3 & 1 & 2 & 3 & 4\\\hline
     GA & 2 & 3 & 1 & 2 & 3 & 1 & 2 & 3 & 4\\\hline
@@ -388,15 +388,15 @@ The basis for how the results were produced has now been discussed. Furthermore,
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{cccccccccccc}
+	\begin{tabular}{cccccccccc}
 	\toprule
-    Alg & \multicolumn{11}{c}{TRX pairs exceeding interference}\\
-    & 0.01 & 0.02 & 0.03 & 0.04 & 0.05 & 0.10 & 0.15 & 0.20 & 0.30 & 0.40 & 0.50 \\
+    Alg & \multicolumn{9}{c}{TRX pairs exceeding interference}\\
+    & 0.01 & 0.02 & 0.03 & 0.04 & 0.05 & 0.10 & 0.15 & 0.20 & 0.50 \\
     \midrule
-    PSO & 2 & 3 & \tiny{4000} & 5 & \small{4000} & \footnotesize{4000} & 8 & 9 & \scriptsize{9999} & 11 & 12\\
-    Tabu & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 9999\\
-    SA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
-    GA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
+    Best FAP PSO & 1970 & 889 & 452 & 286 & 666 & 253 & 127 & 247 & 5\\
+    Tabu & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 9999\\
+    SA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 12\\
+    GA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9  12\\
     \bottomrule
 	\end{tabular}
 \caption{TRX pair interference breakdown}
