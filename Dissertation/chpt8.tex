@@ -117,7 +117,7 @@ The basis for how the results were produced has now been discussed. Furthermore,
     GA & --- & 3 & --- & --- \\
     \bottomrule
 	\end{tabular}
-\caption{Siemens2 results with velocity method 2}
+\caption{Siemens1 results with velocity method 2}
 \label{tab:siem2m2}
 \end{table}
 \begin{table}[H]
@@ -129,7 +129,7 @@ The basis for how the results were produced has now been discussed. Furthermore,
               & max & std & max
               & max & std & max\\
     \midrule
-    Best FAP PSO & 2 & 3 & 1 & 2 & 3 & 1 & 2 & 3 & 4\\ \hline
+    Best FAP PSO & 0.31 & 0.02 & 0.03 & 0.19 & 0.00 & 0.01 & 0.31 & 0.00 & 0.01\\ 
     Dynamic Tabu & 2 & 3 & 1 & 2 & 3 & 1 & 2 & 3 & 4\\\hline
     k-Thin SA & 2 & 3 & 1 & 2 & 3 & 1 & 2 & 3 & 4\\\hline
     GA & 2 & 3 & 1 & 2 & 3 & 1 & 2 & 3 & 4\\\hline
@@ -143,12 +143,12 @@ The basis for how the results were produced has now been discussed. Furthermore,
 	\begin{tabular}{cccccccccccc}
 	\toprule
     Alg & \multicolumn{11}{c}{TRX pairs exceeding interference}\\
-    & 0.01 & 0.02 & 0.03 & 0.04 & 0.05 & 0.10 & 0.15 & 0.20 & 0.30 & 0.40 & 0.50 \\
+    & 0.01 & 0.02 & 0.03 & 0.04 & 0.05 & 0.10 & 0.15 & 0.20 & 0.50 \\
     \midrule
-    PSO & 2 & 3 & \tiny{4000} & 5 & \small{4000} & \footnotesize{4000} & 8 & 9 & \scriptsize{9999} & 11 & 12\\
-    Tabu & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 9999\\
-    SA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
-    GA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12\\
+    PSO & 286 & 131 & 98 & 64 & 147 & 31 & 13 & 8 & 0\\
+    Tabu & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 9999\\
+    SA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 12\\
+    GA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 12\\
     \bottomrule
 	\end{tabular}
 \caption{TRX pair interference breakdown}
