@@ -140,14 +140,14 @@ The basis for how the results were produced has now been discussed. Furthermore,
 \end{table}
 \begin{table}[H]
 \centering
-	\begin{tabular}{cccccccccccc}
+	\begin{tabular}{cccccccccc}
 	\toprule
-    Alg & \multicolumn{11}{c}{TRX pairs exceeding interference}\\
+    Algorithm & \multicolumn{9}{c}{TRX pairs exceeding interference}\\
     & 0.01 & 0.02 & 0.03 & 0.04 & 0.05 & 0.10 & 0.15 & 0.20 & 0.50 \\
     \midrule
-    PSO & 286 & 131 & 98 & 64 & 147 & 31 & 13 & 8 & 0\\
-    Tabu & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 9999\\
-    SA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 12\\
+    Best FAP PSO & 286 & 131 & 98 & 64 & 147 & 31 & 13 & 8 & 0\\
+    Dynamic Tabu & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 9999\\
+    k-Thin SA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 12\\
     GA & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 12\\
     \bottomrule
 	\end{tabular}
@@ -163,15 +163,15 @@ The basis for how the results were produced has now been discussed. Furthermore,
 	\toprule
     GBest selection & Population & Interference & Average & Std. Deviation & Variance \\
     \midrule
-    Standard & 20 & 101.15 & 106.70 &  12.23 &   5.54\\
-    Standard & 50 & 100.90 & 105.69 &  10.44 &   4.19\\
-    Standard & 100 & 100.23 & 103.62 &   9.44 &   4.05\\
-    GBestFromCells & 20 &  36.41 &  39.60 &   9.09 &   3.18\\
-    GBestFromCells & 50 &  35.19 &  38.72 &   7.84 &   2.36\\
-    GBestFromCells & 100 &  35.27 &  38.82 &   8.80 &   3.52\\
-    GBestFromTrxs & 20 & 106.23 & 113.91 &  16.82 &  10.48\\
-    GBestFromTrxs & 50 & 107.33 & 114.42 &  16.15 &  10.03\\
-    GBestFromTrxs & 100 & 109.80 & 114.94 &  14.61 &   9.70\\
+    Standard & 20 &  73.32 &  77.65 &   6.20 &   1.43\\
+    Standard & 50 &  74.23 &  76.85 &   4.38 &   0.74\\
+    Standard & 100 &  74.19 &  76.65 &   3.54 &   0.62\\
+    BuildGBestFromCells & 20 &  52.63 &  55.55 &   7.93 &   2.33\\
+    BuildGBestFromCells & 50 &  53.44 &  55.50 &   5.79 &   1.29\\
+    BuildGBestFromCells & 100 &  52.78 &  54.38 &   4.10 &   0.84\\
+    BuildGBestFromTrxs & 20 &  77.45 &  81.46 &  12.29 &   5.59\\
+    BuildGBestFromTrxs & 50 &  78.00 &  81.04 &   8.08 &   2.51\\
+    BuildGBestFromTrxs & 100 &  77.10 &  81.24 &   7.67 &   2.94\\
     Dynamic Tabu & --- & 1 & --- & --- \\
     k-Thin SA & --- & 2 & --- & --- \\
     GA & --- & 3 & --- & --- \\

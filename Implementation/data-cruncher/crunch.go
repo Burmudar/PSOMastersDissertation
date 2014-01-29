@@ -210,7 +210,7 @@ func wantedBenchmark(filename string) bool {
 	case "siemens1":
 		return strings.Contains(strings.ToLower(filename), "siemens1")
 	case "siemens2":
-		return strings.Contains(strings.ToLower(filename), "siemens1")
+		return strings.Contains(strings.ToLower(filename), "siemens2")
 	case "siemens3":
 		return strings.Contains(strings.ToLower(filename), "siemens3")
 	case "siemens4":
