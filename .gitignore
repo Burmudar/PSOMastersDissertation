@@ -9,7 +9,7 @@
 *.loa
 *.lof
 *.lot
-*.out
+*/*.out
 *.pyg
 *.toc
 .DS_Store
