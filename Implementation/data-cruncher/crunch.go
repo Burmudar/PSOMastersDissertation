@@ -9,6 +9,7 @@ import (
 	"log"
 	"math"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"strconv"
 	"strings"
@@ -53,6 +54,7 @@ var moveFuncNum int
 var gbestBuildNum int
 var analysisFilter int
 var outputFormat string
+var processing string
 
 func Key(b *benchmark) string {
 	return b.Name + KEY_SEP + b.MoveFuncName +
@@ -76,9 +78,14 @@ func KeyBasicName(b *benchmark) string {
 	return b.Name
 }
 
+func KeyBasicNameAndMoveFunc(b *benchmark) string {
+	return b.Name + KEY_SEP + b.MoveFuncName
+}
+
 func BasicOutput(b *benchmark) {
 	fmt.Printf("========= %v ========\n", b.Name)
 	fmt.Printf("Population: %v\n", b.Population)
+	fmt.Printf("File: %v\n", b.File)
 	fmt.Printf("Stats File: %v\n", b.StatsFile)
 	fmt.Printf("MoveFuncName: %v\n", b.MoveFuncName)
 	fmt.Printf("Build Scheme: %v\n", b.BuildStratName)
@@ -97,6 +104,25 @@ func LatexTableEntryOutput(b *benchmark) {
 		scheme = "Standard"
 	}
 	fmt.Printf("%v -> %v & %v & %6.2f & %6.2f & %6.2f & %6.2f\\\\\n", b.Name, scheme, b.Population, b.Min, b.Avg, b.StdDev, b.Variance)
+}
+
+func getSameBenchmarkForAlternateMoveMethod(key string, benchmarks map[string][]*benchmark) *benchmark {
+	if strings.Contains(key, PER_TRX_CHANNEL_INDEX) {
+		newKey := strings.Replace(key, PER_TRX_CHANNEL_INDEX, PARTICLE_PER_TRX, 1)
+		return zip(benchmarks[newKey])
+	} else if strings.Contains(key, PARTICLE_PER_TRX) {
+		newKey := strings.Replace(key, PARTICLE_PER_TRX, PER_TRX_CHANNEL_INDEX, 1)
+		return zip(benchmarks[newKey])
+	}
+	panic("Could not find corresponding benchmark")
+}
+
+func GraphGen(csv_1, csv_2, title string) {
+	graphGen := exec.Command("python", "graph/graph_gen.py", csv_1, csv_2, title)
+	graphGen.Stdout = os.Stdout
+	graphGen.Stderr = os.Stderr
+	fmt.Printf("Executing python graph/graph %v %v %v\n", csv_1, csv_2, title)
+	graphGen.Run()
 }
 
 func trimAndToFloat(val string) float32 {
@@ -302,6 +328,8 @@ func getKeyGen(keyType int) KeyGenFunc {
 		return KeyNamePopAndBuildScheme
 	case 4:
 		return KeyBasicName
+	case 5:
+		return KeyBasicNameAndMoveFunc
 	default:
 		panic("Unkown Build Scheme option selected")
 	}
@@ -309,14 +337,14 @@ func getKeyGen(keyType int) KeyGenFunc {
 
 func init() {
 	flag.StringVar(&benchmarkName, "Benchmark", "all", "siemens1, siemens2, siemens3, siemens4 ot all")
+	flag.StringVar(&outputFormat, "OutputFormat", "normal", "Latex - Table data entry is outputed. Normal - Prints out all the fields with labels and values")
+	flag.StringVar(&processing, "Processing", "graph", "console - Standard output to console, graphs - generate graphs in graphs directory")
 	flag.IntVar(&moveFuncNum, "MoveFuncNum", 0, "1 - ParticlePerTRX or 2 - PerTRXChannelIndex or 0 for both")
 	flag.IntVar(&gbestBuildNum, "GbestBuildScheme", 0, "GBest building scheme: 1 for CloneIfGBest. 2 for BuildGBestFromCells. 3 BuildGBestFromTrxs or 0 for all")
-	flag.IntVar(&analysisFilter, "AnalysisFilter", 0, "0 - None, 1 - Best Benchmark regardless of move or gbest scheme, 2 - Best Benchmark with Move method, 3 - Best Benchmark with GBest Scheme, 4 - Best Benchmark regardles of pop, move or gbest scheme")
-	flag.StringVar(&outputFormat, "OutputFormat", "normal", "Latex - Table data entry is outputed. Normal - Prints out all the fields with labels and values")
+	flag.IntVar(&analysisFilter, "AnalysisFilter", 0, "0 - None, 1 - Best Benchmark regardless of move or gbest scheme, 2 - Best Benchmark with Move method, 3 - Best Benchmark with GBest Scheme, 4 - Best Benchmark regardles of pop, move or gbest scheme, 5- Best Benchmark with Move regardless of GBest or Pop")
 }
 
-func main() {
-	flag.Parse()
+func consoleProcessing() {
 	var benchBuckets map[string][]*benchmark = make(map[string][]*benchmark)
 	KeyGen = getKeyGen(analysisFilter)
 	if outputFormat == "Latex" {
@@ -345,5 +373,54 @@ func main() {
 		b := zip(value)
 		OutputBenchmark(b)
 	}
-	fmt.Printf("Completed Analysis with the following flags: -benchmark=%v -moveFuncNum=%v -gbestBuildScheme=%v\n", benchmarkName, moveFuncNum, gbestBuildNum)
+	fmt.Printf("Completed Analysis with the following flags: -Benchmark=%v -MoveFuncNum=%v -GbestBuildScheme=%v -AnalysisFilter=%v -Processing=%v\n", benchmarkName, moveFuncNum, gbestBuildNum, analysisFilter, processing)
+}
+
+func graphProcessing() {
+	var benchBuckets map[string][]*benchmark = make(map[string][]*benchmark)
+	analysisFilter = 5
+	benchmarkName = "all"
+	moveFuncNum = 0
+	gbestBuildNum = 0
+	KeyGen = getKeyGen(analysisFilter)
+	for _, f := range GetCSVFiles("data/", "Benchmark-Bench") {
+		b, error := NewBenchmark(&f)
+		if error != nil {
+			log.Print(error)
+			continue
+		}
+		key := KeyGen(b)
+		bucket, ok := benchBuckets[key]
+		if ok {
+			bucket = append(bucket, b)
+			benchBuckets[key] = bucket
+		} else {
+			bucket = make([]*benchmark, 1)
+			bucket[0] = b
+			benchBuckets[key] = bucket
+		}
+	}
+	otherKey := ""
+	for key, value := range benchBuckets {
+		if otherKey == key {
+			continue
+		}
+		b := zip(value)
+		otherMethodBench := getSameBenchmarkForAlternateMoveMethod(key, benchBuckets)
+		GraphGen(b.File, otherMethodBench.File, b.Name)
+		otherKey = KeyGen(otherMethodBench)
+	}
+	fmt.Printf("Completed Analysis with the following flags: -Benchmark=%v -MoveFuncNum=%v -GbestBuildScheme=%v -AnalysisFilter=%v -Processing=%v\n", benchmarkName, moveFuncNum, gbestBuildNum, analysisFilter, processing)
+}
+
+func main() {
+	flag.Parse()
+	switch processing {
+	case "console":
+		consoleProcessing()
+	case "graphs":
+		graphProcessing()
+	default:
+		flag.PrintDefaults()
+	}
 }
