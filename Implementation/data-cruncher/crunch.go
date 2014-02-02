@@ -338,7 +338,7 @@ func getKeyGen(keyType int) KeyGenFunc {
 func init() {
 	flag.StringVar(&benchmarkName, "Benchmark", "all", "siemens1, siemens2, siemens3, siemens4 ot all")
 	flag.StringVar(&outputFormat, "OutputFormat", "normal", "Latex - Table data entry is outputed. Normal - Prints out all the fields with labels and values")
-	flag.StringVar(&processing, "Processing", "graph", "console - Standard output to console, graphs - generate graphs in graphs directory")
+	flag.StringVar(&processing, "Processing", "console", "console - Standard output to console, graphs - generate graphs in graphs directory")
 	flag.IntVar(&moveFuncNum, "MoveFuncNum", 0, "1 - ParticlePerTRX or 2 - PerTRXChannelIndex or 0 for both")
 	flag.IntVar(&gbestBuildNum, "GbestBuildScheme", 0, "GBest building scheme: 1 for CloneIfGBest. 2 for BuildGBestFromCells. 3 BuildGBestFromTrxs or 0 for all")
 	flag.IntVar(&analysisFilter, "AnalysisFilter", 0, "0 - None, 1 - Best Benchmark regardless of move or gbest scheme, 2 - Best Benchmark with Move method, 3 - Best Benchmark with GBest Scheme, 4 - Best Benchmark regardles of pop, move or gbest scheme, 5- Best Benchmark with Move regardless of GBest or Pop")
