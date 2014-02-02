@@ -1,0 +1,18 @@
+﻿*.pdf
+*.aux
+*.log
+*.out
+*.acn
+*.bbl
+*.blg
+*.ist
+*.loa
+*.lof
+*.lot
+*.out
+*.pyg
+*.toc
+.DS_Store
+Masters\ Research/Research/*
+Masters\ Research/Summaries/*
+Poster/*
