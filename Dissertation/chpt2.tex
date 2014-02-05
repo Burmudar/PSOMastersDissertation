@@ -100,7 +100,7 @@ The \gls{MS} has the capability to change the transmission power it uses from 0.
 
 \subsection{Base Station Subsystem}
 
-According to the \gls{gsm} Phase 2+ specification, this system is viewed by the \gls{MSC} through an Abis radio interface. The \gls{BSS} is responsible for communicating with mobile stations in a particular location area \cite{Eisenblatter}. The \gls{BSS} usually consists of one \gls{BSC} with one or more \glspl{BTS} that it controls \cite{Eisenblatter}. A \gls{BTS} has similar equipment to that of a MS\cite{GSMSysEngin}. Both have transceivers, antennae and the necessary functions to perform radio communication.
+According to the \gls{gsm} Phase 2+ specification, this system is viewed by the \gls{MSC} through an Abis radio interface. The \gls{BSS} is responsible for communicating with mobile stations in a particular area \cite{Eisenblatter}. The \gls{BSS} usually consists of one \gls{BSC} with one or more \glspl{BTS} that it controls \cite{Eisenblatter}. A \gls{BTS} has similar equipment to that of a MS\cite{GSMSysEngin}. Both have transceivers, antennae and the necessary functions to perform radio communication.
 
 The communication link between the \gls{MSC} and \gls{BSC} is the called the A-interface. The interface between the \gls{BSC} and \gls{BTS} is called the Abis interface \cite{Eisenblatter}. The A and Abis interface as well as other interfaces between other \gls{gsm} architecture components are discussed in section~\ref{sec:gsminterfaces}.  
 
@@ -255,7 +255,7 @@ The first group, \gls{BCH}, consists of three channels:
 \begin{description}
   \item{\textbf{\Gls{BCCH}}} --- This channel is used for broadcasting and uses the very first frequency assigned to a cell. Using this frequency, the channel broadcasts information regarding the network. This information includes radio channel configuration of the current and neighbouring cells, synchronisation information, registration identifiers and most importantly the format of the \gls{CCCH} used by the local \gls{BTS} \cite{GSMArchitectureProtocolsServices}.
   \item{\textbf{\Gls{FCCH}}} --- Synchronisation information is broadcast to the \glspl{MS} to enable them to perform frequency correction on the transmission. Typical synchronisation information on this channel, for instance, is the exact frequency the local \gls{BTS} is using for transmission to enable the \glspl{MS} to attune themselves to the same frequency \cite{GSMArchitectureProtocolsServices}.
-  \item{\textbf{\Gls{SCH}}} --- On this channel, identifying information regarding the \gls{BTS} is transmitted. Also on this channel information regarding synchronisation of frames is sent which aids an \gls{MS} to, for example, structure the time frames of \gls{TDMA} frames.
+  \item{\textbf{\Gls{SCH}}} --- On this channel, identifying information regarding the \gls{BTS} is transmitted. Also on this channel information regarding synchronisation of \gls{TDMA} frames is sent which aids an \gls{MS} to, for example, structure the time frames of \gls{TDMA} frames.
 \end{description}
 
 The \gls{FCCH} and \gls{SCH} are always broadcast with the \gls{BCCH} since these channels are needed for the operation of the radio subsystem \cite{GSMArchitectureProtocolsServices}. The \gls{CCCH} is a point-to-point signalling channel that is used to localise an \gls{MS} through the use of paging\cite{GSMArchitectureProtocolsServices}. 

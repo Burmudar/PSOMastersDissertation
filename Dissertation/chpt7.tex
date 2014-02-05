@@ -196,7 +196,7 @@ Velocity method 1 is depicted in algorithm~\ref{alg:velocitymethod1}. The algori
 	\end{algorithmic}
 \end{algorithm}
 
-To better understand how velocity method 1 operates. An example will now be presented using figure~\ref{fig:fapparticlepos} as the example position and example global best. Note that for the example presented, only $cell_1$ is considered for the current, personal and global best position. The example is verbose to better illustrate the workings of the method.
+To better understand how velocity method 1 operates an example will now be presented using figure~\ref{fig:fapparticlepos} as the example position and example global best. Note that in following example, only $cell_1$ is considered for the current, personal and global best position.
 \begin{align}
     pbest_1 &= \{34,37,39\} \nonumber \\
     gbest_1 &= \{30,31,34\} \nonumber \\
@@ -224,14 +224,16 @@ To better understand how velocity method 1 operates. An example will now be pres
     abAdditionResult &= \{4,1,5\} + \{4,2,5\}  \nonumber \\
                     &= \{8,3,10\} \nonumber \\
     newVelocity &= abAdditionResult \times 0.5 \nonumber \\
-    &= \{4,1,5\} \nonumber \\
+                &= \{4,1,5\} \nonumber \displaybreak[4] \\
     cell_1 &= cell_1 + newVelocity \nonumber \\
     &= \{47,41,55\} + \{4,1,5\} \nonumber \\
     &= \{51, 42, 60\} \nonumber \\
 \end{align}
 
 In the following discussion the \emph{fromPosition} is the position of the currentParticle. The \emph{toPosition} is the position the currentParticle must move towards. The toPosition in this discussion is the position of the \emph{globalBestParticle}.
-The algorithm first obtains the exact same transceiver in the toPosition frequency plan. This operation is quick, as the two plans are identical except for the frequencies assigned to transceivers for each cell. Thus the algorithm is able to refer to the cell and specific transceiver in the toPosition plan by the same index it utilises to access the cell and transceiver in the fromPosition.
+The algorithm operates on every cell in the frequency plan. The algorithm starts off by selecting the first cell in the fromPosition and the same for the toPosition. 
+
+Once the cell has been selected the algorithm obtains the exact same transceiver in the toPosition frequency plan. This operation is quick, as the two plans are identical except for the frequencies assigned to transceivers for each cell. Thus the algorithm is able to refer to the cell and specific transceiver in the toPosition plan by the same index it utilises to access the cell and transceiver in the fromPosition. After all the cells in the frequency plan has been processed the algorithm proceeds to the next phase.
 
 After the subtraction, a position is returned which is the result of subtracting the fromPosition from the toPosition. Subtraction of two frequency plan positions occurs on lines 4 -- 5. Using the subtraction result the velocity method 1 algorithm is now ready to apply the next operation in the velocity update equation, namely multiplication by using equations~\ref{eq:arrayMultiply} and \ref{eq:arrayScalar} which are applied on lines 5 -- 6.
 
@@ -243,7 +245,7 @@ In the multiplication stage of the velocity update operation, the local and glob
 
 Regardless of which case is executed, the actual operation that is performed is integer multiplication, which therefore means that even though the inertia and random numbers are decimal, the fractional component of the result is discarded. Frequencies are integers so the loss of the fractional component is warranted as it is of no use. Note that it is highly probable that the frequencies depicted in the plan are out of the defined spectrum boundary. As per the last bullet point on page~\pageref{lst:velocitybreakup} the last basic operation that occurs in the velocity equation is the addition of frequency plans. Note that the calculated velocity is still considered to be a frequency plan on its own.
 
-The addition operation is the last operation that occurs in the velocity equation and is also the only operation that occurs when the resultant velocity is applied to the current position of a particle as in equation~\ref{eq:positionupdate}. The addition performed by the algorithm on line 14. Since the addition operation is also used in the final position update of the particle, its last opportunity where frequencies can be bounded.  The purpose of the bound operation is to keep the frequencies within valid value ranges. In equation~\ref{eq:arrayAdd} the frequencies are bounded using the function $b$ and is defined in the following section.
+The addition operation is the last operation that occurs in the velocity equation and is also the only operation that occurs when the resultant velocity is applied to the current position of a particle as in equation~\ref{eq:positionupdate}. The addition is performed by the algorithm in line 14. Since the addition operation is also used in the final position update of the particle, its last opportunity where frequencies can be bounded.  The purpose of the bound operation is to keep the frequencies within valid value ranges. In equation~\ref{eq:arrayAdd} the frequencies are bounded using the function $b$ and is defined in the following section.
 \subsection{Keeping Frequencies Bounded}
 The previous section discussed the first velocity method that was developed. The velocity method is important as it calculates the direction and next position of a particle in the problem space, where the problem space is the \gls{FAP} and a position of a particle is a possible frequency plan. With the velocity method defined, the swarm is now able to move around in the problem space, but this alone is not enough. The swarm has no concept of the constraints that are imposed inherently by the domain as well as the network for which a frequency plan is being created.
 
@@ -318,24 +320,8 @@ Working with index values rather than with raw frequency values led to  a second
     \Delta c_{ij} &= f'(c_{ij}) * s \label{eq:arrayScalar2}\\
     \text{where, }c &\in \{c_{00},c_{01},c_{10}, \dots, c_{ij}\} , \forall i,j,s \in \mathbb{N}, i \leq \text{MaxCells}, j \leq t(c_i)\nonumber
 \end{align}
-In the above equations, the function $f'$ retrieves the index value for a particular TRX $c_{ij}$. The rest of the symbols represent the exact same as they were defined for in equations~\ref{eq:arrayAdd} - ~\ref{eq:arrayMultiply}.
-In the algorithm $v'$ represents the newly calculated velocity and $w$ the inertia. The variables $c^{pbest}$ and $c^{gbest}$ each represent the personal best position and the global best position for a particle. The variable $r$ is a random scalar value where $r \in \mathbb{N}$. Variables $\delta_1$ and $\delta_2$ represent the local and global coefficients.
+In the above equations, the function $f'$ retrieves the index value for a particular TRX $c_{ij}$. The rest of the symbols represent the exact same as they were defined for in equations~\ref{eq:arrayAdd} - ~\ref{eq:arrayMultiply}. The pseudo code of the second velocity method will now be presented.
 
-As with velocity method 1, a more practical example will now be presented using figure~\ref{fig:fapparticlepos} as reference point. The example will aid in understanding the operation of velocity method 2 better. Note that with each variable the subscript 1 indicates that the values for cell 1 are used.
-\begin{align}
-    currPos_1 &= \{47,41,55\}\nonumber \\
-    pbestPos_1 &= \{34,37,39\}\nonumber \\
-    gbestPos_1 &= \{30, 31,34\}\nonumber \\
-    r_1 &= 0.435\nonumber \\
-    r_2 &= 0.288\nonumber \\
-    newVelocity_{11} &= 0.5 \times r_1 \times (34 - 47) + 0.4 \times r_2 \times (34 - 30)\nonumber \\
-    newVelocity_{12} &= 0.5 \times r_1 \times (37 - 41) + 0.4 \times r_2 \times (37 - 31)\nonumber \\
-    newVelocity_{13} &= 0.5 \times r_1 \times (39 - 50) + 0.4 \times r_2 \times (39 - 34)\nonumber \\
-    w &= 0.5\nonumber \\
-    newVelocity &= |0.5 \times newVelocity_1|\nonumber \\
-    currPos_1 &= currPos_1 + newVelocity_1\nonumber \\
-\end{align}
-Velocity method 2 differs from method 1 due to the manner in which it applies the velocity equation. Velocity method 1 applies the velocity equation in stages. Each stage is applied to the entire position, i.e. frequency plan before applying the next stage. The algorithm applies the standard velocity equation~\ref{eq:velocityupdate} formulated in chapter~\ref{chpt:swarm} as is to the raw indices.
 \begin{algorithm}[H]
 \caption{Velocity Method 2}
 \label{alg:velocitymethod2}
@@ -358,11 +344,30 @@ Velocity method 2 differs from method 1 due to the manner in which it applies th
 \end{algorithmic}
 \end{algorithm}
 
+In the algorithm $v'$ represents the newly calculated velocity and $w$ the inertia. The variables $c^{pbest}$ and $c^{gbest}$ each represent the personal best position and the global best position for a particle. The variable $r$ is a random scalar value where $r \in \mathbb{N}$. Variables $\delta_1$ and $\delta_2$ represent the local and global coefficients.
+
+Velocity method 2 differs from method 1 due to the manner in which it applies the velocity equation. Velocity method 1 applies the velocity equation in stages. Each stage is applied to the entire position, i.e. frequency plan before applying the next stage. 
+
+The algorithm applies the standard velocity equation~\ref{eq:velocityupdate} formulated in chapter~\ref{chpt:swarm} as is to the raw indices.
 
 An important note, is that if one analyses velocity method 1, the switch to using index values instead of raw frequencies does not affect the method's operation. Since the method only requires explicit knowledge on the data to operate on in the BoundValue function, the algorithm is still able to calculate velocity. 
 
 It is up to the algorithm designer to update the bound value method to use the array index bounds rather than the raw lower and upper bounds of the frequencies. The BoundValue function needs to be updated since it is the primary means by which velocity method 1 ensures valid positions.
 
+As with velocity method 1, a more practical example will now be presented using figure~\ref{fig:fapparticlepos} as reference point. The example will aid in understanding the operation of velocity method 2 better. Note that with each variable the subscript 1 indicates that the values for cell 1 are used.
+\begin{align}
+    currPos_1 &= \{47,41,55\}\nonumber \\
+    pbestPos_1 &= \{34,37,39\}\nonumber \\
+    gbestPos_1 &= \{30, 31,34\}\nonumber \\
+    r_1 &= 0.435\nonumber \\
+    r_2 &= 0.288\nonumber \\
+    newVelocity_{11} &= 0.5 \times r_1 \times (34 - 47) + 0.4 \times r_2 \times (34 - 30)\nonumber \\
+    newVelocity_{12} &= 0.5 \times r_1 \times (37 - 41) + 0.4 \times r_2 \times (37 - 31)\nonumber \\
+    newVelocity_{13} &= 0.5 \times r_1 \times (39 - 50) + 0.4 \times r_2 \times (39 - 34)\nonumber \\
+    w &= 0.5\nonumber \\
+    newVelocity &= |0.5 \times newVelocity_1|\nonumber \\
+    currPos_1 &= currPos_1 + newVelocity_1\nonumber \\
+\end{align}
 Both the velocity methods that are utilised by the developed \gls{FAP} \gls{PSO} algorithm have now been discussed. Why the developed \gls{PSO} was modified to operate on frequency index values rather than frequency values was also discussed. The \gls{PSO} is able to move the particles in the \gls{FAP} using two different methods, but for a particle to be moved it needs a personal best and most importantly, a global best to move towards. The next section deals with how the developed \gls{PSO} algorithm differs from the standard \gls{PSO} with regard to selecting a global best.
 \section{Building a Global Best}
 \label{sec:buildglobalbest}
