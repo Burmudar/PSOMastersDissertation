@@ -5,26 +5,26 @@ The previous chapter presented a discussion on the FAP PSO algorithm . This algo
 
 With the FS-FAP, the main performance measurement is interference and the PSO aims to allocate frequencies in an optimal way to internally produce a frequency plan. On the other hand, the MS-FAP is concerned with the span of frequencies used and the performance measurement is based on the calls dropped. The main purpose of the PSO in the MS-FAP is to minimise the span of frequencies used and keep the number of dropped calls to a minimum.
 
-The previous chapter discussed all the modifications that were made to the standard PSO. The modifications were made to enable PSO to operate on the FAP. Two velocity methods were developed and in addition to the standard global best selection scheme, two additional global best selection schemes were put forward. The algorithm presented was benchmarked against the Siemens instances of the COST 259 benchmark.
+The previous chapter discussed all the modifications that were made to the standard PSO. The modifications were made to enable PSO to operate on the FAP. Two velocity methods were developed and in addition to the standard global best selection scheme, two additional global best selection schemes were put forward. The algorithm presented in the previous chapter was benchmarked against the COST 259 benchmark Siemens instances.
 
-This chapter presents the results of applying the FAP PSO algorithm with its different velocity methods as well as different global selection schemes. This is followed by how the different velocity methods affected the PSO performance as well as how the global selection schemes affected the final results.
+This chapter presents the results of applying the FAP PSO algorithm with its different velocity methods as well as different global selection schemes. This is followed by how the different velocity methods affect the PSO performance as well as how the global selection schemes have an influence on the final results.
 
-\section{PSO COST 259 Siemens Results}
-The PSO was applied to the benchmarks on the following machine and frameworks:
+\section{PSO COST 259 siemens Results}
+The FAP PSO is applied to the benchmarks on a machine with the following specifications and frameworks:
 \begin{itemize}
 \item 4 GB RAM
 \item Windows 7
 \item Intel Quad Core CPU
 \item C\# using .Net 4 Framework with Parallel Extensions
 \end{itemize}
-The FAP PSO was applied to siemens 1, siemens 2, siemens 3 and siemens 4 of the COST 259 benchmark suite. For more information about the nature of the benchmarks, the reader is directed to section \ref{sec:COST259}.
+As discussed, the FAP PSO is applied to Siemens 1, Siemens 2, Siemens 3 and Siemens 4 of the COST 259 benchmark suite. For more information about the nature of the benchmarks, the reader is directed to section \ref{sec:COST259}.
 
-For each benchmark, 12 results are presented. The following changes were made to the FAP PSO to obtain 12 different results one for each variant of the algorithm.
+For each benchmark, 12 results are presented. The following changes were made to the FAP PSO to obtain 12 different results, one for each variant of the algorithm.
 \begin{itemize}
 \item The two velocity methods that were developed for the PSO are tested.
-\item Each velocity method was also paired with one of the three global selection schemes namely, standard (traditional PSO global best selection), building Gbest with Cells and building a Gbest with TRXs.
+\item Each velocity method is also paired with one of the three global selection schemes namely, standard (traditional PSO global best selection), building Gbest with Cells and building a Gbest with TRXs.
 \end{itemize}
-The following values were used for the FAP PSO algorithm regardless of the variant being benchmarked. These values were chosen after a series of trail runs showed that these values produce the best results.
+The following values are used for the FAP PSO algorithm regardless of the variant being benchmarked. These values were chosen after a series of trail runs showed that these values produce the best results.
 \begin{itemize}
 \item The swarm size was set to 20, 50 and 100.
 \item Inertia was set to 0.5.
@@ -32,9 +32,9 @@ The following values were used for the FAP PSO algorithm regardless of the varia
 \item Social coefficient was set to 0.5.
 \item The stopping criteria was set to max iterations 50.
 \end{itemize}
-The velocity methods and global selection schemes were discussed in the previous chapter. To obtain the best representation for the quality of results produced and performance of the different methods used by the algorithm, the benchmark was executed 20 times for every variant of the algorithm and different population size. 
+The velocity methods and global selection schemes were discussed in the previous chapter. To obtain the best representation for the quality of results produced and performance of the different methods used by the algorithm, the benchmark is executed 20 times for every variant of the algorithm and different population size. 
 
-The developed variants of the FAP PSO is compared against the algorithms that were applied the \gls{COST} 259 benchmarks as discussed in chapter \ref{chpt:heuristic}. The sections these algorithms were discussed in are as follows: \textbf{Dynamic Tabu} section~\ref{sec:tabuonfap}, \textbf{k-thin FAP} section~\ref{sec:saonfap} and \textbf{GA}~\ref{sec:gaonfap}. Note the name this dissertation will use to refer to these algorithms in this chapter, is in bold face font.
+The developed variants of the FAP PSO are compared against the algorithms that have obtained the best published results on the \gls{COST} 259 benchmarks as discussed in chapter \ref{chpt:heuristic}. The sections these algorithms were discussed in are as follows: \textbf{Dynamic Tabu} section~\ref{sec:tabuonfap}, \textbf{k-thin FAP} section~\ref{sec:saonfap} and \textbf{GA}~\ref{sec:gaonfap}. Note the name this dissertation will use to refer to these algorithms in this chapter, is in bold face font.
 
 Each section in this chapter presents results on a \gls{COST} 259 benchmark instance and uses the following layout.
 \begin{itemize}
@@ -56,7 +56,7 @@ Each section in this chapter presents results on a \gls{COST} 259 benchmark inst
         \item A line graph indicating the progress of the algorithm from iteration 1 to 50 as it obtained the best overall frequency plan for velocity method 1 and method 2.
 \end{itemize}
 
-After the results have been presented a discussion will follow about the results and what they present and reveal about the performance of the FAP PSO. The next section presents the results obtained for the benchmark instance siemens 1.
+After the results are presented a discussion will follow about the results and what they represent and reveal about the performance of the FAP PSO. The next section presents the results obtained for the benchmark instance Siemens 1.
 \subsection{Siemens 1}
 \begin{table}[H]
 \centering
@@ -79,7 +79,7 @@ After the results have been presented a discussion will follow about the results
     GA & --- & 2.96 & --- & --- \\
     \bottomrule
 	\end{tabular}
-\caption{Overall siemens 1 results with velocity method 1}
+\caption{Overall Siemens 1 results with velocity method 1}
 \label{tab:siem1m1}
 \end{table}
 \begin{table}[H]
@@ -103,7 +103,7 @@ After the results have been presented a discussion will follow about the results
     GA & --- & 2.96 & --- & --- \\
     \bottomrule
 	\end{tabular}
-\caption{Overall siemens 1 results with velocity method 2}
+\caption{Overall Siemens 1 results with velocity method 2}
 \label{tab:siem1m2}
 \end{table}
 \begin{table}[H]
@@ -121,7 +121,7 @@ After the results have been presented a discussion will follow about the results
     GA & \scriptsize{N/A} & \scriptsize{N/A} &  \scriptsize{N/A} &  \scriptsize{N/A} &  \scriptsize{N/A} &  \scriptsize{N/A} &  \scriptsize{N/A} &  \scriptsize{N/A} & \scriptsize{N/A}\\
     \bottomrule
 	\end{tabular}
-\caption{co-,adj-channel and TRX interference statistics for best siemens 1 frequency plan}
+\caption{co-,adj-channel and TRX interference statistics for best Siemens 1 frequency plan}
 \label{tab:stats-siem1m1}
 \end{table}
 \begin{table}[H]
@@ -137,11 +137,11 @@ After the results have been presented a discussion will follow about the results
     GA & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A}\\
     \bottomrule
 	\end{tabular}
-\caption{TRX pair interference breakdown for best siemens 1 frequency plan}
+\caption{TRX pair interference breakdown for best Siemens 1 frequency plan}
 \label{tab:breakdown-siem1m1}
 \end{table}
 
-\subsection{Algorithm run graph for siemens 1}
+\subsection{Algorithm run graph for Siemens 1}
 \begin{figure}[H]
 	\begin{centering}
     \includegraphics[scale=0.50]{../Implementation/data-cruncher/graph/siemens1.pdf}
@@ -172,7 +172,7 @@ After the results have been presented a discussion will follow about the results
     GA & --- & 17.83 & --- & ---  & ---\\
     \bottomrule
 	\end{tabular}
-\caption{Overall siemens 2 results with velocity method 1}
+\caption{Overall Siemens 2 results with velocity method 1}
 \label{tab:siem2m1}
 \end{table}
 \begin{table}[H]
@@ -196,7 +196,7 @@ After the results have been presented a discussion will follow about the results
     GA & --- & 17.83 & --- & --- & --- \\
     \bottomrule
 	\end{tabular}
-\caption{Overall siemens 2 results with velocity method 2}
+\caption{Overall Siemens 2 results with velocity method 2}
 \label{tab:siem2m2}
 \end{table}
 \begin{table}[H]
@@ -214,7 +214,7 @@ After the results have been presented a discussion will follow about the results
     GA & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A}\\
     \bottomrule
 	\end{tabular}
-\caption{co-,adj-channel and TRX interference statistics for best siemens 2 frequency plan}
+\caption{co-,adj-channel and TRX interference statistics for best Siemens 2 frequency plan}
 \label{tab:stats-siem2m1}
 \end{table}
 \begin{table}[H]
@@ -230,11 +230,11 @@ After the results have been presented a discussion will follow about the results
     GA & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A}\\
     \bottomrule
 	\end{tabular}
-\caption{TRX pair interference breakdown for best siemens 2 frequency plan}
+\caption{TRX pair interference breakdown for best Siemens 2 frequency plan}
 \label{tab:breakdown-siem2m1}
 \end{table}
 
-\subsection{Algorithm run graph for siemens 2}
+\subsection{Algorithm run graph for Siemens 2}
 \begin{figure}[H]
 	\begin{centering}
     \includegraphics[scale=0.5]{../Implementation/data-cruncher/graph/siemens2.pdf}
@@ -266,7 +266,7 @@ After the results have been presented a discussion will follow about the results
     GA & --- & 6.08 & --- & --- & --- \\
     \bottomrule
 	\end{tabular}
-\caption{Overall siemens 3 results with velocity method 1}
+\caption{Overall Siemens 3 results with velocity method 1}
 \label{tab:siem3m1}
 \end{table}
 \begin{table}[H]
@@ -290,7 +290,7 @@ After the results have been presented a discussion will follow about the results
     GA & --- & 6.08 & --- & --- & --- \\
     \bottomrule
 	\end{tabular}
-\caption{Overall siemens 3 results with velocity method 2}
+\caption{Overall Siemens 3 results with velocity method 2}
 \label{tab:siem3m2}
 \end{table}
 \begin{table}[H]
@@ -308,7 +308,7 @@ After the results have been presented a discussion will follow about the results
     GA & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A}\\
     \bottomrule
 	\end{tabular}
-\caption{co-,adj-channel and TRX interference statistics for best siemens 3 frequency plan}
+\caption{co-,adj-channel and TRX interference statistics for best Siemens 3 frequency plan}
 \label{tab:stats-siem3m1}
 \end{table}
 \begin{table}[H]
@@ -324,11 +324,11 @@ After the results have been presented a discussion will follow about the results
     GA & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A}\\
     \bottomrule
 	\end{tabular}
-\caption{TRX pair interference breakdown for best siemens 3 frequency plan}
+\caption{TRX pair interference breakdown for best Siemens 3 frequency plan}
 \label{tab:breakdown-siem3m1}
 \end{table}
 
-\subsection{Algorithm run graph for siemens 3}
+\subsection{Algorithm run graph for Siemens 3}
 \begin{figure}[H]
 	\begin{centering}
     \includegraphics[scale=0.5]{../Implementation/data-cruncher/graph/siemens3.pdf}
@@ -361,7 +361,7 @@ After the results have been presented a discussion will follow about the results
     GA & --- & 96.84 & --- & ---& --- \\
     \bottomrule
 	\end{tabular}
-\caption{Overall siemens 4 results with velocity method 1}
+\caption{Overall Siemens 4 results with velocity method 1}
 \label{tab:siem4m1}
 \end{table}
 \begin{table}[H]
@@ -385,7 +385,7 @@ After the results have been presented a discussion will follow about the results
     GA & --- & 96.84 & --- & ---  & ---\\
     \bottomrule
 	\end{tabular}
-\caption{Overall siemens 4 results with velocity method 2}
+\caption{Overall Siemens 4 results with velocity method 2}
 \label{tab:siem4m2}
 \end{table}
 \begin{table}[H]
@@ -403,7 +403,7 @@ After the results have been presented a discussion will follow about the results
     GA & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A}\\
     \bottomrule
 	\end{tabular}
-\caption{co-,adj-channel and TRX interference statistics for best siemens 4 frequency plan}
+\caption{co-,adj-channel and TRX interference statistics for best Siemens 4 frequency plan}
 \label{tab:stats-siem4m1}
 \end{table}
 \begin{table}[H]
@@ -419,7 +419,7 @@ After the results have been presented a discussion will follow about the results
     GA & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A} & \scriptsize{N/A}  \\
     \bottomrule
 	\end{tabular}
-\caption{TRX pair interference breakdown for best siemens 4 frequency plan}
+\caption{TRX pair interference breakdown for best Siemens 4 frequency plan}
 \label{tab:breakdown-siem4m1}
 \end{table}
 \subsection{Algorithm run graph for Siemens 4}
@@ -441,7 +441,7 @@ Below the best results achieved by the FAP PSO are compared to the best results 
 	Algorithm & Siemens 1 & Siemens 2 & Siemens 3 & Siemens 4 \\
     \midrule
 	FAP PSO & 35.19 & 52.63 & 44.64 & 277.36 \\ 
-	k-thin FAP & \textbf{2.20} & \textbf{14.27} & \textbf{5.13} & \textbf{77.25} \\ 
+	k-thin FAP & \textbf{2.20} & \textbf{14.27} & \textbf{4.73} & \textbf{77.25} \\ 
     Dynamic Tabu Search & \scriptsize{N/A} & 14.28 & 5.19 & 81.88 \\
 	GA & 2.96 & 17.83 & 6.08 & 96.84 \\
     \bottomrule
@@ -450,11 +450,11 @@ Below the best results achieved by the FAP PSO are compared to the best results 
 \label{tab:allbest}
 \end{table}
 
-All the results and relevant statistics have now been presented. The section the follows, presents a discussion and analysis of the results.
+All the results and relevant statistics have now been presented. The section that follows, presents a discussion and analysis of the results.
 \section{The Performance of the PSO}
-In this section the effects of the changes made to the FAP PSO algorithm in terms of the results is discussed. First, the effect of the two developed velocity methods in terms of the results are described. 
+In this section the effects of the changes made to the FAP PSO algorithm in terms of the results are discussed. First, the effect of the two developed velocity methods in terms of the results are described. 
 
-In section~\ref{sec:diffglobalschemes} the three global schemes that are used by the algorithm are discussed. Finally this section concludes with the effect of a larger population size on solution quality rather than a small population.
+In section~\ref{sec:diffglobalschemes} the three global schemes that are used by the algorithm are discussed. This section concludes with a discussion on the interference statistics and what it means for the peformance of the FAP PSO.
 \subsection{Velocity Method 1 vs. Method 2}
 The FAP PSO algorithm is able to utilise two different velocity methods to move the swarm around in the FAP problem space. The algorithms that implement these two methods were presented in section~\ref{sec:velocityFAP} and section~\ref{sec:velocityFAP2}.
 
@@ -507,28 +507,28 @@ For each of the presented algorithm variants that are presented the average, sta
 
 By analysing the statistics presented for each variant of the algorithm it can be concluded that by using velocity method 1, the swarm search process is more directed and focused. The deviation obtained while using velocity method 1 is low meaning that the gbest value of the swarm is near the average value of the gbest obtained across the swarm. Thus by using velocity method 1 the search process of the swarm is more focused and does not explore as much.
 
-On the other hand, with the high deviation and high average and especially the high variance, it can be concluded that velocity method 2 pushes the swarm to explore the problem space a lot more. Even though the search space is explored more, with velocity method 2 the algorithm fails to intensify and converge on a good solution. This lack of convergence is evident if one takes analyses the algorithm progress graphs presented in fig. ~\ref{fig:siem1graph}, \ref{fig:siem2graph}, ~\ref{fig:siem3graph} and \ref{fig:siem4graph}. Note that these graphs are based on a single best produced result out of all the produced results by all the variants of the algorithm. The graphs establishes the notion clearly that velocity method 1 is more focused and directed and velocity method 2 explores, disrupts or diversifies.
+On the other hand, with the high deviation and high average and especially the high variance, it can be concluded that velocity method 2 pushes the swarm to explore the problem space a lot more. Even though the search space is explored more, with velocity method 2 the algorithm fails to intensify and converge on a good solution. This lack of convergence is evident if one analyses the algorithm progress graphs presented in fig. ~\ref{fig:siem1graph}, \ref{fig:siem2graph}, ~\ref{fig:siem3graph} and \ref{fig:siem4graph}. Note that these graphs are based on a single best produced result out of all the produced results by all the variants of the algorithm. The graphs establishes the notion clearly that velocity method 1 is more focused and directed and velocity method 2 explores, disrupts or diversifies.
 
-Unfortunately the algorithms to which the FAP PSO is compared against namely, Dynamic Tabu, k-Thin SA and GA only published their respective minimums interference for their generated frequency plans along with the plans interference statistics. Therefore, in the next section, the interference statistics for best generated frequency plans by the FAP PSO for each benchmark will be discussed.
+Unfortunately the algorithms to which the FAP PSO is compared against namely, Dynamic Tabu, k-Thin SA and GA only published their respective minimums interference for their generated frequency plans along with the plans interference statistics. Therefore, in the next section, the interference statistics for best generated frequency plans by the FAP PSO for each benchmark is discussed.
 
 \subsection{Interference statistics}
-In the results sections two tables were presented in addition to the table depicting the overall algorithm performance. As discussed in introduction, each algorithm variant was executed 20 times. The two additional tables, depicts the interference statistics of the single best result out of all the produced different algorithm results.
+In the results sections two tables were presented in addition to the table depicting the overall algorithm performance. As discussed in the introduction, each algorithm variant was executed 20 times. The two additional tables, depicts the interference statistics of the single best result out of all the produced different algorithm results.
 
 Based on the co-channel interference statistics for all of the benchmarks, the FAP PSO is prone to assign frequencies to TRXs which induce co-channel interference. This can be seen due to the average and standard deviation being higher than the adjacent-channel interference.
 
-Potential co-channel is difficult to detect because in the algorithm, at the time of frequency assignment, each cell is not aware with which other cells it interferes. It is possible that a cell could interfere with all of the other cells in a network. If only a single frequency plan was being considered making the cell aware of the cells it interferes with would be optional but in the FAP PSO it isn't. Due to the FAP PSO using a population to explore a search space, making a cell aware would entail making it aware of cells in each and every single individual of the swarm. Even if one were to implement such awareness on a cell, it will complicate new frequency assignment and prolong processing by a huge amount since the whole populations cells need to be checked for co-channel violations.
+Potential co-channel interference is difficult to detect because in the algorithm, at the time of frequency assignment, each cell is not aware with which other cells it interferes. It is possible that a cell could interfere with all of the other cells in a network. If only a single frequency plan was being considered making the cell aware of the cells it interferes with would be optional but in the FAP PSO it isn't. Due to the FAP PSO using a population to explore a search space, making a cell aware would entail making it aware of cells in each and every single individual of the swarm. Even if one were to implement such awareness on a cell, it will complicate new frequency assignment and prolong processing by a huge amount since the whole populations cells need to be checked for co-channel violations.
 
 It should also be noted, that the FAP PSO algorithm performs poorly in minimising the effect a co-channel assignment will have. This is evident since in all of the presented interference statistics, the max co-channel interference is also the highest TRX interference. Compared to the Dynamic Tabu and k-Thin the FAP PSO max co-channel violation is an order of magnitude more.
 
-In contrast the adj-channel interference statistics compare favourably to the Dynamic Tabu and k-Thin averages and standard deviation. Again, as noted previously, the FAP PSO algorithm does not minimise the effect of a co or adjacent channel interference. The max adjacent-channel interference is marginally higher than those reported by Dynamic Tabu and k-Thin.
+In contrast the adj-channel interference statistics compare favourably to the Dynamic Tabu and k-Thin averages and standard deviation. Again, as noted previously, the FAP PSO algorithm does not minimise the effect of a co- or adjacent channel interference. The max adjacent-channel interference is marginally higher than those reported by Dynamic Tabu and k-Thin.
 
-When only considering the interference statistics of max, average and standard deviation, it is not clear as to why the FAP PSO algorithm generate frequency plans with such high interference when compared to the best frequency plans. Although when considering the interference statistics relating to the amount of TRXs exceeding a interference threshold, it becomes clear. The FAP PSO algorithm simply has far too many TRX pairs in the 0.10, 0.15, 0.20 and 0.50 thresholds. Comparatively the Dynamic Tabu and k-Thin typically have close to 10, but mostly 0 in these high interference thresholds. The FAP PSO on the other hand, has in just about every case above 100 TRX pairs the exceed the threshold.
+When only considering the interference statistics of max, average and standard deviation, it is not clear as to why the FAP PSO algorithm generate frequency plans with such high interference when compared to the best frequency plans. Although when considering the interference statistics relating to the amount of TRXs exceeding a interference threshold, it becomes clear. The FAP PSO algorithm simply has far too many TRX pairs in the 0.10, 0.15, 0.20 and 0.50 thresholds. Comparatively the Dynamic Tabu and k-Thin typically have close to 10, but mostly 0 in these high interference thresholds. The FAP PSO on the other hand, has in just about every case above 100 TRX pairs that exceed the threshold.
 
 The TRX interference statistics makes it abundantly clear where the FAP PSO needs to improve. For the algorithm to make any progress towards generated frequency plans with lower interference, the amount of TRXs that exceed the higher thresholds from 0.10 needs to be reduced drastically.
 
-Further improvements that will require future work will be discussed in the next chapter.
+Further improvements that will require future work is discussed in the next chapter.
 
 \section{Summary}
-In this chapter the results produced by the algorithm discussed in chapter~\ref{chpt:psoapplicationFAP} were presented. The FAP PSO algorithm was applied to four COST 259 benchmarks namely siemens 1, siemens 2, siemens 3 and siemens 4. These four benchmarks were discussed in detail in chapter~\ref{chpt:fap}. For each of the benchmarks, 12 different variants of the FAP PSO algorithm were tested. Each variant used a different velocity function, global best selection scheme or population size. For each benchmark three tables were presented. The first table presented the results for the overall performance of the different algorithm variants on the benchmark. The second and third table presented the interference statistics for the best generated frequency plan by the FAP PSO. Finally each section concluded with a graph depicting the performance of the best FAP PSO algorithm run for velocity method 1 and velocity method 2.
+In this chapter the results produced by the algorithm discussed in chapter~\ref{chpt:psoapplicationFAP} were presented. The FAP PSO algorithm was applied to four COST 259 benchmarks namely Siemens 1, Siemens 2, Siemens 3 and Siemens 4. These four benchmarks were discussed in detail in chapter~\ref{chpt:fap}. For each of the benchmarks, 12 different variants of the FAP PSO algorithm were tested. Each variant used a different velocity function, global best selection scheme or population size. For each benchmark three tables were presented. The first table presented the results for the overall performance of the different algorithm variants on the benchmark. The second and third table presented the interference statistics for the best generated frequency plan by the FAP PSO. Finally each section concluded with a graph depicting the performance of the best FAP PSO algorithm run for velocity method 1 and velocity method 2.
 
 The chapter concluded with critical analysis of each of the different algorithms developed in this study to enable the PSO to operate in the FAP space as well as a discussion on the interferences statistics and what it reveals about the FAP PSO performance.

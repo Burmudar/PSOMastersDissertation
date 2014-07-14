@@ -74,14 +74,16 @@ namespace PSOFAPConsole.FAPPSO
             DateTime start = DateTime.Now;
             BenchName = "Bench-" + BenchName + "(" + Population + ")-" + start.ToLongDateString() + " " + 
 			            start.ToLongTimeString().Replace(':', '-') + "#" + this.GetHashCode();
-            String filename = BenchName +".csv";
-            String statsFilename = "Stats-" + filename;
-            Console.WriteLine("Outputting results to <{0}> and Stats to <{1}>", filename, statsFilename);
-            using (StreamWriter swriter = new StreamWriter(new FileStream(filename, FileMode.CreateNew)), statsWriter = new StreamWriter(new FileStream(statsFilename, FileMode.CreateNew)))
+			Console.WriteLine("Starting Benchmark: \n{0}\n", BenchName);
+			using (StatsWriter statsWriter = new StatsWriter(BenchName))
             {
-                swriter.WriteLine("iteration, fitness");
-            
-                statsWriter.WriteLine("iteration, fitness,co-channel max, co-channel avg, co-channel std, adj-channel max, adj-channel avg, adj-channel std, trx max, trx avg, trx std, ex-0.01, ex-0.02, ex-0.03, ex-0.04, ex-0.05, ex-0.10, ex-0.15, ex-0.20, ex-0.50");
+				statsWriter.initiliaze(
+					new string[]{"iteration", "fitness"},
+					new string[]{"iteration", "fitness","co-channel max", "co-channel avg", "co-channel std", 
+						"adj-channel max","adj-channel avg","adj-channel std", "trx max", "trx avg", "trx std", 
+						"ex-0.01", "ex-0.02", "ex-0.03", "ex-0.04", "ex-0.05", "ex-0.10", "ex-0.15", "ex-0.20", 
+						"ex-0.50"}
+				);
                 for (int i = 0; i < 50; i++)
                 {
                     Console.Write("Iteration {0} ... ", i + 1);
@@ -89,27 +91,19 @@ namespace PSOFAPConsole.FAPPSO
                     UpdateGlobalBest();
                     UpdateSwarmMovement();
                     runFitness.Add(GlobalBest.Fitness);
-                    swriter.WriteLine("{0},{1}", i, GlobalBest.Fitness.ToString("F"));
+					statsWriter.WriteBenchmarkLine(i, GlobalBest.Fitness);
                     double[] stats = Analyser.Stats(GlobalBest.Position);
-                    statsWriter.WriteLine("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16}," +
-                    	"{17},{18},{19}",
-                        i, stats[0].ToString("F"), stats[1].ToString("F"), stats[2].ToString("F"), 
-						stats[3].ToString("F"), stats[4].ToString("F"), stats[5].ToString("F"), 
-						stats[6].ToString("F"), stats[7].ToString("F"), stats[8].ToString("F"), 
-						stats[9].ToString("F"), stats[10].ToString("F"), stats[11].ToString("F"), 
-						stats[12].ToString("F"), stats[13].ToString("F"), stats[14].ToString("F"), 
-						stats[15].ToString("F"), stats[16].ToString("F"), stats[17].ToString("F"), 
-						stats[18].ToString("F"));
+					statsWriter.WriteStatsLine("{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16}," +
+						"{17},{18},{19}",i, stats);
                     Console.WriteLine("Done");
-                    if ((i + 1) % 10 == 0)
-                    {
-                        Console.WriteLine("Flushing");
-                        swriter.Flush();
-                        statsWriter.Flush();
-                    }
                 
                 }
-                swriter.WriteLine("StdDev {0}, Avg {1}", StdStatisticalAnalyser.CalculateStdDev(runFitness), runFitness.Average());
+				statsWriter.WriteBenchmarkLine("StdDev {0}, Avg {1}", StdStatisticalAnalyser.CalculateStdDev(runFitness)
+					, runFitness.Average());
+				statsWriter.WriteBenchmarkLine ("Min {0}, Max {1}", runFitness.Min (), runFitness.Max ());
+				statsWriter.WriteBenchmarkLine ("Variance {0}, SumOfDiff {1}", 
+					StdStatisticalAnalyser.CalculateVariance (runFitness),
+					StdStatisticalAnalyser.CalculateSumOfDifferences(runFitness);
             }
         }
 

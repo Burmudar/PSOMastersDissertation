@@ -81,34 +81,43 @@ namespace PSOFAPConsole.FAPPSO
 				new IndexStatisticalAnalyser(Model));
         }
 
-        public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestCellBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestCellBuilder(int Population, FAPModel Model,
+			 double localCoefficient, double globalCoefficient)
         {
             PositionGenCellArray generator = new FrequencyIndexPositionGenerator(Model);
             FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(Model);
-            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
+            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient,
+				 globalCoefficient, CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestCellBuilderSelector(), new IndexStatisticalAnalyser(Model));
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, 
+				GBestFactory.GetGlobalBestCellBuilderSelector(), new IndexStatisticalAnalyser(Model));
         }
 
-        public PSOAlgorithm<ICell[]> CreateIndexBasedFAPPSOWithGlobalBestTRXBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateIndexBasedFAPPSOWithGlobalBestTRXBuilder(int Population, FAPModel Model, 
+			double localCoefficient, double globalCoefficient)
         {
             PositionGenCellArray generator = new FrequencyIndexPositionGenerator(Model);
             FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(Model);
-            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(Model, 0, Model.Channels.Length - 1, localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
+            ParticleMoveFunction moveFunction = new ParticlePerTrxFunction(Model, 0, Model.Channels.Length - 1, 
+				localCoefficient, globalCoefficient, CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestTRXBuilderSelector(), new IndexStatisticalAnalyser(Model));
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, 
+				GBestFactory.GetGlobalBestTRXBuilderSelector(), new IndexStatisticalAnalyser(Model));
         }
 
-        public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestTRXBuilder(int Population, FAPModel Model, double localCoefficient, double globalCoefficient)
+        public PSOAlgorithm<ICell[]> CreateIndexMovementBasedWithGlobalBestTRXBuilder(int Population, FAPModel Model, 
+			double localCoefficient, double globalCoefficient)
         {
             PositionGenCellArray generator = new FrequencyIndexPositionGenerator(Model);
             FitnessFuncCellArray evalFunction = new FAPIndexCostFunction(Model);
-            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient,globalCoefficient,CreateCollisionResolver(Model));
+            ParticleMoveFunction moveFunction = new PerTRXChannelIndexFunction(Model, localCoefficient,
+				globalCoefficient,CreateCollisionResolver(Model));
             ICellIntegrityChecker checker = new GBCIndexBasedViolationChecker(Model);
             String benchName = Model.GeneralInformation.ScenarioID;
-            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, GBestFactory.GetGlobalBestTRXBuilderSelector(), new IndexStatisticalAnalyser(Model));
+            return new FAPPSOAlgorithm(benchName, Population, evalFunction, moveFunction, generator, checker, 
+				GBestFactory.GetGlobalBestTRXBuilderSelector(), new IndexStatisticalAnalyser(Model));
         }
 
         protected AbstractCollisionResolver CreateCollisionResolver(FAPModel model)

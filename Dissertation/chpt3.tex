@@ -37,11 +37,11 @@ In research done by Engelbrecht\cite{FundamentalSwarm} the following constraint 
 \item{\textbf{Penalty function methods}} --- Modifies the objective function to add a penalty that is enforced if a solution violates constraints. By adding a penalty the infeasible solutions are discouraged.
 \item{\textbf{Convert the constrained problem to an unconstrained problem}} --- By converting any constraints defined by inequalities to boundary constraints the problem is converted to an unconstrained problem\cite{CompuIntelligenceIntro}. Solving unconstrained problems can lead to better solutions being found, although not guaranteed.
 \item{\textbf{Preserving feasibility methods}} --- Candidate solutions are initialised in the search space and satisfy all constraints. These solutions are continuously moved or transformed with specialised operators which ensure that the solutions continue to satisfy all the constraints. The operators ensure that all solutions stay within the bounded search space.
-\item{\textbf{Pareto ranking methods}} --- Solutions are ranked based on the severity of their constraint violations. Ranking is achieved by using concepts from multi-objective optimisation. For more information the reader is directed to literature by Engelbrecht\cite{FundamentalSwarm}
+\item{\textbf{Pareto ranking methods}} --- Solutions are ranked based on the severity of their constraint violations. Ranking is achieved by using concepts from multi-objective optimisation. For more information the reader is directed to literature by Engelbrecht\cite{FundamentalSwarm}.
 \item{\textbf{Repair methods}} --- Operators are used to transform solutions that violate constraints to solutions that adhere to all the constraints and are thus feasible solutions.
 \end{itemize}
 
-Constraint handling methods need to be used when solving constrained problems like the \gls{FAP}. Without these methods, the search for solutions is undirected and solutions that cannot be used are presented as most optimal. Reference to these methods will be made where applicable.
+Constraint handling methods need to be used when solving constrained problems like the \gls{FAP}. Without these methods, the search for solutions is undirected and solutions that cannot be used are presented as most optimal. Reference to these methods are made where applicable.
 The following section discusses two methods that define how frequencies are allocated.
 \section[Frequency Allocation Types]{Different methods used to allocate frequencies}
 \label{sec:FreqAssignmentTypes}
@@ -263,7 +263,6 @@ More specifically this research concentrates on a small subset of the instances 
 
 As discussed in section~\ref{sec:chm} constraint handling mechanisms need to be used for problems like the \gls{FAP}. Each of the Siemens benchmarks define a set of globally or locally blocked frequencies, which are hard constraints. Due to this constraint one of the mechanisms that will be used in the algorithm to handle solutions violating this constraint is \emph{to reject any solutions that is found to violate this hard constraint}. The characteristics of each instance will now be discussed.
 
-
 \subsubsection{Siemens 1}
 The siemens 1 instance resembles a \gls{gsm} network that follows the \gls{gsm}900 standard. This particular network has been allocated a spectrum set of frequencies $F = \{16,17,18,\dots,90\}$ which are allowed to be assigned to cells. 
 
@@ -277,7 +276,7 @@ The siemens 2 problem instance describes a \gls{gsm} network based on \gls{gsm}9
 
 For this problem, the network has been allocated two blocks of frequencies: one block of four frequencies ranging from $F = \{42,43,44,45,46\}$ and a second block of frequencies ranging from $F= \{53,54,55,\dots,124\}$. The frequencies allocated to the network have been split into two blocks because frequencies ranging from $F = \{47,48,49,50,51,52\}$ are globally blocked. Finally the problem specifies that the co-site separation must be set to two and the co-cell separation must be set to three.
 
-This problem is more difficult than Siemens 1, as there are 977 transceivers that need to be assigned frequencies out of a pool of 75 frequencies. Contributing to the difficulty of Siemens 2 is due to the problem defining that there are 40 more transceivers for assignment and almost the same amount of frequencies to be used assignment as siemens 1 
+This problem is more difficult than Siemens 1, as there are 977 transceivers that need to be assigned frequencies out of a pool of 75 frequencies. Contributing to the difficulty of Siemens 2 is due to the problem defining that there are 40 more transceivers for assignment and almost the same amount of frequencies to be used assignment as siemens 1.
 \subsubsection{Siemens 3}
 The siemens 3 problem describes a network based on \gls{gsm}900. This network has been allocated a continuous set of frequencies $F= \{681,682, \dots, 735\}$. Thus the network has 55 frequencies, which can be allocated to transceivers in its network.
 

@@ -46,7 +46,7 @@ Heuristics are strategies that direct the search based on the information availa
 
 In general ``meta'' means \emph{beyond} or \emph{higher level}\cite{AIModernApproach,NatureInspiredMetaHeuristic}. A metaheuristic therefore refers to a heuristic that is more complex with regard to the decisions it is able to make compared with a standard heuristic\cite{AIModernApproach,NatureInspiredMetaHeuristic}. With a standard heuristic only the current state is considered\cite{AIModernApproach}. A metaheuristic takes additional information into account when considering a current state\cite{NatureInspiredMetaHeuristic}. This additional information can be previous states, or states that are considered to be close in the search space\cite{AIModernApproach, NatureInspiredMetaHeuristic}.
 
-Metaheuristic search algorithms are not guaranteed to find the most optimal solutions in the search space; instead these algorithms are used to find near-optimal solutions. Thus most algorithmic development in the metaheuristic domain focuses on developing new techniques that will increase the probability that a good solution will be obtained in difficult combinatorial problems \cite{MetaAgricultural}.
+Metaheuristic search algorithms are not guaranteed to find the most optimal solutions in the search space; instead these algorithms are used to find near-optimal solutions. Thus most algorithmic development in the metaheuristic domain focuses on developing new techniques that will increase the probability that a good candidate solution will be obtained in difficult combinatorial problems \cite{MetaAgricultural}.
 
 Similarly, metaheuristics are not guaranteed to find suitable candidate solutions or perform well in each problem domain it is applied to. The quality of the solution and performance of the metaheuristic is very much dependent upon on the expertise of the algorithm designer \cite{AutoComplexMeta}. Besides the algorithm designer modifying the algorithm; metaheuristic algorithms that are inherently population-based, hybrid and/or distributed, use the concept of social and self-organisation to better exploit the solution space\cite{Self-AdaptiveMeta}.
 
@@ -82,13 +82,13 @@ Random initial solutions might seem to be a good starting point, but by introduc
 Control of the randomly generation solutions can be achieved by simply constraining the random solution generator to only generate initial starting points in a bounded subset of the entire search space. For example: instead of letting the random initial starting point be any number between positive infinity and negative infinity, the random number generator is constrained to only generate numbers between 5 and -5.
 
 \subsubsection{Neighbourhood Search}
-The following discussion on neighbourhood search is not meant to be an exhaustive survey on the different methods and how they differ under different problems. Instead the discussion is meant as a general overview to get an idea of neighbourhood generation in the \gls{TS} algorithm context. The following neighbourhood discussion will be based on the assumption that the underlying problem the \gls{TS} is applied to, has a search space with defined boundaries that is suitable for neighbourhood generation.
+The following discussion on neighbourhood search is not meant to be an exhaustive survey on the different methods and how they differ under different problems. Instead the discussion is meant as a general overview to get an idea of neighbourhood generation in the \gls{TS} algorithm context. The following neighbourhood discussion is based on the assumption that the underlying problem the \gls{TS} is applied to, has a search space with defined boundaries that is suitable for neighbourhood generation.
 
 TS uses a neighbourhood local search process to explore the solution space. There is no set process of how neighbourhood candidate solutions are selected as it is problem dependant. The overall quality of the solution produced by \gls{TS} is also dependent on the neighbourhood search strategy used \cite{TSHazardous}. 
 
 The neighbourhood search phase is the first operation performed after the algorithm has been initialised, which is to say the algorithm has generated an initial starting candidate solution from which the exploration process can start. The neighbourhood search phase is the primary means for the \gls{TS} algorithm to search the solution space for an optimal solution. It is within this phase that new possible candidate solutions must be presented for the \gls{TS} heuristic to allow the algorithm to decide to which solution it must move next.
 
-The new possible candidate solutions that are generated are called neighbouring solutions; hence the \gls{TS} algorithm always moves to a neighbouring solution. When the \gls{TS} algorithm moves to a neighbouring solution, the current solution is replaced by the neighbouring solution. Therefore, in the next iteration, neighbours for the new solution need to be generated. Generation of new neighbours can range from a simple increment option to a complex operation that incorporates additional intelligence by means of a more heuristic approach to generate new neighbours. This different means of generating neighbours is referred as a \emph{neighbourhood search strategy}.
+The new possible candidate solutions that are generated are called neighbouring solutions; hence the \gls{TS} algorithm always moves to a neighbouring solution. When the \gls{TS} algorithm moves to a neighbouring solution, the current solution is replaced by the neighbouring solution. Therefore, in the next iteration, neighbours for the new solution need to be generated. Generation of new neighbours can range from a simple increment option to a complex operation that incorporates additional intelligence by means of a more heuristic approach to generate new neighbours. This different means of generating neighbours is referred to as a \emph{neighbourhood search strategy}.
 
 The \gls{TS} algorithm is not limited to just one neighbourhood search strategy. In the research by Gopalakrishnan \emph{et al.}\cite{TabuCarryOver} five-neighbourhood move strategies are developed and are used interchangeably; in some cases a strategy is used three times in a row due to stagnation in the search space. Stagnation occurs when the algorithm does not move to a better candidate solution; \gls{TS} opts to stay on the current solution, as no neighbouring solution is better than the current one. 
 
@@ -146,6 +146,13 @@ In this section the general flow of the \gls{TS} algorithm is described using al
     \State $\hat{z_i} \leftarrow$Select best neighbour from $\hat{y_i}$
     \If{Move to $\hat{z_i}$ is Tabu}
     \If{$\hat{z_i}$ meets Aspiration Criterion}
+    \algstore{ts}
+    \end{algorithmic}
+\end{algorithm}
+\begin{algorithm}[H]
+    \caption{Basic Tabu Search Algorithm (continued)\cite{TabuRCAProblem, TabuMontemanniSmith}}
+    \begin{algorithmic}
+    \algrestore{ts}
     \State $\hat{x_i} \leftarrow \hat{z_i}$
 				\EndIf
 			\Else
@@ -187,24 +194,24 @@ The authors developed a technique called \gls{HMT}. \Gls{HMT} first monitors an 
 
 The \gls{HMT} then uses the identified characteristics to add \emph{additional} constraints to the problem\cite{TabuMontemanniSmith}. By adding constraints, the search space is reduced. However, by reducing the search space, other near-optimal solutions, which might be far better are excluded\cite{TabuMontemanniSmith}. It is for this reason that that Montemanni and Smith opted not to add the constraints permanently.
 
-Montemanni and Smith applied their \gls{TS} algorithm together with \gls{HMT} to the \gls{COST} 259 family of benchmarks, specifically the siemens 1, siemens 2, siemens 3 and siemens 4 problems. The results are presented in table~\ref{TSCOST259}. The values presented are scalar and indicate the total interference of the frequency plan. The lower the interference value is, the better the frequency plan.
+Montemanni and Smith applied their \gls{TS} algorithm together with \gls{HMT} to the \gls{COST} 259 family of benchmarks, specifically the Siemens 1, Siemens 2, Siemens 3 and Siemens 4 problems. The results are presented in table~\ref{TSCOST259}. The values presented are scalar and indicate the total interference of the frequency plan. The lower the interference value is, the better the frequency plan.
 
 As can be observed from the results obtained by the authors, the \gls{TS} algorithm with HMT produces results that rank very favourably against other algorithms also applied to the \gls{COST} 259. 
 
 Bouju et al. \cite{TSBouju} presents a TS algorithm that is applied to the MI-FAP. In the algorithm the fitness function counts the number of violations. The algorithm restricts the neighborhood by only selecting $n$ cells that have large local constraint violations. $n$ is gradually increased by the algorithm as the search progresses. Once all the instances are selected the algorithm performs arc consistency on them. Arc consistency is best explained with a formal example. Consider a cell $c$ with neighbors given by the function $N(c)$. As frequencies get assigned to the neighbours of $c$ the assignment will cause some frequencies on $c$ to be blocked(violating constraints). If there are still free frequencies left to assign to $c$ after the maximum number of blocked frequencies has been reached, then $c$ can be removed from the selected instances.
 
-In research by Montemanni et al.\ discuss a \gls{TS} algorithm which utilizes dynamic tabu\cite{MontiTS}. By using dynamic tabu the algorithm gradually reduces the length of the tabu list with each iteration. After a pre-defined number of iterations the algorithm applies cell re-optimisation. Cell re-optimisation fixes the assignment of frequencies to all cells except one. The frequencies for this one cell can then be changed and optimised to provide the lowest interference\cite{MontiTS}. The algorithm is applied to the COST 259 family of benchmarks and the results obtained are in the column ``Dynamic Tabu'' in table~\ref{TSCOST259}. Note that the authors did not apply their algorithm to siemens 1, no reason was given why. The best results for \gls{COST} 259 were obtained by the k-Thin algorithm which is discussed in section~\ref{sec:saonfap}.
+In research by Montemanni et al.\ discuss a \gls{TS} algorithm which utilizes dynamic tabu\cite{MontiTS}. By using dynamic tabu the algorithm gradually reduces the length of the tabu list with each iteration. After a pre-defined number of iterations the algorithm applies cell re-optimisation. Cell re-optimisation fixes the assignment of frequencies to all cells except one. The frequencies for this one cell can then be changed and optimised to provide the lowest interference\cite{MontiTS}. The algorithm is applied to the COST 259 family of benchmarks and the results obtained are in the column ``Dynamic Tabu'' in table~\ref{TSCOST259}. Note that the authors did not apply their algorithm to Siemens 1, no reason was given why. The best results for \gls{COST} 259 were obtained by the k-Thin algorithm which is discussed in section~\ref{sec:saonfap}.
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c | c |}
 		\hline
         Problem instance & \gls{TS} with HMT & Dynamic Tabu & Best COST 259 \\ \hline
-        siemens 1 & 2.769 & --- & 2.200 \\ \hline
-        siemens 2 & 14.936 & 14.275 & 14.271 \\ \hline
-        siemens 3 & 6.650 & 5.186 & 5.129 \\ \hline
-        siemens 4 & 110.973 & 81.876 & 77.246 \\ \hline
+        Siemens 1 & 2.769 & --- & 2.200 \\ \hline
+        Siemens 2 & 14.936 & 14.275 & 14.271 \\ \hline
+        Siemens 3 & 6.650 & 5.186 & 5.129 \\ \hline
+        Siemens 4 & 110.973 & 81.876 & 77.246 \\ \hline
 	\end{tabular}
-\caption{Results of applying \gls{TS} with HMT, and Dynamic Tabu on COST 259}
+    \caption{Results of applying \gls{TS} with HMT~\cite{TabuMontemanniSmith}, and Dynamic Tabu~\cite{MontiTS} on COST 259}
 \label{TSCOST259}
 \end{table}
 
@@ -355,7 +362,7 @@ The \gls{SA} algorithm, as with the \gls{TS} algorithm, has achieved good result
 
 Research conducted by Duque-Anton et al.\cite{SAChanAss} utilise the \gls{SA} on the FAP. The authors introduce the concept of a \emph{dummy} frequency. The frequency is used to indicate (partial) unsatisfied demand. Where demand is defined as the amount of transceivers installed at a cell to handle expected traffic. By swapping out a real frequency with the dummy frequency or vice versa the algorithm is able to increase of decrease violation of the traffic demand. The particular cell and frequency that is used for this swapping that occurs is chosen at random. The authors opted to use a custom cooling schedule. In their schedule the cooling rate is calculated based on the average cost taken over two L-loops at temperature $t1$ and $t2$ is less than the standard deviation of solutions at temperature $t1$. Where L-loop refers to the \gls{SA} algorithm inner loop where the temperature does not change.
 
-A unconventional \gls{SA} algorithm  is presented by Zerovnik\cite{Zerovnik97}. The defining characteristic that sets this algorithm apart from conventional \gls{SA} algorithms is that the initial temperature $T$ is never changed. The algorithm selects a cell based on the number of constraints it has violated. Using this cell frequencies are assigned to it based on a probability. This probability is formulated as follows. For every new frequency $f$ the probability that is will be assigned to the cell is given by $e^{S_f/T}$, where $S_f$ represents the number of violated constraints if $f$ is assigned to the particular TRX at the cell.
+A unconventional \gls{SA} algorithm  is presented by Zerovnik\cite{Zerovnik97}. The defining characteristic that sets this algorithm apart from conventional \gls{SA} algorithms is that the initial temperature $T$ is never changed. The algorithm selects a cell based on the number of constraints it has violated. Using this cell frequencies are assigned to it based on a probability. This probability is formulated as follows. For every new frequency $f$ the probability that is assigned to the cell is given by $e^{S_f/T}$, where $S_f$ represents the number of violated constraints if $f$ is assigned to the particular TRX at the cell.
 
 Hellebrandt and Heller \cite{Hehe00} present an \gls{SA} algorithm which is applied to the COST 259 set of benchmark instances. In their algorithm, the initial solution is generated in such a manner to ensure it fulfills all hard constraints. The authors opted to set the initial temperature acceptance rate to between 0.8 and 0.9. Movement occurs through the 1-exchange movement strategy. The algorithm restricts the neighbourhood by only selecting potential moves which will not violate any constraints. The defining attribute of the algorithm presented by the authors is due to their \emph{one-cell optimisation} method that is applied at the end of each iteration. With this method a cell is randomly selected and by using a simple dynamic program the authors show the cell can be efficiently optimised. The optimisation occurs by allowing that for the particular cell all frequencies can be changed simultaneously\cite{Hehe00}. 
 
@@ -363,18 +370,18 @@ In literature by Beckmann and Killat\cite{BeKi99a} the \gls{SA} algorithm is app
 
 Research presented by Mannino et al.\cite{MaOrRi02} discusses an \gls{SA} algorithm that utilizes \emph{interval graphs}. A graph $G(V,E)$ is an interval graph if the graph contains a ordering of vertices ${v_1,\dots,v_n}$ such that it can be shown that for any triple $(r,s,t)$ that $r < s < t$, if $v_1v_2 \in E$, then $v_1v_s \in E$. If such an ordering exists within the graph, then a maximum weighted stable set can be found by a dynamic programming algorithm in $O(|V|)$-time. The authors generalised the graph interval to define when a graph is k-thin. Namely a graph $G(V,E)$ is k-thin when one can define a ordering of vertices ${v_1,\dots,v_n}$ for $V$ and partition the ordering into $k$ classes $V^1,\dots,V^k$, such that for any triple $(r,s,t)$ that $r < s < t$, if $v_r,v_s \in E$ belong to the same $k$ class and $v_t,v_r \in E$ then $v_t,v_s \in E$. If a graph is found to satisfy these conditions defined by the authors then the graph is an interval graph if and only if it is 1-thin. When the ordering and partition is given from the beginning, then the authors are able to find a maximum stable set $S^*$ on a k-thin graph in $O(\frac{|V|}{k})^k$. Using this k-thin graph approach together with \gls{SA} algorithm allowed the authors to out perform all the other results presented in the \gls{COST} 259 benchmark. 
 
-In table\ref{tab:SA} results are presented from research presented by two authors. As mentioned previously, the results in column ``(BK) \gls{SA}'' are from the research presented by Beckmann and Killat\cite{BeKi99a}. The results depicted in column ``Best \gls{COST} 259'' are from the research presented by Mannino et al.\cite{MaOrRi02} obtained by their k-Thin \gls{SA} algorithm.
+In table~\ref{tab:SA} results are presented from research presented by two authors. As mentioned previously, the results in column ``(BK) \gls{SA}'' are from the research presented by Beckmann and Killat\cite{BeKi99a}. The results depicted in column ``Best \gls{COST} 259'' are from the research presented by Mannino et al.\cite{MaOrRi02} obtained by their k-Thin \gls{SA} algorithm.
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c | c |}
 	\hline
-    Problem instance & (BK)\gls{SA} & Best \gls{COST} 259 \\ \hline
+    Problem instance & (BK)\gls{SA} & k-Thin SA - Best \gls{COST} 259 \\ \hline
 	siemens 1 & 2.78 & 2.20\\ \hline
 	siemens 2 & 15.46 & 14.27\\ \hline
 	siemens 3 & 6.75 & 5.12\\ \hline
 	siemens 4 & 89.15 & 77.24\\ \hline
 	\end{tabular}
-\caption{SA on \gls{COST} 259 Benchmark}
+    \caption{(BK) SA~\cite{BeKi99a} and k-Thin SA~\cite{MaOrRi02} on \gls{COST} 259 Benchmark}
 \label{tab:SA}
 \end{table}
 
@@ -492,7 +499,7 @@ A large population is preferred in large search spaces in order to get good chro
 
 The following section presents the pseudo code for the \gls{GA} algorithm and also the flow of the \gls{GA} algorithm is discussed
 \subsection{Flow of the Algorithm}
-The core concepts of the genetic algorithm were introduced in the previous section. To better understand the algorithm, a general overview of the algorithm will be presented in this section using algorithm~\ref{alg:GA} as a reference point.
+The core concepts of the genetic algorithm were introduced in the previous section. To better understand the algorithm, a general overview of the algorithm is presented in this section using algorithm~\ref{alg:GA} as a reference point.
 \begin{algorithm}[H]
 \caption{Basic Genetic Algorithm\cite{GAGoldberg, CompuIntelligenceIntro}}
 \label{alg:GA}
@@ -507,13 +514,6 @@ The core concepts of the genetic algorithm were introduced in the previous secti
     \If{$\hat{c_i} \geq$ Crossover threshold}
     \State $\hat{g_i} \leftarrow$ Apply crossover operator to $\hat{g_i}$
     \EndIf
-    \algstore{ga}
-    \end{algorithmic}
-\end{algorithm}
-\begin{algorithm}[H]
-    \caption{Basic Genetic Algorithm (continued)\cite{GAGoldberg, CompuIntelligenceIntro}}
-    \begin{algorithmic}
-    \algrestore{ga}
         \State $\hat{o_i} \leftarrow \hat{g_i}$
         \State $\hat{m_i}\leftarrow$ Calculate Mutation probability for $\hat{o_i}$
         \If{$\hat{m_i} \geq$ Mutation threshold}
@@ -577,7 +577,7 @@ In table~\ref{tab:GA} the results obtained by authors on the \gls{COST} 259 benc
 	siemens 3 & 6.08 & 5.13 \\ \hline
 	siemens 4 & 96.84 & 77.25 \\ \hline
 	\end{tabular}
-\caption{GA on \gls{COST} 259 Benchmark}
+    \caption{GA~\cite{ProblemDecompMIFAP} on \gls{COST} 259 Benchmark}
 \label{tab:GA}
 \end{table}
 

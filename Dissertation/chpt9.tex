@@ -24,7 +24,7 @@ In chapter 2, the hypothesis which this research aims to prove was stated. The h
 
 The first factor, was to discern whether it is possible to apply the \gls{PSO} to the \gls{FAP}. Based on the results presented in chapter~\ref{chpt:results} it has been proven that it is indeed possible to apply the PSO to the FAP.
 
-The second factor was to gauge the quality of the solutions the a PSO operating on the FAP produces. As discussed in chapter~\ref{chpt:results} the FAP PSO algorithm does not produce high quality results when compared to the best results obtained on the COST 259 benchmark. This is understanable due to applying the PSO the specific FAP variant has never been attempted before. The base of a PSO algorithm operating the FAP has now been created. Therefore, further refinement on the algorithm is now possible and allows for experimentation with other methods. Possible methods are discussed in section~\ref{sec:futurework}.
+The second factor was to gauge the quality of the solutions the a PSO operating on the FAP produces. As discussed in chapter~\ref{chpt:results} the FAP PSO algorithm does not produce high quality results when compared to the best results obtained on the COST 259 benchmark. This is understanable due to applying the PSO with the specific FAP variant has never been attempted before. The basis for a PSO algorithm operating the FAP has now been created. Therefore, further refinement on the algorithm is now possible and allows for experimentation with other methods. Possible methods are discussed in section~\ref{sec:futurework}.
 
 The next section discusses the difficulties that were faced during the design and implementation of the FAP PSO algorithm. 
 \section{Difficulties faced}
@@ -36,6 +36,7 @@ Another difficulty that was faced was improving the efficiency of the algorithm.
 
 In this section an overview of the difficulties that were encountered during the development of the FAP were discussed. In the following section an overview of the potential future work based on this study is presented.
 \section{Future Work}
+\label{sec:futurework}
 Most of the techniques developed for the FAP PSO, aim to stay true to the standard PSO algorithm. The next step is to hybridise the FAP PSO algorithm. A good candidate for hybridisation would be the GA as the algorithm naturally ``purifies'' results in finding the right genes that make up a good possible solution.
 
 In the PSO a good entry point for the GA to be incorporated would be twofold. The first point would be to take a certain global best selected with the standard procedure and then mate it with successive global bests, with the offspring global best being a best for a future iteration. With this method the PSO is able to use the history of the algorithm from the start.
