@@ -28,10 +28,10 @@ A NP-Complete problem is a problem that is in NP and is also considered to be NP
 
 \section{Constraint handling mechanisms}
 \label{sec:chm}
-Not only is the \gls{FAP} an NP-Complete problem but it is also a constraint problem. Constraint problem restrict the search space of possible solutions with boundaries. These boundaries are referred to as constraints\cite{FundamentalSwarm}. The \gls{FAP} domain has specific constraints defined for each of the different individual problems. Before the various ways in which frequencies can be allocated is discussed a brief discussion needs to be presented on constraint handling mechanisms.
+Not only is the \gls{FAP} an NP-Complete problem but it is also a constraint problem. Constraint problems restrict the search space of possible solutions with boundaries. These boundaries are referred to as constraints\cite{FundamentalSwarm}. The \gls{FAP} domain has specific constraints defined for each of the different individual problems. Before the various ways in which frequencies can be allocated is discussed a brief discussion needs to be presented on constraint handling mechanisms.
 
 Constraints define the boundaries of the search space. Solutions found to be violating the constraints are considered to be outside of the search space. Solutions that are outside of the defined search space and thus violate the defined problem constraints can be handled using various methods\cite{FundamentalSwarm}. These methods are known to be \emph{constraint handling mechanisms} and are discussed below.
-In research done by Engelbrecht\cite{FundamentalSwarm} the following constraint handling mechanisms are defined.
+Engelbrecht\cite{FundamentalSwarm} defines the following mechanisms in his survey of current constriant handling mechanism research:
 \begin{itemize}
 \item{\textbf{Reject infeasible solutions}} --- Solutions that violate the defined constraints are not even considered and rejected.
 \item{\textbf{Penalty function methods}} --- Modifies the objective function to add a penalty that is enforced if a solution violates constraints. By adding a penalty the infeasible solutions are discouraged.
@@ -71,7 +71,7 @@ A problem that occurs with \gls{FFA} when all assigned frequencies are in use is
 
 The co-channel reuse constraint must be adhered to otherwise the amount of interference occurring on the communication link will be too much\cite{PrinciplesMobileCommunication}.
 
-The \gls{DFA} allocation scheme is ideally suited for micro cellular wireless networks. Micro cellular networks are networks where the size a single cell typically spans less that 1km. The traffic on these networks have the characteristic of being immensely unpredictable as traffic demand varies constantly\cite{PrinciplesMobileCommunication,MobileWirelessCommunications}.
+The \gls{DFA} allocation scheme is ideally suited for micro cellular wireless networks. Micro cellular networks are networks where the size of a single cell typically spans less that 1km. The traffic on these networks have the characteristic of being immensely unpredictable as traffic demand varies constantly\cite{PrinciplesMobileCommunication,MobileWirelessCommunications}.
 
 As the name indicates, micro cellular wireless networks have much smaller cell sizes than macro cellular networks. The size of cells matter when one considers handover requests. A handover request occurs when a cell handling a connection of an MS needs to transfer control of the connection to another cell due to the MS moving out of the geographical area the cell is responsible for. For more information on the handover process the reader is directed to section~\ref{sec:handover}. Due to the size a cell in a micro cellular network must handle a lot more handover requests than a cell in a macro cellular network, since an \gls{MS} with an active connection is much more likely to move out of the coverage area of a micro cell than a macro cell \cite{PrinciplesMobileCommunication,WirelessCommunications}.
 Since a micro cellular network has increased handover requests between cells compared with a macro cellular network, a \gls{DFA} scheme must rapidly allocate frequencies to requesting cells that must handle the handovers\cite{PrinciplesMobileCommunication,WirelessCommunications}.
@@ -105,7 +105,7 @@ Interference that occurs when two signals operate on the same channel can be see
 	\end{centering}
 \end{figure}
 
-The magnitude of the interference experienced on a communicational link is at its maximum when the devices involved in the link are geographical close to each other. As the geographical distance between these devices increases, the magnitude of interference experienced decreases. Therefore, to minimise the impact interference will have on communication links a \emph{separation} is defined\cite{WirelessCommunications}. More specifically, this separation is known as the channel reuse or frequency reuse distance within wireless networks\cite{WirelessCommunications}.
+The magnitude of the interference experienced on a communicational link is at its maximum when the devices involved in the link are geographically close to each other. As the geographical distance between these devices increases, the magnitude of interference experienced decreases. Therefore, to minimise the impact interference will have on communication links a \emph{separation} is defined\cite{WirelessCommunications}. More specifically, this separation is known as the channel reuse or frequency reuse distance within wireless networks\cite{WirelessCommunications}.
 
 This separation is defined as the minimum number of cells (which must all use different frequencies) that are allowed to be between two cells before either one of the cells are allowed to use the same frequency\cite{WirelessCommunications,InterferenceOrientatedFAP}. 
 The separation can be depicted visually as in figure~\ref{fig:seperationgraph} where $f_a,f_b,f_c,f_d$ are different frequencies that are assigned to the specific cells. The frequency $f_a$ is allowed to be reused since the two cells it is assigned to are separated by three cells (shaded in grey) because the separation for this network was set to three.
@@ -175,7 +175,7 @@ In \gls{MO-FAP} channel reuse is prioritised and the usage of a channel has a ce
 
 Over the years as the law governing the wireless spectrum changed and new technology as well as standards emerged, \gls{MO-FAP} lost its relevancy\cite{Karen2004,MontemanniThesis}. Companies are no longer billed according to the different frequencies they use, but they purchase licences from a regulatory body\cite{Karen2004,MontemanniThesis}. This licence usually stipulates what channel band the network is allowed to use.
 
-In some instances a piece of open frequency spectrum is put up for auction by a regulatory body, on which interested parties can bid to own the specified spectrum\cite{Karen2004,MontemanniThesis}. Open frequency spectrum is a series of frequencies which might be continuous or disjointed that is not owned nor used by any particular body. Due to the shift in how frequencies are allocated to networks, neither the regulatory bodies nor the network operators' care about the number of different frequencies used\cite{Karen2004,MontemanniThesis}.
+In some instances a piece of open frequency spectrum is put up for auction by a regulatory body, on which interested parties can bid to own the specified spectrum\cite{Karen2004,MontemanniThesis}. Open frequency spectrum is a series of frequencies which might be continuous or disjointed that is not owned nor used by any particular body. Due to the shift in how frequencies are allocated to networks, neither the regulatory bodies nor the network operators care about the number of different frequencies used\cite{Karen2004,MontemanniThesis}.
 \subsection{Minimum Span Frequency Assignment Problem}
 The \gls{MS-FAP} is a problem that is very relevant today, especially when network operators want to deploy a new network in a region\cite{Karen2004}. The \gls{MS-FAP} is concerned with keeping the interference below a certain level during assignment as well as minimising the span\cite{MSFAP}. The interference threshold used is specified by the network designer as the minimum allowable interference on the network\cite{MSFAP}.
 
@@ -203,7 +203,7 @@ The \gls{FAP} can be represented as a graph colouring problem and is known to be
 	V &= \{v_{0},v_{1},\ldots,v_{i}\} | i \in \mathbb{N} \label{E:setV}\\
 	E &= \{\{v_0,v_1\},\{v_0,v_2\},\ldots,\{v_i,v_j\}\}|v \in V,\forall ij \in \mathbb{N},i \neq j \label{E:setE}\\
 	D &= \{d_{01},d_{02},\ldots,d_{ij}\}| \forall\{i,j\} \in E, \exists d_{ij} \in \mathbb{N}^+ \label{E:setD}\\
-	P &= \{\{\bar{p_{00}},\overset{=}{p_{01}}\},\{\bar{p_{10}},\overset{=}{p_{11}}\},\ldots,\bar{p_{i0}},\overset{=}{p_{i1}}\}\}| \forall \{i,j\} \in E,\exists p_{ij} \in \mathbb{N}^+ \label{E:setP}\\
+    P &= \{\{\bar{p_{00}},\overset{=}{p_{01}}\},\{\bar{p_{10}},\overset{=}{p_{11}}\},\ldots,{\bar{p_{i0}},\overset{=}{p_{i1}}\}\}| \forall \{i,j\} \in E,\exists p_{ij} \in \mathbb{N}^+ \label{E:setP}\\
 	F &= \{0,1,2,3,\ldots,k\}| \forall k \in \mathbb{N},\forall v \in V \exists f \in F\label{E:setF}\\
 	d_{ij} &< |f(i) - f(j)|, \forall ij \in \mathbb{N},i \neq j \label{E:interference}
 \end{align}
@@ -234,7 +234,7 @@ The interference value for a single transmitter is represented by $c(p_i)$ which
 	0 &,\text{if $|f(i) - f(j)| > d_{ij}$}
  \end{cases}\\
  \label{E:costFunction}
- Total Interference &= \sum^{|P|}_{i = 0}c(p_i),p \in P 
+ Total Interference &= \sum^{|P|}_{i = 0}c(p_i),p_i \in P 
 \end{align}
 
 The following section provides a brief discussion on the different \gls{FAP} benchmarks that exist. The section also defines benchmark against which the algorithm developed in this research is evaluated.
@@ -255,16 +255,16 @@ These instances were initially not available to the general public as they were 
 \subsection{COST 259}
 \label{sec:COST259}
 \glsreset{COST}
-The \gls{COST} 259 is a set of real-world \gls{gsm} instances made available by the European Union. The instances are publicly available and can  be downloaded for free at http://fap.zib.de/ (FAP Web 2011). The website also contains the most recent results obtained by researchers using these instances\cite{Karen2004,Eisenblatter}. The site contains 5 different sets of problems namely Tiny, Bradford, Swisscom, K and Siemens. Out of the 5 sets siemens has garnered the most attention which is due to the instances resembling real world instances. Consequently this is also why the siemens instances were chosen for the research presented in this dissertation.
+The \gls{COST} 259 is a set of real-world \gls{gsm} instances made available by the European Union. The instances are publicly available and can  be downloaded for free at http://fap.zib.de/ (FAP Web 2011). The website also contains the most recent results obtained by researchers using these instances\cite{Karen2004,Eisenblatter}. The site contains 5 different sets of problems namely Tiny, Bradford, Swisscom, K and Siemens. Out of the 5 sets Siemens has garnered the most attention which is due to the instances resembling real world instances. Consequently this is also why the Siemens instances were chosen for the research presented in this dissertation.
 
 The instances are difficult due to the large number of transmitters (900 - 4 000) that need to be assigned frequencies, with a small number of spectrum of frequencies. The most important characteristic of these benchmarks are that they resemble real-world \gls{gsm} network data. Due to these benchmarks' difficulty along with their real-world applicability, they were selected as the main benchmarks to evaluate the algorithm presented in this dissertation.
 
-More specifically this research concentrates on a small subset of the instances that are available, namely siemens 1, siemens 2, siemens 3 and siemens 4. In the paper by Montemanni and Smith \cite{TabuMontemanniSmith} the same subset of problems was used and to date their algorithm has produced some of the best results. 
+More specifically this research concentrates on a small subset of the instances that are available, namely Siemens 1, Siemens 2, Siemens 3 and Siemens 4. In the paper by Montemanni and Smith \cite{TabuMontemanniSmith} the same subset of problems was used and to date their algorithm has produced some of the best results. 
 
 As discussed in section~\ref{sec:chm} constraint handling mechanisms need to be used for problems like the \gls{FAP}. Each of the Siemens benchmarks define a set of globally or locally blocked frequencies, which are hard constraints. Due to this constraint one of the mechanisms that will be used in the algorithm to handle solutions violating this constraint is \emph{to reject any solutions that is found to violate this hard constraint}. The characteristics of each instance will now be discussed.
 
 \subsubsection{Siemens 1}
-The siemens 1 instance resembles a \gls{gsm} network that follows the \gls{gsm}900 standard. This particular network has been allocated a spectrum set of frequencies $F = \{16,17,18,\dots,90\}$ which are allowed to be assigned to cells. 
+The Siemens 1 instance resembles a \gls{gsm} network that follows the \gls{gsm}900 standard. This particular network has been allocated a spectrum set of frequencies $F = \{16,17,18,\dots,90\}$ which are allowed to be assigned to cells. 
 
 Not all 74 frequencies are available to be used by the network. The allocated frequency block is split into two blocks. According to the problem instance frequencies ranging from $F= \{36,37,38,\dots,67\}$ are globally blocked. Only frequencies ranging from $F= \{16,17,\dots,35\}$ and $F= \{68,69,70,\dots,90\}$ therefore available for assignment.
 
@@ -272,21 +272,21 @@ This problem instance finally also defines this network as consisting of a total
 
 In this problem a total of 931 transceivers needs to be assigned a frequency out of the 74 available frequencies. The  higher the number of transceivers and the lower the number of available frequencies, the more difficult the problem is.
 \subsubsection{Siemens 2}
-The siemens 2 problem instance describes a \gls{gsm} network based on \gls{gsm}900 and has 86 sites. The problem specifies that the network consists of 254 cells where each cell has on average 3.85 transceivers that need to be assigned frequencies.
+The Siemens 2 problem instance describes a \gls{gsm} network based on \gls{gsm}900 and has 86 sites. The problem specifies that the network consists of 254 cells where each cell has on average 3.85 transceivers that need to be assigned frequencies.
 
 For this problem, the network has been allocated two blocks of frequencies: one block of four frequencies ranging from $F = \{42,43,44,45,46\}$ and a second block of frequencies ranging from $F= \{53,54,55,\dots,124\}$. The frequencies allocated to the network have been split into two blocks because frequencies ranging from $F = \{47,48,49,50,51,52\}$ are globally blocked. Finally the problem specifies that the co-site separation must be set to two and the co-cell separation must be set to three.
 
-This problem is more difficult than Siemens 1, as there are 977 transceivers that need to be assigned frequencies out of a pool of 75 frequencies. Contributing to the difficulty of Siemens 2 is due to the problem defining that there are 40 more transceivers for assignment and almost the same amount of frequencies to be used assignment as siemens 1.
+This problem is more difficult than Siemens 1, as there are 977 transceivers that need to be assigned frequencies out of a pool of 75 frequencies. Contributing to the difficulty of Siemens 2 is due to the problem defining that there are 40 more transceivers for assignment and almost the same amount of frequencies to be used assignment as Siemens 1.
 \subsubsection{Siemens 3}
-The siemens 3 problem describes a network based on \gls{gsm}900. This network has been allocated a continuous set of frequencies $F= \{681,682, \dots, 735\}$. Thus the network has 55 frequencies, which can be allocated to transceivers in its network.
+The Siemens 3 problem describes a network based on \gls{gsm}900. This network has been allocated a continuous set of frequencies $F= \{681,682, \dots, 735\}$. Thus the network has 55 frequencies, which can be allocated to transceivers in its network.
 
 The problem defines the network as consisting of 366 sites and 894 cells. On average each cell has 1.82 transceivers that need to be allocated a frequency to handle communication.
 
-With siemens 3 the FAP becomes a lot more difficult as there are  1627 transceivers which needs to be assign frequencies out of a pool 55. The more transceivers that are defined which need assignment, the more frequencies have to be reused.
+With Siemens 3 the FAP becomes a lot more difficult as there are  1627 transceivers which needs to be assign frequencies out of a pool of 55. The more transceivers that are defined which need assignment, the more frequencies have to be reused.
 \subsubsection{Siemens 4}
-The siemens 4 instance is similar to a \gls{gsm} network that follows the \gls{gsm}900 standard. According to this instance this network has been allocated 39 continuous frequencies starting at 56, thus $F = \{56,57,58,\dots,94\}$. No frequencies are said to be globally or locally blocked in this network.
+The Siemens 4 instance is similar to a \gls{gsm} network that follows the \gls{gsm}900 standard. According to this instance this network has been allocated 39 continuous frequencies starting at 56, thus $F = \{56,57,58,\dots,94\}$. No frequencies are said to be globally or locally blocked in this network.
 
-According to this problem instance this network has 276 sites and consists of 760 cells. Where each cell is said to have on average 3.66 transceivers. The Co-site separation is set to be two and the co-cell separation must be three. Out of the 4 benchmarks problems, siemens 4 is the most difficult as it defines that the total number of transceivers that require assignment as 2781 with only 39 frequencies.
+According to this problem instance this network has 276 sites and consists of 760 cells. Where each cell is said to have on average 3.66 transceivers. The Co-site separation is set to be two and the co-cell separation must be three. Out of the 4 benchmarks problems, Siemens 4 is the most difficult as it defines that the total number of transceivers that require assignment as 2781 with only 39 frequencies.
 
 The next section presents a general overview on the different industries where the \gls{FAP} is encountered. The purpose of this discussion is to get a better understanding about how far reaching the problem is and the different forms the problem is encountered in.
 

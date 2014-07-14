@@ -9,7 +9,7 @@ The previous chapter discussed all the modifications that were made to the stand
 
 This chapter presents the results of applying the FAP PSO algorithm with its different velocity methods as well as different global selection schemes. This is followed by how the different velocity methods affect the PSO performance as well as how the global selection schemes have an influence on the final results.
 
-\section{PSO COST 259 siemens Results}
+\section{PSO COST 259 Siemens Results}
 The FAP PSO is applied to the benchmarks on a machine with the following specifications and frameworks:
 \begin{itemize}
 \item 4 GB RAM
@@ -144,7 +144,7 @@ After the results are presented a discussion will follow about the results and w
 \subsection{Algorithm run graph for Siemens 1}
 \begin{figure}[H]
 	\begin{centering}
-    \includegraphics[scale=0.50]{../Implementation/data-cruncher/graph/siemens1.pdf}
+    \includegraphics[scale=0.50]{../Implementation/data-cruncher/graph/Siemens1.pdf}
 	\caption{Algorithm run velocity method 1 versus method 2}
 	\label{fig:siem1graph}
 	\end{centering}
@@ -237,7 +237,7 @@ After the results are presented a discussion will follow about the results and w
 \subsection{Algorithm run graph for Siemens 2}
 \begin{figure}[H]
 	\begin{centering}
-    \includegraphics[scale=0.5]{../Implementation/data-cruncher/graph/siemens2.pdf}
+    \includegraphics[scale=0.5]{../Implementation/data-cruncher/graph/Siemens2.pdf}
 	\caption{Algorithm run velocity method 1 versus method 2}
 	\label{fig:siem2graph}
 	\end{centering}
@@ -331,7 +331,7 @@ After the results are presented a discussion will follow about the results and w
 \subsection{Algorithm run graph for Siemens 3}
 \begin{figure}[H]
 	\begin{centering}
-    \includegraphics[scale=0.5]{../Implementation/data-cruncher/graph/siemens3.pdf}
+    \includegraphics[scale=0.5]{../Implementation/data-cruncher/graph/Siemens3.pdf}
 	\caption{Algorithm run velocity method 1 versus method 2}
 	\label{fig:siem3graph}
 	\end{centering}
@@ -425,7 +425,7 @@ After the results are presented a discussion will follow about the results and w
 \subsection{Algorithm run graph for Siemens 4}
 \begin{figure}[H]
 	\begin{centering}
-    \includegraphics[scale=0.5]{../Implementation/data-cruncher/graph/siemens4.pdf}
+    \includegraphics[scale=0.5]{../Implementation/data-cruncher/graph/Siemens4.pdf}
 	\caption{Algorithm run velocity method 1 versus method 2}
 	\label{fig:siem4graph}
 	\end{centering}
@@ -476,7 +476,7 @@ Taking into accounts how the two methods move particles around the solution spac
 
 Velocity method 1 has the key characteristic of performing an intensification search which is similar to the intensification phase in \gls{TS} discussed in \ref{chpt:heuristic}. In contrast velocity method 2 has the key characteristic of diversifying and exploration, similar to the diversification phase of the \gls{TS} discussed in chapter ~\ref{chpt:heuristic}. These characteristics become even more evident when analysing each graph presented. In all the graphs, velocity method 1 starts of at a initial point and then steadily moves downward to better positions. Where as, velocity method 2 is very sporadic, moving up and down. 
 
-Except in siemens 2 where the algorithm was a lot less sporadic considering how sporadic the search is when compared to other instances of the method operating on benchmark instances. When only comparing the search process of velocity method 2 to 1 on the graph and taking into account the variance as well as the standard deviation, the characteristic of method 2 still holds. The search seems less sporadic, but based on the variance, which is a lot more than method ones variance, the algorithm with method 2 explores a lot more comparatively.
+Except in Siemens 2 where the algorithm was a lot less sporadic considering how sporadic the search is when compared to other instances of the method operating on benchmark instances. When only comparing the search process of velocity method 2 to 1 on the graph and taking into account the variance as well as the standard deviation, the characteristic of method 2 still holds. The search seems less sporadic, but based on the variance, which is a lot more than method ones variance, the algorithm with method 2 explores a lot more comparatively.
 
 Based on the graphs, velocity method 2 can also perform the function of a disruptor and break the algorithm out of local minima.
 
@@ -484,7 +484,7 @@ Based on the graphs, velocity method 2 can also perform the function of a disrup
 \label{sec:diffglobalschemes}
 The previous chapter identified and discussed three global selection schemes. The first global selection scheme uses the standard PSO selection and the particle with the best fitness is the global best. This scheme is called ``Standard GBest''.
 
-As discussed in section~\ref{sec:buildglobalbest}, using the standard gbest selection scheme is not preferable as it can lead to the swarm losing out on good frequency allocations due to overshadowing of frequencies\footnote{Overshadowing is discussed in chapter~\ref{chpt:psoapplicationFAP}}.
+As discussed in section~\ref{sec:buildglobalbest}, using the standard gbest selection scheme is not preferable as it can lead to the swarm losing out on good frequency allocations due to overshadowing of frequencies\footnote{Overshadowing is discussed in chapter~\ref{chpt:psoapplicationFAP}.}.
 Even with overshadowing the standard global scheme does not produce bad results, which seems to indicate that overshadowing of frequency allocations does not impact the frequency plans as significantly as thought initially.
 
 In addition to the standard gbest selection scheme, two other selection schemes were tested. It is incorrect to call these schemes selection schemes of gbest, since they build global best rather than select them.
@@ -493,7 +493,7 @@ By far the worst performing scheme is where the global best is built from transc
 
 The bad performance of the build from transceivers scheme can be attributed to the granularity it uses to build a global best. As outlined in section~\ref{sec:buildglobalbest} the scheme only considers the interference generated by a single frequency allocated to a transceiver. This would have worked well if there were some sort of guarantee that a particular transceiver would only be interfered with by one other transceiver.
 
-In reality and in the siemens 4 benchmarks this is definitely not the case. More often than not, transceivers are interfered with by more than one other transceiver. Thus by only concentrating on a single case-by-case basis of frequencies allocated to transceivers, the scheme is discarding all other possible interferences. 
+In reality and in the Siemens 4 benchmarks this is definitely not the case. More often than not, transceivers are interfered with by more than one other transceiver. Thus by only concentrating on a single case-by-case basis of frequencies allocated to transceivers, the scheme is discarding all other possible interferences. 
 
 It might select a frequency at one point as the best, since in that scenario, the interference generated with the only other transceiver that is considered at that point is low. But this particular frequency is too close on the spectrum to another frequency allocated to some other transceiver that also interferes. Due to the algorithm only considering individual cases, this potential interference with the other transceiver will not be noticed by the algorithm and it will go ahead in selecting the frequency as the best for the transceiver.
 

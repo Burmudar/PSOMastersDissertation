@@ -7,7 +7,7 @@ Metaheuristics forms part of a collective body of algorithms that use heuristics
 
 Constraints can be either hard or soft. A hard constraint is defined as a certain condition an algorithm or potential solution is not allowed to violate\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}. A soft constraint is allowed to be violated but there is some sort of penalty or cost involved which is imposed on the potential solution, which lowers its desirability\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}. 
 
-An optimal solution would therefore be any solution that violates no hard constraints and violates no or a minimum number of soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}. Algorithms that are classified as being part of the collective body of algorithms known as metaheuristic algorithms are Tabu Search\cite{TabuVechicleRoutingWithTimeWindows,TabuCSP}, Simulated Annealing \cite{SASingleMultiObj,CurveFittingSA} and Genetic Algorithm\cite{GATSP, GeostatisticalGA}.
+An optimal solution would therefore be any solution that violates no hard constraints and violates no or a minimum number of soft constraints\cite{AIModernApproach,NatureInspiredMetaHeuristic,Karen2004,Eisenblatter}. Algorithms that are classified as being part of the collective body of algorithms known as metaheuristic algorithms are Tabu Search\cite{TabuVechicleRoutingWithTimeWindows,TabuCSP}, Simulated Annealing \cite{SASingleMultiObj,CurveFittingSA} and Genetic Algorithms\cite{GATSP, GeostatisticalGA}.
 
 The above-mentioned algorithms are not the only algorithms to form part of this subdomain, but they are the algorithms that have received the most attention in the literature and produce good results\cite{SweepMeta}.
 The main focus of this chapter is on each of the above algorithms. Before each of the algorithms is discussed, a brief overview is given of the various characteristics that metaheuristic algorithms exhibit. 
@@ -17,7 +17,7 @@ The main focus of this chapter is on each of the above algorithms. Before each o
 \section{Search Spaces and States}
 A search space is defined as a set of candidate goal states, which may or may not be a solution to a problem\cite{AIModernApproach}. The candidate states are defined by the problem definition\cite{AIModernApproach}. The possible states can be given by a successor function, which generates new states adhering to the problem-defined constraints if any\cite{AIModernApproach}. However, this is not true for all problem domains. In some problem domains the generated states violate the problem constraints. The aim of the search in these problem domains is to then identify a state which satisfies all problem constraints.
 
-The search space can also be explicitly defined with constraints to which a solution must adhere to\cite{AIModernApproach}. When constraints are defined it is up to the algorithm how it moves from one state to another in the search space\cite{AIModernApproach}. Each state the algorithm moves to is then checked whether it adheres to the constraints\cite{AIModernApproach}.
+The search space can also be explicitly defined with constraints to which a solution must adhere to\cite{AIModernApproach}. When constraints are defined for a search space; moving from one state to another in the search space is up to the algorithm\cite{AIModernApproach}. Each state the algorithm moves to is then checked whether it adheres to the constraints\cite{AIModernApproach}.
 
 A state is a position in the search space\cite{AIModernApproach}. This position represents a configuration that describes a possible candidate solution to the defined problem\cite{AIModernApproach}. When an algorithm is said to be moving to a new state, the algorithm moves to a new position in the search space\cite{AIModernApproach}. This new position represents a different candidate solution than the previous position that was occupied\cite{AIModernApproach}.
 
@@ -26,8 +26,8 @@ When dealing with an optimisation problem there can be more than one candidate s
 Both concepts of search spaces and states have now been defined. All search algorithms operate in search spaces and occupy states. The domain of search contains a wide variety of algorithms. The following section discusses metaheuristics algorithms as this body of algorithms are used to solve optimisation problems.
 
 \section{Metaheuristics Algorithms}
-NP-Complete\footnote{A discussion of NP-Complete problems appears in section \ref{sec:NPComplete}} problems have been proven not to be solvable in polynomial time by traditional uninformed search algorithms such as Breath-first Search and Depth-first Search\cite{AIModernApproach}. 
-Uninformed algorithms are not able to distinguish whether a particular goal state is more ``correct'' than any other goal state\cite{AIModernApproach}. Uninformed search algorithms search spaces are represented by a tree structure\cite{AIModernApproach}. 
+NP-Complete\footnote{A discussion of NP-Complete problems appears in section \ref{sec:NPComplete}.} problems are not solvable in polynomial time by traditional uninformed search algorithms such as Breath-first Search and Depth-first Search\cite{AIModernApproach}. 
+Uninformed algorithms are not able to distinguish whether a particular goal state is more ``correct'' than any other goal state\cite{AIModernApproach}. Uninformed search algorithm's search spaces are represented by a tree structure\cite{AIModernApproach}. 
 
 A search is performed in the search space by starting at a root node, the algorithm expands successive nodes based on a strategy\cite{AIModernApproach}. Bread-first search continuously expands all successive nodes and Depth-first search expands the deepest node first\cite{AIModernApproach}.
 
@@ -40,9 +40,9 @@ Metaheuristic algorithms do not dictate all aspects of the search procedure but 
 
 As can be gathered from the name, a metaheuristic algorithm uses some sort of heuristic. A heuristic is a decision rule. Algorithms use heuristics to make decisions by applying the heuristic to the data the algorithm is currently working on\cite{AIModernApproach,NatureInspiredMetaHeuristic}.
 
-When an algorithm utilises a heuristic its forms part of a group known as informed search algorithms. As the name implies the algorithm is more ``informed'' using the heuristic the algorithm gains additional information about its search space. With this additional information the algorithm is able to perform a better search for a possible candidate solution\cite{AIModernApproach}.
+When an algorithm utilises a heuristic it forms part of a group known as informed search algorithms. As the name implies the algorithm is more ``informed'' and using the heuristic the algorithm gains additional information about its search space. With this additional information the algorithm is able to perform a better search for a possible candidate solution\cite{AIModernApproach}.
 
-Heuristics are strategies that direct the search based on the information available, to move towards areas where there is a higher probability of obtaining high quality candidate solutions \cite{AIModernApproach}. A heuristic is able to dictate what an algorithm must do for its next iteration by evaluating the current internal state of the algorithm, i.e. whether it should move to a different point in the search space, generate new data, or select the current data as the most optimal solution\cite{AIModernApproach,NatureInspiredMetaHeuristic}. 
+Heuristics are strategies that direct the search based on the information available, to move towards areas where there is a higher probability of obtaining high quality candidate solutions \cite{AIModernApproach}. A heuristic is able to dictate what an algorithm must do for its next iteration by evaluating the current internal state of the algorithm, i.e. whether it should move to a different point in the search space, generate new neighbouring points, or select the current point as the most optimal solution\cite{AIModernApproach,NatureInspiredMetaHeuristic}. 
 
 In general ``meta'' means \emph{beyond} or \emph{higher level}\cite{AIModernApproach,NatureInspiredMetaHeuristic}. A metaheuristic therefore refers to a heuristic that is more complex with regard to the decisions it is able to make compared with a standard heuristic\cite{AIModernApproach,NatureInspiredMetaHeuristic}. With a standard heuristic only the current state is considered\cite{AIModernApproach}. A metaheuristic takes additional information into account when considering a current state\cite{NatureInspiredMetaHeuristic}. This additional information can be previous states, or states that are considered to be close in the search space\cite{AIModernApproach, NatureInspiredMetaHeuristic}.
 
@@ -376,10 +376,10 @@ In table~\ref{tab:SA} results are presented from research presented by two autho
 	\begin{tabular}{| c | c | c | c |}
 	\hline
     Problem instance & (BK)\gls{SA} & k-Thin SA - Best \gls{COST} 259 \\ \hline
-	siemens 1 & 2.78 & 2.20\\ \hline
-	siemens 2 & 15.46 & 14.27\\ \hline
-	siemens 3 & 6.75 & 5.12\\ \hline
-	siemens 4 & 89.15 & 77.24\\ \hline
+	Siemens 1 & 2.78 & 2.20\\ \hline
+	Siemens 2 & 15.46 & 14.27\\ \hline
+	Siemens 3 & 6.75 & 5.12\\ \hline
+	Siemens 4 & 89.15 & 77.24\\ \hline
 	\end{tabular}
     \caption{(BK) SA~\cite{BeKi99a} and k-Thin SA~\cite{MaOrRi02} on \gls{COST} 259 Benchmark}
 \label{tab:SA}
@@ -572,10 +572,10 @@ In table~\ref{tab:GA} the results obtained by authors on the \gls{COST} 259 benc
 	\begin{tabular}{| c | c | c |}
 	\hline
 	Problem instance & \gls{GA} & Best \gls{COST} 259 \\ \hline
-	siemens 1 & 2.96 & 2.20 \\ \hline
-	siemens 2 & 17.83 & 14.27 \\ \hline
-	siemens 3 & 6.08 & 5.13 \\ \hline
-	siemens 4 & 96.84 & 77.25 \\ \hline
+	Siemens 1 & 2.96 & 2.20 \\ \hline
+	Siemens 2 & 17.83 & 14.27 \\ \hline
+	Siemens 3 & 6.08 & 5.13 \\ \hline
+	Siemens 4 & 96.84 & 77.25 \\ \hline
 	\end{tabular}
     \caption{GA~\cite{ProblemDecompMIFAP} on \gls{COST} 259 Benchmark}
 \label{tab:GA}
