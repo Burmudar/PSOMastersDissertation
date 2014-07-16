@@ -5,7 +5,7 @@ PSO, as discussed previously (see page \pageref{sec:PSO}), is an algorithm that 
 
 Most of the problems to which \gls{PSO} has been applied to date have been problems where the position of particles has a constant D-dimensional space. This constant dimensionality introduces an intriguing problem if one wants to apply the \gls{PSO} to an inherent multidimensional problem like the \gls{FAP}. This chapter deals with how the \gls{PSO} was applied to the \gls{FAP}.
 
-Firstly, the particle position is represented in the frequency planning domain is defined. This definition of the particle position is important because it plays a central part in the movement of particles through the frequency planning domain. A description is then given of how each position is evaluated as well as the fitness function that the \gls{PSO} will use in the \gls{FAP} domain.
+First, the particle position representation in the frequency planning domain is defined. This definition of the particle position is important because it plays a central part in the movement of particles through the frequency planning domain. A description is then given of how each position is evaluated as well as the fitness function that the \gls{PSO} will use in the \gls{FAP} domain.
 
 Arguably the most important part of the swarm is how the velocity of a particle is calculated and then moving it to a new position in the problem space. The velocity update is important, as it is the primary means by which the algorithm searches the problem space.
 
@@ -13,7 +13,7 @@ As was discussed in section~\ref{sec:psoonfap}, applying the \gls{PSO} to the \g
 
 As mentioned in the previous chapter the FAP is a discrete valued problem and for the \gls{PSO} to operate in the \gls{FAP} space custom operators (called velocity functions in this discussion) had to be developed to enable the particles of the swarm to move. These velocity functions are discussed in section~\ref{sec:velocityFAP}. 
 
-Developing custom velocity functions for the \gls{PSO} was simply not enough to achieve good results with the \gls{PSO} . Therefore more innovations needed to be made to improve the solution quality of the \gls{PSO} . In section~\ref{sec:buildglobalbest} a new mechanism is presented for selecting the global best which enabled the \gls{PSO} to get better fitness values and therefore direct the swarm more towards better solutions. Finally, the chapter will conclude with how the swarm utilises history to produce better results to enable the \gls{PSO} to further improve the solution quality.
+Developing custom velocity functions for the \gls{PSO} was simply not enough to achieve good results with the \gls{PSO}. Therefore more innovations needed to be made to improve the solution quality of the \gls{PSO}. In section~\ref{sec:buildglobalbest} a new mechanism is presented for selecting the global best which enabled the \gls{PSO} to get better fitness values and therefore direct the swarm more towards better solutions. Finally, the chapter will conclude with how the swarm utilises history to produce better results to enable the \gls{PSO} to further improve the solution quality.
 \section{Position in the Frequency Planning Domain}
 This section presents a description on what a position is in the frequency planning domain. First a frequency plan is defined and the general structure to represent such a plan is provided. The section will conclude with the hard and soft constraints and how the constraints aid in creating a frequency plan that is suitable for a network.
 
@@ -21,7 +21,7 @@ A frequency plan, is almost exactly what the name implies: A plan that outlines 
 
 The reality is that there are only a finite number of frequencies available for cellphone transmissions, as was discussed in chapters~\ref{chpt:celltech} and \ref{chpt:fap}. Hence a regulatory body needs to assign wireless spectrum to cellphone network operators for use in their networks. A regulatory body is needed because, if a network operator uses just any frequency it wants, it is bound to interfere with someone else also utilising the same frequency.
 
-A network is not assigned to the entire wireless spectrum for wireless communication, but rather only a subset is assigned to the network. If one observes the \gls{FAP} benchmark problems the \gls{PSO} was applied to (see section~\ref{sec:FAPBenchmarks}) for instance Siemens 1, the allotted spectrum is from frequency 16 to 90. Which gives the network operator 74 frequencies to use in its network without considering other constraints. 
+A network is not assigned the entire wireless spectrum for wireless communication, but rather only a subset is assigned to the network. If one observes the \gls{FAP} benchmark problems the \gls{PSO} was applied to (see section~\ref{sec:FAPBenchmarks}) for instance Siemens 1, the allotted spectrum is from frequency 16 to 90. Which gives the network operator 74 frequencies to use in its network without considering other constraints. 
 
 Besides the electromagnetic constraints that are also applicable here, there are regulatory constraints, for instance frequencies in the spectrum that are by no means allowed to be used. These frequencies are referred to as globally blocked frequencies and are hard constraints. An in-depth discussion of these constraints was given in section~\ref{sec:Interference}. As discussed in chapters~\ref{chpt:celltech} and \ref{chpt:fap}, a cellphone network is divided into a number of cells, and each cell requires a certain number of transceivers to service its corresponding area. 
 
@@ -118,7 +118,7 @@ The velocity function does not blindly move a particle from one point to another
 The development of a velocity function that is suitable for particles to move from one frequency plan to another is covered next. The section will start off with the first velocity function that was developed. With each method discussed, the problems associated with it will also be mentioned. This section will conclude with the second method that was developed and that is also the primary method the developed \gls{PSO} uses.
 
 \subsection{Movement in the Frequency Planning Domain}
-The standard velocity equation works on the basis of vector mathematics. Each particle has a velocity and position, which is represented by a standard mathematical vector. The standard equation alters the direction of the particle to move to a more promising position in the solution space that is in the general direction of the global best particle and a previous personal best position the particle held..
+The standard velocity equation works on the basis of vector mathematics. Each particle has a velocity and position, which is represented by a standard mathematical vector. The standard equation alters the direction of the particle to move to a more promising position in the solution space that is in the general direction of the global best particle and a previous personal best position the particle held.
 
 Vector mathematics has standard basic operations defined for adding, subtracting and multiplying; hence applying the \gls{PSO} to problems that are either mathematical functions or problems that map well to the vector domain is a defined process. With regard to the frequency planning domain an important question needs to be answered: How can one multidimension frequency plan be moved to another?
 
@@ -131,7 +131,7 @@ A frequency plan is a plan that consists of a series of different cells that are
 \item Each installed transceiver has a single number allocated to it called the frequency. This frequency is used for communication.
 \end{enumerate}
 
-As discussed previously, a position is a frequency plan and each particle has a current position and a best position. A visual depiction of a particle position is presented in figure~\ref{fig:fapparticlepos}. The global best particle is also depicted in the figure.In the figure, position 1 represents a particle. The current compartment in the particle represents the current position and hence a frequency plan. The best compartment represents the best position found and hence the best frequency plan found thus far by the particle. When providing examples on how any of the following velocity methods operate, figure~\ref{fig:fapparticlepos} is used as reference point.
+As discussed previously, a position is a frequency plan and each particle has a current position and a best position. A visual depiction of a particle position is presented in figure~\ref{fig:fapparticlepos}. The global best particle is also depicted in the figure. In the figure, position 1 represents a particle. The current compartment in the particle represents the current position and hence a frequency plan. The best compartment represents the best position found and hence the best frequency plan found thus far by the particle. When providing examples on how any of the following velocity methods operate, figure~\ref{fig:fapparticlepos} is used as reference point.
 \begin{figure}[ht]
 	\centering
 	\setlength \fboxsep{0pt}
@@ -141,7 +141,7 @@ As discussed previously, a position is a frequency plan and each particle has a 
 	\label{fig:fapparticlepos}
 \end{figure}
 
-Now that a frequency plan has been broken up into its constructs, the question of how to move one frequency plan to another can be rephrased. How does one move a frequency allocated to a \emph{transceiver} in a particular \emph{cell} of one frequency plan to another frequency of the \emph{same} transceiver and cell in another \emph{different} plan? An important realisation needs to be noted here. In the \gls{PSO} at any one time the algorithm is only considering two positions and for the \gls{FAP} the two positions are frequency plans. Both plans are \emph{identical} except for the specific frequencies that transceivers use. Thus a cell that exists in the one plan, also exists in another plan. Both the cells have exactly the same number of transceivers installed; only the frequencies each individual transceiver uses for communication differ.
+Now that a frequency plan has been broken up into its constructs, the question of how to move one frequency plan to another can be rephrased. How does one move a frequency allocated to a \emph{transceiver} in a particular \emph{cell} of one frequency plan to another frequency of the \emph{same} transceiver and cell in another \emph{different} plan? An important realisation needs to be noted here. In the \gls{PSO} at any one time the algorithm is only considering two positions and for the \gls{FAP} the two positions are frequency plans. Both plans are \emph{identical} except for the specific frequencies that transceivers use. Thus a cell that exists in the one plan, also exists in another plan. Both the cells have exactly the same number of transceivers installed; only the frequencies of each individual transceiver uses for communication differ.
 
 Using this realisation, the conclusion can be made that the velocity equation can only work with the frequencies assigned to transceivers. Therefore a potential velocity equation mechanism needs to operate on the finest granularity of a frequency plan, i.e. the frequencies.
 
@@ -235,9 +235,9 @@ The algorithm operates on every cell in the frequency plan. The algorithm starts
 
 Once the cell has been selected the algorithm obtains the exact same transceiver in the toPosition frequency plan. This operation is quick, as the two plans are identical except for the frequencies assigned to transceivers for each cell. Thus the algorithm is able to refer to the cell and specific transceiver in the toPosition plan by the same index it utilises to access the cell and transceiver in the fromPosition. After all the cells in the frequency plan has been processed the algorithm proceeds to the next phase.
 
-After the subtraction, a position is returned which is the result of subtracting the fromPosition from the toPosition. Subtraction of two frequency plan positions occurs on lines 4 -- 5. Using the subtraction result the velocity method 1 algorithm is now ready to apply the next operation in the velocity update equation, namely multiplication by using equations~\ref{eq:arrayMultiply} and \ref{eq:arrayScalar} which are applied on lines 5 -- 6.
+After the subtraction, a position is returned which is the result of subtracting the fromPosition from the toPosition. Subtraction of two frequency plan positions occurs on lines 4 -- 5. Using the subtraction result the velocity method 1 algorithm is now ready to apply the next operation in the velocity update equation, namely multiplication by using equations~\ref{eq:arrayMultiply} and \ref{eq:arrayScalar} which are applied in lines 5 -- 6.
 
-In the multiplication stage of the velocity update operation, the local and global coefficients defined for the \gls{PSO} are multiplied into a position, i.e. frequency plan. The coefficient are scalar values and therefore a different method needs to be used to multiply a scalar value with a frequency plan. Equation~\ref{eq:arrayScalar} is used to multiply scalar values with frequency plans. Multiplying a frequency plan results in another frequency plan. Scalar values need to be multiplied in for the following cases in the velocity update.
+In the multiplication stage of the velocity update operation, the local and global coefficients defined for the \gls{PSO} are multiplied into a position, i.e. frequency plan. The coefficient are scalar values and therefore a different method needs to be used to multiply a scalar value with a frequency plan. Equation~\ref{eq:arrayScalar} is used to multiply scalar values with frequency plans. Multiplying a frequency plan results in another frequency plan. Scalar values need to be multiplied in the following cases in the velocity update.
 \begin{itemize}
 \item The inertia case: $w \times v(t+1)$, where $w$ is the inertia value and $v(t+1)$ is velocity that has already been calculated for a particular particle $t$. Note, a velocity that has been calculated is still a frequency plan. In the algorithm, inertia is applied in line 12.
 \item Standard velocity calculation randomisation case: As can be observed from the velocity equation~\ref{eq:velocityupdate} and also from the multiplication bullet point on page~\pageref{lst:velocitybreakup}, the equation requires that a position be multiplied by a coefficient $c_1$ or $c_2$ and then a random value $\phi_1$ or $\phi_2$. 
@@ -245,7 +245,7 @@ In the multiplication stage of the velocity update operation, the local and glob
 
 Regardless of which case is executed, the actual operation that is performed is integer multiplication, which therefore means that even though the inertia and random numbers are decimal, the fractional component of the result is discarded. Frequencies are integers so the loss of the fractional component is warranted as it is of no use. Note that it is highly probable that the frequencies depicted in the plan are out of the defined spectrum boundary. As per the last bullet point on page~\pageref{lst:velocitybreakup} the last basic operation that occurs in the velocity equation is the addition of frequency plans. Note that the calculated velocity is still considered to be a frequency plan on its own.
 
-The addition operation is the last operation that occurs in the velocity equation and is also the only operation that occurs when the resultant velocity is applied to the current position of a particle as in equation~\ref{eq:positionupdate}. The addition is performed by the algorithm in line 14. Since the addition operation is also used in the final position update of the particle, its last opportunity where frequencies can be bounded.  The purpose of the bound operation is to keep the frequencies within valid value ranges. In equation~\ref{eq:arrayAdd} the frequencies are bounded using the function $b$ and is defined in the following section.
+The addition operation is the last operation that occurs in the velocity equation and is also the only operation that occurs when the resultant velocity is applied to the current position of a particle as in equation~\ref{eq:positionupdate}. The addition is performed by the algorithm in line 14. Since the addition operation is also used in the final position update of the particle, it is last opportunity where frequencies can be bounded.  The purpose of the bound operation is to keep the frequencies within valid value ranges. In equation~\ref{eq:arrayAdd} the frequencies are bounded using function $b$ defined in equation~\ref{eq:boundEq} which is formulated in the following section.
 \subsection{Keeping Frequencies Bounded}
 The previous section discussed the first velocity method that was developed. The velocity method is important as it calculates the direction and next position of a particle in the problem space, where the problem space is the \gls{FAP} and a position of a particle is a possible frequency plan. With the velocity method defined, the swarm is now able to move around in the problem space, but this alone is not enough. The swarm has no concept of the constraints that are imposed inherently by the domain as well as the network for which a frequency plan is being created.
 
@@ -255,7 +255,7 @@ Due to the swarm not having a concept of the constraints a constraint handling m
 \label{eq:boundEq}
     \Delta b(c_{ij}) &= 
     \begin{cases}
-    F_{min} + f(c_{ij}) \bmod F_{max} &, \text{if $f(c_{ij}) \leq F_{max}$}\\ 
+    F_{min} + f(c_{ij}) \bmod F_{max} &, \text{if $f(c_{ij}) \geq F_{max}$}\\ 
     b(f(c_{ij}) + F_{min}) &, \text{if $f(c_{ij}) \leq F_{min}$}\\ 
     \end{cases}
 \end{align}
@@ -350,7 +350,7 @@ Velocity method 2 differs from method 1 due to the manner in which it applies th
 
 The algorithm applies the standard velocity equation~\ref{eq:velocityupdate} formulated in chapter~\ref{chpt:swarm} as is to the raw indices.
 
-An important note, is that if one analyses velocity method 1, the switch to using index values instead of raw frequencies does not affect the method's operation. Since the method only requires explicit knowledge on the data to operate on in the BoundValue function, the algorithm is still able to calculate velocity. 
+An important note, is that if one analyses velocity method 1, the switch to using index values instead of raw frequencies does not affect the method's operation. Since the method only requires explicit knowledge on the data to operate on the BoundValue function, the algorithm is still able to calculate velocity. 
 
 It is up to the algorithm designer to update the bound value method to use the array index bounds rather than the raw lower and upper bounds of the frequencies. The BoundValue function needs to be updated since it is the primary means by which velocity method 1 ensures valid positions.
 
@@ -381,15 +381,15 @@ As discussed previously each particle position is then modified to move in the g
 \begin{algorithmic}[1]
 \Require swarm
 \Require gbest
-\State $gbestCost$ = Evaluate(gbest)
+\State $gbestCost$ = Evaluate($gbest$)
 \For{Each particle $p_i$ in swarm}
 	\State $cost$ = Evaluate($p_i$)
 	\If{$cost \leq gbestCost$}
 		\State $gbestCost = cost$
-		\State gbest = $p_i$
+		\State $gbest = p_i$
 	\EndIf
 \EndFor
-\Return gbest
+\Return $gbest$
 \end{algorithmic}
 \end{algorithm}
 
@@ -407,7 +407,7 @@ As per the following example a few cells in a frequency plan might have the wors
 
 When the example frequency plan is evaluated, the bad cells push up the cost value. The high cost value of the frequency plan causes the \gls{PSO} algorithm to disregard the whole plan. By discarding the whole plan the \gls{FAP} \gls{PSO} algorithm loses the knowledge gained on the few cells that had their best frequencies assigned to their respective transceivers. In the traditional method of selecting the global best, a particle is actually selected as the swarm best because it contains fewer overshadowing cells or transceivers, and potentially good frequency assignments are lost.
 
-The \gls{FAP} \gls{PSO} therefore needed to exploit the knowledge that the fitness function exposes much more thoroughly. The information exposed by the fitness function allows one to see what effects certain frequency assignments have on the interference of the cell when assigned to the individual transceivers. To make better use of this fitness information two methods were developed for the \gls{FAP} \gls{PSO} , each one being finer grained than the other.
+The \gls{FAP} \gls{PSO} therefore needed to exploit the knowledge that the fitness function exposes much more thoroughly. The information exposed by the fitness function allows one to see what effects certain frequency assignments have on the interference of the cell when assigned to the individual transceivers. To make better use of this fitness information two methods were developed for the \gls{FAP} \gls{PSO}, each one being finer grained than the other.
 
 \begin{enumerate}
 \item Besides the particle storing its fitness or cost, the particle also needed to store the interference generated by an entire cell due to the frequencies allocated to its installed transceivers.
@@ -525,7 +525,7 @@ The algorithm generates a new random frequency value and then checks to see if t
 
 After 20 attempts the algorithm just accepts the last generated frequency as the new frequency. The maximum number of 20  attempts was selected through testing and can be increased at the expense of more computational time. 
 
-In addition to checking if a frequency is tabu, resolve collisions also handles the case where if a transceiver within a cell has the same frequency as a different transceiver within the same cell. This process occurs on line 
+In addition to checking if a frequency is tabu, resolve collisions also handles the case where if a transceiver within a cell has the same frequency as a different transceiver within the same cell.
 
 The resolution of collisions can be seen as a mechanism to increase the exploration of the \gls{PSO} algorithm as well as to increase the diversity. By making certain frequency assignments to transceivers tabu the algorithm is forced to try new frequency assignments and thus explore more of the problem space.
 
