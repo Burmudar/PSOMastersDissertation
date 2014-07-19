@@ -5,7 +5,7 @@ The previous chapter presented a discussion on the FAP PSO algorithm . This algo
 
 With the FS-FAP, the main performance measurement is interference and the PSO aims to allocate frequencies in an optimal way to internally produce a frequency plan. On the other hand, the MS-FAP is concerned with the span of frequencies used and the performance measurement is based on the calls dropped. The main purpose of the PSO in the MS-FAP is to minimise the span of frequencies used and keep the number of dropped calls to a minimum.
 
-The previous chapter discussed all the modifications that were made to the standard PSO. The modifications were made to enable PSO to operate on the FAP. Two velocity methods were developed and in addition to the standard global best selection scheme, two additional global best selection schemes were put forward. The algorithm presented in the previous chapter was benchmarked against the COST 259 benchmark Siemens instances.
+The previous chapter discussed all the modifications that were made to the standard PSO. The modifications were made to enable the PSO to operate on the FAP. Two velocity methods were developed and in addition to the standard global best selection scheme, two additional global best selection schemes were put forward. The algorithm presented in the previous chapter was benchmarked against the COST 259 benchmark Siemens instances.
 
 This chapter presents the results of applying the FAP PSO algorithm with its different velocity methods as well as different global selection schemes. This is followed by how the different velocity methods affect the PSO performance as well as how the global selection schemes have an influence on the final results.
 
@@ -22,7 +22,7 @@ As discussed, the FAP PSO is applied to Siemens 1, Siemens 2, Siemens 3 and Siem
 For each benchmark, 12 results are presented. The following changes were made to the FAP PSO to obtain 12 different results, one for each variant of the algorithm.
 \begin{itemize}
 \item The two velocity methods that were developed for the PSO are tested.
-\item Each velocity method is also paired with one of the three global selection schemes namely, standard (traditional PSO global best selection), building Gbest with Cells and building a Gbest with TRXs.
+\item Each velocity method is also paired with one of the three global selection schemes namely, standard (traditional PSO global best selection), building gbest with Cells and building a gbest with TRXs.
 \end{itemize}
 The following values are used for the FAP PSO algorithm regardless of the variant being benchmarked. These values were chosen after a series of trail runs showed that these values produce the best results.
 \begin{itemize}
@@ -454,7 +454,7 @@ All the results and relevant statistics have now been presented. The section tha
 \section{The Performance of the PSO}
 In this section the effects of the changes made to the FAP PSO algorithm in terms of the results are discussed. First, the effect of the two developed velocity methods in terms of the results are described. 
 
-In section~\ref{sec:diffglobalschemes} the three global schemes that are used by the algorithm are discussed. This section concludes with a discussion on the interference statistics and what it means for the peformance of the FAP PSO.
+In section~\ref{sec:diffglobalschemes} the three global schemes that are used by the algorithm are discussed. This section concludes with a discussion on the interference statistics and what it means for the performance of the FAP PSO.
 \subsection{Velocity Method 1 vs. Method 2}
 The FAP PSO algorithm is able to utilise two different velocity methods to move the swarm around in the FAP problem space. The algorithms that implement these two methods were presented in section~\ref{sec:velocityFAP} and section~\ref{sec:velocityFAP2}.
 
@@ -489,7 +489,7 @@ Even with overshadowing the standard global scheme does not produce bad results,
 
 In addition to the standard gbest selection scheme, two other selection schemes were tested. It is incorrect to call these schemes selection schemes of gbest, since they build global best rather than select them.
 
-By far the worst performing scheme is where the global best is built from transceivers. In every benchmark performed where this scheme was paired with a velocity method and population size, the algorithm was simply not able to produce any good solutions. All possible solutions had high interference values, making them undesirable.
+Depending with which velocity method the global scheme is paired with, the performance varies wildly with regard to the solutions produced. On the one hand, building a global best from cells together with velocity method 1 produces the algorithms overall best results. When building global best from cells is paired with velocity method 2, the solutions produced are mediocre at best. On the other hand, when pairing building a gbest from trxs with velocity method 2, the algorithm produces extremely bad solutions. In contrast when building a gbest from trxs is paired with velocity method 2; its the best performing scheme of all in terms of results produced with velocity method 2.
 
 The bad performance of the build from transceivers scheme can be attributed to the granularity it uses to build a global best. As outlined in section~\ref{sec:buildglobalbest} the scheme only considers the interference generated by a single frequency allocated to a transceiver. This would have worked well if there were some sort of guarantee that a particular transceiver would only be interfered with by one other transceiver.
 

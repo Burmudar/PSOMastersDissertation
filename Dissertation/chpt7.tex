@@ -118,6 +118,7 @@ The velocity function does not blindly move a particle from one point to another
 The development of a velocity function that is suitable for particles to move from one frequency plan to another is covered next. The section will start off with the first velocity function that was developed. With each method discussed, the problems associated with it will also be mentioned. This section will conclude with the second method that was developed and that is also the primary method the developed \gls{PSO} uses.
 
 \subsection{Movement in the Frequency Planning Domain}
+\label{sec:velocityFAP1}
 The standard velocity equation works on the basis of vector mathematics. Each particle has a velocity and position, which is represented by a standard mathematical vector. The standard equation alters the direction of the particle to move to a more promising position in the solution space that is in the general direction of the global best particle and a previous personal best position the particle held.
 
 Vector mathematics has standard basic operations defined for adding, subtracting and multiplying; hence applying the \gls{PSO} to problems that are either mathematical functions or problems that map well to the vector domain is a defined process. With regard to the frequency planning domain an important question needs to be answered: How can one multidimension frequency plan be moved to another?
@@ -150,9 +151,9 @@ The principle on which the first velocity method developed is based, is for the 
 To be able to move from one frequency plan to another by utilising the standard velocity equation, the equation needs to be broken up into its smaller operations. In this way, small operations can be developed that perform the same function as the individual parts. The velocity equation in section~\ref{sec:particleVelocity} can be broken up into the following parts:
 \label{lst:velocitybreakup}
 \begin{itemize}
-\item \textbf{Subtraction} \\SubtractionResultPbest: $pbest - x_i(t)$\\SubtractionResultGbest: $gbest - x_i(t)$
+\item \textbf{Subtraction} \\SubtractionResultPbest: $pbest - x_i(t)$\\SubtractionResultgbest: $gbest - x_i(t)$
 \\
-\item \textbf{Multiplication} \\MultiPbestResult: $c_1\phi_1 * SubtractionResultPbest$\\MultiGBestResult: $c_2\phi_2 * SubtractionResultGbest$ 
+\item \textbf{Multiplication} \\MultiPbestResult: $c_1\phi_1 * SubtractionResultPbest$\\MultiGBestResult: $c_2\phi_2 * SubtractionResultgbest$ 
 \item \textbf{Addition}\\$v_i(t) + MultiPbestResult + MultiGBestResult$
 \end{itemize}
 There are no mathematical constructs that define how two frequency plans are added together or subtracted, let alone multiplied. As discussed earlier, a frequency plan is just a series of cells that have frequencies. These frequencies are numbers that internally are just integers and there are mathematical constructs that define how two integers should be added, subtracted or multiplied. Both velocity methods that were developed utilise the basic principle that on a fine granularity of a frequency plan one is merely working with integers.
@@ -256,7 +257,7 @@ Due to the swarm not having a concept of the constraints a constraint handling m
     \Delta b(c_{ij}) &= 
     \begin{cases}
     F_{min} + f(c_{ij}) \bmod F_{max} &, \text{if $f(c_{ij}) \geq F_{max}$}\\ 
-    b(f(c_{ij}) + F_{min}) &, \text{if $f(c_{ij}) \leq F_{min}$}\\ 
+    b(f(c_{ij}) + F_{min}) &, &\text{otherwise}\\ 
     \end{cases}
 \end{align}
 Where $F_{min}$ and $F_{max}$ are the minimum and maximum frequencies of the defined spectrum. The function $b$ is the BoundValue function. The constraints that are imposed are part of the spectrum that may under no circumstances be used anywhere in the network, which as discussed in chapter~\ref{chpt:fap} is known as globally blocked frequencies. Some frequencies that are only allowed to be used in certain parts of the network are known as locally blocked frequencies. Then of course the swarm also needs to take into account the electromagnetic constraints.
@@ -297,7 +298,7 @@ Using this bound method to keep frequencies within the acceptable range of frequ
 \label{sec:velocityFAP2}
 As discussed in section~\ref{sec:velocityFAP} and as can be observed from algorithm~\ref{alg:velocitymethod1}, the first velocity method that was developed for the \gls{PSO} worked with raw frequency values. This is not ideal since upon closer inspection the frequency range that the swarm used to move around was indeed incorrect. The bound value function only keeps frequencies within a minimum and maximum allowable frequency range, but globally blocked frequencies and locally blocked frequencies can be in between this minimum and maximum frequency range. 
 
-With velocity method 1 i.e algorithm~\ref{alg:velocitymethod1} and the \gls{PSO} using raw frequency values, the swarm increasingly moved towards allocating these blocked frequencies to transceivers since the fitness function does not penalise the use of blocked or invalid frequency values. This is partly due to the fact that these values are under no circumstances allowed to be used and thus the fitness function is not designed to check for these values explicitly to impose a penalty.
+With velocity method 1 i.e algorithm~\ref{alg:velocitymethod1} and the \gls{PSO} using raw frequency values, the swarm increasingly moved towards allocating these blocked frequencies to transceivers since the fitness function does not penalise the use of blocked or invalid frequency values. This is partly due to the fact that these values are under no circumstances allowed to be used and thus the fitness function is not designed to check for these values explicitly to impose a penalty. Velocity method 1 is able to still produce valid frequency plans due to its repeated us of the bound function as defined in equation~\ref{eq:boundEq}.
 
 Frequency plans that utilise these blocked frequencies are invalid and cannot be used. If a network were to use a plan that uses blocked frequencies, it could cause unexpected interference to other services and the governing body that controls the spectrum could fine the network. A bare minimum requirement then is that the \gls{PSO} must generate valid frequency plans and hence swarm particles can only occupy valid positions. The following options were presented to solve the problem of particles moving towards invalid positions and hence having invalid frequency plans:
 \begin{enumerate}
@@ -376,7 +377,7 @@ Selection of the global best particle by the swarm is a very important procedure
 As discussed previously each particle position is then modified to move in the general direction of the global best and personal best position. Therefore the global best acts as a beacon for the rest of the swarm in the solution space to indicate where good solutions seem to be.
 
 \begin{algorithm}
-\caption{Standard Gbest Selection in FAP PSO }
+\caption{Standard gbest Selection in FAP PSO }
 \label{alg:psogbestselection}
 \begin{algorithmic}[1]
 \Require swarm
@@ -466,7 +467,7 @@ If the current transceiver frequency generates less interference, the algorithm 
 
 Initially when the \gls{FAP} \gls{PSO} algorithm was tested using both of these global best schemes, the \gls{PSO} did not produce noticeably better results. This was due to the algorithm at each iteration discarding the interference or cost information calculated in that iteration and making it zero. Making the cost values zero does initially seem correct, but effectively what is happening is that the algorithm is discarding knowledge gained by that iteration.
 
-To enable this information to direct the swarm a bit more, the \gls{FAP} \gls{PSO} algorithm was modified to not reset the interference values for every transceiver and cell to 0. Instead, the interference values for an iteration are now added to the previous iteration interference values stored by the cell and transceiver. 
+To enable this information to direct the swarm a bit more, the \gls{FAP} \gls{PSO} algorithm was modified to not reset the interference values for every transceiver and cell to 0 for a particles current position. Instead, the interference values for an iteration are now added to the previous iteration interference values stored by the cell and transceiver of a particles current position. 
 
 By letting interference values compound after each iteration the \gls{PSO} becomes much more aggressive. This is because as the interference compounds bad decisions made by the swarm for a particular particle becomes progressively worse as the swarm progresses through more iterations.
 

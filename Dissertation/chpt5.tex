@@ -125,16 +125,16 @@ The pheromone trail was initially developed with only one colony in mind \cite{C
 
 \subsubsection{Pheromone Evaporation}
 \label{sec:pheromoneevapuation}
-Initially when the pheromone concept was first implemented the ants of the colony rapidly converged on a solution\cite{CompuIntelligenceIntro}. The search space was not adequately explored and the produced solution was a local optimum\cite{AntsAndStigmergy}. To combat this premature convergence and force the ants to explore the search space more, the concept of \emph{pheromone evaporation} was introduced\cite{AntIntroTrends,AntSurvey}. 
+Initially when the pheromone concept was first implemented the ants of the colony rapidly converged on a solution\cite{CompuIntelligenceIntro}. The search space was not adequately explored and the produced solution was a local optimum\cite{AntsAndStigmergy}. To combat this premature convergence and force the ants to explore the search space more, the concept of \emph{pheromone evaporation} was introduced\cite{AntIntroTrends,ACOSurvey}. 
 
-Real pheromones used by ants to mark a particular link to a node is not permanent and over time the strength of the pheromone deteriorates until it eventually disappears\cite{CompuIntelligenceIntro}. Pheromone deteriorating is known in the literature as pheromone evaporation\cite{CompuIntelligenceIntro}. The pheromone will not completely evaporate as long there are ants traversing the defined link reinforcing the pheromone. The evaporation of pheromones is modelled in the \gls{ACO} by equation \ref{eq:pheromoneevapuration}\cite{AntIntroTrends,AntSurvey}:
+Real pheromones used by ants to mark a particular link to a node is not permanent and over time the strength of the pheromone deteriorates until it eventually disappears\cite{CompuIntelligenceIntro}. Pheromone deteriorating is known in the literature as pheromone evaporation\cite{CompuIntelligenceIntro}. The pheromone will not completely evaporate as long there are ants traversing the defined link reinforcing the pheromone. The evaporation of pheromones is modelled in the \gls{ACO} by equation \ref{eq:pheromoneevapuration}\cite{AntIntroTrends,ACOSurvey}:
 \begin{equation}
 \label{eq:pheromoneevapuration}
 	\tau_{ij}(t) = (1-p)\tau_{ij}(t), p\in [0,1]
 \end{equation}
 The constant $p$ defines the rate at which the pheromone evaporates. If $p=1$ the pheromone completely evaporates every iteration. With no pheromone on a link towards a node the ants take no knowledge gained from the previous iteration into account and therefore select a link randomly \cite{CompuIntelligenceIntro,AntsAndStigmergy}. Thus, the amount of exploration done by the algorithm can be controlled by the constant $p$ \cite{CompuIntelligenceIntro,AntsAndStigmergy}.
 
-Equation \ref{eq:pheromoneevapuration} was first introduced in the \gls{AS} \cite{CompuIntelligenceIntro,AntSurvey}. Most subsequent algorithms that are a form of the \gls{ACO} class of algorithms also use the concept of pheromone evaporation, but they either use the standard equation or develop their own variant \cite{CompuIntelligenceIntro,AntsAndStigmergy}.
+Equation \ref{eq:pheromoneevapuration} was first introduced in the \gls{AS} \cite{CompuIntelligenceIntro,ACOSurvey}. Most subsequent algorithms that are a form of the \gls{ACO} class of algorithms also use the concept of pheromone evaporation, but they either use the standard equation or develop their own variant \cite{CompuIntelligenceIntro,AntsAndStigmergy}.
 
 A more aggressive form of pheromone evaporation  is added to the \gls{AS} discussed in the research done by Gambardella \emph{et al.}\cite{AntQAP}. The more aggressive form works beside the already present pheromone evaporation, but this form seeks to add an additional search phase called \emph{diversification}\cite{AntQAP}. The aim of the diversification phase is to lead the algorithm into another direction of the search space\cite{AntQAP}. This is done in an attempt to avoid local minima and stagnation\cite{AntQAP}.
 
@@ -164,7 +164,7 @@ Pheromones start to evaporate over time, and so the link marked by a pheromone t
 
  Most of the variants that have been developed differ in what pheromone update rules they employ. In the literature pheromone update rules are classified into two groups \cite{CompuIntelligenceIntro}. One group is called the global update rule. The other group is called the iteration-based or local update rule\cite{CompuIntelligenceIntro}. 
 
-The first local pheromone update rule was introduced in the \gls{AS} algorithm \cite{CompuIntelligenceIntro,AntSurvey,AntsAndStigmergy}. The ants would retrace their path after each iteration, depositing pheromones on each link that makes the complete path. The following equation is used to update the pheromone:
+The first local pheromone update rule was introduced in the \gls{AS} algorithm \cite{CompuIntelligenceIntro,ACOSurvey,AntsAndStigmergy}. The ants would retrace their path after each iteration, depositing pheromones on each link that makes the complete path. The following equation is used to update the pheromone:
 \begin{align}
 \label{eq:pheromonedeposit}
  \tau_{ij}(t+1) &= \tau_{ij}(t) + \Delta\tau_{ij}(t),\\ 
@@ -468,7 +468,7 @@ Two variants of the initial \gls{PSO} algorithm were developed namely the global
 
 In the swarm, each particle is a potential solution that is represented by a D-dimensional vector \cite{PSOHybridJobShop,PSOSelfHierarch}. As a particle moves through the search space, it continually evaluates its current position and adjusts it accordingly to move in the general direction of its own personal best position and the position of the best particle in its neighbourhood. 
 
-A particle evaluates its current position by using a heuristic function, or in more evolutionary algorithm terms, a fitness function. The fitness value indicates to the particle how far it is from an optimal position\cite{CompuIntelligenceIntro}. 
+A particle evaluates its current position by using a heuristic function, or in more evolutionary algorithm terms, a fitness function. The fitness value indicates to the particle how far it is from an optimal position\cite{CompuIntelligenceIntro}. Note, that this fitness value is not an absolute measure. Instead, it merely gives an indication to an optimum in the presence of other fitness values of other particles.
 
 As a particle moves through the search space it keeps a memory of the personal best position it has achieved since the start of the algorithm. In the literature and in the algorithm this personal best position is referred to as \emph{pbest} \cite{SOSwarm}.
 

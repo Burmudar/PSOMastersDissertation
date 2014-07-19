@@ -505,7 +505,7 @@ The core concepts of the genetic algorithm were introduced in the previous secti
     \State Evaluate individuals of population with fitness function $f(\hat{x_i})$
     \State $\hat{y_k} \leftarrow$ Select parent individuals from population using selection method
 		\Repeat
-    \For{Each chromosome $\hat{g_i}$ in $\hat{y_{k-1}}$}
+    \For{Each chromosome $\hat{g_i}$ in $\hat{y_{k}}$}
     \State $\hat{c_i} \leftarrow$ calculate crossover probability for $\hat{g_i}$
     \If{$\hat{c_i} \geq$ Crossover threshold}
     \State $\hat{g_i} \leftarrow$ Apply crossover operator to $\hat{g_i}$
@@ -534,7 +534,7 @@ Since each individual has a fitness value after being evaluated, the selection m
 
 In the reproduction phase the crossover and mutation operators are applied probabilistically. For the crossover operator a crossover probability is calculated on line 7. The probability defines how much of the new population should consist of offspring created through the crossover. Thus the crossover value is a percentage value at its most basic but could also be made more intelligent and only consider high value parents. 
 
-Depending if the calculated probability satisfies the crossover probability the crossover operator is applied on line 9. Depending on the crossover used, offspring are generated using one or more individuals as parents. The resulting offspring from the crossover operation is assigned to $\hat{g_i}$.
+Depending if the calculated probability satisfies the crossover probability the crossover operator is applied to a parent chromosome $\hat{g_i}$ on line 9. Depending on the crossover used, offspring are generated using one or more individuals as parents. If more parents are needed for the crossover operation to occur, the crossover has to calculate additional probabilities from the selected parents $\hat{y_k}$ and select parents accordingly. The resulting offspring from the crossover operation is assigned to $\hat{g_i}$.
 
 On line 11 the value of $\hat{g_i}$ is assigned to the variable $\hat{o_i}$, which represents the offspring. From lines 7 -- 11 it can be observed that a particular individual does not have to take part in a crossover operation to be carried over to the new population. Thus knowledge gained from the current population is persisted based on the crossover probability.
 
