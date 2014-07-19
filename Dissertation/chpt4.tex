@@ -231,7 +231,7 @@ When critically reasoning about the \gls{TS} algorithm with regard to applying i
 
 \subsection{Introduction}
 \label{sec:SAIntroduction}
-\Gls{SA} is a metaheuristic search technique proposed in the 1980s by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process, which is known in metallurgy as annealing \cite{SASingleMultiObj,TempCyclingSA}. Kirkpatrick was the first to use \gls{SA} to solve optimisation problems but Metropolis \emph{et al.}\ defined the basic algorithm structure in 1953 \cite{CurveFittingSA,VeryFastSAImageEnchancement}.
+\Gls{SA} is a metaheuristic search technique proposed in the 1980s by Kirkpatrick to solve combinatorial optimisation problems. The technique is based on a natural process, which is known in metallurgy as annealing as cited in \cite{SASingleMultiObj,TempCyclingSA}. Kirkpatrick was the first to use \gls{SA} to solve optimisation problems but Metropolis \emph{et al.}\ defined the basic algorithm structure in 1953 as cited in \cite{CurveFittingSA,VeryFastSAImageEnchancement}.
 
 Annealing is the natural process of crystallisation when a solid is heated to a high temperature and then systematically cooled to a lower temperature to reach a crystallised form \cite{NewSAs,ConstantTempSA}. The crystallised form of the solid is known to be the global minimum of the solids internal energy state. 
 
@@ -468,13 +468,13 @@ The crossover operator is the first operator applied to the population in the re
 
 Offspring is formed by applying the crossover operator with a defined probability to two or more parents. The probability is known as the \emph{crossover probability} and is problem dependent\cite{CompuIntelligenceIntro}. By defining a high crossover probability that decreases over time, the good genes that form the current population are retained in the next population\cite{CompuIntelligenceIntro}. With good genes being retained more historical information is passed onto the next generation's population\cite{FamilyGA}.
 
-There are a variety of ways in which genes are interchanged between chromosomes in the crossover operation i.e. fixed point crossover, two point crossover, uniform crossover and Gaussian crossover\cite{CompuIntelligenceIntro}. All of these crossover operate on the premise that a byte representation is used for the chromosomes. 
+There are a variety of ways in which genes are interchanged between chromosomes in the crossover operation i.e. fixed point crossover, two point crossover, uniform crossover and Gaussian crossover\cite{CompuIntelligenceIntro}. All of these crossover operate on the premise that a binary representation is used for the chromosomes. 
 
-With the byte representation, each chromosome is a byte. Each byte is made up of sequence of bits. As discussed previously each chromosome is made out of genes and therefore each bit is a gene\cite{CompuIntelligenceIntro}.
+With the classic binary representation, each chromosome consists of a fixed length binary vector\cite{CompuIntelligenceIntro}. Each element in the bit vector is a bit or in the case of a multidimensional search space, each variable of the vector is encoded as a bit string. As discussed previously each chromosome is made out of genes and therefore each bit is a gene\cite{CompuIntelligenceIntro}.
 
 Fixed-point crossover operates on binary parents whereby a point is selected in one parent and then all other bits are replaced by the other parents' bits \cite{HumanPassiveGA}. Two-point crossover generates two random indices, which dictate a certain segment in the one parent to be interchanged with the other parent \cite{ConstrainedGA}. Where a segment consists of a subset of genes from the chromosome. 
 
-The uniform crossover is the most basic of all crossovers since it randomly selects bits from one parent to be replaced by another parent's bits\cite{ParallelGASA,GeostatisticalGA}. Finally, the Gaussian crossover also uses the byte representation. The Gaussian crossover interchanges bits between parents based on a Gaussian distribution \cite{ParallelGASA,GeostatisticalGA}.
+The uniform crossover is the most basic of all crossovers since it randomly selects bits from one parent to be replaced by another parent's bits\cite{ParallelGASA,GeostatisticalGA}. Finally, the Gaussian crossover also uses the binary representation. The Gaussian crossover interchanges bits between parents based on a Gaussian distribution \cite{ParallelGASA,GeostatisticalGA}.
 
 Caution should be exercised by the crossover operator when selecting chromosomes for reproduction. It is possible for the operator to select the same chromosome twice to be the parent of a single offspring\cite{CompuIntelligenceIntro}. The operator is also at risk of selecting the same chromosome multiple times for reproduction\cite{CompuIntelligenceIntro}. The operator must therefore incorporate a test to detect unnecessary repeated usage of a chromosome\cite{CompuIntelligenceIntro}. Finally, it is important to note that there exist strategies for both Gaussian crossover and mutation based operators for use with continuous-valued representations\cite{FundamentalSwarm}.
 
@@ -593,5 +593,5 @@ Three metaheuristic algorithms were discussed in this chapter. For every algorit
 
 For each algorithm, a brief overview of studies using the particular algorithm was given as well as some of the disadvantages or challenges that would be faced when applying the particular algorithm to the \gls{FAP}.
 The first algorithm discussed was the tabu search algorithm and the second was the simulated annealing algorithm. The chapter concluded with the genetic algorithm. 
-The next chapter presents a discussion on a class of algorithm that is new to optimisation research, namely swarm intelligence.
+The next chapter presents a discussion a class of algorithms that utilises social structures as part of its search process. This class of algorithms is known as swarm intelligence.
 
