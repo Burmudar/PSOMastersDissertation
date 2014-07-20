@@ -13,6 +13,5 @@
 *.pyg
 *.toc
 .DS_Store
-Masters\ Research/Research/*
 Masters\ Research/Summaries/*
 Poster/*
