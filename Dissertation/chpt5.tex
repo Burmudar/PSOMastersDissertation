@@ -193,7 +193,7 @@ As can be seen in the following equation, the \gls{ACS} uses a slight variant of
 \end{equation}
 In the above equation $\tau_0$ is a small constant and $p_2 \in [0,1]$ is the constant that defines the rate of evaporation\cite{CompuIntelligenceIntro}. With the local update rule, the algorithm is able to explore more. The path constructed by the individual ant is used to update the pheromone and no information from the best path found in the colony is incorporated, as with equation~\ref{eq:pheromoneupdate}\cite{CompuIntelligenceIntro,FundamentalSwarm}.
 
-The \gls{MMAS} algorithm as discussed also improves on the \gls{AS}. The global update rule used by \gls{AS} (see equation~\ref{eq:pheromoneupdate}) has a disadvantage in the sense that the search might concentrate too quickly on a particular good solution (the global best path)\cite{FundamentalSwarm}. \gls{MMAS} addresses this disadvantage by using the global update rule on an iteration basis\cite{FundamentalSwarm}.
+The \gls{MMAS} algorithm as discussed also improves on the \gls{AS}. The global update rule used by \gls{AS} (see equation~\ref{eq:pheromoneupdate}) has a disadvantage in the sense that the search might concentrate too quickly on a particular good solution (the global best path)\cite{FundamentalSwarm}. \gls{MMAS} addresses this disadvantage by using the global update rule on the best path found per iteration\cite{FundamentalSwarm}. By using the update rule exclusively on the global best path allowed the swarm to converge to quickly on the global best path and limit exploration. By using the update rule on the best path per iteration exploration is increased and premature convergence is avoided to a degree\cite{FundamentalSwarm}.
 
 With the \gls{MMAS} algorithm the best path found differs from one iteration to the next\cite{FundamentalSwarm}. When the \gls{MMAS} enters the pheromone update phase a different path will be updated every iteration\cite{FundamentalSwarm}. This is due to the algorithm providing no guarantee that the best found path in one iteration will be the best path in the next iteration\cite{FundamentalSwarm}. There is thus a possibility that the algorithm will deposit on various different paths as it progresses through iterations\cite{FundamentalSwarm}. Due to different paths being deposited with global pheromones the colony considers a wider range of possible routes and thus explores the search space more\cite{FundamentalSwarm}.
 
@@ -268,7 +268,7 @@ The authors presented two versions of the algorithm. The first version used no h
 
 With regard to the heuristic updating of the pheromone trails, the authors opted to increase the pheromone by some magnitude\cite{ACOvsEA}. This magnitude was hand tuned to be 100. The heuristic only increases a certain path's pheromone if the frequencies assigned to the transceivers represented by this path differ enough so as to not cause significant interference\cite{ACOvsEA}. Thus, the heuristic aims to amplify good choices made previously by the algorithm for the next iteration of the algorithm.
 
-In table~\ref{tab:ACO} the results obtained by Lune \emph{et al.}\cite{ACOvsEA} are presented. By evaluating the results obtained, one can clearly see that the \gls{ACO} version that incorporates heuristic information to reinforce pheromone trails outperforms the version that does not \cite{ACOvsEA}. 
+In table~\ref{tab:ACO} the results obtained by Lune \emph{et al.}\cite{ACOvsEA} are presented. The values depicted in the table represent the amount of interference that will result if the plan is used in the network\cite{ACOvsEA}. By evaluating the results obtained, one can clearly see that the \gls{ACO} version that incorporates heuristic information to reinforce pheromone trails outperforms the version that does not \cite{ACOvsEA}. 
 \begin{table}[H]
 \centering
 	\begin{tabular}{| c | c | c |}
@@ -281,7 +281,7 @@ In table~\ref{tab:ACO} the results obtained by Lune \emph{et al.}\cite{ACOvsEA} 
 \caption{ACO and \gls{ACO}* on custom GSM \gls{FAP} benchmark\cite{ACOvsEA}}
 \label{tab:ACO}
 \end{table}
-The values depicted in the table represent the amount of interference that will result if the plan is used in the network\cite{ACOvsEA}. The following section discusses the Artificial Bee Algorithm.
+This concludes the discussion on the \gls{ACO} algorithm. The following section discusses the Artificial Bee Algorithm.
 \section{Artificial Bee Colony (ABC) Algorithm}
 \label{sec:BEE}
 
@@ -586,6 +586,7 @@ A more complex approach, as mentioned previously, is to redefine the arithmetic 
 \begin{equation}
     \sum^{n_x -1}_{j=1} D_{\pi_j\pi_{j+1}} + D_{\pi_{n_x}\pi_1}
 \end{equation}
+Where $D_{ab}$ is the value stored at row $a$, column $b$ of matrix $D$\cite{FundamentalSwarm}.
 Clerc redefined the operators as follows:
 \begin{itemize}
     \item{Velocity of vector length} --- The number of changes to the permutation represented by a tour is defined as the length of the vector\cite{FundamentalSwarm}. Formally the length of the velocity is defined as $|v_i(t)|=J$ where \emph{J} is the number of elements.
