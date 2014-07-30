@@ -457,7 +457,7 @@ In this section the effects of the changes made to the FAP PSO algorithm in term
 
 In section~\ref{sec:diffglobalschemes} the three global schemes that are used by the algorithm are discussed. This section concludes with a discussion on the interference statistics and what it means for the performance of the FAP PSO.
 \subsection{Velocity Method 1 vs. Method 2}
-The FAP PSO algorithm is able to utilise two different velocity methods to move the swarm around in the FAP problem space. The algorithms that implement these two methods were presented in section~\ref{sec:velocityFAP} and section~\ref{sec:velocityFAP2}.
+The FAP PSO algorithm is able to utilise two different velocity methods to move the swarm around in the FAP problem space. The algorithms that implement these two methods were presented in section~\ref{sec:velocityFAP1} and section~\ref{sec:velocityFAP2}.
 
 By analysing the results, it becomes abundantly clear that velocity method 1 is by far the superior method for moving in the problem space. In each of the results, when comparing end fitness values produced by algorithm variants that use method 1 one can easily come to the conclusion that method 1 performs better than method 2.
 
@@ -485,20 +485,22 @@ To prove that the results were not by pure chance and are of statistical signifi
 \subsection{Hypothesis test}
 In this section a discussion is presented on the statistical significance regarding the results that velocity method 1 performs better than velocity method 2. A null as well as alternate hypothesis is presented along with a proof rejecting or accepting the null hypothesis.
 
-Null hypothesis ($H_0$): Using velocity method 1 the FAP PSO algorithm produces the same results as the algorithm using velocity method 2.
+\begin{description}
+    \item{\emph{Null hypothesis ($H_0$)}} --- Using velocity method 1 the FAP PSO algorithm produces the same results as the algorithm using velocity method 2.
 
-Alternative hypothesis ($H_1$): The FAP PSO algorithm using velocity method 1 produces lower results than the algorithm using velocity method 2.
+    \item{\emph{Alternative hypothesis ($H_1$)}} --- The FAP PSO algorithm using velocity method 1 produces lower results than the algorithm using velocity method 2.
+\end{description}
 
-The following equation is used to acertain the Z statistic based on the average and standard deviation produced by the FAP PSO with velocity method 1 and 2.
-\begin{equation}
-    Z_k &= \frac{\mu_k(v_1) - \mu_k(v_2)}{\frac{\sigma_k(v_2)}{SE_k}}, k \in \{1,2,3,4}\\
-    SE_k &= \frac{o_k}{\sqrt{n}}, n = 20
-\end{equation}
-where $k$ represents the Siemens problem number. Variable $v_1$ represent the velocity method 1 and $v_2$ velocity method 2. The function $u_k$ is the mean value for Siemens problem $k$ for either $v_1$ or $v_2$ as calculated from the results produced by the FAP PSO algorithm. The function $o_k$ is the standard deviation for Siemens problem $k$ for $v_1$ or $v_2$. $n$ is set to 20, which is the sample size of the results produced. $SE_k$ is the standard error as calculated for the specific Siemens problem $k$.
+The following equation is used to calculate the Z statistic based on the average and standard deviation produced by the FAP PSO with velocity method 1 and 2.
+\begin{align}
+    Z_k &= \frac{\mu_k(v_1) - \mu_k(v_2)}{\frac{\sigma_k(v_2)}{SE_k}}, k \in \{1,2,3,4\}\\
+    SE_k &= \frac{\sigma_k}{\sqrt{n}}, n = 20
+\end{align}
+where $k$ represents the Siemens problem number. Variable $v_1$ represent the velocity method 1 and $v_2$ velocity method 2. The function $\mu_k$ is the mean value for Siemens problem $k$ for either $v_1$ or $v_2$ as calculated from the results produced by the FAP PSO algorithm. The function $\sigma_k$ is the standard deviation for Siemens problem $k$ for $v_1$ or $v_2$. $n$ is set to 20, which is the sample size of the results produced. $SE_k$ is the standard error as calculated for the specific Siemens problem $k$.
 Table~\ref{tbl:hypothesis} presents the best interference, mean, standard error and standard deviation values for Siemens problems 1 -- 4 as produced by the FAP PSO algorithm using velocity method 1 and 2.
 \begin{table}[H]
 \centering
-\begin{tabular}{ccccc}
+\begin{tabular}{cccccc}
 	\toprule
     Problem & Velocity method & Interference & $\mu_k$ & $\sigma_k$ & $SE_k$  \\
     \midrule
@@ -513,12 +515,12 @@ Table~\ref{tbl:hypothesis} presents the best interference, mean, standard error 
     \bottomrule
 	\end{tabular}
 \caption{Summary of the best results produced by FAP PSO algorithm}
-\label{tab:allbest}
+\label{tbl:hypothesis}
 \end{table}
 The next table presents the $Z$ statistic and the P-value. The $Z$ statistic is calculated using the values in the above summary table using equation~\ref{eq:z}. The P-value is derived from the standard normal probability table using the $Z$ statistic value.
-\begin{table}
+\begin{table}[H]
 \centering
-\begin{tabular}
+\begin{tabular}{cccc}
     \toprule
     Problem & Velocity Method & $Z_k$ & P-value\\
     \midrule

@@ -12,6 +12,13 @@ Karen~I. Aardal, Stan P.~M. van Hoesel, Arie M. C.~A. Koster, Carlo Mannino,
 \newblock {\em 4OR: A Quarterly Journal of Operations Research}, 1(4):261--317,
   December 2004.
 
+\bibitem{AdJa97}
+P.~M. Adjakpl{\'e} and B.~Jaumard.
+\newblock Greedy and tabu search heuristics for channel block assignment in
+  cellular systems.
+\newblock Technical Report G-97--45, {\'E}cole Polytechnique de Montr{\'e}al,
+  July 1997.
+
 \bibitem{HetergeneousGA}
 E.~Alba, F.~Luna, A.~J. Nebro, and J.~M. Troya.
 \newblock Parallel heterogeneous genetic algorithms for continuous
@@ -98,12 +105,23 @@ Ralf Bornd{\"o}rfer, Andreas Eisenbl{\"a}tter, Martin Gr{\"o}tschel, and
 \newblock The orientation model for frequency assignment problems.
 \newblock Technical report, Konrad-Zuse-Zentrum Berlin, 1998.
 
+\bibitem{TSBouju}
+A.~Bouju, J.F. Boyce, Dr.~A. Bouju, Dr. J.~F. Boyce, J.G. Taylor, C.H.D.
+  Dimitropoulos, G.~Vom Scheidt, and Prof J.~G. Taylor.
+\newblock Tabu search for the radio links frequency assignment problem.
+\newblock In {\em Proceedings of the International Conference on Digital Signal
+  Processing}, 1995.
+
 \bibitem{SwarmArt}
 Jeffrey~E. Boyd, Gerald Hushlak, and Christian~J. Jacob.
 \newblock Swarmart: interactive art from swarm intelligence.
 \newblock In {\em MULTIMEDIA '04: Proceedings of the 12th annual ACM
   international conference on Multimedia}, pages 628--635, New York, NY, USA,
   2004. ACM.
+
+\bibitem{OnRandomGA}
+Erick Cantu-Paz.
+\newblock On random numbers and the performance of genetic algorithms, 2002.
 
 \bibitem{TabuCrewSchedulingProblem}
 L.~Cavique, C.~Rego, and I.~Themido.
@@ -138,6 +156,34 @@ G.~Colombo and S.M. Allen.
 \newblock In {\em Evolutionary Computation, 2007. CEC 2007. IEEE Congress on},
   pages 3492 --3499, sept. 2007.
 
+\bibitem{IntroToAlgos}
+Thomas~H. Cormen, Clifford Stein, Ronald~L. Rivest, and Charles~E. Leiserson.
+\newblock {\em Introduction to Algorithms}.
+\newblock McGraw-Hill Higher Education, 2nd edition, 2001.
+
+\bibitem{GACrisan}
+Christine Crisan and Heinz M\"uhlenbein.
+\newblock The breeder genetic algorithm for frequency assignment.
+\newblock In AgostonE. Eiben, Thomas B\"ack, Marc Schoenauer, and Hans-Paul
+  Schwefel, editors, {\em Parallel Problem Solving from Nature}, volume 1498 of
+  {\em Lecture Notes in Computer Science}, pages 897--906. Springer Berlin
+  Heidelberg, 1998.
+
+\bibitem{GACuppini}
+Monica Cuppini.
+\newblock A genetic algorithm for channel assignment problems.
+\newblock {\em European Transactions on Telecommunications}, 5(2):285--294,
+  1994.
+
+\bibitem{RLRandomGA}
+Miguel Cárdenas-Montes, MiguelA. Vega-Rodríguez, and Antonio Gómez-Iglesias.
+\newblock Real-world problem for checking the sensitiveness of evolutionary
+  algorithms to the choice of the random number generator.
+\newblock In Emilio Corchado, Vaclav Snasel, Ajith Abraham, Michal Wozniak,
+  Manuel Grana, and Sung-Bae Cho, editors, {\em Hybrid Artificial Intelligent
+  Systems}, volume 7208 of {\em Lecture Notes in Computer Science}, pages
+  385--396. Springer Berlin Heidelberg, 2012.
+
 \bibitem{TheoPraticalSA}
 Agnieszka Debudaj-Grabysz and Zbigniew~J. Czech.
 \newblock Theoretical and practical issues of parallel simulated annealing.
@@ -146,11 +192,6 @@ Agnieszka Debudaj-Grabysz and Zbigniew~J. Czech.
   Heidelberg, 2008. Springer-Verlag.
 
 \bibitem{ACOSurvey}
-Marco Dorigo and Christian Blum.
-\newblock Ant colony optimization theory: A survey.
-\newblock {\em Theoretical Computer Science}, 344(2-3):243 -- 278, 2005.
-
-\bibitem{AntSurvey}
 Marco Dorigo and Christian Blum.
 \newblock Ant colony optimization theory: A survey.
 \newblock {\em Theoretical Computer Science}, 344(2-3):243 -- 278, 2005.
@@ -172,10 +213,15 @@ Audrey Dupont, Andrea~Carneiro Linhares, Christian Artigues, Dominique Feillet,
 \newblock The dynamic frequency assignment problem.
 \newblock {\em European Journal of Operational Research}, 195:75--88, 2009.
 
+\bibitem{SAChanAss}
+M.~Duque-Anton, D.~Kunz, and B.~Ruber.
+\newblock Channel assignment for cellular radio using simulated annealing.
+\newblock {\em Vehicular Technology, IEEE Transactions on}, 42(1):14--21, 1993.
+
 \bibitem{FAPRAMColouring}
 A.~Eisenbl{\"a}tter, M.~Gr{\"o}tschel, and A.~Martin.
 \newblock Frequency planning and rammifications of colouring.
-\newblock Technical report, Konrad-Zuse-Zentrum fu Ìˆr Informationstechnik
+\newblock Technical report, Konrad-Zuse-Zentrum f{\"u}r Informationstechnik
   Berlin, 2000.
 
 \bibitem{AndreasPaper}
@@ -220,6 +266,12 @@ N.~Fescioglu-Unver and M.M. Kokar.
 \newblock In {\em Self-Adaptive and Self-Organizing Systems, 2008. SASO '08.
   Second IEEE International Conference on}, pages 297 --305, 20-24 2008.
 
+\bibitem{TSCSP}
+Philippe Galinier and Jin-Kao Hao.
+\newblock A general approach for constraint solving by local search.
+\newblock {\em Journal of Mathematical Modelling and Algorithms}, 3(1):73--88,
+  2004.
+
 \bibitem{AntQAP}
 L.~M. Gambardella, {{\'E}}D Taillard, and M.~Dorigo.
 \newblock Ant colonies for the quadratic assignment problem.
@@ -232,10 +284,22 @@ Gautam Garai and B.~B. Chaudhuri.
   optimization and pattern matching.
 \newblock {\em Pattern Recogn.}, 40(1):212--228, 2007.
 
+\bibitem{FirstMathModel}
+F.R. Giordano.
+\newblock {\em A First Course in Mathematical Modeling}.
+\newblock Brooks/Cole, 2013.
+
 \bibitem{Glover89}
 Fred Glover.
 \newblock Tabu search - part i.
 \newblock {\em INFORMS Journal on Computing}, 1(3):190--206, 1989.
+
+\bibitem{GAGoldberg}
+David~E. Goldberg.
+\newblock {\em Genetic Algorithms in Search, Optimization and Machine
+  Learning}.
+\newblock Addison-Wesley Longman Publishing Co., Inc., Boston, MA, USA, 1st
+  edition, 1989.
 
 \bibitem{WirelessCommunications}
 Andrea Goldsmith.
@@ -292,6 +356,12 @@ Julia Handl and Bernd Meyer.
   optimization.
 \newblock {\em European Journal of Operational Research}, 170:329--349, 2006.
 
+\bibitem{Hehe00}
+M.~Hellebrandt and H.~Heller.
+\newblock A new heuristic method for frequency assignment.
+\newblock Technical Report TD(00)\,003, COST\,259, Valencia, Spain, January
+  2000.
+
 \bibitem{LowerPolarFAP}
 Alan Herz, David Schindl, and Nicolas Zufferey.
 \newblock Lower bounding and tabu search procedures for the frequency
@@ -327,6 +397,12 @@ D.M. Jaeggi, G.T. Parks, T.~Kipouros, and P.J. Clarkson.
   continuous optimisation problems.
 \newblock {\em European Journal of Operational Research}, 185(3):1192 -- 1212,
   2008.
+
+\bibitem{GAJaimes}
+F.J. Jaimes-Romero, D.~Munoz-Rodriguez, and S.~Tekinay.
+\newblock Channel assignment in cellular systems using genetic algorithms.
+\newblock In {\em Vehicular Technology Conference, 1996. Mobile Technology for
+  the Human Race., IEEE 46th}, volume~2, pages 741--745 vol.2, Apr 1996.
 
 \bibitem{HybridIntelliGA}
 A.A. Javadi, R.~Farmani, and T.P. Tan.
@@ -365,6 +441,11 @@ Dervis Karaboga and Bahriye Basturk.
 \newblock A powerful and efficient algorithm for numerical function
   optimization: artificial bee colony (abc) algorithm.
 \newblock {\em J. of Global Optimization}, 39(3):459--471, 2007.
+
+\bibitem{researchmeth}
+C.R. Kothari.
+\newblock {\em Research Methodology: Methods and Techniques}.
+\newblock New Age International (P) Limited, 2004.
 
 \bibitem{AdaptiveSAGA}
 Il~kwon Jeong and Ju~jang Lee.
@@ -441,6 +522,11 @@ Vittoria Maniezzo and Roberto Montemanni.
 \newblock Technical report, Department of Computer Science, University of
   Bologna, 2000.
 
+\bibitem{MaOrRi02}
+C.~Mannino, G.~Oriolo, and F.~Ricci.
+\newblock Solving stability problems on a superclass of interval graphs.
+\newblock Technical Report 26--02, Universit\'a di Roma ``La Sapienza'', 2002.
+
 \bibitem{HybridABCClustering}
 Y.~Marinakis, M.~Marinaki, and N.~Matsatsinis.
 \newblock A hybrid discrete artificial bee colony - grasp algorithm for
@@ -488,12 +574,24 @@ Qi~Ming-yao, Miao Li-xin, Zhang Le, and Xu~Hua-yu.
   Annual Conference Proceedings., International Conference on}, pages 1648
   --1653, 10-12 2008.
 
+\bibitem{IntroToGAs}
+M.~Mitchell.
+\newblock {\em An Introduction to Genetic Algorithms}.
+\newblock A Bradford book. MIT Press, 1998.
+
 \bibitem{adaptPSO}
 Christopher~K. Monson and Kevin~D. Seppi.
 \newblock Adaptive diversity in pso.
 \newblock In {\em GECCO '06: Proceedings of the 8th annual conference on
   Genetic and evolutionary computation}, pages 59--66, New York, NY, USA, 2006.
   ACM.
+
+\bibitem{MontiTS}
+R.~Montemanni, J.N.J. Moon, and D.H. Smith.
+\newblock An improved tabu search algorithm for the fixed-spectrum
+  frequency-assignment problem.
+\newblock {\em Vehicular Technology, IEEE Transactions on}, 52(4):891--901,
+  2003.
 
 \bibitem{MontemanniThesis}
 Roberto Montemanni.
@@ -522,6 +620,13 @@ B.~Natrajan and B.E. Rosen.
 \newblock Image enhancement using very fast simulated reannealing.
 \newblock In {\em Image Analysis and Interpretation, 1996., Proceedings of the
   IEEE Southwest Symposium on}, pages 230 --235, 8-9 1996.
+
+\bibitem{GANgoLi}
+C.Y. Ngo and V.O.-K. Li.
+\newblock Fixed channel assignment in cellular radio networks using a modified
+  genetic algorithm.
+\newblock {\em Vehicular Technology, IEEE Transactions on}, 47(1):163--172, Feb
+  1998.
 
 \bibitem{ChaosSA}
 Lin Ni and Hong-Ying Zheng.
@@ -552,7 +657,7 @@ Sigurdur {\'O}lafsson.
   pages 633 -- 654. Elsevier, 2006.
 
 \bibitem{SOSwarm}
-Michael O\&\#x2019;Neill and Anthony Brabazon.
+Michael O'Neill and Anthony Brabazon.
 \newblock Self-organising swarm (soswarm).
 \newblock {\em Soft Comput.}, 12(11):1073--1080, 2008.
 
@@ -594,13 +699,6 @@ A.~Ratnaweera, S.K. Halgamuge, and H.C. Watson.
   time-varying acceleration coefficients.
 \newblock {\em Evolutionary Computation, IEEE Transactions on}, 8(3):240 --
   255, june 2004.
-
-\bibitem{RandomNumberGA}
-Andrea Reese.
-\newblock Random number generators in genetic algorithms for unconstrained and
-  constrained optimization.
-\newblock {\em Nonlinear Analysis: Theory, Methods \& Applications},
-  71(12):e679 -- e692, 2009.
 
 \bibitem{ConstrainedGA}
 D.~J. Reid.
@@ -650,6 +748,11 @@ Alok Singh.
 \newblock An artificial bee colony algorithm for the leaf-constrained minimum
   spanning tree problem.
 \newblock {\em Applied Soft Computing}, 9(2):625 -- 631, 2009.
+
+\bibitem{SpringerIntroToGAs}
+S.~N. Sivanandam and S.~N. Deepa.
+\newblock {\em Introduction to Genetic Algorithms}.
+\newblock Springer Publishing Company, Incorporated, 1st edition, 2007.
 
 \bibitem{AutoConfigSA}
 J.~R. Slagle, A.~Bose, P.~Busalacchi, and C.~Wee.
@@ -825,10 +928,11 @@ Dominic C~O'Brien Yangyang~Zhang.
 \newblock In {\em Proceedings of the Internation Symposium of Industrial
   Electronics}, June 2005.
 
-\bibitem{HybridBaldwinGA}
-Quan Yuan, Feng Qian, and Wenli Du.
-\newblock A hybrid genetic algorithm with the baldwin effect.
-\newblock {\em Information Sciences}, 180(5):640 -- 652, 2010.
+\bibitem{Zerovnik97}
+Janez Zerovnik.
+\newblock Experiments with a randomized algorithm for a frequency assignment
+  problem.
+\newblock Technical report, ECOLE NORMALE SUP'ERIEURE DE LYON, 1997.
 
 \bibitem{TSHazardous}
 L.~Zhang, S.~Guo, Y.~Zhu, and A.~Lim.

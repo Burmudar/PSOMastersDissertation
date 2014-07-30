@@ -1,16 +1,16 @@
-\contentsline {algorithm}{\numberline {1}{\ignorespaces Basic Tabu Search Algorithm\cite {TabuRCAProblem,TabuMontemanniSmith}}}{63}{algorithm.1}
-\contentsline {algorithm}{\numberline {2}{\ignorespaces Basic Simulated Annealing Algorithm\cite {VeryFastSAImageEnchancement,ChaosSA}}}{72}{algorithm.2}
-\contentsline {algorithm}{\numberline {3}{\ignorespaces Basic Genetic Algorithm Algorithm\cite {FamilyGA,AdaptiveSAGA,DistributedHierarchicalGA,SelfAdaptiveGA}}}{82}{algorithm.3}
-\contentsline {algorithm}{\numberline {4}{\ignorespaces Ant System Algorithm\nobreakspace {}\cite {CompuIntelligenceIntro}}}{100}{algorithm.4}
-\contentsline {algorithm}{\numberline {5}{\ignorespaces Basic Artificial Bee Colony Algorithm\cite {ABCCompareStudy}}}{111}{algorithm.5}
-\contentsline {algorithm}{\numberline {6}{\ignorespaces Basic Global Particle Swarm Optimisation Algorithm\cite {CompuIntelligenceIntro}}}{126}{algorithm.6}
-\contentsline {algorithm}{\numberline {7}{\ignorespaces The \gls {FAP} \gls {PSO} Algorithm}}{135}{algorithm.7}
-\contentsline {algorithm}{\numberline {8}{\ignorespaces FAP Cost Function}}{137}{algorithm.8}
-\contentsline {algorithm}{\numberline {9}{\ignorespaces Velocity Method 1}}{141}{algorithm.9}
-\contentsline {algorithm}{\numberline {9}{\ignorespaces Velocity Method 1 (continued)}}{142}{algorithm.9}
-\contentsline {algorithm}{\numberline {10}{\ignorespaces Velocity Method 2}}{148}{algorithm.10}
-\contentsline {algorithm}{\numberline {11}{\ignorespaces Standard Gbest Selection in FAP PSO }}{149}{algorithm.11}
-\contentsline {algorithm}{\numberline {12}{\ignorespaces Building Global Best with Cells}}{152}{algorithm.12}
-\contentsline {algorithm}{\numberline {13}{\ignorespaces Building Global Best with Transceivers}}{152}{algorithm.13}
-\contentsline {algorithm}{\numberline {14}{\ignorespaces SanitizePosition}}{154}{algorithm.14}
-\contentsline {algorithm}{\numberline {15}{\ignorespaces ResolveCollision}}{155}{algorithm.15}
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Basic Tabu Search Algorithm\cite {TabuRCAProblem,TabuMontemanniSmith}}}{69}{algorithm.1}
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Basic Tabu Search Algorithm (continued)\cite {TabuRCAProblem, TabuMontemanniSmith}}}{70}{algorithm.2}
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Basic Simulated Annealing Algorithm\cite {VeryFastSAImageEnchancement,ChaosSA}}}{80}{algorithm.3}
+\contentsline {algorithm}{\numberline {4}{\ignorespaces Basic Genetic Algorithm\cite {GAGoldberg, CompuIntelligenceIntro}}}{94}{algorithm.4}
+\contentsline {algorithm}{\numberline {5}{\ignorespaces Ant System Algorithm\nobreakspace {}\cite {CompuIntelligenceIntro}}}{114}{algorithm.5}
+\contentsline {algorithm}{\numberline {6}{\ignorespaces Basic Artificial Bee Colony Algorithm\cite {ABCCompareStudy}}}{125}{algorithm.6}
+\contentsline {algorithm}{\numberline {7}{\ignorespaces Basic Global Particle Swarm Optimisation Algorithm\cite {CompuIntelligenceIntro}}}{140}{algorithm.7}
+\contentsline {algorithm}{\numberline {8}{\ignorespaces The \gls {FAP} \gls {PSO} Algorithm}}{149}{algorithm.8}
+\contentsline {algorithm}{\numberline {9}{\ignorespaces FAP Cost Function}}{151}{algorithm.9}
+\contentsline {algorithm}{\numberline {10}{\ignorespaces Velocity Method 1}}{156}{algorithm.10}
+\contentsline {algorithm}{\numberline {11}{\ignorespaces Velocity Method 2}}{164}{algorithm.11}
+\contentsline {algorithm}{\numberline {12}{\ignorespaces Standard gbest Selection in FAP PSO }}{166}{algorithm.12}
+\contentsline {algorithm}{\numberline {13}{\ignorespaces Building Global Best with Cells}}{168}{algorithm.13}
+\contentsline {algorithm}{\numberline {14}{\ignorespaces Building Global Best with Transceivers}}{169}{algorithm.14}
+\contentsline {algorithm}{\numberline {15}{\ignorespaces SanitizePosition}}{171}{algorithm.15}
+\contentsline {algorithm}{\numberline {16}{\ignorespaces ResolveCollision}}{172}{algorithm.16}

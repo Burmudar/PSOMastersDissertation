@@ -2,21 +2,31 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Results of applying \gls {TS} with HMT on COST 259}}{65}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces SA on \gls {COST} 259 Benchmark}}{73}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces GA on \gls {COST} 259 Benchmark}}{84}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Summary of algorithm performance on the \gls {COST} 259 benchmark}}{86}{table.4.4}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces ACO and \gls {ACO}* on custom GSM \gls {FAP} benchmark\cite {ACOvsEA}}}{104}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Results of \gls {TS} with HMT\nobreakspace {}\cite {TabuMontemanniSmith}(TS-HMT), Dynamic Tabu(DT)\nobreakspace {}\cite {MontiTS} and FAP PSO on the \gls {COST} 259 problems compared to the best results obtained by k-Thin \gls {SA}\cite {MaOrRi02}}}{73}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces (BK) SA\nobreakspace {}\cite {BeKi99a} and k-Thin SA\nobreakspace {}\cite {MaOrRi02} on \gls {COST} 259 Benchmark}}{84}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces GA\nobreakspace {}\cite {ProblemDecompMIFAP} on \gls {COST} 259 Benchmark}}{98}{table.5.3}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces ACO and \gls {ACO}* on custom GSM \gls {FAP} benchmark\cite {ACOvsEA}}}{118}{table.6.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces Siemens1 results using velocity method 1}}{160}{table.7.1}
-\contentsline {table}{\numberline {7.2}{\ignorespaces Siemens1 results with velocity method 2}}{161}{table.7.2}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Siemens2 results with velocity method 1}}{161}{table.7.3}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Siemens2 results with velocity method 2}}{162}{table.7.4}
-\contentsline {table}{\numberline {7.5}{\ignorespaces Siemens3 result with velocity method 1}}{162}{table.7.5}
-\contentsline {table}{\numberline {7.6}{\ignorespaces Siemens3 result with velocity method 2}}{163}{table.7.6}
-\contentsline {table}{\numberline {7.7}{\ignorespaces Siemens4 results using velocity method 1}}{163}{table.7.7}
-\contentsline {table}{\numberline {7.8}{\ignorespaces Siemens4 results using velocity method 2}}{164}{table.7.8}
-\contentsline {table}{\numberline {7.9}{\ignorespaces FAP PSO results compared to best obtained results}}{164}{table.7.9}
+\contentsline {table}{\numberline {8.1}{\ignorespaces Overall Siemens 1 results with velocity method 1}}{178}{table.8.1}
+\contentsline {table}{\numberline {8.2}{\ignorespaces Overall Siemens 1 results with velocity method 2}}{179}{table.8.2}
+\contentsline {table}{\numberline {8.3}{\ignorespaces co-,adj-channel and TRX interference statistics for best Siemens 1 frequency plan}}{179}{table.8.3}
+\contentsline {table}{\numberline {8.4}{\ignorespaces TRX pair interference breakdown for best Siemens 1 frequency plan}}{179}{table.8.4}
+\contentsline {table}{\numberline {8.5}{\ignorespaces Overall Siemens 2 results with velocity method 1}}{180}{table.8.5}
+\contentsline {table}{\numberline {8.6}{\ignorespaces Overall Siemens 2 results with velocity method 2}}{181}{table.8.6}
+\contentsline {table}{\numberline {8.7}{\ignorespaces co-,adj-channel and TRX interference statistics for best Siemens 2 frequency plan}}{181}{table.8.7}
+\contentsline {table}{\numberline {8.8}{\ignorespaces TRX pair interference breakdown for best Siemens 2 frequency plan}}{181}{table.8.8}
+\contentsline {table}{\numberline {8.9}{\ignorespaces Overall Siemens 3 results with velocity method 1}}{182}{table.8.9}
+\contentsline {table}{\numberline {8.10}{\ignorespaces Overall Siemens 3 results with velocity method 2}}{183}{table.8.10}
+\contentsline {table}{\numberline {8.11}{\ignorespaces co-,adj-channel and TRX interference statistics for best Siemens 3 frequency plan}}{183}{table.8.11}
+\contentsline {table}{\numberline {8.12}{\ignorespaces TRX pair interference breakdown for best Siemens 3 frequency plan}}{183}{table.8.12}
+\contentsline {table}{\numberline {8.13}{\ignorespaces Overall Siemens 4 results with velocity method 1}}{184}{table.8.13}
+\contentsline {table}{\numberline {8.14}{\ignorespaces Overall Siemens 4 results with velocity method 2}}{185}{table.8.14}
+\contentsline {table}{\numberline {8.15}{\ignorespaces co-,adj-channel and TRX interference statistics for best Siemens 4 frequency plan}}{185}{table.8.15}
+\contentsline {table}{\numberline {8.16}{\ignorespaces TRX pair interference breakdown for best Siemens 4 frequency plan}}{185}{table.8.16}
+\contentsline {table}{\numberline {8.17}{\ignorespaces FAP PSO results compared to best obtained results}}{186}{table.8.17}
+\contentsline {table}{\numberline {8.18}{\ignorespaces Summary of the best results produced by FAP PSO algorithm}}{190}{table.8.18}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
