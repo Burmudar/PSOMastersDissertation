@@ -493,7 +493,7 @@ In this section a discussion is presented on the statistical significance regard
 
 The following equation is used to calculate the Z statistic based on the average and standard deviation produced by the FAP PSO with velocity method 1 and 2.
 \begin{align}
-    Z_k &= \frac{\mu_k(v_1) - \mu_k(v_2)}{\frac{\sigma_k(v_2)}{SE_k}}, k \in \{1,2,3,4\}\\
+    Z_k &= \frac{\mu_k(v_1) - \mu_k(v_2)}{\frac{\sigma_k(v_2)}{SE_k}}, k \in \{1,2,3,4\}\label{eq:z}\\
     SE_k &= \frac{\sigma_k}{\sqrt{n}}, n = 20
 \end{align}
 where $k$ represents the Siemens problem number. Variable $v_1$ represent the velocity method 1 and $v_2$ velocity method 2. The function $\mu_k$ is the mean value for Siemens problem $k$ for either $v_1$ or $v_2$ as calculated from the results produced by the FAP PSO algorithm. The function $\sigma_k$ is the standard deviation for Siemens problem $k$ for $v_1$ or $v_2$. $n$ is set to 20, which is the sample size of the results produced. $SE_k$ is the standard error as calculated for the specific Siemens problem $k$.
@@ -504,14 +504,14 @@ Table~\ref{tbl:hypothesis} presents the best interference, mean, standard error 
 	\toprule
     Problem & Velocity method & Interference & $\mu_k$ & $\sigma_k$ & $SE_k$  \\
     \midrule
-    Siemens 1 & $v_1$ & 38.72 & 7.84 & & \\
-    Siemens 1 & $v_2$ & 244.64 & 417.93 & & \\
-    Siemens 2 & $v_1$ & 55.55 & 7.93 & & \\
-    Siemens 2 & $v_2$ & 112.28 & 36.08 & & \\
-    Siemens 3 & $v_1$ & 48.37 & 8.06 & & \\
-    Siemens 3 & $v_2$ & 277.58 & 350.43 & & \\
-    Siemens 4 & $v_1$ & 288.84 & 22.52 & & \\
-    Siemens 4 & $v_2$ & 1761.64 & 2234.28 & & \\
+    Siemens 1 & $v_1$ & 35.19 & 38.72 & 7.84 & $\sqrt{20}$\\
+    Siemens 1 & $v_2$ & 142.19 & 244.64 & 417.93 & $\sqrt{20}$\\
+    Siemens 2 & $v_1$ & 52.63 & 55.55 & 7.93 & $\sqrt{20}$\\
+    Siemens 2 & $v_2$ & 101.03 & 112.28 & 36.08 & $\sqrt{20}$\\
+    Siemens 3 & $v_1$ & 44.64 & 48.37 & 8.06 & $\sqrt{20}$\\
+    Siemens 3 & $v_2$ & 210.01 & 277.58 & 350.43 & $\sqrt{20}$\\
+    Siemens 4 & $v_1$ & 277.36 & 288.84 & 22.52 & $\sqrt{20}$\\
+    Siemens 4 & $v_2$ & 826.82 & 1761.64 & 2234.28 & $\sqrt{20}$\\
     \bottomrule
 	\end{tabular}
 \caption{Summary of the best results produced by FAP PSO algorithm}
@@ -530,6 +530,8 @@ The next table presents the $Z$ statistic and the P-value. The $Z$ statistic is 
     Siemens 4 & $v_1$ & -2.97 & 0.0015\\
     \bottomrule
 \end{tabular}
+\caption{Per problem Z statistic and corresponding P-value}
+\label{tbl:ztable}
 \end{table}
 The value of significance for this hypothesis test is set to be $\alpha=0.015$ or 15\%. As can be seen from table~\ref{tbl:ztable} all the P-values are less than $\alpha$. Therefore, the null hypothesis $H_0$ is rejected and the claim of the alternate hypothesis $H_1$ is supported.
 

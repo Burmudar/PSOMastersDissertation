@@ -13,6 +13,12 @@
 \raggedbottom
 \usepackage[nottoc]{tocbibind}
 \linespread{1.2}
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{plain}
+\mbox{}
+\newpage
+}
 \dissertation
 \coverFont{\large}
 \setlength{\parskip}{0.5ex plus0.5ex minus0.2ex}
@@ -130,7 +136,21 @@
 \allowdisplaybreaks[1]
 \frontmatter
 \makecover
+\blankpage
+\clearpage
+\thispagestyle{plain}
+\par\vspace*{.35\textheight}{\centering Dedicated to my parents\par}
+\blankpage
 \include{abstract}
+\blankpage
+\chapter*{Acknowledgements}
+I would like to express my deepest and sincerest thanks to the following special people.
+My parents, and sister who persevered through my mood swings and rage while working on this research and for most importantly, supporting me through it all.
+My two oldest friends, Andr\'{e} Pretorius and Andr\'{e} Carstens. Who both understood and did not take it personal for all the times I had to put this research before them.
+My supervisor, Dr. O'Reilly for supporting me till the very end and Prof. Ehlers, for her patience and understanding.
+All the friends I made at the IT Academy Masters lab namely: Manuel Corregedor, David Ellefsen, Kyra Waberski, Dustin van der Haar, Atish Maganlal, Peter von
+ Onsellen, Tristan Lavarack, Deon Cotterrell, Tosca Ferreira and Duncan Coulter. All of whom made my time there fun, inspiring and exceptional. It will truly remain a highlight of my entire academic career.
+\blankpage
 \tableofcontents
 \listoffigures
 \listofalgorithms

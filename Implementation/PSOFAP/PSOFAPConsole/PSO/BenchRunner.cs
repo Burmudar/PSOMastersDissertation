@@ -96,7 +96,7 @@ namespace PSOFAPConsole.PSO
                     mail.Attachments.Add(attachment);
                 }
                 SmtpServer.Port = 587;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("william.bezuidenhout@gmail.com", "I am w1ll14m b3zu!d3nh0ut");
+                SmtpServer.Credentials = new System.Net.NetworkCredential("william.bezuidenhout@gmail.com", "");
                 SmtpServer.EnableSsl = true;
                 Console.WriteLine("Mailing {0} benchmarks to william.bezuidenhout@gmail.com", files.Length);
                 SmtpServer.Send(mail);
